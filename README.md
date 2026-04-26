@@ -2,8 +2,12 @@
   <img src="images/logo.png" alt="StreamPulse Logo" width="120" />
   <h1>StreamPulse Landing Page</h1>
   <p>The official landing page for the StreamPulse Chrome Extension.</p>
-  <a href="https://streampulse.fr">Live Website</a>
+  <a href="https://streampulse.fr">Live Website</a> •
+  <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh">Chrome Web Store</a>
 </div>
+
+## 📥 Download
+[**Download StreamPulse on the Chrome Web Store**](https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh)
 
 ## 📌 Overview
 This repository contains the source code for the [StreamPulse](https://streampulse.fr) landing page. StreamPulse is a unified browser extension that helps users master Twitch, Kick, and DLive by providing real-time notifications, automatic channel points farming, and a clean interface.
