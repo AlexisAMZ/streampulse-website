@@ -1,0 +1,14 @@
+# Firebase
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+
+# Backups
+backup/
+
+# Temp
+temp_tmi/
+
+# System
+.DS_Store
+*.log

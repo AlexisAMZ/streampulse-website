@@ -1,0 +1,311 @@
+/* ================ NOUVELLE PAGE SETTINGS ================ */
+
+.settings-container {
+    max-width: 38rem; /* Reduced from 45rem */
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Header avec profil */
+.settings-header {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 20px;
+    padding: 1.2rem; /* Reduced from 1.5rem */
+    margin-bottom: 2rem;
+    backdrop-filter: blur(12px);
+}
+
+.settings-profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.settings-profile-image {
+    width: 60px; /* Reduced from 80 */
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+    object-fit: cover;
+}
+
+.settings-profile-info h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0.5rem 0;
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.settings-username {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.settings-username svg {
+    fill: var(--primary);
+}
+
+/* Body */
+.settings-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.settings-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+}
+
+.settings-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+/* Setting Cards */
+.setting-card {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 16px;
+    padding: 1rem; /* Reduced from 1.2rem */
+    backdrop-filter: blur(12px);
+    transition: all 0.3s;
+}
+
+.setting-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(138, 43, 226, 0.3);
+}
+
+.setting-card label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: white;
+    letter-spacing: 0.5px;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.setting-hint {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Number Input Group */
+.number-input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-decrement,
+.btn-increment {
+    background: var(--primary);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-decrement:hover,
+.btn-increment:hover {
+    background: var(--accent);
+    transform: scale(1.1);
+}
+
+.number-input-group input {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem;
+    color: white;
+}
+
+/* Select Dropdown */
+.setting-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.setting-select:hover {
+    border-color: var(--primary);
+}
+
+.setting-select:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.setting-select option {
+    background: #1a1a2e;
+    color: white;
+}
+
+/* Toggle Card */
+.toggle-card {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+/* Switch Toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    border-radius: 32px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+input:checked + .slider:before {
+    transform: translateX(28px);
+}
+
+.slider:hover {
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
+/* Footer */
+.settings-footer {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn-start-game {
+    background: linear-gradient(135deg, var(--accent), var(--primary));
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 16px;
+    color: #000;
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+}
+
+.btn-start-game:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 255, 136, 0.6);
+}
+
+.btn-start-game svg {
+    fill: #000;
+}
+
+.btn-secondary-settings {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 16px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-secondary-settings:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .settings-container {
+        padding: 1rem;
+    }
+    
+    .settings-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .settings-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .settings-footer {
+        flex-direction: column;
+    }
+}

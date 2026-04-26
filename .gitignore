@@ -1,0 +1,27 @@
+# Configuration (peut contenir des données sensibles)
+games/js/config.js
+games/devine-le-prix/js/config.js
+games/devine-le-prix/js/firebase-config.js
+js/config.js
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log
+
+# Backup
+backup/
+*.backup
+deploy-ftp.sh

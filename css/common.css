@@ -1,0 +1,450 @@
+/* =========================================
+   COMMON STYLES & VARIABLES
+   StreamPulse Games Shared CSS
+   ========================================= */
+
+/* --- VARIABLES --- */
+:root {
+    /* iOS Modern Palette */
+    --bg-dark: #000000;
+    --bg-panel: #1c1c1e;
+    --primary: #007AFF; /* iOS Blue */
+    --accent: #9146FF;  /* Twitch Purple */
+    --danger: #FF453A;
+    --gold: #FFD60A;
+    --text-main: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.6);
+    
+    /* Glassmorphism System */
+    --glass-bg: rgba(28, 28, 30, 0.72);
+    --glass-bg-light: rgba(58, 58, 60, 0.52);
+    --glass-bg-strong: rgba(28, 28, 30, 0.88);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-highlight: rgba(255, 255, 255, 0.08); /* Top border light */
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.24);
+    --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.36);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    
+    /* Radius */
+    --radius-sm: 12px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+}
+
+html {
+    font-size: 14px; /* Global Scaling: Reduced from default 16px */
+}
+
+/* --- RESET & BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+body {
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+    background-attachment: fixed;
+    color: var(--text-main);
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* --- UTILITIES --- */
+.hidden { display: none !important; }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- GLASS COMPONENTS --- */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: var(--glass-border);
+    border-top: 1px solid var(--glass-highlight);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.glass-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(145, 70, 255, 0.3);
+    box-shadow: 
+        var(--shadow-lg), 
+        0 20px 60px rgba(0, 0, 0, 0.5),
+        0 0 40px rgba(145, 70, 255, 0.15);
+}
+
+/* --- PREMIUM BUTTONS --- */
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+/* Bouton Principal - Ultra Premium */
+.btn.primary {
+    background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+    color: white;
+    box-shadow: 
+        0 4px 15px rgba(0, 122, 255, 0.3),
+        0 2px 8px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn.primary:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 
+        0 8px  30px rgba(0, 122, 255, 0.5),
+        0 4px 20px rgba(0, 0, 0, 0.3),
+        0 0 40px rgba(0, 122, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, #0A84FF 0%, #0066CC 100%);
+}
+
+.btn.primary:active {
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* Bouton Secondaire - Glassmorphism */
+.btn.secondary {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.btn.secondary:hover {
+    transform: translateY(-4px) scale(1.03);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 
+        0 8px 30px rgba(0, 0, 0, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.btn.secondary:active {
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* Bouton Icon */
+.btn-icon-bar {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.btn-icon-bar:hover {
+    background: rgba(255,255,255,0.15);
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* --- USER PROFILE BAR (Unified) --- */
+.user-profile-bar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 1000px; /* Reduced from 1200px */
+    height: 50px; /* Reduced from 60px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: rgba(20, 20, 25, 0.6);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    z-index: 100;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.user-profile-bar:hover {
+    background: rgba(25, 25, 30, 0.8);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    height: 28px;
+    width: auto;
+}
+
+.nav-brand span {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.9);
+}
+
+.bar-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    padding: 6px 0;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.btn-download {
+    background: linear-gradient(135deg, var(--primary) 0%, #0066CC 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.btn-download:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 122, 255, 0.5);
+    background: linear-gradient(135deg, #0A84FF 0%, #0077DD 100%);
+}
+
+.btn-gaming {
+    background: linear-gradient(135deg, var(--accent) 0%, #7C3AED 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(145, 70, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-gaming:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(145, 70, 255, 0.6);
+    background: linear-gradient(135deg, #A67FFF 0%, #9146FF 100%);
+}
+
+.profile-info-bar {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 4px 16px 4px 4px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background 0.3s;
+}
+
+.profile-info-bar:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.profile-pic-bar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.profile-name-bar {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-logout-icon {
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: color 0.2s;
+    padding: 4px;
+}
+
+.btn-logout-icon:hover {
+    color: #ff4444;
+}
+
+.language-switcher select {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.language-switcher select:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.language-switcher select:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .btn-download {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-profile-bar {
+        width: 95%;
+        height: 45px;
+        padding: 0 12px;
+    }
+    
+    .brand-logo {
+        height: 24px;
+    }
+    
+    .nav-brand span {
+        font-size: 0.85rem;
+        display: none;
+    }
+    
+    .btn-download span {
+        display: none;
+    }
+    
+    .btn-download {
+        padding: 8px;
+        min-width: 36px;
+        justify-content: center;
+    }
+    
+    .btn-download svg {
+        margin-right: 0 !important;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+}

@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>StreamPulse — Vivez Twitch, Kick & DLive sans rien rater</title>
+<meta name="description" content="Extension Chrome gratuite : notifications instantanées, points automatiques, latence optimisée, multi-plateformes. Suivez vos streamers Twitch, Kick et DLive sans rien rater." />
+<meta name="keywords" content="StreamPulse, extension Twitch, extension Kick, extension DLive, notifications Twitch, points de chaîne automatiques, auto-claim Twitch, multi-plateformes, latence optimisée" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta name="author" content="AlexisAMZ" />
+<link rel="canonical" href="https://streampulse.fr/" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://streampulse.fr/" />
+<meta property="og:title" content="StreamPulse — Vivez Twitch, Kick & DLive sans rien rater" />
+<meta property="og:description" content="Extension Chrome gratuite : notifications instantanées, points automatiques, latence optimisée, multi-plateformes." />
+<meta property="og:image" content="https://streampulse.fr/images/logo.png" />
+<meta property="og:locale" content="fr_FR" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://streampulse.fr/" />
+<meta name="twitter:title" content="StreamPulse — Vivez Twitch, Kick & DLive sans rien rater" />
+<meta name="twitter:description" content="Extension Chrome gratuite : notifications instantanées, points automatiques, latence optimisée, multi-plateformes." />
+<meta name="twitter:image" content="https://streampulse.fr/images/logo.png" />
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "StreamPulse",
+  "applicationCategory": "BrowserExtension",
+  "operatingSystem": "Chrome",
+  "url": "https://streampulse.fr/",
+  "description": "Extension Chrome gratuite pour Twitch, Kick et DLive. Notifications en temps réel, récupération automatique des points de chaîne.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "AlexisAMZ"
+  }
+}
+</script>
+
+<link rel="icon" type="image/png" href="images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #07060c;
+    --bg-2: #0d0a18;
+    --surface: rgba(255,255,255,0.04);
+    --surface-2: rgba(255,255,255,0.06);
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.14);
+    --text: #f5f3ff;
+    --text-muted: rgba(245,243,255,0.62);
+    --text-dim: rgba(245,243,255,0.42);
+    --violet: #9146FF;
+    --violet-2: #B68CFF;
+    --magenta: #FF4FB8;
+    --cyan: #4FE3FF;
+    --green: #44FFB1;
+    --red: #FF4D6D;
+    --display: 'Space Grotesk', 'Outfit', system-ui, sans-serif;
+    --sans: 'Outfit', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  /* Background atmosphere */
+  .atmosphere {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    overflow: hidden;
+  }
+  .atmosphere::before, .atmosphere::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.55;
+  }
+  .atmosphere::before {
+    width: 720px; height: 720px;
+    background: radial-gradient(circle, #6E2BFF 0%, transparent 60%);
+    top: -200px; left: -180px;
+    animation: float1 22s ease-in-out infinite;
+  }
+  .atmosphere::after {
+    width: 640px; height: 640px;
+    background: radial-gradient(circle, #FF4FB8 0%, transparent 60%);
+    top: 20%; right: -200px;
+    animation: float2 26s ease-in-out infinite;
+    opacity: 0.35;
+  }
+  .atmosphere .blob3 {
+    position: absolute;
+    width: 540px; height: 540px;
+    border-radius: 50%;
+    filter: blur(120px);
+    background: radial-gradient(circle, #4FE3FF 0%, transparent 60%);
+    bottom: -200px; left: 30%;
+    opacity: 0.18;
+    animation: float3 30s ease-in-out infinite;
+  }
+  @keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(80px,60px)} }
+  @keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-60px,80px)} }
+  @keyframes float3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,-50px)} }
+
+  .grid-overlay {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 80%);
+  }
+
+  .noise {
+    position: fixed; inset: 0; z-index: 2; pointer-events: none;
+    opacity: 0.04; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Scroll progress */
+  .progress {
+    position: fixed; top: 0; left: 0; height: 2px; width: 0;
+    background: linear-gradient(90deg, var(--violet), var(--magenta), var(--cyan));
+    z-index: 100;
+    box-shadow: 0 0 12px rgba(145,70,255,0.6);
+  }
+
+  .container { width: min(1280px, 92vw); margin: 0 auto; position: relative; z-index: 5; }
+
+  /* NAV */
+  .nav {
+    position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+    width: min(1280px, 94vw);
+    z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 14px 10px 20px;
+    background: rgba(13, 10, 24, 0.55);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+  }
+  .nav-brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+  .nav-brand img { width: 28px; height: 28px; filter: drop-shadow(0 0 12px rgba(145,70,255,0.55)); }
+  .nav-links { display: flex; gap: 4px; align-items: center; }
+  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 100px; transition: all .25s; }
+  .nav-links a:hover { color: var(--text); background: var(--surface); }
+  .nav-actions { display: flex; gap: 8px; align-items: center; }
+  .nav .btn-gaming {
+    font-family: var(--display); font-weight: 600; font-size: 13px; letter-spacing: 0.04em;
+    color: var(--text); text-decoration: none;
+    padding: 9px 14px; border-radius: 100px;
+    background: var(--surface); border: 1px solid var(--border);
+    transition: all .25s;
+  }
+  .nav .btn-gaming:hover { background: var(--surface-2); border-color: var(--border-strong); }
+  .nav .btn-cta {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 9px 16px; border-radius: 100px;
+    background: var(--text); color: #0a0612;
+    font-weight: 600; font-size: 13.5px;
+    text-decoration: none; transition: all .25s;
+    box-shadow: 0 0 0 0 rgba(145,70,255,0);
+  }
+  .nav .btn-cta:hover { transform: translateY(-1px); box-shadow: 0 8px 30px rgba(255,255,255,0.18); }
+  .lang-pill { display: flex; align-items: center; gap: 4px; padding: 8px 12px; border-radius: 100px; background: var(--surface); border: 1px solid var(--border); font-size: 12.5px; font-weight: 500; cursor: pointer; }
+  .lang-pill select { background: transparent; border: 0; color: var(--text); font-family: inherit; font-size: 12.5px; outline: none; cursor: pointer; }
+  .lang-pill option { background: #15102a; }
+
+  @media (max-width: 900px) {
+    .nav-links { display: none; }
+  }
+
+  /* HERO */
+  .hero {
+    padding: 160px 0 100px;
+    position: relative;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+  @media (max-width: 1000px) { .hero-grid { grid-template-columns: 1fr; gap: 60px; } }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 7px 14px 7px 8px;
+    background: rgba(145,70,255,0.08);
+    border: 1px solid rgba(145,70,255,0.25);
+    border-radius: 100px;
+    font-size: 13px; color: var(--violet-2);
+    font-weight: 500;
+  }
+  .eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 4px rgba(145,70,255,0.15); animation: pulse 2s infinite; }
+  .eyebrow .num { color: var(--text); font-family: var(--mono); font-size: 12px; }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 0 0 4px rgba(145,70,255,0.15); }
+    50% { box-shadow: 0 0 0 8px rgba(145,70,255,0); }
+  }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-size: clamp(48px, 6.4vw, 92px);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    margin-top: 24px;
+  }
+  .hero h1 .gradient {
+    background: linear-gradient(120deg, #B68CFF 0%, #9146FF 35%, #FF4FB8 75%, #FF7AB8 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .hero h1 em {
+    font-style: normal;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--text-muted);
+  }
+
+  .hero-sub {
+    font-size: 18px; line-height: 1.55;
+    color: var(--text-muted);
+    max-width: 540px;
+    margin-top: 28px;
+  }
+
+  .hero-cta { display: flex; gap: 12px; align-items: center; margin-top: 36px; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 24px; border-radius: 100px;
+    background: linear-gradient(180deg, #A565FF 0%, #7B30E5 100%);
+    color: white; font-weight: 600; font-size: 15px;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.16);
+    box-shadow: 0 14px 40px -10px rgba(145,70,255,0.6), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: transform .2s, box-shadow .2s;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 20px 60px -10px rgba(145,70,255,0.8), inset 0 1px 0 rgba(255,255,255,0.25); }
+  .btn-primary svg { width: 16px; height: 16px; }
+
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 16px 22px; border-radius: 100px;
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border-strong);
+    font-weight: 500; font-size: 14.5px; text-decoration: none;
+    transition: all .2s;
+  }
+  .btn-secondary:hover { background: var(--surface-2); }
+
+  .hero-meta {
+    display: flex; gap: 28px; margin-top: 44px; align-items: center;
+    flex-wrap: wrap;
+  }
+  .hero-meta .stat { display: flex; flex-direction: column; gap: 2px; }
+  .hero-meta .stat .num { font-family: var(--display); font-size: 22px; font-weight: 600; letter-spacing: -0.02em; }
+  .hero-meta .stat .lbl { font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+  .hero-meta .sep { width: 1px; height: 32px; background: var(--border); }
+  .hero-meta .stars { display: flex; gap: 2px; color: #FFD56B; }
+
+  /* HERO MOCKUP */
+  .mockup {
+    position: relative;
+    perspective: 1600px;
+  }
+  .mockup-wrap {
+    position: relative;
+    transform: rotateY(-6deg) rotateX(4deg);
+    transform-style: preserve-3d;
+  }
+  .mockup-card {
+    background: linear-gradient(180deg, rgba(28,20,52,0.95), rgba(15,10,30,0.95));
+    border: 1px solid var(--border-strong);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 60px 120px -40px rgba(145,70,255,0.4), 0 0 0 1px rgba(255,255,255,0.04);
+    backdrop-filter: blur(20px);
+  }
+  .mockup-shot {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0 60px 120px -40px rgba(145,70,255,0.55), 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 rgba(255,255,255,0.08);
+    background: #0d0a18;
+  }
+  .mockup-shot img {
+    display: block; width: 100%; height: auto;
+  }
+  .mockup-glow {
+    position: absolute; inset: -40px; border-radius: 36px;
+    background: radial-gradient(60% 50% at 50% 50%, rgba(145,70,255,0.45), transparent 70%);
+    filter: blur(40px);
+    z-index: -1;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: glowpulse 6s ease-in-out infinite;
+  }
+  @keyframes glowpulse { 0%,100% { opacity: 0.55; } 50% { opacity: 0.85; } }
+
+  .badge-pop {
+    top: 24px; left: -32px;
+    display: flex; align-items: center; gap: 12px;
+    padding: 12px 18px 12px 12px;
+    animation: floatPop2 5.5s ease-in-out infinite;
+  }
+  .badge-pop .bp-icon {
+    width: 36px; height: 36px; border-radius: 10px;
+    display: grid; place-items: center;
+    background: linear-gradient(135deg, #FF4FB8, #9146FF);
+    color: white;
+    flex-shrink: 0;
+  }
+  .badge-pop .bp-icon svg { width: 18px; height: 18px; }
+  .badge-pop .bp-num { font-family: var(--display); font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }
+  .badge-pop .bp-lbl { font-size: 11px; color: var(--text-dim); }
+  @keyframes floatPop2 { 0%,100%{transform: translateY(0)} 50%{transform: translateY(-10px)} }
+  @media (max-width: 1000px) {
+    .badge-pop { left: 8px; top: 8px; }
+    .notif-pop { right: 8px; bottom: -16px; width: 240px; }
+  }
+  @media (max-width: 520px) {
+    .badge-pop { left: 4px; top: 4px; padding: 10px 14px 10px 10px; }
+    .badge-pop .bp-num { font-size: 14px; }
+    .notif-pop { right: 4px; bottom: -10px; width: 220px; padding: 12px; }
+  }
+  .mockup-head {
+    display: flex; align-items: center; gap: 12px;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(0,0,0,0.2);
+  }
+  .mockup-head .dots { display: flex; gap: 6px; }
+  .mockup-head .dots span { width: 11px; height: 11px; border-radius: 50%; background: rgba(255,255,255,0.18); }
+  .mockup-head .dots span:nth-child(1) { background: #FF5F57; }
+  .mockup-head .dots span:nth-child(2) { background: #FEBC2E; }
+  .mockup-head .dots span:nth-child(3) { background: #28C840; }
+  .mockup-head .url {
+    flex: 1; font-family: var(--mono); font-size: 11.5px;
+    color: var(--text-dim);
+    background: rgba(255,255,255,0.04);
+    padding: 6px 12px; border-radius: 100px;
+    text-align: center;
+  }
+  .mockup-head .url span { color: var(--violet-2); }
+
+  .mockup-body { padding: 22px; display: flex; flex-direction: column; gap: 14px; }
+
+  .mock-header { display: flex; justify-content: space-between; align-items: center; }
+  .mock-header h4 { font-family: var(--display); font-weight: 600; font-size: 15px; }
+  .mock-header .live-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,77,109,0.12); border: 1px solid rgba(255,77,109,0.3);
+    color: #FF8FA3; font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+    padding: 4px 10px; border-radius: 100px;
+  }
+  .mock-header .live-pill .d { width: 6px; height: 6px; border-radius: 50%; background: var(--red); box-shadow: 0 0 8px var(--red); animation: pulse 1.4s infinite; }
+
+  .streamer-row {
+    display: grid;
+    grid-template-columns: 36px 1fr auto;
+    gap: 12px; align-items: center;
+    padding: 10px 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 14px;
+    transition: all .3s;
+  }
+  .streamer-row:hover { background: rgba(255,255,255,0.06); transform: translateX(4px); }
+  .streamer-row.active { border-color: rgba(145,70,255,0.4); background: rgba(145,70,255,0.08); }
+  .streamer-row .av {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: linear-gradient(135deg, #FF4FB8, #9146FF);
+    display: grid; place-items: center; color: white; font-weight: 700; font-size: 13px;
+  }
+  .streamer-row .av.b1 { background: linear-gradient(135deg, #4FE3FF, #9146FF); }
+  .streamer-row .av.b2 { background: linear-gradient(135deg, #44FFB1, #4FE3FF); }
+  .streamer-row .av.b3 { background: linear-gradient(135deg, #FFD56B, #FF4FB8); }
+  .streamer-row .meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .streamer-row .name { font-size: 13.5px; font-weight: 600; }
+  .streamer-row .game { font-size: 11.5px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .streamer-row .right { display: flex; align-items: center; gap: 8px; font-size: 11.5px; color: var(--text-muted); }
+  .streamer-row .viewers { display: flex; align-items: center; gap: 4px; font-family: var(--mono); }
+  .streamer-row .platform { width: 18px; height: 18px; border-radius: 4px; display: grid; place-items: center; font-size: 10px; font-weight: 700; }
+  .platform.tw { background: rgba(145,70,255,0.2); color: var(--violet-2); }
+  .platform.kk { background: rgba(83,251,49,0.18); color: #7CFF6B; }
+  .platform.dl { background: rgba(255,159,49,0.18); color: #FFB970; }
+
+  .mock-foot {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px;
+  }
+  .mock-stat {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px;
+  }
+  .mock-stat .lbl { font-size: 10.5px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+  .mock-stat .num { font-family: var(--display); font-size: 22px; font-weight: 600; margin-top: 4px; letter-spacing: -0.02em; }
+  .mock-stat .num .pts { color: var(--violet-2); }
+  .mock-stat .bar { margin-top: 8px; height: 4px; background: rgba(255,255,255,0.06); border-radius: 100px; overflow: hidden; }
+  .mock-stat .bar .fill { height: 100%; background: linear-gradient(90deg, var(--violet), var(--magenta)); border-radius: 100px; animation: barfill 4s ease-in-out infinite alternate; }
+  @keyframes barfill { 0% { width: 30%; } 100% { width: 88%; } }
+
+  /* Floating popups */
+  .float-popups { position: absolute; inset: 0; pointer-events: none; z-index: 3; }
+  .notif-pop, .badge-pop {
+    position: absolute;
+    background: linear-gradient(180deg, rgba(40,30,68,0.96), rgba(22,16,42,0.96));
+    border: 1px solid var(--border-strong);
+    border-radius: 16px;
+    box-shadow: 0 30px 80px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(145,70,255,0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .notif-pop {
+    bottom: -24px; right: -24px;
+    padding: 14px;
+    width: 270px;
+    animation: floatPop 5s ease-in-out infinite;
+  }
+  .notif-pop .head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .notif-pop .head img { width: 22px; height: 22px; }
+  .notif-pop .head .ttl { font-size: 12px; font-weight: 600; }
+  .notif-pop .head .now { margin-left: auto; font-size: 10.5px; color: var(--text-dim); font-family: var(--mono); }
+  .notif-pop .body p { font-size: 13px; line-height: 1.4; margin: 0; }
+  .notif-pop .body p strong { color: var(--violet-2); }
+  @keyframes floatPop { 0%,100%{transform: translateY(0)} 50%{transform: translateY(-8px)} }
+
+  /* MARQUEE */
+  .marquee-section { padding: 30px 0 60px; position: relative; z-index: 5; }
+  .marquee-label { font-size: 12px; color: var(--text-dim); text-align: center; text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 24px; font-weight: 500; }
+  .marquee {
+    display: flex; gap: 60px;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+  }
+  .marquee-track { display: flex; gap: 60px; animation: scroll 30s linear infinite; flex-shrink: 0; }
+  @keyframes scroll { to { transform: translateX(-50%); } }
+  .marquee-item {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--display); font-weight: 500; font-size: 22px;
+    color: var(--text-dim); white-space: nowrap;
+  }
+  .marquee-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--violet); }
+
+  /* SECTION HEADERS */
+  .section { padding: 100px 0; position: relative; z-index: 5; }
+  .section-eyebrow { display: inline-block; font-size: 12px; color: var(--violet-2); font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 18px; }
+  .section h2 {
+    font-family: var(--display);
+    font-size: clamp(40px, 5vw, 64px);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1.05;
+    max-width: 800px;
+  }
+  .section h2 em { font-style: normal; color: var(--text-muted); font-weight: 400; }
+  .section .lede {
+    font-size: 18px; color: var(--text-muted);
+    max-width: 580px; margin-top: 18px; line-height: 1.55;
+  }
+
+  /* BENTO */
+  .bento {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 220px;
+    gap: 14px;
+    margin-top: 56px;
+  }
+  @media (max-width: 1000px) { .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 240px; } }
+  @media (max-width: 600px) { .bento { grid-template-columns: 1fr; } }
+
+  .bento-card {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015));
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 24px;
+    overflow: hidden;
+    transition: all .35s cubic-bezier(.2,.7,.2,1);
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .bento-card:hover { transform: translateY(-4px); border-color: var(--border-strong); background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02)); }
+  .bento-card::before {
+    content: ''; position: absolute; inset: -1px; border-radius: 22px;
+    background: linear-gradient(120deg, transparent, rgba(145,70,255,0.4), transparent) border-box;
+    -webkit-mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+    mask: linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0; transition: opacity .35s;
+    pointer-events: none;
+  }
+  .bento-card:hover::before { opacity: 1; }
+
+  .bento-card .num { font-family: var(--mono); font-size: 11px; color: var(--text-dim); }
+  .bento-card h3 { font-family: var(--display); font-size: 22px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.15; }
+  .bento-card p { font-size: 14.5px; color: var(--text-muted); line-height: 1.5; }
+  .bento-card .head { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: auto; }
+
+  .b-1 { grid-column: span 3; grid-row: span 2; }
+  .b-2 { grid-column: span 3; }
+  .b-3 { grid-column: span 3; }
+  .b-4 { grid-column: span 2; }
+  .b-5 { grid-column: span 2; }
+  .b-6 { grid-column: span 2; }
+  .b-7 { grid-column: span 6; grid-row: span 1; }
+
+  @media (max-width: 1000px) {
+    .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7 { grid-column: span 2; grid-row: auto; }
+  }
+  @media (max-width: 600px) {
+    .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7 { grid-column: span 1; }
+  }
+
+  /* Big card visual — Chrome OS toast notifications */
+  .b-1 { background: radial-gradient(120% 80% at 100% 0%, rgba(145,70,255,0.22), transparent 60%), linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01)); }
+  .b-1 .visual {
+    position: relative; flex: 1; margin-top: 16px;
+    border-radius: 16px;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0)),
+      radial-gradient(80% 100% at 100% 0%, rgba(145,70,255,0.12), transparent 60%);
+    border: 1px solid var(--border);
+    padding: 16px;
+    display: flex; flex-direction: column; gap: 10px;
+    overflow: hidden;
+    align-items: stretch;
+  }
+  .b-1 .visual::before {
+    content: '';
+    position: absolute; top: 8px; right: 8px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    box-shadow: -14px 0 0 rgba(255,255,255,0.2), -28px 0 0 rgba(255,255,255,0.2);
+  }
+  .chrome-toast {
+    width: 100%;
+    max-width: 100%;
+    background: #2a2632;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 10px 12px 10px 10px;
+    display: grid;
+    grid-template-columns: 36px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 8px 24px -6px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.3);
+    animation: toastIn .55s cubic-bezier(.2,.7,.2,1) backwards;
+    color: #e8e6f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .chrome-toast.featured { border-color: rgba(145,70,255,0.35); box-shadow: 0 8px 28px -6px rgba(145,70,255,0.4), 0 2px 6px rgba(0,0,0,0.4); }
+  .chrome-toast:nth-child(1) { animation-delay: .1s; }
+  .chrome-toast:nth-child(2) { animation-delay: .25s; opacity: .82; transform-origin: right center; }
+  .chrome-toast:nth-child(3) { animation-delay: .4s; opacity: .62; transform: scale(0.96); transform-origin: right center; }
+  @keyframes toastIn { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
+  .chrome-toast .ct-icon {
+    width: 36px; height: 36px; border-radius: 8px;
+    background: #1a1428;
+    display: grid; place-items: center;
+    overflow: hidden;
+  }
+  .chrome-toast .ct-icon img { width: 100%; height: 100%; object-fit: cover; }
+  .chrome-toast .ct-body { min-width: 0; }
+  .chrome-toast .ct-title {
+    font-size: 12.5px; font-weight: 600; color: #fff;
+    display: flex; align-items: center; gap: 6px;
+    margin-bottom: 2px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .chrome-toast .ct-title .src { font-weight: 400; color: rgba(255,255,255,0.5); font-size: 11px; }
+  .chrome-toast .ct-title .src::before { content: '· '; }
+  .chrome-toast .ct-msg { font-size: 12px; color: rgba(255,255,255,0.7); line-height: 1.35; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .chrome-toast .ct-close {
+    width: 20px; height: 20px; border-radius: 4px;
+    display: grid; place-items: center;
+    color: rgba(255,255,255,0.4);
+    font-size: 14px; line-height: 1;
+    flex-shrink: 0;
+  }
+
+  /* Auto-points card */
+  .b-2 .visual {
+    flex: 1; margin-top: 14px; display: flex; align-items: flex-end; gap: 18px;
+  }
+  .points-num {
+    font-family: var(--display); font-size: 64px; font-weight: 600;
+    letter-spacing: -0.04em; line-height: 1;
+    background: linear-gradient(180deg, var(--violet-2), var(--violet));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .points-info { font-size: 12.5px; color: var(--text-muted); padding-bottom: 8px; }
+  .points-info strong { color: var(--green); }
+
+  /* Latency */
+  .b-3 .visual {
+    flex: 1; margin-top: 14px; position: relative;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .gauge {
+    position: relative; width: 180px; height: 100px;
+  }
+  .gauge svg { width: 100%; height: 100%; }
+  .gauge-val {
+    position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    font-family: var(--display); font-size: 36px; font-weight: 600; letter-spacing: -0.03em;
+  }
+  .gauge-val .u { font-size: 14px; color: var(--text-muted); margin-left: 2px; }
+
+  /* Multi-platform */
+  .b-4 .platforms { display: flex; gap: 10px; margin-top: auto; }
+  .pf-pill {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 12px; border-radius: 100px;
+    font-size: 12px; font-weight: 600;
+    background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+  }
+  .pf-pill .ico { width: 14px; height: 14px; border-radius: 4px; }
+
+  /* Auto refresh */
+  .b-5 .ico-refresh {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(145,70,255,0.35), rgba(145,70,255,0.05));
+    border: 1px solid rgba(145,70,255,0.3);
+    display: grid; place-items: center; margin-top: auto; margin-bottom: 8px;
+  }
+  .b-5 .ico-refresh svg { width: 28px; height: 28px; color: var(--violet-2); animation: spin 4s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Filter */
+  .b-6 .filter-tags { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; }
+  .ftag { font-size: 11.5px; padding: 4px 10px; border-radius: 100px; font-family: var(--mono); }
+  .ftag.bad { background: rgba(255,77,109,0.12); color: #FF8FA3; border: 1px solid rgba(255,77,109,0.25); text-decoration: line-through; }
+  .ftag.ok { background: rgba(68,255,177,0.1); color: var(--green); border: 1px solid rgba(68,255,177,0.2); }
+
+  /* Wide bento */
+  .b-7 {
+    background: radial-gradient(80% 120% at 100% 50%, rgba(255,79,184,0.15), transparent 60%), linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 24px;
+    align-items: center;
+    padding: 24px 28px;
+  }
+  .b-7 h3 { font-size: 26px; }
+  .b-7 .timeline { display: flex; gap: 6px; align-items: flex-end; height: 80px; }
+  .b-7 .timeline .bar {
+    flex: 1; border-radius: 4px;
+    background: linear-gradient(180deg, var(--violet-2), var(--violet));
+    opacity: 0.85;
+    animation: timebar 2.4s ease-in-out infinite;
+  }
+  @keyframes timebar { 0%,100%{transform: scaleY(0.4); transform-origin: bottom;} 50%{transform: scaleY(1); transform-origin: bottom;} }
+
+  /* HOW IT WORKS */
+  .steps {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 14px; margin-top: 56px;
+    counter-reset: step;
+  }
+  @media (max-width: 900px) { .steps { grid-template-columns: 1fr; } }
+  .step {
+    position: relative;
+    padding: 32px 26px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    overflow: hidden;
+  }
+  .step::after {
+    content: ''; position: absolute; top: 0; left: 0; height: 1px; width: 100%;
+    background: linear-gradient(90deg, transparent, var(--violet), transparent);
+    opacity: 0.5;
+  }
+  .step .num {
+    font-family: var(--display); font-size: 14px; font-weight: 600;
+    color: var(--violet-2);
+    margin-bottom: 14px;
+  }
+  .step .num::before { content: '0' counter(step) ' / 03'; counter-increment: step; }
+  .step h3 { font-family: var(--display); font-size: 22px; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 10px; }
+  .step p { font-size: 14.5px; color: var(--text-muted); line-height: 1.55; }
+  .step .tip { margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--border); font-size: 13px; color: var(--text-dim); }
+
+  /* CTA BANNER */
+  .cta-banner {
+    margin: 60px 0;
+    padding: 80px 60px;
+    border-radius: 32px;
+    background: 
+      radial-gradient(80% 120% at 0% 0%, rgba(145,70,255,0.35), transparent 50%),
+      radial-gradient(60% 100% at 100% 100%, rgba(255,79,184,0.25), transparent 50%),
+      linear-gradient(180deg, #1a1133 0%, #0d0820 100%);
+    border: 1px solid var(--border-strong);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-banner::before {
+    content: ''; position: absolute; inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+    background-size: 24px 24px;
+    mask-image: radial-gradient(ellipse at center, black, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-banner h2 { font-family: var(--display); font-size: clamp(36px, 4.5vw, 56px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; max-width: 800px; margin: 0 auto; }
+  .cta-banner h2 .gradient { background: linear-gradient(120deg, #B68CFF, #FF4FB8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .cta-banner p { font-size: 17px; color: var(--text-muted); margin-top: 18px; max-width: 540px; margin-left: auto; margin-right: auto; }
+  .cta-banner .cta-btns { margin-top: 36px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  @media (max-width: 700px) { .cta-banner { padding: 50px 24px; } }
+
+  /* FAQ */
+  .faq-list { margin-top: 56px; max-width: 880px; }
+  .faq-item {
+    border-top: 1px solid var(--border);
+    padding: 22px 0;
+    cursor: pointer;
+  }
+  .faq-item:last-child { border-bottom: 1px solid var(--border); }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center; gap: 20px;
+    font-family: var(--display); font-size: 19px; font-weight: 500; letter-spacing: -0.01em;
+  }
+  .faq-q .plus {
+    width: 28px; height: 28px; border-radius: 50%;
+    border: 1px solid var(--border-strong);
+    display: grid; place-items: center;
+    flex-shrink: 0;
+    transition: transform .3s, background .3s;
+    font-size: 16px; line-height: 1;
+  }
+  .faq-item.open .faq-q .plus { transform: rotate(45deg); background: var(--violet); border-color: var(--violet); }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    transition: max-height .4s ease, margin-top .4s ease;
+    color: var(--text-muted); font-size: 15.5px; line-height: 1.6;
+  }
+  .faq-item.open .faq-a { max-height: 300px; margin-top: 14px; }
+
+  /* FOOTER */
+  footer {
+    padding: 60px 0 40px;
+    border-top: 1px solid var(--border);
+    margin-top: 80px;
+    position: relative; z-index: 5;
+  }
+  .footer-grid { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+  @media (max-width: 720px) { .footer-grid { flex-direction: column; align-items: flex-start; gap: 18px; } footer .links { gap: 14px 22px; } }
+  .footer-brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; }
+  .footer-brand img { width: 26px; height: 26px; }
+  footer .links { display: flex; gap: 24px; flex-wrap: wrap; }
+  footer .links a { color: var(--text-muted); text-decoration: none; font-size: 14px; transition: color .2s; }
+  footer .links a:hover { color: var(--text); }
+  .copy { font-size: 13px; color: var(--text-dim); margin-top: 36px; text-align: center; padding-top: 24px; border-top: 1px solid var(--border); }
+
+  /* Reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s, transform .8s; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* Selection */
+  ::selection { background: rgba(145,70,255,0.4); color: white; }
+</style>
+</head>
+<body>
+
+<div class="atmosphere"><div class="blob3"></div></div>
+<div class="grid-overlay"></div>
+<div class="noise"></div>
+<div class="progress" id="progress"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">
+    <img src="images/logo.png" alt="StreamPulse logo">
+    <span>StreamPulse</span>
+  </div>
+  <div class="nav-links">
+    <a href="#features" data-i18n="nav.features">Fonctionnalités</a>
+    <a href="#how" data-i18n="nav.workflow">Workflow</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  </div>
+  <div class="nav-actions">
+    <div class="lang-pill">
+      <select id="lang">
+        <option value="fr">🇫🇷 FR</option>
+        <option value="en">🇬🇧 EN</option>
+      </select>
+    </div>
+    <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      <span data-i18n="nav.install">Installer</span>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          <span data-i18n="hero.eyebrow">Version 2.0 · Twitch · Kick · DLive</span>
+          <span class="num">v2.0</span>
+        </div>
+        <h1>
+          <span class="gradient" data-i18n="hero.h1a">Ne ratez plus</span><br>
+          <span data-i18n="hero.h1b">un seul live</span><br>
+          <em data-i18n="hero.h1c">de vos streamers favoris.</em>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub">
+          Notifications instantanées, points de chaîne automatiques, latence optimisée et tableau de bord unifié pour Twitch, Kick et DLive. Tout. Dans une seule extension Chrome.
+        </p>
+        <div class="hero-cta">
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+            <span data-i18n="hero.cta">Ajouter à Chrome — Gratuit</span>
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div class="stat">
+            <div class="num">4.8 ★</div>
+            <div class="lbl" data-i18n="hero.rating">Note moyenne</div>
+          </div>
+          <div class="sep"></div>
+          <div class="stat">
+            <div class="num" data-i18n="hero.free">100% gratuit</div>
+            <div class="lbl" data-i18n="hero.freeSub">Pas de pub, pas de tracking</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mockup reveal">
+        <div class="mockup-wrap">
+          <div class="mockup-glow"></div>
+          <div class="mockup-shot">
+            <img src="images/extension-screenshot.png" alt="Aperçu de l'extension StreamPulse" />
+          </div>
+        </div>
+
+        <div class="badge-pop">
+          <div class="bp-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><circle cx="12" cy="13" r="7"/></svg>
+          </div>
+          <div>
+            <div class="bp-num">+ 50 pts</div>
+            <div class="bp-lbl" data-i18n="hero.badge">récupérés auto</div>
+          </div>
+        </div>
+
+        <div class="notif-pop">
+          <div class="head">
+            <img src="images/logo.png" alt="">
+            <div class="ttl">StreamPulse</div>
+            <div class="now" data-i18n="hero.now">à l'instant</div>
+          </div>
+          <div class="body">
+            <p data-i18n-html="hero.notif"><strong>aminematue</strong> vient de lancer un live<br>· Just Chatting</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="container">
+    <div class="marquee-label" data-i18n="marquee.label">Compatible avec votre écosystème</div>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span class="marquee-item">TWITCH<span class="dot"></span></span>
+      <span class="marquee-item">KICK<span class="dot"></span></span>
+      <span class="marquee-item">DLIVE<span class="dot"></span></span>
+      <span class="marquee-item">CHROME<span class="dot"></span></span>
+      <span class="marquee-item">EDGE<span class="dot"></span></span>
+      <span class="marquee-item">BRAVE<span class="dot"></span></span>
+      <span class="marquee-item">OPERA<span class="dot"></span></span>
+      <span class="marquee-item">TWITCH<span class="dot"></span></span>
+      <span class="marquee-item">KICK<span class="dot"></span></span>
+      <span class="marquee-item">DLIVE<span class="dot"></span></span>
+      <span class="marquee-item">CHROME<span class="dot"></span></span>
+      <span class="marquee-item">EDGE<span class="dot"></span></span>
+      <span class="marquee-item">BRAVE<span class="dot"></span></span>
+      <span class="marquee-item">OPERA<span class="dot"></span></span>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES (BENTO) -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="feat.eyebrow">Fonctionnalités</span>
+      <h2 data-i18n-html="feat.title">Tout ce qu'il faut pour suivre vos lives, <em>rien de plus.</em></h2>
+      <p class="lede" data-i18n="feat.lede">Une extension légère, taillée pour la communauté streaming. Pensée pour rester invisible — jusqu'à ce que vous en ayez besoin.</p>
+    </div>
+
+    <div class="bento">
+      <!-- Big card: notifications -->
+      <article class="bento-card b-1 reveal">
+        <div class="head">
+          <span class="num">01 / Notifications</span>
+        </div>
+        <div>
+          <h3 data-i18n-html="feat.b1.title">Alertes en temps réel,<br>sonores et discrètes.</h3>
+          <p style="margin-top:10px;max-width:400px;" data-i18n="feat.b1.desc">Soyez prévenu à la seconde près quand un de vos streamers démarre. Son personnalisable, badge sur l'icône, fenêtre native.</p>
+        </div>
+        <div class="visual">
+          <div class="chrome-toast featured">
+            <div class="ct-icon"><img src="images/streamer-aminematue.png" alt=""></div>
+            <div class="ct-body">
+              <div class="ct-title"><span data-i18n="feat.b1.live1">aminematue est en live</span> <span class="src">streampulse.fr</span></div>
+              <div class="ct-msg" data-i18n="feat.b1.msg1">Just Chatting · Twitch · à l'instant</div>
+            </div>
+            <div class="ct-close">×</div>
+          </div>
+          <div class="chrome-toast">
+            <div class="ct-icon"><img src="images/streamer-jltomy-real.png" alt=""></div>
+            <div class="ct-body">
+              <div class="ct-title"><span data-i18n="feat.b1.live2">JLTomy est en live</span> <span class="src">streampulse.fr</span></div>
+              <div class="ct-msg">Grand Theft Auto V · Twitch</div>
+            </div>
+            <div class="ct-close">×</div>
+          </div>
+          <div class="chrome-toast">
+            <div class="ct-icon"><img src="images/streamer-kaatsup.png" alt=""></div>
+            <div class="ct-body">
+              <div class="ct-title"><span data-i18n="feat.b1.live3">Kaatsup est en live</span> <span class="src">streampulse.fr</span></div>
+              <div class="ct-msg">Just Chatting · Twitch</div>
+            </div>
+            <div class="ct-close">×</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Auto points -->
+      <article class="bento-card b-2 reveal">
+        <div class="head">
+          <span class="num">02 / Channel Points</span>
+        </div>
+        <div>
+          <h3 data-i18n-html="feat.b2.title">Récupération auto<br>des points de chaîne.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b2.desc">Plus jamais besoin de cliquer. Même tab fermée.</p>
+        </div>
+        <div class="visual">
+          <div class="points-num">+12 480</div>
+          <div class="points-info" data-i18n-html="feat.b2.info">points cumulés<br><strong>↑ 312%</strong> ce mois</div>
+        </div>
+      </article>
+
+      <!-- Latency -->
+      <article class="bento-card b-3 reveal">
+        <div class="head">
+          <span class="num" data-i18n="feat.b3.eyebrow">03 / Latence</span>
+        </div>
+        <div>
+          <h3 data-i18n="feat.b3.title">Au plus proche du direct.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b3.desc">Player ajusté automatiquement, heure réelle affichée.</p>
+        </div>
+        <div class="visual">
+          <div class="gauge">
+            <svg viewBox="0 0 180 100">
+              <path d="M 20 90 A 70 70 0 0 1 160 90" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8" stroke-linecap="round"/>
+              <path d="M 20 90 A 70 70 0 0 1 130 30" fill="none" stroke="url(#gauge)" stroke-width="8" stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="gauge" x1="0" x2="1">
+                  <stop offset="0" stop-color="#9146FF"/>
+                  <stop offset="1" stop-color="#FF4FB8"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="gauge-val">0.8<span class="u">s</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Multi-platform -->
+      <article class="bento-card b-4 reveal">
+        <div class="head"><span class="num" data-i18n="feat.b4.eyebrow">04 / Plateformes</span></div>
+        <div>
+          <h3>Twitch.<br>Kick.<br>DLive.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b4.desc">Une extension. Tous vos créateurs.</p>
+        </div>
+        <div class="platforms">
+          <span class="pf-pill"><span class="ico" style="background:#9146FF"></span>Twitch</span>
+          <span class="pf-pill"><span class="ico" style="background:#53FB31"></span>Kick</span>
+          <span class="pf-pill"><span class="ico" style="background:#FFA94D"></span>DLive</span>
+        </div>
+      </article>
+
+      <!-- Auto-refresh -->
+      <article class="bento-card b-5 reveal">
+        <div class="head"><span class="num">05 / Auto-refresh</span></div>
+        <div>
+          <h3 data-i18n="feat.b5.title">Recharge auto sur erreur.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b5.desc">#1000, #2000, #3000 — pris en charge.</p>
+        </div>
+        <div class="ico-refresh">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 12a9 9 0 1 1-3-6.7"/><polyline points="21 3 21 9 15 9"/></svg>
+        </div>
+      </article>
+
+      <!-- Filtering -->
+      <article class="bento-card b-6 reveal">
+        <div class="head"><span class="num" data-i18n="feat.b6.eyebrow">06 / Filtrage</span></div>
+        <div>
+          <h3 data-i18n="feat.b6.title">Bloquez le bruit.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b6.desc">Mots-clés, utilisateurs : invisibles.</p>
+        </div>
+        <div class="filter-tags">
+          <span class="ftag bad">spoiler</span>
+          <span class="ftag bad">@bot_xyz</span>
+          <span class="ftag ok" data-i18n="feat.b6.ok">clean feed</span>
+        </div>
+      </article>
+
+      <!-- Wide -->
+      <article class="bento-card b-7 reveal">
+        <div>
+          <span class="num" data-i18n="feat.b7.eyebrow">07 / Tableau de bord</span>
+          <h3 style="margin-top:10px;" data-i18n="feat.b7.title">Tous vos streamers, en un coup d'œil.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b7.desc">Importez vos abonnements Twitch en un clic, ajoutez manuellement, organisez. Pas de pub, pas de tracking, pas de compte requis.</p>
+        </div>
+        <div class="timeline">
+          <div class="bar" style="animation-delay: 0s"></div>
+          <div class="bar" style="animation-delay: 0.1s"></div>
+          <div class="bar" style="animation-delay: 0.2s"></div>
+          <div class="bar" style="animation-delay: 0.3s"></div>
+          <div class="bar" style="animation-delay: 0.4s"></div>
+          <div class="bar" style="animation-delay: 0.5s"></div>
+          <div class="bar" style="animation-delay: 0.6s"></div>
+          <div class="bar" style="animation-delay: 0.7s"></div>
+          <div class="bar" style="animation-delay: 0.8s"></div>
+          <div class="bar" style="animation-delay: 0.9s"></div>
+          <div class="bar" style="animation-delay: 1s"></div>
+          <div class="bar" style="animation-delay: 1.1s"></div>
+          <div class="bar" style="animation-delay: 1.2s"></div>
+          <div class="bar" style="animation-delay: 1.3s"></div>
+          <div class="bar" style="animation-delay: 1.4s"></div>
+          <div class="bar" style="animation-delay: 1.5s"></div>
+          <div class="bar" style="animation-delay: 1.6s"></div>
+          <div class="bar" style="animation-delay: 1.7s"></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="how.eyebrow">Workflow</span>
+      <h2 data-i18n-html="how.title">Trois étapes. <em>Une minute.</em></h2>
+      <p class="lede" data-i18n="how.lede">Aucune configuration complexe. Aucune création de compte. Vous installez, vous importez, vous oubliez.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal">
+        <div class="num"></div>
+        <h3 data-i18n="how.s1.title">Installez l'extension</h3>
+        <p data-i18n="how.s1.desc">Disponible sur le Chrome Web Store. Compatible Chrome, Edge, Brave, Opera et tout navigateur Chromium.</p>
+        <div class="tip" data-i18n="how.s1.tip">→ Téléchargement direct, 1 clic</div>
+      </article>
+      <article class="step reveal">
+        <div class="num"></div>
+        <h3 data-i18n="how.s2.title">Importez vos streamers</h3>
+        <p data-i18n="how.s2.desc">Connectez Twitch pour synchroniser vos abonnements. Ou ajoutez manuellement Kick, DLive, et plus.</p>
+        <div class="tip" data-i18n="how.s2.tip">→ Auto ou manuel — vous choisissez</div>
+      </article>
+      <article class="step reveal">
+        <div class="num"></div>
+        <h3 data-i18n="how.s3.title">Profitez, en arrière-plan</h3>
+        <p data-i18n="how.s3.desc">Notifications, points, latence : tout fonctionne automatiquement. Réglages disponibles à tout moment.</p>
+        <div class="tip" data-i18n="how.s3.tip">→ Activez ou désactivez chaque module</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding: 0;">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2 data-i18n-html="cta.title">Prêt à <span class="gradient">refaire l'expérience</span> de vos lives ?</h2>
+      <p data-i18n="cta.desc">Installez StreamPulse en un clic. Gratuit, sans tracking, sans compte.</p>
+      <div class="cta-btns">
+        <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+          <span data-i18n="cta.btn1">Télécharger sur Chrome</span>
+        </a>
+        <a href="#faq" class="btn-secondary" data-i18n="cta.btn2">Lire la FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 data-i18n-html="faq.title">Questions <em>fréquentes.</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q1">Est-ce que StreamPulse est gratuit ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a1">Oui, 100% gratuit et le restera. Aucune fonctionnalité n'est verrouillée derrière un paywall, aucun abonnement, aucun frais caché.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q2">Quelles plateformes sont supportées ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a2">Twitch (avec toutes les fonctionnalités), Kick et DLive (suivi de live + notifications). D'autres plateformes en cours d'étude.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q3">Les points sont-ils récupérés en arrière-plan ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a3">Oui. StreamPulse récupère automatiquement vos points de chaîne dès qu'ils sont disponibles, même sans onglet Twitch ouvert. Un compteur intégré vous montre le total.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Est-ce gourmand en ressources ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Non. L'extension est optimisée — debouncing, cache intelligent, architecture légère. L'empreinte mémoire et CPU est minimale.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">Puis-je désactiver certaines fonctionnalités ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">Absolument. Chaque module (notifications, points, auto-refresh, filtrage) est activable / désactivable individuellement depuis les paramètres.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">Mes données sont-elles sécurisées ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse ne collecte aucune donnée personnelle. Tout est stocké localement dans votre navigateur. Aucun transfert vers nos serveurs ou tiers.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="">
+        <span>StreamPulse</span>
+      </div>
+      <div class="links">
+        <a href="privacy.html" data-i18n="foot.privacy">Politique de confidentialité</a>
+        <a href="terms.html" data-i18n="foot.terms">Conditions d'utilisation</a>
+        <a href="mailto:contact@streampulse.fr">contact@streampulse.fr</a>
+      </div>
+    </div>
+    <div class="copy" data-i18n-html="foot.copy">© <span id="year"></span> StreamPulse — Extension créée par AlexisAMZ.</div>
+  </div>
+</footer>
+
+<script>
+  // i18n
+  const I18N = {
+    fr: {
+      "nav.features": "Fonctionnalités",
+      "nav.workflow": "Workflow",
+      "nav.faq": "FAQ",
+      "nav.install": "Installer",
+      "hero.eyebrow": "Version 2.0 · Twitch · Kick · DLive",
+      "hero.h1a": "Ne ratez plus",
+      "hero.h1b": "un seul live",
+      "hero.h1c": "de vos streamers favoris.",
+      "hero.sub": "Notifications instantanées, points de chaîne automatiques, latence optimisée et tableau de bord unifié pour Twitch, Kick et DLive. Tout. Dans une seule extension Chrome.",
+      "hero.cta": "Ajouter à Chrome — Gratuit",
+      "hero.rating": "Note moyenne",
+      "hero.free": "100% gratuit",
+      "hero.freeSub": "Pas de pub, pas de tracking",
+      "hero.badge": "récupérés auto",
+      "hero.now": "à l'instant",
+      "hero.notif": "<strong>aminematue</strong> vient de lancer un live<br>· Just Chatting",
+      "marquee.label": "Compatible avec votre écosystème",
+      "feat.eyebrow": "Fonctionnalités",
+      "feat.title": "Tout ce qu'il faut pour suivre vos lives, <em>rien de plus.</em>",
+      "feat.lede": "Une extension légère, taillée pour la communauté streaming. Pensée pour rester invisible — jusqu'à ce que vous en ayez besoin.",
+      "feat.b1.title": "Alertes en temps réel,<br>sonores et discrètes.",
+      "feat.b1.desc": "Soyez prévenu à la seconde près quand un de vos streamers démarre. Son personnalisable, badge sur l'icône, fenêtre native.",
+      "feat.b1.live1": "aminematue est en live",
+      "feat.b1.msg1": "Just Chatting · Twitch · à l'instant",
+      "feat.b1.live2": "JLTomy est en live",
+      "feat.b1.live3": "Kaatsup est en live",
+      "feat.b2.title": "Récupération auto<br>des points de chaîne.",
+      "feat.b2.desc": "Plus jamais besoin de cliquer. Même tab fermée.",
+      "feat.b2.info": "points cumulés<br><strong>↑ 312%</strong> ce mois",
+      "feat.b3.eyebrow": "03 / Latence",
+      "feat.b3.title": "Au plus proche du direct.",
+      "feat.b3.desc": "Player ajusté automatiquement, heure réelle affichée.",
+      "feat.b4.eyebrow": "04 / Plateformes",
+      "feat.b4.desc": "Une extension. Tous vos créateurs.",
+      "feat.b5.title": "Recharge auto sur erreur.",
+      "feat.b5.desc": "#1000, #2000, #3000 — pris en charge.",
+      "feat.b6.eyebrow": "06 / Filtrage",
+      "feat.b6.title": "Bloquez le bruit.",
+      "feat.b6.desc": "Mots-clés, utilisateurs : invisibles.",
+      "feat.b6.ok": "clean feed",
+      "feat.b7.eyebrow": "07 / Tableau de bord",
+      "feat.b7.title": "Tous vos streamers, en un coup d'œil.",
+      "feat.b7.desc": "Importez vos abonnements Twitch en un clic, ajoutez manuellement, organisez. Pas de pub, pas de tracking, pas de compte requis.",
+      "how.eyebrow": "Workflow",
+      "how.title": "Trois étapes. <em>Une minute.</em>",
+      "how.lede": "Aucune configuration complexe. Aucune création de compte. Vous installez, vous importez, vous oubliez.",
+      "how.s1.title": "Installez l'extension",
+      "how.s1.desc": "Disponible sur le Chrome Web Store. Compatible Chrome, Edge, Brave, Opera et tout navigateur Chromium.",
+      "how.s1.tip": "→ Téléchargement direct, 1 clic",
+      "how.s2.title": "Importez vos streamers",
+      "how.s2.desc": "Connectez Twitch pour synchroniser vos abonnements. Ou ajoutez manuellement Kick, DLive, et plus.",
+      "how.s2.tip": "→ Auto ou manuel — vous choisissez",
+      "how.s3.title": "Profitez, en arrière-plan",
+      "how.s3.desc": "Notifications, points, latence : tout fonctionne automatiquement. Réglages disponibles à tout moment.",
+      "how.s3.tip": "→ Activez ou désactivez chaque module",
+      "cta.title": "Prêt à <span class=\"gradient\">refaire l'expérience</span> de vos lives ?",
+      "cta.desc": "Installez StreamPulse en un clic. Gratuit, sans tracking, sans compte.",
+      "cta.btn1": "Télécharger sur Chrome",
+      "cta.btn2": "Lire la FAQ",
+      "faq.title": "Questions <em>fréquentes.</em>",
+      "faq.q1": "Est-ce que StreamPulse est gratuit ?",
+      "faq.a1": "Oui, 100% gratuit et le restera. Aucune fonctionnalité n'est verrouillée derrière un paywall, aucun abonnement, aucun frais caché.",
+      "faq.q2": "Quelles plateformes sont supportées ?",
+      "faq.a2": "Twitch (avec toutes les fonctionnalités), Kick et DLive (suivi de live + notifications). D'autres plateformes en cours d'étude.",
+      "faq.q3": "Les points sont-ils récupérés en arrière-plan ?",
+      "faq.a3": "Oui. StreamPulse récupère automatiquement vos points de chaîne dès qu'ils sont disponibles, même sans onglet Twitch ouvert. Un compteur intégré vous montre le total.",
+      "faq.q4": "Est-ce gourmand en ressources ?",
+      "faq.a4": "Non. L'extension est optimisée — debouncing, cache intelligent, architecture légère. L'empreinte mémoire et CPU est minimale.",
+      "faq.q5": "Puis-je désactiver certaines fonctionnalités ?",
+      "faq.a5": "Absolument. Chaque module (notifications, points, auto-refresh, filtrage) est activable / désactivable individuellement depuis les paramètres.",
+      "faq.q6": "Mes données sont-elles sécurisées ?",
+      "faq.a6": "StreamPulse ne collecte aucune donnée personnelle. Tout est stocké localement dans votre navigateur. Aucun transfert vers nos serveurs ou tiers.",
+      "foot.privacy": "Politique de confidentialité",
+      "foot.terms": "Conditions d'utilisation",
+      "foot.copy": "© <span id=\"year\"></span> StreamPulse — Extension créée par AlexisAMZ."
+    },
+    en: {
+      "nav.features": "Features",
+      "nav.workflow": "Workflow",
+      "nav.faq": "FAQ",
+      "nav.install": "Install",
+      "hero.eyebrow": "Version 2.0 · Twitch · Kick · DLive",
+      "hero.h1a": "Never miss",
+      "hero.h1b": "a live again",
+      "hero.h1c": "from your favorite streamers.",
+      "hero.sub": "Instant notifications, automatic channel points, optimized latency and a unified dashboard for Twitch, Kick and DLive. Everything. In a single Chrome extension.",
+      "hero.cta": "Add to Chrome — Free",
+      "hero.rating": "Average rating",
+      "hero.free": "100% free",
+      "hero.freeSub": "No ads, no tracking",
+      "hero.badge": "auto-collected",
+      "hero.now": "just now",
+      "hero.notif": "<strong>aminematue</strong> just went live<br>· Just Chatting",
+      "marquee.label": "Compatible with your ecosystem",
+      "feat.eyebrow": "Features",
+      "feat.title": "Everything you need to follow your lives, <em>nothing more.</em>",
+      "feat.lede": "A lightweight extension, built for the streaming community. Designed to stay invisible — until you need it.",
+      "feat.b1.title": "Real-time alerts,<br>audible and discreet.",
+      "feat.b1.desc": "Get notified the second one of your streamers goes live. Custom sound, icon badge, native window.",
+      "feat.b1.live1": "aminematue is live",
+      "feat.b1.msg1": "Just Chatting · Twitch · just now",
+      "feat.b1.live2": "JLTomy is live",
+      "feat.b1.live3": "Kaatsup is live",
+      "feat.b2.title": "Auto-collect<br>channel points.",
+      "feat.b2.desc": "Never click again. Even with the tab closed.",
+      "feat.b2.info": "points collected<br><strong>↑ 312%</strong> this month",
+      "feat.b3.eyebrow": "03 / Latency",
+      "feat.b3.title": "As close to live as it gets.",
+      "feat.b3.desc": "Player auto-tuned, real-time clock displayed.",
+      "feat.b4.eyebrow": "04 / Platforms",
+      "feat.b4.desc": "One extension. All your creators.",
+      "feat.b5.title": "Auto-reload on error.",
+      "feat.b5.desc": "#1000, #2000, #3000 — handled.",
+      "feat.b6.eyebrow": "06 / Filtering",
+      "feat.b6.title": "Block the noise.",
+      "feat.b6.desc": "Keywords, users: invisible.",
+      "feat.b6.ok": "clean feed",
+      "feat.b7.eyebrow": "07 / Dashboard",
+      "feat.b7.title": "All your streamers, at a glance.",
+      "feat.b7.desc": "Import your Twitch subscriptions in one click, add manually, organize. No ads, no tracking, no account required.",
+      "how.eyebrow": "Workflow",
+      "how.title": "Three steps. <em>One minute.</em>",
+      "how.lede": "No complex setup. No account creation. Install, import, forget.",
+      "how.s1.title": "Install the extension",
+      "how.s1.desc": "Available on the Chrome Web Store. Compatible with Chrome, Edge, Brave, Opera and any Chromium browser.",
+      "how.s1.tip": "→ Direct download, 1 click",
+      "how.s2.title": "Import your streamers",
+      "how.s2.desc": "Connect Twitch to sync your subscriptions. Or manually add Kick, DLive, and more.",
+      "how.s2.tip": "→ Auto or manual — your call",
+      "how.s3.title": "Enjoy, in the background",
+      "how.s3.desc": "Notifications, points, latency: everything runs automatically. Settings available anytime.",
+      "how.s3.tip": "→ Toggle each module on or off",
+      "cta.title": "Ready to <span class=\"gradient\">redo the experience</span> of your lives?",
+      "cta.desc": "Install StreamPulse in one click. Free, no tracking, no account.",
+      "cta.btn1": "Download on Chrome",
+      "cta.btn2": "Read the FAQ",
+      "faq.title": "Frequently <em>asked.</em>",
+      "faq.q1": "Is StreamPulse free?",
+      "faq.a1": "Yes, 100% free and it will stay that way. No feature is locked behind a paywall, no subscription, no hidden fees.",
+      "faq.q2": "Which platforms are supported?",
+      "faq.a2": "Twitch (with all features), Kick and DLive (live tracking + notifications). More platforms under consideration.",
+      "faq.q3": "Are points collected in the background?",
+      "faq.a3": "Yes. StreamPulse automatically collects your channel points as soon as they're available, even without a Twitch tab open. A built-in counter shows you the total.",
+      "faq.q4": "Is it resource-heavy?",
+      "faq.a4": "No. The extension is optimized — debouncing, smart cache, lightweight architecture. Memory and CPU footprint is minimal.",
+      "faq.q5": "Can I disable certain features?",
+      "faq.a5": "Absolutely. Each module (notifications, points, auto-refresh, filtering) can be toggled on or off individually from the settings.",
+      "faq.q6": "Is my data secure?",
+      "faq.a6": "StreamPulse collects no personal data. Everything is stored locally in your browser. No transfer to our servers or third parties.",
+      "foot.privacy": "Privacy policy",
+      "foot.terms": "Terms of use",
+      "foot.copy": "© <span id=\"year\"></span> StreamPulse — Extension by AlexisAMZ."
+    }
+  };
+
+  function applyLang(lang) {
+    const dict = I18N[lang] || I18N.fr;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] != null) el.textContent = dict[key];
+    });
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.getAttribute('data-i18n-html');
+      if (dict[key] != null) el.innerHTML = dict[key];
+    });
+    // Re-set year (footer copy uses innerHTML)
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+    try { localStorage.setItem('sp_lang', lang); } catch(e) {}
+  }
+
+  const langSel = document.getElementById('lang');
+  let initLang = 'fr';
+  try { initLang = localStorage.getItem('sp_lang') || 'fr'; } catch(e) {}
+  if (langSel) {
+    langSel.value = initLang;
+    langSel.addEventListener('change', () => applyLang(langSel.value));
+  }
+  applyLang(initLang);
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Progress bar
+  const progress = document.getElementById('progress');
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    progress.style.width = pct + '%';
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // FAQ
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => item.classList.toggle('open'));
+  });
+
+  // Subtle 3D hover on mockup
+  const mockup = document.querySelector('.mockup-wrap');
+  const hero = document.querySelector('.mockup');
+  if (mockup && hero) {
+    hero.addEventListener('mousemove', (e) => {
+      const r = hero.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      mockup.style.transform = `rotateY(${-6 + x * 8}deg) rotateX(${4 - y * 8}deg)`;
+    });
+    hero.addEventListener('mouseleave', () => {
+      mockup.style.transform = '';
+    });
+  }
+</script>
+
+</body>
+</html>
