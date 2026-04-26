@@ -1340,7 +1340,17 @@
 
   const langSel = document.getElementById('lang');
   let initLang = 'fr';
-  try { initLang = localStorage.getItem('sp_lang') || 'fr'; } catch(e) {}
+  try {
+    const saved = localStorage.getItem('sp_lang');
+    if (saved) {
+      initLang = saved;
+    } else {
+      const browserLang = navigator.language || navigator.userLanguage;
+      if (browserLang && browserLang.toLowerCase().startsWith('en')) {
+        initLang = 'en';
+      }
+    }
+  } catch(e) {}
   if (langSel) {
     langSel.value = initLang;
     langSel.addEventListener('change', () => applyLang(langSel.value));
