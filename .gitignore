@@ -25,3 +25,6 @@ npm-debug.log
 backup/
 *.backup
 deploy-ftp.sh
+
+# Firebase
+.firebase/
