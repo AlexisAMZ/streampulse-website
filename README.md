@@ -10,7 +10,7 @@
 [**Download StreamPulse on the Chrome Web Store**](https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh)
 
 ## 📌 Overview
-This repository contains the source code for the [StreamPulse](https://streampulse.fr) landing page. StreamPulse is a unified browser extension that helps users master Twitch, Kick, and DLive by providing real-time notifications, automatic channel points farming, and a clean interface.
+This repository contains the source code for the [StreamPulse](https://streampulse.fr) landing page. StreamPulse is a unified browser extension that helps users master Twitch and Kick by providing real-time notifications, automatic channel points farming, and a clean interface.
 
 ## ✨ Tech Stack
 - **HTML5 & CSS3**: Pure, semantic HTML with a custom, modern CSS architecture.

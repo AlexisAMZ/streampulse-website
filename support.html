@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StreamPulse – Assistance</title>
+    <meta
+      name="description"
+      content="Centre d'assistance StreamPulse – consultez la FAQ ou contactez l'équipe pour toute question, bug ou suggestion."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      /* Support-page specifics — reuse the site's design tokens */
+      .support-narrow {
+        width: min(720px, 92vw);
+        margin: 0 auto;
+      }
+      .support-section {
+        padding: 2rem 0 4rem;
+      }
+      .support-section h2 {
+        text-align: center;
+        margin: 0 0 2.2rem;
+        font-size: 2.2rem;
+        letter-spacing: -0.01em;
+      }
+      .support-form-card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 22px;
+        padding: clamp(1.6rem, 4vw, 2.4rem);
+        box-shadow: 0 26px 48px rgba(0, 0, 0, 0.32);
+      }
+      .support-field {
+        margin-bottom: 1.25rem;
+      }
+      .support-field label {
+        display: block;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--color-text);
+        margin-bottom: 0.5rem;
+      }
+      .support-field label .req {
+        color: var(--color-highlight);
+      }
+      .support-field input,
+      .support-field select,
+      .support-field textarea {
+        width: 100%;
+        font-family: inherit;
+        font-size: 1rem;
+        color: var(--color-text);
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid var(--color-border);
+        border-radius: 14px;
+        padding: 0.85rem 1rem;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .support-field textarea {
+        resize: vertical;
+        min-height: 150px;
+      }
+      .support-field input::placeholder,
+      .support-field textarea::placeholder {
+        color: var(--color-muted);
+      }
+      .support-field input:focus,
+      .support-field select:focus,
+      .support-field textarea:focus {
+        outline: none;
+        border-color: rgba(139, 123, 255, 0.7);
+        box-shadow: 0 0 0 3px rgba(139, 123, 255, 0.25);
+      }
+      .support-field select {
+        appearance: none;
+        cursor: pointer;
+        padding-right: 2.6rem;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238b7bff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+      }
+      .support-submit {
+        width: 100%;
+        cursor: pointer;
+        font-family: inherit;
+        margin-top: 0.4rem;
+      }
+      .support-note {
+        margin: 1rem 0 0;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--color-muted);
+      }
+      .support-note a {
+        color: var(--color-highlight);
+      }
+      .support-confirm {
+        display: none;
+        gap: 0.75rem;
+        align-items: flex-start;
+        border: 1px solid rgba(139, 123, 255, 0.45);
+        background: rgba(139, 123, 255, 0.12);
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+        margin-bottom: 1.6rem;
+        font-size: 0.95rem;
+        color: var(--color-text);
+      }
+      .support-confirm.show {
+        display: flex;
+      }
+      .support-confirm strong {
+        color: var(--color-accent);
+      }
+    </style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="index.html" class="branding-link">
+            <img src="images/logo.png" alt="Logo StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html#features">Fonctionnalités</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="privacy.html">Confidentialité</a>
+          <a href="terms.html">Conditions d’utilisation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="legal-hero">
+        <div class="container">
+          <h1>Centre d’assistance</h1>
+          <p>
+            Une question, un bug ou une suggestion à propos de StreamPulse ?
+            Consultez la FAQ ci-dessous ou écrivez-nous directement, nous vous
+            répondrons au plus vite.
+          </p>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container support-narrow">
+          <h2>Questions fréquentes</h2>
+
+          <div class="faq-item">
+            <h3>Comment ajouter un streamer à ma liste ?</h3>
+            <p>
+              Ouvrez l’extension depuis la barre d’outils, saisissez le nom de
+              la chaîne (Twitch ou Kick) dans le champ d’ajout, puis
+              validez. Son statut live s’affiche aussitôt.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Mes données sont-elles collectées ?</h3>
+            <p>
+              Non. Vos préférences, votre temps de visionnage et vos points
+              restent stockés localement dans votre navigateur. Seuls les noms
+              des chaînes suivies sont envoyés aux APIs publiques de Twitch
+              et Kick pour vérifier leur statut. Détails dans notre
+              <a href="privacy.html">politique de confidentialité</a>.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Une chaîne n’apparaît pas comme « en live » ?</h3>
+            <p>
+              Vérifiez l’orthographe exacte du nom de la chaîne et patientez
+              quelques secondes le temps de l’actualisation. Si le problème
+              persiste, contactez-nous via le formulaire ci-dessous en
+              précisant la plateforme et le nom de la chaîne.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>StreamPulse est-il gratuit ?</h3>
+            <p>Oui, totalement : 100 % gratuit, sans compte et sans publicité.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-section">
+        <div class="container support-narrow">
+          <h2>Nous contacter</h2>
+
+          <div class="support-form-card">
+            <div class="support-confirm" id="confirm" role="status" aria-live="polite">
+              <span aria-hidden="true">✓</span>
+              <div>
+                <strong>Merci !</strong> Votre message est prêt : votre logiciel
+                de messagerie vient de s’ouvrir pour l’envoyer à
+                <strong>contact@alexisamz.fr</strong>. Si rien ne s’est passé,
+                écrivez-nous directement à cette adresse.
+              </div>
+            </div>
+
+            <form id="supportForm" novalidate>
+              <div class="support-field">
+                <label for="name">Nom <span class="req">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required />
+              </div>
+
+              <div class="support-field">
+                <label for="email">E-mail <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="vous@exemple.com" required />
+              </div>
+
+              <div class="support-field">
+                <label for="subject">Sujet</label>
+                <select id="subject" name="subject">
+                  <option value="Question générale">Question générale</option>
+                  <option value="Signaler un bug">Signaler un bug</option>
+                  <option value="Suggestion / fonctionnalité">Suggestion / fonctionnalité</option>
+                  <option value="Confidentialité &amp; données">Confidentialité &amp; données</option>
+                  <option value="Autre">Autre</option>
+                </select>
+              </div>
+
+              <div class="support-field">
+                <label for="message">Message <span class="req">*</span></label>
+                <textarea id="message" name="message" placeholder="Décrivez votre demande en détail…" required></textarea>
+              </div>
+
+              <button type="submit" class="btn primary support-submit">Envoyer le message</button>
+              <p class="support-note">
+                Vous pouvez aussi nous écrire directement à
+                <a href="mailto:contact@alexisamz.fr">contact@alexisamz.fr</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="current-year"></span> StreamPulse. Tous droits réservés.</p>
+        <nav class="footer-links">
+          <a href="privacy.html">Politique de confidentialité</a>
+          <a href="terms.html">Conditions d’utilisation</a>
+          <a href="index.html#download">Télécharger l’extension</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+
+      // No backend yet: fall back to a pre-filled mailto so the form stays
+      // genuinely useful, and show an inline confirmation.
+      (function () {
+        "use strict";
+        var form = document.getElementById("supportForm");
+        var confirm = document.getElementById("confirm");
+        var RECIPIENT = "contact@alexisamz.fr";
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          var name = form.name.value.trim();
+          var email = form.email.value.trim();
+          var subject = form.subject.value;
+          var message = form.message.value.trim();
+
+          var body =
+            "Nom : " + name + "\n" +
+            "E-mail : " + email + "\n" +
+            "Sujet : " + subject + "\n\n" +
+            message;
+
+          window.location.href =
+            "mailto:" + RECIPIENT +
+            "?subject=" + encodeURIComponent("[StreamPulse] " + subject) +
+            "&body=" + encodeURIComponent(body);
+
+          confirm.classList.add("show");
+          confirm.scrollIntoView({ behavior: "smooth", block: "center" });
+          form.reset();
+        });
+      })();
+    </script>
+  </body>
+</html>
