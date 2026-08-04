@@ -30,3 +30,4 @@ deploy-ftp.sh
 .firebase/
 .vercel
 .env*
+.agents/
