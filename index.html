@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StreamPulse — Vivez Twitch & Kick sans rien rater</title>
-<meta name="description" content="Extension Chrome gratuite : notifications instantanées, points automatiques, latence optimisée, multi-plateformes. Suivez vos streamers Twitch et Kick sans rien rater." />
+<title>StreamPulse : Vivez Twitch & Kick sans rien rater</title>
+<meta name="description" content="L'extension Chrome ultime pour les passionnés de streaming : notifications en direct, points de chaîne automatiques, prédictions et tableau de bord tout-en-un." />
 <meta name="keywords" content="StreamPulse, extension Twitch, extension Kick, notifications Twitch, points de chaîne automatiques, auto-claim Twitch, multi-plateformes, latence optimisée" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="AlexisAMZ" />
@@ -13,15 +13,15 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://streampulse.fr/" />
-<meta property="og:title" content="StreamPulse — Vivez Twitch & Kick sans rien rater" />
-<meta property="og:description" content="Extension Chrome gratuite : notifications instantanées, points automatiques, latence optimisée, multi-plateformes." />
-<meta property="og:image" content="https://streampulse.fr/images/logo.png" />
+<meta property="og:title" content="StreamPulse : Vivez Twitch & Kick sans rien rater" />
+<meta property="og:description" content="L'extension Chrome ultime pour les passionnés de streaming : notifications en direct, points de chaîne automatiques, prédictions et tableau de bord tout-en-un." />
+<meta property="og:image" content="https://streampulse.fr/images/extension-screenshot.png" />
 <meta property="og:locale" content="fr_FR" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://streampulse.fr/" />
-<meta name="twitter:title" content="StreamPulse — Vivez Twitch & Kick sans rien rater" />
+<meta name="twitter:title" content="StreamPulse : Vivez Twitch & Kick sans rien rater" />
 <meta name="twitter:description" content="Extension Chrome gratuite : notifications instantanées, points automatiques, latence optimisée, multi-plateformes." />
 <meta name="twitter:image" content="https://streampulse.fr/images/logo.png" />
 
@@ -326,7 +326,7 @@
   @keyframes glowpulse { 0%,100% { opacity: 0.55; } 50% { opacity: 0.85; } }
 
   .badge-pop {
-    top: 24px; left: -32px;
+    top: 120px; left: -32px;
     display: flex; align-items: center; gap: 12px;
     padding: 12px 18px 12px 12px;
     animation: floatPop2 5.5s ease-in-out infinite;
@@ -541,12 +541,15 @@
   .b-5 { grid-column: span 2; }
   .b-6 { grid-column: span 2; }
   .b-7 { grid-column: span 6; grid-row: span 1; }
+  .b-8 { grid-column: span 2; }
+  .b-9 { grid-column: span 2; }
+  .b-10 { grid-column: span 2; }
 
   @media (max-width: 1000px) {
-    .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7 { grid-column: span 2; grid-row: auto; }
+    .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7, .b-8, .b-9, .b-10 { grid-column: span 2; grid-row: auto; }
   }
   @media (max-width: 600px) {
-    .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7 { grid-column: span 1; }
+    .b-1, .b-2, .b-3, .b-4, .b-5, .b-6, .b-7, .b-8, .b-9, .b-10 { grid-column: span 1; }
   }
 
   /* Big card visual — Chrome OS toast notifications */
@@ -795,6 +798,47 @@
   .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s, transform .8s; }
   .reveal.in { opacity: 1; transform: translateY(0); }
 
+  /* Technical DAW/Console Corner Markers */
+  .bg-coords {
+    position: fixed;
+    z-index: 12;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.22);
+    pointer-events: none;
+    text-transform: uppercase;
+  }
+  .bg-coords-tl { top: 24px; left: 32px; }
+  .bg-coords-tr { top: 24px; right: 32px; }
+  .bg-coords-bl { bottom: 24px; left: 32px; }
+  .bg-coords-br { bottom: 24px; right: 32px; }
+  @media (max-width: 900px) { .bg-coords { display: none; } }
+
+  /* Frame Brackets */
+  .frame-brackets {
+    position: relative;
+  }
+  .frame-brackets::before,
+  .frame-brackets::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    pointer-events: none;
+    z-index: 3;
+  }
+  .frame-brackets::before {
+    top: -1px; left: -1px;
+    border-top: 2px solid var(--violet);
+    border-left: 2px solid var(--violet);
+  }
+  .frame-brackets::after {
+    bottom: -1px; right: -1px;
+    border-bottom: 2px solid var(--magenta);
+    border-right: 2px solid var(--magenta);
+  }
+
   /* Selection */
   ::selection { background: rgba(145,70,255,0.4); color: white; }
 </style>
@@ -803,8 +847,15 @@
 
 <div class="atmosphere"><div class="blob3"></div></div>
 <div class="grid-overlay"></div>
+<canvas id="particles" style="position:fixed; inset:0; z-index:2; pointer-events:none;"></canvas>
 <div class="noise"></div>
 <div class="progress" id="progress"></div>
+
+<!-- Coordinate markers (DAW/console vibe) -->
+<span class="bg-coords bg-coords-tl">N · 48°51′24″ · LIVE</span>
+<span class="bg-coords bg-coords-tr">SYS / STREAMPULSE / V2.0</span>
+<span class="bg-coords bg-coords-bl">CH 01 · STREAMPULSE.FR</span>
+<span class="bg-coords bg-coords-br">REC · 0.0 dB · 60FPS</span>
 
 <!-- NAV -->
 <nav class="nav">
@@ -854,7 +905,7 @@
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            <span data-i18n="hero.cta">Ajouter à Chrome — Gratuit</span>
+            <span data-i18n="hero.cta">Ajouter à Chrome (Gratuit)</span>
           </a>
         </div>
         <div class="hero-meta">
@@ -874,7 +925,7 @@
         <div class="mockup-wrap">
           <div class="mockup-glow"></div>
           <div class="mockup-shot">
-            <img src="images/extension-screenshot.png" alt="Aperçu de l'extension StreamPulse" />
+            <img src="images/image.png" alt="Aperçu de l'extension StreamPulse" />
           </div>
         </div>
 
@@ -944,12 +995,12 @@
     <div class="reveal">
       <span class="section-eyebrow" data-i18n="feat.eyebrow">Fonctionnalités</span>
       <h2 data-i18n-html="feat.title">Tout ce qu'il faut pour suivre vos lives, <em>rien de plus.</em></h2>
-      <p class="lede" data-i18n="feat.lede">Une extension légère, taillée pour la communauté streaming. Pensée pour rester invisible — jusqu'à ce que vous en ayez besoin.</p>
+      <p class="lede" data-i18n="feat.lede">Une extension légère, taillée pour la communauté streaming. Pensée pour rester invisible jusqu'à ce que vous en ayez besoin.</p>
     </div>
 
     <div class="bento">
       <!-- Big card: notifications -->
-      <article class="bento-card b-1 reveal">
+      <article class="bento-card frame-brackets b-1 reveal">
         <div class="head">
           <span class="num">01 / Notifications</span>
         </div>
@@ -986,7 +1037,7 @@
       </article>
 
       <!-- Auto points -->
-      <article class="bento-card b-2 reveal">
+      <article class="bento-card frame-brackets b-2 reveal">
         <div class="head">
           <span class="num">02 / Channel Points</span>
         </div>
@@ -1001,7 +1052,7 @@
       </article>
 
       <!-- Latency -->
-      <article class="bento-card b-3 reveal">
+      <article class="bento-card frame-brackets b-3 reveal">
         <div class="head">
           <span class="num" data-i18n="feat.b3.eyebrow">03 / Latence</span>
         </div>
@@ -1027,7 +1078,7 @@
       </article>
 
       <!-- Multi-platform -->
-      <article class="bento-card b-4 reveal">
+      <article class="bento-card frame-brackets b-4 reveal">
         <div class="head"><span class="num" data-i18n="feat.b4.eyebrow">04 / Plateformes</span></div>
         <div>
           <h3>Twitch.<br>Kick.</h3>
@@ -1040,11 +1091,11 @@
       </article>
 
       <!-- Auto-refresh -->
-      <article class="bento-card b-5 reveal">
+      <article class="bento-card frame-brackets b-5 reveal">
         <div class="head"><span class="num">05 / Auto-refresh</span></div>
         <div>
           <h3 data-i18n="feat.b5.title">Recharge auto sur erreur.</h3>
-          <p style="margin-top:8px;" data-i18n="feat.b5.desc">#1000, #2000, #3000 — pris en charge.</p>
+          <p style="margin-top:8px;" data-i18n="feat.b5.desc">#1000, #2000, #3000 : pris en charge.</p>
         </div>
         <div class="ico-refresh">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 12a9 9 0 1 1-3-6.7"/><polyline points="21 3 21 9 15 9"/></svg>
@@ -1052,7 +1103,7 @@
       </article>
 
       <!-- Filtering -->
-      <article class="bento-card b-6 reveal">
+      <article class="bento-card frame-brackets b-6 reveal">
         <div class="head"><span class="num" data-i18n="feat.b6.eyebrow">06 / Filtrage</span></div>
         <div>
           <h3 data-i18n="feat.b6.title">Bloquez le bruit.</h3>
@@ -1066,7 +1117,7 @@
       </article>
 
       <!-- Wide -->
-      <article class="bento-card b-7 reveal">
+      <article class="bento-card frame-brackets b-7 reveal">
         <div>
           <span class="num" data-i18n="feat.b7.eyebrow">07 / Tableau de bord</span>
           <h3 style="margin-top:10px;" data-i18n="feat.b7.title">Tous vos streamers, en un coup d'œil.</h3>
@@ -1093,6 +1144,45 @@
           <div class="bar" style="animation-delay: 1.7s"></div>
         </div>
       </article>
+
+      <!-- Drops & Moments -->
+      <article class="bento-card frame-brackets b-8 reveal">
+        <div class="head"><span class="num">08 / Auto Drops & Moments</span></div>
+        <div>
+          <h3 data-i18n-html="feat.b8.title">Réclamation Drops<br>& Moments Twitch.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b8.desc">Récupération automatique des Drops Twitch et badges Moments pendant votre visionnage.</p>
+        </div>
+        <div class="platforms" style="margin-top:12px;">
+          <span class="pf-pill" style="border-color:rgba(145,70,255,0.4);"><span class="ico" style="background:#FF4FB8"></span>Drops</span>
+          <span class="pf-pill" style="border-color:rgba(79,227,255,0.4);"><span class="ico" style="background:#4FE3FF"></span>Moments</span>
+        </div>
+      </article>
+
+      <!-- Predictions Overlay -->
+      <article class="bento-card frame-brackets b-9 reveal">
+        <div class="head"><span class="num">09 / Widget Prédictions</span></div>
+        <div>
+          <h3 data-i18n-html="feat.b9.title">Overlay flottant<br>Prédictions.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b9.desc">Pariez et votez directement sur le lecteur vidéo sans avoir à ouvrir le chat.</p>
+        </div>
+        <div class="filter-tags">
+          <span class="ftag ok">🔮 Prédiction active</span>
+          <span class="ftag ok">Vote rapide</span>
+        </div>
+      </article>
+
+      <!-- Favicon & Anti-Pause -->
+      <article class="bento-card frame-brackets b-10 reveal">
+        <div class="head"><span class="num">10 / Onglets & Anti-Pause</span></div>
+        <div>
+          <h3 data-i18n-html="feat.b10.title">Avatar streamer<br>& Flux continu.</h3>
+          <p style="margin-top:8px;" data-i18n="feat.b10.desc">Photo du streamer + pastille LIVE sur l'icône de l'onglet. Flux audio/vidéo ininterrompu.</p>
+        </div>
+        <div class="platforms" style="margin-top:12px;">
+          <span class="pf-pill" style="border-color:rgba(255,77,109,0.5);"><span class="ico" style="background:#FF4D6D"></span>🔴 LIVE Dot</span>
+          <span class="pf-pill"><span class="ico" style="background:#44FFB1"></span>Anti-Pause</span>
+        </div>
+      </article>
     </div>
   </div>
 </section>
@@ -1115,8 +1205,7 @@
       <article class="step reveal">
         <div class="num"></div>
         <h3 data-i18n="how.s2.title">Importez vos streamers</h3>
-        <p data-i18n="how.s2.desc">Connectez Twitch pour synchroniser vos abonnements. Ou ajoutez manuellement Kick et plus.</p>
-        <div class="tip" data-i18n="how.s2.tip">→ Auto ou manuel — vous choisissez</div>
+         <div class="tip" data-i18n="how.s2.tip">→ Auto ou manuel : vous choisissez</div>
       </article>
       <article class="step reveal">
         <div class="num"></div>
@@ -1156,7 +1245,7 @@
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q1">Est-ce que StreamPulse est gratuit ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a1">Oui, 100% gratuit et le restera. Aucune fonctionnalité n'est verrouillée derrière un paywall, aucun abonnement, aucun frais caché.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q2">Quelles plateformes sont supportées ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a2">Twitch (avec toutes les fonctionnalités), Kick (suivi de live + notifications). D'autres plateformes en cours d'étude.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q3">Les points sont-ils récupérés en arrière-plan ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a3">Oui. StreamPulse récupère automatiquement vos points de chaîne dès qu'ils sont disponibles, même sans onglet Twitch ouvert. Un compteur intégré vous montre le total.</div></div>
-      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Est-ce gourmand en ressources ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Non. L'extension est optimisée — debouncing, cache intelligent, architecture légère. L'empreinte mémoire et CPU est minimale.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Est-ce gourmand en ressources ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Non. L'extension est optimisée (debouncing, cache intelligent, architecture légère). L'empreinte mémoire et CPU est minimale.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">Puis-je désactiver certaines fonctionnalités ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">Absolument. Chaque module (notifications, points, auto-refresh, filtrage) est activable / désactivable individuellement depuis les paramètres.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">Mes données sont-elles sécurisées ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse ne collecte aucune donnée personnelle. Tout est stocké localement dans votre navigateur. Aucun transfert vers nos serveurs ou tiers.</div></div>
     </div>
@@ -1177,7 +1266,7 @@
         <a href="mailto:contact@streampulse.fr">contact@streampulse.fr</a>
       </div>
     </div>
-    <div class="copy" data-i18n-html="foot.copy">© <span id="year"></span> StreamPulse — Extension créée par AlexisAMZ.</div>
+    <div class="copy" data-i18n-html="foot.copy">© <span id="year"></span> StreamPulse. Extension créée par AlexisAMZ.</div>
   </div>
 </footer>
 
@@ -1194,7 +1283,7 @@
       "hero.h1b": "un seul live",
       "hero.h1c": "de vos streamers favoris.",
       "hero.sub": "Notifications instantanées, points de chaîne automatiques, latence optimisée et tableau de bord unifié pour Twitch et Kick. Tout. Dans une seule extension Chrome.",
-      "hero.cta": "Ajouter à Chrome — Gratuit",
+      "hero.cta": "Ajouter à Chrome (Gratuit)",
       "hero.rating": "Note moyenne",
       "hero.free": "100% gratuit",
       "hero.freeSub": "Pas de pub, pas de tracking",
@@ -1204,9 +1293,9 @@
       "marquee.label": "Compatible avec votre écosystème",
       "feat.eyebrow": "Fonctionnalités",
       "feat.title": "Tout ce qu'il faut pour suivre vos lives, <em>rien de plus.</em>",
-      "feat.lede": "Une extension légère, taillée pour la communauté streaming. Pensée pour rester invisible — jusqu'à ce que vous en ayez besoin.",
+      "feat.lede": "Une extension légère, taillée pour la communauté streaming. Pensée pour rester invisible jusqu'à ce que vous en ayez besoin.",
       "feat.b1.title": "Alertes en temps réel,<br>sonores et discrètes.",
-      "feat.b1.desc": "Soyez prévenu à la seconde près quand un de vos streamers démarre. Son personnalisable, badge sur l'icône, fenêtre native.",
+      "feat.b1.desc": "Soyez prévenu à la seconde près quand un de vos streamers démarré. Son personnalisable, badge sur l'icône, fenêtre native.",
       "feat.b1.live1": "aminematue est en live",
       "feat.b1.msg1": "Just Chatting · Twitch · à l'instant",
       "feat.b1.live2": "JLTomy est en live",
@@ -1220,7 +1309,7 @@
       "feat.b4.eyebrow": "04 / Plateformes",
       "feat.b4.desc": "Une extension. Tous vos créateurs.",
       "feat.b5.title": "Recharge auto sur erreur.",
-      "feat.b5.desc": "#1000, #2000, #3000 — pris en charge.",
+      "feat.b5.desc": "#1000, #2000, #3000 : pris en charge.",
       "feat.b6.eyebrow": "06 / Filtrage",
       "feat.b6.title": "Bloquez le bruit.",
       "feat.b6.desc": "Mots-clés, utilisateurs : invisibles.",
@@ -1228,6 +1317,12 @@
       "feat.b7.eyebrow": "07 / Tableau de bord",
       "feat.b7.title": "Tous vos streamers, en un coup d'œil.",
       "feat.b7.desc": "Importez vos abonnements Twitch en un clic, ajoutez manuellement, organisez. Pas de pub, pas de tracking, pas de compte requis.",
+      "feat.b8.title": "Réclamation Drops<br>& Moments Twitch.",
+      "feat.b8.desc": "Récupération automatique des Drops Twitch et badges Moments pendant votre visionnage.",
+      "feat.b9.title": "Overlay flottant<br>Prédictions.",
+      "feat.b9.desc": "Pariez et votez directement sur le lecteur vidéo sans avoir à ouvrir le chat.",
+      "feat.b10.title": "Avatar streamer<br>& Flux continu.",
+      "feat.b10.desc": "Photo du streamer + pastille LIVE sur l'icône de l'onglet. Flux audio/vidéo ininterrompu.",
       "how.eyebrow": "Workflow",
       "how.title": "Trois étapes. <em>Une minute.</em>",
       "how.lede": "Aucune configuration complexe. Aucune création de compte. Vous installez, vous importez, vous oubliez.",
@@ -1236,7 +1331,7 @@
       "how.s1.tip": "→ Téléchargement direct, 1 clic",
       "how.s2.title": "Importez vos streamers",
       "how.s2.desc": "Connectez Twitch pour synchroniser vos abonnements. Ou ajoutez manuellement Kick et plus.",
-      "how.s2.tip": "→ Auto ou manuel — vous choisissez",
+      "how.s2.tip": "→ Auto ou manuel : vous choisissez",
       "how.s3.title": "Profitez, en arrière-plan",
       "how.s3.desc": "Notifications, points, latence : tout fonctionne automatiquement. Réglages disponibles à tout moment.",
       "how.s3.tip": "→ Activez ou désactivez chaque module",
@@ -1252,14 +1347,14 @@
       "faq.q3": "Les points sont-ils récupérés en arrière-plan ?",
       "faq.a3": "Oui. StreamPulse récupère automatiquement vos points de chaîne dès qu'ils sont disponibles, même sans onglet Twitch ouvert. Un compteur intégré vous montre le total.",
       "faq.q4": "Est-ce gourmand en ressources ?",
-      "faq.a4": "Non. L'extension est optimisée — debouncing, cache intelligent, architecture légère. L'empreinte mémoire et CPU est minimale.",
+      "faq.a4": "Non. L'extension est optimisée (debouncing, cache intelligent, architecture légère). L'empreinte mémoire et CPU est minimale.",
       "faq.q5": "Puis-je désactiver certaines fonctionnalités ?",
       "faq.a5": "Absolument. Chaque module (notifications, points, auto-refresh, filtrage) est activable / désactivable individuellement depuis les paramètres.",
       "faq.q6": "Mes données sont-elles sécurisées ?",
       "faq.a6": "StreamPulse ne collecte aucune donnée personnelle. Tout est stocké localement dans votre navigateur. Aucun transfert vers nos serveurs ou tiers.",
       "foot.privacy": "Politique de confidentialité",
       "foot.terms": "Conditions d'utilisation",
-      "foot.copy": "© <span id=\"year\"></span> StreamPulse — Extension créée par AlexisAMZ."
+      "foot.copy": "© <span id=\"year\"></span> StreamPulse. Extension créée par AlexisAMZ."
     },
     en: {
       "nav.features": "Features",
@@ -1271,7 +1366,7 @@
       "hero.h1b": "a live again",
       "hero.h1c": "from your favorite streamers.",
       "hero.sub": "Instant notifications, automatic channel points, optimized latency and a unified dashboard for Twitch and Kick. Everything. In a single Chrome extension.",
-      "hero.cta": "Add to Chrome — Free",
+      "hero.cta": "Add to Chrome (Free)",
       "hero.rating": "Average rating",
       "hero.free": "100% free",
       "hero.freeSub": "No ads, no tracking",
@@ -1281,7 +1376,7 @@
       "marquee.label": "Compatible with your ecosystem",
       "feat.eyebrow": "Features",
       "feat.title": "Everything you need to follow your lives, <em>nothing more.</em>",
-      "feat.lede": "A lightweight extension, built for the streaming community. Designed to stay invisible — until you need it.",
+      "feat.lede": "A lightweight extension, built for the streaming community. Designed to stay invisible until you need it.",
       "feat.b1.title": "Real-time alerts,<br>audible and discreet.",
       "feat.b1.desc": "Get notified the second one of your streamers goes live. Custom sound, icon badge, native window.",
       "feat.b1.live1": "aminematue is live",
@@ -1297,7 +1392,7 @@
       "feat.b4.eyebrow": "04 / Platforms",
       "feat.b4.desc": "One extension. All your creators.",
       "feat.b5.title": "Auto-reload on error.",
-      "feat.b5.desc": "#1000, #2000, #3000 — handled.",
+      "feat.b5.desc": "#1000, #2000, #3000: handled.",
       "feat.b6.eyebrow": "06 / Filtering",
       "feat.b6.title": "Block the noise.",
       "feat.b6.desc": "Keywords, users: invisible.",
@@ -1313,7 +1408,7 @@
       "how.s1.tip": "→ Direct download, 1 click",
       "how.s2.title": "Import your streamers",
       "how.s2.desc": "Connect Twitch to sync your subscriptions. Or manually add Kick and more.",
-      "how.s2.tip": "→ Auto or manual — your call",
+      "how.s2.tip": "→ Auto or manual: your call",
       "how.s3.title": "Enjoy, in the background",
       "how.s3.desc": "Notifications, points, latency: everything runs automatically. Settings available anytime.",
       "how.s3.tip": "→ Toggle each module on or off",
@@ -1329,14 +1424,14 @@
       "faq.q3": "Are points collected in the background?",
       "faq.a3": "Yes. StreamPulse automatically collects your channel points as soon as they're available, even without a Twitch tab open. A built-in counter shows you the total.",
       "faq.q4": "Is it resource-heavy?",
-      "faq.a4": "No. The extension is optimized — debouncing, smart cache, lightweight architecture. Memory and CPU footprint is minimal.",
+      "faq.a4": "No. The extension is optimized (debouncing, smart cache, lightweight architecture). Memory and CPU footprint is minimal.",
       "faq.q5": "Can I disable certain features?",
       "faq.a5": "Absolutely. Each module (notifications, points, auto-refresh, filtering) can be toggled on or off individually from the settings.",
       "faq.q6": "Is my data secure?",
       "faq.a6": "StreamPulse collects no personal data. Everything is stored locally in your browser. No transfer to our servers or third parties.",
       "foot.privacy": "Privacy policy",
       "foot.terms": "Terms of use",
-      "foot.copy": "© <span id=\"year\"></span> StreamPulse — Extension by AlexisAMZ."
+      "foot.copy": "© <span id=\"year\"></span> StreamPulse. Extension by AlexisAMZ."
     },
     "es": {
       "nav.features": "Funcionalidades",
@@ -1348,7 +1443,7 @@
       "hero.h1b": "ni un solo live",
       "hero.h1c": "de tus streamers favoritos.",
       "hero.sub": "Notificaciones instantáneas, channel points automáticos, latencia optimizada y dashboard unificado para Twitch y Kick. Todo. En una sola extensión Chrome.",
-      "hero.cta": "Añadir a Chrome — Gratis",
+      "hero.cta": "Añadir a Chrome (Gratis)",
       "hero.rating": "Nota media",
       "hero.free": "100% gratis",
       "hero.freeSub": "Sin anuncios, sin tracking",
@@ -1358,7 +1453,7 @@
       "marquee.label": "Compatible con tu ecosistema",
       "feat.eyebrow": "Funcionalidades",
       "feat.title": "Todo lo que necesitas para seguir tus lives, <em>nada más.</em>",
-      "feat.lede": "Una extensión ligera, hecha para la comunidad streaming. Pensada para pasar desapercibida — hasta que la necesites.",
+      "feat.lede": "Una extensión ligera, hecha para la comunidad streaming. Pensada para pasar desapercibida hasta que la necesites.",
       "feat.b1.title": "Alertas en tiempo real,<br>sonoras y discretas.",
       "feat.b1.desc": "Recibe el aviso al segundo cuando uno de tus streamers empieza. Sonido personalizable, badge en el icono, ventana nativa.",
       "feat.b1.live1": "aminematue está en live",
@@ -1374,7 +1469,7 @@
       "feat.b4.eyebrow": "04 / Plataformas",
       "feat.b4.desc": "Una extensión. Todos tus creadores.",
       "feat.b5.title": "Recarga automática en caso de error.",
-      "feat.b5.desc": "#1000, #2000, #3000 — soportados.",
+      "feat.b5.desc": "#1000, #2000, #3000 : soportados.",
       "feat.b6.eyebrow": "06 / Filtrado",
       "feat.b6.title": "Bloquea el ruido.",
       "feat.b6.desc": "Palabras clave, usuarios: invisibles.",
@@ -1390,7 +1485,7 @@
       "how.s1.tip": "→ Descarga directa, 1 clic",
       "how.s2.title": "Importa tus streamers",
       "how.s2.desc": "Conecta Twitch para sincronizar tus suscripciones. O añade manualmente Kick y más.",
-      "how.s2.tip": "→ Auto o manual — tú eliges",
+      "how.s2.tip": "→ Auto o manual : tú eliges",
       "how.s3.title": "Disfruta, en segundo plano",
       "how.s3.desc": "Notificaciones, puntos, latencia: todo funciona automáticamente. Ajustes disponibles en cualquier momento.",
       "how.s3.tip": "→ Activa o desactiva cada módulo",
@@ -1406,14 +1501,14 @@
       "faq.q3": "¿Se reclaman los puntos en segundo plano?",
       "faq.a3": "Sí. StreamPulse reclama automáticamente tus channel points en cuanto están disponibles, incluso sin pestaña de Twitch abierta. Un contador integrado te muestra el total.",
       "faq.q4": "¿Consume muchos recursos?",
-      "faq.a4": "No. La extensión está optimizada — debouncing, caché inteligente, arquitectura ligera. Huella de memoria y CPU mínima.",
+      "faq.a4": "No. La extensión está optimizada (debouncing, caché inteligente, arquitectura ligera). Huella de memoria y CPU mínima.",
       "faq.q5": "¿Puedo desactivar algunas funcionalidades?",
       "faq.a5": "Por supuesto. Cada módulo (notificaciones, puntos, auto-refresh, filtrado) se puede activar o desactivar individualmente desde los ajustes.",
       "faq.q6": "¿Mis datos están seguros?",
       "faq.a6": "StreamPulse no recopila ningún dato personal. Todo se almacena localmente en tu navegador. Sin transferencia a nuestros servidores ni a terceros.",
       "foot.privacy": "Política de privacidad",
       "foot.terms": "Condiciones de uso",
-      "foot.copy": "© <span id=\"year\"></span> StreamPulse — Extensión creada por AlexisAMZ."
+      "foot.copy": "© <span id=\"year\"></span> StreamPulse. Extensión creada por AlexisAMZ."
     },
     "pt-BR": {
       "nav.features": "Recursos",
@@ -1425,7 +1520,7 @@
       "hero.h1b": "uma única live",
       "hero.h1c": "dos seus streamers favoritos.",
       "hero.sub": "Notificações instantâneas, channel points automáticos, latência otimizada e dashboard unificado para Twitch e Kick. Tudo. Em uma única extensão Chrome.",
-      "hero.cta": "Adicionar ao Chrome — Grátis",
+      "hero.cta": "Adicionar ao Chrome (Grátis)",
       "hero.rating": "Nota média",
       "hero.free": "100% grátis",
       "hero.freeSub": "Sem anúncios, sem tracking",
@@ -1435,7 +1530,7 @@
       "marquee.label": "Compatível com seu ecossistema",
       "feat.eyebrow": "Recursos",
       "feat.title": "Tudo o que você precisa para acompanhar suas lives, <em>nada além.</em>",
-      "feat.lede": "Uma extensão leve, feita para a comunidade streaming. Pensada para ficar invisível — até você precisar dela.",
+      "feat.lede": "Uma extensão leve, feita para a comunidade streaming. Pensada para ficar invisível até você precisar dela.",
       "feat.b1.title": "Alertas em tempo real,<br>sonoros e discretos.",
       "feat.b1.desc": "Receba um aviso na hora exata em que um dos seus streamers fica ao vivo. Som personalizável, badge no ícone, janela nativa.",
       "feat.b1.live1": "aminematue está ao vivo",
@@ -1451,7 +1546,7 @@
       "feat.b4.eyebrow": "04 / Plataformas",
       "feat.b4.desc": "Uma extensão. Todos os seus criadores.",
       "feat.b5.title": "Recarga automática em caso de erro.",
-      "feat.b5.desc": "#1000, #2000, #3000 — suportados.",
+      "feat.b5.desc": "#1000, #2000, #3000 : suportados.",
       "feat.b6.eyebrow": "06 / Filtragem",
       "feat.b6.title": "Bloqueie o ruído.",
       "feat.b6.desc": "Palavras-chave, usuários: invisíveis.",
@@ -1467,7 +1562,7 @@
       "how.s1.tip": "→ Download direto, 1 clique",
       "how.s2.title": "Importe seus streamers",
       "how.s2.desc": "Conecte o Twitch para sincronizar suas inscrições. Ou adicione manualmente Kick e mais.",
-      "how.s2.tip": "→ Auto ou manual — você escolhe",
+      "how.s2.tip": "→ Auto ou manual : você escolhe",
       "how.s3.title": "Aproveite, em segundo plano",
       "how.s3.desc": "Notificações, pontos, latência: tudo funciona automaticamente. Configurações disponíveis a qualquer momento.",
       "how.s3.tip": "→ Ative ou desative cada módulo",
@@ -1483,14 +1578,14 @@
       "faq.q3": "Os pontos são resgatados em segundo plano?",
       "faq.a3": "Sim. O StreamPulse resgata automaticamente seus channel points assim que ficam disponíveis, mesmo sem aba do Twitch aberta. Um contador integrado mostra o total.",
       "faq.q4": "Consome muitos recursos?",
-      "faq.a4": "Não. A extensão é otimizada — debouncing, cache inteligente, arquitetura leve. O consumo de memória e CPU é mínimo.",
+      "faq.a4": "Não. A extensão é otimizada (debouncing, cache inteligente, arquitetura leve). O consumo de memória e CPU é mínimo.",
       "faq.q5": "Posso desativar algumas funcionalidades?",
       "faq.a5": "Com certeza. Cada módulo (notificações, pontos, auto-refresh, filtragem) pode ser ativado ou desativado individualmente nas configurações.",
       "faq.q6": "Meus dados estão seguros?",
       "faq.a6": "O StreamPulse não coleta nenhum dado pessoal. Tudo é armazenado localmente no seu navegador. Sem transferência para nossos servidores ou terceiros.",
       "foot.privacy": "Política de privacidade",
       "foot.terms": "Termos de uso",
-      "foot.copy": "© <span id=\"year\"></span> StreamPulse — Extensão criada por AlexisAMZ."
+      "foot.copy": "© <span id=\"year\"></span> StreamPulse. Extensão criada por AlexisAMZ."
     }
   };
 
@@ -1572,5 +1667,6 @@
   }
 </script>
 
+<script src="js/particles.js"></script>
 </body>
 </html>
