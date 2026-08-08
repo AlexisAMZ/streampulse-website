@@ -1,0 +1,22 @@
+# StreamPulse
+
+> Extension Chrome ultime et gratuite pour Twitch et Kick. Notifications instantanées en temps réel, récupération automatique des points de chaîne, prédictions et tableau de bord tout-en-un.
+
+## Sommaire
+- [Accueil](https://streampulse.fr/): Présentation des fonctionnalités, démonstration et téléchargement de l'extension.
+- [Assistance & FAQ](https://streampulse.fr/support): Questions fréquentes, tutoriels de prise en main et formulaire d'assistance.
+- [Politique de confidentialité](https://streampulse.fr/privacy): Engagement sur la vie privée (stockage 100% local, aucun suivi, aucune donnée vendue).
+- [Conditions d'utilisation](https://streampulse.fr/terms): Règles d'usage et conditions générales.
+
+## Fonctionnalités Principales
+- Alertes live en temps réel pour Twitch et Kick avec alertes sonores et visuelles.
+- Récupération automatique des points de chaîne Twitch sans onglet ouvert.
+- Réclamation automatique des Twitch Drops et des Moments.
+- Auto-rechargement du lecteur vidéo en cas d'erreur de stream (#1000, #2000, #3000).
+- Filtrage du chat et masquage des éléments indésirables.
+- Tableau de bord centralisé pour suivre tous vos créateurs en un coup d'œil.
+
+## Données Techniques & Compatibilité
+- Navigateurs supportés : Google Chrome, Brave, Microsoft Edge, Opera.
+- Licence : Gratuite, sans publicité, sans collecte de données personnelles.
+- Développeur : AlexisAMZ.

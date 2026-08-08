@@ -27,24 +27,100 @@
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "StreamPulse",
-  "applicationCategory": "BrowserExtension",
-  "operatingSystem": "Chrome",
-  "url": "https://streampulse.fr/",
-  "description": "Extension Chrome gratuite pour Twitch et Kick. Notifications en temps réel, récupération automatique des points de chaîne.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "EUR"
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "StreamPulse",
+    "applicationCategory": "BrowserExtension",
+    "operatingSystem": "Chrome, Brave, Edge, Opera",
+    "url": "https://streampulse.fr/",
+    "image": "https://streampulse.fr/images/logo.png",
+    "screenshot": "https://streampulse.fr/images/extension-screenshot.png",
+    "description": "Extension Chrome gratuite pour Twitch et Kick. Notifications en temps réel, récupération automatique des points de chaîne, prédictions et tableau de bord unifié.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    }
   },
-  "author": {
-    "@type": "Person",
-    "name": "AlexisAMZ"
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "StreamPulse",
+    "url": "https://streampulse.fr/",
+    "logo": "https://streampulse.fr/images/logo.png",
+    "sameAs": [
+      "https://github.com/AlexisAMZ"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "StreamPulse",
+    "url": "https://streampulse.fr/",
+    "description": "Site officiel de StreamPulse : l'extension navigateur ultime pour Twitch et Kick."
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Est-ce que StreamPulse est gratuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, 100% gratuit et le restera. Aucune fonctionnalité n'est verrouillée derrière un paywall, aucun abonnement, aucun frais caché."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelles plateformes sont supportées ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Twitch (avec toutes les fonctionnalités), Kick (suivi de live + notifications). D'autres plateformes sont en cours d'étude."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les points sont-ils récupérés en arrière-plan ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. StreamPulse récupère automatiquement vos points de chaîne dès qu'ils sont disponibles, même sans onglet Twitch ouvert. Un compteur intégré vous montre le total."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Est-ce gourmand en ressources ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. L'extension est optimisée (debouncing, cache intelligent, architecture légère). L'empreinte mémoire et CPU est minimale."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je désactiver certaines fonctionnalités ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolument. Chaque module (notifications, points, auto-refresh, filtrage) est activable / désactivable individuellement depuis les paramètres."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mes données sont-elles sécurisées ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "StreamPulse ne collecte aucune donnée personnelle. Tout est stocké localement dans votre navigateur. Aucun transfert vers nos serveurs ou tiers."
+        }
+      }
+    ]
   }
-}
+]
 </script>
 
 <link rel="icon" type="image/png" href="images/logo.png" />
@@ -1257,12 +1333,13 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/logo.png" alt="">
+        <img src="images/logo.png" alt="Logo StreamPulse">
         <span>StreamPulse</span>
       </div>
       <div class="links">
-        <a href="privacy.html" data-i18n="foot.privacy">Politique de confidentialité</a>
-        <a href="terms.html" data-i18n="foot.terms">Conditions d'utilisation</a>
+        <a href="/privacy" data-i18n="foot.privacy">Politique de confidentialité</a>
+        <a href="/terms" data-i18n="foot.terms">Conditions d'utilisation</a>
+        <a href="/support">Assistance</a>
         <a href="mailto:contact@streampulse.fr">contact@streampulse.fr</a>
       </div>
     </div>
