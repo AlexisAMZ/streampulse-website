@@ -334,8 +334,8 @@ ${buildJsonLd(lang, dict)}
         </div>
         <nav class="main-nav">
           <a href="${home}">StreamPulse</a>
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
+          <a href="/privacy">${esc(t(dict, 'foot.privacy', lang))}</a>
+          <a href="/terms">${esc(t(dict, 'foot.terms', lang))}</a>
         </nav>
       </div>
     </header>
@@ -428,8 +428,8 @@ ${buildCategories(dict, lang)}
       <div class="container footer-content">
         <p>© <span id="current-year"></span> StreamPulse</p>
         <nav class="footer-links">
-          <a href="/privacy">Privacy</a>
-          <a href="/terms">Terms</a>
+          <a href="/privacy">${esc(t(dict, 'foot.privacy', lang))}</a>
+          <a href="/terms">${esc(t(dict, 'foot.terms', lang))}</a>
           <a href="${home}">StreamPulse</a>
         </nav>
       </div>

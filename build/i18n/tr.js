@@ -5,6 +5,7 @@ module.exports = {
   "nav.features": "Özellikler",
   "nav.workflow": "Nasıl çalışır",
   "nav.faq": "SSS",
+  "nav.support": "Destek",
   "nav.install": "Yükle",
   "hero.eyebrow": "Sürüm 2.0 · Twitch · Kick",
   "hero.h1a": "Hiçbir yayını",

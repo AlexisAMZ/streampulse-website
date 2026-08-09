@@ -5,6 +5,7 @@ module.exports = {
   "nav.features": "Funzionalità",
   "nav.workflow": "Come funziona",
   "nav.faq": "FAQ",
+  "nav.support": "Supporto",
   "nav.install": "Installa",
   "hero.eyebrow": "Versione 2.0 · Twitch · Kick",
   "hero.h1a": "Non perdere",

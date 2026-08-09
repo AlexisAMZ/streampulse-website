@@ -5,6 +5,7 @@ module.exports = {
   "nav.features": "सुविधाएँ",
   "nav.workflow": "कैसे काम करता है",
   "nav.faq": "सामान्य प्रश्न",
+  "nav.support": "सहायता",
   "nav.install": "इंस्टॉल करें",
   "hero.eyebrow": "संस्करण 2.0 · Twitch · Kick",
   "hero.h1a": "कोई लाइव",

@@ -553,9 +553,13 @@ function absolutizeAssets(html) {
 /**
  * Réécrit les liens internes selon la langue.
  *
- * Les pages légales (privacy, terms, support) n'existent qu'en français : on
- * les laisse pointer vers /privacy, /terms et /support plutôt que de générer
- * /de/privacy, qui n'existe pas et forcerait une redirection.
+ * /support existe désormais dans les 16 langues (build/build-support.js) : le
+ * lien est donc préfixé par la locale, sinon un visiteur allemand cliquant sur
+ * « Support » retomberait sur le formulaire français.
+ *
+ * Les pages légales (privacy, terms) n'existent qu'en français : on les laisse
+ * pointer vers /privacy et /terms plutôt que de générer /de/privacy, qui
+ * n'existe pas et forcerait une redirection.
  *
  * Les guides ne sont rédigés qu'en FR et EN. Les autres langues affichent la
  * section (ses libellés sont traduits) mais pointent vers la version anglaise :
@@ -578,6 +582,13 @@ function localizeInternalLinks(html, lang) {
       `href="/en/${enSlug}"`
     );
   });
+
+  // Préfixe /support par la locale. La source FR n'étant jamais réécrite,
+  // ce remplacement ne s'applique qu'aux langues générées.
+  const dir = LOCALES[lang].dir;
+  if (dir) {
+    html = html.replace(/href="\/support"/g, `href="/${dir}/support"`);
+  }
 
   return html;
 }
