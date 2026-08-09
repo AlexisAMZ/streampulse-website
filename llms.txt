@@ -1,8 +1,13 @@
 # StreamPulse
 
-> Extension Chrome gratuite pour Twitch et Kick : notifications de live en temps réel, récupération automatique des points de chaîne, réclamation automatique des Twitch Drops, correction automatique des erreurs de lecture et filtrage du chat. Fonctionne sans compte, sans publicité et sans collecte de données.
+> Extension de navigateur gratuite pour Twitch et Kick : notifications de live en temps réel, récupération automatique des points de chaîne, réclamation automatique des Twitch Drops, correction automatique des erreurs de lecture et filtrage du chat. Compatible Chrome, Edge, Brave, Opera et Vivaldi. Fonctionne sans compte, sans publicité et sans collecte de données.
+
+Dernière mise à jour : 2026-08-09
 
 ## Réponses factuelles
+
+**Qu'est-ce que StreamPulse ?**
+Une extension de navigateur, installable depuis le Chrome Web Store, qui automatise les actions répétitives sur Twitch et Kick : réclamer les points de chaîne, récupérer les Drops, relancer le lecteur après une erreur et signaler les débuts de live.
 
 **StreamPulse est-il gratuit ?**
 Oui, entièrement gratuit. Aucune fonctionnalité n'est réservée à une version payante, il n'y a ni abonnement ni achat intégré ni publicité.
@@ -25,32 +30,55 @@ StreamPulse automatise des clics dans l'interface web, comme le font les extensi
 **Quel est l'impact sur les performances ?**
 L'empreinte est volontairement réduite : mise en cache des requêtes, limitation des appels répétés (debouncing) et absence de traitement lourd en arrière-plan.
 
+**En quelles langues le site est-il disponible ?**
+En 16 langues : français, anglais, espagnol, portugais (Brésil), allemand, italien, polonais, turc, russe, japonais, coréen, indonésien, néerlandais, hindi, suédois, tchèque.
+
 ## Sommaire
 
 ### Pages principales
-- [Accueil](https://www.streampulse.fr/): Présentation des fonctionnalités, démonstration et installation.
-- [Accueil (anglais)](https://www.streampulse.fr/en): Version anglaise de la page d'accueil.
-- [Assistance & FAQ](https://www.streampulse.fr/support): Questions fréquentes, prise en main et contact.
-- [Politique de confidentialité](https://www.streampulse.fr/privacy): Stockage 100% local, aucun suivi, aucune revente.
-- [Conditions d'utilisation](https://www.streampulse.fr/terms): Règles d'usage et conditions générales.
+- [Accueil](https://www.streampulse.fr/) : présentation des fonctionnalités, démonstration et installation.
+- [Assistance & FAQ](https://www.streampulse.fr/support) : questions fréquentes, prise en main et contact.
+- [Politique de confidentialité](https://www.streampulse.fr/privacy) : stockage 100% local, aucun suivi, aucune revente.
+- [Conditions d'utilisation](https://www.streampulse.fr/terms) : règles d'usage et conditions générales.
+
+### Versions linguistiques
+La page d'accueil est traduite dans 16 langues, chacune servie sur son
+propre chemin avec les attributs `hreflang` correspondants :
+
+- [français](https://www.streampulse.fr/) : `fr`
+- [anglais](https://www.streampulse.fr/en) : `en`
+- [espagnol](https://www.streampulse.fr/es) : `es`
+- [portugais (Brésil)](https://www.streampulse.fr/pt-br) : `pt-BR`
+- [allemand](https://www.streampulse.fr/de) : `de`
+- [italien](https://www.streampulse.fr/it) : `it`
+- [polonais](https://www.streampulse.fr/pl) : `pl`
+- [turc](https://www.streampulse.fr/tr) : `tr`
+- [russe](https://www.streampulse.fr/ru) : `ru`
+- [japonais](https://www.streampulse.fr/ja) : `ja`
+- [coréen](https://www.streampulse.fr/ko) : `ko`
+- [indonésien](https://www.streampulse.fr/id) : `id`
+- [néerlandais](https://www.streampulse.fr/nl) : `nl`
+- [hindi](https://www.streampulse.fr/hi) : `hi`
+- [suédois](https://www.streampulse.fr/sv) : `sv`
+- [tchèque](https://www.streampulse.fr/cs) : `cs`
 
 ### Guides (français)
-- [Points de chaîne automatiques](https://www.streampulse.fr/points-de-chaine-automatiques-twitch): Comment récupérer les points de chaîne Twitch automatiquement, y compris onglet fermé.
-- [Erreur 2000 Twitch](https://www.streampulse.fr/erreur-2000-twitch-solution): Causes de l'erreur de réseau #2000 et méthodes de correction, du rechargement manuel à la reprise automatique.
-- [Twitch Drops automatiques](https://www.streampulse.fr/twitch-drops-automatique): Fonctionnement des Drops, conditions d'éligibilité et réclamation automatique.
-- [Notifications de live](https://www.streampulse.fr/notifications-live-twitch-kick): Recevoir une alerte fiable dès qu'un streamer démarre sur Twitch ou Kick.
-- [Filtrer le chat Twitch](https://www.streampulse.fr/filtrer-chat-twitch): Masquer spam, bots et messages indésirables côté client, sans être modérateur.
-- [Meilleures extensions Twitch](https://www.streampulse.fr/meilleures-extensions-twitch): Comparatif de BetterTTV, FrankerFaceZ et StreamPulse, avec leurs rôles respectifs.
-- [Extension Kick et notifications](https://www.streampulse.fr/extension-kick-notifications): Suivre les streamers Kick et recevoir les alertes de live.
+- [Points de chaîne automatiques sur Twitch](https://www.streampulse.fr/points-de-chaine-automatiques-twitch) : Comment récupérer automatiquement vos points de chaîne Twitch, même onglet fermé : installation en 3 étapes, réglages et questions fréquentes.
+- [Erreur 2000 sur Twitch : comment la corriger](https://www.streampulse.fr/erreur-2000-twitch-solution) : L'erreur 2000 de Twitch signale une coupure réseau vers le lecteur.
+- [Réclamer les Twitch Drops automatiquement](https://www.streampulse.fr/twitch-drops-automatique) : Comment fonctionnent les Twitch Drops, pourquoi les récompenses expirent, et comment automatiser leur réclamation ainsi que celle des badges Moments.
+- [Notifications live Twitch et Kick](https://www.streampulse.fr/notifications-live-twitch-kick) : Pourquoi les notifications Twitch arrivent en retard, et comment recevoir une alerte bureau fiable pour Twitch et Kick dans une seule extension.
+- [Filtrer le chat Twitch](https://www.streampulse.fr/filtrer-chat-twitch) : Comment masquer les messages indésirables, les mots-clés et certains utilisateurs dans le chat Twitch, sans être modérateur de la chaîne.
+- [Comparatif des extensions Twitch](https://www.streampulse.fr/meilleures-extensions-twitch) : Comparatif honnête de BetterTTV, FrankerFaceZ, 7TV et StreamPulse : ce que chaque extension fait réellement, et laquelle choisir selon votre usage.
+- [Extension Kick : suivre ses streamers](https://www.streampulse.fr/extension-kick-notifications) : Comment recevoir des notifications de live Kick sur le bureau et suivre Kick et Twitch depuis une seule extension, sans garder d’onglet ouvert.
 
 ### Guides (anglais)
-- [Auto-claim channel points](https://www.streampulse.fr/en/auto-claim-twitch-channel-points)
-- [Twitch error 2000 fix](https://www.streampulse.fr/en/twitch-error-2000-fix)
-- [Automatic Twitch Drops](https://www.streampulse.fr/en/twitch-drops-auto-claim)
-- [Live notifications](https://www.streampulse.fr/en/twitch-kick-live-notifications)
-- [Filter Twitch chat](https://www.streampulse.fr/en/filter-twitch-chat)
-- [Best Twitch extensions](https://www.streampulse.fr/en/best-twitch-extensions)
-- [Kick extension and notifications](https://www.streampulse.fr/en/kick-extension-notifications)
+- [Auto-claim Twitch channel points](https://www.streampulse.fr/en/auto-claim-twitch-channel-points) : How to automatically collect your Twitch channel points, even with the tab closed.
+- [Twitch error 2000: how to fix it](https://www.streampulse.fr/en/twitch-error-2000-fix) : Twitch error 2000 signals a network interruption reaching the video player.
+- [Claim Twitch Drops automatically](https://www.streampulse.fr/en/twitch-drops-auto-claim) : How Twitch Drops work, why rewards expire unclaimed, and how to automate claiming them along with Moments badges.
+- [Twitch and Kick live notifications](https://www.streampulse.fr/en/twitch-kick-live-notifications) : Why Twitch notifications arrive late, how to get reliable desktop alerts for both Twitch and Kick in a single extension, and how to tune the sound.
+- [Filter Twitch chat](https://www.streampulse.fr/en/filter-twitch-chat) : How to hide unwanted messages, keywords and specific users in Twitch chat, without being a channel moderator.
+- [Twitch extensions compared](https://www.streampulse.fr/en/best-twitch-extensions) : An honest comparison of BetterTTV, FrankerFaceZ, 7TV and StreamPulse: what each extension actually does, and which to pick for your use case.
+- [Kick extension: track your streamers](https://www.streampulse.fr/en/kick-extension-notifications) : How to get Kick live notifications on your desktop and follow both Kick and Twitch from a single extension, without keeping a tab open.
 
 ## Fonctionnalités principales
 - Alertes de live en temps réel sur Twitch et Kick, avec notification sonore et visuelle.
@@ -66,10 +94,13 @@ L'empreinte est volontairement réduite : mise en cache des requêtes, limitatio
 StreamPulse est une extension d'automatisation, pas une extension de personnalisation visuelle. BetterTTV et FrankerFaceZ ajoutent des emotes et modifient l'apparence de Twitch ; StreamPulse automatise les actions répétitives (points, Drops, rechargement après erreur). Les deux catégories sont complémentaires et peuvent être installées ensemble.
 
 ## Données techniques
+- Catégorie : extension de navigateur (Chrome Web Store).
 - Plateformes couvertes : Twitch (fonctionnalités complètes), Kick (suivi de live et notifications).
-- Navigateurs : Chrome, Brave, Edge, Opera, Vivaldi (base Chromium).
+- Navigateurs : Chrome, Brave, Edge, Opera, Vivaldi (base Chromium). Firefox et Safari non supportés.
 - Modèle économique : gratuit, sans publicité, sans achat intégré.
 - Confidentialité : stockage local uniquement, aucune télémétrie, aucun compte requis.
-- Langues de l'interface : français, anglais, espagnol, portugais (Brésil).
+- Langues du site : 16 (français, anglais, espagnol, portugais (Brésil), allemand, italien, polonais, turc, russe, japonais, coréen, indonésien, néerlandais, hindi, suédois, tchèque).
+- Langues des guides détaillés : français et anglais.
 - Développeur : AlexisAMZ.
 - Site officiel : https://www.streampulse.fr
+- Page d'installation : https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh
