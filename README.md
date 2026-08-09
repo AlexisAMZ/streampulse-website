@@ -26,19 +26,26 @@ This repository contains the source code for the [StreamPulse](https://streampul
 2. Open `index.html` in your favorite browser to preview the French homepage.
 
 ## 🔧 Build steps
-The translated homepages, the content guides, `sitemap.xml` and `llms.txt` are
-generated. Never edit `<locale>/index.html`, `sitemap.xml` or `llms.txt` by
-hand: they are overwritten on the next build.
+The translated homepages, the support pages, the content guides, `sitemap.xml`
+and `llms.txt` are generated. Never edit `<locale>/index.html`,
+`<locale>/support.html`, `sitemap.xml` or `llms.txt` by hand: they are
+overwritten on the next build.
 
 ```bash
 node build/build-i18n.js     # 16 translated homepages, from build/i18n/<locale>.js
+node build/build-support.js  # 16 support pages + contact form
 node build/build-content.js  # content guides (FR + EN) + sitemap.xml
 node build/build-llms.js     # llms.txt, for generative engines (GEO)
 ```
 
-Run all three after touching `index.html`, a dictionary or a page in
-`build/content/`. The order matters: `build-content.js` and `build-llms.js`
-both derive their locale list from `build-i18n.js`.
+Run all four after touching `index.html`, a dictionary or a page in
+`build/content/`. The order matters: the last three derive their locale list
+from `build-i18n.js`.
+
+There is deliberately no `package.json`. The project has zero npm dependencies,
+and adding one made Vercel detect a build step, run `npm run build`, then fail
+looking for a `public/` output directory. The generated HTML is committed, so
+Vercel only serves static files and the `api/` function.
 
 Adding a language means adding it to `LOCALES` in `build/build-i18n.js`,
 creating `build/i18n/<locale>.js` with every key, and adding its entry to
