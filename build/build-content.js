@@ -15,6 +15,7 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const { ORIGIN, UI, esc, prefix, buildHead, buildHeader, buildFooter } = require('./lib/render');
+const { LOCALES, SOURCE_LANG } = require('./build-i18n');
 const {
   renderSections,
   renderToc,
@@ -165,13 +166,17 @@ function buildSitemap() {
 
   // Pas de slash final : vercel.json applique trailingSlash:false, donc /en/
   // redirige vers /en. Un sitemap ne doit lister que des URLs finales.
-  const homes = [
-    { loc: `${ORIGIN}/`, pri: '1.0', freq: 'weekly' },
-    { loc: `${ORIGIN}/en`, pri: '0.9', freq: 'weekly' },
-    { loc: `${ORIGIN}/es`, pri: '0.8', freq: 'weekly' },
-    { loc: `${ORIGIN}/pt-br`, pri: '0.8', freq: 'weekly' },
-  ];
-  homes.forEach((h) => urls.push({ ...h, lastmod: today }));
+  //
+  // La liste est dérivée de LOCALES (build-i18n.js) : ajouter une langue
+  // là-bas suffit pour qu'elle apparaisse ici, sans duplication à maintenir.
+  Object.entries(LOCALES).forEach(([lang, cfg]) => {
+    urls.push({
+      loc: cfg.dir ? `${ORIGIN}/${cfg.dir}` : `${ORIGIN}/`,
+      pri: lang === SOURCE_LANG ? '1.0' : '0.8',
+      freq: 'weekly',
+      lastmod: today,
+    });
+  });
 
   PAGES.forEach((page) => {
     LANGS.forEach((lang) => {

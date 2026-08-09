@@ -3,10 +3,9 @@
  * build-i18n.js
  * Génère des versions statiques pré-traduites de index.html pour chaque langue.
  *
- * Problème résolu : les traductions vivaient uniquement dans le JS côté client,
- * sur une URL unique (streampulse.fr/). Google n'indexait donc que le FR.
- * On produit maintenant /en/, /es/, /pt-br/ avec du HTML réellement traduit,
- * des canonicals distincts et des hreflang réciproques.
+ * Les traductions vivent dans build/i18n/<locale>.js, lues au build. Le HTML
+ * traduit est réellement statique (canonicals distincts, hreflang réciproques),
+ * au lieu d'un i18n client-side qui masquait les versions aux crawlers.
  *
  * Usage : node build/build-i18n.js
  */
@@ -18,20 +17,35 @@ const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(ROOT, 'index.html');
+const I18N_DIR = path.join(__dirname, 'i18n');
 // Doit correspondre au domaine qui répond 200 (l'apex redirige en 308 vers www).
 const ORIGIN = process.env.SITE_ORIGIN || 'https://www.streampulse.fr';
 
 // Langue source (déjà en dur dans index.html) + langues à générer dans un sous-dossier.
 const SOURCE_LANG = 'fr';
+// dir : sous-dossier de sortie. htmlLang : valeur du <html lang>. hreflang : valeur hreflang.
+// Il faut un fichier build/i18n/<locale>.js complet pour chaque langue, sinon le build échoue.
 const LOCALES = {
   fr: { dir: '', htmlLang: 'fr', hreflang: 'fr' },
   en: { dir: 'en', htmlLang: 'en', hreflang: 'en' },
   es: { dir: 'es', htmlLang: 'es', hreflang: 'es' },
   'pt-BR': { dir: 'pt-br', htmlLang: 'pt-BR', hreflang: 'pt-BR' },
+  de: { dir: 'de', htmlLang: 'de', hreflang: 'de' },
+  it: { dir: 'it', htmlLang: 'it', hreflang: 'it' },
+  pl: { dir: 'pl', htmlLang: 'pl', hreflang: 'pl' },
+  tr: { dir: 'tr', htmlLang: 'tr', hreflang: 'tr' },
+  ru: { dir: 'ru', htmlLang: 'ru', hreflang: 'ru' },
+  ja: { dir: 'ja', htmlLang: 'ja', hreflang: 'ja' },
+  ko: { dir: 'ko', htmlLang: 'ko', hreflang: 'ko' },
+  id: { dir: 'id', htmlLang: 'id', hreflang: 'id' },
+  nl: { dir: 'nl', htmlLang: 'nl', hreflang: 'nl' },
+  hi: { dir: 'hi', htmlLang: 'hi', hreflang: 'hi' },
+  sv: { dir: 'sv', htmlLang: 'sv', hreflang: 'sv' },
+  cs: { dir: 'cs', htmlLang: 'cs', hreflang: 'cs' },
 };
 
-// Métadonnées par langue : title/description doivent être traduits eux aussi,
-// sinon les pages /en/ se cannibalisent avec un title français.
+/** Métadonnées par langue : title/description doivent être traduits eux aussi,
+ *  sinon les pages /de/ se cannibalisent avec un title français. */
 const META = {
   fr: {
     title: 'StreamPulse : Vivez Twitch & Kick sans rien rater',
@@ -73,53 +87,169 @@ const META = {
     appDescription:
       'Extensão do Chrome gratuita para Twitch e Kick. Notificações em tempo real, resgate automático de channel points, previsões e dashboard unificado.',
   },
+  de: {
+    title: 'StreamPulse: Twitch & Kick Kanalpunkte automatisch',
+    description:
+      'Kostenlose Chrome-Erweiterung für Twitch und Kick: sofortige Live-Benachrichtigungen, automatische Kanalpunkte und Drops. Keine Werbung, kein Tracking.',
+    ogLocale: 'de_DE',
+    keywords:
+      'Twitch Erweiterung, Kick Erweiterung, Kanalpunkte automatisch sammeln, Twitch Benachrichtigungen, Twitch Drops automatisch, Twitch Fehler 2000 beheben, StreamPulse',
+    appDescription:
+      'Kostenlose Chrome-Erweiterung für Twitch und Kick. Echtzeit-Benachrichtigungen, automatisches Sammeln von Kanalpunkten, Predictions-Overlay und ein einheitliches Dashboard.',
+  },
+  it: {
+    title: 'StreamPulse: punti canale automatici su Twitch e Kick',
+    description:
+      'Estensione Chrome gratuita per Twitch e Kick: notifiche live istantanee, punti canale e Drops automatici. Niente pubblicità, niente tracking.',
+    ogLocale: 'it_IT',
+    keywords:
+      'estensione Twitch, estensione Kick, punti canale automatici, notifiche Twitch, Twitch Drops automatici, errore 2000 Twitch, StreamPulse',
+    appDescription:
+      'Estensione Chrome gratuita per Twitch e Kick. Notifiche in tempo reale, raccolta automatica dei punti canale, overlay previsioni e dashboard unificata.',
+  },
+  pl: {
+    title: 'StreamPulse: automatyczne punkty kanału na Twitchu i Kicku',
+    description:
+      'Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka: natychmiastowe powiadomienia, automatyczne punkty kanału i Drops. Bez reklam, bez śledzenia.',
+    ogLocale: 'pl_PL',
+    keywords:
+      'rozszerzenie Twitch, rozszerzenie Kick, automatyczne punkty kanału, powiadomienia Twitch, automatyczne Twitch Drops, błąd 2000 Twitch, StreamPulse',
+    appDescription:
+      'Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka. Powiadomienia w czasie rzeczywistym, automatyczne zbieranie punktów kanału, nakładka przewidywań i wspólny panel.',
+  },
+  tr: {
+    title: 'StreamPulse: Twitch ve Kick otomatik kanal puanları',
+    description:
+      'Twitch ve Kick için ücretsiz Chrome uzantısı: anında yayın bildirimleri, otomatik kanal puanları ve Drops. Reklam yok, takip yok.',
+    ogLocale: 'tr_TR',
+    keywords:
+      'Twitch uzantısı, Kick uzantısı, otomatik kanal puanı toplama, Twitch bildirimleri, otomatik Twitch Drops, Twitch 2000 hatası çözümü, StreamPulse',
+    appDescription:
+      'Twitch ve Kick için ücretsiz Chrome uzantısı. Gerçek zamanlı bildirimler, otomatik kanal puanı toplama, tahmin katmanı ve birleşik panel.',
+  },
+  ru: {
+    title: 'StreamPulse: автосбор баллов канала на Twitch и Kick',
+    description:
+      'Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автоматические баллы канала и Drops. Без рекламы и слежки.',
+    ogLocale: 'ru_RU',
+    keywords:
+      'расширение Twitch, расширение Kick, автосбор баллов канала, уведомления Twitch, автоматические Twitch Drops, ошибка 2000 Twitch, StreamPulse',
+    appDescription:
+      'Бесплатное расширение Chrome для Twitch и Kick. Уведомления в реальном времени, автоматический сбор баллов канала, оверлей прогнозов и единая панель.',
+  },
+  ja: {
+    title: 'StreamPulse: Twitch と Kick のチャンネルポイント自動取得',
+    description:
+      'Twitch と Kick 向けの無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。広告なし、追跡なし。',
+    ogLocale: 'ja_JP',
+    keywords:
+      'Twitch 拡張機能, Kick 拡張機能, チャンネルポイント 自動取得, Twitch 通知, Twitch Drops 自動, Twitch エラー 2000 対処, StreamPulse',
+    appDescription:
+      'Twitch と Kick 向けの無料 Chrome 拡張機能。リアルタイム通知、チャンネルポイントの自動取得、予測オーバーレイ、統合ダッシュボード。',
+  },
+  ko: {
+    title: 'StreamPulse: Twitch와 Kick 채널 포인트 자동 적립',
+    description:
+      'Twitch와 Kick을 위한 무료 Chrome 확장 프로그램. 실시간 방송 알림, 채널 포인트와 Drops 자동 수령. 광고 없음, 추적 없음.',
+    ogLocale: 'ko_KR',
+    keywords:
+      'Twitch 확장 프로그램, Kick 확장 프로그램, 채널 포인트 자동 적립, Twitch 알림, Twitch Drops 자동, Twitch 오류 2000 해결, StreamPulse',
+    appDescription:
+      'Twitch와 Kick을 위한 무료 Chrome 확장 프로그램. 실시간 알림, 채널 포인트 자동 적립, 예측 오버레이, 통합 대시보드.',
+  },
+  id: {
+    title: 'StreamPulse: poin kanal otomatis di Twitch dan Kick',
+    description:
+      'Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Tanpa iklan, tanpa pelacakan.',
+    ogLocale: 'id_ID',
+    keywords:
+      'ekstensi Twitch, ekstensi Kick, poin kanal otomatis, notifikasi Twitch, Twitch Drops otomatis, cara mengatasi error 2000 Twitch, StreamPulse',
+    appDescription:
+      'Ekstensi Chrome gratis untuk Twitch dan Kick. Notifikasi real-time, pengumpulan poin kanal otomatis, overlay prediksi, dan dasbor terpadu.',
+  },
+  nl: {
+    title: 'StreamPulse: automatische kanaalpunten op Twitch en Kick',
+    description:
+      'Gratis Chrome-extensie voor Twitch en Kick: directe live-meldingen, automatische kanaalpunten en Drops. Geen advertenties, geen tracking.',
+    ogLocale: 'nl_NL',
+    keywords:
+      'Twitch extensie, Kick extensie, automatisch kanaalpunten ophalen, Twitch meldingen, automatische Twitch Drops, Twitch fout 2000 oplossen, StreamPulse',
+    appDescription:
+      'Gratis Chrome-extensie voor Twitch en Kick. Realtime meldingen, automatisch ophalen van kanaalpunten, Predictions-overlay en één dashboard.',
+  },
+  hi: {
+    title: 'StreamPulse: Twitch और Kick पर स्वचालित चैनल पॉइंट्स',
+    description:
+      'Twitch और Kick के लिए निःशुल्क Chrome एक्सटेंशन: तुरंत लाइव सूचनाएँ, स्वचालित चैनल पॉइंट्स और Drops। न विज्ञापन, न ट्रैकिंग।',
+    ogLocale: 'hi_IN',
+    keywords:
+      'Twitch एक्सटेंशन, Kick एक्सटेंशन, स्वचालित चैनल पॉइंट्स, Twitch सूचनाएँ, स्वचालित Twitch Drops, Twitch त्रुटि 2000 समाधान, StreamPulse',
+    appDescription:
+      'Twitch और Kick के लिए निःशुल्क Chrome एक्सटेंशन। रीयल-टाइम सूचनाएँ, चैनल पॉइंट्स का स्वचालित संग्रह, प्रेडिक्शन ओवरले और एकीकृत डैशबोर्ड।',
+  },
+  sv: {
+    title: 'StreamPulse: automatiska kanalpoäng på Twitch och Kick',
+    description:
+      'Gratis Chrome-tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Inga annonser, ingen spårning.',
+    ogLocale: 'sv_SE',
+    keywords:
+      'Twitch-tillägg, Kick-tillägg, samla kanalpoäng automatiskt, Twitch-aviseringar, automatiska Twitch Drops, Twitch-fel 2000 lösning, StreamPulse',
+    appDescription:
+      'Gratis Chrome-tillägg för Twitch och Kick. Aviseringar i realtid, automatisk insamling av kanalpoäng, Predictions-overlay och en samlad instrumentpanel.',
+  },
+  cs: {
+    title: 'StreamPulse: automatické body kanálu na Twitchi a Kicku',
+    description:
+      'Bezplatné rozšíření Chrome pro Twitch a Kick: okamžitá upozornění na vysílání, automatické body kanálu a Drops. Bez reklam, bez sledování.',
+    ogLocale: 'cs_CZ',
+    keywords:
+      'rozšíření Twitch, rozšíření Kick, automatický sběr bodů kanálu, upozornění Twitch, automatické Twitch Drops, chyba 2000 Twitch řešení, StreamPulse',
+    appDescription:
+      'Bezplatné rozšíření Chrome pro Twitch a Kick. Upozornění v reálném čase, automatický sběr bodů kanálu, překryv predikcí a jednotný přehled.',
+  },
 };
 
-/** Extrait l'objet I18N du fichier source sans l'exécuter dans un DOM. */
-function extractI18N(html) {
-  const start = html.indexOf('const I18N = {');
-  if (start === -1) throw new Error('Bloc I18N introuvable dans index.html');
-
-  // Balayage des accolades pour trouver la fin exacte de l'objet,
-  // en ignorant celles présentes dans les chaînes de caractères.
-  const objStart = html.indexOf('{', start);
-  let depth = 0;
-  let inString = null;
-  let escaped = false;
-  let end = -1;
-
-  for (let i = objStart; i < html.length; i++) {
-    const c = html[i];
-    if (escaped) {
-      escaped = false;
-      continue;
+/**
+ * Charge les dictionnaires depuis build/i18n/<locale>.js.
+ *
+ * Le dictionnaire vivait auparavant en dur dans index.html, ce qui l'expédiait
+ * à chaque visiteur (~23 Ko inutiles) et devenait ingérable au-delà de quelques
+ * langues. Il est désormais externalisé, une langue par fichier.
+ */
+function loadDictionaries() {
+  const dicts = {};
+  for (const lang of Object.keys(LOCALES)) {
+    const file = path.join(I18N_DIR, `${lang}.js`);
+    if (!fs.existsSync(file)) {
+      throw new Error(`Dictionnaire manquant : build/i18n/${lang}.js`);
     }
-    if (c === '\\') {
-      escaped = true;
-      continue;
-    }
-    if (inString) {
-      if (c === inString) inString = null;
-      continue;
-    }
-    if (c === '"' || c === "'") {
-      inString = c;
-      continue;
-    }
-    if (c === '{') depth++;
-    else if (c === '}') {
-      depth--;
-      if (depth === 0) {
-        end = i;
-        break;
-      }
-    }
+    dicts[lang] = require(file);
   }
-  if (end === -1) throw new Error('Fin du bloc I18N introuvable');
+  return dicts;
+}
 
-  const objSrc = html.slice(objStart, end + 1);
-  // eslint-disable-next-line no-new-func
-  return new Function(`return (${objSrc});`)();
+/**
+ * Vérifie que chaque langue couvre toutes les clés de la langue source.
+ *
+ * Sans ce garde-fou, une clé absente laissait passer le texte français dans une
+ * page traduite (fallback silencieux) : c'est ainsi que /es et /pt-br servaient
+ * trois blocs de fonctionnalités en français.
+ */
+function assertComplete(dicts) {
+  const reference = Object.keys(dicts[SOURCE_LANG]);
+  const problems = [];
+
+  for (const [lang, dict] of Object.entries(dicts)) {
+    const missing = reference.filter((k) => dict[k] == null);
+    const unknown = Object.keys(dict).filter((k) => !reference.includes(k));
+    if (missing.length) problems.push(`  ${lang} : ${missing.length} clé(s) manquante(s) -> ${missing.join(', ')}`);
+    if (unknown.length) problems.push(`  ${lang} : ${unknown.length} clé(s) inconnue(s) -> ${unknown.join(', ')}`);
+  }
+
+  if (problems.length) {
+    throw new Error(`Dictionnaires incomplets :\n${problems.join('\n')}`);
+  }
+  return reference.length;
 }
 
 /** Échappe une valeur destinée à un attribut HTML. */
@@ -357,18 +487,23 @@ function rewriteHead(html, lang) {
  */
 function rewriteLangSelector(html, lang) {
   const ARIA = {
-    fr: 'Langue',
-    en: 'Language',
-    es: 'Idioma',
-    'pt-BR': 'Idioma',
+    fr: 'Langue', en: 'Language', es: 'Idioma', 'pt-BR': 'Idioma',
+    de: 'Sprache', it: 'Lingua', pl: 'Język', tr: 'Dil',
+    ru: 'Язык', ja: '言語', ko: '언어', id: 'Bahasa',
+    nl: 'Taal', hi: 'भाषा', sv: 'Språk', cs: 'Jazyk',
+  };
+  const FLAGS = {
+    fr: '🇫🇷 FR', en: '🇬🇧 EN', es: '🇪🇸 ES', 'pt-BR': '🇧🇷 PT',
+    de: '🇩🇪 DE', it: '🇮🇹 IT', pl: '🇵🇱 PL', tr: '🇹🇷 TR',
+    ru: '🇷🇺 RU', ja: '🇯🇵 JA', ko: '🇰🇷 KO', id: '🇮🇩 ID',
+    nl: '🇳🇱 NL', hi: '🇮🇳 HI', sv: '🇸🇪 SV', cs: '🇨🇿 CS',
   };
 
   const options = Object.entries(LOCALES)
     .map(([code, cfg]) => {
-      const flag = { fr: '🇫🇷 FR', en: '🇬🇧 EN', es: '🇪🇸 ES', 'pt-BR': '🇧🇷 PT-BR' }[code];
       const href = cfg.dir ? `/${cfg.dir}` : '/';
       const selected = code === lang ? ' selected' : '';
-      return `        <option value="${href}"${selected}>${flag}</option>`;
+      return `        <option value="${href}"${selected}>${FLAGS[code] || code}</option>`;
     })
     .join('\n');
 
@@ -414,15 +549,16 @@ function absolutizeAssets(html) {
 }
 
 /**
- * Ajoute les liens vers les pages de contenu traduites.
+ * Réécrit les liens internes selon la langue.
  *
- * Les pages légales (privacy, terms, support) n'existent qu'en français :
- * on les laisse pointer vers /privacy, /terms et /support plutôt que de
- * générer /en/privacy, qui n'existe pas et forcerait une redirection.
+ * Les pages légales (privacy, terms, support) n'existent qu'en français : on
+ * les laisse pointer vers /privacy, /terms et /support plutôt que de générer
+ * /de/privacy, qui n'existe pas et forcerait une redirection.
  *
- * Les guides n'existent qu'en FR et EN. Pour ES et pt-BR, la section est
- * retirée : renvoyer vers des pages anglaises depuis une page espagnole
- * dégraderait l'expérience et brouillerait les signaux de langue.
+ * Les guides ne sont rédigés qu'en FR et EN. Les autres langues affichent la
+ * section (ses libellés sont traduits) mais pointent vers la version anglaise :
+ * un lien vers un guide lisible vaut mieux qu'une section supprimée, et le
+ * hreflang de la page cible reste cohérent.
  */
 function localizeInternalLinks(html, lang) {
   const GUIDE_SLUGS = {
@@ -434,38 +570,28 @@ function localizeInternalLinks(html, lang) {
     '/meilleures-extensions-twitch': 'best-twitch-extensions',
   };
 
-  if (lang === 'en') {
-    Object.entries(GUIDE_SLUGS).forEach(([frPath, enSlug]) => {
-      html = html.replace(
-        new RegExp(`href="${frPath}"`, 'g'),
-        `href="/en/${enSlug}"`
-      );
-    });
-    return html;
-  }
+  Object.entries(GUIDE_SLUGS).forEach(([frPath, enSlug]) => {
+    html = html.replace(
+      new RegExp(`href="${frPath}"`, 'g'),
+      `href="/en/${enSlug}"`
+    );
+  });
 
-  // ES / pt-BR : suppression de la section guides faute de traduction.
-  return html.replace(
-    /\n<!-- GUIDES[\s\S]*?<section class="section" id="guides">[\s\S]*?<\/section>\n/,
-    '\n'
-  );
+  return html;
 }
 
 function build() {
   const src = fs.readFileSync(SRC, 'utf8');
-  const I18N = extractI18N(src);
+  const dicts = loadDictionaries();
+  const keyCount = assertComplete(dicts);
   const generated = [];
 
   for (const [lang, cfg] of Object.entries(LOCALES)) {
-    // La racine FR est la source : on ne la réécrit pas pour éviter que le
-    // build ne devienne non-idempotent (le dictionnaire I18N y est stocké).
+    // La racine FR est la source : on ne la réécrit pas, sinon le build
+    // deviendrait non idempotent.
     if (lang === SOURCE_LANG) continue;
 
-    const dict = I18N[lang];
-    if (!dict) {
-      console.warn(`  ! Dictionnaire manquant pour "${lang}", ignoré.`);
-      continue;
-    }
+    const dict = dicts[lang];
 
     let html = src;
     html = translateBody(html, dict);
@@ -479,14 +605,19 @@ function build() {
     const outDir = path.join(ROOT, cfg.dir);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, 'index.html'), html, 'utf8');
-    generated.push(`/${cfg.dir}/`);
+    generated.push(`/${cfg.dir || '(racine)'}`);
   }
 
-  console.log('Pages traduites générées :');
-  generated.forEach((g) => console.log(`  - ${g}`));
+  console.log(`✓ ${Object.keys(LOCALES).length} langues × ${keyCount} clés traduites`);
+  console.log(`✓ Pages générées :`);
+  generated.forEach((g) => console.log(`    ${g}`));
   console.log(
     '\nRappel : la racine / (FR) doit recevoir hreflang + selector via patch manuel.'
   );
 }
 
-build();
+// Exporté pour que build-content.js dérive le sitemap de la même liste :
+// une locale ajoutée ici apparaît automatiquement dans sitemap.xml.
+module.exports = { LOCALES, SOURCE_LANG };
+
+if (require.main === module) build();
