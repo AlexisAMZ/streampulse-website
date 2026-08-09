@@ -2,15 +2,112 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
     { "source": "/terms.html", "destination": "/terms", "permanent": true },
     { "source": "/support.html", "destination": "/support", "permanent": true },
-    { "source": "/index.html", "destination": "/", "permanent": true }
+
+    { "source": "/en/index.html", "destination": "/en", "permanent": true },
+    { "source": "/es/index.html", "destination": "/es", "permanent": true },
+    { "source": "/pt-br/index.html", "destination": "/pt-br", "permanent": true },
+
+    {
+      "source": "/points-de-chaine-automatiques-twitch.html",
+      "destination": "/points-de-chaine-automatiques-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/erreur-2000-twitch-solution.html",
+      "destination": "/erreur-2000-twitch-solution",
+      "permanent": true
+    },
+    {
+      "source": "/twitch-drops-automatique.html",
+      "destination": "/twitch-drops-automatique",
+      "permanent": true
+    },
+    {
+      "source": "/notifications-live-twitch-kick.html",
+      "destination": "/notifications-live-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/filtrer-chat-twitch.html",
+      "destination": "/filtrer-chat-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/meilleures-extensions-twitch.html",
+      "destination": "/meilleures-extensions-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/extension-kick-notifications.html",
+      "destination": "/extension-kick-notifications",
+      "permanent": true
+    },
+
+    {
+      "source": "/en/auto-claim-twitch-channel-points.html",
+      "destination": "/en/auto-claim-twitch-channel-points",
+      "permanent": true
+    },
+    {
+      "source": "/en/twitch-error-2000-fix.html",
+      "destination": "/en/twitch-error-2000-fix",
+      "permanent": true
+    },
+    {
+      "source": "/en/twitch-drops-auto-claim.html",
+      "destination": "/en/twitch-drops-auto-claim",
+      "permanent": true
+    },
+    {
+      "source": "/en/twitch-kick-live-notifications.html",
+      "destination": "/en/twitch-kick-live-notifications",
+      "permanent": true
+    },
+    {
+      "source": "/en/filter-twitch-chat.html",
+      "destination": "/en/filter-twitch-chat",
+      "permanent": true
+    },
+    {
+      "source": "/en/best-twitch-extensions.html",
+      "destination": "/en/best-twitch-extensions",
+      "permanent": true
+    },
+    {
+      "source": "/en/kick-extension-notifications.html",
+      "destination": "/en/kick-extension-notifications",
+      "permanent": true
+    },
+
+    { "source": "/en/support", "destination": "/support", "permanent": false },
+    { "source": "/en/privacy", "destination": "/privacy", "permanent": false },
+    { "source": "/en/terms", "destination": "/terms", "permanent": false },
+    { "source": "/es/support", "destination": "/support", "permanent": false },
+    { "source": "/es/privacy", "destination": "/privacy", "permanent": false },
+    { "source": "/es/terms", "destination": "/terms", "permanent": false },
+    { "source": "/pt-br/support", "destination": "/support", "permanent": false },
+    { "source": "/pt-br/privacy", "destination": "/privacy", "permanent": false },
+    { "source": "/pt-br/terms", "destination": "/terms", "permanent": false }
   ],
-  "rewrites": [
-    { "source": "/support", "destination": "/support.html" },
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/terms", "destination": "/terms.html" }
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/xml" }]
+    },
+    {
+      "source": "/llms.txt",
+      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+    }
   ]
 }
-

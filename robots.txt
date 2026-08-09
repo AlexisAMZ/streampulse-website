@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://streampulse.fr/sitemap.xml
+Sitemap: https://www.streampulse.fr/sitemap.xml
 # LLM Indexing (Generative Engine Optimization)
-# llms-txt: https://streampulse.fr/llms.txt
+# llms-txt: https://www.streampulse.fr/llms.txt
 

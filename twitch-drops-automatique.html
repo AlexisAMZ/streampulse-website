@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch Drops automatiques | StreamPulse</title>
+    <meta name="description" content="Comment fonctionnent les Twitch Drops, pourquoi les récompenses expirent, et comment automatiser leur réclamation ainsi que celle des badges Moments." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <link rel="canonical" href="https://www.streampulse.fr/twitch-drops-automatique" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/twitch-drops-automatique" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/twitch-drops-auto-claim" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/twitch-drops-automatique" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/twitch-drops-automatique" />
+    <meta property="og:title" content="Twitch Drops automatiques | StreamPulse" />
+    <meta property="og:description" content="Comment fonctionnent les Twitch Drops, pourquoi les récompenses expirent, et comment automatiser leur réclamation ainsi que celle des badges Moments." />
+    <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Twitch Drops automatiques | StreamPulse" />
+    <meta name="twitter:description" content="Comment fonctionnent les Twitch Drops, pourquoi les récompenses expirent, et comment automatiser leur réclamation ainsi que celle des badges Moments." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Réclamer ses Twitch Drops automatiquement",
+    "headline": "Réclamer ses Twitch Drops automatiquement",
+    "description": "Comment fonctionnent les Twitch Drops, pourquoi les récompenses expirent, et comment automatiser leur réclamation ainsi que celle des badges Moments.",
+    "inLanguage": "fr",
+    "url": "https://www.streampulse.fr/twitch-drops-automatique",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    },
+    "totalTime": "PT2M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Lier son compte au jeu",
+        "text": "Depuis les paramètres Twitch, section Connexions, associez votre compte à l'éditeur du jeu concerné. Sans cette liaison, aucun Drop ne peut être attribué.",
+        "url": "https://www.streampulse.fr/twitch-drops-automatique#fonctionnement"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Regarder une chaîne éligible",
+        "text": "Sélectionnez un live affichant la mention « Drops activés » sur la catégorie du jeu participant.",
+        "url": "https://www.streampulse.fr/twitch-drops-automatique#fonctionnement"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Activer la réclamation automatique",
+        "text": "Installez StreamPulse et activez le module Drops : les récompenses disponibles seront réclamées sans intervention.",
+        "url": "https://www.streampulse.fr/twitch-drops-automatique#fonctionnement"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.streampulse.fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Réclamer ses Twitch Drops automatiquement",
+        "item": "https://www.streampulse.fr/twitch-drops-automatique"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "fr",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Les Drops fonctionnent-ils si le live est en muet ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, le temps de visionnage est comptabilisé indépendamment du volume audio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Puis-je cumuler des Drops sur plusieurs chaînes ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En général la progression est liée à la campagne et non à une chaîne précise, mais chaque éditeur fixe ses propres règles."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kick propose-t-il un équivalent des Drops ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non, il n'existe pas de système comparable sur Kick à ce jour."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 2.6rem 0 0.9rem;
+        font-size: 1.55rem;
+        letter-spacing: -0.01em;
+        scroll-margin-top: 90px;
+      }
+      .article-wrap h3 { margin: 1.6rem 0 0.6rem; font-size: 1.12rem; }
+      .article-wrap p { line-height: 1.75; margin: 0 0 1rem; }
+      .article-lede { font-size: 1.1rem; color: var(--color-text); }
+      /* Bloc de réponse directe : cible privilégiée d'extraction par les
+         moteurs de recherche et les moteurs génératifs. */
+      .answer-block {
+        border-left: 3px solid var(--color-highlight);
+        background: var(--color-surface);
+        border-radius: 0 14px 14px 0;
+        padding: 1rem 1.2rem;
+        margin: 0 0 1.4rem;
+      }
+      .answer-block p { margin: 0; font-weight: 500; }
+      .toc {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        padding: 1.1rem 1.3rem;
+        margin: 0 0 2.2rem;
+      }
+      .toc-title {
+        margin: 0 0 .6rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--color-muted);
+      }
+      .toc ul { margin: 0; padding-left: 1.1rem; }
+      .toc li { margin: .3rem 0; }
+      .toc a { color: var(--color-text); text-decoration: none; }
+      .toc a:hover { color: var(--color-highlight); text-decoration: underline; }
+      .step-list { padding-left: 1.3rem; line-height: 1.75; }
+      .step-list li { margin: 0 0 .7rem; }
+      .check-list { padding-left: 1.3rem; line-height: 1.75; }
+      .check-list li { margin: 0 0 .55rem; }
+      .table-wrap { overflow-x: auto; margin: 0 0 1.4rem; }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: .7rem .9rem;
+        border-bottom: 1px solid var(--color-border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: .78rem;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--color-muted);
+      }
+      .breadcrumb { font-size: .85rem; color: var(--color-muted); margin: 0 0 1rem; }
+      .breadcrumb a { color: var(--color-muted); }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      .faq-inline .faq-item { margin: 0 0 1.3rem; }
+      .faq-inline h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+      .related-list { padding-left: 1.2rem; line-height: 1.9; }
+      .article-meta { font-size: .82rem; color: var(--color-muted); margin: 0 0 2rem; }
+      .cta-banner { margin-top: 3rem; text-align: center; }
+    </style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/#features">Fonctionnalités</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/support">Assistance</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="legal-hero">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/">Accueil</a> / <span>Réclamer ses Twitch Drops automatiquement</span>
+          </p>
+          <h1>Réclamer ses Twitch Drops automatiquement</h1>
+          <p class="article-lede">Les Twitch Drops récompensent le temps de visionnage sur un jeu par des objets in-game, mais la récompense n'est acquise qu'après une réclamation manuelle dans l'inventaire. Beaucoup de joueurs cumulent le temps requis puis oublient cette dernière étape. Voici comment le processus fonctionne et comment l'automatiser.</p>
+        </div>
+      </section>
+
+      <section class="legal-section">
+        <div class="container article-wrap">
+          <p class="article-meta">Mis à jour le 9 août 2026</p>
+        <nav class="toc" aria-label="Sur cette page">
+          <p class="toc-title">Sur cette page</p>
+          <ul>
+          <li><a href="#fonctionnement">Comment fonctionnent les Twitch Drops ?</a></li>
+          <li><a href="#automatiser">Comment automatiser la réclamation des Drops ?</a></li>
+          <li><a href="#liaison-compte">Pourquoi mes Drops ne se débloquent-ils pas ?</a></li>
+          <li><a href="#moments">Qu’est-ce que les badges Moments ?</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="fonctionnement">Comment fonctionnent les Twitch Drops ?</h2>
+        <div class="answer-block">
+          <p>Un Drop s'obtient en cumulant un temps de visionnage défini sur une chaîne diffusant un jeu participant, compte Twitch lié à l'éditeur. La progression est automatique, mais la récompense doit ensuite être réclamée manuellement dans l'inventaire.</p>
+        </div>
+        <p>Cette étape finale explique la plupart des Drops perdus : le temps est validé, la récompense apparaît, puis la campagne se termine avant que le joueur ne pense à cliquer.</p>
+
+        <h2 id="automatiser">Comment automatiser la réclamation des Drops ?</h2>
+        <div class="answer-block">
+          <p>StreamPulse détecte les campagnes actives et les récompenses disponibles, puis effectue la réclamation en arrière-plan. Un journal consultable dans l’extension recense ce qui a été récupéré et quand.</p>
+        </div>
+        <ul class="check-list">
+          <li>Réclamation des Drops dès que la progression atteint 100 %.</li>
+          <li>Prise en charge des badges Moments sur le même principe.</li>
+          <li>Historique horodaté pour vérifier ce qui a été récupéré.</li>
+        </ul>
+
+        <h2 id="liaison-compte">Pourquoi mes Drops ne se débloquent-ils pas ?</h2>
+        <div class="answer-block">
+          <p>La cause la plus fréquente est un compte non lié à l'éditeur du jeu. Vient ensuite le visionnage d'une chaîne sans la mention « Drops activés », puis une campagne déjà terminée.</p>
+        </div>
+        <ul class="check-list">
+          <li>Compte Twitch non lié à l’éditeur : aucune progression enregistrée.</li>
+          <li>Chaîne sans Drops activés, même sur le bon jeu.</li>
+          <li>Campagne expirée : la progression ne compte plus.</li>
+          <li>Récompense obtenue mais jamais réclamée dans l’inventaire.</li>
+        </ul>
+
+        <h2 id="moments">Qu’est-ce que les badges Moments ?</h2>
+        <div class="answer-block">
+          <p>Les Moments sont des badges commémoratifs qu'un streamer déclenche pendant un live pour marquer un événement. Ils sont indépendants des Drops mais reposent aussi sur une réclamation manuelle limitée dans le temps.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>Les Drops fonctionnent-ils si le live est en muet ?</h3>
+            <p>Oui, le temps de visionnage est comptabilisé indépendamment du volume audio.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Puis-je cumuler des Drops sur plusieurs chaînes ?</h3>
+            <p>En général la progression est liée à la campagne et non à une chaîne précise, mais chaque éditeur fixe ses propres règles.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Kick propose-t-il un équivalent des Drops ?</h3>
+            <p>Non, il n'existe pas de système comparable sur Kick à ce jour.</p>
+          </div>
+        </div>
+
+        <h2>À lire aussi</h2>
+        <ul class="related-list">
+          <li><a href="/points-de-chaine-automatiques-twitch">Points de chaîne automatiques sur Twitch</a></li>
+          <li><a href="/notifications-live-twitch-kick">Notifications live Twitch et Kick</a></li>
+          <li><a href="/erreur-2000-twitch-solution">Erreur 2000 sur Twitch : comment la corriger</a></li>
+        </ul>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Installez StreamPulse</h2>
+          <p>Gratuit, sans publicité, sans compte. Vos données restent dans votre navigateur.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+            <a class="btn" href="/support">Lire la FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. Tous droits réservés.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Confidentialité</a>
+          <a href="/terms">Conditions d'utilisation</a>
+          <a href="/support">Assistance</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

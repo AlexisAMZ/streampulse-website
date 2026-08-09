@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtrer le chat Twitch : spam et mots-clés | StreamPulse</title>
+    <meta name="description" content="Comment masquer les messages indésirables, les mots-clés et certains utilisateurs dans le chat Twitch, sans être modérateur de la chaîne." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <link rel="canonical" href="https://www.streampulse.fr/filtrer-chat-twitch" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/filtrer-chat-twitch" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/filter-twitch-chat" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/filtrer-chat-twitch" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/filtrer-chat-twitch" />
+    <meta property="og:title" content="Filtrer le chat Twitch : spam et mots-clés | StreamPulse" />
+    <meta property="og:description" content="Comment masquer les messages indésirables, les mots-clés et certains utilisateurs dans le chat Twitch, sans être modérateur de la chaîne." />
+    <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Filtrer le chat Twitch : spam et mots-clés | StreamPulse" />
+    <meta name="twitter:description" content="Comment masquer les messages indésirables, les mots-clés et certains utilisateurs dans le chat Twitch, sans être modérateur de la chaîne." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Filtrer le chat Twitch côté spectateur",
+    "headline": "Filtrer le chat Twitch côté spectateur",
+    "description": "Comment masquer les messages indésirables, les mots-clés et certains utilisateurs dans le chat Twitch, sans être modérateur de la chaîne.",
+    "inLanguage": "fr",
+    "url": "https://www.streampulse.fr/filtrer-chat-twitch",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    },
+    "totalTime": "PT3M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Ouvrir les réglages de filtrage",
+        "text": "Depuis l'extension StreamPulse, ouvrez la section Filtrage du chat.",
+        "url": "https://www.streampulse.fr/filtrer-chat-twitch#principe"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Ajouter des mots-clés",
+        "text": "Saisissez les termes à masquer : les messages correspondants disparaissent de votre affichage.",
+        "url": "https://www.streampulse.fr/filtrer-chat-twitch#principe"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Masquer des utilisateurs",
+        "text": "Ajoutez les pseudonymes dont vous ne voulez plus voir les messages.",
+        "url": "https://www.streampulse.fr/filtrer-chat-twitch#principe"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.streampulse.fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Filtrer le chat Twitch côté spectateur",
+        "item": "https://www.streampulse.fr/filtrer-chat-twitch"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "fr",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Le filtrage prévient-il l’utilisateur masqué ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non, l'opération est entièrement locale et invisible pour les autres."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les filtres sont-ils synchronisés entre appareils ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Les réglages sont stockés localement dans chaque navigateur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Le filtrage fonctionne-t-il sur Kick ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le filtrage du chat cible actuellement Twitch."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 2.6rem 0 0.9rem;
+        font-size: 1.55rem;
+        letter-spacing: -0.01em;
+        scroll-margin-top: 90px;
+      }
+      .article-wrap h3 { margin: 1.6rem 0 0.6rem; font-size: 1.12rem; }
+      .article-wrap p { line-height: 1.75; margin: 0 0 1rem; }
+      .article-lede { font-size: 1.1rem; color: var(--color-text); }
+      /* Bloc de réponse directe : cible privilégiée d'extraction par les
+         moteurs de recherche et les moteurs génératifs. */
+      .answer-block {
+        border-left: 3px solid var(--color-highlight);
+        background: var(--color-surface);
+        border-radius: 0 14px 14px 0;
+        padding: 1rem 1.2rem;
+        margin: 0 0 1.4rem;
+      }
+      .answer-block p { margin: 0; font-weight: 500; }
+      .toc {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        padding: 1.1rem 1.3rem;
+        margin: 0 0 2.2rem;
+      }
+      .toc-title {
+        margin: 0 0 .6rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--color-muted);
+      }
+      .toc ul { margin: 0; padding-left: 1.1rem; }
+      .toc li { margin: .3rem 0; }
+      .toc a { color: var(--color-text); text-decoration: none; }
+      .toc a:hover { color: var(--color-highlight); text-decoration: underline; }
+      .step-list { padding-left: 1.3rem; line-height: 1.75; }
+      .step-list li { margin: 0 0 .7rem; }
+      .check-list { padding-left: 1.3rem; line-height: 1.75; }
+      .check-list li { margin: 0 0 .55rem; }
+      .table-wrap { overflow-x: auto; margin: 0 0 1.4rem; }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: .7rem .9rem;
+        border-bottom: 1px solid var(--color-border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: .78rem;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--color-muted);
+      }
+      .breadcrumb { font-size: .85rem; color: var(--color-muted); margin: 0 0 1rem; }
+      .breadcrumb a { color: var(--color-muted); }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      .faq-inline .faq-item { margin: 0 0 1.3rem; }
+      .faq-inline h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+      .related-list { padding-left: 1.2rem; line-height: 1.9; }
+      .article-meta { font-size: .82rem; color: var(--color-muted); margin: 0 0 2rem; }
+      .cta-banner { margin-top: 3rem; text-align: center; }
+    </style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/#features">Fonctionnalités</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/support">Assistance</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="legal-hero">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/">Accueil</a> / <span>Filtrer le chat Twitch côté spectateur</span>
+          </p>
+          <h1>Filtrer le chat Twitch côté spectateur</h1>
+          <p class="article-lede">Sur les grosses chaînes, le chat défile trop vite pour rester lisible, et les outils de modération natifs sont réservés aux modérateurs. Un spectateur peut malgré tout filtrer son propre affichage. Cette page détaille les options disponibles et leurs limites.</p>
+        </div>
+      </section>
+
+      <section class="legal-section">
+        <div class="container article-wrap">
+          <p class="article-meta">Mis à jour le 9 août 2026</p>
+        <nav class="toc" aria-label="Sur cette page">
+          <p class="toc-title">Sur cette page</p>
+          <ul>
+          <li><a href="#principe">Peut-on filtrer le chat Twitch sans être modérateur ?</a></li>
+          <li><a href="#options">Que peut-on masquer exactement ?</a></li>
+          <li><a href="#limites">Quelles sont les limites du filtrage spectateur ?</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="principe">Peut-on filtrer le chat Twitch sans être modérateur ?</h2>
+        <div class="answer-block">
+          <p>Oui. Le filtrage côté spectateur agit uniquement sur votre propre affichage : les messages sont masqués chez vous, sans être supprimés pour les autres et sans aucune action de modération sur la chaîne.</p>
+        </div>
+        <p>C'est une distinction importante : vous ne bloquez pas l'auteur, vous cessez simplement de voir ses messages dans votre navigateur.</p>
+
+        <h2 id="options">Que peut-on masquer exactement ?</h2>
+        <div class="answer-block">
+          <p>Les messages contenant des mots-clés définis, les messages de certains utilisateurs, ainsi que des éléments d'interface encombrants comme les recommandations ou les encarts promotionnels.</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>Mots-clés.</strong> Spoilers, insultes, spam récurrent.</li>
+          <li><strong>Utilisateurs.</strong> Bots et comptes indésirables.</li>
+          <li><strong>Éléments d’interface.</strong> Encarts et suggestions superflus.</li>
+        </ul>
+
+        <h2 id="limites">Quelles sont les limites du filtrage spectateur ?</h2>
+        <div class="answer-block">
+          <p>Le filtrage s'applique après réception du message par votre navigateur : il ne réduit donc pas le trafic reçu et n'empêche pas les autres spectateurs de voir le contenu. Les variantes orthographiques contournent aussi les filtres par mots-clés.</p>
+        </div>
+        <p>Pour les cas graves (harcèlement, contenu illégal), le signalement à Twitch reste la seule réponse appropriée, le filtrage ne faisant que masquer le problème de votre côté.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>Le filtrage prévient-il l’utilisateur masqué ?</h3>
+            <p>Non, l'opération est entièrement locale et invisible pour les autres.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Les filtres sont-ils synchronisés entre appareils ?</h3>
+            <p>Non. Les réglages sont stockés localement dans chaque navigateur.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Le filtrage fonctionne-t-il sur Kick ?</h3>
+            <p>Le filtrage du chat cible actuellement Twitch.</p>
+          </div>
+        </div>
+
+        <h2>À lire aussi</h2>
+        <ul class="related-list">
+          <li><a href="/notifications-live-twitch-kick">Notifications live Twitch et Kick</a></li>
+          <li><a href="/points-de-chaine-automatiques-twitch">Points de chaîne automatiques sur Twitch</a></li>
+          <li><a href="/meilleures-extensions-twitch">Comparatif des extensions Twitch</a></li>
+        </ul>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Installez StreamPulse</h2>
+          <p>Gratuit, sans publicité, sans compte. Vos données restent dans votre navigateur.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+            <a class="btn" href="/support">Lire la FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. Tous droits réservés.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Confidentialité</a>
+          <a href="/terms">Conditions d'utilisation</a>
+          <a href="/support">Assistance</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

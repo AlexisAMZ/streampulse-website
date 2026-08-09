@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Twitch Chat: Hide Spam and Keywords | StreamPulse</title>
+    <meta name="description" content="How to hide unwanted messages, keywords and specific users in Twitch chat, without being a channel moderator." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <link rel="canonical" href="https://www.streampulse.fr/en/filter-twitch-chat" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/filtrer-chat-twitch" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/filter-twitch-chat" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/filtrer-chat-twitch" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/en/filter-twitch-chat" />
+    <meta property="og:title" content="Filter Twitch Chat: Hide Spam and Keywords | StreamPulse" />
+    <meta property="og:description" content="How to hide unwanted messages, keywords and specific users in Twitch chat, without being a channel moderator." />
+    <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Filter Twitch Chat: Hide Spam and Keywords | StreamPulse" />
+    <meta name="twitter:description" content="How to hide unwanted messages, keywords and specific users in Twitch chat, without being a channel moderator." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Filter Twitch chat as a viewer",
+    "headline": "Filter Twitch chat as a viewer",
+    "description": "How to hide unwanted messages, keywords and specific users in Twitch chat, without being a channel moderator.",
+    "inLanguage": "en",
+    "url": "https://www.streampulse.fr/en/filter-twitch-chat",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    },
+    "totalTime": "PT3M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Open the filtering settings",
+        "text": "In the StreamPulse extension, open the Chat filtering section.",
+        "url": "https://www.streampulse.fr/en/filter-twitch-chat#principle"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Add keywords",
+        "text": "Enter the terms to hide: matching messages disappear from your view.",
+        "url": "https://www.streampulse.fr/en/filter-twitch-chat#principle"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Hide users",
+        "text": "Add the usernames whose messages you no longer want to see.",
+        "url": "https://www.streampulse.fr/en/filter-twitch-chat#principle"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Filter Twitch chat as a viewer",
+        "item": "https://www.streampulse.fr/en/filter-twitch-chat"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "en",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does filtering notify the hidden user?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, the operation is entirely local and invisible to others."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are filters synced across devices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Settings are stored locally in each browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does filtering work on Kick?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chat filtering currently targets Twitch."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 2.6rem 0 0.9rem;
+        font-size: 1.55rem;
+        letter-spacing: -0.01em;
+        scroll-margin-top: 90px;
+      }
+      .article-wrap h3 { margin: 1.6rem 0 0.6rem; font-size: 1.12rem; }
+      .article-wrap p { line-height: 1.75; margin: 0 0 1rem; }
+      .article-lede { font-size: 1.1rem; color: var(--color-text); }
+      /* Bloc de réponse directe : cible privilégiée d'extraction par les
+         moteurs de recherche et les moteurs génératifs. */
+      .answer-block {
+        border-left: 3px solid var(--color-highlight);
+        background: var(--color-surface);
+        border-radius: 0 14px 14px 0;
+        padding: 1rem 1.2rem;
+        margin: 0 0 1.4rem;
+      }
+      .answer-block p { margin: 0; font-weight: 500; }
+      .toc {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        padding: 1.1rem 1.3rem;
+        margin: 0 0 2.2rem;
+      }
+      .toc-title {
+        margin: 0 0 .6rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--color-muted);
+      }
+      .toc ul { margin: 0; padding-left: 1.1rem; }
+      .toc li { margin: .3rem 0; }
+      .toc a { color: var(--color-text); text-decoration: none; }
+      .toc a:hover { color: var(--color-highlight); text-decoration: underline; }
+      .step-list { padding-left: 1.3rem; line-height: 1.75; }
+      .step-list li { margin: 0 0 .7rem; }
+      .check-list { padding-left: 1.3rem; line-height: 1.75; }
+      .check-list li { margin: 0 0 .55rem; }
+      .table-wrap { overflow-x: auto; margin: 0 0 1.4rem; }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: .7rem .9rem;
+        border-bottom: 1px solid var(--color-border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: .78rem;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--color-muted);
+      }
+      .breadcrumb { font-size: .85rem; color: var(--color-muted); margin: 0 0 1rem; }
+      .breadcrumb a { color: var(--color-muted); }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      .faq-inline .faq-item { margin: 0 0 1.3rem; }
+      .faq-inline h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+      .related-list { padding-left: 1.2rem; line-height: 1.9; }
+      .article-meta { font-size: .82rem; color: var(--color-muted); margin: 0 0 2rem; }
+      .cta-banner { margin-top: 3rem; text-align: center; }
+    </style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/en" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/en/#features">Features</a>
+          <a href="/en/#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="legal-hero">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/en">Home</a> / <span>Filter Twitch chat as a viewer</span>
+          </p>
+          <h1>Filter Twitch chat as a viewer</h1>
+          <p class="article-lede">On large channels, chat scrolls too fast to stay readable, and native moderation tools are reserved for moderators. A viewer can still filter their own view. This page covers the available options and their limits.</p>
+        </div>
+      </section>
+
+      <section class="legal-section">
+        <div class="container article-wrap">
+          <p class="article-meta">Updated on 9 August 2026</p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#principle">Can you filter Twitch chat without being a moderator?</a></li>
+          <li><a href="#options">What exactly can be hidden?</a></li>
+          <li><a href="#limits">What are the limits of viewer-side filtering?</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="principle">Can you filter Twitch chat without being a moderator?</h2>
+        <div class="answer-block">
+          <p>Yes. Viewer-side filtering only affects your own view: messages are hidden for you, without being deleted for anyone else and without any moderation action on the channel.</p>
+        </div>
+        <p>That distinction matters: you are not blocking the author, you are simply no longer seeing their messages in your browser.</p>
+
+        <h2 id="options">What exactly can be hidden?</h2>
+        <div class="answer-block">
+          <p>Messages containing keywords you define, messages from specific users, plus cluttering interface elements such as recommendations and promotional panels.</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>Keywords.</strong> Spoilers, insults, recurring spam.</li>
+          <li><strong>Users.</strong> Bots and unwanted accounts.</li>
+          <li><strong>Interface elements.</strong> Superfluous panels and suggestions.</li>
+        </ul>
+
+        <h2 id="limits">What are the limits of viewer-side filtering?</h2>
+        <div class="answer-block">
+          <p>Filtering applies after your browser receives the message, so it does not reduce incoming traffic and does not stop other viewers seeing the content. Spelling variants also bypass keyword filters.</p>
+        </div>
+        <p>For serious cases such as harassment or illegal content, reporting to Twitch remains the only appropriate response, since filtering merely hides the problem on your side.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>Does filtering notify the hidden user?</h3>
+            <p>No, the operation is entirely local and invisible to others.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Are filters synced across devices?</h3>
+            <p>No. Settings are stored locally in each browser.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Does filtering work on Kick?</h3>
+            <p>Chat filtering currently targets Twitch.</p>
+          </div>
+        </div>
+
+        <h2>Related reading</h2>
+        <ul class="related-list">
+          <li><a href="/en/twitch-kick-live-notifications">Twitch and Kick live notifications</a></li>
+          <li><a href="/en/auto-claim-twitch-channel-points">Auto-claim Twitch channel points</a></li>
+          <li><a href="/en/best-twitch-extensions">Twitch extensions compared</a></li>
+        </ul>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

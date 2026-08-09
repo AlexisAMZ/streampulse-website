@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitch and Kick Desktop Live Notifications | StreamPulse</title>
+    <meta name="description" content="Why Twitch notifications arrive late, how to get reliable desktop alerts for both Twitch and Kick in a single extension, and how to tune the sound." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <link rel="canonical" href="https://www.streampulse.fr/en/twitch-kick-live-notifications" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/notifications-live-twitch-kick" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/twitch-kick-live-notifications" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/notifications-live-twitch-kick" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/en/twitch-kick-live-notifications" />
+    <meta property="og:title" content="Twitch and Kick Desktop Live Notifications | StreamPulse" />
+    <meta property="og:description" content="Why Twitch notifications arrive late, how to get reliable desktop alerts for both Twitch and Kick in a single extension, and how to tune the sound." />
+    <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Twitch and Kick Desktop Live Notifications | StreamPulse" />
+    <meta name="twitter:description" content="Why Twitch notifications arrive late, how to get reliable desktop alerts for both Twitch and Kick in a single extension, and how to tune the sound." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Get Twitch and Kick live notifications on your desktop",
+    "headline": "Get Twitch and Kick live notifications on your desktop",
+    "description": "Why Twitch notifications arrive late, how to get reliable desktop alerts for both Twitch and Kick in a single extension, and how to tune the sound.",
+    "inLanguage": "en",
+    "url": "https://www.streampulse.fr/en/twitch-kick-live-notifications",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    },
+    "totalTime": "PT2M",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Install the extension",
+        "text": "Add StreamPulse from the Chrome Web Store on Chrome, Brave, Edge or Opera.",
+        "url": "https://www.streampulse.fr/en/twitch-kick-live-notifications#delay"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Import your channels",
+        "text": "Sync your Twitch subscriptions in one click, then add your Kick channels manually.",
+        "url": "https://www.streampulse.fr/en/twitch-kick-live-notifications#delay"
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Tune the alerts",
+        "text": "Pick the sound, enable the icon badge, and set which channels are priority.",
+        "url": "https://www.streampulse.fr/en/twitch-kick-live-notifications#delay"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/en/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Get Twitch and Kick live notifications on your desktop",
+        "item": "https://www.streampulse.fr/en/twitch-kick-live-notifications"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "en",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do notifications work if Chrome is minimised?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, as long as the browser is running, including minimised or in the background."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many channels can I follow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The extension sets no fixed limit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a Twitch account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not for manual tracking. Signing in to Twitch only serves to import your subscriptions automatically."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 2.6rem 0 0.9rem;
+        font-size: 1.55rem;
+        letter-spacing: -0.01em;
+        scroll-margin-top: 90px;
+      }
+      .article-wrap h3 { margin: 1.6rem 0 0.6rem; font-size: 1.12rem; }
+      .article-wrap p { line-height: 1.75; margin: 0 0 1rem; }
+      .article-lede { font-size: 1.1rem; color: var(--color-text); }
+      /* Bloc de réponse directe : cible privilégiée d'extraction par les
+         moteurs de recherche et les moteurs génératifs. */
+      .answer-block {
+        border-left: 3px solid var(--color-highlight);
+        background: var(--color-surface);
+        border-radius: 0 14px 14px 0;
+        padding: 1rem 1.2rem;
+        margin: 0 0 1.4rem;
+      }
+      .answer-block p { margin: 0; font-weight: 500; }
+      .toc {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        padding: 1.1rem 1.3rem;
+        margin: 0 0 2.2rem;
+      }
+      .toc-title {
+        margin: 0 0 .6rem;
+        font-size: .8rem;
+        text-transform: uppercase;
+        letter-spacing: .08em;
+        color: var(--color-muted);
+      }
+      .toc ul { margin: 0; padding-left: 1.1rem; }
+      .toc li { margin: .3rem 0; }
+      .toc a { color: var(--color-text); text-decoration: none; }
+      .toc a:hover { color: var(--color-highlight); text-decoration: underline; }
+      .step-list { padding-left: 1.3rem; line-height: 1.75; }
+      .step-list li { margin: 0 0 .7rem; }
+      .check-list { padding-left: 1.3rem; line-height: 1.75; }
+      .check-list li { margin: 0 0 .55rem; }
+      .table-wrap { overflow-x: auto; margin: 0 0 1.4rem; }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: .7rem .9rem;
+        border-bottom: 1px solid var(--color-border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: .78rem;
+        text-transform: uppercase;
+        letter-spacing: .06em;
+        color: var(--color-muted);
+      }
+      .breadcrumb { font-size: .85rem; color: var(--color-muted); margin: 0 0 1rem; }
+      .breadcrumb a { color: var(--color-muted); }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      .faq-inline .faq-item { margin: 0 0 1.3rem; }
+      .faq-inline h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+      .related-list { padding-left: 1.2rem; line-height: 1.9; }
+      .article-meta { font-size: .82rem; color: var(--color-muted); margin: 0 0 2rem; }
+      .cta-banner { margin-top: 3rem; text-align: center; }
+    </style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/en" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/en/#features">Features</a>
+          <a href="/en/#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="legal-hero">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/en">Home</a> / <span>Get Twitch and Kick live notifications on your desktop</span>
+          </p>
+          <h1>Get Twitch and Kick live notifications on your desktop</h1>
+          <p class="article-lede">Twitch's native notifications sometimes arrive several minutes after a stream starts, and Kick requires watching a separate tab. Following creators on both platforms therefore means juggling two uneven alert systems. This page explains how to centralise that.</p>
+        </div>
+      </section>
+
+      <section class="legal-section">
+        <div class="container article-wrap">
+          <p class="article-meta">Updated on 9 August 2026</p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#delay">Why do Twitch notifications arrive late?</a></li>
+          <li><a href="#twitch-kick">How do you follow Twitch and Kick in one place?</a></li>
+          <li><a href="#customisation">Can the alerts be customised?</a></li>
+          <li><a href="#tab">Do I need to keep a tab open?</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="delay">Why do Twitch notifications arrive late?</h2>
+        <div class="answer-block">
+          <p>Twitch native notifications go through a shared delivery system that introduces a variable delay, sometimes several minutes. An extension that polls followed channels directly detects the switch to live sooner.</p>
+        </div>
+        <p>On a short stream or a one-off event, that gap is enough to miss the start. It is the main reason many viewers keep a tab permanently open.</p>
+
+        <h2 id="twitch-kick">How do you follow Twitch and Kick in one place?</h2>
+        <div class="answer-block">
+          <p>StreamPulse queries the public APIs of both platforms and shows live channels in a single dashboard. One extension replaces manually watching two separate sites.</p>
+        </div>
+        <ul class="check-list">
+          <li>Twitch: notifications, channel points, Drops, predictions.</li>
+          <li>Kick: live status tracking and desktop notifications.</li>
+          <li>Shared dashboard, sorted by status.</li>
+        </ul>
+
+        <h2 id="customisation">Can the alerts be customised?</h2>
+        <div class="answer-block">
+          <p>Yes. The sound is configurable, a badge can appear on the extension icon, and each channel can be tuned independently to avoid overload when you follow many creators.</p>
+        </div>
+        <ul class="check-list">
+          <li>Custom sound or silent notification.</li>
+          <li>Counter badge on the browser icon.</li>
+          <li>Alerts toggled per channel.</li>
+          <li>Native system notification window.</li>
+        </ul>
+
+        <h2 id="tab">Do I need to keep a tab open?</h2>
+        <div class="answer-block">
+          <p>No. Monitoring runs in the extension's service worker, with no dedicated tab. The browser simply needs to be running.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>Do notifications work if Chrome is minimised?</h3>
+            <p>Yes, as long as the browser is running, including minimised or in the background.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How many channels can I follow?</h3>
+            <p>The extension sets no fixed limit.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do I need a Twitch account?</h3>
+            <p>Not for manual tracking. Signing in to Twitch only serves to import your subscriptions automatically.</p>
+          </div>
+        </div>
+
+        <h2>Related reading</h2>
+        <ul class="related-list">
+          <li><a href="/en/auto-claim-twitch-channel-points">Auto-claim Twitch channel points</a></li>
+          <li><a href="/en/filter-twitch-chat">Filter Twitch chat</a></li>
+          <li><a href="/en/twitch-drops-auto-claim">Claim Twitch Drops automatically</a></li>
+        </ul>
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

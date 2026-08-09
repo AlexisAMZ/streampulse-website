@@ -4,8 +4,11 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "build/**"
     ],
+    "cleanUrls": true,
+    "trailingSlash": false,
     "rewrites": [
       {
         "source": "**",
