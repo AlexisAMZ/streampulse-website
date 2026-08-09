@@ -131,6 +131,23 @@ function escapeAttr(s) {
     .replace(/"/g, '&quot;');
 }
 
+/**
+ * Remplace la première occurrence (ou toutes avec /g) et échoue bruyamment
+ * si le motif ne matche rien. Un replace() silencieux qui ne matche pas a
+ * déjà causé un bug : le sélecteur de langue n'était jamais réécrit quand la
+ * source FR a évolué (ajout d'aria-label).
+ */
+function safeReplace(input, re, replacement, label) {
+  if (!re.global && input.search(re) === -1) {
+    throw new Error(`build-i18n: remplacement introuvable "${label}" (${re})`);
+  }
+  const out = input.replace(re, replacement);
+  if (re.global && input === out) {
+    throw new Error(`build-i18n: remplacement introuvable "${label}" (${re})`);
+  }
+  return out;
+}
+
 /** Convertit du HTML de traduction en texte brut (pour data-i18n non-html). */
 function stripTags(s) {
   return String(s).replace(/<[^>]*>/g, '');
@@ -333,8 +350,19 @@ function rewriteHead(html, lang) {
  * Le sélecteur de langue doit naviguer vers de vraies URLs plutôt que
  * de permuter du texte en JS, sinon les versions traduites restent
  * inaccessibles aux crawlers.
+ *
+ * La regex tolère des attributs supplémentaires sur le <select> : la source
+ * FR porte déjà aria-label, et un motif trop strict échouait silencieusement
+ * (toutes les langues héritaient alors du drapeau FR marqué "selected").
  */
 function rewriteLangSelector(html, lang) {
+  const ARIA = {
+    fr: 'Langue',
+    en: 'Language',
+    es: 'Idioma',
+    'pt-BR': 'Idioma',
+  };
+
   const options = Object.entries(LOCALES)
     .map(([code, cfg]) => {
       const flag = { fr: '🇫🇷 FR', en: '🇬🇧 EN', es: '🇪🇸 ES', 'pt-BR': '🇧🇷 PT-BR' }[code];
@@ -344,9 +372,11 @@ function rewriteLangSelector(html, lang) {
     })
     .join('\n');
 
-  return html.replace(
-    /<select id="lang">[\s\S]*?<\/select>/,
-    `<select id="lang" aria-label="Language">\n${options}\n      </select>`
+  return safeReplace(
+    html,
+    /<select id="lang"[^>]*>[\s\S]*?<\/select>/,
+    `<select id="lang" aria-label="${escapeAttr(ARIA[lang] || 'Language')}">\n${options}\n      </select>`,
+    'sélecteur de langue'
   );
 }
 
