@@ -1,0 +1,17 @@
+# Avec outputDirectory ".", la racine du repo est publiee telle quelle.
+# Tout ce qui n'a pas a etre servi au public doit donc etre exclu ici.
+
+# Scripts de build et dictionnaires sources : le HTML genere est deja commite,
+# Vercel n'execute aucun build (buildCommand: null).
+build/
+
+# Notes de travail
+achievement.txt
+achievement3.txt
+README.md
+
+# Environnement local
+.env
+.env.local
+.vercel/
+node_modules/
