@@ -1,473 +1,620 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>지원 및 문의 | StreamPulse</title>
-    <meta name="description" content="Twitch와 Kick용 StreamPulse 확장 프로그램의 버그 신고, 기능 제안, 질문을 남겨 주세요." />
-    <link rel="canonical" href="https://www.streampulse.fr/ko/support" />
-    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/support" />
-    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/support" />
-    <link rel="alternate" hreflang="es" href="https://www.streampulse.fr/es/support" />
-    <link rel="alternate" hreflang="pt-BR" href="https://www.streampulse.fr/pt-br/support" />
-    <link rel="alternate" hreflang="de" href="https://www.streampulse.fr/de/support" />
-    <link rel="alternate" hreflang="it" href="https://www.streampulse.fr/it/support" />
-    <link rel="alternate" hreflang="pl" href="https://www.streampulse.fr/pl/support" />
-    <link rel="alternate" hreflang="tr" href="https://www.streampulse.fr/tr/support" />
-    <link rel="alternate" hreflang="ru" href="https://www.streampulse.fr/ru/support" />
-    <link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/support" />
-    <link rel="alternate" hreflang="ko" href="https://www.streampulse.fr/ko/support" />
-    <link rel="alternate" hreflang="id" href="https://www.streampulse.fr/id/support" />
-    <link rel="alternate" hreflang="nl" href="https://www.streampulse.fr/nl/support" />
-    <link rel="alternate" hreflang="hi" href="https://www.streampulse.fr/hi/support" />
-    <link rel="alternate" hreflang="sv" href="https://www.streampulse.fr/sv/support" />
-    <link rel="alternate" hreflang="cs" href="https://www.streampulse.fr/cs/support" />
-    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/support" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.streampulse.fr/ko/support" />
-    <meta property="og:title" content="지원 및 문의 | StreamPulse" />
-    <meta property="og:description" content="Twitch와 Kick용 StreamPulse 확장 프로그램의 버그 신고, 기능 제안, 질문을 남겨 주세요." />
-    <script type="application/ld+json">
-    [
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>지원 및 문의 | StreamPulse</title>
+<meta name="description" content="Twitch와 Kick용 StreamPulse 확장 프로그램의 버그 신고, 기능 제안, 질문을 남겨 주세요." />
+<link rel="canonical" href="https://www.streampulse.fr/ko/support" />
+<link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/support" />
+<link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/support" />
+<link rel="alternate" hreflang="es" href="https://www.streampulse.fr/es/support" />
+<link rel="alternate" hreflang="pt-BR" href="https://www.streampulse.fr/pt-br/support" />
+<link rel="alternate" hreflang="de" href="https://www.streampulse.fr/de/support" />
+<link rel="alternate" hreflang="it" href="https://www.streampulse.fr/it/support" />
+<link rel="alternate" hreflang="pl" href="https://www.streampulse.fr/pl/support" />
+<link rel="alternate" hreflang="tr" href="https://www.streampulse.fr/tr/support" />
+<link rel="alternate" hreflang="ru" href="https://www.streampulse.fr/ru/support" />
+<link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/support" />
+<link rel="alternate" hreflang="ko" href="https://www.streampulse.fr/ko/support" />
+<link rel="alternate" hreflang="id" href="https://www.streampulse.fr/id/support" />
+<link rel="alternate" hreflang="nl" href="https://www.streampulse.fr/nl/support" />
+<link rel="alternate" hreflang="hi" href="https://www.streampulse.fr/hi/support" />
+<link rel="alternate" hreflang="sv" href="https://www.streampulse.fr/sv/support" />
+<link rel="alternate" hreflang="cs" href="https://www.streampulse.fr/cs/support" />
+<link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/support" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.streampulse.fr/ko/support" />
+<meta property="og:title" content="지원 및 문의 | StreamPulse" />
+<meta property="og:description" content="Twitch와 Kick용 StreamPulse 확장 프로그램의 버그 신고, 기능 제안, 질문을 남겨 주세요." />
+<meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
+<link rel="icon" href="/images/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
       {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "StreamPulse",
-            "item": "https://www.streampulse.fr/ko"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "문제가 있나요, 아이디어가 있나요?",
-            "item": "https://www.streampulse.fr/ko/support"
-          }
-        ]
+        "@type": "ListItem",
+        "position": 1,
+        "name": "StreamPulse",
+        "item": "https://www.streampulse.fr/ko"
       },
       {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "inLanguage": "ko",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "스트리머를 목록에 어떻게 추가하나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "도구 모음에서 확장 프로그램을 열고 추가 입력란에 Twitch 또는 Kick 채널 이름을 입력한 뒤 확인하세요. 방송 상태가 바로 표시됩니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "제 데이터가 수집되나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "아니요. 설정, 시청 시간, 포인트는 브라우저에 로컬로 저장됩니다. Twitch와 Kick의 공개 API에는 팔로우한 채널 이름만 전송되어 방송 상태를 확인합니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "채널이 방송 중으로 표시되지 않나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "채널 이름의 철자를 정확히 확인하고 새로고침될 때까지 몇 초 기다려 주세요. 계속 문제가 있으면 플랫폼과 채널 이름을 적어 양식으로 보내 주세요."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "StreamPulse는 무료인가요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "네, 완전히 무료입니다. 계정도 광고도 없습니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Drops와 Moments 자동 수령은 어떻게 작동하나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "StreamPulse는 채널 포인트 상자, 진행 중인 Twitch Drops 캠페인, Moments 배지를 감지합니다. 모두 백그라운드에서 자동으로 수령되며 따로 하실 일은 없습니다. 기록은 확장 프로그램 로그에서 확인할 수 있습니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "떠 있는 예측 오버레이는 어떻게 사용하나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Twitch 방송에서 예측이 시작되면 플레이어 위에 반투명 패널이 나타납니다. 투표하고 배당률과 남은 시간을 확인할 수 있으며, 오버레이는 언제든 옮기거나 닫을 수 있습니다."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "탭 아이콘이 왜 바뀌나요?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "설정에서 옵션을 켜면 StreamPulse가 탭의 파비콘을 방송 중인 스트리머의 프로필 사진으로 바꾸고 모서리에 빨간 LIVE 점을 표시합니다. 어떤 탭에서 방송이 재생 중인지 바로 알 수 있습니다."
-            }
-          }
-        ]
+        "@type": "ListItem",
+        "position": 2,
+        "name": "문제가 있나요, 아이디어가 있나요?",
+        "item": "https://www.streampulse.fr/ko/support"
       }
     ]
-    </script>
-    <link rel="stylesheet" href="/css/styles.css" />
-
-    <style>
-      /* Reuses the site's design tokens, no new palette. */
-      .support-narrow {
-        width: min(720px, 92vw);
-        margin: 0 auto;
-      }
-
-      .support-form-card {
-        background: var(--color-surface, rgba(255, 255, 255, 0.04));
-        border: 1px solid var(--color-border, rgba(255, 255, 255, 0.1));
-        border-radius: 18px;
-        padding: 1.8rem;
-        margin-top: 1.4rem;
-      }
-
-      .support-field {
-        margin-bottom: 1.25rem;
-      }
-
-      .support-field label {
-        display: block;
-        margin-bottom: 0.45rem;
-        font-size: 0.92rem;
-        font-weight: 600;
-      }
-
-      .support-field .opt {
-        font-weight: 400;
-        font-size: 0.82rem;
-        color: var(--color-muted, rgba(255, 255, 255, 0.55));
-      }
-
-      .support-field input,
-      .support-field select,
-      .support-field textarea {
-        width: 100%;
-        padding: 0.75rem 0.9rem;
-        border-radius: 12px;
-        border: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
-        background: rgba(255, 255, 255, 0.03);
-        color: inherit;
-        font: inherit;
-      }
-
-      .support-field textarea {
-        min-height: 170px;
-        resize: vertical;
-      }
-
-      .support-field input:focus,
-      .support-field select:focus,
-      .support-field textarea:focus {
-        outline: 2px solid var(--color-highlight, #8b7bff);
-        outline-offset: 1px;
-      }
-
-      .support-hint {
-        margin: 0.4rem 0 0;
-        font-size: 0.84rem;
-        color: var(--color-muted, rgba(255, 255, 255, 0.55));
-      }
-
-      .support-submit {
-        width: 100%;
-        cursor: pointer;
-        font-family: inherit;
-        margin-top: 0.4rem;
-      }
-
-      .support-submit[aria-busy='true'] {
-        opacity: 0.65;
-        cursor: progress;
-      }
-
-      .support-note {
-        margin: 1rem 0 0;
-        text-align: center;
-        font-size: 0.85rem;
-        color: var(--color-muted, rgba(255, 255, 255, 0.55));
-      }
-
-      /* Feedback block: success and error share the markup, only the tint
-         changes. aria-live announces the result to screen readers. */
-      .support-confirm {
-        display: none;
-        gap: 0.75rem;
-        align-items: flex-start;
-        border: 1px solid rgba(139, 123, 255, 0.45);
-        background: rgba(139, 123, 255, 0.12);
-        border-radius: 14px;
-        padding: 1rem 1.1rem;
-        margin-bottom: 1.6rem;
-        font-size: 0.95rem;
-      }
-
-      .support-confirm.show {
-        display: flex;
-      }
-
-      .support-confirm.error {
-        border-color: rgba(255, 107, 107, 0.5);
-        background: rgba(255, 107, 107, 0.12);
-      }
-    </style>
-  </head>
-  <body class="legal-page">
-    <header class="site-header">
-      <div class="container header-content">
-        <div class="branding">
-          <a href="/ko" class="branding-link">
-            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
-            <span class="brand-name">StreamPulse</span>
-          </a>
-        </div>
-        <nav class="main-nav">
-          <a href="/ko">StreamPulse</a>
-          <a href="/privacy">개인정보 처리방침</a>
-          <a href="/terms">이용약관</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="legal-main">
-      <section class="legal-hero">
-        <div class="container">
-          <h1>문제가 있나요, 아이디어가 있나요?</h1>
-          <p>버그를 신고하거나 기능을 제안해 주세요. 모든 메시지를 읽고 있습니다.</p>
-        </div>
-      </section>
-
-      <section class="faq">
-        <div class="container support-narrow">
-          <h2>자주 묻는 질문</h2>
-
-          <div class="faq-item">
-            <h3>스트리머를 목록에 어떻게 추가하나요?</h3>
-            <p>도구 모음에서 확장 프로그램을 열고 추가 입력란에 Twitch 또는 Kick 채널 이름을 입력한 뒤 확인하세요. 방송 상태가 바로 표시됩니다.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>제 데이터가 수집되나요?</h3>
-            <p>아니요. 설정, 시청 시간, 포인트는 브라우저에 로컬로 저장됩니다. Twitch와 Kick의 공개 API에는 팔로우한 채널 이름만 전송되어 방송 상태를 확인합니다.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>채널이 방송 중으로 표시되지 않나요?</h3>
-            <p>채널 이름의 철자를 정확히 확인하고 새로고침될 때까지 몇 초 기다려 주세요. 계속 문제가 있으면 플랫폼과 채널 이름을 적어 양식으로 보내 주세요.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>StreamPulse는 무료인가요?</h3>
-            <p>네, 완전히 무료입니다. 계정도 광고도 없습니다.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Drops와 Moments 자동 수령은 어떻게 작동하나요?</h3>
-            <p>StreamPulse는 채널 포인트 상자, 진행 중인 Twitch Drops 캠페인, Moments 배지를 감지합니다. 모두 백그라운드에서 자동으로 수령되며 따로 하실 일은 없습니다. 기록은 확장 프로그램 로그에서 확인할 수 있습니다.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>떠 있는 예측 오버레이는 어떻게 사용하나요?</h3>
-            <p>Twitch 방송에서 예측이 시작되면 플레이어 위에 반투명 패널이 나타납니다. 투표하고 배당률과 남은 시간을 확인할 수 있으며, 오버레이는 언제든 옮기거나 닫을 수 있습니다.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>탭 아이콘이 왜 바뀌나요?</h3>
-            <p>설정에서 옵션을 켜면 StreamPulse가 탭의 파비콘을 방송 중인 스트리머의 프로필 사진으로 바꾸고 모서리에 빨간 LIVE 점을 표시합니다. 어떤 탭에서 방송이 재생 중인지 바로 알 수 있습니다.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="support-section">
-        <div class="container support-narrow">
-          <h2>문의하기</h2>
-          <p>내용을 적어 주세요. 연락처를 남기시면 답변드립니다.</p>
-
-          <div class="support-form-card">
-            <div class="support-confirm" id="confirm" role="status" aria-live="polite">
-              <span aria-hidden="true" id="confirmIcon">✓</span>
-              <div id="confirmText"></div>
-            </div>
-
-            <form id="supportForm" novalidate>
-              <div class="support-field">
-                <label for="category">문의 유형</label>
-                <select id="category" name="category">
-                  <option value="bug">버그 신고</option>
-                  <option value="feature">기능 아이디어</option>
-                  <option value="question">질문</option>
-                  <option value="privacy">개인정보 및 데이터</option>
-                  <option value="other">기타</option>
-                </select>
-              </div>
-
-              <div class="support-field">
-                <label for="name">
-                  이름 또는 닉네임
-                  <span class="opt">(선택)</span>
-                </label>
-                <input type="text" id="name" name="name" placeholder="닉네임" autocomplete="nickname" />
-              </div>
-
-              <div class="support-field">
-                <label for="email">
-                  이메일
-                  <span class="opt">(선택)</span>
-                </label>
-                <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
-              </div>
-
-              <div class="support-field">
-                <label for="discord">
-                  Discord
-                  <span class="opt">(선택)</span>
-                </label>
-                <input type="text" id="discord" name="discord" placeholder="Discord 사용자명" />
-                <p class="support-hint">답변을 원하시면 연락처를 하나 이상 남겨 주세요. 원하지 않으면 비워 두고 보내셔도 됩니다.</p>
-              </div>
-
-              <div class="support-field">
-                <label for="message">
-                  메시지
-                  <span class="opt">(필수)</span>
-                </label>
-                <textarea id="message" name="message" placeholder="문제를 적어 주세요: 무엇을 하던 중이었는지, 무슨 일이 있었는지, 어떤 채널인지…" required></textarea>
-                <p class="support-hint">자세할수록 빨리 고칠 수 있습니다.</p>
-              </div>
-
-              <!-- Honeypot: hidden from users, often filled by automated
-                   scripts. The API silently drops those submissions. -->
-              <input type="checkbox" name="botcheck" id="botcheck" style="display: none" tabindex="-1" autocomplete="off" />
-
-              <button type="submit" class="btn primary support-submit">보내기</button>
-              <p class="support-note">
-                직접 메일 보내실 곳
-                <a href="mailto:contact@alexisamz.fr">contact@alexisamz.fr</a>
-              </p>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <p>© <span id="current-year"></span> StreamPulse</p>
-        <nav class="footer-links">
-          <a href="/privacy">개인정보 처리방침</a>
-          <a href="/terms">이용약관</a>
-          <a href="/ko">StreamPulse</a>
-        </nav>
-      </div>
-    </footer>
-
-    <script>
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-
-      /*
-       * Posts to /api/support, which relays through Resend. No key here:
-       * the API key lives in Vercel environment variables.
-       *
-       * Contact details are optional. When none is provided, the confirmation
-       * says so, since no reply is possible without a way to reach the sender.
-       */
-      (function () {
-        'use strict';
-
-        var ENDPOINT = '/api/support';
-        var LOCALE = "ko";
-        var ERRORS = {
-        "message_required": "메시지를 입력해 주세요.",
-        "invalid_email": "이메일 주소가 올바르지 않은 것 같습니다.",
-        "too_long": "메시지가 너무 깁니다.",
-        "send_failed": "보내지 못했습니다. 다시 시도하거나 직접 메일을 보내 주세요.",
-        "unavailable": "현재 양식을 사용할 수 없습니다.",
-        "generic": "오류가 발생했습니다. 다시 시도해 주세요."
-      };
-        var OK_TITLE = "메시지를 보냈습니다. 감사합니다!";
-        var OK_BODY = "최대한 빨리 답변드리겠습니다.";
-        var OK_ANON = "익명으로 접수되었습니다. 연락처가 없어 답변은 드릴 수 없습니다.";
-
-        var form = document.getElementById('supportForm');
-        var box = document.getElementById('confirm');
-        var icon = document.getElementById('confirmIcon');
-        var text = document.getElementById('confirmText');
-        var submit = form.querySelector('.support-submit');
-        var label = submit.textContent;
-
-        function show(kind, content) {
-          box.classList.toggle('error', kind === 'error');
-          icon.textContent = kind === 'error' ? '!' : '✓';
-          text.textContent = content;
-          box.classList.add('show');
-          box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ko",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "스트리머를 목록에 어떻게 추가하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "도구 모음에서 확장 프로그램을 열고 추가 입력란에 Twitch 또는 Kick 채널 이름을 입력한 뒤 확인하세요. 방송 상태가 바로 표시됩니다."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "채널이 방송 중으로 표시되지 않나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "채널 이름의 철자를 정확히 확인하고 새로고침될 때까지 몇 초 기다려 주세요. 계속 문제가 있으면 플랫폼과 채널 이름을 적어 양식으로 보내 주세요."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Drops와 Moments 자동 수령은 어떻게 작동하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "StreamPulse는 채널 포인트 상자, 진행 중인 Twitch Drops 캠페인, Moments 배지를 감지합니다. 모두 백그라운드에서 자동으로 수령되며 따로 하실 일은 없습니다. 기록은 확장 프로그램 로그에서 확인할 수 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "떠 있는 예측 오버레이는 어떻게 사용하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Twitch 방송에서 예측이 시작되면 플레이어 위에 반투명 패널이 나타납니다. 투표하고 배당률과 남은 시간을 확인할 수 있으며, 오버레이는 언제든 옮기거나 닫을 수 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "탭 아이콘이 왜 바뀌나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "설정에서 옵션을 켜면 StreamPulse가 탭의 파비콘을 방송 중인 스트리머의 프로필 사진으로 바꾸고 모서리에 빨간 LIVE 점을 표시합니다. 어떤 탭에서 방송이 재생 중인지 바로 알 수 있습니다."
+        }
+      }
+    ]
+  }
+]
+</script>
+<style>
+  /* Tokens repris de index.html : la page support partage la charte de la
+     landing, pas celle de css/styles.css (anciennes pages légales). */
+  :root {
+    --bg: #07060c;
+    --bg-2: #0d0a18;
+    --surface: rgba(255,255,255,0.04);
+    --surface-2: rgba(255,255,255,0.06);
+    --border: rgba(255,255,255,0.08);
+    --border-strong: rgba(255,255,255,0.14);
+    --text: #f5f3ff;
+    --text-muted: rgba(245,243,255,0.62);
+    --text-dim: rgba(245,243,255,0.42);
+    --violet: #9146FF;
+    --violet-2: #B68CFF;
+    --magenta: #FF4FB8;
+    --cyan: #4FE3FF;
+    --green: #44FFB1;
+    --red: #FF4D6D;
+    --display: 'Space Grotesk', 'Outfit', system-ui, sans-serif;
+    --sans: 'Outfit', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
 
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
 
-          if (!form.checkValidity()) {
-            form.reportValidity();
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .atmosphere { position: fixed; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+  .atmosphere::before, .atmosphere::after {
+    content: ''; position: absolute; border-radius: 50%;
+    filter: blur(120px); opacity: 0.55;
+  }
+  .atmosphere::before {
+    width: 720px; height: 720px;
+    background: radial-gradient(circle, #6E2BFF 0%, transparent 60%);
+    top: -200px; left: -180px;
+    animation: float1 22s ease-in-out infinite;
+  }
+  .atmosphere::after {
+    width: 640px; height: 640px;
+    background: radial-gradient(circle, #FF4FB8 0%, transparent 60%);
+    top: 20%; right: -200px;
+    animation: float2 26s ease-in-out infinite;
+    opacity: 0.35;
+  }
+  @keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(80px,60px)} }
+  @keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-60px,80px)} }
+
+  .grid-overlay {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 80%);
+  }
+
+  .noise {
+    position: fixed; inset: 0; z-index: 2; pointer-events: none;
+    opacity: 0.04; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .container { width: min(1280px, 92vw); margin: 0 auto; position: relative; z-index: 5; }
+
+  /* Nav flottante, identique à la landing. */
+  .nav {
+    position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+    width: min(1280px, 94vw);
+    z-index: 50;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 14px 10px 20px;
+    background: rgba(13, 10, 24, 0.55);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+  }
+  .nav-brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
+  .nav-brand img { width: 26px; height: 26px; border-radius: 7px; }
+  .nav-links { display: flex; gap: 4px; align-items: center; }
+  .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; padding: 8px 14px; border-radius: 100px; transition: all .25s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--text); background: var(--surface); }
+  .nav-actions { display: flex; gap: 8px; align-items: center; }
+  .lang-pill { display: flex; align-items: center; gap: 4px; padding: 8px 12px; border-radius: 100px; background: var(--surface); border: 1px solid var(--border); font-size: 12.5px; font-weight: 500; cursor: pointer; }
+  .lang-pill select { background: transparent; border: none; color: var(--text); font: inherit; cursor: pointer; outline: none; }
+  .lang-pill select option { background: var(--bg-2); color: var(--text); }
+  .btn-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 18px; border-radius: 100px;
+    background: linear-gradient(180deg, #A565FF 0%, #7B30E5 100%);
+    color: #fff; font-weight: 600; font-size: 13.5px; text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.16);
+    box-shadow: 0 10px 30px -10px rgba(145,70,255,0.6), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: transform .2s;
+  }
+  .btn-cta:hover { transform: translateY(-1px); }
+
+  .section { padding: 100px 0; position: relative; z-index: 5; }
+  .section-eyebrow { display: inline-block; font-size: 12px; color: var(--violet-2); font-weight: 600; text-transform: uppercase; letter-spacing: 0.18em; margin-bottom: 18px; }
+
+  h1 {
+    font-family: var(--display);
+    font-size: clamp(38px, 5.2vw, 62px);
+    font-weight: 600; line-height: 1.04; letter-spacing: -0.035em;
+    max-width: 14ch;
+  }
+  h1 .gradient {
+    background: linear-gradient(120deg, #B68CFF 0%, #9146FF 35%, #FF4FB8 75%, #FF7AB8 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h2 {
+    font-family: var(--display);
+    font-size: clamp(30px, 3.6vw, 44px);
+    font-weight: 600; letter-spacing: -0.03em; line-height: 1.1;
+  }
+  .lede { font-size: 18px; color: var(--text-muted); max-width: 620px; margin-top: 20px; line-height: 1.6; }
+
+  .support-hero { padding: 150px 0 0; }
+
+  /* Carte du formulaire, calée sur les cartes bento de la landing. */
+  .form-card {
+    margin-top: 44px;
+    max-width: 720px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.045), rgba(255,255,255,0.015));
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 32px;
+  }
+
+  .field { margin-bottom: 20px; }
+  .field label {
+    display: block; margin-bottom: 8px;
+    font-size: 13.5px; font-weight: 600; letter-spacing: -0.01em;
+  }
+  .field .opt { font-weight: 400; color: var(--text-dim); font-size: 12.5px; }
+  .field input, .field select, .field textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.03);
+    color: var(--text);
+    font-family: var(--sans); font-size: 14.5px;
+    transition: border-color .2s, background .2s;
+  }
+  .field input::placeholder, .field textarea::placeholder { color: var(--text-dim); }
+  .field select option { background: var(--bg-2); color: var(--text); }
+  .field textarea { min-height: 160px; resize: vertical; line-height: 1.6; }
+  .field input:focus, .field select:focus, .field textarea:focus {
+    outline: none;
+    border-color: var(--violet-2);
+    background: rgba(255,255,255,0.05);
+  }
+  .hint { margin-top: 7px; font-size: 12.5px; color: var(--text-dim); line-height: 1.5; }
+
+  .btn-submit {
+    width: 100%;
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    padding: 15px 24px; border-radius: 100px;
+    background: linear-gradient(180deg, #A565FF 0%, #7B30E5 100%);
+    color: #fff; font-family: var(--sans); font-weight: 600; font-size: 15px;
+    border: 1px solid rgba(255,255,255,0.16);
+    box-shadow: 0 14px 40px -10px rgba(145,70,255,0.6), inset 0 1px 0 rgba(255,255,255,0.25);
+    cursor: pointer; transition: transform .2s, opacity .2s;
+  }
+  .btn-submit:hover:not(:disabled) { transform: translateY(-1px); }
+  .btn-submit:disabled { opacity: 0.6; cursor: progress; }
+
+  .direct { margin-top: 16px; text-align: center; font-size: 13px; color: var(--text-dim); }
+  .direct a { color: var(--violet-2); text-decoration: none; }
+  .direct a:hover { text-decoration: underline; }
+
+  /* Retour d'envoi : succès en vert, erreur en rouge, tokens du site. */
+  .confirm {
+    display: none; gap: 12px; align-items: flex-start;
+    border: 1px solid rgba(68,255,177,0.35);
+    background: rgba(68,255,177,0.08);
+    border-radius: 14px; padding: 14px 16px; margin-bottom: 22px;
+    font-size: 14.5px; line-height: 1.55;
+  }
+  .confirm.show { display: flex; }
+  .confirm.error { border-color: rgba(255,77,109,0.4); background: rgba(255,77,109,0.08); }
+  .confirm .ico {
+    flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%;
+    display: grid; place-items: center; font-size: 12px; font-weight: 700;
+    background: var(--green); color: #04120b;
+  }
+  .confirm.error .ico { background: var(--red); color: #fff; }
+
+  /* FAQ : même accordéon que la page d'accueil. */
+  .faq-list { margin-top: 48px; max-width: 880px; }
+  .faq-item { border-top: 1px solid var(--border); padding: 22px 0; cursor: pointer; }
+  .faq-q {
+    display: flex; justify-content: space-between; align-items: center; gap: 20px;
+    font-family: var(--display); font-size: 19px; font-weight: 500; letter-spacing: -0.01em;
+  }
+  .faq-q .plus { color: var(--violet-2); font-size: 22px; transition: transform .3s; }
+  .faq-item.open .plus { transform: rotate(45deg); }
+  .faq-a {
+    max-height: 0; overflow: hidden;
+    transition: max-height .4s ease, margin-top .4s ease;
+    color: var(--text-muted); font-size: 15.5px; line-height: 1.6;
+  }
+  .faq-item.open .faq-a { max-height: 400px; margin-top: 14px; }
+
+  footer { padding: 60px 0 40px; border-top: 1px solid var(--border); position: relative; z-index: 5; }
+  .footer-grid { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .footer-brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; }
+  .footer-brand img { width: 24px; height: 24px; border-radius: 6px; }
+  footer .links { display: flex; gap: 22px; flex-wrap: wrap; }
+  footer .links a { color: var(--text-muted); text-decoration: none; font-size: 14px; }
+  footer .links a:hover { color: var(--text); }
+  .copy { margin-top: 28px; font-size: 13px; color: var(--text-dim); }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s, transform .8s; }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .support-hero { padding: 120px 0 0; }
+    .section { padding: 70px 0; }
+    .form-card { padding: 24px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .atmosphere::before, .atmosphere::after { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="atmosphere"></div>
+<div class="grid-overlay"></div>
+<div class="noise"></div>
+
+<nav class="nav">
+  <a href="/ko" class="nav-brand">
+    <img src="/images/logo.png" alt="StreamPulse">
+    <span>StreamPulse</span>
+  </a>
+  <div class="nav-links">
+    <a href="/ko#features">기능</a>
+    <a href="/ko#faq">FAQ</a>
+    <a href="/ko/support" class="active">지원</a>
+  </div>
+  <div class="nav-actions">
+    <div class="lang-pill">
+      <select id="lang" aria-label="지원">
+          <option value="/support">🇫🇷 FR</option>
+          <option value="/en/support">🇬🇧 EN</option>
+          <option value="/es/support">🇪🇸 ES</option>
+          <option value="/pt-br/support">🇧🇷 PT-BR</option>
+          <option value="/de/support">🇩🇪 DE</option>
+          <option value="/it/support">🇮🇹 IT</option>
+          <option value="/pl/support">🇵🇱 PL</option>
+          <option value="/tr/support">🇹🇷 TR</option>
+          <option value="/ru/support">🇷🇺 RU</option>
+          <option value="/ja/support">🇯🇵 JA</option>
+          <option value="/ko/support" selected>🇰🇷 KO</option>
+          <option value="/id/support">🇮🇩 ID</option>
+          <option value="/nl/support">🇳🇱 NL</option>
+          <option value="/hi/support">🇮🇳 HI</option>
+          <option value="/sv/support">🇸🇪 SV</option>
+          <option value="/cs/support">🇨🇿 CS</option>
+      </select>
+    </div>
+    <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-cta">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      <span>설치</span>
+    </a>
+  </div>
+</nav>
+
+<section class="support-hero">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow">지원</span>
+      <h1><span class="gradient">문제가 있나요, 아이디어가 있나요?</span></h1>
+      <p class="lede">버그를 신고하거나 기능을 제안해 주세요. 모든 메시지를 읽고 있습니다.</p>
+    </div>
+
+    <div class="form-card reveal">
+      <div class="confirm" id="confirm" role="status" aria-live="polite">
+        <span class="ico" id="confirmIcon" aria-hidden="true">✓</span>
+        <div id="confirmText"></div>
+      </div>
+
+      <form id="supportForm" novalidate>
+        <div class="field">
+          <label for="category">문의 유형</label>
+          <select id="category" name="category">
+            <option value="bug">버그 신고</option>
+            <option value="feature">기능 아이디어</option>
+            <option value="question">질문</option>
+            <option value="privacy">개인정보 및 데이터</option>
+            <option value="other">기타</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="name">이름 또는 닉네임 <span class="opt">(선택)</span></label>
+          <input type="text" id="name" name="name" placeholder="닉네임" autocomplete="nickname" />
+        </div>
+
+        <div class="field">
+          <label for="email">이메일 <span class="opt">(선택)</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+        </div>
+
+        <div class="field">
+          <label for="discord">Discord <span class="opt">(선택)</span></label>
+          <input type="text" id="discord" name="discord" placeholder="Discord 사용자명" />
+          <p class="hint">답변을 원하시면 연락처를 하나 이상 남겨 주세요. 원하지 않으면 비워 두고 보내셔도 됩니다.</p>
+        </div>
+
+        <div class="field">
+          <label for="message">메시지 <span class="opt">(필수)</span></label>
+          <textarea id="message" name="message" placeholder="문제를 적어 주세요: 무엇을 하던 중이었는지, 무슨 일이 있었는지, 어떤 채널인지…" required></textarea>
+          <p class="hint">자세할수록 빨리 고칠 수 있습니다.</p>
+        </div>
+
+        <!-- Honeypot: hidden from users, often filled by automated scripts.
+             The API silently drops those submissions. -->
+        <input type="checkbox" name="botcheck" id="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <button type="submit" class="btn-submit">보내기</button>
+        <p class="direct">
+          직접 메일 보내실 곳
+          <a href="mailto:contact@alexisamz.fr">contact@alexisamz.fr</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- La FAQ vient après le formulaire : la page existe d'abord pour signaler
+     un bug, les questions de dépannage ne sont qu'un recours secondaire. -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow">FAQ</span>
+      <h2>자주 묻는 질문</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>스트리머를 목록에 어떻게 추가하나요?</span> <span class="plus">+</span></div>
+        <div class="faq-a">도구 모음에서 확장 프로그램을 열고 추가 입력란에 Twitch 또는 Kick 채널 이름을 입력한 뒤 확인하세요. 방송 상태가 바로 표시됩니다.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>채널이 방송 중으로 표시되지 않나요?</span> <span class="plus">+</span></div>
+        <div class="faq-a">채널 이름의 철자를 정확히 확인하고 새로고침될 때까지 몇 초 기다려 주세요. 계속 문제가 있으면 플랫폼과 채널 이름을 적어 양식으로 보내 주세요.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>Drops와 Moments 자동 수령은 어떻게 작동하나요?</span> <span class="plus">+</span></div>
+        <div class="faq-a">StreamPulse는 채널 포인트 상자, 진행 중인 Twitch Drops 캠페인, Moments 배지를 감지합니다. 모두 백그라운드에서 자동으로 수령되며 따로 하실 일은 없습니다. 기록은 확장 프로그램 로그에서 확인할 수 있습니다.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>떠 있는 예측 오버레이는 어떻게 사용하나요?</span> <span class="plus">+</span></div>
+        <div class="faq-a">Twitch 방송에서 예측이 시작되면 플레이어 위에 반투명 패널이 나타납니다. 투표하고 배당률과 남은 시간을 확인할 수 있으며, 오버레이는 언제든 옮기거나 닫을 수 있습니다.</div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><span>탭 아이콘이 왜 바뀌나요?</span> <span class="plus">+</span></div>
+        <div class="faq-a">설정에서 옵션을 켜면 StreamPulse가 탭의 파비콘을 방송 중인 스트리머의 프로필 사진으로 바꾸고 모서리에 빨간 LIVE 점을 표시합니다. 어떤 탭에서 방송이 재생 중인지 바로 알 수 있습니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo.png" alt="StreamPulse">
+        <span>StreamPulse</span>
+      </div>
+      <div class="links">
+        <a href="/privacy">개인정보 처리방침</a>
+        <a href="/terms">이용약관</a>
+        <a href="/ko">StreamPulse</a>
+        <a href="mailto:contact@alexisamz.fr">contact@alexisamz.fr</a>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> StreamPulse.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Chaque langue a sa propre page support statique.
+  var langSel = document.getElementById('lang');
+  if (langSel) {
+    langSel.addEventListener('change', function () {
+      window.location.href = this.value;
+    });
+  }
+
+  // Reveal au scroll, même seuil que la page d'accueil.
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+
+  // FAQ : accordéon identique à la page d'accueil.
+  document.querySelectorAll('.faq-item').forEach(function (item) {
+    item.addEventListener('click', function () { item.classList.toggle('open'); });
+  });
+
+  /*
+   * Posts to /api/support, which relays through Resend. No key here:
+   * the API key lives in Vercel environment variables.
+   *
+   * Contact details are optional. When none is provided, the confirmation
+   * says so, since no reply is possible without a way to reach the sender.
+   */
+  (function () {
+    'use strict';
+
+    var ENDPOINT = '/api/support';
+    var LOCALE = "ko";
+    var ERRORS = {
+      "message_required": "메시지를 입력해 주세요.",
+      "invalid_email": "이메일 주소가 올바르지 않은 것 같습니다.",
+      "too_long": "메시지가 너무 깁니다.",
+      "send_failed": "보내지 못했습니다. 다시 시도하거나 직접 메일을 보내 주세요.",
+      "unavailable": "현재 양식을 사용할 수 없습니다.",
+      "generic": "오류가 발생했습니다. 다시 시도해 주세요."
+    };
+    var OK_TITLE = "메시지를 보냈습니다. 감사합니다!";
+    var OK_BODY = "최대한 빨리 답변드리겠습니다.";
+    var OK_ANON = "익명으로 접수되었습니다. 연락처가 없어 답변은 드릴 수 없습니다.";
+
+    var form = document.getElementById('supportForm');
+    var box = document.getElementById('confirm');
+    var icon = document.getElementById('confirmIcon');
+    var text = document.getElementById('confirmText');
+    var submit = form.querySelector('.btn-submit');
+    var label = submit.textContent;
+
+    function show(kind, content) {
+      box.classList.toggle('error', kind === 'error');
+      icon.textContent = kind === 'error' ? '!' : '✓';
+      text.textContent = content;
+      box.classList.add('show');
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      if (form.botcheck.checked) return;
+
+      var hasContact = Boolean(form.email.value.trim() || form.discord.value.trim());
+
+      submit.disabled = true;
+      submit.textContent = "보내는 중…";
+
+      fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          category: form.category.value,
+          name: form.name.value.trim(),
+          email: form.email.value.trim(),
+          discord: form.discord.value.trim(),
+          message: form.message.value.trim(),
+          browser: navigator.userAgent,
+          page: window.location.href,
+          locale: LOCALE,
+          botcheck: false
+        })
+      })
+        .then(function (res) {
+          return res
+            .json()
+            .catch(function () { return {}; })
+            .then(function (data) { return { ok: res.ok, data: data }; });
+        })
+        .then(function (result) {
+          if (!result.ok || result.data.success !== true) {
+            show('error', ERRORS[result.data.error] || ERRORS.generic);
             return;
           }
-          if (form.botcheck.checked) return;
-
-          var hasContact = Boolean(form.email.value.trim() || form.discord.value.trim());
-
-          submit.setAttribute('aria-busy', 'true');
-          submit.disabled = true;
-          submit.textContent = "보내는 중…";
-
-          fetch(ENDPOINT, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              category: form.category.value,
-              name: form.name.value.trim(),
-              email: form.email.value.trim(),
-              discord: form.discord.value.trim(),
-              message: form.message.value.trim(),
-              browser: navigator.userAgent,
-              page: window.location.href,
-              locale: LOCALE,
-              botcheck: false
-            })
-          })
-            .then(function (res) {
-              return res
-                .json()
-                .catch(function () {
-                  return {};
-                })
-                .then(function (data) {
-                  return { ok: res.ok, data: data };
-                });
-            })
-            .then(function (result) {
-              if (!result.ok || result.data.success !== true) {
-                show('error', ERRORS[result.data.error] || ERRORS.generic);
-                return;
-              }
-              show('ok', OK_TITLE + ' ' + (hasContact ? OK_BODY : OK_ANON));
-              form.reset();
-            })
-            .catch(function () {
-              show('error', ERRORS.send_failed);
-            })
-            .then(function () {
-              submit.removeAttribute('aria-busy');
-              submit.disabled = false;
-              submit.textContent = label;
-            });
+          show('ok', OK_TITLE + ' ' + (hasContact ? OK_BODY : OK_ANON));
+          form.reset();
+        })
+        .catch(function () {
+          show('error', ERRORS.send_failed);
+        })
+        .then(function () {
+          submit.disabled = false;
+          submit.textContent = label;
         });
-      })();
-    </script>
-  </body>
+    });
+  })();
+</script>
+</body>
 </html>

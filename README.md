@@ -14,7 +14,7 @@ This repository contains the source code for the [StreamPulse](https://streampul
 
 ## ✨ Tech Stack
 - **HTML5 & CSS3**: Pure, semantic HTML with a custom, modern CSS architecture.
-- **Firebase Hosting**: Fast, secure deployment using Google Firebase.
+- **Vercel**: Static hosting plus the `/api/support` serverless function.
 - **Vanilla JavaScript**: Lightweight interactions (Language toggle, intersection observers).
 - **SEO Optimized**: Fully integrated with Open Graph tags, Twitter Cards, and Schema.org JSON-LD.
 

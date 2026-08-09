@@ -1529,7 +1529,7 @@
       <div class="links">
         <a href="/privacy" data-i18n="foot.privacy">Политика конфиденциальности</a>
         <a href="/terms" data-i18n="foot.terms">Условия использования</a>
-        <a href="/ru/support">Assistance</a>
+        <a href="/ru/support" data-i18n="nav.support">Поддержка</a>
         <a href="mailto:contact@streampulse.fr">contact@streampulse.fr</a>
       </div>
     </div>
@@ -1544,7 +1544,7 @@
   //
   // Les traductions vivent dans build/i18n/<locale>.js et sont appliquées au
   // build par build/build-i18n.js. Pour modifier un texte : éditer ce fichier
-  // HTML (source FR) + build/i18n/*.js, puis `npm run build:i18n`.
+  // HTML (source FR) + build/i18n/*.js, puis `node build/build-i18n.js`.
   const langSel = document.getElementById('lang');
   if (langSel) {
     langSel.addEventListener('change', function () {
