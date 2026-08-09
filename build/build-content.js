@@ -189,8 +189,20 @@ function buildSitemap() {
     });
   });
 
+  // /support existe dans les 16 langues (build/build-support.js), avec des
+  // canonicals distincts : chaque version doit donc figurer au sitemap.
+  Object.entries(LOCALES).forEach(([lang, cfg]) => {
+    urls.push({
+      loc: cfg.dir ? `${ORIGIN}/${cfg.dir}/support` : `${ORIGIN}/support`,
+      pri: lang === SOURCE_LANG ? '0.6' : '0.5',
+      freq: 'monthly',
+      lastmod: today,
+    });
+  });
+
+  // Pages légales : uniquement en français, les autres langues y sont
+  // redirigées par vercel.json. Une seule URL à lister.
   [
-    { path: 'support', pri: '0.6' },
     { path: 'privacy', pri: '0.4' },
     { path: 'terms', pri: '0.4' },
   ].forEach((l) => {

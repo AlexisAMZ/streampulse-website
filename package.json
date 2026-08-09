@@ -1,0 +1,12 @@
+{
+  "name": "streampulse-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine StreamPulse : pages statiques multilingues et fonction serverless de support.",
+  "scripts": {
+    "build": "node build/build-i18n.js && node build/build-support.js && node build/build-content.js && node build/build-llms.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

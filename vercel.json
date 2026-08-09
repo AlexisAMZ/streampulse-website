@@ -24,11 +24,6 @@
     },
 
     {
-      "source": "/:locale(en|es|pt-br|de|it|pl|tr|ru|ja|ko|id|nl|hi|sv|cs)/support",
-      "destination": "/support",
-      "permanent": false
-    },
-    {
       "source": "/:locale(en|es|pt-br|de|it|pl|tr|ru|ja|ko|id|nl|hi|sv|cs)/privacy",
       "destination": "/privacy",
       "permanent": false
