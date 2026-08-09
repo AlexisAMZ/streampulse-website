@@ -23,9 +23,21 @@
       "permanent": true
     },
 
-    { "source": "/:locale/support", "destination": "/support", "permanent": false },
-    { "source": "/:locale/privacy", "destination": "/privacy", "permanent": false },
-    { "source": "/:locale/terms", "destination": "/terms", "permanent": false }
+    {
+      "source": "/:locale(en|es|pt-br|de|it|pl|tr|ru|ja|ko|id|nl|hi|sv|cs)/support",
+      "destination": "/support",
+      "permanent": false
+    },
+    {
+      "source": "/:locale(en|es|pt-br|de|it|pl|tr|ru|ja|ko|id|nl|hi|sv|cs)/privacy",
+      "destination": "/privacy",
+      "permanent": false
+    },
+    {
+      "source": "/:locale(en|es|pt-br|de|it|pl|tr|ru|ja|ko|id|nl|hi|sv|cs)/terms",
+      "destination": "/terms",
+      "permanent": false
+    }
   ],
   "headers": [
     {

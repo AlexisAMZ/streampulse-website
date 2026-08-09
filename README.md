@@ -49,6 +49,27 @@ Note: `index.html` is the source for the French homepage and is never
 rewritten by the build. Its `<title>`, meta tags and JSON-LD must be patched
 by hand to stay aligned with `META.fr`.
 
+## 📮 Support form
+`/support` posts to `api/support.js`, a Vercel serverless function that relays
+the message through Resend. The function exists so the Resend API key never
+reaches the browser.
+
+Set these in Vercel > Settings > Environment Variables:
+
+| Variable | Required | Default |
+| --- | --- | --- |
+| `RESEND_API_KEY` | yes | none, the form returns 500 without it |
+| `SUPPORT_TO` | no | `contact@alexisamz.fr` |
+| `SUPPORT_FROM` | no | `StreamPulse <support@alexisamz.fr>` |
+
+`SUPPORT_FROM` must sit on a domain verified in Resend. `SUPPORT_TO` has no
+such constraint: any mailbox works, which is why a second verified domain is
+not needed. Replies go straight to the user through `reply_to`.
+
+The three locale rewrites in `vercel.json` are pinned to the real locale list.
+A catch-all `/:locale/support` would swallow `/api/support` and the form would
+silently never deliver.
+
 ## 📦 Deployment
 Deployment is handled by Vercel on push to `main` (see `vercel.json`).
 

@@ -133,6 +133,18 @@
       .support-confirm.show {
         display: flex;
       }
+
+      /* État d'erreur : même bloc, teinte d'alerte. Un envoi réseau peut
+         échouer, l'utilisateur doit le voir et garder son message. */
+      .support-confirm.error {
+        border-color: rgba(255, 107, 107, 0.5);
+        background: rgba(255, 107, 107, 0.12);
+      }
+
+      .support-submit[aria-busy="true"] {
+        opacity: 0.65;
+        cursor: progress;
+      }
       .support-confirm strong {
         color: var(--color-accent);
       }
@@ -236,12 +248,10 @@
 
           <div class="support-form-card">
             <div class="support-confirm" id="confirm" role="status" aria-live="polite">
-              <span aria-hidden="true">✓</span>
-              <div>
-                <strong>Merci !</strong> Votre message est prêt : votre logiciel
-                de messagerie vient de s’ouvrir pour l’envoyer à
-                <strong>contact@alexisamz.fr</strong>. Si rien ne s’est passé,
-                écrivez-nous directement à cette adresse.
+              <span aria-hidden="true" id="confirmIcon">✓</span>
+              <div id="confirmText">
+                <strong>Message envoyé, merci !</strong> Nous vous répondons à
+                l’adresse indiquée, généralement sous 48 heures ouvrées.
               </div>
             </div>
 
@@ -272,6 +282,17 @@
                 <textarea id="message" name="message" placeholder="Décrivez votre demande en détail…" required></textarea>
               </div>
 
+              <!-- Piège à robots : invisible pour l'utilisateur, rempli par
+                   les bots. Web3Forms rejette l'envoi si ce champ est rempli. -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                id="botcheck"
+                style="display: none"
+                tabindex="-1"
+                autocomplete="off"
+              />
+
               <button type="submit" class="btn primary support-submit">Envoyer le message</button>
               <p class="support-note">
                 Vous pouvez aussi nous écrire directement à
@@ -298,40 +319,109 @@
       document.getElementById("current-year").textContent =
         new Date().getFullYear();
 
-      // No backend yet: fall back to a pre-filled mailto so the form stays
-      // genuinely useful, and show an inline confirmation.
+      /*
+       * Envoi du formulaire de support.
+       *
+       * Le message part vers /api/support (fonction serverless Vercel) qui
+       * relaie via Resend. Aucune clé n'apparaît ici : la clé API Resend vit
+       * dans les variables d'environnement Vercel, côté serveur uniquement.
+       *
+       * Si l'envoi échoue, le message reste dans le formulaire et le mailto
+       * est proposé en secours, afin de ne jamais perdre une demande.
+       */
       (function () {
         "use strict";
-        var form = document.getElementById("supportForm");
-        var confirm = document.getElementById("confirm");
+
+        var ENDPOINT = "/api/support";
         var RECIPIENT = "contact@alexisamz.fr";
+
+        var form = document.getElementById("supportForm");
+        var confirmBox = document.getElementById("confirm");
+        var confirmIcon = document.getElementById("confirmIcon");
+        var confirmText = document.getElementById("confirmText");
+        var submitBtn = form.querySelector(".support-submit");
+        var btnLabel = submitBtn.textContent;
+
+        function show(kind, html) {
+          confirmBox.classList.toggle("error", kind === "error");
+          confirmIcon.textContent = kind === "error" ? "!" : "✓";
+          confirmText.innerHTML = html;
+          confirmBox.classList.add("show");
+          confirmBox.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+
+        function failed(message) {
+          show(
+            "error",
+            "<strong>" + message + "</strong> Votre message est toujours " +
+              "dans le formulaire. Réessayez, ou écrivez-nous " +
+              "directement à <a href=\"mailto:" + RECIPIENT + "\">" +
+              RECIPIENT + "</a>."
+          );
+        }
 
         form.addEventListener("submit", function (e) {
           e.preventDefault();
+
           if (!form.checkValidity()) {
             form.reportValidity();
             return;
           }
 
-          var name = form.name.value.trim();
-          var email = form.email.value.trim();
-          var subject = form.subject.value;
-          var message = form.message.value.trim();
+          // Champ piège rempli : requête automatisée, on ignore en silence.
+          if (form.botcheck.checked) return;
 
-          var body =
-            "Nom : " + name + "\n" +
-            "E-mail : " + email + "\n" +
-            "Sujet : " + subject + "\n\n" +
-            message;
+          submitBtn.setAttribute("aria-busy", "true");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Envoi en cours…";
 
-          window.location.href =
-            "mailto:" + RECIPIENT +
-            "?subject=" + encodeURIComponent("[StreamPulse] " + subject) +
-            "&body=" + encodeURIComponent(body);
-
-          confirm.classList.add("show");
-          confirm.scrollIntoView({ behavior: "smooth", block: "center" });
-          form.reset();
+          fetch(ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              name: form.name.value.trim(),
+              email: form.email.value.trim(),
+              subject: form.subject.value,
+              message: form.message.value.trim(),
+              browser: navigator.userAgent,
+              page: window.location.href,
+              botcheck: false
+            })
+          })
+            .then(function (res) {
+              return res
+                .json()
+                .catch(function () {
+                  return {};
+                })
+                .then(function (data) {
+                  return { ok: res.ok, data: data };
+                });
+            })
+            .then(function (result) {
+              if (!result.ok || result.data.success !== true) {
+                failed(
+                  result.data.message ||
+                    "L’envoi a échoué."
+                );
+                return;
+              }
+              show(
+                "ok",
+                "<strong>Message envoyé, merci !</strong> Nous vous " +
+                  "répondons à l’adresse indiquée, " +
+                  "généralement sous 48 heures ouvrées."
+              );
+              form.reset();
+            })
+            .catch(function () {
+              failed("L’envoi a échoué.");
+            })
+            .then(function () {
+              submitBtn.removeAttribute("aria-busy");
+              submitBtn.disabled = false;
+              submitBtn.textContent = btnLabel;
+            });
         });
       })();
     </script>
