@@ -50,8 +50,7 @@ rewritten by the build. Its `<title>`, meta tags and JSON-LD must be patched
 by hand to stay aligned with `META.fr`.
 
 ## 📦 Deployment
-Deployment is handled by the hosting provider on push to `main`
-(see `vercel.json`; `firebase.json` is kept for the legacy setup).
+Deployment is handled by Vercel on push to `main` (see `vercel.json`).
 
 ## 🤝 Related Repository
 - [StreamPulse Extension](https://github.com/AlexisAMZ/StreamPulse) - The source code for the actual Chrome extension.

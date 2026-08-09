@@ -1,7 +1,4 @@
 # Configuration (peut contenir des données sensibles)
-games/js/config.js
-games/devine-le-prix/js/config.js
-games/devine-le-prix/js/firebase-config.js
 js/config.js
 
 # Logs
@@ -26,8 +23,7 @@ backup/
 *.backup
 deploy-ftp.sh
 
-# Firebase
-.firebase/
+# Déploiement / secrets
 .vercel
 .env*
 .agents/
