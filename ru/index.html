@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StreamPulse: автосбор баллов канала на Twitch и Kick</title>
-<meta name="description" content="Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автоматические баллы канала и Drops. Без рекламы и слежки." />
+<title>StreamPulse: расширение Chrome для Twitch и Kick</title>
+<meta name="description" content="Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автосбор баллов канала и Drops. Работает в Chrome, Edge, Brave и Opera." />
 <meta name="keywords" content="расширение Twitch, расширение Kick, автосбор баллов канала, уведомления Twitch, автоматические Twitch Drops, ошибка 2000 Twitch, StreamPulse" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="AlexisAMZ" />
@@ -30,16 +30,16 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.streampulse.fr/ru" />
-<meta property="og:title" content="StreamPulse: автосбор баллов канала на Twitch и Kick" />
-<meta property="og:description" content="Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автоматические баллы канала и Drops. Без рекламы и слежки." />
+<meta property="og:title" content="StreamPulse: расширение Chrome для Twitch и Kick" />
+<meta property="og:description" content="Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автосбор баллов канала и Drops. Работает в Chrome, Edge, Brave и Opera." />
 <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
 <meta property="og:locale" content="ru_RU" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://www.streampulse.fr/ru" />
-<meta name="twitter:title" content="StreamPulse: автосбор баллов канала на Twitch и Kick" />
-<meta name="twitter:description" content="Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автоматические баллы канала и Drops. Без рекламы и слежки." />
+<meta name="twitter:title" content="StreamPulse: расширение Chrome для Twitch и Kick" />
+<meta name="twitter:description" content="Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автосбор баллов канала и Drops. Работает в Chrome, Edge, Brave и Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
 
 <!-- Schema.org JSON-LD -->
@@ -83,7 +83,7 @@
     "name": "StreamPulse",
     "url": "https://www.streampulse.fr/ru",
     "inLanguage": "ru",
-    "description": "Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автоматические баллы канала и Drops. Без рекламы и слежки."
+    "description": "Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автосбор баллов канала и Drops. Работает в Chrome, Edge, Brave и Opera."
   },
   {
     "@context": "https://schema.org",
@@ -136,6 +136,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "StreamPulse не собирает персональные данные. Всё хранится локально в вашем браузере. Никакой передачи на наши серверы или третьим лицам."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как установить расширение Twitch в Chrome?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Откройте страницу StreamPulse в Chrome Web Store, нажмите Установить и подтвердите. Расширение работает сразу, без регистрации и перезапуска браузера."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Работает ли расширение в Edge, Brave и Opera?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. Эти браузеры основаны на Chromium и принимают расширения из Chrome Web Store. В Edge сначала разрешите расширения из других магазинов."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Какое расширение Twitch лучше для баллов канала?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Зависит от того, как вы смотрите. StreamPulse рассчитан на постоянных зрителей: баллы собираются даже при закрытой вкладке, уведомления о стримах и автоматические Drops в одном расширении вместо трёх."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Замедляет ли расширение браузер?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Нет. Модули простаивают и запускаются только при необходимости. Каждую функцию можно отключить отдельно."
         }
       }
     ]
@@ -591,6 +623,19 @@
     max-width: 580px; margin-top: 18px; line-height: 1.55;
   }
 
+  /* .section-sub était utilisé dans le markup sans exister en CSS : les
+     sous-titres de section héritaient donc du style de paragraphe par défaut.
+     Calé sur .lede pour rester cohérent avec le reste des sections. */
+  .section-sub {
+    font-size: 17px; color: var(--text-muted);
+    max-width: 620px; margin-top: 16px; line-height: 1.6;
+  }
+
+  /* Cartes navigateurs : .guide-card est prévue pour des <a>, ici les cartes
+     sont statiques. On garde bordure et grille, on retire l'affordance de clic. */
+  #navigateurs .guide-card { cursor: default; }
+  #navigateurs .guide-card .pf-pill { margin-bottom: 14px; }
+
   /* BENTO */
   .bento {
     display: grid;
@@ -1041,11 +1086,11 @@
           <span class="num">v2.0</span>
         </div>
         <h1>
-          <span class="gradient" data-i18n="hero.h1a">Не пропускайте</span><br>
-          <span data-i18n="hero.h1b">ни одного стрима</span><br>
-          <em data-i18n="hero.h1c">любимых стримеров.</em>
+          <span class="gradient" data-i18n="hero.h1a">Расширение Chrome</span><br>
+          <span data-i18n="hero.h1b">для Twitch и Kick</span><br>
+          <em data-i18n="hero.h1c">которое не пропустит ни один стрим.</em>
         </h1>
-        <p class="hero-sub" data-i18n="hero.sub">Мгновенные уведомления, автоматические баллы канала, оптимизированная задержка и единая панель для Twitch и Kick. Всё в одном расширении Chrome.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Мгновенные уведомления о стримах, автосбор баллов канала, Drops без единого клика и единая панель. Одно расширение для Chrome, Edge, Brave и Opera.</p>
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
@@ -1378,6 +1423,40 @@
   </div>
 </section>
 
+<!-- NAVIGATEURS : cible les requêtes "extension navigateur" / "extension Chrome".
+     Réutilise guides-grid + guide-card pour rester dans la D.A. de la page. -->
+<section class="section" id="navigateurs">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="browsers.eyebrow">Совместимость</span>
+      <h2 data-i18n-html="browsers.title">Одно расширение, <em>все ваши браузеры.</em></h2>
+      <p class="section-sub" data-i18n="browsers.sub">StreamPulse устанавливается из Chrome Web Store и работает в любом браузере на Chromium без дополнительных настроек.</p>
+    </div>
+    <div class="guides-grid">
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.chrome.tag">Рекомендуется</span>
+        <h3 data-i18n="browsers.chrome.title">Расширение Chrome</h3>
+        <p data-i18n="browsers.chrome.desc">Установка в один клик из Chrome Web Store. Уведомления о стримах и баллы канала работают сразу после включения.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.edge.tag">Совместимо</span>
+        <h3 data-i18n="browsers.edge.title">Расширение Edge</h3>
+        <p data-i18n="browsers.edge.desc">Edge принимает расширения из Chrome Web Store. Сначала разрешите расширения из других магазинов, затем установите как обычно.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.brave.tag">Совместимо</span>
+        <h3 data-i18n="browsers.brave.title">Расширение Brave</h3>
+        <p data-i18n="browsers.brave.desc">Brave использует тот же движок расширений, что и Chrome. Настраивать ничего не нужно, блокировщик рекламы не мешает.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.opera.tag">Совместимо</span>
+        <h3 data-i18n="browsers.opera.title">Расширение Opera и Vivaldi</h3>
+        <p data-i18n="browsers.opera.desc">Оба браузера построены на Chromium и поддерживают расширение через Chrome Web Store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -1392,6 +1471,10 @@
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Расширение требовательно к ресурсам?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Нет. Оно оптимизировано (debouncing, умный кеш, лёгкая архитектура). Нагрузка на память и процессор минимальна.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">Можно отключить отдельные функции?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">Разумеется. Каждый модуль (уведомления, баллы, автоперезагрузка, фильтрация) включается и отключается отдельно в настройках.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">Мои данные в безопасности?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse не собирает персональные данные. Всё хранится локально в вашем браузере. Никакой передачи на наши серверы или третьим лицам.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q7">Как установить расширение Twitch в Chrome?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a7">Откройте страницу StreamPulse в Chrome Web Store, нажмите Установить и подтвердите. Расширение работает сразу, без регистрации и перезапуска браузера.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q8">Работает ли расширение в Edge, Brave и Opera?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a8">Да. Эти браузеры основаны на Chromium и принимают расширения из Chrome Web Store. В Edge сначала разрешите расширения из других магазинов.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q9">Какое расширение Twitch лучше для баллов канала?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a9">Зависит от того, как вы смотрите. StreamPulse рассчитан на постоянных зрителей: баллы собираются даже при закрытой вкладке, уведомления о стримах и автоматические Drops в одном расширении вместо трёх.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q10">Замедляет ли расширение браузер?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a10">Нет. Модули простаивают и запускаются только при необходимости. Каждую функцию можно отключить отдельно.</div></div>
     </div>
   </div>
 </section>

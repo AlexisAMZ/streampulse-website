@@ -48,9 +48,9 @@ const LOCALES = {
  *  sinon les pages /de/ se cannibalisent avec un title français. */
 const META = {
   fr: {
-    title: 'StreamPulse : Vivez Twitch & Kick sans rien rater',
+    title: 'StreamPulse : extension Chrome pour Twitch et Kick',
     description:
-      "L'extension Chrome ultime pour les passionnés de streaming : notifications en direct, points de chaîne automatiques, prédictions et tableau de bord tout-en-un.",
+      "Extension Chrome gratuite pour Twitch et Kick : notifications de live instantanées, points de chaîne automatiques et Drops récupérés tout seuls. Compatible Chrome, Edge, Brave et Opera.",
     ogLocale: 'fr_FR',
     keywords:
       'StreamPulse, extension Twitch, extension Kick, notifications Twitch, points de chaîne automatiques, auto-claim Twitch, Twitch Drops automatique, erreur 2000 Twitch',
@@ -58,9 +58,9 @@ const META = {
       'Extension Chrome gratuite pour Twitch et Kick. Notifications en temps réel, récupération automatique des points de chaîne, prédictions et tableau de bord unifié.',
   },
   en: {
-    title: 'StreamPulse: Twitch & Kick Auto Channel Points',
+    title: 'StreamPulse: Chrome extension for Twitch and Kick',
     description:
-      'Free Chrome extension for Twitch and Kick: instant live notifications, automatic channel points and Drops claiming. No ads, no tracking.',
+      'Free Chrome extension for Twitch and Kick: instant live notifications, automatic channel points and Drops claiming. Works on Chrome, Edge, Brave and Opera.',
     ogLocale: 'en_US',
     keywords:
       'Twitch extension, Kick extension, auto claim channel points, Twitch live notifications, Twitch Drops auto claim, Twitch error 2000 fix, StreamPulse',
@@ -68,9 +68,9 @@ const META = {
       'Free Chrome extension for Twitch and Kick. Real-time live notifications, automatic channel points collection, predictions overlay and a unified dashboard.',
   },
   es: {
-    title: 'StreamPulse: Twitch y Kick, puntos automáticos',
+    title: 'StreamPulse: extensión de Chrome para Twitch y Kick',
     description:
-      'Extensión de Chrome gratuita para Twitch y Kick: notificaciones de directo instantáneas, channel points automáticos, Drops automáticos y dashboard unificado.',
+      'Extensión de Chrome gratuita para Twitch y Kick: notificaciones de directo instantáneas, channel points automáticos y Drops automáticos. Compatible con Chrome, Edge, Brave y Opera.',
     ogLocale: 'es_ES',
     keywords:
       'extensión Twitch, extensión Kick, channel points automáticos, notificaciones Twitch, Twitch Drops automático, error 2000 Twitch, StreamPulse',
@@ -78,9 +78,9 @@ const META = {
       'Extensión de Chrome gratuita para Twitch y Kick. Notificaciones en tiempo real, reclamo automático de channel points, predicciones y dashboard unificado.',
   },
   'pt-BR': {
-    title: 'StreamPulse: notificações Twitch e Kick + pontos automáticos',
+    title: 'StreamPulse: extensão do Chrome para Twitch e Kick',
     description:
-      'Extensão do Chrome gratuita para Twitch e Kick: notificações de live instantâneas, channel points automáticos, Drops automáticos e dashboard unificado.',
+      'Extensão do Chrome gratuita para Twitch e Kick: notificações de live instantâneas, channel points automáticos e Drops automáticos. Compatível com Chrome, Edge, Brave e Opera.',
     ogLocale: 'pt_BR',
     keywords:
       'extensão Twitch, extensão Kick, channel points automáticos, notificações Twitch, Twitch Drops automático, erro 2000 Twitch, StreamPulse',
@@ -88,9 +88,9 @@ const META = {
       'Extensão do Chrome gratuita para Twitch e Kick. Notificações em tempo real, resgate automático de channel points, previsões e dashboard unificado.',
   },
   de: {
-    title: 'StreamPulse: Twitch & Kick Kanalpunkte automatisch',
+    title: 'StreamPulse: Chrome Erweiterung für Twitch und Kick',
     description:
-      'Kostenlose Chrome-Erweiterung für Twitch und Kick: sofortige Live-Benachrichtigungen, automatische Kanalpunkte und Drops. Keine Werbung, kein Tracking.',
+      'Kostenlose Chrome Erweiterung für Twitch und Kick: sofortige Live Benachrichtigungen, automatische Kanalpunkte und Drops. Läuft in Chrome, Edge, Brave und Opera.',
     ogLocale: 'de_DE',
     keywords:
       'Twitch Erweiterung, Kick Erweiterung, Kanalpunkte automatisch sammeln, Twitch Benachrichtigungen, Twitch Drops automatisch, Twitch Fehler 2000 beheben, StreamPulse',
@@ -98,9 +98,9 @@ const META = {
       'Kostenlose Chrome-Erweiterung für Twitch und Kick. Echtzeit-Benachrichtigungen, automatisches Sammeln von Kanalpunkten, Predictions-Overlay und ein einheitliches Dashboard.',
   },
   it: {
-    title: 'StreamPulse: punti canale automatici su Twitch e Kick',
+    title: 'StreamPulse: estensione Chrome per Twitch e Kick',
     description:
-      'Estensione Chrome gratuita per Twitch e Kick: notifiche live istantanee, punti canale e Drops automatici. Niente pubblicità, niente tracking.',
+      'Estensione Chrome gratuita per Twitch e Kick: notifiche live istantanee, punti canale e Drops automatici. Compatibile con Chrome, Edge, Brave e Opera.',
     ogLocale: 'it_IT',
     keywords:
       'estensione Twitch, estensione Kick, punti canale automatici, notifiche Twitch, Twitch Drops automatici, errore 2000 Twitch, StreamPulse',
@@ -108,9 +108,9 @@ const META = {
       'Estensione Chrome gratuita per Twitch e Kick. Notifiche in tempo reale, raccolta automatica dei punti canale, overlay previsioni e dashboard unificata.',
   },
   pl: {
-    title: 'StreamPulse: automatyczne punkty kanału na Twitchu i Kicku',
+    title: 'StreamPulse: rozszerzenie Chrome do Twitcha i Kicka',
     description:
-      'Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka: natychmiastowe powiadomienia, automatyczne punkty kanału i Drops. Bez reklam, bez śledzenia.',
+      'Bezpłatne rozszerzenie Chrome do Twitcha i Kicka: natychmiastowe powiadomienia o transmisjach, automatyczne punkty kanału i Drops. Działa w Chrome, Edge, Brave i Opera.',
     ogLocale: 'pl_PL',
     keywords:
       'rozszerzenie Twitch, rozszerzenie Kick, automatyczne punkty kanału, powiadomienia Twitch, automatyczne Twitch Drops, błąd 2000 Twitch, StreamPulse',
@@ -118,9 +118,9 @@ const META = {
       'Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka. Powiadomienia w czasie rzeczywistym, automatyczne zbieranie punktów kanału, nakładka przewidywań i wspólny panel.',
   },
   tr: {
-    title: 'StreamPulse: Twitch ve Kick otomatik kanal puanları',
+    title: 'StreamPulse: Twitch ve Kick için Chrome uzantısı',
     description:
-      'Twitch ve Kick için ücretsiz Chrome uzantısı: anında yayın bildirimleri, otomatik kanal puanları ve Drops. Reklam yok, takip yok.',
+      'Twitch ve Kick için ücretsiz Chrome uzantısı: anında yayın bildirimleri, otomatik kanal puanları ve Drops. Chrome, Edge, Brave ve Opera ile uyumlu.',
     ogLocale: 'tr_TR',
     keywords:
       'Twitch uzantısı, Kick uzantısı, otomatik kanal puanı toplama, Twitch bildirimleri, otomatik Twitch Drops, Twitch 2000 hatası çözümü, StreamPulse',
@@ -128,9 +128,9 @@ const META = {
       'Twitch ve Kick için ücretsiz Chrome uzantısı. Gerçek zamanlı bildirimler, otomatik kanal puanı toplama, tahmin katmanı ve birleşik panel.',
   },
   ru: {
-    title: 'StreamPulse: автосбор баллов канала на Twitch и Kick',
+    title: 'StreamPulse: расширение Chrome для Twitch и Kick',
     description:
-      'Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автоматические баллы канала и Drops. Без рекламы и слежки.',
+      'Бесплатное расширение Chrome для Twitch и Kick: мгновенные уведомления о стримах, автосбор баллов канала и Drops. Работает в Chrome, Edge, Brave и Opera.',
     ogLocale: 'ru_RU',
     keywords:
       'расширение Twitch, расширение Kick, автосбор баллов канала, уведомления Twitch, автоматические Twitch Drops, ошибка 2000 Twitch, StreamPulse',
@@ -138,9 +138,9 @@ const META = {
       'Бесплатное расширение Chrome для Twitch и Kick. Уведомления в реальном времени, автоматический сбор баллов канала, оверлей прогнозов и единая панель.',
   },
   ja: {
-    title: 'StreamPulse: Twitch と Kick のチャンネルポイント自動取得',
+    title: 'StreamPulse: Twitch と Kick 用 Chrome 拡張機能',
     description:
-      'Twitch と Kick 向けの無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。広告なし、追跡なし。',
+      'Twitch と Kick 用の無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。Chrome、Edge、Brave、Opera に対応。',
     ogLocale: 'ja_JP',
     keywords:
       'Twitch 拡張機能, Kick 拡張機能, チャンネルポイント 自動取得, Twitch 通知, Twitch Drops 自動, Twitch エラー 2000 対処, StreamPulse',
@@ -148,9 +148,9 @@ const META = {
       'Twitch と Kick 向けの無料 Chrome 拡張機能。リアルタイム通知、チャンネルポイントの自動取得、予測オーバーレイ、統合ダッシュボード。',
   },
   ko: {
-    title: 'StreamPulse: Twitch와 Kick 채널 포인트 자동 적립',
+    title: 'StreamPulse: Twitch와 Kick용 Chrome 확장 프로그램',
     description:
-      'Twitch와 Kick을 위한 무료 Chrome 확장 프로그램. 실시간 방송 알림, 채널 포인트와 Drops 자동 수령. 광고 없음, 추적 없음.',
+      'Twitch와 Kick을 위한 무료 Chrome 확장 프로그램. 실시간 방송 알림, 채널 포인트와 Drops 자동 수령. Chrome, Edge, Brave, Opera 지원.',
     ogLocale: 'ko_KR',
     keywords:
       'Twitch 확장 프로그램, Kick 확장 프로그램, 채널 포인트 자동 적립, Twitch 알림, Twitch Drops 자동, Twitch 오류 2000 해결, StreamPulse',
@@ -158,9 +158,9 @@ const META = {
       'Twitch와 Kick을 위한 무료 Chrome 확장 프로그램. 실시간 알림, 채널 포인트 자동 적립, 예측 오버레이, 통합 대시보드.',
   },
   id: {
-    title: 'StreamPulse: poin kanal otomatis di Twitch dan Kick',
+    title: 'StreamPulse: ekstensi Chrome untuk Twitch dan Kick',
     description:
-      'Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Tanpa iklan, tanpa pelacakan.',
+      'Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Mendukung Chrome, Edge, Brave, dan Opera.',
     ogLocale: 'id_ID',
     keywords:
       'ekstensi Twitch, ekstensi Kick, poin kanal otomatis, notifikasi Twitch, Twitch Drops otomatis, cara mengatasi error 2000 Twitch, StreamPulse',
@@ -168,9 +168,9 @@ const META = {
       'Ekstensi Chrome gratis untuk Twitch dan Kick. Notifikasi real-time, pengumpulan poin kanal otomatis, overlay prediksi, dan dasbor terpadu.',
   },
   nl: {
-    title: 'StreamPulse: automatische kanaalpunten op Twitch en Kick',
+    title: 'StreamPulse: Chrome extensie voor Twitch en Kick',
     description:
-      'Gratis Chrome-extensie voor Twitch en Kick: directe live-meldingen, automatische kanaalpunten en Drops. Geen advertenties, geen tracking.',
+      'Gratis Chrome extensie voor Twitch en Kick: directe live meldingen, automatische kanaalpunten en Drops. Werkt in Chrome, Edge, Brave en Opera.',
     ogLocale: 'nl_NL',
     keywords:
       'Twitch extensie, Kick extensie, automatisch kanaalpunten ophalen, Twitch meldingen, automatische Twitch Drops, Twitch fout 2000 oplossen, StreamPulse',
@@ -178,9 +178,9 @@ const META = {
       'Gratis Chrome-extensie voor Twitch en Kick. Realtime meldingen, automatisch ophalen van kanaalpunten, Predictions-overlay en één dashboard.',
   },
   hi: {
-    title: 'StreamPulse: Twitch और Kick पर स्वचालित चैनल पॉइंट्स',
+    title: 'StreamPulse: Twitch और Kick के लिए Chrome एक्सटेंशन',
     description:
-      'Twitch और Kick के लिए निःशुल्क Chrome एक्सटेंशन: तुरंत लाइव सूचनाएँ, स्वचालित चैनल पॉइंट्स और Drops। न विज्ञापन, न ट्रैकिंग।',
+      'Twitch और Kick के लिए निःशुल्क Chrome एक्सटेंशन: तुरंत लाइव सूचनाएँ, स्वचालित चैनल पॉइंट्स और Drops। Chrome, Edge, Brave और Opera पर काम करता है।',
     ogLocale: 'hi_IN',
     keywords:
       'Twitch एक्सटेंशन, Kick एक्सटेंशन, स्वचालित चैनल पॉइंट्स, Twitch सूचनाएँ, स्वचालित Twitch Drops, Twitch त्रुटि 2000 समाधान, StreamPulse',
@@ -188,9 +188,9 @@ const META = {
       'Twitch और Kick के लिए निःशुल्क Chrome एक्सटेंशन। रीयल-टाइम सूचनाएँ, चैनल पॉइंट्स का स्वचालित संग्रह, प्रेडिक्शन ओवरले और एकीकृत डैशबोर्ड।',
   },
   sv: {
-    title: 'StreamPulse: automatiska kanalpoäng på Twitch och Kick',
+    title: 'StreamPulse: Chrome tillägg för Twitch och Kick',
     description:
-      'Gratis Chrome-tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Inga annonser, ingen spårning.',
+      'Gratis Chrome tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Fungerar i Chrome, Edge, Brave och Opera.',
     ogLocale: 'sv_SE',
     keywords:
       'Twitch-tillägg, Kick-tillägg, samla kanalpoäng automatiskt, Twitch-aviseringar, automatiska Twitch Drops, Twitch-fel 2000 lösning, StreamPulse',
@@ -198,9 +198,9 @@ const META = {
       'Gratis Chrome-tillägg för Twitch och Kick. Aviseringar i realtid, automatisk insamling av kanalpoäng, Predictions-overlay och en samlad instrumentpanel.',
   },
   cs: {
-    title: 'StreamPulse: automatické body kanálu na Twitchi a Kicku',
+    title: 'StreamPulse: rozšíření Chrome pro Twitch a Kick',
     description:
-      'Bezplatné rozšíření Chrome pro Twitch a Kick: okamžitá upozornění na vysílání, automatické body kanálu a Drops. Bez reklam, bez sledování.',
+      'Bezplatné rozšíření Chrome pro Twitch a Kick: okamžitá upozornění na vysílání, automatické body kanálu a Drops. Funguje v Chrome, Edge, Brave a Opera.',
     ogLocale: 'cs_CZ',
     keywords:
       'rozšíření Twitch, rozšíření Kick, automatický sběr bodů kanálu, upozornění Twitch, automatické Twitch Drops, chyba 2000 Twitch řešení, StreamPulse',
@@ -347,11 +347,13 @@ function rewriteJsonLd(html, lang, dict) {
   const meta = META[lang];
   const canonical = localeUrl(cfg);
 
+  // La boucle s'arrête à la première question absente : ajouter faq.q11/a11
+  // aux dictionnaires suffit pour l'inclure au rich result, sans toucher ici.
   const faq = [];
-  for (let i = 1; i <= 6; i++) {
+  for (let i = 1; ; i++) {
     const q = dict[`faq.q${i}`];
     const a = dict[`faq.a${i}`];
-    if (!q || !a) continue;
+    if (!q || !a) break;
     faq.push({
       '@type': 'Question',
       name: stripTags(q),

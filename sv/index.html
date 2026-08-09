@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StreamPulse: automatiska kanalpoäng på Twitch och Kick</title>
-<meta name="description" content="Gratis Chrome-tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Inga annonser, ingen spårning." />
+<title>StreamPulse: Chrome tillägg för Twitch och Kick</title>
+<meta name="description" content="Gratis Chrome tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Fungerar i Chrome, Edge, Brave och Opera." />
 <meta name="keywords" content="Twitch-tillägg, Kick-tillägg, samla kanalpoäng automatiskt, Twitch-aviseringar, automatiska Twitch Drops, Twitch-fel 2000 lösning, StreamPulse" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="AlexisAMZ" />
@@ -30,16 +30,16 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.streampulse.fr/sv" />
-<meta property="og:title" content="StreamPulse: automatiska kanalpoäng på Twitch och Kick" />
-<meta property="og:description" content="Gratis Chrome-tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Inga annonser, ingen spårning." />
+<meta property="og:title" content="StreamPulse: Chrome tillägg för Twitch och Kick" />
+<meta property="og:description" content="Gratis Chrome tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Fungerar i Chrome, Edge, Brave och Opera." />
 <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
 <meta property="og:locale" content="sv_SE" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://www.streampulse.fr/sv" />
-<meta name="twitter:title" content="StreamPulse: automatiska kanalpoäng på Twitch och Kick" />
-<meta name="twitter:description" content="Gratis Chrome-tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Inga annonser, ingen spårning." />
+<meta name="twitter:title" content="StreamPulse: Chrome tillägg för Twitch och Kick" />
+<meta name="twitter:description" content="Gratis Chrome tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Fungerar i Chrome, Edge, Brave och Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
 
 <!-- Schema.org JSON-LD -->
@@ -83,7 +83,7 @@
     "name": "StreamPulse",
     "url": "https://www.streampulse.fr/sv",
     "inLanguage": "sv",
-    "description": "Gratis Chrome-tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Inga annonser, ingen spårning."
+    "description": "Gratis Chrome tillägg för Twitch och Kick: direkta liveaviseringar, automatiska kanalpoäng och Drops. Fungerar i Chrome, Edge, Brave och Opera."
   },
   {
     "@context": "https://schema.org",
@@ -136,6 +136,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "StreamPulse samlar inte in några personuppgifter. Allt lagras lokalt i din webbläsare. Ingenting skickas till våra servrar eller till tredje part."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hur installerar jag Twitch tillägget i Chrome?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Öppna StreamPulse sidan i Chrome Web Store, klicka på Lägg till i Chrome och bekräfta. Tillägget är aktivt direkt, utan konto och utan att starta om webbläsaren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Fungerar tillägget i Edge, Brave och Opera?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Dessa webbläsare bygger på Chromium och accepterar tillägg från Chrome Web Store. I Edge behöver du först tillåta tillägg från andra butiker."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vilket är det bästa Twitch tillägget för kanalpoäng?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Det beror på hur du tittar. StreamPulse riktar sig till regelbundna tittare: poäng samlas även med fliken stängd, liveaviseringar och automatiska Drops i ett enda tillägg i stället för tre."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gör tillägget webbläsaren långsammare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nej. Modulerna ligger vilande och körs bara när det behövs. Du kan dessutom stänga av varje funktion separat."
         }
       }
     ]
@@ -591,6 +623,19 @@
     max-width: 580px; margin-top: 18px; line-height: 1.55;
   }
 
+  /* .section-sub était utilisé dans le markup sans exister en CSS : les
+     sous-titres de section héritaient donc du style de paragraphe par défaut.
+     Calé sur .lede pour rester cohérent avec le reste des sections. */
+  .section-sub {
+    font-size: 17px; color: var(--text-muted);
+    max-width: 620px; margin-top: 16px; line-height: 1.6;
+  }
+
+  /* Cartes navigateurs : .guide-card est prévue pour des <a>, ici les cartes
+     sont statiques. On garde bordure et grille, on retire l'affordance de clic. */
+  #navigateurs .guide-card { cursor: default; }
+  #navigateurs .guide-card .pf-pill { margin-bottom: 14px; }
+
   /* BENTO */
   .bento {
     display: grid;
@@ -1041,11 +1086,11 @@
           <span class="num">v2.0</span>
         </div>
         <h1>
-          <span class="gradient" data-i18n="hero.h1a">Missa aldrig</span><br>
-          <span data-i18n="hero.h1b">en sändning</span><br>
-          <em data-i18n="hero.h1c">från dina favoritstreamers.</em>
+          <span class="gradient" data-i18n="hero.h1a">Chrome tillägget</span><br>
+          <span data-i18n="hero.h1b">för Twitch och Kick</span><br>
+          <em data-i18n="hero.h1c">som aldrig missar en stream.</em>
         </h1>
-        <p class="hero-sub" data-i18n="hero.sub">Direkta aviseringar, automatiska kanalpoäng, optimerad fördröjning och en samlad instrumentpanel för Twitch och Kick. Allt i ett enda Chrome-tillägg.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Direkta liveaviseringar, automatiska kanalpoäng, Drops som hämtas av sig själva och en samlad instrumentpanel. Ett tillägg för Chrome, Edge, Brave och Opera.</p>
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
@@ -1378,6 +1423,40 @@
   </div>
 </section>
 
+<!-- NAVIGATEURS : cible les requêtes "extension navigateur" / "extension Chrome".
+     Réutilise guides-grid + guide-card pour rester dans la D.A. de la page. -->
+<section class="section" id="navigateurs">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="browsers.eyebrow">Kompatibilitet</span>
+      <h2 data-i18n-html="browsers.title">Ett tillägg, <em>alla dina webbläsare.</em></h2>
+      <p class="section-sub" data-i18n="browsers.sub">StreamPulse installeras från Chrome Web Store och fungerar i alla webbläsare som bygger på Chromium, utan extra inställningar.</p>
+    </div>
+    <div class="guides-grid">
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.chrome.tag">Rekommenderas</span>
+        <h3 data-i18n="browsers.chrome.title">Chrome tillägg</h3>
+        <p data-i18n="browsers.chrome.desc">Installation med ett klick från Chrome Web Store. Liveaviseringar och kanalpoäng fungerar så fort du aktiverar det.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.edge.tag">Kompatibel</span>
+        <h3 data-i18n="browsers.edge.title">Edge tillägg</h3>
+        <p data-i18n="browsers.edge.desc">Edge accepterar tillägg från Chrome Web Store. Tillåt först tillägg från andra butiker och installera sedan som vanligt.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.brave.tag">Kompatibel</span>
+        <h3 data-i18n="browsers.brave.title">Brave tillägg</h3>
+        <p data-i18n="browsers.brave.desc">Brave använder samma tilläggsmotor som Chrome. Inget behöver ställas in och annonsblockeraren stör inte.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.opera.tag">Kompatibel</span>
+        <h3 data-i18n="browsers.opera.title">Opera och Vivaldi tillägg</h3>
+        <p data-i18n="browsers.opera.desc">Båda webbläsarna bygger på Chromium och stöder tillägget via Chrome Web Store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -1392,6 +1471,10 @@
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Tar tillägget mycket resurser?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Nej. Det är optimerat (debouncing, smart cache, lätt arkitektur). Minnes- och CPU-användningen är minimal.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">Kan jag stänga av vissa funktioner?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">Absolut. Varje modul (aviseringar, poäng, automatisk omladdning, filtrering) kan slås på och av var för sig i inställningarna.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">Är mina uppgifter säkra?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse samlar inte in några personuppgifter. Allt lagras lokalt i din webbläsare. Ingenting skickas till våra servrar eller till tredje part.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q7">Hur installerar jag Twitch tillägget i Chrome?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a7">Öppna StreamPulse sidan i Chrome Web Store, klicka på Lägg till i Chrome och bekräfta. Tillägget är aktivt direkt, utan konto och utan att starta om webbläsaren.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q8">Fungerar tillägget i Edge, Brave och Opera?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a8">Ja. Dessa webbläsare bygger på Chromium och accepterar tillägg från Chrome Web Store. I Edge behöver du först tillåta tillägg från andra butiker.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q9">Vilket är det bästa Twitch tillägget för kanalpoäng?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a9">Det beror på hur du tittar. StreamPulse riktar sig till regelbundna tittare: poäng samlas även med fliken stängd, liveaviseringar och automatiska Drops i ett enda tillägg i stället för tre.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q10">Gör tillägget webbläsaren långsammare?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a10">Nej. Modulerna ligger vilande och körs bara när det behövs. Du kan dessutom stänga av varje funktion separat.</div></div>
     </div>
   </div>
 </section>

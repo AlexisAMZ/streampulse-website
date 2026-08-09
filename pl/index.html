@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StreamPulse: automatyczne punkty kanału na Twitchu i Kicku</title>
-<meta name="description" content="Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka: natychmiastowe powiadomienia, automatyczne punkty kanału i Drops. Bez reklam, bez śledzenia." />
+<title>StreamPulse: rozszerzenie Chrome do Twitcha i Kicka</title>
+<meta name="description" content="Bezpłatne rozszerzenie Chrome do Twitcha i Kicka: natychmiastowe powiadomienia o transmisjach, automatyczne punkty kanału i Drops. Działa w Chrome, Edge, Brave i Opera." />
 <meta name="keywords" content="rozszerzenie Twitch, rozszerzenie Kick, automatyczne punkty kanału, powiadomienia Twitch, automatyczne Twitch Drops, błąd 2000 Twitch, StreamPulse" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="AlexisAMZ" />
@@ -30,16 +30,16 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.streampulse.fr/pl" />
-<meta property="og:title" content="StreamPulse: automatyczne punkty kanału na Twitchu i Kicku" />
-<meta property="og:description" content="Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka: natychmiastowe powiadomienia, automatyczne punkty kanału i Drops. Bez reklam, bez śledzenia." />
+<meta property="og:title" content="StreamPulse: rozszerzenie Chrome do Twitcha i Kicka" />
+<meta property="og:description" content="Bezpłatne rozszerzenie Chrome do Twitcha i Kicka: natychmiastowe powiadomienia o transmisjach, automatyczne punkty kanału i Drops. Działa w Chrome, Edge, Brave i Opera." />
 <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
 <meta property="og:locale" content="pl_PL" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://www.streampulse.fr/pl" />
-<meta name="twitter:title" content="StreamPulse: automatyczne punkty kanału na Twitchu i Kicku" />
-<meta name="twitter:description" content="Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka: natychmiastowe powiadomienia, automatyczne punkty kanału i Drops. Bez reklam, bez śledzenia." />
+<meta name="twitter:title" content="StreamPulse: rozszerzenie Chrome do Twitcha i Kicka" />
+<meta name="twitter:description" content="Bezpłatne rozszerzenie Chrome do Twitcha i Kicka: natychmiastowe powiadomienia o transmisjach, automatyczne punkty kanału i Drops. Działa w Chrome, Edge, Brave i Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
 
 <!-- Schema.org JSON-LD -->
@@ -83,7 +83,7 @@
     "name": "StreamPulse",
     "url": "https://www.streampulse.fr/pl",
     "inLanguage": "pl",
-    "description": "Bezpłatne rozszerzenie Chrome dla Twitcha i Kicka: natychmiastowe powiadomienia, automatyczne punkty kanału i Drops. Bez reklam, bez śledzenia."
+    "description": "Bezpłatne rozszerzenie Chrome do Twitcha i Kicka: natychmiastowe powiadomienia o transmisjach, automatyczne punkty kanału i Drops. Działa w Chrome, Edge, Brave i Opera."
   },
   {
     "@context": "https://schema.org",
@@ -136,6 +136,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "StreamPulse nie zbiera żadnych danych osobowych. Wszystko jest przechowywane lokalnie w przeglądarce. Brak transferu na nasze serwery czy do osób trzecich."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak zainstalować rozszerzenie Twitch w Chrome?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Otwórz stronę StreamPulse w Chrome Web Store, kliknij Dodaj do Chrome i potwierdź. Rozszerzenie działa od razu, bez zakładania konta i bez restartu przeglądarki."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy rozszerzenie działa w Edge, Brave i Operze?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak. Te przeglądarki są oparte na Chromium i akceptują rozszerzenia z Chrome Web Store. W Edge zezwól najpierw na rozszerzenia z innych sklepów."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Które rozszerzenie Twitch jest najlepsze do punktów kanału?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "To zależy od sposobu oglądania. StreamPulse celuje w stałych widzów: punkty odbierane nawet przy zamkniętej karcie, powiadomienia o transmisjach i automatyczne Drops w jednym rozszerzeniu zamiast trzech."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy rozszerzenie spowalnia przeglądarkę?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nie. Moduły pozostają bezczynne i uruchamiają się tylko w razie potrzeby. Każdą funkcję można też wyłączyć osobno."
         }
       }
     ]
@@ -591,6 +623,19 @@
     max-width: 580px; margin-top: 18px; line-height: 1.55;
   }
 
+  /* .section-sub était utilisé dans le markup sans exister en CSS : les
+     sous-titres de section héritaient donc du style de paragraphe par défaut.
+     Calé sur .lede pour rester cohérent avec le reste des sections. */
+  .section-sub {
+    font-size: 17px; color: var(--text-muted);
+    max-width: 620px; margin-top: 16px; line-height: 1.6;
+  }
+
+  /* Cartes navigateurs : .guide-card est prévue pour des <a>, ici les cartes
+     sont statiques. On garde bordure et grille, on retire l'affordance de clic. */
+  #navigateurs .guide-card { cursor: default; }
+  #navigateurs .guide-card .pf-pill { margin-bottom: 14px; }
+
   /* BENTO */
   .bento {
     display: grid;
@@ -1041,11 +1086,11 @@
           <span class="num">v2.0</span>
         </div>
         <h1>
-          <span class="gradient" data-i18n="hero.h1a">Nie przegap już</span><br>
-          <span data-i18n="hero.h1b">żadnej transmisji</span><br>
-          <em data-i18n="hero.h1c">swoich ulubionych streamerów.</em>
+          <span class="gradient" data-i18n="hero.h1a">Rozszerzenie Chrome</span><br>
+          <span data-i18n="hero.h1b">do Twitcha i Kicka</span><br>
+          <em data-i18n="hero.h1c">które nie przegapi żadnej transmisji.</em>
         </h1>
-        <p class="hero-sub" data-i18n="hero.sub">Natychmiastowe powiadomienia, automatyczne punkty kanału, zoptymalizowane opóźnienie i wspólny panel dla Twitcha i Kicka. Wszystko w jednym rozszerzeniu Chrome.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Natychmiastowe powiadomienia o transmisjach, automatyczne punkty kanału, Drops odbierane same i wspólny panel. Jedno rozszerzenie do Chrome, Edge, Brave i Opera.</p>
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
@@ -1378,6 +1423,40 @@
   </div>
 </section>
 
+<!-- NAVIGATEURS : cible les requêtes "extension navigateur" / "extension Chrome".
+     Réutilise guides-grid + guide-card pour rester dans la D.A. de la page. -->
+<section class="section" id="navigateurs">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="browsers.eyebrow">Zgodność</span>
+      <h2 data-i18n-html="browsers.title">Jedno rozszerzenie, <em>wszystkie twoje przeglądarki.</em></h2>
+      <p class="section-sub" data-i18n="browsers.sub">StreamPulse instalujesz z Chrome Web Store i działa w każdej przeglądarce opartej na Chromium, bez dodatkowej konfiguracji.</p>
+    </div>
+    <div class="guides-grid">
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.chrome.tag">Zalecane</span>
+        <h3 data-i18n="browsers.chrome.title">Rozszerzenie Chrome</h3>
+        <p data-i18n="browsers.chrome.desc">Instalacja jednym kliknięciem z Chrome Web Store. Powiadomienia o transmisjach i punkty kanału działają od razu po włączeniu.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.edge.tag">Zgodne</span>
+        <h3 data-i18n="browsers.edge.title">Rozszerzenie Edge</h3>
+        <p data-i18n="browsers.edge.desc">Edge akceptuje rozszerzenia z Chrome Web Store. Najpierw zezwól na rozszerzenia z innych sklepów, potem zainstaluj normalnie.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.brave.tag">Zgodne</span>
+        <h3 data-i18n="browsers.brave.title">Rozszerzenie Brave</h3>
+        <p data-i18n="browsers.brave.desc">Brave korzysta z tego samego silnika rozszerzeń co Chrome. Nie trzeba nic konfigurować, a blokada reklam nie przeszkadza.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.opera.tag">Zgodne</span>
+        <h3 data-i18n="browsers.opera.title">Rozszerzenie Opera i Vivaldi</h3>
+        <p data-i18n="browsers.opera.desc">Obie przeglądarki są oparte na Chromium i obsługują rozszerzenie przez Chrome Web Store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -1392,6 +1471,10 @@
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Czy zużywa dużo zasobów?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Nie. Rozszerzenie jest zoptymalizowane (debouncing, inteligentna pamięć podręczna, lekka architektura). Zużycie pamięci i procesora jest minimalne.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">Czy mogę wyłączyć niektóre funkcje?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">Oczywiście. Każdy moduł (powiadomienia, punkty, auto-odświeżanie, filtrowanie) można włączyć lub wyłączyć osobno w ustawieniach.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">Czy moje dane są bezpieczne?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse nie zbiera żadnych danych osobowych. Wszystko jest przechowywane lokalnie w przeglądarce. Brak transferu na nasze serwery czy do osób trzecich.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q7">Jak zainstalować rozszerzenie Twitch w Chrome?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a7">Otwórz stronę StreamPulse w Chrome Web Store, kliknij Dodaj do Chrome i potwierdź. Rozszerzenie działa od razu, bez zakładania konta i bez restartu przeglądarki.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q8">Czy rozszerzenie działa w Edge, Brave i Operze?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a8">Tak. Te przeglądarki są oparte na Chromium i akceptują rozszerzenia z Chrome Web Store. W Edge zezwól najpierw na rozszerzenia z innych sklepów.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q9">Które rozszerzenie Twitch jest najlepsze do punktów kanału?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a9">To zależy od sposobu oglądania. StreamPulse celuje w stałych widzów: punkty odbierane nawet przy zamkniętej karcie, powiadomienia o transmisjach i automatyczne Drops w jednym rozszerzeniu zamiast trzech.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q10">Czy rozszerzenie spowalnia przeglądarkę?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a10">Nie. Moduły pozostają bezczynne i uruchamiają się tylko w razie potrzeby. Każdą funkcję można też wyłączyć osobno.</div></div>
     </div>
   </div>
 </section>

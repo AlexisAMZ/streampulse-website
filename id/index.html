@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StreamPulse: poin kanal otomatis di Twitch dan Kick</title>
-<meta name="description" content="Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Tanpa iklan, tanpa pelacakan." />
+<title>StreamPulse: ekstensi Chrome untuk Twitch dan Kick</title>
+<meta name="description" content="Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Mendukung Chrome, Edge, Brave, dan Opera." />
 <meta name="keywords" content="ekstensi Twitch, ekstensi Kick, poin kanal otomatis, notifikasi Twitch, Twitch Drops otomatis, cara mengatasi error 2000 Twitch, StreamPulse" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="AlexisAMZ" />
@@ -30,16 +30,16 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.streampulse.fr/id" />
-<meta property="og:title" content="StreamPulse: poin kanal otomatis di Twitch dan Kick" />
-<meta property="og:description" content="Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Tanpa iklan, tanpa pelacakan." />
+<meta property="og:title" content="StreamPulse: ekstensi Chrome untuk Twitch dan Kick" />
+<meta property="og:description" content="Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Mendukung Chrome, Edge, Brave, dan Opera." />
 <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
 <meta property="og:locale" content="id_ID" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://www.streampulse.fr/id" />
-<meta name="twitter:title" content="StreamPulse: poin kanal otomatis di Twitch dan Kick" />
-<meta name="twitter:description" content="Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Tanpa iklan, tanpa pelacakan." />
+<meta name="twitter:title" content="StreamPulse: ekstensi Chrome untuk Twitch dan Kick" />
+<meta name="twitter:description" content="Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Mendukung Chrome, Edge, Brave, dan Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
 
 <!-- Schema.org JSON-LD -->
@@ -83,7 +83,7 @@
     "name": "StreamPulse",
     "url": "https://www.streampulse.fr/id",
     "inLanguage": "id",
-    "description": "Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Tanpa iklan, tanpa pelacakan."
+    "description": "Ekstensi Chrome gratis untuk Twitch dan Kick: notifikasi live instan, poin kanal dan Drops otomatis. Mendukung Chrome, Edge, Brave, dan Opera."
   },
   {
     "@context": "https://schema.org",
@@ -136,6 +136,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "StreamPulse tidak mengumpulkan data pribadi apa pun. Semua tersimpan lokal di browser. Tidak ada transfer ke server kami atau pihak ketiga."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bagaimana cara memasang ekstensi Twitch di Chrome?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Buka halaman StreamPulse di Chrome Web Store, klik Tambahkan ke Chrome lalu konfirmasi. Ekstensi langsung aktif, tanpa akun dan tanpa memulai ulang browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah ekstensi berfungsi di Edge, Brave, dan Opera?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ya. Browser tersebut berbasis Chromium dan menerima ekstensi Chrome Web Store. Di Edge, izinkan dulu ekstensi dari toko lain."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ekstensi Twitch terbaik untuk poin kanal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tergantung cara Anda menonton. StreamPulse ditujukan untuk penonton rutin: poin tetap terkumpul meski tab ditutup, notifikasi live dan Drops otomatis dalam satu ekstensi, bukan tiga."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah ekstensi memperlambat browser?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tidak. Modul tetap diam dan hanya berjalan saat dibutuhkan. Setiap fitur juga bisa dimatikan satu per satu."
         }
       }
     ]
@@ -591,6 +623,19 @@
     max-width: 580px; margin-top: 18px; line-height: 1.55;
   }
 
+  /* .section-sub était utilisé dans le markup sans exister en CSS : les
+     sous-titres de section héritaient donc du style de paragraphe par défaut.
+     Calé sur .lede pour rester cohérent avec le reste des sections. */
+  .section-sub {
+    font-size: 17px; color: var(--text-muted);
+    max-width: 620px; margin-top: 16px; line-height: 1.6;
+  }
+
+  /* Cartes navigateurs : .guide-card est prévue pour des <a>, ici les cartes
+     sont statiques. On garde bordure et grille, on retire l'affordance de clic. */
+  #navigateurs .guide-card { cursor: default; }
+  #navigateurs .guide-card .pf-pill { margin-bottom: 14px; }
+
   /* BENTO */
   .bento {
     display: grid;
@@ -1041,11 +1086,11 @@
           <span class="num">v2.0</span>
         </div>
         <h1>
-          <span class="gradient" data-i18n="hero.h1a">Jangan pernah</span><br>
-          <span data-i18n="hero.h1b">lewatkan live</span><br>
-          <em data-i18n="hero.h1c">streamer favoritmu lagi.</em>
+          <span class="gradient" data-i18n="hero.h1a">Ekstensi Chrome</span><br>
+          <span data-i18n="hero.h1b">untuk Twitch dan Kick</span><br>
+          <em data-i18n="hero.h1c">yang tak melewatkan satu live pun.</em>
         </h1>
-        <p class="hero-sub" data-i18n="hero.sub">Notifikasi instan, poin kanal otomatis, latensi yang dioptimalkan, dan dasbor terpadu untuk Twitch dan Kick. Semua dalam satu ekstensi Chrome.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Notifikasi live instan, poin kanal otomatis, Drops yang terkumpul sendiri, dan dasbor terpadu. Satu ekstensi untuk Chrome, Edge, Brave, dan Opera.</p>
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
@@ -1378,6 +1423,40 @@
   </div>
 </section>
 
+<!-- NAVIGATEURS : cible les requêtes "extension navigateur" / "extension Chrome".
+     Réutilise guides-grid + guide-card pour rester dans la D.A. de la page. -->
+<section class="section" id="navigateurs">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="browsers.eyebrow">Kompatibilitas</span>
+      <h2 data-i18n-html="browsers.title">Satu ekstensi, <em>semua browser Anda.</em></h2>
+      <p class="section-sub" data-i18n="browsers.sub">StreamPulse dipasang dari Chrome Web Store dan berjalan di semua browser berbasis Chromium tanpa pengaturan tambahan.</p>
+    </div>
+    <div class="guides-grid">
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.chrome.tag">Disarankan</span>
+        <h3 data-i18n="browsers.chrome.title">Ekstensi Chrome</h3>
+        <p data-i18n="browsers.chrome.desc">Pemasangan satu klik dari Chrome Web Store. Notifikasi live dan poin kanal langsung bekerja begitu diaktifkan.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.edge.tag">Kompatibel</span>
+        <h3 data-i18n="browsers.edge.title">Ekstensi Edge</h3>
+        <p data-i18n="browsers.edge.desc">Edge menerima ekstensi Chrome Web Store. Izinkan dulu ekstensi dari toko lain, lalu pasang seperti biasa.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.brave.tag">Kompatibel</span>
+        <h3 data-i18n="browsers.brave.title">Ekstensi Brave</h3>
+        <p data-i18n="browsers.brave.desc">Brave memakai mesin ekstensi yang sama dengan Chrome. Tidak ada yang perlu diatur dan pemblokir iklan tidak mengganggu.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.opera.tag">Kompatibel</span>
+        <h3 data-i18n="browsers.opera.title">Ekstensi Opera dan Vivaldi</h3>
+        <p data-i18n="browsers.opera.desc">Kedua browser berbasis Chromium dan mendukung ekstensi melalui Chrome Web Store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -1392,6 +1471,10 @@
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Apakah ekstensi ini berat?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Tidak. Ekstensi dioptimalkan (debouncing, cache pintar, arsitektur ringan). Penggunaan memori dan CPU minimal.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">Bisakah saya menonaktifkan fitur tertentu?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">Tentu. Setiap modul (notifikasi, poin, muat ulang otomatis, penyaringan) bisa dinyalakan atau dimatikan satu per satu dari pengaturan.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">Apakah data saya aman?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse tidak mengumpulkan data pribadi apa pun. Semua tersimpan lokal di browser. Tidak ada transfer ke server kami atau pihak ketiga.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q7">Bagaimana cara memasang ekstensi Twitch di Chrome?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a7">Buka halaman StreamPulse di Chrome Web Store, klik Tambahkan ke Chrome lalu konfirmasi. Ekstensi langsung aktif, tanpa akun dan tanpa memulai ulang browser.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q8">Apakah ekstensi berfungsi di Edge, Brave, dan Opera?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a8">Ya. Browser tersebut berbasis Chromium dan menerima ekstensi Chrome Web Store. Di Edge, izinkan dulu ekstensi dari toko lain.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q9">Ekstensi Twitch terbaik untuk poin kanal?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a9">Tergantung cara Anda menonton. StreamPulse ditujukan untuk penonton rutin: poin tetap terkumpul meski tab ditutup, notifikasi live dan Drops otomatis dalam satu ekstensi, bukan tiga.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q10">Apakah ekstensi memperlambat browser?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a10">Tidak. Modul tetap diam dan hanya berjalan saat dibutuhkan. Setiap fitur juga bisa dimatikan satu per satu.</div></div>
     </div>
   </div>
 </section>

@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StreamPulse : Vivez Twitch & Kick sans rien rater</title>
-<meta name="description" content="L'extension Chrome ultime pour les passionnés de streaming : notifications en direct, points de chaîne automatiques, prédictions et tableau de bord tout-en-un." />
-<meta name="keywords" content="StreamPulse, extension Twitch, extension Kick, notifications Twitch, points de chaîne automatiques, auto-claim Twitch, multi-plateformes, latence optimisée" />
+<title>StreamPulse : extension Chrome pour Twitch et Kick</title>
+<meta name="description" content="Extension Chrome gratuite pour Twitch et Kick : notifications de live instantanées, points de chaîne automatiques et Drops récupérés tout seuls. Compatible Chrome, Edge, Brave et Opera." />
+<meta name="keywords" content="extension Chrome Twitch, extension Twitch, extension Kick, extension navigateur Twitch, points de chaîne automatiques, notifications Twitch, Twitch Drops automatique, erreur 2000 Twitch, StreamPulse" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="AlexisAMZ" />
 <link rel="canonical" href="https://www.streampulse.fr/" />
@@ -30,16 +30,16 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.streampulse.fr/" />
-<meta property="og:title" content="StreamPulse : Vivez Twitch & Kick sans rien rater" />
-<meta property="og:description" content="L'extension Chrome ultime pour les passionnés de streaming : notifications en direct, points de chaîne automatiques, prédictions et tableau de bord tout-en-un." />
+<meta property="og:title" content="StreamPulse : extension Chrome pour Twitch et Kick" />
+<meta property="og:description" content="Extension Chrome gratuite pour Twitch et Kick : notifications de live instantanées, points de chaîne automatiques et Drops récupérés tout seuls. Compatible Chrome, Edge, Brave et Opera." />
 <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
 <meta property="og:locale" content="fr_FR" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://www.streampulse.fr/" />
-<meta name="twitter:title" content="StreamPulse : Vivez Twitch & Kick sans rien rater" />
-<meta name="twitter:description" content="Extension Chrome gratuite : notifications instantanées, points automatiques, latence optimisée, multi-plateformes." />
+<meta name="twitter:title" content="StreamPulse : extension Chrome pour Twitch et Kick" />
+<meta name="twitter:description" content="Extension Chrome gratuite pour Twitch et Kick : notifications de live instantanées, points de chaîne automatiques et Drops récupérés tout seuls. Compatible Chrome, Edge, Brave et Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
 
 <!-- Schema.org JSON-LD -->
@@ -81,7 +81,7 @@
     "@type": "WebSite",
     "name": "StreamPulse",
     "url": "https://www.streampulse.fr/",
-    "description": "Site officiel de StreamPulse : l'extension navigateur ultime pour Twitch et Kick."
+    "description": "Extension Chrome gratuite pour Twitch et Kick : notifications de live instantanées, points de chaîne automatiques et Drops récupérés tout seuls. Compatible Chrome, Edge, Brave et Opera."
   },
   {
     "@context": "https://schema.org",
@@ -100,7 +100,7 @@
         "name": "Quelles plateformes sont supportées ?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Twitch (avec toutes les fonctionnalités), Kick (suivi de live + notifications). D'autres plateformes sont en cours d'étude."
+          "text": "Twitch (avec toutes les fonctionnalités), Kick (suivi de live + notifications). D'autres plateformes en cours d'étude."
         }
       },
       {
@@ -133,6 +133,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "StreamPulse ne collecte aucune donnée personnelle. Tout est stocké localement dans votre navigateur. Aucun transfert vers nos serveurs ou tiers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment installer l'extension Twitch sur Chrome ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ouvrez la fiche StreamPulse sur le Chrome Web Store, cliquez sur Ajouter à Chrome puis confirmez. L'extension est active immédiatement, sans création de compte ni redémarrage du navigateur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "L'extension fonctionne-t-elle sur Edge, Brave et Opera ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. Ces navigateurs reposent sur Chromium et acceptent les extensions du Chrome Web Store. Sur Edge, autorisez d'abord les extensions provenant d'autres boutiques."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la meilleure extension Twitch pour les points de chaîne ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cela dépend de votre usage. StreamPulse cible les spectateurs réguliers : récupération des points même onglet fermé, notifications de live et Drops automatiques réunis dans une seule extension plutôt que trois."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "L'extension ralentit-elle le navigateur ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Les modules restent en veille et ne s'activent qu'au besoin. Vous pouvez désactiver individuellement chaque fonctionnalité pour réduire encore l'empreinte."
         }
       }
     ]
@@ -588,6 +620,19 @@
     max-width: 580px; margin-top: 18px; line-height: 1.55;
   }
 
+  /* .section-sub était utilisé dans le markup sans exister en CSS : les
+     sous-titres de section héritaient donc du style de paragraphe par défaut.
+     Calé sur .lede pour rester cohérent avec le reste des sections. */
+  .section-sub {
+    font-size: 17px; color: var(--text-muted);
+    max-width: 620px; margin-top: 16px; line-height: 1.6;
+  }
+
+  /* Cartes navigateurs : .guide-card est prévue pour des <a>, ici les cartes
+     sont statiques. On garde bordure et grille, on retire l'affordance de clic. */
+  #navigateurs .guide-card { cursor: default; }
+  #navigateurs .guide-card .pf-pill { margin-bottom: 14px; }
+
   /* BENTO */
   .bento {
     display: grid;
@@ -1038,12 +1083,12 @@
           <span class="num">v2.0</span>
         </div>
         <h1>
-          <span class="gradient" data-i18n="hero.h1a">Ne ratez plus</span><br>
-          <span data-i18n="hero.h1b">un seul live</span><br>
-          <em data-i18n="hero.h1c">de vos streamers favoris.</em>
+          <span class="gradient" data-i18n="hero.h1a">L'extension Chrome</span><br>
+          <span data-i18n="hero.h1b">pour Twitch et Kick</span><br>
+          <em data-i18n="hero.h1c">qui ne rate aucun live.</em>
         </h1>
         <p class="hero-sub" data-i18n="hero.sub">
-          Notifications instantanées, points de chaîne automatiques, latence optimisée et tableau de bord unifié pour Twitch et Kick. Tout. Dans une seule extension Chrome.
+          Notifications de live instantanées, points de chaîne automatiques, Drops récupérés tout seuls et tableau de bord unifié. Une seule extension pour Chrome, Edge, Brave et Opera.
         </p>
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
@@ -1377,6 +1422,40 @@
   </div>
 </section>
 
+<!-- NAVIGATEURS : cible les requêtes "extension navigateur" / "extension Chrome".
+     Réutilise guides-grid + guide-card pour rester dans la D.A. de la page. -->
+<section class="section" id="navigateurs">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="browsers.eyebrow">Compatibilité</span>
+      <h2 data-i18n-html="browsers.title">Une extension, <em>tous vos navigateurs.</em></h2>
+      <p class="section-sub" data-i18n="browsers.sub">StreamPulse s'installe depuis le Chrome Web Store et fonctionne sur tous les navigateurs basés sur Chromium, sans réglage supplémentaire.</p>
+    </div>
+    <div class="guides-grid">
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.chrome.tag">Recommandé</span>
+        <h3 data-i18n="browsers.chrome.title">Extension Chrome</h3>
+        <p data-i18n="browsers.chrome.desc">Installation en un clic depuis le Chrome Web Store. Les notifications de live et les points de chaîne fonctionnent dès l'activation.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.edge.tag">Compatible</span>
+        <h3 data-i18n="browsers.edge.title">Extension Edge</h3>
+        <p data-i18n="browsers.edge.desc">Edge accepte les extensions du Chrome Web Store. Autorisez les extensions d'autres boutiques, puis installez normalement.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.brave.tag">Compatible</span>
+        <h3 data-i18n="browsers.brave.title">Extension Brave</h3>
+        <p data-i18n="browsers.brave.desc">Brave utilise le même moteur d'extensions que Chrome. Aucune configuration à prévoir, le blocage de pub n'interfère pas.</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.opera.tag">Compatible</span>
+        <h3 data-i18n="browsers.opera.title">Extension Opera et Vivaldi</h3>
+        <p data-i18n="browsers.opera.desc">Les deux navigateurs sont basés sur Chromium et prennent en charge l'extension via le Chrome Web Store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -1391,6 +1470,10 @@
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">Est-ce gourmand en ressources ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">Non. L'extension est optimisée (debouncing, cache intelligent, architecture légère). L'empreinte mémoire et CPU est minimale.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">Puis-je désactiver certaines fonctionnalités ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">Absolument. Chaque module (notifications, points, auto-refresh, filtrage) est activable / désactivable individuellement depuis les paramètres.</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">Mes données sont-elles sécurisées ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse ne collecte aucune donnée personnelle. Tout est stocké localement dans votre navigateur. Aucun transfert vers nos serveurs ou tiers.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q7">Comment installer l'extension Twitch sur Chrome ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a7">Ouvrez la fiche StreamPulse sur le Chrome Web Store, cliquez sur Ajouter à Chrome puis confirmez. L'extension est active immédiatement, sans création de compte ni redémarrage du navigateur.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q8">L'extension fonctionne-t-elle sur Edge, Brave et Opera ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a8">Oui. Ces navigateurs reposent sur Chromium et acceptent les extensions du Chrome Web Store. Sur Edge, autorisez d'abord les extensions provenant d'autres boutiques.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q9">Quelle est la meilleure extension Twitch pour les points de chaîne ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a9">Cela dépend de votre usage. StreamPulse cible les spectateurs réguliers : récupération des points même onglet fermé, notifications de live et Drops automatiques réunis dans une seule extension plutôt que trois.</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q10">L'extension ralentit-elle le navigateur ?</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a10">Non. Les modules restent en veille et ne s'activent qu'au besoin. Vous pouvez désactiver individuellement chaque fonctionnalité pour réduire encore l'empreinte.</div></div>
     </div>
   </div>
 </section>

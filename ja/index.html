@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StreamPulse: Twitch と Kick のチャンネルポイント自動取得</title>
-<meta name="description" content="Twitch と Kick 向けの無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。広告なし、追跡なし。" />
+<title>StreamPulse: Twitch と Kick 用 Chrome 拡張機能</title>
+<meta name="description" content="Twitch と Kick 用の無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。Chrome、Edge、Brave、Opera に対応。" />
 <meta name="keywords" content="Twitch 拡張機能, Kick 拡張機能, チャンネルポイント 自動取得, Twitch 通知, Twitch Drops 自動, Twitch エラー 2000 対処, StreamPulse" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="author" content="AlexisAMZ" />
@@ -30,16 +30,16 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://www.streampulse.fr/ja" />
-<meta property="og:title" content="StreamPulse: Twitch と Kick のチャンネルポイント自動取得" />
-<meta property="og:description" content="Twitch と Kick 向けの無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。広告なし、追跡なし。" />
+<meta property="og:title" content="StreamPulse: Twitch と Kick 用 Chrome 拡張機能" />
+<meta property="og:description" content="Twitch と Kick 用の無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。Chrome、Edge、Brave、Opera に対応。" />
 <meta property="og:image" content="https://www.streampulse.fr/images/extension-screenshot.png" />
 <meta property="og:locale" content="ja_JP" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://www.streampulse.fr/ja" />
-<meta name="twitter:title" content="StreamPulse: Twitch と Kick のチャンネルポイント自動取得" />
-<meta name="twitter:description" content="Twitch と Kick 向けの無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。広告なし、追跡なし。" />
+<meta name="twitter:title" content="StreamPulse: Twitch と Kick 用 Chrome 拡張機能" />
+<meta name="twitter:description" content="Twitch と Kick 用の無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。Chrome、Edge、Brave、Opera に対応。" />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/logo.png" />
 
 <!-- Schema.org JSON-LD -->
@@ -83,7 +83,7 @@
     "name": "StreamPulse",
     "url": "https://www.streampulse.fr/ja",
     "inLanguage": "ja",
-    "description": "Twitch と Kick 向けの無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。広告なし、追跡なし。"
+    "description": "Twitch と Kick 用の無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。Chrome、Edge、Brave、Opera に対応。"
   },
   {
     "@context": "https://schema.org",
@@ -136,6 +136,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "StreamPulse は個人データを一切収集しません。すべてブラウザ内にローカル保存されます。当社サーバーや第三者への送信は行いません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Chrome に Twitch 拡張機能をインストールするには？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chrome ウェブストアの StreamPulse のページを開き、Chrome に追加をクリックして確認します。アカウント登録もブラウザの再起動も不要で、すぐに有効になります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Edge、Brave、Opera でも使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。これらは Chromium ベースで、Chrome ウェブストアの拡張機能に対応しています。Edge では先に他ストアの拡張機能を許可してください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "チャンネルポイントに最適な Twitch 拡張機能は？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "視聴スタイルによります。StreamPulse は日常的に視聴する方向けで、タブを閉じていてもポイントを取得し、配信通知と自動 Drops を 3 つではなくひとつの拡張機能にまとめています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "拡張機能でブラウザは重くなりますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "いいえ。各モジュールは待機状態で、必要なときだけ動作します。機能ごとに個別に無効化することもできます。"
         }
       }
     ]
@@ -591,6 +623,19 @@
     max-width: 580px; margin-top: 18px; line-height: 1.55;
   }
 
+  /* .section-sub était utilisé dans le markup sans exister en CSS : les
+     sous-titres de section héritaient donc du style de paragraphe par défaut.
+     Calé sur .lede pour rester cohérent avec le reste des sections. */
+  .section-sub {
+    font-size: 17px; color: var(--text-muted);
+    max-width: 620px; margin-top: 16px; line-height: 1.6;
+  }
+
+  /* Cartes navigateurs : .guide-card est prévue pour des <a>, ici les cartes
+     sont statiques. On garde bordure et grille, on retire l'affordance de clic. */
+  #navigateurs .guide-card { cursor: default; }
+  #navigateurs .guide-card .pf-pill { margin-bottom: 14px; }
+
   /* BENTO */
   .bento {
     display: grid;
@@ -1041,11 +1086,11 @@
           <span class="num">v2.0</span>
         </div>
         <h1>
-          <span class="gradient" data-i18n="hero.h1a">お気に入りの配信者の</span><br>
-          <span data-i18n="hero.h1b">配信を</span><br>
-          <em data-i18n="hero.h1c">もう見逃さない。</em>
+          <span class="gradient" data-i18n="hero.h1a">Twitch と Kick 用の</span><br>
+          <span data-i18n="hero.h1b">Chrome 拡張機能</span><br>
+          <em data-i18n="hero.h1c">配信を見逃しません。</em>
         </h1>
-        <p class="hero-sub" data-i18n="hero.sub">即時通知、チャンネルポイントの自動取得、最適化された遅延、Twitch と Kick の統合ダッシュボード。すべてが1つの Chrome 拡張機能に。</p>
+        <p class="hero-sub" data-i18n="hero.sub">配信の即時通知、チャンネルポイントの自動取得、放置でも集まる Drops、統合ダッシュボード。Chrome、Edge、Brave、Opera に対応した拡張機能ひとつで。</p>
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
@@ -1378,6 +1423,40 @@
   </div>
 </section>
 
+<!-- NAVIGATEURS : cible les requêtes "extension navigateur" / "extension Chrome".
+     Réutilise guides-grid + guide-card pour rester dans la D.A. de la page. -->
+<section class="section" id="navigateurs">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-eyebrow" data-i18n="browsers.eyebrow">対応環境</span>
+      <h2 data-i18n-html="browsers.title">ひとつの拡張機能で、<em>すべてのブラウザに。</em></h2>
+      <p class="section-sub" data-i18n="browsers.sub">StreamPulse は Chrome ウェブストアからインストールでき、Chromium 系のブラウザなら追加設定なしで動作します。</p>
+    </div>
+    <div class="guides-grid">
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.chrome.tag">推奨</span>
+        <h3 data-i18n="browsers.chrome.title">Chrome 拡張機能</h3>
+        <p data-i18n="browsers.chrome.desc">Chrome ウェブストアからワンクリックでインストール。有効化した時点で配信通知とチャンネルポイントが動きます。</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.edge.tag">対応</span>
+        <h3 data-i18n="browsers.edge.title">Edge 拡張機能</h3>
+        <p data-i18n="browsers.edge.desc">Edge は Chrome ウェブストアの拡張機能に対応しています。他のストアの拡張機能を許可してから、通常どおりインストールしてください。</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.brave.tag">対応</span>
+        <h3 data-i18n="browsers.brave.title">Brave 拡張機能</h3>
+        <p data-i18n="browsers.brave.desc">Brave は Chrome と同じ拡張機能エンジンを使用します。設定は不要で、広告ブロックとも干渉しません。</p>
+      </div>
+      <div class="guide-card reveal">
+        <span class="pf-pill" data-i18n="browsers.opera.tag">対応</span>
+        <h3 data-i18n="browsers.opera.title">Opera と Vivaldi の拡張機能</h3>
+        <p data-i18n="browsers.opera.desc">どちらも Chromium ベースで、Chrome ウェブストア経由で拡張機能を利用できます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section" id="faq">
   <div class="container">
@@ -1392,6 +1471,10 @@
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q4">動作は重いですか？</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a4">いいえ。デバウンス処理、スマートキャッシュ、軽量な設計により最適化されています。メモリと CPU の使用量はごくわずかです。</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q5">一部の機能だけ無効にできますか？</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a5">もちろんです。各モジュール（通知、ポイント、自動リロード、フィルター）は設定から個別にオン・オフできます。</div></div>
       <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q6">データは安全ですか？</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a6">StreamPulse は個人データを一切収集しません。すべてブラウザ内にローカル保存されます。当社サーバーや第三者への送信は行いません。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q7">Chrome に Twitch 拡張機能をインストールするには？</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a7">Chrome ウェブストアの StreamPulse のページを開き、Chrome に追加をクリックして確認します。アカウント登録もブラウザの再起動も不要で、すぐに有効になります。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q8">Edge、Brave、Opera でも使えますか？</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a8">はい。これらは Chromium ベースで、Chrome ウェブストアの拡張機能に対応しています。Edge では先に他ストアの拡張機能を許可してください。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q9">チャンネルポイントに最適な Twitch 拡張機能は？</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a9">視聴スタイルによります。StreamPulse は日常的に視聴する方向けで、タブを閉じていてもポイントを取得し、配信通知と自動 Drops を 3 つではなくひとつの拡張機能にまとめています。</div></div>
+      <div class="faq-item reveal"><div class="faq-q"><span data-i18n="faq.q10">拡張機能でブラウザは重くなりますか？</span> <span class="plus">+</span></div><div class="faq-a" data-i18n="faq.a10">いいえ。各モジュールは待機状態で、必要なときだけ動作します。機能ごとに個別に無効化することもできます。</div></div>
     </div>
   </div>
 </section>
