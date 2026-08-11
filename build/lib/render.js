@@ -77,7 +77,7 @@ function prefix(lang) {
 }
 
 function buildHead(page, lang) {
-  const t = UI[lang];
+  const t = getUI(lang);
   const canonical = `${ORIGIN}${prefix(lang)}/${page.slug[lang]}`;
   const alts = Object.keys(page.slug)
     .map(
@@ -119,7 +119,7 @@ function buildHead(page, lang) {
 }
 
 function buildHeader(lang) {
-  const t = UI[lang];
+  const t = getUI(lang);
   const p = prefix(lang);
   return `    <header class="site-header">
       <div class="container header-content">
@@ -140,7 +140,7 @@ function buildHeader(lang) {
 }
 
 function buildFooter(lang) {
-  const t = UI[lang];
+  const t = getUI(lang);
   const p = prefix(lang);
   return `    <footer class="site-footer">
       <div class="container footer-content">
@@ -159,4 +159,11 @@ function buildFooter(lang) {
     </script>`;
 }
 
-module.exports = { ORIGIN, CWS, UI, esc, slugify, prefix, buildHead, buildHeader, buildFooter };
+
+function getUI(lang) {
+  if (UI[lang]) return UI[lang];
+  return UI['en'];
+}
+
+module.exports = {
+  getUI, ORIGIN, CWS, UI, esc, slugify, prefix, buildHead, buildHeader, buildFooter };

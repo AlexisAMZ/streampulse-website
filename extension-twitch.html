@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension Twitch pour spectateurs | StreamPulse</title>
+    <meta name="description" content="StreamPulse : extension Twitch pour spectateurs. Auto-claim Channel Points, Drops automatiques, notifications live, filtres de chat et correction d'erreurs." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/extension-twitch" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/extension-twitch" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/extension-twitch" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/extension-twitch" />
+    <meta property="og:title" content="Extension Twitch pour spectateurs | StreamPulse" />
+    <meta property="og:description" content="StreamPulse : extension Twitch pour spectateurs. Auto-claim Channel Points, Drops automatiques, notifications live, filtres de chat et correction d'erreurs." />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, extension Chrome pour Twitch et Kick : notifications de live, points de chaine et Drops automatiques." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="Extension Twitch pour spectateurs | StreamPulse" />
+    <meta name="twitter:description" content="StreamPulse : extension Twitch pour spectateurs. Auto-claim Channel Points, Drops automatiques, notifications live, filtres de chat et correction d'erreurs." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, extension Chrome pour Twitch et Kick : notifications de live, points de chaine et Drops automatiques." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Extension Twitch pour spectateurs",
+    "headline": "Extension Twitch pour spectateurs",
+    "description": "StreamPulse : extension Twitch pour spectateurs. Auto-claim Channel Points, Drops automatiques, notifications live, filtres de chat et correction d'erreurs.",
+    "inLanguage": "fr",
+    "url": "https://www.streampulse.fr/extension-twitch",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-11",
+    "dateModified": "2026-08-11",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://www.streampulse.fr/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Extension Twitch pour spectateurs",
+        "item": "https://www.streampulse.fr/extension-twitch"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "fr",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "StreamPulse est-il gratuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, 100% gratuit, sans publicité, sans fonctionnalité payante et sans création de compte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulse récupère-t-il automatiquement les Channel Points ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. StreamPulse détecte et clique automatiquement sur le bonus de Channel Points dès qu'il apparaît, même si l'onglet est en arrière-plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulse récupère-t-il les Twitch Drops ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. StreamPulse détecte les Drops disponibles et les réclame automatiquement dès que les conditions sont remplies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les Channel Points fonctionnent-ils en arrière-plan ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui. L'anti-pause de StreamPulse maintient le flux actif même lorsque l'onglet n'est pas au premier plan, ce qui permet la collecte continue des Channel Points."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qui développe StreamPulse ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "StreamPulse est développé par AlexisAMZ, développeur indépendant. Le code source et les mises à jour sont disponibles sur GitHub."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/#features">Fonctionnalités</a>
+          <a href="/#faq">FAQ</a>
+          <a href="/support">Assistance</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/">Accueil</a> / <span>Extension Twitch pour spectateurs</span>
+          </p>
+          <h1>Extension Twitch pour spectateurs</h1>
+          <p class="article-lede">StreamPulse est une extension de navigateur gratuite qui automatise l'expérience des spectateurs Twitch : récupération des Channel Points, des Drops, notifications en temps réel, filtres de chat et correction automatique des erreurs de lecteur. Compatible avec Chrome, Edge, Brave et Opera.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Mis à jour le 11 août 2026
+          </p>
+        <nav class="toc" aria-label="Sur cette page">
+          <p class="toc-title">Sur cette page</p>
+          <ul>
+          <li><a href="#fonctionnalites">Toutes les fonctionnalités Twitch</a></li>
+          <li><a href="#compatibilite">Compatibilité navigateurs</a></li>
+          <li><a href="#vs-bttv">StreamPulse et BetterTTV : complémentaires</a></li>
+          <li><a href="#confidentialite">Confidentialité</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="fonctionnalites">Toutes les fonctionnalités Twitch</h2>
+        <div class="answer-block">
+          <p>StreamPulse se concentre sur l'automatisation et le suivi pour les spectateurs Twitch. Contrairement aux extensions d'emotes, StreamPulse ne modifie pas l'apparence du chat mais automatise les tâches répétitives.</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>Auto-claim Channel Points.</strong> Récupération automatique des points de chaîne Twitch, y compris en arrière-plan. Plus besoin de cliquer sur le bonus manuellement.</li>
+          <li><strong>Twitch Drops automatiques.</strong> Détection et réclamation instantanée des Drops dès que les conditions sont remplies.</li>
+          <li><strong>Notifications live.</strong> Alertes desktop en temps réel dès qu'un streamer suivi passe en direct sur Twitch.</li>
+          <li><strong>Correction des erreurs de lecteur.</strong> Rechargement automatique du flux lors des erreurs #1000, #2000 ou #3000. Plus d'interruption manuelle.</li>
+          <li><strong>Filtres de chat.</strong> Masquez les spams, mots-clés indésirables et messages répétitifs dans le chat Twitch.</li>
+          <li><strong>Anti-pause.</strong> Empêche Twitch de mettre la vidéo en pause lorsque l'onglet passe en arrière-plan.</li>
+          <li><strong>Aperçus vidéo au survol.</strong> Prévisualisez le flux en direct en survolant un lien de chaîne, sans quitter votre page.</li>
+        </ul>
+
+        <h2 id="compatibilite">Compatibilité navigateurs</h2>
+        <div class="answer-block">
+          <p>StreamPulse s'installe depuis le Chrome Web Store et fonctionne sur tous les navigateurs basés sur Chromium : Chrome, Edge, Brave, Opera et Vivaldi. Aucune configuration supplémentaire n'est nécessaire.</p>
+        </div>
+
+        <h2 id="vs-bttv">StreamPulse et BetterTTV : complémentaires</h2>
+        <div class="answer-block">
+          <p>StreamPulse et BetterTTV ne font pas la même chose. BetterTTV (et FrankerFaceZ, 7TV) ajoutent des emotes et personnalisent le chat. StreamPulse automatise les tâches de spectateur. Les deux s'installent ensemble sans conflit.</p>
+        </div>
+        <p>Si vous cherchez une extension pour les emotes, installez BetterTTV ou FrankerFaceZ. Si vous cherchez une extension pour automatiser les Channel Points, les Drops et les notifications, installez StreamPulse. Les deux ensemble couvrent la totalité des besoins d'un spectateur Twitch régulier.</p>
+
+        <h2 id="confidentialite">Confidentialité</h2>
+        <div class="answer-block">
+          <p>StreamPulse ne collecte aucune donnée personnelle. Aucun tracker, aucune publicité, aucun compte requis. Toutes les préférences sont stockées localement dans votre navigateur.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>StreamPulse est-il gratuit ?</h3>
+            <p>Oui, 100% gratuit, sans publicité, sans fonctionnalité payante et sans création de compte.</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulse récupère-t-il automatiquement les Channel Points ?</h3>
+            <p>Oui. StreamPulse détecte et clique automatiquement sur le bonus de Channel Points dès qu'il apparaît, même si l'onglet est en arrière-plan.</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulse récupère-t-il les Twitch Drops ?</h3>
+            <p>Oui. StreamPulse détecte les Drops disponibles et les réclame automatiquement dès que les conditions sont remplies.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Les Channel Points fonctionnent-ils en arrière-plan ?</h3>
+            <p>Oui. L'anti-pause de StreamPulse maintient le flux actif même lorsque l'onglet n'est pas au premier plan, ce qui permet la collecte continue des Channel Points.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Qui développe StreamPulse ?</h3>
+            <p>StreamPulse est développé par AlexisAMZ, développeur indépendant. Le code source et les mises à jour sont disponibles sur GitHub.</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Installez StreamPulse</h2>
+          <p>Gratuit, sans publicité, sans compte. Vos données restent dans votre navigateur.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+            <a class="btn" href="/support">Lire la FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. Tous droits réservés.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Confidentialité</a>
+          <a href="/terms">Conditions d'utilisation</a>
+          <a href="/support">Assistance</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Ajouter à Chrome (gratuit)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

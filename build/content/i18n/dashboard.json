@@ -1,0 +1,587 @@
+{
+  "es": {
+    "slug": "panel-de-control-twitch-expulsión",
+    "linkLabel": "Panel de control unificado de Twitch y Kick",
+    "title": "Panel de control unificado de Twitch y Kick | StreamPulse",
+    "h1": "Panel de control unificado de Twitch y Kick",
+    "description": "El panel de control de StreamPulse reúne tus canales de Twitch y Kick en una única interfaz. Estado en directo, notificaciones y seguimiento centralizado de tus streamers.",
+    "intro": "La ventana emergente StreamPulse centraliza tus canales de Twitch y Kick en una única interfaz. Comprueba de un vistazo quién está en directo, en qué plataforma y desde hace cuánto tiempo, sin necesidad de abrir varias pestañas.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "¿Cómo funciona el panel de control?",
+        "answer": "El panel de control es la ventana emergente que se abre al hacer clic en el icono de StreamPulse en la barra de extensiones. Consulta las API de Twitch y Kick para mostrar el estado de todos los canales que sigues en tiempo real.",
+        "body": [
+          "No es necesario realizar ninguna configuración: StreamPulse utiliza directamente tus sesiones activas de Twitch y Kick en el navegador. Nada más instalarlo, el panel de control muestra los canales a los que sigues."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "¿Qué información se muestra?",
+        "answer": "Para cada canal en directo, el panel de control muestra el nombre del streamer, la plataforma (Twitch o Kick), el título de la retransmisión, la categoría, el número de espectadores y la duración de la retransmisión en directo.",
+        "list": [
+          "<strong>Nombre y avatar del streamer</strong> con un indicador de la plataforma (Twitch o Kick).",
+          "<strong>Título de la retransmisión</strong> y categoría actual.",
+          "<strong>Número de espectadores</strong> en tiempo real.",
+          "<strong>Duración de la retransmisión en directo</strong> desde su inicio.",
+          "<strong>Accede con un solo clic</strong> para abrir la transmisión en una nueva pestaña."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "¿Por qué un panel de control multiplataforma?",
+        "answer": "Cada vez son más los streamers que retransmiten simultáneamente en Twitch y Kick. Con el panel de control de StreamPulse, ya no tendrás que consultar cada plataforma por separado: todo está centralizado en una única vista."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿El panel de control incluye Twitch y Kick?",
+        "a": "Sí. La ventana emergente muestra todos los canales a los que estás suscrito, tanto de Twitch como de Kick, con su estado en tiempo real en una única interfaz."
+      },
+      {
+        "q": "¿Es necesario tener una cuenta para utilizar el panel de control?",
+        "a": "No. StreamPulse utiliza tus sesiones activas de Twitch y Kick en el navegador. No es necesario crear una cuenta de StreamPulse."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "painel-twitch-expulsão",
+    "linkLabel": "Painel unificado do Twitch e do Kick",
+    "title": "Painel unificado do Twitch e do Kick | StreamPulse",
+    "h1": "Painel unificado do Twitch e do Kick",
+    "description": "O painel do StreamPulse reúne seus canais do Twitch e do Kick em uma única interface. Status ao vivo, notificações e acompanhamento centralizado dos seus streamers.",
+    "intro": "O pop-up StreamPulse centraliza seus canais do Twitch e do Kick em uma única interface. Veja rapidamente quem está ao vivo, em qual plataforma e há quanto tempo, sem precisar abrir várias abas.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Como funciona o painel de controle?",
+        "answer": "O painel é a janela pop-up que se abre quando você clica no ícone do StreamPulse na barra de extensões. Ele consulta as APIs do Twitch e do Kick para exibir o status de todos os canais que você segue em tempo real.",
+        "body": [
+          "Não é necessária nenhuma configuração: o StreamPulse utiliza diretamente suas sessões ativas do Twitch e do Kick no navegador. Assim que for instalado, o painel exibe os canais que você segue."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Quais informações são exibidas?",
+        "answer": "Para cada transmissão ao vivo, o painel exibe o nome do streamer, a plataforma (Twitch ou Kick), o título da transmissão, a categoria, o número de espectadores e a duração da transmissão ao vivo.",
+        "list": [
+          "<strong>Nome e avatar do streamer,</strong> com um indicador da plataforma (Twitch ou Kick).",
+          "<strong>Título da transmissão</strong> e categoria atual.",
+          "<strong>Número de espectadores</strong> em tempo real.",
+          "<strong>Tempo de transmissão ao vivo</strong> desde o lançamento.",
+          "<strong>Acesso com um clique</strong> para abrir a transmissão em uma nova aba."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Por que um painel multiplataforma?",
+        "answer": "Cada vez mais streamers estão transmitindo simultaneamente no Twitch e no Kick. Com o painel do StreamPulse, você não precisa mais verificar cada plataforma separadamente: tudo fica centralizado em uma única tela."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O painel de controle inclui o Twitch e o Kick?",
+        "a": "Sim. A janela pop-up exibe todos os canais que você segue, tanto no Twitch quanto no Kick, com seu status em tempo real em uma única interface."
+      },
+      {
+        "q": "É preciso ter uma conta para usar o painel?",
+        "a": "Não. O StreamPulse utiliza suas sessões ativas do Twitch e do Kick no navegador. Não é necessário criar uma conta no StreamPulse."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Dashboard-Twitch-Kick",
+    "linkLabel": "Gemeinsames Twitch- und Kick-Dashboard",
+    "title": "Gemeinsames Twitch- und Kick-Dashboard | StreamPulse",
+    "h1": "Gemeinsames Twitch- und Kick-Dashboard",
+    "description": "Das StreamPulse-Dashboard vereint Ihre Twitch- und Kick-Kanäle in einer einzigen Benutzeroberfläche. Live-Status, Benachrichtigungen und zentrale Überwachung Ihrer Streamer.",
+    "intro": "Das StreamPulse-Pop-up bündelt Ihre Twitch- und Kick-Kanäle in einer einzigen Oberfläche. Sehen Sie auf einen Blick, wer gerade live ist, auf welcher Plattform und seit wann – ganz ohne mehrere Tabs öffnen zu müssen.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Wie funktioniert das Dashboard?",
+        "answer": "Das Dashboard ist das Popup-Fenster, das sich öffnet, wenn Sie auf das StreamPulse-Symbol in der Erweiterungsleiste klicken. Es ruft die APIs von Twitch und Kick ab, um den Status aller von Ihnen verfolgten Kanäle in Echtzeit anzuzeigen.",
+        "body": [
+          "Es ist keine Konfiguration erforderlich: StreamPulse nutzt direkt Ihre aktiven Twitch- und Kick-Sessions im Browser. Sobald die Installation abgeschlossen ist, zeigt das Dashboard die Kanäle an, denen Sie folgen."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Welche Informationen werden angezeigt?",
+        "answer": "Für jeden Live-Stream zeigt das Dashboard den Namen des Streamers, die Plattform (Twitch oder Kick), den Titel des Streams, die Kategorie, die Anzahl der Zuschauer und die Dauer des Live-Streams an.",
+        "list": [
+          "<strong>Name und Avatar des Streamers</strong> mit einem Plattform-Symbol (Twitch oder Kick).",
+          "Aktueller <strong>Stream-Titel</strong> und Kategorie.",
+          "<strong>Zuschauerzahl</strong> in Echtzeit.",
+          "<strong>Dauer des Live-Streams</strong> seit dem Start.",
+          "<strong>Mit einem Klick</strong> den Stream in einem neuen Tab öffnen."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Warum ein plattformübergreifendes Dashboard?",
+        "answer": "Immer mehr Streamer senden gleichzeitig auf Twitch und Kick. Mit dem StreamPulse-Dashboard müssen Sie nicht mehr jede Plattform einzeln überprüfen: Alles ist in einer einzigen Ansicht zusammengefasst."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Umfasst das Dashboard sowohl Twitch als auch Kick?",
+        "a": "Ja. Das Pop-up zeigt alle abonnierten Kanäle – sowohl auf Twitch als auch auf Kick – mit ihrem Status in Echtzeit in einer einzigen Oberfläche an."
+      },
+      {
+        "q": "Braucht man ein Konto, um das Dashboard zu nutzen?",
+        "a": "Nein. StreamPulse nutzt Ihre aktiven Twitch- und Kick-Sitzungen im Browser. Es ist nicht erforderlich, ein StreamPulse-Konto anzulegen."
+      }
+    ]
+  },
+  "it": {
+    "slug": "dashboard-twitch-kick",
+    "linkLabel": "Dashboard unificata di Twitch e Kick",
+    "title": "Dashboard unificata per Twitch e Kick | StreamPulse",
+    "h1": "Dashboard unificata di Twitch e Kick",
+    "description": "La dashboard di StreamPulse riunisce i tuoi canali Twitch e Kick in un'unica interfaccia. Stato in diretta, notifiche e monitoraggio centralizzato dei tuoi streamer.",
+    "intro": "Il pop-up StreamPulse riunisce i tuoi canali Twitch e Kick in un'unica interfaccia. Scopri a colpo d'occhio chi è in diretta, su quale piattaforma e da quanto tempo, senza dover aprire più schede.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Come funziona la dashboard?",
+        "answer": "Il dashboard è la finestra pop-up che si apre quando si fa clic sull'icona di StreamPulse nella barra delle estensioni. Interroga le API di Twitch e Kick per visualizzare lo stato di tutti i canali seguiti in tempo reale.",
+        "body": [
+          "Non è necessaria alcuna configurazione: StreamPulse utilizza direttamente le tue sessioni Twitch e Kick attive nel browser. Subito dopo l'installazione, la dashboard mostra i canali che segui."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Quali informazioni vengono visualizzate?",
+        "answer": "Per ogni canale in diretta, la dashboard mostra il nome dello streamer, la piattaforma (Twitch o Kick), il titolo dello streaming, la categoria, il numero di spettatori e la durata della diretta.",
+        "list": [
+          "<strong>Nome e avatar dello streamer</strong> con l'indicazione della piattaforma (Twitch o Kick).",
+          "<strong>Titolo dello stream</strong> e categoria attuale.",
+          "<strong>Numero di spettatori</strong> in tempo reale.",
+          "<strong>Durata della diretta</strong> dal momento del lancio.",
+          "<strong>Accesso con un clic</strong> per aprire lo streaming in una nuova scheda."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Perché un dashboard multipiattaforma?",
+        "answer": "Sempre più streamer trasmettono contemporaneamente su Twitch e Kick. Con la dashboard di StreamPulse, non è più necessario controllare ogni piattaforma separatamente: tutto è centralizzato in un’unica schermata."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Il dashboard include sia Twitch che Kick?",
+        "a": "Sì. Il pop-up mostra tutti i canali seguiti, sia su Twitch che su Kick, con il loro stato in tempo reale in un'unica interfaccia."
+      },
+      {
+        "q": "È necessario avere un account per utilizzare la dashboard?",
+        "a": "No. StreamPulse utilizza le tue sessioni attive su Twitch e Kick nel browser. Non è necessario creare un account StreamPulse."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "dashboard-twitch-kick",
+    "linkLabel": "Zunifikowany pulpit nawigacyjny Twitch i Kick",
+    "title": "Zunifikowany pulpit nawigacyjny Twitch i Kick | StreamPulse",
+    "h1": "Zunifikowany pulpit nawigacyjny Twitch i Kick",
+    "description": "Panel StreamPulse łączy Twoje kanały na Twitchu i Kicku w jednym interfejsie. Status na żywo, powiadomienia i scentralizowane monitorowanie Twoich streamerów.",
+    "intro": "Wyskakujące okienko StreamPulse pozwala zebrać kanały Twitch i Kick w jednym interfejsie. Na pierwszy rzut oka możesz sprawdzić, kto właśnie nadaje na żywo, na której platformie i od jak dawna, bez konieczności otwierania wielu kart.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Jak działa pulpit nawigacyjny?",
+        "answer": "Pulpit nawigacyjny to okienko, które otwiera się po kliknięciu ikony StreamPulse na pasku rozszerzeń. Korzysta ono z interfejsów API serwisów Twitch i Kick, aby wyświetlać status wszystkich obserwowanych kanałów w czasie rzeczywistym.",
+        "body": [
+          "Nie trzeba nic konfigurować: StreamPulse korzysta bezpośrednio z aktywnych sesji na Twitchu i Kicku w przeglądarce. Zaraz po instalacji na pulpicie nawigacyjnym wyświetlają się kanały, które obserwujesz."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Jakie informacje są wyświetlane?",
+        "answer": "Dla każdego kanału na żywo pulpit nawigacyjny wyświetla nazwę streamera, platformę (Twitch lub Kick), tytuł transmisji, kategorię, liczbę widzów oraz czas trwania transmisji na żywo.",
+        "list": [
+          "<strong>Nazwa i awatar streamera</strong> wraz ze wskaźnikiem platformy (Twitch lub Kick).",
+          "Aktualny <strong>tytuł transmisji</strong> i kategoria.",
+          "<strong>Liczba widzów</strong> w czasie rzeczywistym.",
+          "<strong>Czas trwania transmisji na żywo</strong> od momentu rozpoczęcia.",
+          "<strong>Wystarczy jedno kliknięcie,</strong> aby otworzyć transmisję w nowej karcie."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Dlaczego warto mieć pulpit nawigacyjny obsługujący wiele platform?",
+        "answer": "Coraz więcej streamerów prowadzi transmisje jednocześnie na Twitchu i Kicku. Dzięki panelowi StreamPulse nie musisz już sprawdzać każdej platformy osobno: wszystko jest zebrane w jednym widoku."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy pulpit nawigacyjny obejmuje serwisy Twitch i Kick?",
+        "a": "Tak. W oknie podręcznym wyświetlane są wszystkie obserwowane kanały – zarówno z serwisu Twitch, jak i Kick – wraz z ich statusem w czasie rzeczywistym w jednym interfejsie."
+      },
+      {
+        "q": "Czy do korzystania z panelu kontrolnego potrzebne jest konto?",
+        "a": "Nie. StreamPulse korzysta z Twoich aktywnych sesji na Twitchu i Kicku w przeglądarce. Nie trzeba zakładać konta w StreamPulse."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "dashboard-twitch-kick",
+    "linkLabel": "Birleştirilmiş Twitch ve Kick Kontrol Paneli",
+    "title": "Birleştirilmiş Twitch ve Kick Kontrol Paneli | StreamPulse",
+    "h1": "Birleştirilmiş Twitch ve Kick Kontrol Paneli",
+    "description": "StreamPulse kontrol paneli, Twitch ve Kick kanallarınızı tek bir arayüzde bir araya getirir. Canlı yayın durumu, bildirimler ve yayıncılarınızın merkezi olarak izlenmesi.",
+    "intro": "StreamPulse açılır penceresi, Twitch ve Kick kanallarınızı tek bir arayüzde bir araya getirir. Birden fazla sekme açmanıza gerek kalmadan, kimin hangi platformda ne kadar süredir canlı yayın yaptığını bir bakışta görebilirsiniz.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Kontrol paneli nasıl çalışır?",
+        "answer": "Kontrol paneli, uzantı çubuğundaki StreamPulse simgesine tıkladığınızda açılan açılır penceredir. Twitch ve Kick API’lerini sorgulayarak takip ettiğiniz tüm kanalların durumunu gerçek zamanlı olarak gösterir.",
+        "body": [
+          "Herhangi bir ayar yapmanıza gerek yoktur: StreamPulse, tarayıcınızda açık olan Twitch ve Kick oturumlarınızı doğrudan kullanır. Kurulum tamamlandığında, kontrol panelinde takip ettiğiniz kanallar görüntülenir."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Hangi bilgiler görüntülenir?",
+        "answer": "Canlı yayın yapan her kanal için kontrol panelinde yayıncının adı, platform (Twitch veya Kick), yayın başlığı, kategori, izleyici sayısı ve canlı yayının süresi görüntülenir.",
+        "list": [
+          "<strong>Yayıncının adı ve avatarı</strong> ile platform göstergesi (Twitch veya Kick).",
+          "<strong>Yayının başlığı</strong> ve mevcut kategori.",
+          "Gerçek zamanlı <strong>seyirci sayısı</strong>.",
+          "<strong>Canlı yayının</strong> başlangıcından bu yana <strong>geçen süre</strong>.",
+          "<strong>Tek tıklamayla</strong> akışı yeni bir sekmede açabilirsiniz."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Neden çoklu platformlu bir kontrol paneli?",
+        "answer": "Giderek daha fazla sayıda yayıncı, Twitch ve Kick'te aynı anda yayın yapıyor. StreamPulse kontrol paneli sayesinde artık her platformu ayrı ayrı kontrol etmenize gerek yok: her şey tek bir ekranda bir araya getirilmiş durumda."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Kontrol paneli, Twitch ve Kick’i bir arada gösteriyor mu?",
+        "a": "Evet. Bu açılır pencere, takip edilen tüm kanalları — Twitch ve Kick dahil — gerçek zamanlı durumlarıyla birlikte tek bir arayüzde gösterir."
+      },
+      {
+        "q": "Dashboard'u kullanmak için bir hesap gerekli mi?",
+        "a": "Hayır. StreamPulse, tarayıcınızda açık olan Twitch ve Kick oturumlarınızı kullanır. StreamPulse hesabı oluşturmanıza gerek yoktur."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "панель управления-Twitch-исключение",
+    "linkLabel": "Объединенная панель управления Twitch и Kick",
+    "title": "Объединенная панель управления Twitch и Kick | StreamPulse",
+    "h1": "Объединенная панель управления Twitch и Kick",
+    "description": "Панель управления StreamPulse объединяет ваши каналы Twitch и Kick в едином интерфейсе. Статус прямых трансляций, уведомления и централизованный мониторинг ваших стримеров.",
+    "intro": "Всплывающее окно StreamPulse объединяет ваши каналы Twitch и Kick в едином интерфейсе. Вы можете сразу увидеть, кто ведет прямую трансляцию, на какой платформе и как долго, не открывая несколько вкладок.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Как работает панель управления?",
+        "answer": "Панель мониторинга — это всплывающее окно, которое открывается при нажатии на значок StreamPulse в панели расширений. Оно запрашивает данные из API Twitch и Kick, чтобы отображать статус всех каналов, на которые вы подписаны, в режиме реального времени.",
+        "body": [
+          "Настройка не требуется: StreamPulse напрямую использует ваши активные сессии Twitch и Kick в браузере. Сразу после установки на панели управления отображаются каналы, на которые вы подписаны."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Какая информация отображается?",
+        "answer": "Для каждого прямой трансляции на панели управления отображаются имя стримера, платформа (Twitch или Kick), название трансляции, категория, количество зрителей и продолжительность трансляции.",
+        "list": [
+          "<strong>Имя и аватар стримера</strong> с указанием платформы (Twitch или Kick).",
+          "<strong>Название потока</strong> и текущая категория.",
+          "<strong>Количество зрителей</strong> в режиме реального времени.",
+          "<strong>Продолжительность прямой трансляции</strong> с момента запуска.",
+          "<strong>Доступ в один клик</strong> для открытия трансляции в новой вкладке."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Зачем нужна мультиплатформенная панель управления?",
+        "answer": "Все больше стримеров ведут трансляции одновременно на Twitch и Kick. С помощью панели управления StreamPulse вам больше не нужно проверять каждую платформу по отдельности: вся информация собрана в одном окне."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Включает ли панель управления Twitch и Kick?",
+        "a": "Да. В всплывающем окне отображаются все каналы, на которые вы подписаны — как на Twitch, так и на Kick — с указанием их статуса в режиме реального времени в едином интерфейсе."
+      },
+      {
+        "q": "Нужен ли аккаунт для использования панели управления?",
+        "a": "Нет. StreamPulse использует ваши активные сессии Twitch и Kick в браузере. Создавать учетную запись StreamPulse не требуется."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "ダッシュボード-Twitch-キック",
+    "linkLabel": "TwitchとKickの統合ダッシュボード",
+    "title": "TwitchとKickの統合ダッシュボード | StreamPulse",
+    "h1": "TwitchとKickの統合ダッシュボード",
+    "description": "StreamPulseのダッシュボードでは、TwitchとKickのチャンネルを1つのインターフェースにまとめて表示できます。ライブ配信状況、通知、ストリーマーの管理を一元的に行えます。",
+    "intro": "StreamPulseのポップアップ機能を使えば、TwitchとKickのチャンネルを1つのインターフェースにまとめて確認できます。複数のタブを開くことなく、誰がどのプラットフォームで、どれくらいの時間ライブ配信を行っているかを一目で把握できます。",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "ダッシュボードはどのように機能するのですか？",
+        "answer": "ダッシュボードとは、拡張機能バーにあるStreamPulseのアイコンをクリックすると表示されるポップアップのことです。TwitchおよびKickのAPIにアクセスし、フォローしているすべてのチャンネルのステータスをリアルタイムで表示します。",
+        "body": [
+          "設定は一切不要です。StreamPulseは、ブラウザ上でアクティブなTwitchおよびKickのセッションを直接利用します。インストールが完了すると、ダッシュボードにはフォローしているチャンネルが表示されます。"
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "どのような情報が表示されますか？",
+        "answer": "各ライブ配信について、ダッシュボードには配信者の名前、プラットフォーム（TwitchまたはKick）、配信タイトル、カテゴリ、視聴者数、および配信時間が表示されます。",
+        "list": [
+          "<strong>ストリーマーの名前とアバター</strong>、およびプラットフォーム（TwitchまたはKick）の表示。",
+          "現在の<strong>ストリームのタイトル</strong>とカテゴリ。",
+          "リアルタイムの<strong>観客数</strong>。",
+          "配信開始からの<strong>経過時間</strong>。",
+          "<strong>ワンクリックで</strong>、新しいタブにストリームを開く<strong>ことができます</strong>。"
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "なぜマルチプラットフォームのダッシュボードなのか？",
+        "answer": "TwitchとKickの両方で配信を行うストリーマーが増えています。StreamPulseのダッシュボードを使えば、各プラットフォームを個別に確認する必要がなくなります。すべてが一つの画面に集約されています。"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ダッシュボードにはTwitchとKickがまとめられていますか？",
+        "a": "はい。このポップアップには、TwitchとKickを合わせてフォローしているすべてのチャンネルが、リアルタイムのステータスとともに1つのインターフェースに表示されます。"
+      },
+      {
+        "q": "ダッシュボードを利用するにはアカウントが必要ですか？",
+        "a": "いいえ。StreamPulseは、ブラウザ上でアクティブなTwitchおよびKickのセッションを利用します。StreamPulseのアカウントを作成する必要はありません。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "대시보드-트위치-추방",
+    "linkLabel": "통합된 Twitch 및 Kick 대시보드",
+    "title": "통합된 Twitch 및 Kick 대시보드 | StreamPulse",
+    "h1": "통합된 Twitch 및 Kick 대시보드",
+    "description": "StreamPulse 대시보드는 Twitch 및 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 실시간 상태, 알림 및 스트리머에 대한 중앙 집중식 모니터링 기능을 제공합니다.",
+    "intro": "StreamPulse 팝업 창은 Twitch와 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 여러 탭을 열지 않고도 누가 어떤 플랫폼에서 얼마나 오랫동안 생방송 중인지 한눈에 확인할 수 있습니다.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "대시보드는 어떻게 작동하나요?",
+        "answer": "대시보드는 확장 프로그램 바에서 StreamPulse 아이콘을 클릭하면 열리는 팝업 창입니다. 이 대시보드는 Twitch 및 Kick API를 조회하여 팔로우 중인 모든 채널의 상태를 실시간으로 표시합니다.",
+        "body": [
+          "별도의 설정이 필요하지 않습니다. StreamPulse는 브라우저에서 진행 중인 Twitch 및 Kick 세션을 바로 활용합니다. 설치가 완료되면 대시보드에 팔로우 중인 채널이 표시됩니다."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "어떤 정보가 표시되나요?",
+        "answer": "각 라이브 방송에 대해 대시보드에는 스트리머 이름, 플랫폼(Twitch 또는 Kick), 방송 제목, 카테고리, 시청자 수 및 방송 시간이 표시됩니다.",
+        "list": [
+          "<strong>스트리머의 이름과 아바타</strong>, 그리고 플랫폼 표시(Twitch 또는 Kick).",
+          "현재 <strong>스트림 제목</strong> 및 카테고리.",
+          "실시간 <strong>관객 수</strong>.",
+          "<strong>방송</strong> 시작 이후 현재까지의 <strong>방송 시간</strong>.",
+          "<strong>한 번의 클릭으로</strong> 새 탭에서 스트림을 열 수 <strong>있습니다</strong>."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "왜 크로스 플랫폼 대시보드가 필요한가?",
+        "answer": "점점 더 많은 스트리머들이 Twitch와 Kick에서 동시에 방송하고 있습니다. StreamPulse 대시보드를 사용하면 각 플랫폼을 따로 확인할 필요가 없습니다. 모든 정보가 하나의 화면에서 한눈에 확인됩니다."
+      }
+    ],
+    "faq": [
+      {
+        "q": "대시보드에 Twitch와 Kick이 모두 포함되어 있나요?",
+        "a": "네. 이 팝업 창에서는 Twitch와 Kick을 통틀어 팔로우 중인 모든 채널과 해당 채널의 실시간 상태를 하나의 인터페이스에서 한눈에 확인할 수 있습니다."
+      },
+      {
+        "q": "대시보드를 사용하려면 계정이 필요한가요?",
+        "a": "아니요. StreamPulse는 브라우저에서 진행 중인 Twitch 및 Kick 세션을 활용합니다. StreamPulse 계정을 별도로 만들 필요는 없습니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "dashboard-twitch-kick",
+    "linkLabel": "Dasbor Twitch dan Kick yang Terintegrasi",
+    "title": "Dasbor Twitch dan Kick yang Terintegrasi | StreamPulse",
+    "h1": "Dasbor Twitch dan Kick yang Terintegrasi",
+    "description": "Dasbor StreamPulse menggabungkan saluran Twitch dan Kick Anda dalam satu antarmuka. Status siaran langsung, pemberitahuan, dan pemantauan terpusat terhadap para streamer Anda.",
+    "intro": "Pop-up StreamPulse menggabungkan saluran Twitch dan Kick Anda dalam satu antarmuka. Lihat sekilas siapa yang sedang siaran langsung, di platform mana, dan sudah berapa lama, tanpa perlu membuka banyak tab.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Bagaimana cara kerja dasbor?",
+        "answer": "Dasbor adalah jendela pop-up yang muncul saat Anda mengklik ikon StreamPulse di bilah ekstensi. Dasbor ini mengakses API Twitch dan Kick untuk menampilkan status semua saluran yang Anda ikuti secara real-time.",
+        "body": [
+          "Tidak perlu konfigurasi apa pun: StreamPulse langsung menggunakan sesi Twitch dan Kick Anda yang sedang aktif di browser. Segera setelah diinstal, dasbor akan menampilkan saluran-saluran yang Anda ikuti."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Informasi apa saja yang ditampilkan?",
+        "answer": "Untuk setiap siaran langsung, dasbor menampilkan nama streamer, platform (Twitch atau Kick), judul siaran, kategori, jumlah penonton, dan durasi siaran langsung.",
+        "list": [
+          "<strong>Nama dan avatar streamer</strong> beserta penanda platform (Twitch atau Kick).",
+          "<strong>Judul siaran</strong> dan kategori saat ini.",
+          "<strong>Jumlah penonton</strong> secara real-time.",
+          "<strong>Durasi siaran langsung</strong> sejak diluncurkan.",
+          "<strong>Akses dengan satu klik</strong> untuk membuka siaran langsung di tab baru."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Mengapa perlu dasbor multi-platform?",
+        "answer": "Semakin banyak streamer yang melakukan siaran secara bersamaan di Twitch dan Kick. Dengan dasbor StreamPulse, Anda tidak perlu lagi memeriksa setiap platform satu per satu: semuanya terpusat dalam satu tampilan."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah dasbor tersebut menggabungkan Twitch dan Kick?",
+        "a": "Ya. Jendela pop-up tersebut menampilkan semua saluran yang diikuti, baik di Twitch maupun Kick, beserta statusnya secara real-time dalam satu antarmuka."
+      },
+      {
+        "q": "Apakah perlu memiliki akun untuk menggunakan dasbor?",
+        "a": "Tidak. StreamPulse menggunakan sesi Twitch dan Kick Anda yang sedang aktif di browser. Anda tidak perlu membuat akun StreamPulse."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "dashboard-twitch-kick",
+    "linkLabel": "Gecombineerd Twitch- en Kick-dashboard",
+    "title": "Gecombineerd Twitch- en Kick-dashboard | StreamPulse",
+    "h1": "Gecombineerd Twitch- en Kick-dashboard",
+    "description": "Het StreamPulse-dashboard brengt je Twitch- en Kick-kanalen samen in één interface. Live-status, meldingen en gecentraliseerd beheer van je streamers.",
+    "intro": "De StreamPulse-pop-up brengt je Twitch- en Kick-kanalen samen in één interface. Je ziet in één oogopslag wie er live is, op welk platform en hoe lang al, zonder dat je meerdere tabbladen hoeft te openen.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Hoe werkt het dashboard?",
+        "answer": "Het dashboard is het pop-upvenster dat verschijnt wanneer je op het StreamPulse-pictogram in de extensiebalk klikt. Het haalt gegevens op via de API's van Twitch en Kick om de status van al je gevolgde kanalen in realtime weer te geven.",
+        "body": [
+          "Er is geen configuratie nodig: StreamPulse maakt direct gebruik van je actieve Twitch- en Kick-sessies in de browser. Zodra het programma is geïnstalleerd, worden op het dashboard de kanalen weergegeven die je volgt."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Welke informatie wordt weergegeven?",
+        "answer": "Voor elke livestream toont het dashboard de naam van de streamer, het platform (Twitch of Kick), de titel van de stream, de categorie, het aantal kijkers en de duur van de livestream.",
+        "list": [
+          "<strong>Naam en avatar van de streamer,</strong> met een aanduiding van het platform (Twitch of Kick).",
+          "<strong>Titel van de stream</strong> en huidige categorie.",
+          "<strong>Aantal toeschouwers</strong> in realtime.",
+          "<strong>Duur van de livestream</strong> sinds de start.",
+          "<strong>Met één klik</strong> <strong>kun je</strong> de stream in een nieuw tabblad openen."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Waarom een platformonafhankelijk dashboard?",
+        "answer": "Steeds meer streamers zenden tegelijkertijd uit op Twitch en Kick. Met het StreamPulse-dashboard hoef je niet langer elk platform afzonderlijk te controleren: alles wordt in één overzicht weergegeven."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Zijn Twitch en Kick in het dashboard samengevoegd?",
+        "a": "Ja. De pop-up toont alle kanalen die je volgt, zowel op Twitch als op Kick, met hun realtime status in één interface."
+      },
+      {
+        "q": "Heb je een account nodig om het dashboard te gebruiken?",
+        "a": "Nee. StreamPulse maakt gebruik van je actieve Twitch- en Kick-sessies in de browser. Je hoeft geen StreamPulse-account aan te maken."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "dashboard-twitch-kick",
+    "linkLabel": "Samordnad Twitch- och Kick-instrumentpanel",
+    "title": "Sammanfogad Twitch- och Kick-instrumentpanel | StreamPulse",
+    "h1": "Samordnad Twitch- och Kick-instrumentpanel",
+    "description": "StreamPulse-instrumentpanelen samlar dina Twitch- och Kick-kanaler i ett enda gränssnitt. Live-status, aviseringar och centraliserad övervakning av dina streamare.",
+    "intro": "Popup-fönstret StreamPulse samlar dina Twitch- och Kick-kanaler i ett enda gränssnitt. Se med ett ögonkast vem som sänder live, på vilken plattform och hur länge, utan att behöva öppna flera flikar.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Hur fungerar instrumentpanelen?",
+        "answer": "Dashboardet är det popup-fönster som öppnas när du klickar på StreamPulse-ikonen i tilläggsfältet. Det hämtar data från Twitch- och Kick-API:erna för att visa statusen för alla kanaler du följer i realtid.",
+        "body": [
+          "Ingen konfiguration krävs: StreamPulse använder direkt dina aktiva Twitch- och Kick-sessioner i webbläsaren. Direkt efter installationen visar instrumentpanelen de kanaler du följer."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Vilken information visas?",
+        "answer": "För varje direktsänd kanal visar instrumentpanelen streamarens namn, plattformen (Twitch eller Kick), streamens titel, kategorin, antalet tittare och sändningens längd.",
+        "list": [
+          "<strong>Streamerns namn och avatar</strong> med en plattformsmarkör (Twitch eller Kick).",
+          "<strong>Streamtitel</strong> och aktuell kategori.",
+          "<strong>Antal åskådare</strong> i realtid.",
+          "<strong>Live-sändningens varaktighet</strong> sedan starten.",
+          "Öppna streamen i en ny flik <strong>med ett enda klick</strong>."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Varför en plattformsoberoende instrumentpanel?",
+        "answer": "Allt fler streamare sänder samtidigt på både Twitch och Kick. Med StreamPulse-instrumentpanelen behöver du inte längre kontrollera varje plattform för sig: allt samlas i en enda översikt."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Omfattar instrumentpanelen både Twitch och Kick?",
+        "a": "Ja. Popup-fönstret visar alla kanaler du följer – både på Twitch och Kick – tillsammans med deras status i realtid i ett enda gränssnitt."
+      },
+      {
+        "q": "Måste man ha ett konto för att kunna använda instrumentpanelen?",
+        "a": "Nej. StreamPulse använder dina aktiva Twitch- och Kick-sessioner i webbläsaren. Du behöver inte skapa något StreamPulse-konto."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "dashboard-twitch-kick",
+    "linkLabel": "Sjednocený ovládací panel pro Twitch a Kick",
+    "title": "Sjednocený ovládací panel pro Twitch a Kick | StreamPulse",
+    "h1": "Sjednocený ovládací panel pro Twitch a Kick",
+    "description": "Dashboard StreamPulse sdružuje vaše kanály na Twitchi a Kicku do jediného rozhraní. Stav živého vysílání, oznámení a centralizované sledování vašich streamerů.",
+    "intro": "Pop-up StreamPulse sdružuje vaše kanály na Twitchi a Kicku do jediného rozhraní. Na první pohled uvidíte, kdo právě vysílá živě, na jaké platformě a jak dlouho už vysílá, aniž byste museli otevírat několik záložek.",
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Jak funguje řídicí panel?",
+        "answer": "Dashboard je vyskakovací okno, které se otevře po kliknutí na ikonu StreamPulse na liště rozšíření. Využívá API služeb Twitch a Kick k zobrazení stavu všech kanálů, které sledujete, v reálném čase.",
+        "body": [
+          "Není třeba žádné nastavení: StreamPulse přímo využívá vaše aktivní relace na Twitchi a Kicku v prohlížeči. Hned po instalaci se na ovládacím panelu zobrazí kanály, které sledujete."
+        ]
+      },
+      {
+        "id": "informations",
+        "h2": "Jaké informace se zobrazují?",
+        "answer": "U každého živého vysílání se na ovládacím panelu zobrazuje jméno streamera, platforma (Twitch nebo Kick), název streamu, kategorie, počet diváků a délka živého vysílání.",
+        "list": [
+          "<strong>Jméno a avatar streamera</strong> s označením platformy (Twitch nebo Kick).",
+          "Aktuální <strong>název streamu</strong> a kategorie.",
+          "<strong>Počet diváků</strong> v reálném čase.",
+          "<strong>Doba trvání živého vysílání</strong> od jeho zahájení.",
+          "<strong>Jedním kliknutím</strong> otevřete stream v nové záložce."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Proč právě multiplatformní dashboard?",
+        "answer": "Stále více streamerů vysílá souběžně na Twitchi a Kicku. Díky řídicímu panelu StreamPulse už nemusíte každou platformu kontrolovat zvlášť: vše je soustředěno v jediném přehledu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Zahrnuje dashboard služby Twitch a Kick?",
+        "a": "Ano. Vyskakovací okno zobrazuje všechny sledované kanály – jak na Twitchi, tak na Kicku – spolu s jejich stavem v reálném čase v jediném rozhraní."
+      },
+      {
+        "q": "Je k používání řídicího panelu potřeba účet?",
+        "a": "Ne. StreamPulse využívá vaše aktivní relace na Twitchi a Kicku v prohlížeči. Není nutné si zakládat účet na StreamPulse."
+      }
+    ]
+  }
+}

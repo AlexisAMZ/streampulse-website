@@ -1,0 +1,834 @@
+{
+  "es": {
+    "slug": "extension-twitch",
+    "linkLabel": "Extensión de Twitch para espectadores",
+    "title": "Extensión de Twitch para espectadores | StreamPulse",
+    "h1": "Extensión de Twitch para espectadores",
+    "description": "StreamPulse: extensión de Twitch para espectadores. Reclamación automática de Channel Points, Drops automáticos, notificaciones en directo, filtros de chat y corrección de errores.",
+    "intro": "StreamPulse es una extensión gratuita para el navegador que automatiza la experiencia de los espectadores de Twitch: obtención de Channel Points y Drops, notificaciones en tiempo real, filtros de chat y corrección automática de errores del reproductor. Compatible con Chrome, Edge, Brave y Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Todas las funciones de Twitch",
+        "answer": "StreamPulse se centra en la automatización y el seguimiento para los espectadores de Twitch. A diferencia de las extensiones de emoticonos, StreamPulse no modifica el aspecto del chat, sino que automatiza las tareas repetitivas.",
+        "list": [
+          "<strong>Reclamación automática de puntos de canal.</strong> Recuperación automática de los puntos de canal de Twitch, incluso en segundo plano. Ya no es necesario hacer clic manualmente en la bonificación.",
+          "<strong>Drops automáticos de Twitch.</strong> Detección y reclamación instantánea de los Drops en cuanto se cumplan las condiciones.",
+          "<strong>Notificaciones en directo.</strong> Alertas en el escritorio en tiempo real en cuanto un streamer al que sigues empieza a retransmitir en directo en Twitch.",
+          "<strong>Corrección de errores del lector.</strong> Recarga automática del flujo cuando se producen los errores n.º 1000, n.º 2000 o n.º 3000. Ya no es necesaria la interrupción manual.",
+          "<strong>Filtros de chat.</strong> Oculta el spam, las palabras clave no deseadas y los mensajes repetitivos en el chat de Twitch.",
+          "<strong>Anti-pausa.</strong> Evita que Twitch ponga el vídeo en pausa cuando la pestaña pasa a segundo plano.",
+          "<strong>Vistas previas de vídeo al pasar el cursor.</strong> Previsualiza la retransmisión en directo al pasar el cursor por encima de un enlace de canal, sin salir de la página."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Compatibilidad con navegadores",
+        "answer": "StreamPulse se instala desde la Chrome Web Store y funciona en todos los navegadores basados en Chromium: Chrome, Edge, Brave, Opera y Vivaldi. No es necesaria ninguna configuración adicional."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse y BetterTTV: se complementan",
+        "answer": "StreamPulse y BetterTTV no hacen lo mismo. BetterTTV (y FrankerFaceZ, 7TV) añaden emoticonos y personalizan el chat. StreamPulse automatiza las tareas de los espectadores. Ambos se pueden instalar juntos sin que haya ningún conflicto.",
+        "body": [
+          "Si buscas una extensión para los emotes, instala BetterTTV o FrankerFaceZ. Si buscas una extensión para automatizar los Channel Points, los Drops y las notificaciones, instala StreamPulse. Ambas juntas cubren todas las necesidades de un espectador habitual de Twitch."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Privacidad",
+        "answer": "StreamPulse no recopila ningún dato personal. Sin rastreadores, sin publicidad y sin necesidad de crear una cuenta. Todas las preferencias se almacenan localmente en tu navegador."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿StreamPulse es gratuito?",
+        "a": "Sí, 100 % gratuito, sin publicidad, sin funciones de pago y sin necesidad de crear una cuenta."
+      },
+      {
+        "q": "¿StreamPulse recupera automáticamente los Channel Points?",
+        "a": "Sí. StreamPulse detecta y hace clic automáticamente en la bonificación de Channel Points en cuanto aparece, incluso si la pestaña está en segundo plano."
+      },
+      {
+        "q": "¿StreamPulse recoge los Twitch Drops?",
+        "a": "Sí. StreamPulse detecta los Drops disponibles y los reclama automáticamente en cuanto se cumplen las condiciones."
+      },
+      {
+        "q": "¿Funcionan los Channel Points en segundo plano?",
+        "a": "Sí. La función «anti-pausa» de StreamPulse mantiene la transmisión activa incluso cuando la pestaña no está en primer plano, lo que permite la recopilación continua de Channel Points."
+      },
+      {
+        "q": "¿Quién desarrolla StreamPulse?",
+        "a": "StreamPulse ha sido desarrollado por AlexisAMZ, un desarrollador independiente. El código fuente y las actualizaciones están disponibles en GitHub."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "extensão-twitch",
+    "linkLabel": "Extensão do Twitch para espectadores",
+    "title": "Extensão do Twitch para espectadores | StreamPulse",
+    "h1": "Extensão do Twitch para espectadores",
+    "description": "StreamPulse: extensão do Twitch para espectadores. Reclamação automática de Channel Points, Drops automáticos, notificações em tempo real, filtros de chat e correção de erros.",
+    "intro": "O StreamPulse é uma extensão gratuita para navegadores que automatiza a experiência dos espectadores do Twitch: coleta de Channel Points e Drops, notificações em tempo real, filtros de chat e correção automática de erros do player. Compatível com Chrome, Edge, Brave e Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Todos os recursos do Twitch",
+        "answer": "O StreamPulse se concentra na automação e no acompanhamento dos espectadores do Twitch. Ao contrário das extensões de emotes, o StreamPulse não altera a aparência do chat, mas automatiza tarefas repetitivas.",
+        "list": [
+          "<strong>Auto-claim Channel Points.</strong> Recuperação automática dos pontos do canal do Twitch, inclusive em segundo plano. Não é mais necessário clicar manualmente no bônus.",
+          "<strong>Drops automáticos do Twitch.</strong> Detecção e resgate instantâneos dos Drops assim que as condições forem atendidas.",
+          "<strong>Notificações ao vivo.</strong> Alertas na área de trabalho em tempo real assim que um streamer que você segue entra ao vivo no Twitch.",
+          "<strong>Correção de erros do leitor.</strong> Recarregamento automático do fluxo em caso de erros #1000, #2000 ou #3000. Não há mais necessidade de interrupção manual.",
+          "<strong>Filtros de chat.</strong> Oculte spams, palavras-chave indesejadas e mensagens repetitivas no chat do Twitch.",
+          "<strong>Anti-pausa.</strong> Impede que o Twitch coloque o vídeo em pausa quando a aba fica em segundo plano.",
+          "<strong>Pré-visualizações de vídeo ao passar o mouse.</strong> Visualize a transmissão ao vivo ao passar o mouse sobre um link de canal, sem sair da sua página."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Compatibilidade com navegadores",
+        "answer": "O StreamPulse é instalado a partir da Chrome Web Store e funciona em todos os navegadores baseados no Chromium: Chrome, Edge, Brave, Opera e Vivaldi. Não é necessária nenhuma configuração adicional."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse e BetterTTV: complementares",
+        "answer": "O StreamPulse e o BetterTTV não fazem a mesma coisa. O BetterTTV (assim como o FrankerFaceZ e o 7TV) adiciona emoticons e personaliza o chat. O StreamPulse automatiza as tarefas do espectador. Os dois podem ser instalados juntos sem conflitos.",
+        "body": [
+          "Se você estiver procurando uma extensão para emotes, instale o BetterTTV ou o FrankerFaceZ. Se estiver procurando uma extensão para automatizar os Channel Points, os Drops e as notificações, instale o StreamPulse. Juntas, as duas cobrem todas as necessidades de um espectador regular do Twitch."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Privacidade",
+        "answer": "O StreamPulse não coleta nenhum dado pessoal. Sem rastreadores, sem anúncios, sem necessidade de criar uma conta. Todas as preferências são armazenadas localmente no seu navegador."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O StreamPulse é gratuito?",
+        "a": "Sim, 100% gratuito, sem anúncios, sem recursos pagos e sem necessidade de criar uma conta."
+      },
+      {
+        "q": "O StreamPulse recupera automaticamente os Channel Points?",
+        "a": "Sim. O StreamPulse detecta e clica automaticamente no bônus de Channel Points assim que ele aparece, mesmo que a aba esteja em segundo plano."
+      },
+      {
+        "q": "O StreamPulse captura os Twitch Drops?",
+        "a": "Sim. O StreamPulse detecta os Drops disponíveis e os resgata automaticamente assim que as condições forem atendidas."
+      },
+      {
+        "q": "Os Channel Points funcionam em segundo plano?",
+        "a": "Sim. O recurso “anti-pausa” do StreamPulse mantém o fluxo ativo mesmo quando a aba não está em primeiro plano, o que permite a coleta contínua de Channel Points."
+      },
+      {
+        "q": "Quem desenvolve o StreamPulse?",
+        "a": "O StreamPulse foi desenvolvido por AlexisAMZ, um desenvolvedor independente. O código-fonte e as atualizações estão disponíveis no GitHub."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Erweiterung-Zuckung",
+    "linkLabel": "Twitch-Erweiterung für Zuschauer",
+    "title": "Twitch-Erweiterung für Zuschauer | StreamPulse",
+    "h1": "Twitch-Erweiterung für Zuschauer",
+    "description": "StreamPulse: Twitch-Erweiterung für Zuschauer. Automatisches Einlösen von Channel-Punkten, automatische Drops, Live-Benachrichtigungen, Chat-Filter und Fehlerbehebung.",
+    "intro": "StreamPulse ist eine kostenlose Browser-Erweiterung, die das Erlebnis für Twitch-Zuschauer automatisiert: Sammeln von Channel-Punkten und Drops, Benachrichtigungen in Echtzeit, Chat-Filter und automatische Korrektur von Player-Fehlern. Kompatibel mit Chrome, Edge, Brave und Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Alle Funktionen von Twitch",
+        "answer": "StreamPulse konzentriert sich auf Automatisierung und Nachverfolgung für Twitch-Zuschauer. Im Gegensatz zu Emote-Erweiterungen verändert StreamPulse das Erscheinungsbild des Chats nicht, sondern automatisiert sich wiederholende Aufgaben.",
+        "list": [
+          "<strong>Auto-Claim Channel Points.</strong> Automatisches Einlösen von Twitch-Channel-Punkten, auch im Hintergrund. Du musst den Bonus nicht mehr manuell anklicken.",
+          "<strong>Automatische Twitch-Drops.</strong> Sofortige Erkennung und Einlösung der Drops, sobald die Bedingungen erfüllt sind.",
+          "<strong>Live-Benachrichtigungen.</strong> Desktop-Benachrichtigungen in Echtzeit, sobald ein von dir verfolgter Streamer auf Twitch live geht.",
+          "<strong>Korrektur von Lesfehlern.</strong> Automatisches Neuladen des Datenstroms bei den Fehlern #1000, #2000 oder #3000. Keine manuelle Unterbrechung mehr.",
+          "<strong>Chat-Filter.</strong> Blenden Sie Spam, unerwünschte Schlüsselwörter und sich wiederholende Nachrichten im Twitch-Chat aus.",
+          "<strong>Anti-Pause.</strong> Verhindert, dass Twitch das Video pausiert, wenn der Tab in den Hintergrund wechselt.",
+          "<strong>Videovorschau beim Darüberfahren mit</strong> der Maus<strong>.</strong> Sie können eine Vorschau des Live-Streams anzeigen, indem Sie mit der Maus über einen Kanal-Link fahren, ohne die Seite zu verlassen."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Browserkompatibilität",
+        "answer": "StreamPulse lässt sich über den Chrome Web Store installieren und läuft auf allen Chromium-basierten Browsern: Chrome, Edge, Brave, Opera und Vivaldi. Es ist keine zusätzliche Konfiguration erforderlich."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse und BetterTTV: ergänzen sich",
+        "answer": "StreamPulse und BetterTTV haben unterschiedliche Funktionen. BetterTTV (sowie FrankerFaceZ und 7TV) fügen Emotes hinzu und ermöglichen die individuelle Anpassung des Chats. StreamPulse automatisiert Aufgaben für Zuschauer. Beide lassen sich problemlos nebeneinander installieren.",
+        "body": [
+          "Wenn Sie nach einer Erweiterung für Emotes suchen, installieren Sie „BetterTTV“ oder „FrankerFaceZ“. Wenn Sie nach einer Erweiterung suchen, um Channel-Punkte, Drops und Benachrichtigungen zu automatisieren, installieren Sie „StreamPulse“. Zusammen decken diese beiden Erweiterungen den gesamten Bedarf eines regelmäßigen Twitch-Zuschauers ab."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Datenschutz",
+        "answer": "StreamPulse erfasst keine personenbezogenen Daten. Keine Tracker, keine Werbung, kein Konto erforderlich. Alle Einstellungen werden lokal in Ihrem Browser gespeichert."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ist StreamPulse kostenlos?",
+        "a": "Ja, zu 100 % kostenlos, ohne Werbung, ohne kostenpflichtige Funktionen und ohne dass man ein Konto anlegen muss."
+      },
+      {
+        "q": "Ruft StreamPulse die Channel Points automatisch ab?",
+        "a": "Ja. StreamPulse erkennt den Channel-Points-Bonus und klickt ihn automatisch an, sobald er erscheint – auch wenn der Tab im Hintergrund läuft."
+      },
+      {
+        "q": "Erfasst StreamPulse auch Twitch-Drops?",
+        "a": "Ja. StreamPulse erkennt verfügbare Drops und fordert diese automatisch an, sobald die Bedingungen erfüllt sind."
+      },
+      {
+        "q": "Laufen die Channel Points im Hintergrund?",
+        "a": "Ja. Die Anti-Pause-Funktion von StreamPulse hält den Stream auch dann aktiv, wenn der Tab nicht im Vordergrund ist, wodurch die kontinuierliche Erfassung von Channel Points ermöglicht wird."
+      },
+      {
+        "q": "Wer entwickelt StreamPulse?",
+        "a": "StreamPulse wurde von AlexisAMZ, einem unabhängigen Entwickler, entwickelt. Der Quellcode und die Updates sind auf GitHub verfügbar."
+      }
+    ]
+  },
+  "it": {
+    "slug": "estensione-contrazione",
+    "linkLabel": "Estensione Twitch per gli spettatori",
+    "title": "Estensione Twitch per spettatori | StreamPulse",
+    "h1": "Estensione Twitch per gli spettatori",
+    "description": "StreamPulse: estensione di Twitch per gli spettatori. Riscossione automatica dei Channel Points, Drops automatici, notifiche in tempo reale, filtri per la chat e correzione degli errori.",
+    "intro": "StreamPulse è un'estensione gratuita per browser che automatizza l'esperienza degli spettatori su Twitch: raccolta dei Channel Points e dei Drops, notifiche in tempo reale, filtri per la chat e correzione automatica degli errori del lettore. Compatibile con Chrome, Edge, Brave e Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Tutte le funzionalità di Twitch",
+        "answer": "StreamPulse si concentra sull'automazione e il monitoraggio per gli spettatori di Twitch. A differenza delle estensioni per le emote, StreamPulse non modifica l'aspetto della chat, ma automatizza le attività ripetitive.",
+        "list": [
+          "<strong>Auto-claim Channel Points.</strong> Recupero automatico dei punti canale di Twitch, anche in background. Non è più necessario cliccare manualmente sul bonus.",
+          "<strong>Drops automatici su Twitch.</strong> Rilevamento e riscossione immediata dei Drops non appena vengono soddisfatte le condizioni.",
+          "<strong>Notifiche </strong>in tempo reale<strong>.</strong> Avvisi sul desktop non appena uno streamer che segui va in diretta su Twitch.",
+          "<strong>Correzione degli errori del lettore.</strong> Ricaricamento automatico del flusso in caso di errori #1000, #2000 o #3000. Nessuna interruzione manuale.",
+          "<strong>Filtri per la chat.</strong> Nascondi lo spam, le parole chiave indesiderate e i messaggi ripetitivi nella chat di Twitch.",
+          "<strong>Anti-pausa.</strong> Impedisce a Twitch di mettere in pausa il video quando la scheda passa in secondo piano.",
+          "<strong>Anteprime video al passaggio del mouse.</strong> Visualizza l'anteprima del flusso in diretta passando il mouse su un link del canale, senza uscire dalla pagina."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Compatibilità con i browser",
+        "answer": "StreamPulse si installa dal Chrome Web Store e funziona su tutti i browser basati su Chromium: Chrome, Edge, Brave, Opera e Vivaldi. Non è necessaria alcuna configurazione aggiuntiva."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse e BetterTTV: complementari",
+        "answer": "StreamPulse e BetterTTV non svolgono la stessa funzione. BetterTTV (insieme a FrankerFaceZ e 7TV) aggiunge emoticon e personalizza la chat. StreamPulse automatizza le attività degli spettatori. Entrambe le applicazioni possono essere installate insieme senza problemi di compatibilità.",
+        "body": [
+          "Se state cercando un'estensione per le emoticon, installate BetterTTV o FrankerFaceZ. Se state cercando un'estensione per automatizzare i Channel Points, i Drops e le notifiche, installate StreamPulse. Queste due estensioni insieme coprono tutte le esigenze di uno spettatore abituale di Twitch."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Privacy",
+        "answer": "StreamPulse non raccoglie alcun dato personale. Nessun tracker, nessuna pubblicità, nessun account richiesto. Tutte le preferenze vengono salvate localmente nel tuo browser."
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulse è gratuito?",
+        "a": "Sì, è gratuito al 100%, senza pubblicità, senza funzionalità a pagamento e senza necessità di creare un account."
+      },
+      {
+        "q": "StreamPulse recupera automaticamente i Channel Points?",
+        "a": "Sì. StreamPulse rileva e clicca automaticamente sul bonus dei Channel Points non appena compare, anche se la scheda è in secondo piano."
+      },
+      {
+        "q": "StreamPulse rileva i Twitch Drops?",
+        "a": "Sì. StreamPulse rileva i Drop disponibili e li reclama automaticamente non appena vengono soddisfatte le condizioni."
+      },
+      {
+        "q": "I Channel Points funzionano in background?",
+        "a": "Sì. La funzione \"anti-pausa\" di StreamPulse mantiene attivo il flusso anche quando la scheda non è in primo piano, consentendo così la raccolta continua dei Channel Points."
+      },
+      {
+        "q": "Chi sviluppa StreamPulse?",
+        "a": "StreamPulse è stato sviluppato da AlexisAMZ, uno sviluppatore indipendente. Il codice sorgente e gli aggiornamenti sono disponibili su GitHub."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "rozszerzenie-twitch",
+    "linkLabel": "Rozszerzenie Twitch dla widzów",
+    "title": "Rozszerzenie Twitch dla widzów | StreamPulse",
+    "h1": "Rozszerzenie Twitch dla widzów",
+    "description": "StreamPulse: rozszerzenie Twitch dla widzów. Automatyczne odbieranie punktów kanału, automatyczne Drops, powiadomienia na żywo, filtry czatu i korekta błędów.",
+    "intro": "StreamPulse to bezpłatne rozszerzenie przeglądarki, które automatyzuje doświadczenia widzów serwisu Twitch: zbieranie punktów kanału (Channel Points) i nagród (Drops), powiadomienia w czasie rzeczywistym, filtry czatu oraz automatyczną korektę błędów odtwarzacza. Obsługuje przeglądarki Chrome, Edge, Brave i Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Wszystkie funkcje serwisu Twitch",
+        "answer": "StreamPulse skupia się na automatyzacji i monitorowaniu widzów na Twitchu. W przeciwieństwie do rozszerzeń do emotikonów, StreamPulse nie zmienia wyglądu czatu, ale automatyzuje powtarzalne zadania.",
+        "list": [
+          "<strong>Automatyczne odbieranie punktów kanału.</strong> Automatyczne pobieranie punktów kanału Twitch, nawet w tle. Nie trzeba już ręcznie klikać, aby odebrać bonus.",
+          "<strong>Automatyczne Twitch Drops.</strong> Natychmiastowe wykrywanie i odbieranie Dropsów, gdy tylko zostaną spełnione warunki.",
+          "<strong>Powiadomienia na żywo.</strong> Powiadomienia na pulpicie w czasie rzeczywistym, gdy tylko obserwowany streamer rozpocznie transmisję na żywo na Twitchu.",
+          "<strong>Korygowanie błędów odczytu.</strong> Automatyczne ponowne ładowanie strumienia w przypadku wystąpienia błędów #1000, #2000 lub #3000. Koniec z ręcznym przerywaniem.",
+          "<strong>Filtry czatu.</strong> Ukryj spam, niepożądane słowa kluczowe i powtarzające się wiadomości na czacie Twitch.",
+          "<strong>Wyłączanie pauzy.</strong> Zapobiega wstrzymywaniu odtwarzania przez Twitch, gdy karta przechodzi w tło.",
+          "<strong>Podgląd wideo po najechaniu kursorem.</strong> Wyświetl podgląd transmisji na żywo, najeżdżając kursorem na link kanału, bez opuszczania bieżącej strony."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Zgodność z przeglądarkami",
+        "answer": "Aplikację StreamPulse można zainstalować ze sklepu Chrome Web Store i działa ona we wszystkich przeglądarkach opartych na silniku Chromium: Chrome, Edge, Brave, Opera i Vivaldi. Nie jest wymagana żadna dodatkowa konfiguracja."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse i BetterTTV: uzupełniają się",
+        "answer": "StreamPulse i BetterTTV nie pełnią tej samej funkcji. BetterTTV (oraz FrankerFaceZ, 7TV) dodają emotikony i umożliwiają personalizację czatu. StreamPulse automatyzuje zadania widza. Oba programy można zainstalować razem bez żadnych konfliktów.",
+        "body": [
+          "Jeśli szukasz rozszerzenia do emotikonów, zainstaluj BetterTTV lub FrankerFaceZ. Jeśli szukasz rozszerzenia do automatyzacji punktów kanału, nagród i powiadomień, zainstaluj StreamPulse. Te dwa rozszerzenia razem zaspokajają wszystkie potrzeby stałego widza serwisu Twitch."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Polityka prywatności",
+        "answer": "StreamPulse nie gromadzi żadnych danych osobowych. Nie ma żadnych modułów śledzących, reklam ani konieczności zakładania konta. Wszystkie ustawienia są zapisywane lokalnie w przeglądarce."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy StreamPulse jest bezpłatny?",
+        "a": "Tak, w 100% za darmo, bez reklam, bez płatnych funkcji i bez konieczności zakładania konta."
+      },
+      {
+        "q": "Czy StreamPulse automatycznie pobiera dane z Channel Points?",
+        "a": "Tak. StreamPulse automatycznie wykrywa i klika bonus w postaci punktów Channel Points, gdy tylko się pojawi, nawet jeśli karta znajduje się w tle."
+      },
+      {
+        "q": "Czy StreamPulse pobiera Twitch Drops?",
+        "a": "Tak. StreamPulse wykrywa dostępne Dropsy i automatycznie je odbiera, gdy tylko zostaną spełnione warunki."
+      },
+      {
+        "q": "Czy Channel Points działają w tle?",
+        "a": "Tak. Funkcja „anti-pause” w StreamPulse utrzymuje strumień w stanie aktywnym nawet wtedy, gdy karta nie znajduje się na pierwszym planie, co pozwala na ciągłe gromadzenie punktów Channel Points."
+      },
+      {
+        "q": "Kto tworzy StreamPulse?",
+        "a": "StreamPulse został stworzony przez AlexisAMZ, niezależnego programistę. Kod źródłowy i aktualizacje są dostępne na GitHubie."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "extension-twitch",
+    "linkLabel": "İzleyiciler için Twitch eklentisi",
+    "title": "İzleyiciler için Twitch Eklentisi | StreamPulse",
+    "h1": "İzleyiciler için Twitch eklentisi",
+    "description": "StreamPulse: İzleyiciler için bir Twitch eklentisi. Kanal Puanlarını otomatik olarak al, otomatik Drops, canlı bildirimler, sohbet filtreleri ve hata düzeltme.",
+    "intro": "StreamPulse, Twitch izleyicilerinin deneyimini otomatikleştiren ücretsiz bir tarayıcı eklentisidir: Kanal Puanları ve Drops toplama, gerçek zamanlı bildirimler, sohbet filtreleri ve oynatıcı hatalarının otomatik düzeltilmesi. Chrome, Edge, Brave ve Opera ile uyumludur.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Twitch'in tüm özellikleri",
+        "answer": "StreamPulse, Twitch izleyicileri için otomasyon ve izleme özelliklerine odaklanmaktadır. Emote eklentilerinin aksine, StreamPulse sohbetin görünümünü değiştirmez, ancak tekrarlayan görevleri otomatikleştirir.",
+        "list": [
+          "<strong>Auto-claim Channel Points.</strong> Twitch kanal puanlarını arka planda da dahil olmak üzere otomatik olarak toplama. Artık bonusu manuel olarak tıklamanıza gerek yok.",
+          "<strong>Otomatik Twitch Drops.</strong> Koşullar yerine getirilir getirilmez Drops’ların anında algılanması ve alınması.",
+          "<strong>Canlı bildirimler.</strong> Takip ettiğiniz bir yayıncı Twitch'te canlı yayına başladığında anında masaüstü uyarıları alırsınız.",
+          "<strong>Okur hatalarının düzeltilmesi.</strong> #1000, #2000 veya #3000 hataları durumunda akışın otomatik olarak yeniden yüklenmesi. Artık manuel kesintiye gerek yok.",
+          "<strong>Sohbet filtreleri.</strong> Twitch sohbetinde spam mesajları, istenmeyen anahtar kelimeleri ve tekrarlanan mesajları gizleyin.",
+          "<strong>Duraklatma önleme.</strong> Sekme arka plana geçtiğinde Twitch'in videoyu duraklatmasını engeller.",
+          "<strong>Fareyi üzerine getirdiğinizde görüntülenen video önizlemeleri.</strong> Sayfadan ayrılmadan, bir kanal bağlantısının üzerine fareyi getirdiğinizde canlı yayını önizleyin."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Tarayıcı uyumluluğu",
+        "answer": "StreamPulse, Chrome Web Store'dan yüklenir ve Chromium tabanlı tüm tarayıcılarda çalışır: Chrome, Edge, Brave, Opera ve Vivaldi. Ek bir yapılandırma gerekmez."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse ve BetterTTV: Birbirini tamamlayan çözümler",
+        "answer": "StreamPulse ve BetterTTV aynı işlevi görmez. BetterTTV (ve FrankerFaceZ, 7TV) emote ekler ve sohbeti kişiselleştirir. StreamPulse ise izleyici görevlerini otomatikleştirir. Her ikisi de birbiriyle çakışmadan birlikte kurulabilir.",
+        "body": [
+          "Eğer emote eklentisi arıyorsanız, BetterTTV veya FrankerFaceZ'i yükleyin. Channel Points, Drops ve bildirimleri otomatikleştirecek bir eklenti arıyorsanız, StreamPulse'u yükleyin. Bu ikisi birlikte, düzenli bir Twitch izleyicisinin tüm ihtiyaçlarını karşılar."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Gizlilik",
+        "answer": "StreamPulse hiçbir kişisel veri toplamaz. İzleyici, reklam veya hesap gerektirmez. Tüm tercihler tarayıcınızda yerel olarak saklanır."
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulse ücretsiz mi?",
+        "a": "Evet, %100 ücretsiz, reklamsız, ücretli özellik içermeyen ve hesap oluşturmaya gerek olmayan bir uygulama."
+      },
+      {
+        "q": "StreamPulse, Channel Points’i otomatik olarak alır mı?",
+        "a": "Evet. StreamPulse, Channel Points bonusu göründüğü anda bunu algılar ve otomatik olarak üzerine tıklar; sekme arka planda olsa bile."
+      },
+      {
+        "q": "StreamPulse, Twitch Drops’ları topluyor mu?",
+        "a": "Evet. StreamPulse, mevcut Drops’ları algılar ve koşullar yerine getirildiğinde bunları otomatik olarak alır."
+      },
+      {
+        "q": "Channel Points arka planda çalışıyor mu?",
+        "a": "Evet. StreamPulse’un “anti-pause” özelliği, sekme ön planda olmasa bile akışı aktif tutar ve böylece Channel Points’in kesintisiz bir şekilde toplanmasını sağlar."
+      },
+      {
+        "q": "StreamPulse'u kim geliştiriyor?",
+        "a": "StreamPulse, bağımsız yazılım geliştiricisi AlexisAMZ tarafından geliştirilmiştir. Kaynak kodu ve güncellemeler GitHub'da mevcuttur."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "расширение-твич",
+    "linkLabel": "Расширение Twitch для зрителей",
+    "title": "Расширение для Twitch для зрителей | StreamPulse",
+    "h1": "Расширение Twitch для зрителей",
+    "description": "StreamPulse: расширение для Twitch, предназначенное для зрителей. Автоматическое получение Channel Points, автоматические Drops, уведомления в режиме реального времени, фильтры чата и исправление ошибок.",
+    "intro": "StreamPulse — это бесплатное расширение для браузера, которое автоматизирует работу зрителей на Twitch: получение Channel Points и Drops, уведомления в режиме реального времени, фильтры чата и автокоррекция ошибок плеера. Совместимо с Chrome, Edge, Brave и Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Все функции Twitch",
+        "answer": "StreamPulse ориентирован на автоматизацию и мониторинг для зрителей Twitch. В отличие от расширений для эмодзи, StreamPulse не изменяет внешний вид чата, а автоматизирует повторяющиеся задачи.",
+        "list": [
+          "<strong>Автоматическое начисление баллов канала.</strong> Автоматическое начисление баллов канала Twitch, в том числе в фоновом режиме. Больше не нужно вручную нажимать на бонус.",
+          "<strong>Автоматические Twitch Drops.</strong> Мгновенное обнаружение и получение Drops, как только выполняются условия.",
+          "<strong>Уведомления в режиме реального времени.</strong> Уведомления на рабочий стол в режиме реального времени, как только подписываемый вами стример выходит в прямой эфир на Twitch.",
+          "<strong>Исправление ошибок считывателя.</strong> Автоматическая перезагрузка потока при ошибках #1000, #2000 или #3000. Больше не требуется ручное прерывание.",
+          "<strong>Фильтры чата.</strong> Скрывайте спам, нежелательные ключевые слова и повторяющиеся сообщения в чате Twitch.",
+          "<strong>«Без паузы».</strong> Не позволяет Twitch приостанавливать воспроизведение видео, когда вкладка переходит в фоновый режим.",
+          "<strong>Видео-превью при наведении курсора.</strong> Просмотрите предварительный просмотр прямой трансляции, наведя курсор на ссылку канала, не покидая текущую страницу."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Совместимость с браузерами",
+        "answer": "StreamPulse устанавливается из Chrome Web Store и работает во всех браузерах на базе Chromium: Chrome, Edge, Brave, Opera и Vivaldi. Дополнительная настройка не требуется."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse и BetterTTV: дополняют друг друга",
+        "answer": "StreamPulse и BetterTTV выполняют разные функции. BetterTTV (а также FrankerFaceZ и 7TV) добавляют смайлики и позволяют настраивать чат. StreamPulse автоматизирует задачи зрителей. Обе программы можно установить одновременно без каких-либо конфликтов.",
+        "body": [
+          "Если вам нужно расширение для эмодзи, установите BetterTTV или FrankerFaceZ. Если вам нужно расширение для автоматизации начисления Channel Points, Drops и уведомлений, установите StreamPulse. Вместе эти два расширения полностью покрывают все потребности постоянного зрителя Twitch."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Конфиденциальность",
+        "answer": "StreamPulse не собирает никаких персональных данных. Никаких трекеров, никакой рекламы, никаких учетных записей. Все настройки хранятся локально в вашем браузере."
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulse — это бесплатная программа?",
+        "a": "Да, на 100 % бесплатно, без рекламы, без платных функций и без необходимости регистрации."
+      },
+      {
+        "q": "StreamPulse автоматически получает данные о Channel Points?",
+        "a": "Да. StreamPulse автоматически обнаруживает бонус Channel Points и нажимает на него, как только он появляется, даже если вкладка находится в фоновом режиме."
+      },
+      {
+        "q": "StreamPulse собирает ли Twitch Drops?",
+        "a": "Да. StreamPulse обнаруживает доступные дропы и автоматически получает их, как только выполняются необходимые условия."
+      },
+      {
+        "q": "Работают ли Channel Points в фоновом режиме?",
+        "a": "Да. Функция «Anti-Pause» в StreamPulse поддерживает активность потока даже тогда, когда вкладка не находится на переднем плане, что обеспечивает непрерывный сбор Channel Points."
+      },
+      {
+        "q": "Кто занимается разработкой StreamPulse?",
+        "a": "StreamPulse разработан независимым разработчиком AlexisAMZ. Исходный код и обновления доступны на GitHub."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "extension-twitch",
+    "linkLabel": "Twitchの視聴者向け拡張機能",
+    "title": "Twitchの視聴者向け拡張機能 | StreamPulse",
+    "h1": "Twitchの視聴者向け拡張機能",
+    "description": "StreamPulse：視聴者向けTwitch拡張機能。チャンネルポイントの自動獲得、ドロップの自動受け取り、ライブ通知、チャットフィルター、エラー修正機能を搭載。",
+    "intro": "StreamPulseは、Twitch視聴者の体験を自動化する無料のブラウザ拡張機能です。チャンネルポイントやドロップの獲得、リアルタイム通知、チャットフィルター、プレイヤーエラーの自動修正などの機能を提供します。Chrome、Edge、Brave、Operaに対応しています。",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Twitchのすべての機能",
+        "answer": "StreamPulseは、Twitchの視聴者向けの自動化と追跡機能に重点を置いています。エモート拡張機能とは異なり、StreamPulseはチャットの見た目を変更することはありませんが、繰り返しの作業を自動化します。",
+        "list": [
+          "<strong>Auto-claim Channel Points。</strong>Twitchのチャンネルポイントを、バックグラウンド時も含め自動的に獲得します。ボーナスを手動でクリックする必要はもうありません。",
+          "<strong>自動Twitch Drops。</strong>条件が満たされるとすぐにDropsを検知し、即座に受け取ることができます。",
+          "<strong>ライブ通知。</strong>フォローしているストリーマーがTwitchでライブ配信を開始すると、すぐにデスクトップにリアルタイムで通知が届きます。",
+          "<strong>リーダーのエラーを修正しました。</strong>エラー#1000、#2000、または#3000が発生した場合、ストリームが自動的に再読み込みされます。手動での中断はなくなりました。",
+          "<strong>チャットフィルター。</strong>Twitchのチャットで、スパム、不要なキーワード、繰り返し投稿されるメッセージを非表示にします。",
+          "<strong>一時停止防止。</strong>タブがバックグラウンドに移行した際に、Twitchが動画を一時停止するのを防ぎます。",
+          "<strong>マウスオーバー時の動画プレビュー。</strong>ページを離れることなく、チャンネルのリンクにカーソルを合わせると、ライブ配信をプレビューできます。"
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "ブラウザの互換性",
+        "answer": "StreamPulseはChrome Web Storeからインストールでき、Chromiumベースのすべてのブラウザ（Chrome、Edge、Brave、Opera、Vivaldi）で動作します。追加の設定は一切必要ありません。"
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulseとBetterTTV：互いに補完し合う",
+        "answer": "StreamPulseとBetterTTVは、機能内容が異なります。BetterTTV（およびFrankerFaceZ、7TV）は、エモートを追加したりチャットをカスタマイズしたりするものです。一方、StreamPulseは視聴者のタスクを自動化します。両者は互いに競合することなく、一緒にインストールできます。",
+        "body": [
+          "エモート用の拡張機能をお探しなら、「BetterTTV」または「FrankerFaceZ」をインストールしてください。チャンネルポイント、ドロップ、通知を自動化する拡張機能をお探しなら、「StreamPulse」をインストールしてください。この2つを組み合わせれば、Twitchを定期的に視聴するユーザーに必要な機能はすべて網羅できます。"
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "プライバシーポリシー",
+        "answer": "StreamPulseは個人情報を一切収集しません。トラッカーも広告も一切なく、アカウント登録も不要です。すべての設定は、お使いのブラウザ内にローカルで保存されます。"
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulseは無料ですか？",
+        "a": "はい、100％無料です。広告も、有料機能も、アカウント登録も一切必要ありません。"
+      },
+      {
+        "q": "StreamPulseはChannel Pointsを自動的に取得しますか？",
+        "a": "はい。StreamPulseは、Channel Pointsのボーナスが表示されると、たとえそのタブがバックグラウンドに表示されていても、自動的にそれを検知してクリックします。"
+      },
+      {
+        "q": "StreamPulseはTwitch Dropsのデータを取得しますか？",
+        "a": "はい。StreamPulseは利用可能なドロップを検知し、条件が満たされ次第、自動的に獲得します。"
+      },
+      {
+        "q": "Channel Pointsはバックグラウンドで動作しますか？",
+        "a": "はい。StreamPulseの「アンチポーズ」機能により、タブが最前面に表示されていない場合でもストリームがアクティブな状態を維持されるため、Channel Pointsの継続的な収集が可能になります。"
+      },
+      {
+        "q": "StreamPulseは誰が開発しているのですか？",
+        "a": "StreamPulseは、独立系開発者のAlexisAMZによって開発されています。ソースコードとアップデートはGitHubで公開されています。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "extension-twitch",
+    "linkLabel": "시청자용 Twitch 확장 프로그램",
+    "title": "시청자용 Twitch 확장 프로그램 | StreamPulse",
+    "h1": "시청자용 Twitch 확장 프로그램",
+    "description": "StreamPulse: 시청자를 위한 Twitch 확장 프로그램. 채널 포인트 자동 수령, 드롭 자동 수령, 실시간 알림, 채팅 필터 및 오류 수정 기능을 제공합니다.",
+    "intro": "StreamPulse는 Twitch 시청자 경험을 자동화해 주는 무료 브라우저 확장 프로그램으로, 채널 포인트 및 드롭 획득, 실시간 알림, 채팅 필터, 플레이어 오류 자동 수정 등의 기능을 제공합니다. Chrome, Edge, Brave, Opera와 호환됩니다.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Twitch의 모든 기능",
+        "answer": "StreamPulse는 Twitch 시청자를 위한 자동화 및 추적 기능에 중점을 둡니다. 이모티콘 확장 프로그램과 달리, StreamPulse는 채팅 화면을 변경하지 않고 반복적인 작업을 자동화합니다.",
+        "list": [
+          "<strong>채널 포인트 자동 수령.</strong> 백그라운드에서도 Twitch 채널 포인트를 자동으로 수령합니다. 더 이상 보너스를 수동으로 클릭할 필요가 없습니다.",
+          "<strong>자동 Twitch 드롭.</strong> 조건이 충족되는 즉시 드롭을 감지하고 수령할 수 있습니다.",
+          "<strong>실시간 알림.</strong> 팔로우 중인 스트리머가 Twitch에서 생방송을 시작하면 즉시 데스크톱 알림을 받아보세요.",
+          "<strong>리더 오류 수정.</strong> 오류 #1000, #2000 또는 #3000 발생 시 피드가 자동으로 다시 로드됩니다. 더 이상 수동으로 중단할 필요가 없습니다.",
+          "<strong>채팅 필터.</strong> Twitch 채팅에서 스팸, 원치 않는 키워드 및 반복되는 메시지를 숨기세요.",
+          "<strong>일시정지 방지.</strong> 탭이 백그라운드로 이동할 때 Twitch에서 동영상이 일시 정지되는 것을 방지합니다.",
+          "<strong>마우스를 올렸을 때 표시되는 동영상 미리보기.</strong> 현재 페이지를 떠나지 않고도 채널 링크 위에 마우스를 올리면 라이브 스트림을 미리 볼 수 있습니다."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "브라우저 호환성",
+        "answer": "StreamPulse는 Chrome 웹 스토어에서 설치할 수 있으며, Chrome, Edge, Brave, Opera, Vivaldi 등 크로미움 기반 모든 브라우저에서 작동합니다. 별도의 설정은 필요하지 않습니다."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse와 BetterTTV: 상호 보완적",
+        "answer": "StreamPulse와 BetterTTV는 서로 다른 기능을 제공합니다. BetterTTV(및 FrankerFaceZ, 7TV)는 이모티콘을 추가하고 채팅 창을 맞춤 설정해 줍니다. StreamPulse는 시청자 관련 작업을 자동화합니다. 두 프로그램 모두 충돌 없이 함께 설치할 수 있습니다.",
+        "body": [
+          "이모티콘용 확장 프로그램을 찾고 계신다면, BetterTTV나 FrankerFaceZ를 설치하세요. 채널 포인트, 드롭, 알림을 자동화할 수 있는 확장 프로그램을 찾고 계신다면, StreamPulse를 설치하세요. 이 두 가지를 함께 사용하면 트위치를 정기적으로 시청하는 시청자가 필요로 하는 모든 기능을 충족할 수 있습니다."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "개인정보 보호",
+        "answer": "StreamPulse는 어떠한 개인 정보도 수집하지 않습니다. 추적기, 광고, 계정 등록이 전혀 필요하지 않습니다. 모든 설정은 사용자의 브라우저에 로컬로 저장됩니다."
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulse는 무료인가요?",
+        "a": "네, 100% 무료이며, 광고도 없고, 유료 기능도 없으며, 계정 생성도 필요 없습니다."
+      },
+      {
+        "q": "StreamPulse는 채널 포인트를 자동으로 수집하나요?",
+        "a": "네. StreamPulse는 채널 포인트 보너스가 나타나자마자 이를 감지하여 자동으로 클릭합니다. 탭이 백그라운드에 있더라도 마찬가지입니다."
+      },
+      {
+        "q": "StreamPulse는 Twitch Drops를 수집하나요?",
+        "a": "네. StreamPulse는 이용 가능한 드롭을 감지하고, 조건이 충족되는 즉시 자동으로 획득합니다."
+      },
+      {
+        "q": "채널 포인트는 백그라운드에서 작동하나요?",
+        "a": "네. StreamPulse의 ‘일시 중지 방지’ 기능은 탭이 전경에 있지 않을 때도 스트림을 활성 상태로 유지하여 채널 포인트가 지속적으로 적립되도록 합니다."
+      },
+      {
+        "q": "StreamPulse는 누가 개발하나요?",
+        "a": "StreamPulse는 독립 개발자 AlexisAMZ가 개발했습니다. 소스 코드와 업데이트 내용은 GitHub에서 확인할 수 있습니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "ekstensi-twitch",
+    "linkLabel": "Ekstensi Twitch untuk penonton",
+    "title": "Ekstensi Twitch untuk penonton | StreamPulse",
+    "h1": "Ekstensi Twitch untuk penonton",
+    "description": "StreamPulse: ekstensi Twitch untuk penonton. Klaim Channel Points secara otomatis, Drops otomatis, notifikasi langsung, filter obrolan, dan perbaikan kesalahan.",
+    "intro": "StreamPulse adalah ekstensi browser gratis yang mengotomatiskan pengalaman penonton Twitch: pengumpulan Channel Points, Drops, notifikasi real-time, filter obrolan, dan koreksi otomatis kesalahan pemutar. Kompatibel dengan Chrome, Edge, Brave, dan Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Semua fitur Twitch",
+        "answer": "StreamPulse berfokus pada otomatisasi dan pemantauan bagi penonton Twitch. Berbeda dengan ekstensi emote, StreamPulse tidak mengubah tampilan obrolan, melainkan mengotomatiskan tugas-tugas yang berulang.",
+        "list": [
+          "<strong>Auto-claim Channel Points.</strong> Pengambilan poin saluran Twitch secara otomatis, termasuk saat berjalan di latar belakang. Tidak perlu lagi mengklik bonus secara manual.",
+          "<strong>Twitch Drops otomatis.</strong> Deteksi dan klaim Drops secara instan begitu persyaratannya terpenuhi.",
+          "<strong>Pemberitahuan langsung.</strong> Pemberitahuan di desktop secara real-time begitu streamer yang Anda ikuti mulai siaran langsung di Twitch.",
+          "<strong>Perbaikan kesalahan pembaca.</strong> Pemuatan ulang aliran secara otomatis saat terjadi kesalahan #1000, #2000, atau #3000. Tidak perlu lagi melakukan penghentian secara manual.",
+          "<strong>Filter obrolan.</strong> Sembunyikan spam, kata kunci yang tidak diinginkan, dan pesan berulang di obrolan Twitch.",
+          "<strong>Anti-jeda.</strong> Mencegah Twitch menjeda video saat tab berpindah ke latar belakang.",
+          "<strong>Pratinjau video saat mengarahkan kursor.</strong> Lihat pratinjau siaran langsung dengan mengarahkan kursor ke tautan saluran, tanpa perlu meninggalkan halaman Anda."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Kompatibilitas peramban",
+        "answer": "StreamPulse dapat diunduh dari Chrome Web Store dan dapat digunakan di semua peramban berbasis Chromium: Chrome, Edge, Brave, Opera, dan Vivaldi. Tidak diperlukan pengaturan tambahan."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse dan BetterTTV: saling melengkapi",
+        "answer": "StreamPulse dan BetterTTV tidak memiliki fungsi yang sama. BetterTTV (serta FrankerFaceZ dan 7TV) menambahkan emotikon dan memungkinkan penyesuaian obrolan. StreamPulse mengotomatiskan tugas-tugas penonton. Keduanya dapat diinstal bersamaan tanpa menimbulkan konflik.",
+        "body": [
+          "Jika Anda mencari ekstensi untuk emotikon, pasang BetterTTV atau FrankerFaceZ. Jika Anda mencari ekstensi untuk mengotomatiskan Channel Points, Drops, dan notifikasi, pasang StreamPulse. Kedua ekstensi tersebut secara bersama-sama memenuhi seluruh kebutuhan seorang penonton Twitch yang rutin."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Kerahasiaan",
+        "answer": "StreamPulse tidak mengumpulkan data pribadi apa pun. Tidak ada pelacak, tidak ada iklan, dan tidak perlu membuat akun. Semua pengaturan disimpan secara lokal di peramban Anda."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah StreamPulse gratis?",
+        "a": "Ya, 100% gratis, tanpa iklan, tanpa fitur berbayar, dan tanpa perlu membuat akun."
+      },
+      {
+        "q": "Apakah StreamPulse secara otomatis mengumpulkan Channel Points?",
+        "a": "Ya. StreamPulse akan mendeteksi dan mengklik bonus Channel Points secara otomatis begitu bonus tersebut muncul, meskipun tab tersebut berada di latar belakang."
+      },
+      {
+        "q": "Apakah StreamPulse mengumpulkan Twitch Drops?",
+        "a": "Ya. StreamPulse mendeteksi Drops yang tersedia dan mengklaimnya secara otomatis begitu syarat-syaratnya terpenuhi."
+      },
+      {
+        "q": "Apakah Channel Points berjalan di latar belakang?",
+        "a": "Ya. Fitur anti-pause dari StreamPulse menjaga agar aliran tetap aktif meskipun tab tersebut tidak berada di latar depan, sehingga memungkinkan pengumpulan Channel Points secara terus-menerus."
+      },
+      {
+        "q": "Siapa yang mengembangkan StreamPulse?",
+        "a": "StreamPulse dikembangkan oleh AlexisAMZ, seorang pengembang independen. Kode sumber dan pembaruan tersedia di GitHub."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "extension-twitch",
+    "linkLabel": "Twitch-extensie voor kijkers",
+    "title": "Twitch-extensie voor kijkers | StreamPulse",
+    "h1": "Twitch-extensie voor kijkers",
+    "description": "StreamPulse: Twitch-extensie voor kijkers. Automatisch Channel Points claimen, automatische Drops, live meldingen, chatfilters en foutcorrectie.",
+    "intro": "StreamPulse is een gratis browserextensie die de ervaring van Twitch-kijkers automatiseert: het verzamelen van Channel Points en Drops, realtime meldingen, chatfilters en automatische correctie van afspeelfouten. Compatibel met Chrome, Edge, Brave en Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Alle functies van Twitch",
+        "answer": "StreamPulse richt zich op automatisering en het bijhouden van gegevens voor Twitch-kijkers. In tegenstelling tot emoticon-extensies verandert StreamPulse het uiterlijk van de chat niet, maar automatiseert het wel terugkerende taken.",
+        "list": [
+          "<strong>Auto-claim Channel Points.</strong> Automatisch inwisselen van Twitch-kanaalpunten, ook op de achtergrond. Je hoeft de bonus niet meer handmatig aan te klikken.",
+          "<strong>Automatische Twitch Drops.</strong> Drops worden direct gedetecteerd en opgeëist zodra aan de voorwaarden is voldaan.",
+          "<strong>Live-meldingen.</strong> Real-time meldingen op je desktop zodra een streamer die je volgt live gaat op Twitch.",
+          "<strong>Correctie van leesfouten.</strong> Automatisch opnieuw laden van de stream bij fouten #1000, #2000 of #3000. Geen handmatige onderbreking meer.",
+          "<strong>Chatfilters.</strong> Verberg spam, ongewenste trefwoorden en herhaalde berichten in de Twitch-chat.",
+          "<strong>Anti-pauze.</strong> Voorkomt dat Twitch de video pauzeert wanneer het tabblad naar de achtergrond wordt verplaatst.",
+          "<strong>Videovoorbeelden bij het aanwijzen.</strong> Bekijk een voorbeeld van de livestream door met de muis over een kanaallink te gaan, zonder de pagina te verlaten."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Compatibiliteit met browsers",
+        "answer": "StreamPulse kan worden geïnstalleerd via de Chrome Web Store en werkt op alle op Chromium gebaseerde browsers: Chrome, Edge, Brave, Opera en Vivaldi. Er is geen extra configuratie nodig."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse en BetterTTV: vullen elkaar aan",
+        "answer": "StreamPulse en BetterTTV doen niet hetzelfde. BetterTTV (en FrankerFaceZ, 7TV) voegen emotes toe en passen de chat aan. StreamPulse automatiseert taken voor kijkers. Beide programma’s kunnen zonder problemen naast elkaar worden geïnstalleerd.",
+        "body": [
+          "Als je op zoek bent naar een extensie voor emotes, installeer dan BetterTTV of FrankerFaceZ. Als je op zoek bent naar een extensie om Channel Points, Drops en meldingen te automatiseren, installeer dan StreamPulse. Deze twee samen voorzien in alle behoeften van een regelmatige Twitch-kijker."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Privacy",
+        "answer": "StreamPulse verzamelt geen persoonsgegevens. Geen trackers, geen advertenties, geen account vereist. Alle instellingen worden lokaal in uw browser opgeslagen."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is StreamPulse gratis?",
+        "a": "Ja, 100% gratis, zonder advertenties, zonder betaalde functies en zonder dat je een account hoeft aan te maken."
+      },
+      {
+        "q": "Haal StreamPulse de Channel Points automatisch op?",
+        "a": "Ja. StreamPulse detecteert de Channel Points-bonus en klikt er automatisch op zodra deze verschijnt, zelfs als het tabblad op de achtergrond staat."
+      },
+      {
+        "q": "Haal StreamPulse de Twitch Drops op?",
+        "a": "Ja. StreamPulse detecteert beschikbare drops en claimt deze automatisch zodra aan de voorwaarden is voldaan."
+      },
+      {
+        "q": "Werken Channel Points op de achtergrond?",
+        "a": "Ja. De anti-pauzefunctie van StreamPulse houdt de stream actief, zelfs wanneer het tabblad niet op de voorgrond staat, waardoor er continu Channel Points kunnen worden verzameld."
+      },
+      {
+        "q": "Wie ontwikkelt StreamPulse?",
+        "a": "StreamPulse is ontwikkeld door AlexisAMZ, een onafhankelijke ontwikkelaar. De broncode en updates zijn beschikbaar op GitHub."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "förlängningsryckning",
+    "linkLabel": "Twitch-tillägg för tittare",
+    "title": "Twitch-tillägg för tittare | StreamPulse",
+    "h1": "Twitch-tillägg för tittare",
+    "description": "StreamPulse: ett tillägg för Twitch för tittare. Automatisk inlösen av Channel Points, automatiska Drops, live-aviseringar, chattfilter och felkorrigering.",
+    "intro": "StreamPulse är ett kostnadsfritt webbläsartillägg som automatiserar upplevelsen för Twitch-tittare: insamling av Channel Points och Drops, realtidsaviseringar, chattfilter och automatisk korrigering av spelarfel. Kompatibelt med Chrome, Edge, Brave och Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Alla funktioner på Twitch",
+        "answer": "StreamPulse fokuserar på automatisering och uppföljning för Twitch-tittare. Till skillnad från emotes-tillägg förändrar StreamPulse inte chattens utseende, utan automatiserar repetitiva uppgifter.",
+        "list": [
+          "<strong>Auto-claim Channel Points.</strong> Automatisk insamling av Twitch-kanalpoäng, även i bakgrunden. Du behöver inte längre klicka på bonusen manuellt.",
+          "<strong>Automatiska Twitch Drops.</strong> Omedelbar identifiering och hämtning av Drops så snart villkoren är uppfyllda.",
+          "<strong>Live-meddelanden.</strong> Real-time-varningar på skrivbordet så fort en streamer du följer går live på Twitch.",
+          "<strong>Korrigering av läsfel.</strong> Automatisk omladdning av strömmen vid fel #1000, #2000 eller #3000. Inga fler manuella avbrott.",
+          "<strong>Chattfilter.</strong> Dölj spam, oönskade nyckelord och upprepade meddelanden i Twitch-chatten.",
+          "<strong>Anti-paus.</strong> Förhindrar att Twitch pausar videon när fliken flyttas till bakgrunden.",
+          "<strong>Videoförhandsvisningar vid muspekning.</strong> Förhandsgranska livestreamen genom att hålla muspekaren över en kanallänk, utan att lämna sidan."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Webbläsarkompatibilitet",
+        "answer": "StreamPulse installeras från Chrome Web Store och fungerar i alla Chromium-baserade webbläsare: Chrome, Edge, Brave, Opera och Vivaldi. Ingen ytterligare konfiguration krävs."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse och BetterTTV: kompletterar varandra",
+        "answer": "StreamPulse och BetterTTV har olika funktioner. BetterTTV (samt FrankerFaceZ och 7TV) lägger till emotes och anpassar chatten. StreamPulse automatiserar tittaruppgifter. Båda programmen kan installeras samtidigt utan att det uppstår några konflikter.",
+        "body": [
+          "Om du letar efter ett tillägg för emotes ska du installera BetterTTV eller FrankerFaceZ. Om du letar efter ett tillägg för att automatisera Channel Points, Drops och aviseringar ska du installera StreamPulse. Tillsammans täcker dessa två alla behov som en vanlig Twitch-tittare kan ha."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Sekretess",
+        "answer": "StreamPulse samlar inte in några personuppgifter. Inga spårare, ingen reklam och inget konto krävs. Alla inställningar sparas lokalt i din webbläsare."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Är StreamPulse gratis?",
+        "a": "Ja, 100 % gratis, utan reklam, utan betalfunktioner och utan att man behöver skapa ett konto."
+      },
+      {
+        "q": "Hämtar StreamPulse Channel Points automatiskt?",
+        "a": "Ja. StreamPulse upptäcker och klickar automatiskt på Channel Points-bonusen så fort den dyker upp, även om fliken är i bakgrunden."
+      },
+      {
+        "q": "Samlar StreamPulse in Twitch Drops?",
+        "a": "Ja. StreamPulse upptäcker tillgängliga Drops och hämtar dem automatiskt så snart villkoren är uppfyllda."
+      },
+      {
+        "q": "Fungerar Channel Points i bakgrunden?",
+        "a": "Ja. StreamPulse-funktionen ”anti-pause” håller strömmen aktiv även när fliken inte är i förgrunden, vilket möjliggör kontinuerlig insamling av Channel Points."
+      },
+      {
+        "q": "Vem utvecklar StreamPulse?",
+        "a": "StreamPulse har utvecklats av AlexisAMZ, en oberoende utvecklare. Källkoden och uppdateringarna finns tillgängliga på GitHub."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "rozšíření-twitch",
+    "linkLabel": "Rozšíření pro Twitch pro diváky",
+    "title": "Doplněk pro diváky na Twitchi | StreamPulse",
+    "h1": "Rozšíření pro Twitch pro diváky",
+    "description": "StreamPulse: rozšíření pro Twitch určené divákům. Automatické získávání bodů kanálu, automatické Drops, živá oznámení, filtry chatu a oprava chyb.",
+    "intro": "StreamPulse je bezplatné rozšíření pro prohlížeč, které automatizuje zážitek diváků na Twitchi: získávání Channel Points, Drops, oznámení v reálném čase, filtry chatu a automatická oprava chyb přehrávače. Kompatibilní s prohlížeči Chrome, Edge, Brave a Opera.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Všechny funkce služby Twitch",
+        "answer": "StreamPulse se zaměřuje na automatizaci a sledování diváků na Twitchi. Na rozdíl od rozšíření pro emotikony StreamPulse nemění vzhled chatu, ale automatizuje opakující se úkoly.",
+        "list": [
+          "<strong>Automatické získávání bodů kanálu.</strong> Automatické získávání bodů kanálu na Twitchi, a to i na pozadí. Už nemusíte na bonus klikat ručně.",
+          "<strong>Automatické Twitch Drops.</strong> Okamžité rozpoznání a získání Drops, jakmile jsou splněny podmínky.",
+          "<strong>Živé notifikace.</strong> Upozornění na ploše v reálném čase, jakmile streamer, kterého sledujete, spustí živé vysílání na Twitchi.",
+          "<strong>Oprava chyb čtečky.</strong> Automatické znovu načtení datového toku při chybách #1000, #2000 nebo #3000. Už žádné ruční přerušení.",
+          "<strong>Filtry chatu.</strong> Skryjte spam, nežádoucí klíčová slova a opakující se zprávy v chatu na Twitchi.",
+          "<strong>Zabránění pozastavení.</strong> Zabrání tomu, aby Twitch pozastavil přehrávání videa, když se karta přesune do pozadí.",
+          "<strong>Náhledy videí při najetí myší.</strong> Zobrazte si náhled živého vysílání pouhým najetím myší na odkaz kanálu, aniž byste museli opustit aktuální stránku."
+        ]
+      },
+      {
+        "id": "compatibilite",
+        "h2": "Kompatibilita s prohlížeči",
+        "answer": "StreamPulse se instaluje z Chrome Web Store a funguje ve všech prohlížečích založených na Chromiu: Chrome, Edge, Brave, Opera a Vivaldi. Není třeba žádné další nastavení."
+      },
+      {
+        "id": "vs-bttv",
+        "h2": "StreamPulse a BetterTTV: vzájemně se doplňující",
+        "answer": "StreamPulse a BetterTTV neslouží ke stejnému účelu. BetterTTV (stejně jako FrankerFaceZ a 7TV) přidává emotikony a umožňuje přizpůsobení chatu. StreamPulse automatizuje úkoly diváků. Obě aplikace lze nainstalovat společně, aniž by docházelo ke konfliktům.",
+        "body": [
+          "Pokud hledáte rozšíření pro emodži, nainstalujte si BetterTTV nebo FrankerFaceZ. Pokud hledáte rozšíření pro automatizaci Channel Points, Drops a oznámení, nainstalujte si StreamPulse. Tyto dvě rozšíření dohromady pokrývají všechny potřeby běžného diváka na Twitchi."
+        ]
+      },
+      {
+        "id": "confidentialite",
+        "h2": "Ochrana osobních údajů",
+        "answer": "StreamPulse neshromažďuje žádné osobní údaje. Žádné sledovací soubory, žádná reklama, není třeba si zakládat účet. Všechna nastavení se ukládají lokálně ve vašem prohlížeči."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Je StreamPulse zdarma?",
+        "a": "Ano, je to 100 % zdarma, bez reklam, bez placených funkcí a bez nutnosti zakládat si účet."
+      },
+      {
+        "q": "Načítá StreamPulse automaticky Channel Points?",
+        "a": "Ano. StreamPulse automaticky rozpozná bonus v podobě Channel Points a klikne na něj, jakmile se objeví, i když je záložka na pozadí."
+      },
+      {
+        "q": "Zaznamenává StreamPulse Twitch Drops?",
+        "a": "Ano. StreamPulse detekuje dostupné Drops a automaticky je získává, jakmile jsou splněny podmínky."
+      },
+      {
+        "q": "Fungují Channel Points na pozadí?",
+        "a": "Ano. Funkce „anti-pause“ v StreamPulse udržuje stream aktivní i tehdy, když není karta v popředí, což umožňuje nepřetržité sbírání Channel Points."
+      },
+      {
+        "q": "Kdo vyvíjí StreamPulse?",
+        "a": "StreamPulse vyvinul AlexisAMZ, nezávislý vývojář. Zdrojový kód a aktualizace jsou k dispozici na GitHubu."
+      }
+    ]
+  }
+}

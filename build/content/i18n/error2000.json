@@ -1,0 +1,1770 @@
+{
+  "es": {
+    "slug": "error-2000-twitch-solución",
+    "linkLabel": "Error 2000 en Twitch: cómo solucionarlo",
+    "title": "Error 2000 de Twitch: causas y soluciones | StreamPulse",
+    "h1": "Error 2000 en Twitch: por qué se produce y cómo solucionarlo",
+    "description": "El error 2000 de Twitch indica una interrupción de la conexión de red con el reproductor. Causas reales, soluciones clasificadas por eficacia y recarga automática.",
+    "intro": "El error 2000 («Network Error») interrumpe el reproductor de Twitch en plena reproducción y obliga a recargar la página manualmente. Casi siempre está relacionado con una solicitud bloqueada entre tu navegador y los servidores de Twitch, no con un fallo en tu conexión. A continuación te explicamos las causas reales, las soluciones ordenadas de más a menos eficaces y cómo evitar tener que recargar la página tú mismo.",
+    "howToSteps": [
+      {
+        "name": "Desactivar temporalmente el bloqueador de anuncios",
+        "text": "A veces, los bloqueadores de anuncios interceptan las solicitudes del reproductor de Twitch. Desactiva temporalmente el bloqueador de anuncios en twitch.tv y actualiza la página para comprobar cuál es la causa."
+      },
+      {
+        "name": "Borrar la caché y las cookies de Twitch",
+        "text": "Un token de sesión dañado provoca errores de red repetidos. Borra las cookies del dominio twitch.tv y vuelve a iniciar sesión."
+      },
+      {
+        "name": "Probar en modo de navegación privada",
+        "text": "Si la retransmisión en directo funciona en una ventana privada, el problema lo causa una extensión instalada. Vuelve a activarlas una por una para identificar cuál es."
+      },
+      {
+        "name": "Automatizar la recarga",
+        "text": "Instala StreamPulse y activa la recarga automática para que el reproductor se reinicie por sí solo en cuanto se produzca un error 1000, 2000 o 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "¿Qué significa el error 2000 en Twitch?",
+        "answer": "El error 2000 es un error de red: el reproductor de Twitch no ha podido establecer o mantener la conexión necesaria para reproducir la transmisión. En la mayoría de los casos, ha sido una extensión del navegador o un bloqueador de anuncios lo que ha interrumpido la solicitud, y no tu conexión a Internet.",
+        "body": [
+          "Esto explica por qué el resto de tu navegación funciona con normalidad mientras que la transmisión en directo se cuelga: el problema se limita a las solicitudes del reproductor."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "¿Cuáles son las causas más frecuentes?",
+        "answer": "Por orden de frecuencia: los bloqueadores de anuncios, las cookies de sesión dañadas, las extensiones de terceros relacionadas con Twitch y, a continuación, las VPN y las redes corporativas con filtrado.",
+        "list": [
+          "<strong>Bloqueadores de anuncios.</strong> Es la causa más habitual, ya que filtran las solicitudes del navegador junto con la publicidad.",
+          "<strong>Cookies de sesión dañadas.</strong> Provocan cortes repetidos en todos los canales.",
+          "<strong>Extensiones de terceros.</strong> Algunas inyectan código en el reproductor y lo desestabilizan.",
+          "<strong>VPN y redes con filtrado.</strong> El enrutamiento bloquea parte de los dominios de difusión.",
+          "<strong>Aceleración por hardware.</strong> Es menos habitual, pero provoca errores de decodificación en algunas GPU."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "¿Cómo solucionar el error 2000 paso a paso?",
+        "answer": "Empieza por desactivar temporalmente tu bloqueador de anuncios en twitch.tv y, a continuación, borra las cookies de ese dominio. Estas dos acciones resuelven la gran mayoría de los casos; la prueba en modo de navegación privada sirve para identificar la extensión que está causando el problema.",
+        "steps": [
+          {
+            "name": "Pon el bloqueador en pausa.",
+            "text": "Solo en twitch.tv; después, actualiza la página. Si la retransmisión en directo se reanuda, ya sabes cuál es el motivo."
+          },
+          {
+            "name": "Borra la caché y las cookies de Twitch.",
+            "text": "Selecciona el dominio twitch.tv en lugar de todo tu historial y, a continuación, vuelve a iniciar sesión."
+          },
+          {
+            "name": "Pruébalo en modo incógnito.",
+            "text": "Las extensiones están desactivadas: si todo funciona correctamente, vuelve a activarlas una por una."
+          },
+          {
+            "name": "Cambia la calidad de la transmisión.",
+            "text": "Cambiar manualmente a 720p permite evitar algunos problemas de ancho de banda."
+          },
+          {
+            "name": "Desactiva la aceleración por hardware.",
+            "text": "En la configuración del navegador, como último recurso si los errores persisten."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "¿Cómo se puede evitar que la página se recargue cada vez?",
+        "answer": "StreamPulse detecta los errores de reproductor 1000, 2000 y 3000 y vuelve a cargar automáticamente la transmisión, lo que evita la interrupción manual. Se trata de una solución provisional del síntoma: no sustituye a la corrección de la causa.",
+        "body": [
+          "La automatización resulta útil cuando el error sigue siendo esporádico a pesar de las correcciones, sobre todo en sesiones prolongadas o con conexiones inestables.",
+          "Si el error se produce de forma continuada en todos los canales, soluciona primero la causa: una recarga en bucle solo serviría para ocultar el problema."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Errores 1000, 3000, 4000: ¿en qué se diferencian?",
+        "answer": "El código indica dónde se ha producido el error de reproducción. El código 1000 corresponde a una interrupción del recurso de vídeo, el 2000 a un error de red, el 3000 a un error de decodificación multimedia y el 4000 a un recurso no disponible o a un formato no compatible.",
+        "table": {
+          "head": [
+            "Código",
+            "Significado",
+            "Pistas principales"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Lectura interrumpida",
+              "Recargar, comprobar las extensiones"
+            ],
+            [
+              "2000",
+              "Error de red",
+              "Bloqueador de anuncios y cookies"
+            ],
+            [
+              "3000",
+              "Error al descodificar el contenido multimedia",
+              "Aceleración por hardware, navegador"
+            ],
+            [
+              "4000",
+              "Recurso no compatible",
+              "Otra pestaña en modo de lectura, formato"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿El error 2000 se debe a Twitch o a mí?",
+        "a": "Lo más habitual es que se deba a tu navegador. Si el error afecta a todos los canales y a todos tus dispositivos a la vez, puede tratarse de un problema por parte de Twitch."
+      },
+      {
+        "q": "¿Debería desinstalar mi bloqueador de anuncios?",
+        "a": "No. Basta con ponerlo en pausa en twitch.tv añadiendo el dominio a la lista blanca."
+      },
+      {
+        "q": "¿La recarga automática hace que pierda mi puesto en la retransmisión en directo?",
+        "a": "La transmisión se reanuda en directo, igual que cuando se realiza una recarga manual, pero sin que tengas que hacer nada."
+      },
+      {
+        "q": "¿Podría deberse el problema a mi conexión?",
+        "a": "Es posible, pero poco frecuente. Si, por lo demás, la navegación sigue siendo fluida, es probable que el problema no esté en la conexión."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "erro-2000-twitch-solução",
+    "linkLabel": "Erro 2000 no Twitch: como corrigi-lo",
+    "title": "Erro 2000 no Twitch: causas e soluções | StreamPulse",
+    "h1": "Erro 2000 no Twitch: por que ocorre e como corrigi-lo",
+    "description": "O erro 2000 do Twitch indica uma interrupção na conexão de rede com o player. Causas reais, soluções classificadas por eficácia e recarga automática.",
+    "intro": "O erro 2000 (“Network Error”) interrompe o player do Twitch no meio da reprodução e exige que você atualize a página manualmente. Ele está quase sempre relacionado a uma solicitação bloqueada entre o seu navegador e os servidores do Twitch, e não a uma falha na sua conexão. Aqui estão as causas reais, as soluções classificadas da mais eficaz à menos eficaz e como evitar ter que recarregar a página manualmente.",
+    "howToSteps": [
+      {
+        "name": "Desativar temporariamente o bloqueador de anúncios",
+        "text": "Às vezes, os bloqueadores interceptam as solicitações do leitor do Twitch. Coloque o bloqueador em pausa no twitch.tv e atualize a página para verificar a causa."
+      },
+      {
+        "name": "Limpar o cache e os cookies do Twitch",
+        "text": "Um token de sessão corrompido está causando erros de rede repetidos. Exclua os cookies do domínio twitch.tv e, em seguida, faça login novamente."
+      },
+      {
+        "name": "Testar no modo de navegação privada",
+        "text": "Se a transmissão ao vivo estiver funcionando em uma janela privada, isso se deve a uma extensão instalada. Reative-as uma a uma para identificar qual é."
+      },
+      {
+        "name": "Automatizar a recarga",
+        "text": "Instale o StreamPulse e ative a recarga automática para que o reprodutor reinicie sozinho assim que ocorrer um erro 1000, 2000 ou 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "O que significa o erro 2000 no Twitch?",
+        "answer": "O erro 2000 é um erro de rede: o reprodutor do Twitch não conseguiu estabelecer ou manter a conexão necessária para reproduzir a transmissão. Na maioria dos casos, uma extensão do navegador ou um bloqueador de anúncios interrompeu uma solicitação, e não a sua conexão com a internet.",
+        "body": [
+          "É isso que explica por que o restante da sua navegação funciona normalmente enquanto o live trava: o problema está restrito às solicitações do player."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Quais são as causas mais frequentes?",
+        "answer": "Por ordem de frequência: bloqueadores de anúncios, cookies de sessão corrompidos, extensões de terceiros relacionadas ao Twitch e, em seguida, VPNs e redes corporativas com filtragem.",
+        "list": [
+          "<strong>Bloqueadores de anúncios.</strong> Essa é a causa mais comum, pois eles filtram as solicitações do leitor junto com os anúncios.",
+          "<strong>Cookies de sessão corrompidos.</strong> Provocam interrupções repetidas em todos os canais.",
+          "<strong>Extensões de terceiros.</strong> Algumas injetam código no reprodutor e o desestabilizam.",
+          "<strong>VPN e redes com filtragem.</strong> O roteamento bloqueia parte dos domínios de difusão.",
+          "<strong>Aceleração por hardware.</strong> É mais rara, mas causa erros de decodificação em algumas GPUs."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Como corrigir o erro 2000 passo a passo?",
+        "answer": "Comece desativando temporariamente seu bloqueador de anúncios no twitch.tv e, em seguida, limpe os cookies desse domínio. Essas duas ações resolvem a grande maioria dos casos; o teste no modo de navegação privada serve para identificar a extensão responsável pelo problema.",
+        "steps": [
+          {
+            "name": "Coloque o bloqueador em pausa.",
+            "text": "Apenas no twitch.tv; depois, atualize a página. Se a transmissão ao vivo recomeçar, você já sabe o motivo."
+          },
+          {
+            "name": "Limpe o cache e os cookies do Twitch.",
+            "text": "Selecione o domínio twitch.tv em vez de todo o seu histórico e, em seguida, faça login novamente."
+          },
+          {
+            "name": "Teste no modo de navegação privada.",
+            "text": "As extensões estão desativadas: se tudo estiver funcionando, reative-as uma a uma."
+          },
+          {
+            "name": "Altere a qualidade do stream.",
+            "text": "Ajustar manualmente para 720p contorna alguns problemas de largura de banda."
+          },
+          {
+            "name": "Desative a aceleração por hardware.",
+            "text": "Nas configurações do navegador, como último recurso, caso os erros persistam."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Como evitar que a página seja recarregada toda vez?",
+        "answer": "O StreamPulse detecta os erros de leitor 1000, 2000 e 3000 e recarrega automaticamente o fluxo, o que elimina a necessidade de interrupção manual. Trata-se de uma solução alternativa para o sintoma: não substitui a correção da causa.",
+        "body": [
+          "A automação é útil quando o erro continua ocorrendo esporadicamente, apesar das correções, especialmente em sessões longas ou conexões instáveis.",
+          "Se o erro ocorrer continuamente em todos os canais, resolva primeiro a causa: uma reinicialização contínua apenas mascararia o problema."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Erros 1000, 3000, 4000: quais são as diferenças?",
+        "answer": "O código indica onde ocorreu a falha na reprodução. 1000 corresponde a uma interrupção do recurso de vídeo, 2000 a um erro de rede, 3000 a uma falha na decodificação de mídia e 4000 a um recurso indisponível ou a um formato não compatível.",
+        "table": {
+          "head": [
+            "Código",
+            "Significado",
+            "Pista principal"
+          ],
+          "rows": [
+            [
+              "1.000",
+              "Leitura interrompida",
+              "Atualizar, verificar as extensões"
+            ],
+            [
+              "2000",
+              "Erro de rede",
+              "Bloqueador de anúncios e cookies"
+            ],
+            [
+              "3.000",
+              "Falha na decodificação de mídia",
+              "Aceleração por hardware, navegador"
+            ],
+            [
+              "4.000",
+              "Recurso não compatível",
+              "Outra guia em exibição, formato"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "O erro 2000 é culpa do Twitch ou minha?",
+        "a": "Na maioria das vezes, é um problema do seu navegador. Se o erro afetar todos os canais e todos os seus dispositivos ao mesmo tempo, pode ser uma falha do lado do Twitch."
+      },
+      {
+        "q": "Devo desinstalar meu bloqueador de anúncios?",
+        "a": "Não. Basta colocar em pausa no twitch.tv, adicionando o domínio à lista de permissões."
+      },
+      {
+        "q": "A recarga automática faz com que eu perca meu lugar na transmissão ao vivo?",
+        "a": "A transmissão retoma ao vivo, como em uma atualização manual, mas sem que você precise fazer nada."
+      },
+      {
+        "q": "Será que o problema pode ser minha conexão?",
+        "a": "Isso é possível, mas pouco comum. Se a sua navegação continuar fluida no restante do site, provavelmente o problema não está na conexão."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Fehler-2000-Twitch-Lösung",
+    "linkLabel": "Fehler 2000 auf Twitch: So beheben Sie ihn",
+    "title": "Fehler 2000 bei Twitch: Ursachen und Lösungen | StreamPulse",
+    "h1": "Fehler 2000 auf Twitch: Warum er auftritt und wie man ihn behebt",
+    "description": "Der Twitch-Fehler 2000 weist auf eine Netzwerkunterbrechung zum Player hin. Tatsächliche Ursachen, nach Wirksamkeit geordnete Lösungen und automatisches Neuladen.",
+    "intro": "Der Fehler 2000 („Network Error“) unterbricht den Twitch-Player mitten in der Wiedergabe und erfordert ein manuelles Neuladen der Seite. Er hängt fast immer mit einer blockierten Anfrage zwischen deinem Browser und den Twitch-Servern zusammen, nicht mit einer Störung deiner Internetverbindung. Hier finden Sie die tatsächlichen Ursachen, die Lösungsansätze, sortiert nach ihrer Wirksamkeit (von am effektivsten bis am wenigsten effektiv), sowie Tipps, wie Sie ein manuelles Neuladen vermeiden können.",
+    "howToSteps": [
+      {
+        "name": "Den Werbeblocker vorübergehend deaktivieren",
+        "text": "Blockierer fangen manchmal Anfragen des Twitch-Players ab. Setzen Sie den Blockierer auf twitch.tv auf „Pause“ und laden Sie die Seite neu, um die Ursache zu überprüfen."
+      },
+      {
+        "name": "Cache und Cookies von Twitch löschen",
+        "text": "Ein beschädigtes Sitzungs-Token führt zu wiederholten Netzwerkfehlern. Löschen Sie die Cookies der Domain twitch.tv und melden Sie sich anschließend erneut an."
+      },
+      {
+        "name": "Im Inkognito-Modus testen",
+        "text": "Wenn der Live-Stream in einem separaten Fenster läuft, liegt dies an einer installierten Erweiterung. Aktivieren Sie diese nacheinander wieder, um herauszufinden, welche davon dafür verantwortlich ist."
+      },
+      {
+        "name": "Das Nachladen automatisieren",
+        "text": "Installieren Sie StreamPulse und aktivieren Sie die automatische Neuladung, damit der Player sich selbst neu startet, sobald ein Fehler 1000, 2000 oder 3000 auftritt."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Was bedeutet der Fehler 2000 auf Twitch?",
+        "answer": "Fehler 2000 ist ein Netzwerkfehler: Der Twitch-Player konnte die für die Wiedergabe des Streams erforderliche Verbindung nicht herstellen oder aufrechterhalten. In den meisten Fällen hat eine Browser-Erweiterung oder ein Werbeblocker eine Anfrage unterbrochen – nicht Ihre Internetverbindung.",
+        "body": [
+          "Das erklärt, warum der Rest Ihrer Website normal funktioniert, während der Live-Stream abstürzt: Das Problem betrifft ausschließlich die Anfragen des Players."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Was sind die häufigsten Ursachen?",
+        "answer": "Nach Häufigkeit geordnet: Werbeblocker, beschädigte Sitzungs-Cookies, Twitch-bezogene Erweiterungen von Drittanbietern sowie VPNs und filternde Unternehmensnetzwerke.",
+        "list": [
+          "<strong>Werbeblocker. Dies ist</strong> die häufigste Ursache, da sie die Anfragen des Players zusammen mit der Werbung herausfiltern.",
+          "<strong>Beschädigte Sitzungs-Cookies. Diese</strong> führen zu wiederholten Unterbrechungen auf allen Kanälen.",
+          "<strong>Erweiterungen von Drittanbietern.</strong> Manche fügen Code in den Player ein und destabilisieren ihn dadurch.",
+          "<strong>VPN und Filter-Netzwerke.</strong> Durch das Routing wird ein Teil der Broadcast-Domänen blockiert.",
+          "<strong>Hardwarebeschleunigung.</strong> Tritt seltener auf, führt jedoch bei bestimmten GPUs zu Dekodierungsfehlern."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Wie lässt sich der Fehler 2000 Schritt für Schritt beheben?",
+        "answer": "Deaktivieren Sie zunächst Ihren Werbeblocker auf twitch.tv und löschen Sie anschließend die Cookies dieser Domain. Diese beiden Maßnahmen beheben die meisten Probleme; der Test im Inkognito-Modus dient dazu, eine fehlerhafte Erweiterung zu identifizieren.",
+        "steps": [
+          {
+            "name": "Setzen Sie den Blocker auf Pause.",
+            "text": "Nur auf twitch.tv, dann die Seite neu laden. Wenn der Live-Stream wieder läuft, haben Sie die Ursache gefunden."
+          },
+          {
+            "name": "Leeren Sie den Cache und löschen Sie die Cookies von Twitch.",
+            "text": "Wählen Sie den Bereich „twitch.tv“ anstelle Ihres gesamten Verlaufs aus und melden Sie sich anschließend erneut an."
+          },
+          {
+            "name": "Probieren Sie es im Inkognito-Modus aus.",
+            "text": "Die Erweiterungen sind dort deaktiviert: Wenn alles funktioniert, aktivieren Sie sie nacheinander wieder."
+          },
+          {
+            "name": "Ändern Sie die Stream-Qualität.",
+            "text": "Die manuelle Umstellung auf 720p umgeht bestimmte Probleme mit der Bandbreite."
+          },
+          {
+            "name": "Deaktivieren Sie die Hardwarebeschleunigung.",
+            "text": "In den Browsereinstellungen – als letzte Möglichkeit, falls die Fehler weiterhin auftreten."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Wie kann man vermeiden, dass die Seite jedes Mal neu geladen wird?",
+        "answer": "StreamPulse erkennt die Lesfehler 1000, 2000 und 3000 und lädt den Stream automatisch neu, wodurch eine manuelle Unterbrechung entfällt. Dies ist eine Umgehung des Symptoms: Es ersetzt nicht die Behebung der Ursache.",
+        "body": [
+          "Die Automatisierung ist sinnvoll, wenn der Fehler trotz der Korrekturen weiterhin sporadisch auftritt, insbesondere bei langen Sitzungen oder instabilen Verbindungen.",
+          "Wenn der Fehler kontinuierlich auf allen Kanälen auftritt, beheben Sie zunächst die Ursache: Ein ständiges Neuladen würde das Problem nur verschleiern."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Fehler 1000, 3000, 4000: Worin bestehen die Unterschiede?",
+        "answer": "Der Code gibt an, wo der Lesevorgang fehlgeschlagen ist. 1000 steht für eine Unterbrechung der Videoquelle, 2000 für einen Netzwerkfehler, 3000 für einen Fehler bei der Medien-Decodierung und 4000 für eine nicht verfügbare Quelle oder ein nicht unterstütztes Format.",
+        "table": {
+          "head": [
+            "Code",
+            "Bedeutung",
+            "Hauptpisten"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Unterbrochene Wiedergabe",
+              "Neu laden, Erweiterungen überprüfen"
+            ],
+            [
+              "2000",
+              "Netzwerkfehler",
+              "Werbeblocker, Cookies"
+            ],
+            [
+              "3000",
+              "Fehler bei der Medien-Dekodierung",
+              "Hardwarebeschleunigung, Browser"
+            ],
+            [
+              "4000",
+              "Nicht unterstützte Ressource",
+              "Weitere Registerkarte „Wiedergabe“, Format"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Liegt der Fehler 2000 an Twitch oder an mir?",
+        "a": "Meistens liegt es an Ihrem Browser. Wenn der Fehler alle Kanäle und alle Ihre Geräte gleichzeitig betrifft, könnte es sich um eine Störung auf Seiten von Twitch handeln."
+      },
+      {
+        "q": "Sollte ich meinen Werbeblocker deinstallieren?",
+        "a": "Nein. Man muss die Wiedergabe auf twitch.tv lediglich pausieren und die Domain zur Whitelist hinzufügen."
+      },
+      {
+        "q": "Verliere ich durch die automatische Aufladung meinen Platz im Live-Stream?",
+        "a": "Der Stream wird live fortgesetzt, genau wie bei einem manuellen Neuladen, jedoch ohne Ihr Zutun."
+      },
+      {
+        "q": "Könnte das Problem an meiner Internetverbindung liegen?",
+        "a": "Das ist möglich, kommt aber selten vor. Wenn das Surfen ansonsten reibungslos funktioniert, liegt das Problem wahrscheinlich nicht an der Verbindung."
+      }
+    ]
+  },
+  "it": {
+    "slug": "errore-2000-twitch-soluzione",
+    "linkLabel": "Errore 2000 su Twitch: come risolverlo",
+    "title": "Errore 2000 su Twitch: cause e soluzioni | StreamPulse",
+    "h1": "Errore 2000 su Twitch: perché si verifica e come risolverlo",
+    "description": "L'errore 2000 di Twitch segnala un'interruzione della connessione di rete con il lettore. Cause effettive, soluzioni ordinate per efficacia e ricaricamento automatico.",
+    "intro": "L'errore 2000 (“Network Error”) interrompe il lettore Twitch durante la riproduzione e richiede il ricaricamento manuale della pagina. È quasi sempre dovuto a una richiesta bloccata tra il browser e i server di Twitch, non a un malfunzionamento della connessione. Ecco le cause effettive, le soluzioni classificate dalla più efficace alla meno efficace e come evitare di dover ricaricare manualmente la pagina.",
+    "howToSteps": [
+      {
+        "name": "Disattivare temporaneamente il blocco degli annunci pubblicitari",
+        "text": "A volte i blocchi pubblicitari intercettano le richieste del lettore di Twitch. Metti in pausa il blocco pubblicitario su twitch.tv e aggiorna la pagina per verificare la causa."
+      },
+      {
+        "name": "Svuotare la cache e i cookie di Twitch",
+        "text": "Un token di sessione danneggiato causa ripetuti errori di rete. Elimina i cookie del dominio twitch.tv, quindi effettua nuovamente l'accesso."
+      },
+      {
+        "name": "Prova in modalità di navigazione privata",
+        "text": "Se lo streaming funziona in una finestra privata, la causa è un'estensione installata. Riattivale una alla volta per individuare quale sia."
+      },
+      {
+        "name": "Automatizzare il ricaricamento",
+        "text": "Installa StreamPulse e attiva il riavvio automatico in modo che il lettore si riavvii da solo non appena si verifica un errore 1000, 2000 o 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Cosa significa l'errore 2000 su Twitch?",
+        "answer": "L'errore 2000 è un errore di rete: il lettore Twitch non è riuscito a stabilire o a mantenere la connessione necessaria per la riproduzione dello streaming. Nella maggior parte dei casi, è stata un'estensione del browser o un blocco pubblicitario a interrompere la richiesta, e non la tua connessione a Internet.",
+        "body": [
+          "Questo spiega perché il resto della navigazione funziona normalmente mentre il live si blocca: il problema è limitato alle richieste del lettore."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Quali sono le cause più frequenti?",
+        "answer": "In ordine di frequenza: i blocca-pubblicità, i cookie di sessione danneggiati, le estensioni di terze parti legate a Twitch, seguite dalle VPN e dalle reti aziendali con filtri.",
+        "list": [
+          "<strong>Bloccatori di pubblicità.</strong> È la causa più comune, poiché filtrano le richieste del lettore insieme alla pubblicità.",
+          "<strong>Cookie di sessione danneggiati.</strong> Provocano ripetute interruzioni su tutti i canali.",
+          "<strong>Estensioni di terze parti.</strong> Alcune inseriscono codice nel lettore e ne compromettono il funzionamento.",
+          "<strong>VPN e reti con filtri.</strong> Il routing blocca una parte dei domini di diffusione.",
+          "<strong>Accelerazione hardware. È un fenomeno</strong> più raro, ma provoca errori di decodifica su alcune GPU."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Come risolvere l'errore 2000 passo dopo passo?",
+        "answer": "Inizia disattivando temporaneamente il tuo blocco pubblicitario su twitch.tv, quindi cancella i cookie relativi a quel dominio. Queste due operazioni risolvono la stragrande maggioranza dei casi; il test in modalità di navigazione privata serve a individuare l'estensione responsabile.",
+        "steps": [
+          {
+            "name": "Metti il blocco in pausa.",
+            "text": "Solo su twitch.tv, poi ricaricate la pagina. Se la diretta riprende, avete individuato la causa."
+          },
+          {
+            "name": "Svuota la cache e i cookie di Twitch.",
+            "text": "Seleziona il dominio twitch.tv anziché tutta la cronologia, quindi effettua nuovamente l'accesso."
+          },
+          {
+            "name": "Provalo in modalità di navigazione privata.",
+            "text": "Le estensioni sono disattivate: se tutto funziona, riattivale una alla volta."
+          },
+          {
+            "name": "Modifica la qualità dello streaming.",
+            "text": "Passare manualmente a 720p consente di aggirare alcuni problemi legati alla larghezza di banda."
+          },
+          {
+            "name": "Disattivare l'accelerazione hardware.",
+            "text": "Nelle impostazioni del browser, come ultima risorsa se gli errori persistono."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Come si fa a evitare di ricaricare la pagina ogni volta?",
+        "answer": "StreamPulse rileva gli errori di lettura 1000, 2000 e 3000 e ricarica automaticamente il flusso, eliminando così la necessità di un'interruzione manuale. Si tratta di una soluzione temporanea al sintomo: non sostituisce la correzione della causa.",
+        "body": [
+          "L'automazione è utile quando l'errore continua a verificarsi sporadicamente nonostante le correzioni, in particolare durante sessioni prolungate o in caso di connessioni instabili.",
+          "Se l'errore si verifica continuamente su tutti i canali, risolvete innanzitutto la causa: un ricaricamento continuo non farebbe altro che mascherare il problema."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Errori 1000, 3000, 4000: quali differenze?",
+        "answer": "Il codice indica dove si è verificato l'errore di riproduzione. 1000 corrisponde a un'interruzione della risorsa video, 2000 a un errore di rete, 3000 a un errore di decodifica del file multimediale e 4000 a una risorsa non disponibile o a un formato non supportato.",
+        "table": {
+          "head": [
+            "Codice",
+            "Significato",
+            "Piste principale"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Lettura interrotta",
+              "Ricaricare, controllare le estensioni"
+            ],
+            [
+              "2000",
+              "Errore di rete",
+              "Blocco di pubblicità e cookie"
+            ],
+            [
+              "3000",
+              "Errore di decodifica del file multimediale",
+              "Accelerazione hardware, browser"
+            ],
+            [
+              "4000",
+              "Risorsa non supportata",
+              "Altra scheda in lettura, formato"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "L'errore 2000 dipende da Twitch o da me?",
+        "a": "Il più delle volte dal tuo browser. Se l'errore riguarda tutti i canali e tutti i tuoi dispositivi contemporaneamente, potrebbe trattarsi di un problema da parte di Twitch."
+      },
+      {
+        "q": "Devo disinstallare il mio blocco pubblicitario?",
+        "a": "No. Basta mettere in pausa la trasmissione su twitch.tv aggiungendo il dominio alla lista bianca."
+      },
+      {
+        "q": "La ricarica automatica mi fa perdere il mio posto nella diretta?",
+        "a": "Il flusso riprende in tempo reale, come nel caso di un ricaricamento manuale, ma senza alcun intervento da parte vostra."
+      },
+      {
+        "q": "Il problema potrebbe dipendere dalla mia connessione?",
+        "a": "È possibile, ma non capita spesso. Se la navigazione rimane comunque fluida, probabilmente il problema non è dovuto alla connessione."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "błąd-2000-twitch-rozwiązanie",
+    "linkLabel": "Błąd 2000 na Twitchu: jak go naprawić",
+    "title": "Błąd 2000 na Twitchu: przyczyny i rozwiązania | StreamPulse",
+    "h1": "Błąd 2000 na Twitchu: dlaczego się pojawia i jak go naprawić",
+    "description": "Błąd 2000 serwisu Twitch wskazuje na przerwę w połączeniu sieciowym z odtwarzaczem. Rzeczywiste przyczyny, rozwiązania uporządkowane według skuteczności oraz automatyczne ponowne ładowanie.",
+    "intro": "Błąd 2000 („Network Error”) powoduje przerwanie odtwarzania w odtwarzaczu Twitch i wymaga ręcznego odświeżenia strony. Prawie zawsze wynika on z zablokowanego żądania między przeglądarką a serwerami Twitch, a nie z awarii połączenia internetowego. Oto rzeczywiste przyczyny tego błędu, sposoby jego usunięcia uporządkowane od najbardziej do najmniej skutecznych oraz wskazówki, jak uniknąć konieczności ręcznego odświeżania strony.",
+    "howToSteps": [
+      {
+        "name": "Tymczasowe wyłączenie blokady reklam",
+        "text": "Blokery czasami przechwytują żądania od odtwarzacza serwisu Twitch. Wstrzymaj działanie blokera na stronie twitch.tv i odśwież stronę, aby sprawdzić, czy to jest przyczyną."
+      },
+      {
+        "name": "Wyczyść pamięć podręczną i pliki cookie serwisu Twitch",
+        "text": "Uszkodzony token sesji powoduje powtarzające się błędy sieciowe. Usuń pliki cookie z domeny twitch.tv, a następnie zaloguj się ponownie."
+      },
+      {
+        "name": "Wypróbuj w trybie incognito",
+        "text": "Jeśli transmisja na żywo działa w oknie prywatnym, przyczyną jest zainstalowane rozszerzenie. Włącz je po kolei, aby ustalić, które z nich jest przyczyną."
+      },
+      {
+        "name": "Zautomatyzowanie ponownego ładowania",
+        "text": "Zainstaluj StreamPulse i włącz funkcję automatycznego ponownego uruchamiania, aby odtwarzacz uruchamiał się samoczynnie w przypadku wystąpienia błędu 1000, 2000 lub 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Co oznacza błąd 2000 na Twitchu?",
+        "answer": "Błąd 2000 to błąd sieciowy: odtwarzacz Twitch nie mógł nawiązać ani utrzymać połączenia niezbędnego do odtworzenia transmisji. W większości przypadków przyczyną przerwania żądania jest rozszerzenie przeglądarki lub program blokujący reklamy, a nie połączenie internetowe.",
+        "body": [
+          "To właśnie wyjaśnia, dlaczego pozostałe elementy przeglądarki działają normalnie, podczas gdy transmisja na żywo się zawiesza: problem dotyczy wyłącznie żądań odtwarzacza."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Jakie są najczęstsze przyczyny?",
+        "answer": "W kolejności według częstotliwości występowania: programy blokujące reklamy, uszkodzone pliki cookie sesji, rozszerzenia innych firm powiązane z serwisem Twitch, a następnie sieci VPN i filtrujące sieci firmowe.",
+        "list": [
+          "<strong>Programy blokujące reklamy.</strong> Najczęstsza przyczyna, ponieważ filtrują one żądania przeglądarki wraz z reklamami.",
+          "<strong>Uszkodzone pliki cookie sesji.</strong> Powodują powtarzające się przerwy we wszystkich kanałach.",
+          "<strong>Rozszerzenia innych producentów.</strong> Niektóre z nich wstrzykują kod do odtwarzacza i powodują jego niestabilność.",
+          "<strong>VPN i sieci z filtrami.</strong> Routing blokuje część domen rozgłoszeniowych.",
+          "<strong>Przyspieszenie sprzętowe.</strong> Występuje rzadziej, ale powoduje błędy dekodowania na niektórych procesorach graficznych."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Jak krok po kroku usunąć błąd 2000?",
+        "answer": "Najpierw wyłącz na chwilę blokadę reklam na stronie twitch.tv, a następnie wyczyść pliki cookie tej domeny. Te dwie czynności rozwiązują problem w zdecydowanej większości przypadków; test w trybie incognito służy do zidentyfikowania rozszerzenia, które powoduje problem.",
+        "steps": [
+          {
+            "name": "Wstrzymaj działanie blokady.",
+            "text": "Tylko na twitch.tv, a potem odśwież stronę. Jeśli transmisja na żywo ruszy ponownie, to znaczy, że znalazłeś przyczynę."
+          },
+          {
+            "name": "Wyczyść pamięć podręczną i pliki cookie serwisu Twitch.",
+            "text": "Skieruj wyszukiwanie na domenę twitch.tv zamiast na całą historię przeglądania, a następnie zaloguj się ponownie."
+          },
+          {
+            "name": "Wypróbuj w trybie incognito.",
+            "text": "Rozszerzenia są tam wyłączone: jeśli wszystko działa poprawnie, włącz je ponownie jedno po drugim."
+          },
+          {
+            "name": "Zmień jakość transmisji.",
+            "text": "Ręczne przełączenie na rozdzielczość 720p pozwala ominąć niektóre problemy związane z przepustowością łącza."
+          },
+          {
+            "name": "Wyłącz przyspieszenie sprzętowe.",
+            "text": "W ustawieniach przeglądarki – w ostateczności, jeśli błędy nadal występują."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Jak uniknąć konieczności ponownego ładowania strony za każdym razem?",
+        "answer": "StreamPulse wykrywa błędy odtwarzacza 1000, 2000 i 3000 oraz automatycznie ponownie ładuje strumień, co eliminuje konieczność ręcznego przerywania odtwarzania. Jest to jedynie obejście objawu: nie zastępuje to usunięcia przyczyny.",
+        "body": [
+          "Automatyzacja jest przydatna, gdy błąd nadal występuje sporadycznie pomimo zastosowania poprawek, zwłaszcza podczas długich sesji lub przy niestabilnych połączeniach.",
+          "Jeśli błąd pojawia się nieustannie na wszystkich kanałach, należy najpierw usunąć jego przyczynę: ciągłe ponowne ładowanie tylko zamaskowałoby problem."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Błędy 1000, 3000, 4000: czym się różnią?",
+        "answer": "Kod wskazuje, gdzie wystąpił błąd odtwarzania. Kod 1000 oznacza przerwanie odtwarzania zasobu wideo, 2000 – błąd sieciowy, 3000 – niepowodzenie dekodowania multimediów, a 4000 – niedostępny zasób lub nieobsługiwany format.",
+        "table": {
+          "head": [
+            "Kod",
+            "Znaczenie",
+            "Główne trasy"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Przerwane czytanie",
+              "Odświeżyć stronę, sprawdzić rozszerzenia"
+            ],
+            [
+              "2000",
+              "Błąd sieciowy",
+              "Blokowanie reklam i plików cookie"
+            ],
+            [
+              "3000",
+              "Błąd dekodowania pliku multimedialnego",
+              "Przyspieszenie sprzętowe, przeglądarka"
+            ],
+            [
+              "4000",
+              "Nieobsługiwany zasób",
+              "Inna zakładka w trybie odczytu, format"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy błąd 2000 wynika z serwisu Twitch, czy z mojej strony?",
+        "a": "Najczęściej wynika to z przeglądarki. Jeśli błąd dotyczy wszystkich kanałów i wszystkich urządzeń jednocześnie, może to oznaczać awarię po stronie serwisu Twitch."
+      },
+      {
+        "q": "Czy powinienem odinstalować mój program blokujący reklamy?",
+        "a": "Nie. Wystarczy wstrzymać transmisję na twitch.tv, dodając tę domenę do białej listy."
+      },
+      {
+        "q": "Czy automatyczne odświeżanie powoduje utratę mojego miejsca w transmisji na żywo?",
+        "a": "Transmisja wznawia się na żywo, tak jak w przypadku ręcznego odświeżania, ale bez konieczności podejmowania jakichkolwiek działań z Państwa strony."
+      },
+      {
+        "q": "Czy problem może wynikać z mojego połączenia internetowego?",
+        "a": "Jest to możliwe, ale rzadko się zdarza. Jeśli przeglądanie stron przebiega płynnie w pozostałych przypadkach, prawdopodobnie nie jest to spowodowane połączeniem."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "hata-2000-twitch-çözüm",
+    "linkLabel": "Twitch'te 2000 hatası: nasıl düzeltilir?",
+    "title": "Twitch Hata 2000: Nedenleri ve Çözümleri | StreamPulse",
+    "h1": "Twitch'te 2000 hatası: Neden ortaya çıkıyor ve nasıl giderilir?",
+    "description": "Twitch'teki 2000 hatası, oynatıcıya giden ağ bağlantısında bir kesinti olduğunu gösterir. Gerçek nedenler, etkinliğe göre sıralanmış çözümler ve otomatik yeniden yükleme.",
+    "intro": "2000 hatası (“Ağ Hatası”), Twitch oynatıcısını oynatma sırasında durdurur ve sayfanın manuel olarak yeniden yüklenmesini gerektirir. Bu hata neredeyse her zaman tarayıcınız ile Twitch sunucuları arasında tıkanan bir istekten kaynaklanır; internet bağlantınızda bir arıza nedeniyle değildir. İşte bu hatanın gerçek nedenleri, en etkili olandan en az etkili olana doğru sıralanmış çözümler ve sayfayı kendiniz yeniden yüklemek zorunda kalmamanın yolları.",
+    "howToSteps": [
+      {
+        "name": "Reklam engelleyiciyi geçici olarak devre dışı bırakma",
+        "text": "Engelleyiciler bazen Twitch oynatıcısından gelen istekleri engeller. Twitch.tv'de engelleyiciyi geçici olarak devre dışı bırakın ve sayfayı yeniden yükleyerek sorunun nedenini doğrulayın."
+      },
+      {
+        "name": "Twitch önbelleğini ve çerezlerini temizle",
+        "text": "Bozuk bir oturum jetonu, tekrarlanan ağ hatalarına neden oluyor. twitch.tv etki alanına ait çerezleri silin ve ardından yeniden oturum açın."
+      },
+      {
+        "name": "Gizli modda dene",
+        "text": "Canlı yayın özel pencerede çalışıyorsa, bunun nedeni yüklü bir uzantıdır. Hangi uzantının soruna yol açtığını belirlemek için uzantıları tek tek yeniden etkinleştirin."
+      },
+      {
+        "name": "Yenilemeyi otomatikleştirmek",
+        "text": "StreamPulse'u kurun ve otomatik yeniden yükleme özelliğini etkinleştirin; böylece 1000, 2000 veya 3000 hatası oluştuğunda oynatıcı kendiliğinden yeniden başlatılacaktır."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Twitch'te 2000 hatası ne anlama geliyor?",
+        "answer": "2000 hatası bir ağ hatasıdır: Twitch oynatıcı, akışı oynatmak için gerekli bağlantıyı kuramadı veya sürdüremedi. Çoğu durumda, internet bağlantınız değil, bir tarayıcı eklentisi veya reklam engelleyici bir isteği kesintiye uğratmıştır.",
+        "body": [
+          "Canlı yayın çöktüğü halde tarama işleminizin geri kalan kısmının normal şekilde devam etmesinin nedeni budur: sorun, oynatıcıya gelen isteklerde yatmaktadır."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "En sık görülen nedenler nelerdir?",
+        "answer": "Sıklık sırasına göre: reklam engelleyiciler, bozuk oturum çerezleri, Twitch ile ilgili üçüncü taraf uzantılar, ardından VPN’ler ve filtreleme uygulayan kurumsal ağlar.",
+        "list": [
+          "<strong>Reklam engelleyiciler.</strong> En yaygın neden budur, çünkü bu programlar reklamlarla birlikte okuyucunun isteklerini de filtreler.",
+          "<strong>Bozuk oturum çerezleri.</strong> Tüm kanallarda tekrarlanan kesintilere neden oluyor.",
+          "<strong>Üçüncü taraf eklentiler.</strong> Bazıları oynatıcıya kod enjekte ederek sistemin dengesini bozar.",
+          "<strong>VPN ve filtreleme ağları.</strong> Yönlendirme, yayın alan adlarının bir kısmını engelliyor.",
+          "<strong>Donanım hızlandırma.</strong> Daha nadir görülür, ancak bazı GPU’larda kod çözme hatalarına neden olur."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "2000 hatasını adım adım nasıl düzeltebilirim?",
+        "answer": "Öncelikle twitch.tv'de reklam engelleyicinizi geçici olarak devre dışı bırakın, ardından bu alan adının çerezlerini temizleyin. Bu iki işlem, sorunların büyük çoğunluğunu çözer; gizli modda test etmek ise soruna neden olan uzantıyı tespit etmeye yarar.",
+        "steps": [
+          {
+            "name": "Engelleyiciyi duraklatın.",
+            "text": "Sadece twitch.tv'de yapın, ardından yeniden yükleyin. Canlı yayın yeniden başlarsa, sorunun nedenini bulmuş olursunuz."
+          },
+          {
+            "name": "Twitch önbelleğini ve çerezlerini temizleyin.",
+            "text": "Tüm geçmişiniz yerine twitch.tv alanını hedefleyin, ardından yeniden oturum açın."
+          },
+          {
+            "name": "Gizli modda deneyin.",
+            "text": "Eklentiler burada devre dışı bırakılmıştır: Her şey düzgün çalışıyorsa, eklentileri tek tek yeniden etkinleştirin."
+          },
+          {
+            "name": "Akış kalitesini değiştirin.",
+            "text": "720p'ye manuel olarak geçmek, bazı bant genişliği sorunlarını ortadan kaldırır."
+          },
+          {
+            "name": "Donanım hızlandırmayı devre dışı bırakın.",
+            "text": "Hatalar devam ederse, son çare olarak tarayıcı ayarlarından."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Her seferinde sayfanın yeniden yüklenmesini nasıl önleyebilirim?",
+        "answer": "StreamPulse, 1000, 2000 ve 3000 numaralı okuyucu hatalarını algılar ve akışı otomatik olarak yeniden yükler; böylece manuel olarak kesintiye gerek kalmaz. Bu, sorunun belirtisini geçici olarak gideren bir çözümdür: sorunun kaynağını ortadan kaldırmaz.",
+        "body": [
+          "Otomasyon, özellikle uzun oturumlarda veya kararsız bağlantılarda, düzeltmelere rağmen hatanın ara sıra ortaya çıkmaya devam etmesi durumunda yararlıdır.",
+          "Hata tüm kanallarda sürekli olarak ortaya çıkıyorsa, öncelikle sorunun kaynağını giderin: Sürekli yeniden yükleme yapmak, sorunu sadece gizlemeye yarar."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "1000, 3000, 4000 hataları: Aralarındaki farklar nelerdir?",
+        "answer": "Kod, oynatmanın nerede başarısız olduğunu gösterir. 1000, video kaynağında bir kesintiye; 2000, bir ağ hatasına; 3000, medya kod çözme hatasına; 4000 ise kaynağın mevcut olmamasına veya desteklenmeyen bir biçime karşılık gelir.",
+        "table": {
+          "head": [
+            "Kod",
+            "Anlamı",
+            "Ana pistler"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Okuma kesildi",
+              "Yeniden yükle, eklentileri kontrol et"
+            ],
+            [
+              "2000",
+              "Ağ hatası",
+              "Reklam engelleyici, çerezler"
+            ],
+            [
+              "3000",
+              "Medya kod çözme başarısızlığı",
+              "Donanım hızlandırma, tarayıcı"
+            ],
+            [
+              "4000",
+              "Desteklenmeyen kaynak",
+              "Okuma modunda başka bir sekme, biçim"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "2000 hatası Twitch'ten mi kaynaklanıyor, yoksa benden mi?",
+        "a": "Çoğunlukla tarayıcınızdan kaynaklanır. Hata tüm kanalları ve tüm cihazlarınızı aynı anda etkiliyorsa, bu durum Twitch tarafında meydana gelen bir sorun olabilir."
+      },
+      {
+        "q": "Reklam engelleyicimi kaldırmam gerekir mi?",
+        "a": "Hayır. Etki alanını beyaz listeye ekleyerek twitch.tv'de yayını duraklatmak yeterlidir."
+      },
+      {
+        "q": "Otomatik yenileme, canlı yayındaki sıralamamda gerilememe neden olur mu?",
+        "a": "Akış, manuel yeniden yükleme sırasında olduğu gibi canlı yayına devam eder, ancak sizin herhangi bir müdahaleniz gerekmez."
+      },
+      {
+        "q": "Sorun internet bağlantımdan kaynaklanıyor olabilir mi?",
+        "a": "Bu mümkün, ancak pek sık görülmez. Diğer açılarda gezinme deneyiminiz sorunsuz devam ediyorsa, sorun muhtemelen bağlantıda değildir."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "ошибка-2000-twitch-решение",
+    "linkLabel": "Ошибка 2000 на Twitch: как её исправить",
+    "title": "Ошибка 2000 на Twitch: причины и способы устранения | StreamPulse",
+    "h1": "Ошибка 2000 на Twitch: почему она возникает и как её устранить",
+    "description": "Ошибка 2000 на Twitch указывает на обрыв сетевого соединения с плеером. Реальные причины, способы устранения, отсортированные по эффективности, и автоматическая перезагрузка.",
+    "intro": "Ошибка 2000 («Network Error») прерывает работу плеера Twitch во время воспроизведения и требует ручной перезагрузки страницы. Она почти всегда связана с заблокированным запросом между вашим браузером и серверами Twitch, а не с сбоем вашего интернет-соединения. Ниже приведены реальные причины этой ошибки, способы её устранения, отсортированные от наиболее до наименее эффективных, а также рекомендации, как избежать необходимости перезагрузки страницы вручную.",
+    "howToSteps": [
+      {
+        "name": "Временно отключить блокировщик рекламы",
+        "text": "Блокировщики иногда перехватывают запросы клиента Twitch. Приостановите работу блокировщика на сайте twitch.tv и обновите страницу, чтобы убедиться в причине."
+      },
+      {
+        "name": "Очистить кэш и файлы cookie Twitch",
+        "text": "Поврежденный токен сеанса приводит к повторяющимся сетевым ошибкам. Удалите файлы cookie домена twitch.tv, а затем войдите в систему заново."
+      },
+      {
+        "name": "Проверить в режиме приватного просмотра",
+        "text": "Если прямая трансляция работает в отдельном окне, это связано с установленным расширением. Включите их по одному, чтобы определить, какое именно."
+      },
+      {
+        "name": "Автоматизация перезагрузки",
+        "text": "Установите StreamPulse и включите функцию автоматического перезапуска, чтобы проигрыватель запускался самостоятельно при возникновении ошибок 1000, 2000 или 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Что означает ошибка 2000 на Twitch?",
+        "answer": "Ошибка 2000 — это сетевая ошибка: плеер Twitch не смог установить или поддерживать соединение, необходимое для воспроизведения трансляции. В большинстве случаев причиной сбоя запроса стало расширение браузера или блокировщик рекламы, а не ваше интернет-соединение.",
+        "body": [
+          "Именно это объясняет, почему остальные функции браузера работают нормально, в то время как прямая трансляция зависает: проблема связана именно с запросами плеера."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Каковы наиболее распространённые причины?",
+        "answer": "В порядке убывания частоты: блокировщики рекламы, поврежденные сессионные файлы cookie, сторонние расширения, связанные с Twitch, а также VPN и корпоративные сети с фильтрацией.",
+        "list": [
+          "<strong>Блокировщики рекламы.</strong> Наиболее частая причина, поскольку они фильтруют запросы браузера вместе с рекламой.",
+          "<strong>Поврежденные сессионные файлы cookie.</strong> Приводят к повторяющимся сбоям на всех каналах.",
+          "<strong>Сторонние расширения.</strong> Некоторые из них вставляют код в плеер и приводят к его сбоям.",
+          "<strong>VPN и сети с фильтрацией.</strong> Маршрутизация блокирует часть доменов широкого распространения.",
+          "<strong>Аппаратное ускорение.</strong> Встречается реже, но на некоторых графических процессорах приводит к ошибкам декодирования."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Как пошагово устранить ошибку 2000?",
+        "answer": "Для начала приостановите работу блокировщика рекламы на сайте twitch.tv, а затем очистите файлы cookie этого домена. Эти два действия позволяют решить проблему в подавляющем большинстве случаев; проверка в режиме приватного просмотра нужна для того, чтобы выявить виновную расширенную функцию.",
+        "steps": [
+          {
+            "name": "Приостановите работу блокиратора.",
+            "text": "Только на twitch.tv, а затем обновите страницу. Если прямая трансляция возобновится, вы узнаете причину."
+          },
+          {
+            "name": "Очистите кэш и файлы cookie Twitch.",
+            "text": "Укажите домен twitch.tv вместо всей истории просмотров, а затем войдите в систему заново."
+          },
+          {
+            "name": "Попробуйте в режиме инкогнито.",
+            "text": "Расширения там отключены: если всё работает, включите их по одному."
+          },
+          {
+            "name": "Измените качество потока.",
+            "text": "Переключение в режим 720p вручную позволяет обойти некоторые проблемы, связанные с пропускной способностью канала."
+          },
+          {
+            "name": "Отключите аппаратное ускорение.",
+            "text": "В настройках браузера — в крайнем случае, если ошибки не исчезают."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Как избежать перезагрузки страницы каждый раз?",
+        "answer": "StreamPulse обнаруживает ошибки считывателя 1000, 2000 и 3000 и автоматически перезагружает поток, что исключает необходимость ручного прерывания. Это лишь обходной путь для устранения симптома: он не заменяет устранение причины.",
+        "body": [
+          "Автоматизация полезна в тех случаях, когда ошибка продолжает возникать время от времени, несмотря на исправления, особенно при длительных сеансах работы или нестабильных подключениях.",
+          "Если ошибка постоянно возникает на всех каналах, сначала устраните её причину: повторная загрузка в цикле лишь замаскирует проблему."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Ошибки 1000, 3000, 4000: в чём разница?",
+        "answer": "Код указывает, в чем заключалась причина сбоя при воспроизведении. Код 1000 означает сбой при доступе к видеоресурсу, 2000 — сетевую ошибку, 3000 — сбой декодирования медиафайла, а 4000 — недоступность ресурса или неподдерживаемый формат.",
+        "table": {
+          "head": [
+            "Код",
+            "Значение",
+            "Главные трассы"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Чтение прервано",
+              "Обновить, проверить расширения"
+            ],
+            [
+              "2000",
+              "Сетевая ошибка",
+              "Блокировщик рекламы и файлов cookie"
+            ],
+            [
+              "3000",
+              "Ошибка декодирования медиафайла",
+              "Аппаратное ускорение, браузер"
+            ],
+            [
+              "4000",
+              "Неподдерживаемый ресурс",
+              "Другая вкладка в режиме чтения, формат"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ошибка 2000 — это проблема со стороны Twitch или со стороны меня?",
+        "a": "Чаще всего это связано с вашим браузером. Если ошибка затрагивает все каналы и все ваши устройства одновременно, возможно, это сбой на стороне Twitch."
+      },
+      {
+        "q": "Стоит ли удалить мой блокировщик рекламы?",
+        "a": "Нет. Достаточно поставить его на паузу на twitch.tv, добавив домен в белый список."
+      },
+      {
+        "q": "Приведет ли автоматическое пополнение счета к потере моего места в прямом эфире?",
+        "a": "Трансляция возобновляется в режиме реального времени, как при ручной перезагрузке, но без вашего участия."
+      },
+      {
+        "q": "Может ли проблема быть связана с моим подключением?",
+        "a": "Это возможно, но случается нечасто. Если в остальном работа браузера остается плавной, то, скорее всего, проблема не в подключении."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "エラー-2000-Twitch-解決策",
+    "linkLabel": "Twitchでエラー2000が発生した場合：解決方法",
+    "title": "Twitchのエラー2000：原因と解決策 | StreamPulse",
+    "h1": "Twitchのエラー2000：発生原因と解決方法",
+    "description": "Twitchのエラー2000は、プレイヤーへのネットワーク接続が切断されたことを示しています。実際の原因、効果の高い順に並べた解決策、および自動再読み込みについて解説します。",
+    "intro": "エラー2000（「Network Error」）が発生すると、Twitchのプレイヤーが再生中に中断され、手動でページを再読み込みする必要があります。このエラーは、ほぼ例外なく、お使いのブラウザとTwitchのサーバー間の通信が遮断されたことが原因であり、接続障害によるものではありません。 ここでは、実際の原因、効果的な順に並べた対処法、そして手動での再読み込みを回避する方法について解説します。",
+    "howToSteps": [
+      {
+        "name": "広告ブロッカーを一時的に無効にする",
+        "text": "ブロック機能によって、Twitchプレイヤーからのリクエストが遮断されることがあります。twitch.tvでブロック機能を一時停止し、ページを再読み込みして原因を確認してください。"
+      },
+      {
+        "name": "Twitchのキャッシュとクッキーを削除する",
+        "text": "セッショントークンが破損しているため、ネットワークエラーが繰り返し発生しています。twitch.tv ドメインのクッキーを削除してから、再度ログインしてください。"
+      },
+      {
+        "name": "シークレットモードで試す",
+        "text": "ライブ配信がプライベートウィンドウで動作している場合は、インストール済みの拡張機能が原因です。拡張機能を1つずつ有効にして、原因となっているものを特定してください。"
+      },
+      {
+        "name": "再読み込みの自動化",
+        "text": "StreamPulseをインストールし、自動再読み込みを有効にしてください。これにより、エラー1000、2000、または3000が発生した際に、プレーヤーが自動的に再起動するようになります。"
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Twitchでのエラー2000とはどういう意味ですか？",
+        "answer": "エラー 2000 はネットワークエラーです。Twitch プレイヤーが、ストリームの再生に必要な接続を確立または維持できませんでした。ほとんどの場合、インターネット接続の問題ではなく、ブラウザの拡張機能や広告ブロッカーがリクエストを妨げていることが原因です。",
+        "body": [
+          "これが、ライブ配信がクラッシュしている間も、それ以外のブラウジングが正常に動作する理由です。問題は、プレーヤーからのリクエストに限定されているからです。"
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "最もよくある原因は何ですか？",
+        "answer": "頻度の高い順に：広告ブロッカー、破損したセッションクッキー、Twitch関連のサードパーティ製拡張機能、そしてVPNやフィルタリング機能のある企業ネットワーク。",
+        "list": [
+          "<strong>広告ブロッカー。</strong>広告とともにプレイヤーのリクエストもフィルタリングしてしまうため、これが最も一般的な原因です。",
+          "<strong>セッションクッキーが破損しています。</strong>これにより、すべてのチャンネルで繰り返し放送が中断されます。",
+          "<strong>サードパーティ製の拡張機能。</strong>中には、プレイヤーにコードを注入して動作を不安定にさせるものもあります。",
+          "<strong>VPNとフィルタリングネットワーク。</strong>ルーティングにより、一部の配信ドメインがブロックされます。",
+          "<strong>ハードウェアアクセラレーション。</strong>発生頻度は低いものの、一部のGPUではデコードエラーを引き起こす。"
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "エラー2000を段階的に修正するにはどうすればよいですか？",
+        "answer": "まず、twitch.tvで広告ブロッカーを一時停止し、そのドメインのクッキーを削除してください。この2つの操作で、ほとんどの問題は解決します。プライベートブラウジングでのテストは、原因となっている拡張機能を特定するために行います。",
+        "steps": [
+          {
+            "name": "ブロッカーを一時停止してください。",
+            "text": "twitch.tvでのみ視聴し、その後ページを更新してください。ライブ配信が再開されれば、原因が特定できます。"
+          },
+          {
+            "name": "Twitchのキャッシュとクッキーを削除してください。",
+            "text": "閲覧履歴全体ではなく、twitch.tv ドメインを指定してから、再度ログインしてください。"
+          },
+          {
+            "name": "シークレットモードで試してみてください。",
+            "text": "拡張機能は無効になっています。すべて正常に動作する場合は、拡張機能を1つずつ有効にしてください。"
+          },
+          {
+            "name": "ストリームの画質を変更してください。",
+            "text": "手動で720pに切り替えることで、帯域幅に関する一部の問題を回避できます。"
+          },
+          {
+            "name": "ハードウェアアクセラレーションを無効にしてください。",
+            "text": "エラーが解消されない場合は、最終手段としてブラウザの設定を確認してください。"
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "毎回ページを再読み込みせずに済む方法はありますか？",
+        "answer": "StreamPulseは、リーダーエラー1000、2000、3000を検出し、ストリームを自動的に再読み込みするため、手動による中断が不要になります。これは症状に対する回避策であり、根本原因の修正に代わるものではありません。",
+        "body": [
+          "修正を施してもエラーが散発的に発生し続ける場合、特に長時間のセッションや接続が不安定な状況では、自動化が役立ちます。",
+          "すべてのチャンネルでエラーが継続的に発生する場合は、まずその原因に対処してください。再読み込みを繰り返しても、問題を隠してしまうだけになります。"
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "エラー1000、3000、4000：どのような違いがあるのでしょうか？",
+        "answer": "このコードは、再生が失敗した箇所を示しています。1000は動画リソースの中断、2000はネットワークエラー、3000はメディアのデコード失敗、4000はリソースが利用できないか、サポートされていない形式であることを示します。",
+        "table": {
+          "head": [
+            "コード",
+            "意味",
+            "メインコース"
+          ],
+          "rows": [
+            [
+              "1000",
+              "中断された再生",
+              "再読み込み、拡張機能の確認"
+            ],
+            [
+              "2000",
+              "ネットワークエラー",
+              "広告ブロッカー、クッキー"
+            ],
+            [
+              "3000",
+              "メディアのデコードに失敗しました",
+              "ハードウェアアクセラレーション、ブラウザ"
+            ],
+            [
+              "4000",
+              "サポート対象外のリソース",
+              "再生中の別のタブ、フォーマット"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "エラー2000はTwitch側の問題なのか、それとも私の問題なのか？",
+        "a": "多くの場合、お使いのブラウザが原因です。すべてのチャンネルやすべてのデバイスで同時にエラーが発生している場合は、Twitch側のトラブルである可能性があります。"
+      },
+      {
+        "q": "広告ブロッカーをアンインストールしたほうがいいのでしょうか？",
+        "a": "いいえ。twitch.tvで一時停止し、そのドメインをホワイトリストに追加するだけで済みます。"
+      },
+      {
+        "q": "自動リロードをすると、ライブ配信での自分の位置がずれてしまいますか？",
+        "a": "ストリームは、手動で再読み込みを行った場合と同様にライブ配信が再開されますが、ユーザー側での操作は不要です。"
+      },
+      {
+        "q": "この問題は、私のインターネット接続に原因があるのでしょうか？",
+        "a": "その可能性はありますが、あまり頻繁には起こりません。それ以外の点でブラウジングがスムーズに動作しているなら、接続に問題がある可能性は低いでしょう。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "오류-2000-트위치-해결 방법",
+    "linkLabel": "Twitch에서 발생하는 오류 2000: 해결 방법",
+    "title": "Twitch 오류 2000: 원인 및 해결 방법 | StreamPulse",
+    "h1": "Twitch에서 발생하는 오류 2000: 원인과 해결 방법",
+    "description": "Twitch의 오류 2000은 플레이어와의 네트워크 연결이 끊어진 것을 나타냅니다. 실제 원인, 효과 순으로 정리된 해결 방법, 그리고 자동 새로고침 기능에 대해 알아보세요.",
+    "intro": "오류 2000(“Network Error”)이 발생하면 Twitch 플레이어가 재생 도중에 중단되고 페이지를 수동으로 새로 고쳐야 합니다. 이 오류는 거의 항상 브라우저와 Twitch 서버 간에 요청이 차단된 것과 관련이 있으며, 인터넷 연결 장애 때문은 아닙니다. 다음은 실제 원인, 효과도가 높은 순서대로 정리된 해결 방법, 그리고 직접 페이지를 새로 고침해야 하는 상황을 피하는 방법을 소개합니다.",
+    "howToSteps": [
+      {
+        "name": "광고 차단 기능을 일시적으로 비활성화하기",
+        "text": "차단 프로그램이 때때로 Twitch 플레이어의 요청을 가로채기도 합니다. twitch.tv에서 차단 프로그램을 일시 중지한 후 페이지를 새로 고침하여 원인을 확인해 보세요."
+      },
+      {
+        "name": "Twitch 캐시 및 쿠키 삭제하기",
+        "text": "세션 토큰이 손상되어 네트워크 오류가 반복적으로 발생합니다. twitch.tv 도메인의 쿠키를 삭제한 후 다시 로그인하세요."
+      },
+      {
+        "name": "시크릿 모드에서 테스트하기",
+        "text": "라이브 방송이 비공개 창에서 실행된다면, 설치된 확장 프로그램 중 하나가 원인일 수 있습니다. 확장 프로그램을 하나씩 다시 활성화하여 문제가 되는 확장 프로그램을 찾아보세요."
+      },
+      {
+        "name": "자동 재충전",
+        "text": "StreamPulse를 설치하고 자동 재시작 기능을 활성화하면, 오류 코드 1000, 2000 또는 3000이 발생했을 때 플레이어가 자동으로 다시 시작됩니다."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Twitch에서 오류 2000은 무엇을 의미하나요?",
+        "answer": "오류 2000은 네트워크 오류입니다. Twitch 플레이어가 스트림 재생에 필요한 연결을 설정하거나 유지할 수 없었습니다. 대부분의 경우, 인터넷 연결 문제가 아니라 브라우저 확장 프로그램이나 광고 차단기가 요청을 차단한 것이 원인입니다.",
+        "body": [
+          "이것이 라이브가 중단되는 동안 나머지 브라우징 기능은 정상적으로 작동하는 이유입니다. 문제는 플레이어에서 발생하는 요청에만 국한되어 있기 때문입니다."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "가장 흔한 원인은 무엇인가요?",
+        "answer": "빈도 순으로 보면: 광고 차단기, 손상된 세션 쿠키, Twitch와 관련된 타사 확장 프로그램, 그리고 VPN 및 필터링이 적용된 기업 네트워크 순입니다.",
+        "list": [
+          "<strong>광고 차단기.</strong> 광고와 함께 플레이어의 요청도 함께 차단하기 때문에 가장 흔한 원인입니다.",
+          "<strong>세션 쿠키가 손상되었습니다.</strong> 이로 인해 모든 채널에서 반복적으로 방송이 중단되고 있습니다.",
+          "<strong>타사 확장 프로그램.</strong> 일부는 플레이어에 코드를 삽입하여 정상적인 작동을 방해합니다.",
+          "<strong>VPN 및 필터링 네트워크.</strong> 라우팅으로 인해 일부 방송 도메인이 차단됩니다.",
+          "<strong>하드웨어 가속.</strong> 드물게 발생하지만, 일부 GPU에서는 디코딩 오류를 유발합니다."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "오류 2000을 단계별로 어떻게 해결할 수 있나요?",
+        "answer": "먼저 twitch.tv에서 광고 차단 기능을 일시 중지한 다음, 해당 도메인의 쿠키를 삭제하세요. 이 두 가지 조치만으로도 대부분의 문제가 해결됩니다. 시크릿 모드에서 테스트하는 것은 문제가 되는 확장 프로그램을 파악하기 위한 것입니다.",
+        "steps": [
+          {
+            "name": "블로커를 일시 중지하세요.",
+            "text": "twitch.tv에서만 확인한 뒤 다시 새로고침하세요. 라이브 방송이 다시 시작되면 원인을 파악한 것입니다."
+          },
+          {
+            "name": "Twitch의 캐시와 쿠키를 삭제하세요.",
+            "text": "전체 기록보다는 twitch.tv 도메인을 대상으로 설정한 다음, 다시 로그인하세요."
+          },
+          {
+            "name": "시크릿 모드에서 테스트해 보세요.",
+            "text": "여기서는 확장 프로그램이 비활성화되어 있습니다. 모든 기능이 정상적으로 작동한다면, 확장 프로그램을 하나씩 다시 활성화해 보세요."
+          },
+          {
+            "name": "스트림 화질을 변경하세요.",
+            "text": "수동으로 720p로 전환하면 대역폭 관련 문제 중 일부를 해결할 수 있습니다."
+          },
+          {
+            "name": "하드웨어 가속을 비활성화하십시오.",
+            "text": "오류가 계속 발생할 경우, 최후의 수단으로 브라우저 설정을 확인해 보세요."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "매번 페이지를 새로 고치지 않으려면 어떻게 해야 하나요?",
+        "answer": "StreamPulse는 1000, 2000, 3000번 리더 오류를 감지하고 스트림을 자동으로 다시 불러오므로, 수동으로 중단할 필요가 없습니다. 이는 증상을 우회하는 방법일 뿐, 근본 원인을 해결하는 것은 아닙니다.",
+        "body": [
+          "오류가 수정 조치에도 불구하고 간헐적으로 발생하는 경우, 특히 장시간 세션이나 연결 상태가 불안정한 상황에서 자동화가 유용합니다.",
+          "모든 채널에서 오류가 지속적으로 발생한다면, 먼저 원인을 해결하십시오. 계속 재시작만 반복하면 문제를 일시적으로 가릴 뿐입니다."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "오류 1000, 3000, 4000: 어떤 차이가 있을까요?",
+        "answer": "이 코드는 재생이 실패한 위치를 나타냅니다. 1000은 동영상 리소스 중단, 2000은 네트워크 오류, 3000은 미디어 디코딩 실패, 4000은 리소스를 사용할 수 없거나 지원되지 않는 형식임을 의미합니다.",
+        "table": {
+          "head": [
+            "코드",
+            "의미",
+            "메인 슬로프"
+          ],
+          "rows": [
+            [
+              "1000",
+              "중단된 읽기",
+              "확장 프로그램 다시 불러오기, 확인하기"
+            ],
+            [
+              "2000",
+              "네트워크 오류",
+              "광고 차단기, 쿠키"
+            ],
+            [
+              "3000",
+              "미디어 디코딩 실패",
+              "하드웨어 가속, 브라우저"
+            ],
+            [
+              "4000",
+              "지원되지 않는 리소스",
+              "다른 탭에서 읽기, 형식"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "오류 2000은 Twitch 때문인가요, 아니면 제 문제인가요?",
+        "a": "대부분은 브라우저 문제입니다. 오류가 모든 채널과 모든 기기에서 동시에 발생하는 경우, Twitch 측의 문제일 수 있습니다."
+      },
+      {
+        "q": "광고 차단기를 제거해야 할까요?",
+        "a": "아닙니다. twitch.tv에서 해당 도메인을 허용 목록에 추가하여 일시 정지하기만 하면 됩니다."
+      },
+      {
+        "q": "자동 재접속을 하면 라이브에서 내 자리를 잃게 되나요?",
+        "a": "수동으로 다시 불러올 때와 마찬가지로 스트리밍이 실시간으로 재개되지만, 사용자가 별도로 조작할 필요는 없습니다."
+      },
+      {
+        "q": "이 문제가 제 인터넷 연결 때문일 수 있을까요?",
+        "a": "가능은 하지만 흔한 일은 아닙니다. 그 외에는 브라우징이 원활하게 이루어진다면, 연결 문제 때문은 아닐 가능성이 높습니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "kesalahan-2000-twitch-solusi",
+    "linkLabel": "Kesalahan 2000 di Twitch: cara mengatasinya",
+    "title": "Kesalahan 2000 di Twitch: Penyebab dan Solusi | StreamPulse",
+    "h1": "Kesalahan 2000 di Twitch: mengapa hal ini terjadi dan bagaimana cara mengatasinya",
+    "description": "Kesalahan 2000 di Twitch menandakan terputusnya koneksi jaringan ke pemutar. Penyebab sebenarnya, solusi yang diurutkan berdasarkan tingkat keefektifan, dan pemuatan ulang otomatis.",
+    "intro": "Kesalahan 2000 (“Network Error”) menghentikan pemutar Twitch saat sedang diputar dan mengharuskan Anda memuat ulang halaman secara manual. Kesalahan ini hampir selalu disebabkan oleh permintaan yang terhambat antara browser Anda dan server Twitch, bukan karena gangguan koneksi Anda. Berikut adalah penyebab sebenarnya, solusi yang diurutkan dari yang paling efektif hingga yang paling tidak efektif, serta cara menghindari kebutuhan untuk memuat ulang halaman secara manual.",
+    "howToSteps": [
+      {
+        "name": "Menonaktifkan pemblokir iklan untuk sementara",
+        "text": "Pemblokir terkadang menghalangi permintaan dari pemutar Twitch. Jeda pemblokir saat mengakses twitch.tv, lalu muat ulang halaman untuk memastikan penyebabnya."
+      },
+      {
+        "name": "Hapus cache dan cookie Twitch",
+        "text": "Token sesi yang rusak menyebabkan kesalahan jaringan berulang. Hapus cookie dari domain twitch.tv, lalu masuk kembali."
+      },
+      {
+        "name": "Coba dalam mode penjelajahan pribadi",
+        "text": "Jika siaran langsung berjalan dalam jendela terpisah, hal itu disebabkan oleh ekstensi yang terpasang. Aktifkan kembali ekstensi-ekstensi tersebut satu per satu untuk mengidentifikasi ekstensi mana yang menjadi penyebabnya."
+      },
+      {
+        "name": "Mengotomatiskan proses pengisian ulang",
+        "text": "Instal StreamPulse dan aktifkan fitur pengisian ulang otomatis agar pemutar dapat berjalan kembali secara otomatis begitu terjadi kesalahan 1000, 2000, atau 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Apa arti kesalahan 2000 di Twitch?",
+        "answer": "Kesalahan 2000 adalah kesalahan jaringan: pemutar Twitch tidak dapat membuat atau mempertahankan koneksi yang diperlukan untuk memutar siaran. Dalam kebanyakan kasus, ekstensi browser atau pemblokir iklanlah yang mengganggu permintaan tersebut, bukan koneksi internet Anda.",
+        "body": [
+          "Inilah yang menjelaskan mengapa navigasi lainnya tetap berjalan normal saat siaran langsung mengalami gangguan: masalahnya terletak pada permintaan dari pemutar."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Apa saja penyebab yang paling umum?",
+        "answer": "Berdasarkan frekuensi: pemblokir iklan, cookie sesi yang rusak, ekstensi pihak ketiga yang terkait dengan Twitch, lalu VPN dan jaringan perusahaan yang menerapkan penyaringan.",
+        "list": [
+          "<strong>Pemblokir iklan.</strong> Ini adalah penyebab paling umum, karena pemblokir iklan menyaring permintaan dari peramban sekaligus iklan.",
+          "<strong>Cookie sesi rusak.</strong> Menyebabkan gangguan siaran berulang di semua saluran.",
+          "<strong>Ekstensi pihak ketiga.</strong> Beberapa di antaranya menyisipkan kode ke dalam pemutar dan mengganggu kinerjanya.",
+          "<strong>VPN dan jaringan penyaring.</strong> Sistem perutean memblokir sebagian domain siaran.",
+          "<strong>Akselerasi perangkat keras.</strong> Meskipun lebih jarang terjadi, hal ini dapat menyebabkan kesalahan dekodasi pada beberapa GPU."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Bagaimana cara memperbaiki kesalahan 2000 langkah demi langkah?",
+        "answer": "Pertama-tama, nonaktifkan sementara pemblokir iklan Anda di twitch.tv, lalu hapus cookie dari domain tersebut. Kedua langkah ini biasanya dapat mengatasi sebagian besar masalah; uji coba dengan mode penjelajahan pribadi bertujuan untuk mengidentifikasi ekstensi yang menjadi penyebabnya.",
+        "steps": [
+          {
+            "name": "Jeda penghalang tersebut.",
+            "text": "Hanya di twitch.tv, lalu segarkan halaman. Jika siaran langsungnya berjalan kembali, itulah penyebabnya."
+          },
+          {
+            "name": "Hapus cache dan cookie Twitch.",
+            "text": "Pilih domain twitch.tv, bukan seluruh riwayat Anda, lalu masuk kembali."
+          },
+          {
+            "name": "Coba gunakan mode penjelajahan pribadi.",
+            "text": "Ekstensi di sana dinonaktifkan: jika semuanya berfungsi dengan baik, aktifkan kembali satu per satu."
+          },
+          {
+            "name": "Ubah kualitas streaming.",
+            "text": "Mengubah resolusi secara manual ke 720p dapat mengatasi beberapa masalah terkait bandwidth."
+          },
+          {
+            "name": "Nonaktifkan akselerasi perangkat keras.",
+            "text": "Di pengaturan browser, sebagai langkah terakhir jika kesalahan masih terjadi."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Bagaimana cara agar tidak perlu memuat ulang halaman setiap kali?",
+        "answer": "StreamPulse mendeteksi kesalahan pembaca 1000, 2000, dan 3000 serta secara otomatis memuat ulang aliran, sehingga menghilangkan kebutuhan untuk menghentikan aliran secara manual. Ini hanyalah solusi sementara untuk mengatasi gejala: hal ini tidak menggantikan upaya untuk memperbaiki penyebabnya.",
+        "body": [
+          "Otomatisasi berguna ketika kesalahan masih terjadi sesekali meskipun telah dilakukan perbaikan, terutama pada sesi yang berlangsung lama atau koneksi yang tidak stabil.",
+          "Jika kesalahan tersebut terus terjadi di semua saluran, atasi terlebih dahulu penyebabnya: memuat ulang secara berulang-ulang hanya akan menyembunyikan masalah tersebut."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Kesalahan 1000, 3000, 4000: apa perbedaannya?",
+        "answer": "Kode tersebut menunjukkan di mana proses pemutaran mengalami kegagalan. Angka 1000 menandakan terputusnya sumber daya video, 2000 menandakan kesalahan jaringan, 3000 menandakan kegagalan dekodasi media, dan 4000 menandakan sumber daya tidak tersedia atau format tidak didukung.",
+        "table": {
+          "head": [
+            "Kode",
+            "Arti",
+            "Lintasan utama"
+          ],
+          "rows": [
+            [
+              "1.000",
+              "Pembacaan terhenti",
+              "Muat ulang, periksa ekstensi"
+            ],
+            [
+              "2000",
+              "Kesalahan jaringan",
+              "Pemblokir iklan, cookie"
+            ],
+            [
+              "3.000",
+              "Gagal mendekode media",
+              "Peningkatan kinerja perangkat keras, peramban"
+            ],
+            [
+              "4.000",
+              "Sumber daya tidak didukung",
+              "Tab lain saat membaca, format"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah kesalahan 2000 ini disebabkan oleh Twitch atau oleh saya?",
+        "a": "Biasanya berasal dari browser Anda. Jika kesalahan tersebut memengaruhi semua saluran dan semua perangkat Anda secara bersamaan, kemungkinan besar ini disebabkan oleh gangguan di pihak Twitch."
+      },
+      {
+        "q": "Apakah saya perlu menghapus penghalang iklan saya?",
+        "a": "Tidak. Cukup jeda siarannya di twitch.tv dengan menambahkan domain tersebut ke daftar putih."
+      },
+      {
+        "q": "Apakah fitur pengisian ulang otomatis akan membuat saya kehilangan tempat di siaran langsung?",
+        "a": "Siaran langsung dilanjutkan kembali, seperti saat melakukan pemuatan ulang secara manual, namun tanpa perlu Anda melakukan apa pun."
+      },
+      {
+        "q": "Apakah masalahnya mungkin disebabkan oleh koneksi internet saya?",
+        "a": "Hal itu mungkin saja terjadi, tetapi jarang terjadi. Jika penjelajahan Anda tetap lancar dalam hal lain, kemungkinan besar masalahnya bukan terletak pada koneksi."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "fout-2000-twitch-oplossing",
+    "linkLabel": "Fout 2000 op Twitch: hoe los je dit op?",
+    "title": "Twitch-fout 2000: oorzaken en oplossingen | StreamPulse",
+    "h1": "Fout 2000 op Twitch: waarom deze fout optreedt en hoe je deze kunt verhelpen",
+    "description": "Fout 2000 van Twitch duidt op een netwerkonderbreking naar de speler. Werkelijke oorzaken, oplossingen gerangschikt op effectiviteit en automatisch opnieuw laden.",
+    "intro": "Fout 2000 („Network Error“) onderbreekt de Twitch-speler tijdens het afspelen en zorgt ervoor dat je de pagina handmatig opnieuw moet laden. Deze fout houdt bijna altijd verband met een geblokkeerd verzoek tussen je browser en de servers van Twitch, en niet met een storing in je internetverbinding. Hieronder vind je de werkelijke oorzaken, de oplossingen gerangschikt van meest naar minst effectief, en hoe je kunt voorkomen dat je de pagina zelf opnieuw moet laden.",
+    "howToSteps": [
+      {
+        "name": "De advertentieblokkering tijdelijk uitschakelen",
+        "text": "Adblockers onderscheppen soms verzoeken van de Twitch-speler. Zet de adblocker op twitch.tv even op pauze en ververs de pagina om te controleren of dit de oorzaak is."
+      },
+      {
+        "name": "De cache en cookies van Twitch wissen",
+        "text": "Een beschadigd sessietoken veroorzaakt herhaaldelijke netwerkfouten. Verwijder de cookies van het domein twitch.tv en log vervolgens opnieuw in."
+      },
+      {
+        "name": "In incognitomodus testen",
+        "text": "Als de livestream in een apart venster wordt weergegeven, ligt dat aan een geïnstalleerde extensie. Schakel ze één voor één weer in om te achterhalen welke het is."
+      },
+      {
+        "name": "Het herladen automatiseren",
+        "text": "Installeer StreamPulse en schakel automatisch opnieuw laden in, zodat de speler zichzelf opnieuw start zodra er een fout 1000, 2000 of 3000 optreedt."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Wat betekent foutmelding 2000 op Twitch?",
+        "answer": "Fout 2000 is een netwerkfout: de Twitch-speler kon de verbinding die nodig is om de stream af te spelen niet tot stand brengen of in stand houden. In de meeste gevallen heeft een browserextensie of een advertentieblokker een verzoek onderbroken, en niet je internetverbinding.",
+        "body": [
+          "Dat verklaart waarom de rest van uw browse-ervaring normaal blijft werken terwijl de livestream vastloopt: het probleem zit hem in de verzoeken van de speler."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Wat zijn de meest voorkomende oorzaken?",
+        "answer": "In volgorde van frequentie: advertentieblokkers, beschadigde sessiecookies, extensies van derden die verband houden met Twitch, en vervolgens VPN’s en filterende bedrijfsnetwerken.",
+        "list": [
+          "<strong>Adblockers. Dit is</strong> de meest voorkomende oorzaak, omdat ze zowel de verzoeken van de browser als de advertenties filteren.",
+          "<strong>Beschadigde sessiecookies. Deze</strong> zorgen voor herhaaldelijke onderbrekingen op alle zenders.",
+          "<strong>Extensies van derden.</strong> Sommige voegen code toe aan de speler en brengen deze daardoor in de war.",
+          "<strong>VPN en netwerken met filters.</strong> Door de routering wordt een deel van de uitzenddomeinen geblokkeerd.",
+          "<strong>Hardwareversnelling.</strong> Komt minder vaak voor, maar veroorzaakt bij bepaalde GPU’s decoderingsfouten."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Hoe los je fout 2000 stap voor stap op?",
+        "answer": "Zet eerst je adblocker op twitch.tv op pauze en wis vervolgens de cookies van dat domein. Deze twee stappen lossen het probleem in de meeste gevallen op; de test in incognitomodus dient om de betreffende extensie te identificeren.",
+        "steps": [
+          {
+            "name": "Zet de blokkering tijdelijk uit.",
+            "text": "Alleen op twitch.tv, en ververs daarna de pagina. Als de livestream weer begint, weet je wat de oorzaak is."
+          },
+          {
+            "name": "Wis de cache en cookies van Twitch.",
+            "text": "Richt je op het domein twitch.tv in plaats van op je volledige geschiedenis, en log vervolgens opnieuw in."
+          },
+          {
+            "name": "Probeer het eens in de incognitomodus.",
+            "text": "De extensies zijn daar uitgeschakeld: als alles goed werkt, schakel ze dan één voor één weer in."
+          },
+          {
+            "name": "Wijzig de streamkwaliteit.",
+            "text": "Door handmatig over te schakelen naar 720p kun je bepaalde problemen met de bandbreedte omzeilen."
+          },
+          {
+            "name": "Schakel de hardwareversnelling uit.",
+            "text": "In de browserinstellingen, als laatste redmiddel als de fouten blijven optreden."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Hoe kan ik voorkomen dat de pagina telkens opnieuw wordt geladen?",
+        "answer": "StreamPulse detecteert leesfouten 1000, 2000 en 3000 en laadt de stream automatisch opnieuw, waardoor handmatig onderbreken overbodig wordt. Dit is een tijdelijke oplossing voor het symptoom: het is geen vervanging voor het verhelpen van de oorzaak.",
+        "body": [
+          "Automatisering is nuttig wanneer de fout ondanks de correcties sporadisch blijft optreden, met name bij lange sessies of onstabiele verbindingen.",
+          "Als de fout zich continu op alle kanalen voordoet, pak dan eerst de oorzaak aan: het steeds opnieuw laden zou het probleem alleen maar verdoezelen."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Fouten 1000, 3000, 4000: wat zijn de verschillen?",
+        "answer": "De code geeft aan waar het afspelen is mislukt. 1000 staat voor een onderbreking van de videobron, 2000 voor een netwerkfout, 3000 voor een fout bij het decoderen van de media en 4000 voor een bron die niet beschikbaar is of een formaat dat niet wordt ondersteund.",
+        "table": {
+          "head": [
+            "Code",
+            "Betekenis",
+            "Hoofdpistes"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Lezen onderbroken",
+              "Opnieuw laden, extensies controleren"
+            ],
+            [
+              "2000",
+              "Netwerkfout",
+              "Adblocker, cookies"
+            ],
+            [
+              "3000",
+              "Fout bij het decoderen van media",
+              "Hardwareversnelling, browser"
+            ],
+            [
+              "4000",
+              "Niet-ondersteunde bron",
+              "Ander tabblad bij lezen, indeling"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Komt foutmelding 2000 door Twitch of door mij?",
+        "a": "Meestal komt dit door je browser. Als de fout zich bij alle zenders en al je apparaten tegelijk voordoet, kan het gaan om een storing bij Twitch."
+      },
+      {
+        "q": "Moet ik mijn advertentieblokker verwijderen?",
+        "a": "Nee. Je hoeft alleen maar de stream op twitch.tv te pauzeren en het domein aan je witte lijst toe te voegen."
+      },
+      {
+        "q": "Raak ik door het automatisch herladen mijn plek in de livestream kwijt?",
+        "a": "De stream wordt live hervat, net als bij handmatig herladen, maar zonder dat u iets hoeft te doen."
+      },
+      {
+        "q": "Kan het probleem aan mijn internetverbinding liggen?",
+        "a": "Dat kan, maar komt niet vaak voor. Als het surfen verder soepel verloopt, ligt het waarschijnlijk niet aan de verbinding."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "fel-2000-twitch-lösning",
+    "linkLabel": "Fel 2000 på Twitch: så här åtgärdar du det",
+    "title": "Fel 2000 på Twitch: orsaker och lösningar | StreamPulse",
+    "h1": "Fel 2000 på Twitch: varför det uppstår och hur man åtgärdar det",
+    "description": "Fel 2000 på Twitch indikerar ett nätverksavbrott till spelaren. Verkliga orsaker, lösningar rangordnade efter effektivitet och automatisk omladdning.",
+    "intro": "Fel 2000 (”Network Error”) avbryter Twitch-spelaren mitt i uppspelningen och kräver att du laddar om sidan manuellt. Det beror nästan alltid på en blockerad förfrågan mellan din webbläsare och Twitchs servrar, inte på ett fel i din internetanslutning. Här är de verkliga orsakerna, lösningarna rangordnade från mest till minst effektiva, och hur du kan undvika att behöva ladda om sidan själv.",
+    "howToSteps": [
+      {
+        "name": "Inaktivera annonsblockeraren tillfälligt",
+        "text": "Ibland blockerar webbläsarens blockeringsfunktioner förfrågningar från Twitch. Pausa blockeringsfunktionen på twitch.tv och ladda om sidan för att kontrollera orsaken."
+      },
+      {
+        "name": "Rensa cacheminnet och cookies på Twitch",
+        "text": "En skadad sessions-token orsakar upprepade nätverksfel. Ta bort cookies från domänen twitch.tv och logga sedan in på nytt."
+      },
+      {
+        "name": "Testa i privat läge",
+        "text": "Om livestreamen körs i ett privat fönster beror det på ett installerat tillägg. Aktivera dem ett efter ett för att ta reda på vilket det är."
+      },
+      {
+        "name": "Automatisera uppladdningen",
+        "text": "Installera StreamPulse och aktivera automatisk omstart så att spelaren startar om automatiskt så snart ett fel 1000, 2000 eller 3000 uppstår."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Vad betyder felkod 2000 på Twitch?",
+        "answer": "Fel 2000 är ett nätverksfel: Twitch-spelaren kunde inte upprätta eller upprätthålla den anslutning som krävs för att spela upp strömmen. I de flesta fall är det ett webbläsartillägg eller ett annonsblockeringsprogram som har avbrutit en begäran, inte din internetanslutning.",
+        "body": [
+          "Det är därför som resten av din surfning fungerar som vanligt medan livestreamen kraschar: problemet är begränsat till spelarens förfrågningar."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Vilka är de vanligaste orsakerna?",
+        "answer": "I ordning efter hur ofta de förekommer: annonsblockerare, skadade sessionscookies, tillägg från tredje part kopplade till Twitch, följt av VPN-tjänster och filtrerande företagsnätverk.",
+        "list": [
+          "<strong>Annonsblockerare.</strong> Den vanligaste orsaken, eftersom de filtrerar bort läsarens förfrågningar tillsammans med annonserna.",
+          "<strong>Skadade sessionscookies.</strong> Orsakar upprepade avbrott på alla kanaler.",
+          "<strong>Tillägg från tredje part.</strong> Vissa av dessa infogar kod i spelaren och stör dess funktion.",
+          "<strong>VPN och filtrerande nätverk.</strong> Routingen blockerar en del av sändningsdomänerna.",
+          "<strong>Hårdvaruacceleration.</strong> Förekommer mer sällan, men orsakar avkodningsfel på vissa GPU:er."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Hur åtgärdar man fel 2000 steg för steg?",
+        "answer": "Börja med att inaktivera din annonsblockerare på twitch.tv och rensa sedan bort cookies från domänen. Dessa två åtgärder löser de allra flesta problemen; testet i privat läge används för att identifiera vilket tillägg som orsakar problemet.",
+        "steps": [
+          {
+            "name": "Sätt blockeraren i pausläge.",
+            "text": "Endast på twitch.tv – stäng sedan ner sidan och ladda om. Om livestreamen startar igen har du hittat orsaken."
+          },
+          {
+            "name": "Rensa cacheminnet och cookies på Twitch.",
+            "text": "Rikta in dig på domänen twitch.tv istället för hela din historik, och logga sedan in igen."
+          },
+          {
+            "name": "Prova i privat läge.",
+            "text": "Tillägg är inaktiverade där: om allt fungerar kan du återaktivera dem ett efter ett."
+          },
+          {
+            "name": "Ändra strömkvaliteten.",
+            "text": "Att manuellt växla till 720p löser vissa problem med bandbredd."
+          },
+          {
+            "name": "Inaktivera hårdvaruacceleration.",
+            "text": "I webbläsarens inställningar, som en sista utväg om felen kvarstår."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Hur kan man undvika att behöva ladda om sidan varje gång?",
+        "answer": "StreamPulse upptäcker läsfel 1000, 2000 och 3000 och laddar om strömmen automatiskt, vilket eliminerar behovet av manuell avbrytning. Detta är en tillfällig lösning på problemet: det ersätter inte åtgärdandet av orsaken.",
+        "body": [
+          "Automatisering är användbar när felet fortsätter att uppstå sporadiskt trots korrigeringar, särskilt vid långa sessioner eller instabila anslutningar.",
+          "Om felet uppträder kontinuerligt på alla kanaler bör du först åtgärda orsaken: en upprepad omstart skulle bara dölja problemet."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Fel 1000, 3000, 4000: vad är skillnaden?",
+        "answer": "Koden anger var uppspelningen misslyckades. 1000 betyder att videoresursen avbröts, 2000 betyder ett nätverksfel, 3000 betyder att avkodningen av mediet misslyckades och 4000 betyder att resursen inte är tillgänglig eller att formatet inte stöds.",
+        "table": {
+          "head": [
+            "Kod",
+            "Betydelse",
+            "Huvudbanor"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Avbruten läsning",
+              "Ladda om, kontrollera tillägg"
+            ],
+            [
+              "2000",
+              "Nätverksfel",
+              "Annonsblockerare, cookies"
+            ],
+            [
+              "3000",
+              "Medieavkodningen misslyckades",
+              "Hårdvarubaserad acceleration, webbläsare"
+            ],
+            [
+              "4 000",
+              "Resurs som inte stöds",
+              "Annan flik vid läsning, format"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Beror fel 2000 på Twitch eller på mig?",
+        "a": "Oftast beror det på din webbläsare. Om felet drabbar alla kanaler och alla dina enheter samtidigt kan det handla om ett problem hos Twitch."
+      },
+      {
+        "q": "Bör jag avinstallera min annonsblockerare?",
+        "a": "Nej. Det räcker med att pausa den på twitch.tv genom att lägga till domänen i vitlistan."
+      },
+      {
+        "q": "Förlorar jag min plats i livesändningen om jag laddar om automatiskt?",
+        "a": "Strömmen återupptas direkt, precis som vid en manuell omstart, men utan att du behöver göra något."
+      },
+      {
+        "q": "Kan problemet bero på min internetanslutning?",
+        "a": "Det är möjligt, men det händer sällan. Om webbläsaren i övrigt fungerar smidigt är det troligen inte anslutningen som är orsaken."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "chyba-2000-twitch-řešení",
+    "linkLabel": "Chyba 2000 na Twitchi: jak ji opravit",
+    "title": "Chyba 2000 na Twitchi: příčiny a řešení | StreamPulse",
+    "h1": "Chyba 2000 na Twitchi: proč k ní dochází a jak ji opravit",
+    "description": "Chyba 2000 na Twitchi signalizuje přerušení síťového spojení s přehrávačem. Skutečné příčiny, řešení seřazená podle účinnosti a automatické obnovení.",
+    "intro": "Chyba 2000 („Network Error“) přeruší přehrávač Twitch uprostřed přehrávání a vyžaduje ruční obnovení stránky. Téměř vždy souvisí s blokovaným požadavkem mezi vaším prohlížečem a servery Twitch, nikoli s výpadkem vašeho připojení. Zde jsou skutečné příčiny, řešení seřazená od nejúčinnějšího po nejméně účinné a návod, jak se vyhnout nutnosti ručního načítání stránky.",
+    "howToSteps": [
+      {
+        "name": "Dočasně deaktivovat blokování reklam",
+        "text": "Blokátory někdy zachycují požadavky přehrávače Twitch. Pozastavte blokátor na stránce twitch.tv a stránku znovu načtěte, abyste ověřili příčinu."
+      },
+      {
+        "name": "Vymazat mezipaměť a soubory cookie služby Twitch",
+        "text": "Poškozený token relace způsobuje opakované síťové chyby. Odstraňte soubory cookie domény twitch.tv a poté se znovu přihlaste."
+      },
+      {
+        "name": "Vyzkoušet v anonymním režimu",
+        "text": "Pokud živé vysílání funguje v samostatném okně, je za to zodpovědné některé z nainstalovaných rozšíření. Znovu je aktivujte jedno po druhém, abyste zjistili, které z nich to je."
+      },
+      {
+        "name": "Automatizovat načítání",
+        "text": "Nainstalujte StreamPulse a zapněte automatické restartování, aby se přehrávač sám restartoval, jakmile dojde k chybě 1000, 2000 nebo 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Co znamená chyba 2000 na Twitchi?",
+        "answer": "Chyba 2000 je síťová chyba: přehrávači Twitch se nepodařilo navázat nebo udržet připojení potřebné k přehrání streamu. Ve většině případů došlo k přerušení požadavku kvůli rozšíření prohlížeče nebo blokovači reklam, nikoli kvůli vašemu internetovému připojení.",
+        "body": [
+          "To vysvětluje, proč zbytek vašeho prohlížení funguje normálně, zatímco živé vysílání se zasekává: problém se týká pouze požadavků přehrávače."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Jaké jsou nejčastější příčiny?",
+        "answer": "Seřazeno podle četnosti: blokátory reklam, poškozené relační soubory cookie, rozšíření třetích stran související s Twitch, dále VPN a filtrující podnikové sítě.",
+        "list": [
+          "<strong>Blokovače reklam.</strong> Nejčastější příčina, protože filtrují požadavky prohlížeče společně s reklamami.",
+          "<strong>Poškozené relační soubory cookie.</strong> Způsobují opakované výpadky na všech kanálech.",
+          "<strong>Doplňky třetích stran.</strong> Některé z nich vkládají do přehrávače kód a narušují jeho stabilitu.",
+          "<strong>VPN a filtrovací sítě.</strong> Směrování blokuje část domén pro šíření obsahu.",
+          "<strong>Hardwarová akcelerace.</strong> Vyskytuje se méně často, ale u některých grafických karet způsobuje chyby při dekódování."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Jak krok za krokem opravit chybu 2000?",
+        "answer": "Nejprve pozastavte fungování svého blokovače reklam na twitch.tv a poté vymažte soubory cookie této domény. Tyto dva kroky vyřeší drtivou většinu případů; test v anonymním prohlížení slouží k identifikaci rozšíření, které způsobuje problém.",
+        "steps": [
+          {
+            "name": "Pozastavte blokátor.",
+            "text": "Pouze na twitch.tv, poté stránku obnovte. Pokud se živé vysílání znovu spustí, znáte příčinu."
+          },
+          {
+            "name": "Vymažte mezipaměť a soubory cookie služby Twitch.",
+            "text": "Zaměřte se na doménu twitch.tv namísto celé své historie a poté se znovu přihlaste."
+          },
+          {
+            "name": "Vyzkoušejte to v anonymním režimu.",
+            "text": "Rozšíření jsou zde deaktivována: pokud vše funguje, aktivujte je postupně jedno po druhém."
+          },
+          {
+            "name": "Změňte kvalitu streamu.",
+            "text": "Ruční přepnutí na rozlišení 720p umožňuje obejít některé problémy s šířkou pásma."
+          },
+          {
+            "name": "Vypněte hardwarovou akceleraci.",
+            "text": "V nastavení prohlížeče, jako poslední možnost, pokud chyby přetrvávají."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Jak se vyhnout tomu, aby se stránka pokaždé znovu načítala?",
+        "answer": "StreamPulse detekuje chyby čtečky 1000, 2000 a 3000 a automaticky znovu načte datový proud, čímž eliminuje nutnost ručního přerušení. Jedná se o řešení příznaku: nenahrazuje odstranění příčiny.",
+        "body": [
+          "Automatizace je užitečná v případech, kdy se chyba i přes opravy vyskytuje jen sporadicky, zejména při dlouhých relacích nebo při nestabilním připojení.",
+          "Pokud se chyba vyskytuje nepřetržitě na všech kanálech, nejprve odstraňte její příčinu: opakované načítání by problém pouze zakrylo."
+        ]
+      },
+      {
+        "id": "autres-erreurs",
+        "h2": "Chyby 1000, 3000, 4000: v čem se liší?",
+        "answer": "Kód udává, kde došlo k selhání přehrávání. Hodnota 1000 znamená přerušení přehrávání videa, 2000 znamená síťovou chybu, 3000 znamená selhání dekódování média a 4000 znamená, že zdroj není k dispozici nebo že formát není podporován.",
+        "table": {
+          "head": [
+            "Kód",
+            "Význam",
+            "Hlavní sjezdovky"
+          ],
+          "rows": [
+            [
+              "1000",
+              "Přerušené čtení",
+              "Načíst, zkontrolovat rozšíření"
+            ],
+            [
+              "2000",
+              "Chyba sítě",
+              "Blokování reklam a souborů cookie"
+            ],
+            [
+              "3000",
+              "Selhání dekódování média",
+              "Hardwarová akcelerace, prohlížeč"
+            ],
+            [
+              "4000",
+              "Nepodporovaný zdroj",
+              "Další záložka při čtení, formát"
+            ]
+          ]
+        }
+      }
+    ],
+    "faq": [
+      {
+        "q": "Je chyba 2000 způsobena službou Twitch, nebo je to moje chyba?",
+        "a": "Nejčastěji jde o problém s vaším prohlížečem. Pokud se chyba týká všech kanálů a všech vašich zařízení současně, může se jednat o poruchu na straně služby Twitch."
+      },
+      {
+        "q": "Mám odinstalovat svůj blokovač reklam?",
+        "a": "Ne. Stačí to na twitch.tv pozastavit a přidat doménu na seznam povolených."
+      },
+      {
+        "q": "Ztratím kvůli automatickému načítání své místo v živém vysílání?",
+        "a": "Přenos pokračuje v reálném čase, stejně jako při ručním načtení, avšak bez vašeho zásahu."
+      },
+      {
+        "q": "Může ten problém souviset s mým připojením?",
+        "a": "Je to možné, ale stává se to jen zřídka. Pokud je vaše prohlížení stránek jinak plynulé, pravděpodobně to není způsobeno připojením."
+      }
+    ]
+  }
+}

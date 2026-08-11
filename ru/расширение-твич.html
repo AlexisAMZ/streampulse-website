@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Расширение для Twitch для зрителей | StreamPulse</title>
+    <meta name="description" content="StreamPulse: расширение для Twitch, предназначенное для зрителей. Автоматическое получение Channel Points, автоматические Drops, уведомления в режиме реального времени, фильтры чата и исправление ошибок." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/ru/расширение-твич" />
+    <link rel="alternate" hreflang="ru" href="https://www.streampulse.fr/ru/расширение-твич" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/undefined" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/ru/расширение-твич" />
+    <meta property="og:title" content="Расширение для Twitch для зрителей | StreamPulse" />
+    <meta property="og:description" content="StreamPulse: расширение для Twitch, предназначенное для зрителей. Автоматическое получение Channel Points, автоматические Drops, уведомления в режиме реального времени, фильтры чата и исправление ошибок." />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="Расширение для Twitch для зрителей | StreamPulse" />
+    <meta name="twitter:description" content="StreamPulse: расширение для Twitch, предназначенное для зрителей. Автоматическое получение Channel Points, автоматические Drops, уведомления в режиме реального времени, фильтры чата и исправление ошибок." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Расширение Twitch для зрителей",
+    "headline": "Расширение Twitch для зрителей",
+    "description": "StreamPulse: расширение для Twitch, предназначенное для зрителей. Автоматическое получение Channel Points, автоматические Drops, уведомления в режиме реального времени, фильтры чата и исправление ошибок.",
+    "inLanguage": "ru",
+    "url": "https://www.streampulse.fr/ru/расширение-твич",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-11",
+    "dateModified": "2026-08-11",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/ru/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Расширение Twitch для зрителей",
+        "item": "https://www.streampulse.fr/ru/расширение-твич"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ru",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "StreamPulse — это бесплатная программа?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да, на 100 % бесплатно, без рекламы, без платных функций и без необходимости регистрации."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulse автоматически получает данные о Channel Points?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. StreamPulse автоматически обнаруживает бонус Channel Points и нажимает на него, как только он появляется, даже если вкладка находится в фоновом режиме."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulse собирает ли Twitch Drops?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. StreamPulse обнаруживает доступные дропы и автоматически получает их, как только выполняются необходимые условия."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Работают ли Channel Points в фоновом режиме?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. Функция «Anti-Pause» в StreamPulse поддерживает активность потока даже тогда, когда вкладка не находится на переднем плане, что обеспечивает непрерывный сбор Channel Points."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Кто занимается разработкой StreamPulse?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "StreamPulse разработан независимым разработчиком AlexisAMZ. Исходный код и обновления доступны на GitHub."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/ru" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/ru/#features">Features</a>
+          <a href="/ru/#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/ru">Home</a> / <span>Расширение Twitch для зрителей</span>
+          </p>
+          <h1>Расширение Twitch для зрителей</h1>
+          <p class="article-lede">StreamPulse — это бесплатное расширение для браузера, которое автоматизирует работу зрителей на Twitch: получение Channel Points и Drops, уведомления в режиме реального времени, фильтры чата и автокоррекция ошибок плеера. Совместимо с Chrome, Edge, Brave и Opera.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 11 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#fonctionnalites">Все функции Twitch</a></li>
+          <li><a href="#compatibilite">Совместимость с браузерами</a></li>
+          <li><a href="#vs-bttv">StreamPulse и BetterTTV: дополняют друг друга</a></li>
+          <li><a href="#confidentialite">Конфиденциальность</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="fonctionnalites">Все функции Twitch</h2>
+        <div class="answer-block">
+          <p>StreamPulse ориентирован на автоматизацию и мониторинг для зрителей Twitch. В отличие от расширений для эмодзи, StreamPulse не изменяет внешний вид чата, а автоматизирует повторяющиеся задачи.</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>Автоматическое начисление баллов канала.</strong> Автоматическое начисление баллов канала Twitch, в том числе в фоновом режиме. Больше не нужно вручную нажимать на бонус.</li>
+          <li><strong>Автоматические Twitch Drops.</strong> Мгновенное обнаружение и получение Drops, как только выполняются условия.</li>
+          <li><strong>Уведомления в режиме реального времени.</strong> Уведомления на рабочий стол в режиме реального времени, как только подписываемый вами стример выходит в прямой эфир на Twitch.</li>
+          <li><strong>Исправление ошибок считывателя.</strong> Автоматическая перезагрузка потока при ошибках #1000, #2000 или #3000. Больше не требуется ручное прерывание.</li>
+          <li><strong>Фильтры чата.</strong> Скрывайте спам, нежелательные ключевые слова и повторяющиеся сообщения в чате Twitch.</li>
+          <li><strong>«Без паузы».</strong> Не позволяет Twitch приостанавливать воспроизведение видео, когда вкладка переходит в фоновый режим.</li>
+          <li><strong>Видео-превью при наведении курсора.</strong> Просмотрите предварительный просмотр прямой трансляции, наведя курсор на ссылку канала, не покидая текущую страницу.</li>
+        </ul>
+
+        <h2 id="compatibilite">Совместимость с браузерами</h2>
+        <div class="answer-block">
+          <p>StreamPulse устанавливается из Chrome Web Store и работает во всех браузерах на базе Chromium: Chrome, Edge, Brave, Opera и Vivaldi. Дополнительная настройка не требуется.</p>
+        </div>
+
+        <h2 id="vs-bttv">StreamPulse и BetterTTV: дополняют друг друга</h2>
+        <div class="answer-block">
+          <p>StreamPulse и BetterTTV выполняют разные функции. BetterTTV (а также FrankerFaceZ и 7TV) добавляют смайлики и позволяют настраивать чат. StreamPulse автоматизирует задачи зрителей. Обе программы можно установить одновременно без каких-либо конфликтов.</p>
+        </div>
+        <p>Если вам нужно расширение для эмодзи, установите BetterTTV или FrankerFaceZ. Если вам нужно расширение для автоматизации начисления Channel Points, Drops и уведомлений, установите StreamPulse. Вместе эти два расширения полностью покрывают все потребности постоянного зрителя Twitch.</p>
+
+        <h2 id="confidentialite">Конфиденциальность</h2>
+        <div class="answer-block">
+          <p>StreamPulse не собирает никаких персональных данных. Никаких трекеров, никакой рекламы, никаких учетных записей. Все настройки хранятся локально в вашем браузере.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>StreamPulse — это бесплатная программа?</h3>
+            <p>Да, на 100 % бесплатно, без рекламы, без платных функций и без необходимости регистрации.</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulse автоматически получает данные о Channel Points?</h3>
+            <p>Да. StreamPulse автоматически обнаруживает бонус Channel Points и нажимает на него, как только он появляется, даже если вкладка находится в фоновом режиме.</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulse собирает ли Twitch Drops?</h3>
+            <p>Да. StreamPulse обнаруживает доступные дропы и автоматически получает их, как только выполняются необходимые условия.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Работают ли Channel Points в фоновом режиме?</h3>
+            <p>Да. Функция «Anti-Pause» в StreamPulse поддерживает активность потока даже тогда, когда вкладка не находится на переднем плане, что обеспечивает непрерывный сбор Channel Points.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Кто занимается разработкой StreamPulse?</h3>
+            <p>StreamPulse разработан независимым разработчиком AlexisAMZ. Исходный код и обновления доступны на GitHub.</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

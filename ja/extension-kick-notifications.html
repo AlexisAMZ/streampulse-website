@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>エクステンション・キック：ライブ配信の通知 | StreamPulse</title>
+    <meta name="description" content="デスクトップでKickのライブ通知を受け取り、タブを開いたままにせずに、1つの拡張機能からKickとTwitchを同時にフォローする方法。" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/ja/extension-kick-notifications" />
+    <link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/extension-kick-notifications" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/undefined" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/ja/extension-kick-notifications" />
+    <meta property="og:title" content="エクステンション・キック：ライブ配信の通知 | StreamPulse" />
+    <meta property="og:description" content="デスクトップでKickのライブ通知を受け取り、タブを開いたままにせずに、1つの拡張機能からKickとTwitchを同時にフォローする方法。" />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="エクステンション・キック：ライブ配信の通知 | StreamPulse" />
+    <meta name="twitter:description" content="デスクトップでKickのライブ通知を受け取り、タブを開いたままにせずに、1つの拡張機能からKickとTwitchを同時にフォローする方法。" />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "name": "ブラウザ拡張機能を使ってKickのストリーマーをフォローする",
+    "headline": "ブラウザ拡張機能を使ってKickのストリーマーをフォローする",
+    "description": "デスクトップでKickのライブ通知を受け取り、タブを開いたままにせずに、1つの拡張機能からKickとTwitchを同時にフォローする方法。",
+    "inLanguage": "ja",
+    "url": "https://www.streampulse.fr/ja/extension-kick-notifications",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/ja/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "ブラウザ拡張機能を使ってKickのストリーマーをフォローする",
+        "item": "https://www.streampulse.fr/ja/extension-kick-notifications"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ja",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "この拡張機能は、Kickのアカウントがなくても動作しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、ライブステータスの確認にはログインは不要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "キックはチェーンポイントを手に入れるだろうか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "現時点では同等のシステムは存在しない。もしこのプラットフォームがそのようなシステムを導入すれば、サポートもそれに追随するだろう。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "どのブラウザに対応していますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chrome、Brave、Edge、Opera、およびChromiumベースのブラウザ。"
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/ja" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/ja/#features">Features</a>
+          <a href="/ja/#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/ja">Home</a> / <span>ブラウザ拡張機能を使ってKickのストリーマーをフォローする</span>
+          </p>
+          <h1>ブラウザ拡張機能を使ってKickのストリーマーをフォローする</h1>
+          <p class="article-lede">Kickはストリーミング視聴者層のかなりのシェアを獲得しましたが、そのツール群はTwitchに比べて依然としてはるかに限定的です。多くの視聴者は両プラットフォームでクリエイターをフォローしており、統一されたソリューションがない状況に直面しています。このページでは、現時点で何が可能なのかを解説します。</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 9 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#notifications">Kickのライブ通知を受け取るにはどうすればよいですか？</a></li>
+          <li><a href="#twitch-kick">KickとTwitchを同時に視聴することはできますか？</a></li>
+          <li><a href="#limites">Kickではどのような機能が制限されていますか？</a></li>
+          <li><a href="#confidentialite">どのようなデータが使用されていますか？</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="notifications">Kickのライブ通知を受け取るにはどうすればよいですか？</h2>
+        <div class="answer-block">
+          <p>StreamPulseは、ユーザーが追加したKickチャンネルのステータスを監視し、ライブ配信が開始されるとすぐにデスクトップ通知を送信します。この際、Kickのタブを開いておく必要はありません。</p>
+        </div>
+        <p>KickにはTwitchのような自動登録機能がないため、チャンネルの名前を手動で入力してフォローを追加する必要があります。</p>
+
+        <h2 id="twitch-kick">KickとTwitchを同時に視聴することはできますか？</h2>
+        <div class="answer-block">
+          <p>はい。2つのプラットフォームが同じダッシュボードに表示されるため、2つのサイトを並行して監視する必要がありません。これが、複数のプラットフォームを利用する視聴者にとって、この拡張機能の最大のメリットです。</p>
+        </div>
+
+        <h2 id="limites">Kickではどのような機能が制限されていますか？</h2>
+        <div class="answer-block">
+          <p>Kickには、Twitchのようなチェーンポイントシステムやドロップ、予測機能はありません。したがって、これらの仕組みに関連するStreamPulseの自動化機能は、Twitchにのみ適用されます。</p>
+        </div>
+        <div class="table-wrap"><table class="cmp-table">
+          <thead><tr><th>機能</th><th>Twitch</th><th>キック</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">ライブ配信の通知</th><td>はい</td><td>はい</td></tr>
+            <tr><th scope="row">ダッシュボード</th><td>はい</td><td>はい</td></tr>
+            <tr><th scope="row">自動車用チェーンステッチ</th><td>はい</td><td>該当なし</td></tr>
+            <tr><th scope="row">「Drops」と「Moments」</th><td>はい</td><td>該当なし</td></tr>
+            <tr><th scope="row">オーバーレイ予測</th><td>はい</td><td>該当なし</td></tr>
+            <tr><th scope="row">購読のインポート</th><td>はい</td><td>手動での追加</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2 id="confidentialite">どのようなデータが使用されていますか？</h2>
+        <div class="answer-block">
+          <p>フォローしているチャンネルの名前のみが、TwitchおよびKickの公開APIに送信され、そのステータスが確認されます。個人情報は一切収集されず、設定はローカルに保存されたままとなります。</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>この拡張機能は、Kickのアカウントがなくても動作しますか？</h3>
+            <p>はい、ライブステータスの確認にはログインは不要です。</p>
+          </div>
+          <div class="faq-item">
+            <h3>キックはチェーンポイントを手に入れるだろうか？</h3>
+            <p>現時点では同等のシステムは存在しない。もしこのプラットフォームがそのようなシステムを導入すれば、サポートもそれに追随するだろう。</p>
+          </div>
+          <div class="faq-item">
+            <h3>どのブラウザに対応していますか？</h3>
+            <p>Chrome、Brave、Edge、Opera、およびChromiumベースのブラウザ。</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

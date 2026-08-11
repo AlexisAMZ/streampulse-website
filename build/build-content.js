@@ -2,7 +2,7 @@
 'use strict';
 
 /**
- * build-content.js — génère les pages de contenu SEO (FR + EN) et le sitemap.
+ * build-content.js — génère les pages de contenu SEO (toutes langues) et le sitemap.
  *
  * Objectif : passer de 4 URLs à une surface de requêtes réelle. Chaque page
  * cible une intention de recherche distincte plutôt que la marque.
@@ -14,7 +14,7 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const { ORIGIN, UI, esc, prefix, buildHead, buildHeader, buildFooter } = require('./lib/render');
+const { ORIGIN, UI, getUI, esc, prefix, buildHead, buildHeader, buildFooter } = require('./lib/render');
 const { LOCALES, SOURCE_LANG } = require('./build-i18n');
 const {
   renderSections,
@@ -25,7 +25,7 @@ const {
   buildSchema,
 } = require('./lib/body');
 
-const LANGS = ['fr', 'en'];
+const LANGS = Object.keys(LOCALES);
 
 const PAGES = [
   require('./content/points'),
@@ -35,85 +35,143 @@ const PAGES = [
   require('./content/chat'),
   require('./content/alternatives'),
   require('./content/kick'),
+  require('./content/error3000'),
+  require('./content/extensionTwitch'),
+  require('./content/extensionKick'),
+  require('./content/dashboard')
 ];
 
-/** CSS additionnel commun aux pages de contenu, aligné sur les tokens du site. */
+/** CSS additionnel commun aux pages de contenu, aligné sur la D.A de l'accueil. */
 const CONTENT_CSS = `
       .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
       .article-wrap h2 {
-        margin: 2.6rem 0 0.9rem;
-        font-size: 1.55rem;
-        letter-spacing: -0.01em;
-        scroll-margin-top: 90px;
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
-      .article-wrap h3 { margin: 1.6rem 0 0.6rem; font-size: 1.12rem; }
-      .article-wrap p { line-height: 1.75; margin: 0 0 1rem; }
-      .article-lede { font-size: 1.1rem; color: var(--color-text); }
-      /* Bloc de réponse directe : cible privilégiée d'extraction par les
-         moteurs de recherche et les moteurs génératifs. */
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
       .answer-block {
-        border-left: 3px solid var(--color-highlight);
-        background: var(--color-surface);
-        border-radius: 0 14px 14px 0;
-        padding: 1rem 1.2rem;
-        margin: 0 0 1.4rem;
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
       }
-      .answer-block p { margin: 0; font-weight: 500; }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
       .toc {
-        background: var(--color-surface);
-        border: 1px solid var(--color-border);
-        border-radius: 16px;
-        padding: 1.1rem 1.3rem;
-        margin: 0 0 2.2rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
       }
       .toc-title {
-        margin: 0 0 .6rem;
-        font-size: .8rem;
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
         text-transform: uppercase;
-        letter-spacing: .08em;
+        letter-spacing: 0.1em;
         color: var(--color-muted);
+        font-weight: 600;
       }
-      .toc ul { margin: 0; padding-left: 1.1rem; }
-      .toc li { margin: .3rem 0; }
-      .toc a { color: var(--color-text); text-decoration: none; }
-      .toc a:hover { color: var(--color-highlight); text-decoration: underline; }
-      .step-list { padding-left: 1.3rem; line-height: 1.75; }
-      .step-list li { margin: 0 0 .7rem; }
-      .check-list { padding-left: 1.3rem; line-height: 1.75; }
-      .check-list li { margin: 0 0 .55rem; }
-      .table-wrap { overflow-x: auto; margin: 0 0 1.4rem; }
-      .cmp-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
       .cmp-table th, .cmp-table td {
         text-align: left;
-        padding: .7rem .9rem;
-        border-bottom: 1px solid var(--color-border);
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
         vertical-align: top;
       }
       .cmp-table thead th {
-        font-size: .78rem;
+        font-size: 0.85rem;
         text-transform: uppercase;
-        letter-spacing: .06em;
+        letter-spacing: 0.08em;
         color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
       }
-      .breadcrumb { font-size: .85rem; color: var(--color-muted); margin: 0 0 1rem; }
-      .breadcrumb a { color: var(--color-muted); }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
       .breadcrumb a:hover { color: var(--color-highlight); }
-      .faq-inline .faq-item { margin: 0 0 1.3rem; }
-      .faq-inline h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
-      .related-list { padding-left: 1.2rem; line-height: 1.9; }
-      .article-meta { font-size: .82rem; color: var(--color-muted); margin: 0 0 2rem; }
-      .cta-banner { margin-top: 3rem; text-align: center; }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
 `;
 
-function renderPage(page, lang, allPages) {
-  const t = UI[lang];
+/** Helper pour récupérer les traductions DeepL ou fallback sur les valeurs natives. */
+function getPageContent(page, lang) {
+  let i18n = {};
+  if (lang !== 'fr') {
+    try {
+      i18n = require(`./content/i18n/${page.key}.json`)[lang] || {};
+    } catch (e) {
+      // Fichier absent
+    }
+  }
+
+  const get = (key) => {
+    if (i18n[key]) return i18n[key];
+    if (page[key]) {
+      return page[key][lang] || page[key]['en'] || page[key]['fr'];
+    }
+    return undefined;
+  };
+
+  return {
+    ...page,
+    slug: { [lang]: get('slug') },
+    linkLabel: { [lang]: get('linkLabel') },
+    title: { [lang]: get('title') },
+    h1: { [lang]: get('h1') },
+    description: { [lang]: get('description') },
+    intro: { [lang]: get('intro') },
+    howToSteps: { [lang]: get('howToSteps') },
+    sections: { [lang]: get('sections') },
+    faq: { [lang]: get('faq') },
+    related: { [lang]: get('related') }
+  };
+}
+
+function renderPage(rawPage, lang, allPages) {
+  const t = getUI(lang);
   const p = prefix(lang);
+  const page = getPageContent(rawPage, lang);
   const schema = buildSchema(page, lang);
   const dateLabel = new Date(page.modified).toLocaleDateString(
     lang === 'fr' ? 'fr-FR' : 'en-GB',
     { year: 'numeric', month: 'long', day: 'numeric' }
   );
 
+  // Utilisation des classes D.A de l'accueil (.reveal pour animations, styling poussé)
   return `<!DOCTYPE html>
 <html lang="${lang}">
   <head>
@@ -121,13 +179,13 @@ ${buildHead(page, lang)}
     <script type="application/ld+json">
 ${JSON.stringify(schema, null, 2)}
     </script>
-    <style>${CONTENT_CSS}    </style>
+    <style>${CONTENT_CSS}</style>
   </head>
   <body class="legal-page">
 ${buildHeader(lang)}
 
     <main class="legal-main">
-      <section class="legal-hero">
+      <section class="content-hero reveal">
         <div class="container article-wrap">
           <p class="breadcrumb">
             <a href="${p || '/'}">${t.home}</a> / <span>${esc(page.h1[lang])}</span>
@@ -137,9 +195,12 @@ ${buildHeader(lang)}
         </div>
       </section>
 
-      <section class="legal-section">
+      <section class="section reveal" style="padding-top: 1rem;">
         <div class="container article-wrap">
-          <p class="article-meta">${t.updated} ${dateLabel}</p>
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            ${t.updated} ${dateLabel}
+          </p>
 ${renderToc(page, lang)}
 
 ${renderSections(page, lang)}
@@ -159,16 +220,10 @@ ${buildFooter(lang)}
 `;
 }
 
-/** Sitemap complet : home multilingue, pages légales, pages de contenu. */
 function buildSitemap() {
   const today = new Date().toISOString().slice(0, 10);
   const urls = [];
 
-  // Pas de slash final : vercel.json applique trailingSlash:false, donc /en/
-  // redirige vers /en. Un sitemap ne doit lister que des URLs finales.
-  //
-  // La liste est dérivée de LOCALES (build-i18n.js) : ajouter une langue
-  // là-bas suffit pour qu'elle apparaisse ici, sans duplication à maintenir.
   Object.entries(LOCALES).forEach(([lang, cfg]) => {
     urls.push({
       loc: cfg.dir ? `${ORIGIN}/${cfg.dir}` : `${ORIGIN}/`,
@@ -178,19 +233,20 @@ function buildSitemap() {
     });
   });
 
-  PAGES.forEach((page) => {
+  PAGES.forEach((rawPage) => {
     LANGS.forEach((lang) => {
-      urls.push({
-        loc: `${ORIGIN}${prefix(lang)}/${page.slug[lang]}`,
-        pri: lang === 'fr' ? '0.8' : '0.7',
-        freq: 'monthly',
-        lastmod: page.modified,
-      });
+      const page = getPageContent(rawPage, lang);
+      if (page.slug[lang]) {
+        urls.push({
+          loc: `${ORIGIN}${prefix(lang)}/${page.slug[lang]}`,
+          pri: lang === 'fr' ? '0.8' : '0.7',
+          freq: 'monthly',
+          lastmod: page.modified,
+        });
+      }
     });
   });
 
-  // /support existe dans les 16 langues (build/build-support.js), avec des
-  // canonicals distincts : chaque version doit donc figurer au sitemap.
   Object.entries(LOCALES).forEach(([lang, cfg]) => {
     urls.push({
       loc: cfg.dir ? `${ORIGIN}/${cfg.dir}/support` : `${ORIGIN}/support`,
@@ -200,8 +256,6 @@ function buildSitemap() {
     });
   });
 
-  // Pages légales : uniquement en français, les autres langues y sont
-  // redirigées par vercel.json. Une seule URL à lister.
   [
     { path: 'privacy', pri: '0.4' },
     { path: 'terms', pri: '0.4' },
@@ -231,9 +285,12 @@ function build() {
   let count = 0;
   const written = [];
 
-  PAGES.forEach((page) => {
+  PAGES.forEach((rawPage) => {
     LANGS.forEach((lang) => {
-      const html = renderPage(page, lang, PAGES);
+      const page = getPageContent(rawPage, lang);
+      if (!page.slug[lang]) return; // Skip if no slug exists for this lang
+      
+      const html = renderPage(rawPage, lang, PAGES);
       const outPath =
         lang === 'fr'
           ? path.join(ROOT, `${page.slug[lang]}.html`)
@@ -254,4 +311,4 @@ function build() {
 
 build();
 
-module.exports = { PAGES, LANGS };
+module.exports = { PAGES, LANGS, getPageContent };

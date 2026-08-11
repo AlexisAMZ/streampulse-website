@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitchの視聴者向け拡張機能 | StreamPulse</title>
+    <meta name="description" content="StreamPulse：視聴者向けTwitch拡張機能。チャンネルポイントの自動獲得、ドロップの自動受け取り、ライブ通知、チャットフィルター、エラー修正機能を搭載。" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/ja/extension-twitch" />
+    <link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/extension-twitch" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/undefined" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/ja/extension-twitch" />
+    <meta property="og:title" content="Twitchの視聴者向け拡張機能 | StreamPulse" />
+    <meta property="og:description" content="StreamPulse：視聴者向けTwitch拡張機能。チャンネルポイントの自動獲得、ドロップの自動受け取り、ライブ通知、チャットフィルター、エラー修正機能を搭載。" />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="Twitchの視聴者向け拡張機能 | StreamPulse" />
+    <meta name="twitter:description" content="StreamPulse：視聴者向けTwitch拡張機能。チャンネルポイントの自動獲得、ドロップの自動受け取り、ライブ通知、チャットフィルター、エラー修正機能を搭載。" />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Twitchの視聴者向け拡張機能",
+    "headline": "Twitchの視聴者向け拡張機能",
+    "description": "StreamPulse：視聴者向けTwitch拡張機能。チャンネルポイントの自動獲得、ドロップの自動受け取り、ライブ通知、チャットフィルター、エラー修正機能を搭載。",
+    "inLanguage": "ja",
+    "url": "https://www.streampulse.fr/ja/extension-twitch",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-11",
+    "dateModified": "2026-08-11",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/ja/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Twitchの視聴者向け拡張機能",
+        "item": "https://www.streampulse.fr/ja/extension-twitch"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ja",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "StreamPulseは無料ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、100％無料です。広告も、有料機能も、アカウント登録も一切必要ありません。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulseはChannel Pointsを自動的に取得しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。StreamPulseは、Channel Pointsのボーナスが表示されると、たとえそのタブがバックグラウンドに表示されていても、自動的にそれを検知してクリックします。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulseはTwitch Dropsのデータを取得しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。StreamPulseは利用可能なドロップを検知し、条件が満たされ次第、自動的に獲得します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Channel Pointsはバックグラウンドで動作しますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。StreamPulseの「アンチポーズ」機能により、タブが最前面に表示されていない場合でもストリームがアクティブな状態を維持されるため、Channel Pointsの継続的な収集が可能になります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulseは誰が開発しているのですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "StreamPulseは、独立系開発者のAlexisAMZによって開発されています。ソースコードとアップデートはGitHubで公開されています。"
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/ja" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/ja/#features">Features</a>
+          <a href="/ja/#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/ja">Home</a> / <span>Twitchの視聴者向け拡張機能</span>
+          </p>
+          <h1>Twitchの視聴者向け拡張機能</h1>
+          <p class="article-lede">StreamPulseは、Twitch視聴者の体験を自動化する無料のブラウザ拡張機能です。チャンネルポイントやドロップの獲得、リアルタイム通知、チャットフィルター、プレイヤーエラーの自動修正などの機能を提供します。Chrome、Edge、Brave、Operaに対応しています。</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 11 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#fonctionnalites">Twitchのすべての機能</a></li>
+          <li><a href="#compatibilite">ブラウザの互換性</a></li>
+          <li><a href="#vs-bttv">StreamPulseとBetterTTV：互いに補完し合う</a></li>
+          <li><a href="#confidentialite">プライバシーポリシー</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="fonctionnalites">Twitchのすべての機能</h2>
+        <div class="answer-block">
+          <p>StreamPulseは、Twitchの視聴者向けの自動化と追跡機能に重点を置いています。エモート拡張機能とは異なり、StreamPulseはチャットの見た目を変更することはありませんが、繰り返しの作業を自動化します。</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>Auto-claim Channel Points。</strong>Twitchのチャンネルポイントを、バックグラウンド時も含め自動的に獲得します。ボーナスを手動でクリックする必要はもうありません。</li>
+          <li><strong>自動Twitch Drops。</strong>条件が満たされるとすぐにDropsを検知し、即座に受け取ることができます。</li>
+          <li><strong>ライブ通知。</strong>フォローしているストリーマーがTwitchでライブ配信を開始すると、すぐにデスクトップにリアルタイムで通知が届きます。</li>
+          <li><strong>リーダーのエラーを修正しました。</strong>エラー#1000、#2000、または#3000が発生した場合、ストリームが自動的に再読み込みされます。手動での中断はなくなりました。</li>
+          <li><strong>チャットフィルター。</strong>Twitchのチャットで、スパム、不要なキーワード、繰り返し投稿されるメッセージを非表示にします。</li>
+          <li><strong>一時停止防止。</strong>タブがバックグラウンドに移行した際に、Twitchが動画を一時停止するのを防ぎます。</li>
+          <li><strong>マウスオーバー時の動画プレビュー。</strong>ページを離れることなく、チャンネルのリンクにカーソルを合わせると、ライブ配信をプレビューできます。</li>
+        </ul>
+
+        <h2 id="compatibilite">ブラウザの互換性</h2>
+        <div class="answer-block">
+          <p>StreamPulseはChrome Web Storeからインストールでき、Chromiumベースのすべてのブラウザ（Chrome、Edge、Brave、Opera、Vivaldi）で動作します。追加の設定は一切必要ありません。</p>
+        </div>
+
+        <h2 id="vs-bttv">StreamPulseとBetterTTV：互いに補完し合う</h2>
+        <div class="answer-block">
+          <p>StreamPulseとBetterTTVは、機能内容が異なります。BetterTTV（およびFrankerFaceZ、7TV）は、エモートを追加したりチャットをカスタマイズしたりするものです。一方、StreamPulseは視聴者のタスクを自動化します。両者は互いに競合することなく、一緒にインストールできます。</p>
+        </div>
+        <p>エモート用の拡張機能をお探しなら、「BetterTTV」または「FrankerFaceZ」をインストールしてください。チャンネルポイント、ドロップ、通知を自動化する拡張機能をお探しなら、「StreamPulse」をインストールしてください。この2つを組み合わせれば、Twitchを定期的に視聴するユーザーに必要な機能はすべて網羅できます。</p>
+
+        <h2 id="confidentialite">プライバシーポリシー</h2>
+        <div class="answer-block">
+          <p>StreamPulseは個人情報を一切収集しません。トラッカーも広告も一切なく、アカウント登録も不要です。すべての設定は、お使いのブラウザ内にローカルで保存されます。</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>StreamPulseは無料ですか？</h3>
+            <p>はい、100％無料です。広告も、有料機能も、アカウント登録も一切必要ありません。</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulseはChannel Pointsを自動的に取得しますか？</h3>
+            <p>はい。StreamPulseは、Channel Pointsのボーナスが表示されると、たとえそのタブがバックグラウンドに表示されていても、自動的にそれを検知してクリックします。</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulseはTwitch Dropsのデータを取得しますか？</h3>
+            <p>はい。StreamPulseは利用可能なドロップを検知し、条件が満たされ次第、自動的に獲得します。</p>
+          </div>
+          <div class="faq-item">
+            <h3>Channel Pointsはバックグラウンドで動作しますか？</h3>
+            <p>はい。StreamPulseの「アンチポーズ」機能により、タブが最前面に表示されていない場合でもストリームがアクティブな状態を維持されるため、Channel Pointsの継続的な収集が可能になります。</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulseは誰が開発しているのですか？</h3>
+            <p>StreamPulseは、独立系開発者のAlexisAMZによって開発されています。ソースコードとアップデートはGitHubで公開されています。</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

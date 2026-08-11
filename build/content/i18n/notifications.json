@@ -1,0 +1,938 @@
+{
+  "es": {
+    "slug": "notificaciones-en-directo-twitch-expulsión",
+    "linkLabel": "Notificaciones en directo de Twitch y Kick",
+    "title": "Notificaciones en directo de Twitch y Kick | StreamPulse",
+    "h1": "Recibir notificaciones de las retransmisiones en directo de Twitch y Kick en el escritorio",
+    "description": "¿Por qué las notificaciones de Twitch llegan con retraso y cómo recibir alertas fiables en el escritorio para Twitch y Kick con una sola extensión?",
+    "intro": "Las notificaciones nativas de Twitch a veces llegan varios minutos después de que comience la retransmisión en directo, y Kick obliga a estar pendiente de una pestaña aparte. Seguir a los creadores en ambas plataformas supone, por tanto, tener que lidiar con dos sistemas de alertas desiguales. En esta página se explica cómo centralizar el seguimiento.",
+    "howToSteps": [
+      {
+        "name": "Instalar la extensión",
+        "text": "Añade StreamPulse desde la Chrome Web Store, en Chrome, Brave, Edge u Opera."
+      },
+      {
+        "name": "Importar tus canales",
+        "text": "Sincroniza tus suscripciones de Twitch con un solo clic y, a continuación, añade tus canales de Kick manualmente."
+      },
+      {
+        "name": "Configurar las alertas",
+        "text": "Elige el sonido, activa la insignia del icono y define las cadenas prioritarias."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "¿Por qué llegan tarde las notificaciones de Twitch?",
+        "answer": "Las notificaciones nativas de Twitch pasan por un sistema de distribución compartido que introduce un retraso variable, a veces de varios minutos. Una extensión que consulta directamente el estado de los canales seguidos detecta el inicio de la retransmisión en directo antes.",
+        "body": [
+          "En una retransmisión en directo breve o un evento puntual, ese desfase basta para perderse el comienzo. Esa es la razón principal por la que muchos espectadores mantienen una pestaña abierta en todo momento."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "¿Cómo seguir Twitch y Kick en un mismo sitio?",
+        "answer": "StreamPulse consulta las API públicas de ambas plataformas y muestra los canales en directo en un único panel de control. Una sola extensión sustituye a la supervisión manual de dos sitios web.",
+        "list": [
+          "Twitch: notificaciones, puntos de canal, Drops, predicciones.",
+          "Kick: seguimiento del estado en tiempo real y notificaciones en el escritorio.",
+          "Cuadro de mando común, ordenado por estado."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "¿Se pueden personalizar las alertas?",
+        "answer": "Sí. El sonido se puede configurar, puede aparecer una insignia en el icono de la extensión y cada canal se puede ajustar de forma independiente para evitar la saturación cuando se sigue a muchos creadores.",
+        "list": [
+          "Tono personalizable o notificación silenciosa.",
+          "Icono de recuento en el icono del navegador.",
+          "Alertas que se pueden activar canal por canal.",
+          "Ventana de notificación nativa del sistema."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "¿Hay que dejar una pestaña abierta?",
+        "answer": "No. La supervisión se ejecuta en el service worker de la extensión, sin necesidad de una pestaña específica. Basta con que el navegador esté abierto."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Funcionan las notificaciones si Chrome está minimizado?",
+        "a": "Sí, siempre que el navegador esté en funcionamiento, incluso minimizado o en segundo plano."
+      },
+      {
+        "q": "¿Cuántos canales se pueden seguir?",
+        "a": "La extensión no establece ningún límite."
+      },
+      {
+        "q": "¿Es necesario tener una cuenta de Twitch?",
+        "a": "No, no es para el seguimiento manual. La conexión con Twitch solo sirve para importar automáticamente tus suscripciones."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "notificações-ao-vivo-twitch-expulsão",
+    "linkLabel": "Notificações em tempo real do Twitch e do Kick",
+    "title": "Notificações ao vivo no Twitch e no Kick | StreamPulse",
+    "h1": "Receber notificações de transmissões ao vivo do Twitch e do Kick na área de trabalho",
+    "description": "Por que as notificações do Twitch chegam com atraso e como receber um alerta confiável no desktop para o Twitch e o Kick em uma única extensão.",
+    "intro": "As notificações nativas do Twitch às vezes chegam vários minutos após o início da transmissão ao vivo, e o Kick exige que se fique de olho em uma aba separada. Seguir criadores nas duas plataformas, portanto, significa ter que lidar com dois sistemas de alertas diferentes. Esta página explica como centralizar o acompanhamento.",
+    "howToSteps": [
+      {
+        "name": "Instalar a extensão",
+        "text": "Adicione o StreamPulse a partir da Chrome Web Store, no Chrome, Brave, Edge ou Opera."
+      },
+      {
+        "name": "Importar seus canais",
+        "text": "Sincronize suas assinaturas do Twitch com um clique e, em seguida, adicione manualmente seus canais do Kick."
+      },
+      {
+        "name": "Configurar os alertas",
+        "text": "Escolha o som, ative o selo no ícone e defina os canais prioritários."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Por que as notificações do Twitch chegam com atraso?",
+        "answer": "As notificações nativas do Twitch passam por um sistema de distribuição compartilhado que causa um atraso variável, às vezes de vários minutos. Uma extensão que verifica diretamente o status dos canais seguidos detecta o início da transmissão ao vivo mais cedo.",
+        "body": [
+          "Em uma transmissão ao vivo curta ou em um evento pontual, esse atraso já é suficiente para fazer com que se perca o início. Essa é a principal razão pela qual muitos espectadores mantêm uma aba aberta o tempo todo."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Como acompanhar o Twitch e o Kick no mesmo lugar?",
+        "answer": "O StreamPulse consulta as APIs públicas das duas plataformas e exibe os canais ao vivo em um único painel. Uma única extensão substitui o monitoramento manual de dois sites.",
+        "list": [
+          "Twitch: notificações, pontos do canal, Drops, previsões.",
+          "Kick: acompanhamento do status em tempo real e notificações na área de trabalho.",
+          "Painel de controle comum, classificado por status."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "É possível personalizar os alertas?",
+        "answer": "Sim. O som é configurável, pode aparecer um ícone de notificação no ícone da extensão, e cada canal pode ser ajustado de forma independente para evitar a saturação quando se segue muitos criadores.",
+        "list": [
+          "Toque personalizável ou notificação silenciosa.",
+          "Ícone de contagem no ícone do navegador.",
+          "Alertas que podem ser ativados canal por canal.",
+          "Janela de notificação nativa do sistema."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "É preciso manter uma aba aberta?",
+        "answer": "Não. O monitoramento é executado no service worker da extensão, sem uma aba dedicada. Basta que o navegador esteja aberto."
+      }
+    ],
+    "faq": [
+      {
+        "q": "As notificações funcionam quando o Chrome está minimizado?",
+        "a": "Sim, desde que o navegador esteja em execução, mesmo minimizado ou em segundo plano."
+      },
+      {
+        "q": "Quantos canais é possível acompanhar?",
+        "a": "Não há limite definido pela extensão."
+      },
+      {
+        "q": "É preciso ter uma conta no Twitch?",
+        "a": "Não, não é para acompanhamento manual. A conexão com o Twitch serve apenas para importar automaticamente suas assinaturas."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Benachrichtigungen – Live – Twitch – Kick",
+    "linkLabel": "Live-Benachrichtigungen auf Twitch und Kick",
+    "title": "Benachrichtigungen auf Twitch und Kick | StreamPulse",
+    "h1": "Benachrichtigungen zu Live-Streams auf Twitch und Kick auf dem Desktop erhalten",
+    "description": "Warum Twitch-Benachrichtigungen verspätet eintreffen und wie man mit einer einzigen Erweiterung zuverlässige Desktop-Benachrichtigungen für Twitch und Kick erhält.",
+    "intro": "Die nativen Benachrichtigungen von Twitch kommen manchmal erst mehrere Minuten nach Beginn des Live-Streams, und bei Kick muss man einen separaten Tab im Auge behalten. Um Creator auf beiden Plattformen zu verfolgen, muss man also zwischen zwei ungleichen Benachrichtigungssystemen hin- und herwechseln. Auf dieser Seite wird erklärt, wie man die Verfolgung zentralisieren kann.",
+    "howToSteps": [
+      {
+        "name": "Erweiterung installieren",
+        "text": "Fügen Sie StreamPulse über den Chrome Web Store in Chrome, Brave, Edge oder Opera hinzu."
+      },
+      {
+        "name": "Ihre Sender importieren",
+        "text": "Synchronisiere deine Twitch-Abonnements mit einem Klick und füge anschließend deine Kick-Kanäle manuell hinzu."
+      },
+      {
+        "name": "Benachrichtigungen einstellen",
+        "text": "Wählen Sie den Ton aus, aktivieren Sie das Symbol auf dem Icon und legen Sie die bevorzugten Kanäle fest."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Warum kommen die Twitch-Benachrichtigungen verspätet an?",
+        "answer": "Die nativen Benachrichtigungen von Twitch laufen über ein gemeinsames Übertragungssystem, wodurch es zu einer variablen Verzögerung kommen kann, die manchmal mehrere Minuten beträgt. Eine Erweiterung, die den Status der abonnierten Kanäle direkt abfragt, erkennt den Beginn einer Live-Übertragung früher.",
+        "body": [
+          "Bei einem kurzen Live-Stream oder einem einmaligen Event reicht diese Verzögerung schon aus, um den Anfang zu verpassen. Das ist der Hauptgrund, warum viele Zuschauer ständig einen Tab geöffnet lassen."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Wie kann man Twitch und Kick an einem Ort verfolgen?",
+        "answer": "StreamPulse fragt die öffentlichen APIs beider Plattformen ab und zeigt die Live-Kanäle in einem einzigen Dashboard an. Eine einzige Erweiterung ersetzt die manuelle Überwachung zweier Websites.",
+        "list": [
+          "Twitch: Benachrichtigungen, Channel-Punkte, Drops, Vorhersagen.",
+          "Kick: Live-Statusverfolgung und Benachrichtigungen auf dem Desktop.",
+          "Gemeinsames Dashboard, sortiert nach Status."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Kann man die Benachrichtigungen individuell anpassen?",
+        "answer": "Ja. Der Ton ist konfigurierbar, auf dem Symbol der Erweiterung kann ein Badge angezeigt werden, und jeder Kanal kann separat eingestellt werden, um eine Überlastung zu vermeiden, wenn man vielen Creators folgt.",
+        "list": [
+          "Individuell einstellbarer Ton oder stille Benachrichtigung.",
+          "Zählanzeige auf dem Browser-Symbol.",
+          "Benachrichtigungen können für jeden Sender einzeln aktiviert werden.",
+          "Systemeigenes Benachrichtigungsfenster."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Soll man einen Tab geöffnet lassen?",
+        "answer": "Nein. Die Überwachung läuft im Service Worker der Erweiterung, ohne dass ein eigener Tab erforderlich ist. Der Browser muss lediglich gestartet sein."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Funktionieren Benachrichtigungen auch, wenn Chrome im Hintergrund läuft?",
+        "a": "Ja, solange der Browser läuft, auch im minimierten Zustand oder im Hintergrund."
+      },
+      {
+        "q": "Wie viele Kanäle kann man verfolgen?",
+        "a": "Die Erweiterung sieht keine Begrenzung vor."
+      },
+      {
+        "q": "Braucht man einen Twitch-Account?",
+        "a": "Nicht für die manuelle Verwaltung. Die Twitch-Verbindung dient ausschließlich dazu, deine Abonnements automatisch zu importieren."
+      }
+    ]
+  },
+  "it": {
+    "slug": "notifiche-live-twitch-kick",
+    "linkLabel": "Notifiche in tempo reale su Twitch e Kick",
+    "title": "Notifiche in tempo reale su Twitch e Kick | StreamPulse",
+    "h1": "Ricevere le notifiche delle dirette su Twitch e Kick sul desktop",
+    "description": "Perché le notifiche di Twitch arrivano in ritardo e come ricevere un avviso affidabile sul desktop per Twitch e Kick con un'unica estensione.",
+    "intro": "Le notifiche native di Twitch a volte arrivano diversi minuti dopo l'inizio della diretta, mentre Kick richiede di tenere d'occhio una scheda separata. Seguire i creator su entrambe le piattaforme comporta quindi dover destreggiarsi tra due sistemi di notifica diversi. Questa pagina spiega come centralizzare il monitoraggio.",
+    "howToSteps": [
+      {
+        "name": "Installare l'estensione",
+        "text": "Aggiungi StreamPulse dal Chrome Web Store su Chrome, Brave, Edge o Opera."
+      },
+      {
+        "name": "Importare i propri canali",
+        "text": "Sincronizza i tuoi abbonamenti su Twitch con un solo clic, poi aggiungi manualmente i tuoi canali Kick."
+      },
+      {
+        "name": "Impostare gli avvisi",
+        "text": "Scegliete il suono, attivate il badge sull'icona e impostate i canali prioritari."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Perché le notifiche di Twitch arrivano in ritardo?",
+        "answer": "Le notifiche native di Twitch passano attraverso un sistema di distribuzione condiviso che comporta un ritardo variabile, talvolta di diversi minuti. Un'estensione che verifica direttamente lo stato dei canali seguiti rileva l'inizio della diretta con maggiore tempestività.",
+        "body": [
+          "In caso di una diretta breve o di un evento occasionale, questo ritardo è sufficiente per perdersi l'inizio. È questo il motivo principale per cui molti spettatori tengono sempre aperta una scheda."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Come seguire Twitch e Kick nello stesso posto?",
+        "answer": "StreamPulse interroga le API pubbliche delle due piattaforme e visualizza i canali in diretta in un'unica dashboard. Una sola estensione sostituisce il monitoraggio manuale di due siti.",
+        "list": [
+          "Twitch: notifiche, punti canale, Drops, pronostici.",
+          "Kick: monitoraggio dello stato in tempo reale e notifiche sul desktop.",
+          "Pannello di controllo comune, ordinato per stato."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "È possibile personalizzare gli avvisi?",
+        "answer": "Sì. Il suono è personalizzabile, sull'icona dell'estensione può essere visualizzato un badge e ogni canale può essere regolato in modo indipendente per evitare la saturazione quando si seguono molti creatori.",
+        "list": [
+          "Suono personalizzabile o notifica silenziosa.",
+          "Icona di conteggio sull'icona del browser.",
+          "Avvisi attivabili canale per canale.",
+          "Finestra di notifica nativa del sistema."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "È necessario tenere aperta una scheda?",
+        "answer": "No. Il monitoraggio viene eseguito nel service worker dell'estensione, senza una scheda dedicata. È sufficiente che il browser sia in esecuzione."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Le notifiche funzionano se Chrome è in secondo piano?",
+        "a": "Sì, purché il browser sia in esecuzione, anche in modalità ridotta o in background."
+      },
+      {
+        "q": "Quanti canali si possono seguire?",
+        "a": "L'estensione non prevede alcun limite."
+      },
+      {
+        "q": "È necessario avere un account Twitch?",
+        "a": "Non per la gestione manuale. L'accesso a Twitch serve esclusivamente per importare automaticamente i tuoi abbonamenti."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "powiadomienia-na-żywo-twitch-kick",
+    "linkLabel": "Powiadomienia na żywo z serwisów Twitch i Kick",
+    "title": "Powiadomienia na żywo z serwisu Twitch i Kick | StreamPulse",
+    "h1": "Otrzymywanie powiadomień o transmisjach na żywo z serwisów Twitch i Kick na pulpicie",
+    "description": "Dlaczego powiadomienia z serwisu Twitch pojawiają się z opóźnieniem i jak uzyskać niezawodne powiadomienia na pulpicie dotyczące serwisu Twitch i Kick za pomocą jednego rozszerzenia.",
+    "intro": "Powiadomienia natywne serwisu Twitch pojawiają się czasem dopiero kilka minut po rozpoczęciu transmisji na żywo, a aplikacja Kick wymaga monitorowania osobnej karty. Śledzenie twórców na obu platformach wiąże się zatem z koniecznością przełączania się między dwoma nierównorzędnymi systemami powiadomień. Na tej stronie wyjaśniono, jak scentralizować śledzenie.",
+    "howToSteps": [
+      {
+        "name": "Zainstaluj rozszerzenie",
+        "text": "Dodaj StreamPulse ze sklepu Chrome Web Store w przeglądarkach Chrome, Brave, Edge lub Opera."
+      },
+      {
+        "name": "Importuj swoje kanały",
+        "text": "Zsynchronizuj swoje subskrypcje na Twitchu jednym kliknięciem, a następnie ręcznie dodaj swoje kanały w serwisie Kick."
+      },
+      {
+        "name": "Konfiguracja powiadomień",
+        "text": "Wybierz dźwięk, włącz znacznik na ikonie i ustaw kanały priorytetowe."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Dlaczego powiadomienia z serwisu Twitch pojawiają się z opóźnieniem?",
+        "answer": "Powiadomienia natywne serwisu Twitch są przesyłane przez wspólny system dystrybucji, co powoduje zmienne opóźnienia, sięgające niekiedy kilku minut. Rozszerzenie, które bezpośrednio sprawdza status obserwowanych kanałów, wykrywa rozpoczęcie transmisji na żywo wcześniej.",
+        "body": [
+          "W przypadku krótkiej transmisji na żywo lub jednorazowego wydarzenia to opóźnienie wystarczy, by przegapić początek. To główny powód, dla którego wielu widzów ma stale otwartą kartę w przeglądarce."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Jak śledzić Twitch i Kick w jednym miejscu?",
+        "answer": "StreamPulse pobiera dane z publicznych interfejsów API obu platform i wyświetla kanały na żywo w jednym panelu kontrolnym. Jedno rozszerzenie zastępuje ręczne monitorowanie dwóch stron internetowych.",
+        "list": [
+          "Twitch: powiadomienia, punkty kanału, Drops, typy.",
+          "Kick: monitorowanie statusu na żywo i powiadomienia na pulpicie.",
+          "Wspólny pulpit nawigacyjny, posortowany według statusu."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Czy można dostosować powiadomienia?",
+        "answer": "Tak. Dźwięk można dostosować, na ikonie rozszerzenia może pojawiać się powiadomienie, a każdy kanał można ustawić osobno, aby uniknąć przeciążenia, gdy obserwuje się wielu twórców.",
+        "list": [
+          "Dźwięk z możliwością dostosowania lub ciche powiadomienie.",
+          "Ikona licznika na ikonie przeglądarki.",
+          "Powiadomienia, które można włączać dla poszczególnych kanałów.",
+          "Natywne okno powiadomień systemu."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Czy należy pozostawić otwartą kartę?",
+        "answer": "Nie. Monitorowanie działa w serwisie pracowniczym rozszerzenia, bez osobnej karty. Wystarczy, że przeglądarka jest uruchomiona."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy powiadomienia działają, gdy okno przeglądarki Chrome jest zminimalizowane?",
+        "a": "Tak, o ile przeglądarka jest uruchomiona, nawet w trybie zminimalizowanym lub w tle."
+      },
+      {
+        "q": "Ile kanałów można śledzić?",
+        "a": "Rozszerzenie nie nakłada żadnych ograniczeń."
+      },
+      {
+        "q": "Czy trzeba mieć konto na Twitchu?",
+        "a": "Nie dotyczy to ręcznego śledzenia. Logowanie na Twitchu służy wyłącznie do automatycznego importowania Twoich subskrypcji."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "bildirimler-canlı-twitch-kick",
+    "linkLabel": "Twitch ve Kick canlı bildirimleri",
+    "title": "Twitch ve Kick'teki Bildirimler | StreamPulse",
+    "h1": "Masaüstünde Twitch ve Kick canlı yayın bildirimlerini almak",
+    "description": "Twitch bildirimleri neden gecikmeli geliyor ve tek bir uzantıyla Twitch ve Kick için güvenilir bir masaüstü uyarısı nasıl alınabilir?",
+    "intro": "Twitch'in kendi bildirimleri bazen canlı yayının başlamasından birkaç dakika sonra geliyor ve Kick'te ayrı bir sekmeyi takip etmek gerekiyor. Dolayısıyla, her iki platformda da içerik üreticileri takip etmek, birbirinden farklı iki bildirim sistemi arasında gidip gelmek anlamına geliyor. Bu sayfada, takibi tek bir yerden nasıl yönetebileceğiniz açıklanıyor.",
+    "howToSteps": [
+      {
+        "name": "Eklentiyi yükle",
+        "text": "Chrome, Brave, Edge veya Opera'da Chrome Web Mağazası'ndan StreamPulse'u ekleyin."
+      },
+      {
+        "name": "Kanallarınızı içe aktarın",
+        "text": "Twitch aboneliklerinizi tek bir tıklamayla senkronize edin, ardından Kick kanallarınızı manuel olarak ekleyin."
+      },
+      {
+        "name": "Uyarıları ayarlamak",
+        "text": "Sesi seçin, simgenin üzerindeki rozeti etkinleştirin ve öncelikli kanalları belirleyin."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Twitch bildirimleri neden gecikmeli geliyor?",
+        "answer": "Twitch'in yerel bildirimleri, bazen birkaç dakikaya varan değişken bir gecikmeye neden olan ortak bir dağıtım sistemi üzerinden iletilir. Takip edilen kanalların durumunu doğrudan sorgulayan bir eklenti, canlı yayına geçişi daha erken algılar.",
+        "body": [
+          "Kısa bir canlı yayın veya tek seferlik bir etkinlikte, bu gecikme yayının başlangıcını kaçırmaya yeter. Bu, pek çok izleyicinin sürekli bir sekmeyi açık tutmasının başlıca nedenidir."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Twitch ve Kick'i aynı yerden nasıl takip edebilirim?",
+        "answer": "StreamPulse, her iki platformun halka açık API'lerini sorgular ve canlı kanalları tek bir kontrol panelinde görüntüler. Tek bir eklenti, iki sitenin manuel olarak izlenmesinin yerini alır.",
+        "list": [
+          "Twitch: bildirimler, kanal puanları, Drops, tahminler.",
+          "Kick: Canlı durum takibi ve masaüstü bildirimleri.",
+          "Duruma göre sıralanmış ortak kontrol paneli."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Uyarıları kişiselleştirebilir miyiz?",
+        "answer": "Evet. Ses ayarlanabilir, uzantı simgesinde bir bildirim gösterilebilir ve çok sayıda içerik üreticisini takip ederken sesin aşırı yükselmesini önlemek için her bir kanal ayrı ayrı ayarlanabilir.",
+        "list": [
+          "Kişiselleştirilebilir ses veya sessiz bildirim.",
+          "Tarayıcı simgesindeki sayım rozeti.",
+          "Kanal bazında etkinleştirilebilen uyarılar.",
+          "Sistemin kendi bildirim penceresi."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Bir sekmeyi açık tutmak gerekir mi?",
+        "answer": "Hayır. İzleme, eklentinin hizmet çalışanı (service worker) içinde çalışır; bunun için ayrı bir sekme gerekmez. Tarayıcının sadece açık olması yeterlidir."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Chrome küçültülmüş haldeyken bildirimler çalışıyor mu?",
+        "a": "Evet, tarayıcı çalışır durumda olduğu sürece; küçültülmüş veya arka planda olsa bile."
+      },
+      {
+        "q": "Kaç kanalı takip edebiliriz?",
+        "a": "Eklenti tarafından belirlenen bir sınır yoktur."
+      },
+      {
+        "q": "Twitch hesabı gerekli mi?",
+        "a": "Manuel takip için değil. Twitch bağlantısı yalnızca aboneliklerinizi otomatik olarak içe aktarmak için kullanılır."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "уведомления-в-режиме-реального-времени-Twitch-исключение",
+    "linkLabel": "Уведомления в режиме реального времени на Twitch и Kick",
+    "title": "Уведомления в Twitch и Kick | StreamPulse",
+    "h1": "Получать уведомления о прямых трансляциях на Twitch и Kick на рабочий стол",
+    "description": "Почему уведомления от Twitch приходят с задержкой и как получать надежные уведомления на рабочий стол для Twitch и Kick с помощью одного расширения.",
+    "intro": "Встроенные уведомления Twitch иногда поступают через несколько минут после начала прямой трансляции, а в Kick приходится следить за отдельной вкладкой. Таким образом, подписка на авторов на обеих платформах требует постоянного переключения между двумя несопоставимыми системами уведомлений. На этой странице объясняется, как централизовать отслеживание.",
+    "howToSteps": [
+      {
+        "name": "Установить расширение",
+        "text": "Установите StreamPulse из Chrome Web Store в браузерах Chrome, Brave, Edge или Opera."
+      },
+      {
+        "name": "Импорт каналов",
+        "text": "Синхронизируйте свои подписки на Twitch одним щелчком мыши, а затем добавьте свои каналы Kick вручную."
+      },
+      {
+        "name": "Настроить оповещения",
+        "text": "Выберите звук, включите значок на иконке и установите приоритетные каналы."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Почему уведомления от Twitch приходят с задержкой?",
+        "answer": "Встроенные уведомления Twitch проходят через общую систему рассылки, что приводит к переменной задержке, которая иногда составляет несколько минут. Расширение, которое напрямую проверяет статус подписок, обнаруживает начало прямой трансляции раньше.",
+        "body": [
+          "В случае короткой прямой трансляции или разового мероприятия этого небольшого задержки достаточно, чтобы пропустить начало. Это главная причина, по которой многие зрители постоянно держат открытой вкладку."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Как следить за Twitch и Kick в одном месте?",
+        "answer": "StreamPulse запрашивает данные через открытые API обеих платформ и отображает прямые трансляции на единой панели мониторинга. Одно расширение заменяет ручной мониторинг двух сайтов.",
+        "list": [
+          "Twitch: уведомления, очки канала, Drops, прогнозы.",
+          "Kick: отслеживание статуса в режиме реального времени и уведомления на рабочем столе.",
+          "Общая панель мониторинга, отсортированная по статусу."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Можно ли настроить уведомления?",
+        "answer": "Да. Звук можно настроить, на значке расширения может отображаться уведомление, а каждый канал можно настроить отдельно, чтобы избежать перегрузки, если вы подписаны на большое количество авторов.",
+        "list": [
+          "Настраиваемый звук или бесшумное уведомление.",
+          "Значок подсчёта на иконке браузера.",
+          "Оповещения можно включать для каждого канала отдельно.",
+          "Встроенное системное окно уведомлений."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Нужно ли оставлять вкладку открытой?",
+        "answer": "Нет. Мониторинг работает в сервис-работнике расширения, без отдельной вкладки. Достаточно просто запустить браузер."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Работают ли уведомления, если окно Chrome свернуто?",
+        "a": "Да, пока браузер работает, в том числе в свернутом состоянии или в фоновом режиме."
+      },
+      {
+        "q": "Сколько каналов можно смотреть?",
+        "a": "Расширение не устанавливает никаких ограничений."
+      },
+      {
+        "q": "Нужен ли аккаунт на Twitch?",
+        "a": "Нет, для ручного отслеживания это не подходит. Подключение к Twitch служит исключительно для автоматического импорта ваших подписок."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "通知-ライブ-Twitch-キック",
+    "linkLabel": "TwitchおよびKickのライブ通知",
+    "title": "TwitchおよびKickの通知 | StreamPulse",
+    "h1": "TwitchやKickのライブ配信通知をデスクトップで受け取る",
+    "description": "Twitchの通知が遅れて届く理由と、TwitchとKickの信頼できるデスクトップ通知を1つの拡張機能で受け取る方法。",
+    "intro": "Twitchのネイティブ通知は、ライブ配信が始まってから数分後に届くことがあり、Kickでは別のタブを常に確認しておく必要があります。そのため、両プラットフォームでクリエイターをフォローするには、互いに異なる2つの通知システムを同時に管理しなければなりません。このページでは、その管理を一元化する方法について説明します。",
+    "howToSteps": [
+      {
+        "name": "拡張機能をインストールする",
+        "text": "Chrome、Brave、Edge、またはOperaのChrome Web StoreからStreamPulseを追加してください。"
+      },
+      {
+        "name": "チャンネルのインポート",
+        "text": "ワンクリックでTwitchのサブスクリプションを同期し、その後、Kickのチャンネルを手動で追加してください。"
+      },
+      {
+        "name": "アラートの設定",
+        "text": "サウンドを選択し、アイコン上のバッジを有効にして、優先チャンネルを設定してください。"
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Twitchの通知が遅れて届くのはなぜですか？",
+        "answer": "Twitchのネイティブ通知は、共有配信システムを経由するため、遅延が生じることがあり、場合によっては数分かかることもあります。フォローしているチャンネルのステータスを直接確認する拡張機能を使えば、ライブ配信の開始をより早く検知できます。",
+        "body": [
+          "短いライブ配信や単発のイベントでは、このタイムラグだけで冒頭を見逃してしまうことになりかねません。これが、多くの視聴者が常にタブを開いたままにしている主な理由です。"
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "TwitchとKickを同じ場所でどう追跡すればいいですか？",
+        "answer": "StreamPulseは、両プラットフォームの公開APIを照会し、ライブチャンネルを単一のダッシュボードに表示します。1つの拡張機能だけで、2つのサイトを手作業で監視する手間が省けます。",
+        "list": [
+          "Twitch：通知、チャンネルポイント、Drops、予想。",
+          "Kick：ライブステータスの追跡とデスクトップ通知。",
+          "ステータス別に並べ替えた共通ダッシュボード。"
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "アラートはカスタマイズできますか？",
+        "answer": "はい。音量は設定可能です。拡張機能のアイコンにバッジを表示させることもできます。また、多くのクリエイターをフォローしている場合でも音量が飽和しないよう、各チャンネルごとに個別に調整できます。",
+        "list": [
+          "カスタマイズ可能な着信音、またはサイレント通知。",
+          "ブラウザのアイコンにあるカウントバッジ。",
+          "チャンネルごとにアラートを有効にできます。",
+          "システム標準の通知ウィンドウ。"
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "タブを開いたままにしておくべきでしょうか？",
+        "answer": "いいえ。監視機能は、拡張機能のサービスワーカー内で動作しており、専用のタブは必要ありません。ブラウザが起動されていれば十分です。"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Chromeを最小化している場合でも、通知は機能しますか？",
+        "a": "はい、ブラウザが動作している限り、最小化されている場合やバックグラウンドで動作している場合も含みます。"
+      },
+      {
+        "q": "何チャンネルまで視聴できますか？",
+        "a": "この拡張機能では、制限は設けられていません。"
+      },
+      {
+        "q": "Twitchのアカウントは必要ですか？",
+        "a": "手動でのフォローには使用できません。Twitchとの連携は、サブスクリプションを自動的にインポートするためのみに使用されます。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "알림-라이브-트위치-찹",
+    "linkLabel": "Twitch 및 Kick 실시간 알림",
+    "title": "Twitch 및 Kick 알림 | StreamPulse",
+    "h1": "데스크톱에서 Twitch 및 Kick 라이브 알림 받기",
+    "description": "Twitch 알림이 늦게 도착하는 이유는 무엇이며, 하나의 확장 프로그램으로 Twitch와 Kick에 대한 안정적인 데스크톱 알림을 받는 방법은 무엇인가요?",
+    "intro": "Twitch의 기본 알림은 라이브 방송이 시작된 지 몇 분이 지나서야 도착하는 경우가 있으며, Kick의 경우 별도의 탭을 계속 확인해야 합니다. 따라서 두 플랫폼에서 크리에이터를 팔로우하려면 서로 다른 두 가지 알림 시스템을 번갈아 확인해야 합니다. 이 페이지에서는 이러한 알림을 한곳에서 관리하는 방법을 설명합니다.",
+    "howToSteps": [
+      {
+        "name": "확장 프로그램 설치하기",
+        "text": "Chrome, Brave, Edge 또는 Opera에서 Chrome 웹 스토어를 통해 StreamPulse를 추가하세요."
+      },
+      {
+        "name": "채널 가져오기",
+        "text": "한 번의 클릭으로 Twitch 구독 내역을 동기화한 다음, Kick 채널을 수동으로 추가하세요."
+      },
+      {
+        "name": "알림 설정",
+        "text": "음원을 선택하고, 아이콘의 배지를 활성화한 다음, 우선순위 채널을 설정하세요."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Twitch 알림이 왜 늦게 도착하나요?",
+        "answer": "Twitch의 기본 알림은 공유 방송 시스템을 통해 전송되기 때문에, 때로는 몇 분에 달하는 변동적인 지연 시간이 발생합니다. 팔로우 중인 채널의 상태를 직접 확인하는 확장 프로그램을 사용하면 라이브 방송 시작을 더 빨리 감지할 수 있습니다.",
+        "body": [
+          "짧은 라이브 방송이나 일회성 이벤트의 경우, 이 정도의 시간 차만으로도 시작 부분을 놓치게 됩니다. 이것이 바로 많은 시청자들이 탭을 항상 열어두는 주된 이유입니다."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Twitch와 Kick을 한 곳에서 어떻게 확인할 수 있나요?",
+        "answer": "StreamPulse는 두 플랫폼의 공개 API를 조회하여 라이브 채널을 하나의 대시보드에 표시합니다. 단 하나의 확장 프로그램만으로도 두 사이트를 수동으로 모니터링하던 번거로움을 덜 수 있습니다.",
+        "list": [
+          "Twitch: 알림, 채널 포인트, 드롭, 예측.",
+          "Kick: 실시간 상태 확인 및 데스크톱 알림.",
+          "상태별로 정렬된 통합 대시보드."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "알림을 사용자 지정할 수 있나요?",
+        "answer": "네. 알림 소리를 설정할 수 있고, 확장 프로그램 아이콘에 알림 배지가 표시될 수 있으며, 많은 크리에이터를 팔로우할 때 알림이 과부하되지 않도록 각 채널별로 독립적으로 설정할 수 있습니다.",
+        "list": [
+          "사용자 지정 벨소리 또는 무음 알림.",
+          "브라우저 아이콘에 표시되는 카운터 배지.",
+          "채널별로 알림을 활성화할 수 있습니다.",
+          "시스템의 기본 알림 창."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "탭을 열어두어야 할까요?",
+        "answer": "아닙니다. 모니터링은 확장 프로그램의 서비스 워커에서 실행되며, 별도의 탭은 필요하지 않습니다. 브라우저만 실행되어 있으면 됩니다."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Chrome을 최소화한 상태에서도 알림이 작동하나요?",
+        "a": "네, 브라우저가 실행 중이라면, 최소화되었거나 백그라운드 상태인 경우에도 마찬가지입니다."
+      },
+      {
+        "q": "채널을 몇 개까지 구독할 수 있나요?",
+        "a": "이 확장 기능에서는 제한이 설정되어 있지 않습니다."
+      },
+      {
+        "q": "Twitch 계정이 필요한가요?",
+        "a": "수동으로 팔로우하는 용도는 아닙니다. Twitch 연결은 구독 목록을 자동으로 가져오는 용도로만 사용됩니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "pemberitahuan-siaran-langsung-Twitch-pengusiran",
+    "linkLabel": "Pemberitahuan langsung Twitch dan Kick",
+    "title": "Pemberitahuan siaran langsung di Twitch dan Kick | StreamPulse",
+    "h1": "Menerima pemberitahuan siaran langsung Twitch dan Kick di desktop",
+    "description": "Mengapa notifikasi Twitch sering terlambat, dan bagaimana cara mendapatkan pemberitahuan desktop yang andal untuk Twitch dan Kick dalam satu ekstensi saja.",
+    "intro": "Pemberitahuan bawaan Twitch terkadang baru muncul beberapa menit setelah siaran langsung dimulai, dan Kick mengharuskan pengguna untuk memantau tab terpisah. Oleh karena itu, mengikuti kreator di kedua platform tersebut berarti harus berpindah-pindah antara dua sistem pemberitahuan yang tidak seimbang. Halaman ini menjelaskan cara memusatkan pemantauan tersebut.",
+    "howToSteps": [
+      {
+        "name": "Pasang ekstensi",
+        "text": "Tambahkan StreamPulse dari Chrome Web Store, di Chrome, Brave, Edge, atau Opera."
+      },
+      {
+        "name": "Mengimpor saluran Anda",
+        "text": "Sinkronkan langganan Twitch Anda dengan satu klik, lalu tambahkan saluran Kick Anda secara manual."
+      },
+      {
+        "name": "Mengatur pemberitahuan",
+        "text": "Pilih suara, aktifkan lencana pada ikon, dan tentukan saluran prioritas."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Mengapa notifikasi Twitch datang terlambat?",
+        "answer": "Pemberitahuan bawaan Twitch dikirim melalui sistem penyiaran bersama yang menyebabkan adanya penundaan yang bervariasi, terkadang hingga beberapa menit. Sebuah ekstensi yang langsung memeriksa status saluran yang diikuti dapat mendeteksi saat siaran langsung dimulai lebih awal.",
+        "body": [
+          "Pada siaran langsung singkat atau acara satu kali, selisih waktu ini sudah cukup membuat penonton melewatkan bagian awalnya. Inilah alasan utama mengapa banyak penonton membiarkan tab tersebut tetap terbuka sepanjang waktu."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Bagaimana cara mengikuti Twitch dan Kick di satu tempat?",
+        "answer": "StreamPulse mengakses API publik dari kedua platform tersebut dan menampilkan saluran siaran langsung dalam satu dasbor. Satu ekstensi saja sudah cukup untuk menggantikan pemantauan manual terhadap dua situs.",
+        "list": [
+          "Twitch: notifikasi, poin saluran, Drops, prediksi.",
+          "Kick: pemantauan status siaran langsung dan notifikasi di desktop.",
+          "Dasbor bersama, diurutkan berdasarkan status."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Apakah pemberitahuan dapat disesuaikan?",
+        "answer": "Ya. Suara dapat disesuaikan, tanda pemberitahuan dapat ditampilkan pada ikon ekstensi, dan setiap saluran dapat diatur secara terpisah untuk menghindari kelebihan notifikasi saat mengikuti banyak kreator.",
+        "list": [
+          "Suara yang dapat disesuaikan atau notifikasi tanpa suara.",
+          "Lambang penghitung pada ikon peramban.",
+          "Pemberitahuan dapat diaktifkan per saluran.",
+          "Jendela pemberitahuan bawaan sistem."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Apakah perlu membiarkan tab tersebut tetap terbuka?",
+        "answer": "Tidak. Pemantauan berjalan di service worker ekstensi tersebut, tanpa tab khusus. Browser hanya perlu dijalankan."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah notifikasi tetap berfungsi jika jendela Chrome dalam mode minimized?",
+        "a": "Ya, selama browser masih berjalan, termasuk saat jendela browser diperkecil atau berjalan di latar belakang."
+      },
+      {
+        "q": "Berapa banyak saluran yang bisa diikuti?",
+        "a": "Tidak ada batasan yang ditetapkan oleh ekstensi tersebut."
+      },
+      {
+        "q": "Apakah perlu memiliki akun Twitch?",
+        "a": "Tidak, untuk pemantauan manual. Koneksi Twitch hanya digunakan untuk mengimpor langganan Anda secara otomatis."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "meldingen-live-twitch-kick",
+    "linkLabel": "Live-meldingen op Twitch en Kick",
+    "title": "Meldingen op Twitch en Kick | StreamPulse",
+    "h1": "Meldingen van Twitch- en Kick-livestreams op je bureaublad ontvangen",
+    "description": "Waarom komen Twitch-meldingen te laat binnen, en hoe kun je met één extensie betrouwbare desktopmeldingen voor Twitch en Kick ontvangen?",
+    "intro": "De native meldingen van Twitch verschijnen soms pas enkele minuten nadat de livestream is begonnen, en bij Kick moet je een apart tabblad in de gaten houden. Als je creators op beide platforms wilt volgen, moet je dus schakelen tussen twee ongelijkwaardige meldingssystemen. Op deze pagina wordt uitgelegd hoe je het volgen kunt centraliseren.",
+    "howToSteps": [
+      {
+        "name": "De extensie installeren",
+        "text": "Voeg StreamPulse toe vanuit de Chrome Web Store, in Chrome, Brave, Edge of Opera."
+      },
+      {
+        "name": "Uw zenders importeren",
+        "text": "Synchroniseer je Twitch-abonnementen met één klik en voeg vervolgens je Kick-kanalen handmatig toe."
+      },
+      {
+        "name": "Meldingen instellen",
+        "text": "Kies het geluid, schakel het vinkje bij het pictogram in en stel de prioritaire zenders in."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Waarom komen de meldingen van Twitch te laat binnen?",
+        "answer": "De standaardmeldingen van Twitch verlopen via een gedeeld distributiesysteem, waardoor er een variabele vertraging ontstaat, soms van meerdere minuten. Een extensie die rechtstreeks de status van de gevolgde kanalen controleert, detecteert het begin van een livestream eerder.",
+        "body": [
+          "Bij een korte livestream of een eenmalig evenement is dit tijdsverschil al genoeg om het begin te missen. Dat is de belangrijkste reden waarom veel kijkers altijd een tabblad openhouden."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Hoe kun je Twitch en Kick op één plek volgen?",
+        "answer": "StreamPulse raadpleegt de openbare API’s van beide platforms en geeft de livestreams weer in één enkel dashboard. Eén enkele extensie vervangt het handmatig controleren van twee websites.",
+        "list": [
+          "Twitch: meldingen, kanaalpunten, Drops, voorspellingen.",
+          "Kick: live status bijhouden en meldingen op het bureaublad.",
+          "Gemeenschappelijk overzicht, gesorteerd op status."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Kunnen de meldingen worden aangepast?",
+        "answer": "Ja. Het geluid is instelbaar, er kan een melding worden weergegeven op het pictogram van de extensie, en elk kanaal kan afzonderlijk worden ingesteld om overbelasting te voorkomen wanneer je veel makers volgt.",
+        "list": [
+          "Aanpasbaar geluid of stille melding.",
+          "Tellericoontje op het browserpictogram.",
+          "Waarschuwingen kunnen per zender worden ingeschakeld.",
+          "Een native meldingsvenster van het systeem."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Moet je een tabblad open laten staan?",
+        "answer": "Nee. De monitoring draait in de service worker van de extensie, zonder dat er een apart tabblad voor nodig is. De browser hoeft alleen maar gestart te zijn."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Werken meldingen ook als Chrome in een minimaliservenster staat?",
+        "a": "Ja, zolang de browser actief is, ook als deze geminimaliseerd is of op de achtergrond draait."
+      },
+      {
+        "q": "Hoeveel zenders kun je volgen?",
+        "a": "De extensie legt geen limiet op."
+      },
+      {
+        "q": "Heb je een Twitch-account nodig?",
+        "a": "Niet voor handmatige opvolging. De Twitch-verbinding dient uitsluitend om je abonnementen automatisch te importeren."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "meddelanden-live-twitch-kick",
+    "linkLabel": "Live-meddelanden på Twitch och Kick",
+    "title": "Meddelanden på Twitch och Kick | StreamPulse",
+    "h1": "Få aviseringar om live-sändningar på Twitch och Kick direkt på skrivbordet",
+    "description": "Varför kommer Twitch-aviseringarna för sent, och hur kan man få tillförlitliga aviseringar på skrivbordet för både Twitch och Kick med ett enda tillägg?",
+    "intro": "De inbyggda aviseringarna på Twitch dyker ibland upp flera minuter efter att livestreamen har börjat, och på Kick måste man hålla koll på en separat flik. Att följa kreatörer på de båda plattformarna innebär därför att man måste växla mellan två olika aviseringstjänster som inte är helt likvärdiga. På den här sidan förklaras hur man kan samla alla aviseringar på ett ställe.",
+    "howToSteps": [
+      {
+        "name": "Installera tillägget",
+        "text": "Lägg till StreamPulse från Chrome Web Store i Chrome, Brave, Edge eller Opera."
+      },
+      {
+        "name": "Importera dina kanaler",
+        "text": "Synkronisera dina Twitch-abonnemang med ett klick och lägg sedan till dina Kick-kanaler manuellt."
+      },
+      {
+        "name": "Ställa in aviseringar",
+        "text": "Välj ljud, aktivera märket på ikonen och ange vilka kanaler som ska prioriteras."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Varför kommer Twitch-meddelandena för sent?",
+        "answer": "Twitchs inbyggda aviseringar skickas via ett gemensamt distributionssystem som medför en varierande fördröjning, ibland på flera minuter. Ett tillägg som direkt kontrollerar statusen för de kanaler du följer upptäcker när en sändning går live tidigare.",
+        "body": [
+          "Vid en kort direktsändning eller ett engångsevenemang räcker denna fördröjning för att man ska missa början. Det är den främsta anledningen till att många tittare alltid har en flik öppen."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Hur kan man följa både Twitch och Kick på samma ställe?",
+        "answer": "StreamPulse hämtar data från de båda plattformarnas offentliga API:er och visar livekanalerna i en enda översiktspanel. Ett enda tillägg ersätter den manuella övervakningen av två webbplatser.",
+        "list": [
+          "Twitch: aviseringar, kanalpoäng, Drops, förutsägelser.",
+          "Kick: realtidsuppföljning av status och aviseringar på skrivbordet.",
+          "Gemensam översikt, sorterad efter status."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Går det att anpassa aviseringarna?",
+        "answer": "Ja. Ljudet går att ställa in, en meddelandeikon kan visas på tilläggets ikon, och varje kanal kan ställas in separat för att undvika överbelastning när man följer många kreatörer.",
+        "list": [
+          "Anpassningsbar ljudsignal eller tyst avisering.",
+          "Räknarmarkering på webbläsarens ikon.",
+          "Varningar som kan aktiveras för varje kanal.",
+          "Systemets inbyggda meddelandefönster."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Ska man ha fliken öppen?",
+        "answer": "Nej. Övervakningen körs i tilläggets service worker, utan någon särskild flik. Webbläsaren behöver bara vara igång."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Fungerar aviseringarna även när Chrome är minimerat?",
+        "a": "Ja, så länge webbläsaren är igång, även i minimerat läge eller i bakgrunden."
+      },
+      {
+        "q": "Hur många kanaler kan man följa?",
+        "a": "Det finns ingen gräns som fastställs av tillägget."
+      },
+      {
+        "q": "Behöver man ett Twitch-konto?",
+        "a": "Nej, inte för manuell uppföljning. Twitch-anslutningen används endast för att automatiskt importera dina prenumerationer."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "oznámení-live-twitch-vyloučení",
+    "linkLabel": "Živé notifikace na Twitchi a Kicku",
+    "title": "Oznámení na Twitchi a Kicku | StreamPulse",
+    "h1": "Zobrazovat oznámení z živých přenosů na Twitchi a Kicku na ploše",
+    "description": "Proč se oznámení z Twitche zobrazují se zpožděním a jak získat spolehlivé upozornění na plochu pro Twitch a Kick v jediném rozšíření.",
+    "intro": "Nativní oznámení na Twitchi se někdy objeví až několik minut po zahájení živého vysílání a u aplikace Kick je nutné sledovat samostatnou záložku. Sledování tvůrců na obou platformách tedy znamená přecházení mezi dvěma odlišnými systémy upozornění. Na této stránce se dozvíte, jak sledování centralizovat.",
+    "howToSteps": [
+      {
+        "name": "Nainstalovat rozšíření",
+        "text": "Přidejte si StreamPulse z Chrome Web Store do prohlížečů Chrome, Brave, Edge nebo Opera."
+      },
+      {
+        "name": "Importovat vaše kanály",
+        "text": "Synchronizujte svá předplatná na Twitchi jedním kliknutím a poté ručně přidejte své kanály na Kicku."
+      },
+      {
+        "name": "Nastavení upozornění",
+        "text": "Vyberte zvuk, aktivujte značku na ikoně a nastavte prioritní kanály."
+      }
+    ],
+    "sections": [
+      {
+        "id": "retard",
+        "h2": "Proč se oznámení na Twitchi zobrazují se zpožděním?",
+        "answer": "Nativní oznámení na Twitchi procházejí sdíleným distribučním systémem, což způsobuje proměnlivé zpoždění, někdy i několik minut. Rozšíření, které přímo zjišťuje stav sledovaných kanálů, detekuje začátek živého vysílání dříve.",
+        "body": [
+          "U krátkého živého vysílání nebo jednorázové události stačí tento časový posun k tomu, aby divák zmeškal začátek. To je hlavní důvod, proč si mnoho diváků nechává jednu záložku neustále otevřenou."
+        ]
+      },
+      {
+        "id": "twitch-kick",
+        "h2": "Jak sledovat Twitch a Kick na jednom místě?",
+        "answer": "StreamPulse dotazuje veřejná API obou platforem a zobrazuje živé kanály na jediném přehledovém panelu. Jediné rozšíření nahrazuje ruční sledování dvou webů.",
+        "list": [
+          "Twitch: oznámení, body kanálu, Drops, předpovědi.",
+          "Kick: sledování aktuálního stavu v reálném čase a oznámení na ploše.",
+          "Společný přehled, seřazený podle stavu."
+        ]
+      },
+      {
+        "id": "personnalisation",
+        "h2": "Lze upozornění přizpůsobit?",
+        "answer": "Ano. Zvuk lze nastavit, na ikoně rozšíření se může zobrazit oznámení a každý kanál lze nastavit samostatně, aby nedocházelo k zahlcení, když sledujete mnoho tvůrců.",
+        "list": [
+          "Přizpůsobitelný zvuk nebo tiché upozornění.",
+          "Počítadlo na ikoně prohlížeče.",
+          "Upozornění lze aktivovat pro jednotlivé kanály.",
+          "Nativní oznamovací okno systému."
+        ]
+      },
+      {
+        "id": "onglet",
+        "h2": "Je třeba nechat kartu otevřenou?",
+        "answer": "Ne. Sledování probíhá v service workeru rozšíření, bez samostatné záložky. Stačí, aby byl prohlížeč spuštěn."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Fungují oznámení, když je Chrome minimalizovaný?",
+        "a": "Ano, pokud je prohlížeč spuštěný, a to i v minimalizovaném režimu nebo na pozadí."
+      },
+      {
+        "q": "Kolik kanálů lze sledovat?",
+        "a": "Rozšíření nestanovuje žádné omezení."
+      },
+      {
+        "q": "Je potřeba mít účet na Twitchi?",
+        "a": "Ne, pro ruční sledování to neplatí. Připojení k Twitchi slouží pouze k automatickému importu vašich odběrů."
+      }
+    ]
+  }
+}

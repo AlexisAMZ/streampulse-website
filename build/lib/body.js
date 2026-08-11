@@ -10,7 +10,7 @@
  * facilement pour citer une source.
  */
 
-const { ORIGIN, CWS, UI, esc, prefix } = require('./render');
+const { ORIGIN, CWS, UI, getUI, esc, prefix } = require('./render');
 
 /** Bloc de réponse directe, extractible par les moteurs génératifs. */
 function answerBlock(text) {
@@ -57,7 +57,7 @@ function renderSections(page, lang) {
 }
 
 function renderToc(page, lang) {
-  const t = UI[lang];
+  const t = getUI(lang);
   const items = page.sections[lang]
     .map((s) => `          <li><a href="#${s.id}">${esc(s.h2)}</a></li>`)
     .join('\n');
@@ -71,7 +71,7 @@ ${items}
 
 function renderFaq(page, lang) {
   if (!page.faq || !page.faq[lang]) return '';
-  const t = UI[lang];
+  const t = getUI(lang);
   const items = page.faq[lang]
     .map(
       (f) => `          <div class="faq-item">
@@ -88,7 +88,7 @@ ${items}
 
 function renderRelated(page, lang, allPages) {
   if (!page.related || !page.related.length) return '';
-  const t = UI[lang];
+  const t = getUI(lang);
   const links = page.related
     .map((key) => {
       const target = allPages.find((p) => p.key === key);
@@ -105,7 +105,7 @@ ${links}
 }
 
 function renderCta(lang) {
-  const t = UI[lang];
+  const t = getUI(lang);
   return `      <section class="cta-banner">
         <div class="container">
           <h2>${t.ctaTitle}</h2>
@@ -161,7 +161,7 @@ function buildSchema(page, lang) {
       {
         '@type': 'ListItem',
         position: 1,
-        name: UI[lang].home,
+        name: getUI(lang).home,
         item: `${ORIGIN}${prefix(lang)}/`,
       },
       { '@type': 'ListItem', position: 2, name: page.h1[lang], item: canonical },

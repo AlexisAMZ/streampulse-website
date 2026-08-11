@@ -1,0 +1,587 @@
+{
+  "es": {
+    "slug": "patada de extensión",
+    "linkLabel": "Extensión Kick para espectadores",
+    "title": "Extensión Kick para espectadores | StreamPulse",
+    "h1": "Extensión Kick para espectadores",
+    "description": "StreamPulse: extensión de Kick para espectadores. Notificaciones en directo, seguimiento de streamers, filtros de chat y herramientas de visualización para Kick.com.",
+    "intro": "StreamPulse es una de las pocas extensiones de navegador que es compatible con Kick, además de con Twitch. Notificaciones en directo, recompensas automáticas, filtros de chat y seguimiento de tus streamers favoritos de Kick en un panel de control unificado.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Funcionalidades de Kick",
+        "answer": "StreamPulse es compatible con las funciones clave de Kick: notificaciones en directo, recompensas de canal, filtros de chat y seguimiento del tiempo de visualización. El panel de control de StreamPulse muestra los canales de Twitch y Kick en una interfaz unificada.",
+        "list": [
+          "<strong>Notificaciones en directo de Kick.</strong> Alertas en el escritorio en tiempo real en cuanto un streamer al que sigues empieza a retransmitir en directo en Kick.",
+          "<strong>Recompensas de cadena.</strong> Recogida automática de las recompensas de la cadena Kick cuando estén disponibles.",
+          "<strong>Filtros de chat de Kick.</strong> Oculta el spam y las palabras clave no deseadas en el chat de Kick.",
+          "<strong>Seguimiento del tiempo de visualización.</strong> Contador preciso del tiempo dedicado a cada canal Kick del que se realiza un seguimiento."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Diferencias con el servicio de Twitch",
+        "answer": "El soporte de Kick de StreamPulse incluye notificaciones, recompensas, filtros y seguimiento. Las funciones específicas de Twitch (Drops, vistas previas al pasar el cursor y corrección de errores del reproductor) no están disponibles en Kick, ya que la API de Kick no las permite actualmente."
+      },
+      {
+        "id": "installation",
+        "h2": "Instalación",
+        "answer": "StreamPulse se instala desde la Chrome Web Store y funciona en todos los navegadores basados en Chromium. La compatibilidad con Kick está activada por defecto, por lo que no es necesaria ninguna configuración adicional."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Funciona StreamPulse con Kick?",
+        "a": "Sí. StreamPulse es compatible con Kick y ofrece notificaciones en directo, seguimiento de streamers, filtros de chat y seguimiento del tiempo de visualización."
+      },
+      {
+        "q": "¿StreamPulse envía notificaciones de Kick?",
+        "a": "Sí. En cuanto un streamer al que sigues empieza una retransmisión en directo en Kick, StreamPulse envía una notificación al escritorio en tiempo real."
+      },
+      {
+        "q": "¿StreamPulse recoge las recompensas de Kick?",
+        "a": "Sí. StreamPulse detecta y reclama automáticamente las recompensas de Kick cuando están disponibles."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "chute de extensão",
+    "linkLabel": "Extensão Kick para espectadores",
+    "title": "Extensão Kick para espectadores | StreamPulse",
+    "h1": "Extensão Kick para espectadores",
+    "description": "StreamPulse: extensão do Kick para espectadores. Notificações em tempo real, acompanhamento de streamers, filtros de chat e ferramentas de visualização para o Kick.com.",
+    "intro": "O StreamPulse é uma das poucas extensões de navegador que oferece suporte ao Kick, além do Twitch. Notificações em tempo real, recompensas automáticas, filtros de chat e acompanhamento dos seus streamers favoritos do Kick em um painel unificado.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Recursos do Kick",
+        "answer": "O StreamPulse oferece suporte aos principais recursos do Kick: notificações em tempo real, recompensas de canal, filtros de chat e acompanhamento do tempo de exibição. O painel do StreamPulse exibe os canais do Twitch e do Kick em uma interface unificada.",
+        "list": [
+          "<strong>Notificações ao vivo do Kick.</strong> Alertas na área de trabalho em tempo real assim que um streamer que você segue entra ao vivo no Kick.",
+          "<strong>Recompensas da cadeia.</strong> Recuperação automática das recompensas da cadeia Kick assim que estiverem disponíveis.",
+          "<strong>Filtros de chat do Kick.</strong> Oculte spams e palavras-chave indesejadas no chat do Kick.",
+          "<strong>Acompanhamento do tempo de exibição.</strong> Contador preciso do tempo gasto em cada canal Kick monitorado."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Diferenças em relação ao suporte do Twitch",
+        "answer": "O suporte ao Kick da StreamPulse abrange notificações, recompensas, filtros e acompanhamento. Os recursos específicos do Twitch (Drops, visualizações ao passar o mouse, correção de erros do player) não estão disponíveis no Kick, pois a API do Kick não os permite no momento."
+      },
+      {
+        "id": "installation",
+        "h2": "Instalação",
+        "answer": "O StreamPulse é instalado a partir da Chrome Web Store e funciona em todos os navegadores baseados no Chromium. O suporte ao Kick vem ativado por padrão; não é necessária nenhuma configuração adicional."
+      }
+    ],
+    "faq": [
+      {
+        "q": "O StreamPulse funciona com o Kick?",
+        "a": "Sim. O StreamPulse é compatível com o Kick, oferecendo notificações em tempo real, acompanhamento de streamers, filtros de chat e acompanhamento do tempo de exibição."
+      },
+      {
+        "q": "O StreamPulse envia notificações pelo Kick?",
+        "a": "Sim. Assim que um streamer que você segue entra ao vivo no Kick, o StreamPulse envia uma notificação para o desktop em tempo real."
+      },
+      {
+        "q": "O StreamPulse recebe as recompensas do Kick?",
+        "a": "Sim. O StreamPulse detecta e resgata automaticamente as recompensas da Kick quando elas estão disponíveis."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Ausfalltritt",
+    "linkLabel": "Kick-Erweiterung für Zuschauer",
+    "title": "Kick-Erweiterung für Zuschauer | StreamPulse",
+    "h1": "Kick-Erweiterung für Zuschauer",
+    "description": "StreamPulse: Kick-Erweiterung für Zuschauer. Live-Benachrichtigungen, Streamer-Verfolgung, Chat-Filter und Tools zur Stream-Anzeige für Kick.com.",
+    "intro": "StreamPulse ist eine der wenigen Browser-Erweiterungen, die neben Twitch auch Kick unterstützt. Live-Benachrichtigungen, automatische Belohnungen, Chat-Filter und die Verfolgung deiner Lieblings-Kick-Streamer in einem einheitlichen Dashboard.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Kick-Funktionen",
+        "answer": "StreamPulse unterstützt die wichtigsten Funktionen von Kick: Live-Benachrichtigungen, Kanalbelohnungen, Chat-Filter und die Erfassung der Sehdauer. Das Dashboard von StreamPulse zeigt Twitch- und Kick-Kanäle in einer einheitlichen Benutzeroberfläche an.",
+        "list": [
+          "<strong>Live-Benachrichtigungen von Kick.</strong> Desktop-Benachrichtigungen in Echtzeit, sobald ein von dir verfolgter Streamer auf Kick live geht.",
+          "<strong>Kettenbelohnungen.</strong> Automatisches Abrufen der Kick-Kettenbelohnungen, sobald diese verfügbar sind.",
+          "<strong>Kick-Chat-Filter.</strong> Blenden Sie Spam und unerwünschte Schlüsselwörter im Kick-Chat aus.",
+          "<strong>Erfassung der Sehdauer.</strong> Präziser Zähler für die Zeit, die auf jedem verfolgten Kick-Kanal verbracht wurde."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Unterschiede zum Twitch-Support",
+        "answer": "Der StreamPulse-Support für Kick umfasst Benachrichtigungen, Belohnungen, Filter und Nachverfolgung. Twitch-spezifische Funktionen (Drops, Hover-Vorschauen, Behebung von Player-Fehlern) sind auf Kick nicht verfügbar, da die Kick-API diese derzeit nicht unterstützt."
+      },
+      {
+        "id": "installation",
+        "h2": "Installation",
+        "answer": "StreamPulse lässt sich über den Chrome Web Store installieren und läuft auf allen Chromium-basierten Browsern. Die Kick-Unterstützung ist standardmäßig aktiviert, es sind keine zusätzlichen Einstellungen erforderlich."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Funktioniert StreamPulse mit Kick?",
+        "a": "Ja. StreamPulse unterstützt Kick mit Live-Benachrichtigungen, der Nachverfolgung von Streamern, Chat-Filtern und der Erfassung der Sehdauer."
+      },
+      {
+        "q": "Versendet StreamPulse Kick-Benachrichtigungen?",
+        "a": "Ja. Sobald ein Streamer, dem man folgt, auf Kick live geht, sendet StreamPulse in Echtzeit eine Desktop-Benachrichtigung."
+      },
+      {
+        "q": "Wird bei StreamPulse die Kick-Prämien gutgeschrieben?",
+        "a": "Ja. StreamPulse erkennt die Kick-Kanalprämien automatisch und fordert sie ein, sobald sie verfügbar sind."
+      }
+    ]
+  },
+  "it": {
+    "slug": "calcio di prolunga",
+    "linkLabel": "Estensione Kick per gli spettatori",
+    "title": "Estensione Kick per gli spettatori | StreamPulse",
+    "h1": "Estensione Kick per gli spettatori",
+    "description": "StreamPulse: estensione per Kick dedicata agli spettatori. Notifiche in tempo reale, monitoraggio degli streamer, filtri per la chat e strumenti di visualizzazione per Kick.com.",
+    "intro": "StreamPulse è una delle poche estensioni per browser che supporta Kick oltre a Twitch. Notifiche in tempo reale, ricompense automatiche, filtri per la chat e monitoraggio dei tuoi streamer preferiti su Kick in un'unica dashboard.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Funzionalità di Kick",
+        "answer": "StreamPulse supporta le funzionalità principali di Kick: notifiche in tempo reale, ricompense per i canali, filtri di chat e monitoraggio del tempo di visione. La dashboard di StreamPulse mostra i canali Twitch e Kick in un'unica interfaccia.",
+        "list": [
+          "<strong>Notifiche live su Kick.</strong> Avvisi in tempo reale sul desktop non appena uno streamer seguito va in diretta su Kick.",
+          "<strong>Ricompense di catena.</strong> Recupero automatico delle ricompense di catena Kick non appena disponibili.",
+          "<strong>Filtri per la chat di Kick.</strong> Nascondi lo spam e le parole chiave indesiderate nella chat di Kick.",
+          "<strong>Monitoraggio del tempo di visione.</strong> Contatore preciso del tempo trascorso su ciascun canale Kick monitorato."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Differenze rispetto alla piattaforma Twitch",
+        "answer": "Il supporto Kick di StreamPulse include notifiche, ricompense, filtri e monitoraggio. Le funzionalità specifiche di Twitch (Drops, anteprime al passaggio del mouse, correzione degli errori del lettore) non sono disponibili su Kick poiché l'API di Kick attualmente non le supporta."
+      },
+      {
+        "id": "installation",
+        "h2": "Installazione",
+        "answer": "StreamPulse si installa dal Chrome Web Store e funziona su tutti i browser basati su Chromium. Il supporto per Kick è attivato di default, non è necessaria alcuna configurazione aggiuntiva."
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulse funziona con Kick?",
+        "a": "Sì. StreamPulse supporta Kick con le notifiche in tempo reale, il monitoraggio degli streamer, i filtri della chat e il monitoraggio del tempo di visione."
+      },
+      {
+        "q": "StreamPulse invia notifiche Kick?",
+        "a": "Sì. Non appena uno streamer che segui va in diretta su Kick, StreamPulse invia una notifica sul desktop in tempo reale."
+      },
+      {
+        "q": "StreamPulse recupera i premi Kick?",
+        "a": "Sì. StreamPulse rileva e richiede automaticamente i premi Kick della channel quando sono disponibili."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "kopnięcie z wyskoku",
+    "linkLabel": "Rozszerzenie Kick dla widzów",
+    "title": "Rozszerzenie Kick dla widzów | StreamPulse",
+    "h1": "Rozszerzenie Kick dla widzów",
+    "description": "StreamPulse: rozszerzenie dla widzów serwisu Kick. Powiadomienia na żywo, śledzenie streamerów, filtry czatu i narzędzia do oglądania na Kick.com.",
+    "intro": "StreamPulse to jedno z nielicznych rozszerzeń przeglądarki, które oprócz serwisu Twitch obsługuje również serwis Kick. Powiadomienia na żywo, automatyczne nagrody, filtry czatu oraz śledzenie ulubionych streamerów z serwisu Kick w jednym panelu kontrolnym.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Funkcje Kick",
+        "answer": "StreamPulse obsługuje kluczowe funkcje serwisu Kick: powiadomienia na żywo, nagrody dla kanałów, filtry czatu oraz śledzenie czasu oglądania. Pulpit nawigacyjny StreamPulse wyświetla kanały Twitch i Kick w ujednoliconym interfejsie.",
+        "list": [
+          "<strong>Powiadomienia na żywo z serwisu Kick.</strong> Powiadomienia na pulpicie w czasie rzeczywistym, gdy tylko obserwowany streamer rozpocznie transmisję na żywo w serwisie Kick.",
+          "<strong>Nagrody za udział w łańcuchu.</strong> Automatyczne pobieranie nagród z łańcucha Kick, gdy tylko staną się dostępne.",
+          "<strong>Filtry czatu Kick.</strong> Ukryj spam i niepożądane słowa kluczowe w czacie Kick.",
+          "<strong>Monitorowanie czasu oglądania.</strong> Precyzyjny licznik czasu spędzonego na każdym śledzonym kanale Kick."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Różnice w stosunku do serwisu Twitch",
+        "answer": "Obsługa serwisu Kick przez StreamPulse obejmuje powiadomienia, nagrody, filtry i śledzenie. Funkcje charakterystyczne dla serwisu Twitch (Drops, podglądy po najechaniu kursorem, poprawianie błędów odtwarzacza) nie są dostępne w serwisie Kick, ponieważ API serwisu Kick obecnie ich nie obsługuje."
+      },
+      {
+        "id": "installation",
+        "h2": "Instalacja",
+        "answer": "Aplikację StreamPulse można zainstalować ze sklepu Chrome Web Store i działa ona we wszystkich przeglądarkach opartych na silniku Chromium. Obsługa funkcji Kick jest domyślnie włączona, nie wymaga to żadnej dodatkowej konfiguracji."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy StreamPulse współpracuje z Kickiem?",
+        "a": "Tak. StreamPulse obsługuje Kick, oferując powiadomienia na żywo, śledzenie streamerów, filtry czatu oraz monitorowanie czasu oglądania."
+      },
+      {
+        "q": "Czy StreamPulse wysyła powiadomienia Kick?",
+        "a": "Tak. Gdy tylko obserwowany streamer rozpocznie transmisję na żywo na platformie Kick, StreamPulse wysyła powiadomienie na pulpit w czasie rzeczywistym."
+      },
+      {
+        "q": "Czy StreamPulse pobiera nagrody z serwisu Kick?",
+        "a": "Tak. StreamPulse automatycznie wykrywa i odbiera nagrody Kick za kanał, gdy tylko są one dostępne."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "uzatma-tekmesi",
+    "linkLabel": "Kick seyirci eklentisi",
+    "title": "Kick izleyici eklentisi | StreamPulse",
+    "h1": "Kick seyirci eklentisi",
+    "description": "StreamPulse: Kick izleyicileri için bir eklenti. Canlı bildirimler, yayıncıları takip etme, sohbet filtreleri ve Kick.com için izleme araçları.",
+    "intro": "StreamPulse, Twitch'in yanı sıra Kick'i de destekleyen nadir tarayıcı uzantılarından biridir. Canlı bildirimler, otomatik ödüller, sohbet filtreleri ve en sevdiğiniz Kick yayıncılarını tek bir kontrol panelinden takip etme imkanı sunar.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Kick Özellikleri",
+        "answer": "StreamPulse, Kick’in temel özelliklerini destekler: canlı bildirimler, kanal ödülleri, sohbet filtreleri ve izleme süresi takibi. StreamPulse’un kontrol paneli, Twitch ve Kick kanallarını tek bir arayüzde gösterir.",
+        "list": [
+          "<strong>Kick canlı bildirimleri.</strong> Takip ettiğiniz bir yayıncı Kick'te canlı yayına başladığında anında masaüstü uyarıları alırsınız.",
+          "<strong>Zincir ödülleri.</strong> Kick zincir ödülleri mevcut olduğunda otomatik olarak alınır.",
+          "<strong>Kick sohbet filtreleri.</strong> Kick sohbetinde spam mesajları ve istenmeyen anahtar kelimeleri gizleyin.",
+          "<strong>İzleme süresinin takibi.</strong> İzlenen her bir Kick kanalında geçirilen sürenin hassas sayacı."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Twitch desteği ile arasındaki farklar",
+        "answer": "StreamPulse'un Kick desteği, bildirimler, ödüller, filtreler ve izleme özelliklerini kapsamaktadır. Twitch'e özgü özellikler (Drops, fareyle üzerine gelindiğinde görünen önizlemeler, oynatıcı hatalarının düzeltilmesi) Kick'te mevcut değildir, çünkü Kick API'si şu anda bu özellikleri desteklememektedir."
+      },
+      {
+        "id": "installation",
+        "h2": "Kurulum",
+        "answer": "StreamPulse, Chrome Web Store'dan yüklenir ve Chromium tabanlı tüm tarayıcılarda çalışır. Kick desteği varsayılan olarak etkindir; ek bir yapılandırma gerekmez."
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulse, Kick ile çalışıyor mu?",
+        "a": "Evet. StreamPulse, canlı bildirimler, yayıncı takibi, sohbet filtreleri ve izleme süresi takibi gibi özellikleriyle Kick'i desteklemektedir."
+      },
+      {
+        "q": "StreamPulse, Kick bildirimleri gönderiyor mu?",
+        "a": "Evet. Takip ettiğiniz bir yayıncı Kick'te canlı yayına başladığı anda, StreamPulse gerçek zamanlı olarak masaüstü bildirimini gönderir."
+      },
+      {
+        "q": "StreamPulse, Kick ödüllerini topluyor mu?",
+        "a": "Evet. StreamPulse, Kick kanal ödülleri mevcut olduğunda bunları otomatik olarak algılar ve talep eder."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "удар с отскоком",
+    "linkLabel": "Расширение Kick для зрителей",
+    "title": "Расширение Kick для зрителей | StreamPulse",
+    "h1": "Расширение Kick для зрителей",
+    "description": "StreamPulse: расширение для зрителей на Kick. Уведомления в режиме реального времени, отслеживание стримеров, фильтры чата и инструменты для просмотра на Kick.com.",
+    "intro": "StreamPulse — одно из немногих расширений для браузера, которое помимо Twitch поддерживает и Kick. Уведомления в режиме реального времени, автоматические награды, фильтры чата и отслеживание ваших любимых стримеров на Kick — всё это в единой панели управления.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Функции Kick",
+        "answer": "StreamPulse поддерживает ключевые функции Kick: уведомления в режиме реального времени, награды каналов, фильтры чата и отслеживание времени просмотра. На панели управления StreamPulse каналы Twitch и Kick отображаются в едином интерфейсе.",
+        "list": [
+          "<strong>Уведомления о прямых трансляциях на Kick.</strong> Уведомления на рабочий стол в режиме реального времени, как только подписчик-стример выходит в прямой эфир на Kick.",
+          "<strong>Вознаграждения цепочки.</strong> Автоматическое получение вознаграждений цепочки Kick, когда они становятся доступны.",
+          "<strong>Фильтры чата Kick.</strong> Скрывайте спам и нежелательные ключевые слова в чате Kick.",
+          "<strong>Отслеживание времени просмотра.</strong> Точный счетчик времени, проведённого на каждом отслеживаемом канале Kick."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Отличия от службы Twitch",
+        "answer": "Поддержка Kick в StreamPulse включает уведомления, вознаграждения, фильтры и отслеживание. Функции, характерные для Twitch (Drops, предварительный просмотр при наведении курсора, исправление ошибок проигрывателя), недоступны в Kick, поскольку API Kick в настоящее время не поддерживает их."
+      },
+      {
+        "id": "installation",
+        "h2": "Установка",
+        "answer": "StreamPulse устанавливается из Chrome Web Store и работает во всех браузерах на базе Chromium. Поддержка Kick включена по умолчанию, дополнительная настройка не требуется."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Работает ли StreamPulse с Kick?",
+        "a": "Да. StreamPulse поддерживает Kick с функциями уведомлений в режиме реального времени, отслеживания стримеров, фильтров чата и отслеживания времени просмотра."
+      },
+      {
+        "q": "Отправляет ли StreamPulse уведомления через Kick?",
+        "a": "Да. Как только стример, на которого вы подписаны, выходит в прямой эфир на Kick, StreamPulse отправляет уведомление на рабочий стол в режиме реального времени."
+      },
+      {
+        "q": "StreamPulse получает ли вознаграждения Kick?",
+        "a": "Да. StreamPulse автоматически обнаруживает и получает вознаграждения от Kick, когда они становятся доступны."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "エクステンション・キック",
+    "linkLabel": "観客向け「Kick」拡張機能",
+    "title": "視聴者向け「Kick」拡張機能 | StreamPulse",
+    "h1": "観客向け「Kick」拡張機能",
+    "description": "StreamPulse：Kickの視聴者向け拡張機能。Kick.com向けのライブ通知、ストリーマーのフォロー、チャットフィルター、視聴ツール。",
+    "intro": "StreamPulseは、Twitchに加えてKickにも対応している数少ないブラウザ拡張機能の一つです。ライブ通知、自動報酬、チャットフィルター、お気に入りのKickストリーマーの追跡機能を、統合されたダッシュボードで利用できます。",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Kickの機能",
+        "answer": "StreamPulseは、Kickの主要機能であるライブ通知、チャンネル報酬、チャットフィルター、視聴時間の追跡に対応しています。StreamPulseのダッシュボードでは、TwitchとKickのチャンネルが統合されたインターフェースで表示されます。",
+        "list": [
+          "<strong>Kickのライブ通知。</strong>フォローしているストリーマーがKickでライブ配信を開始すると、すぐにデスクトップにリアルタイムで通知が届きます。",
+          "<strong>チェーン報酬。</strong>Kickのチェーン報酬が利用可能になると、自動的に受け取ることができます。",
+          "<strong>Kickのチャットフィルター。</strong>Kickのチャットでスパムや不要なキーワードを非表示にします。",
+          "<strong>視聴時間の追跡。</strong>追跡対象の各Kickチャンネルでの視聴時間を正確に計測します。"
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Twitchのサポートとの違い",
+        "answer": "StreamPulseのKickサポートでは、通知、報酬、フィルター、追跡機能に対応しています。Twitch固有の機能（Drops、マウスオーバープレビュー、プレイヤーエラーの修正）は、KickのAPIが現在これらをサポートしていないため、Kickでは利用できません。"
+      },
+      {
+        "id": "installation",
+        "h2": "設置",
+        "answer": "StreamPulseはChrome Web Storeからインストールでき、Chromiumベースのすべてのブラウザで動作します。Kickのサポートはデフォルトで有効になっており、追加の設定は必要ありません。"
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulseはKickと連携しますか？",
+        "a": "はい。StreamPulseは、ライブ通知、ストリーマーの追跡、チャットフィルター、視聴時間の追跡といったKickの機能をサポートしています。"
+      },
+      {
+        "q": "StreamPulseはKickの通知を送信しますか？",
+        "a": "はい。フォローしているストリーマーがKickでライブ配信を開始すると、StreamPulseはリアルタイムでデスクトップ通知を送信します。"
+      },
+      {
+        "q": "StreamPulseはKickの報酬を受け取りますか？",
+        "a": "はい。StreamPulseは、Kickのチャンネル報酬が利用可能になると、自動的にそれを検知して請求します。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "익스텐션 킥",
+    "linkLabel": "관람객용 Kick 확장 기능",
+    "title": "시청자용 Kick 확장 기능 | StreamPulse",
+    "h1": "관람객용 Kick 확장 기능",
+    "description": "StreamPulse: Kick 시청자용 확장 프로그램. Kick.com을 위한 실시간 알림, 스트리머 팔로우, 채팅 필터 및 시청 도구.",
+    "intro": "StreamPulse는 Twitch뿐만 아니라 Kick도 지원하는 몇 안 되는 브라우저 확장 프로그램 중 하나입니다. 실시간 알림, 자동 보상, 채팅 필터 기능을 제공하며, 통합 대시보드에서 좋아하는 Kick 스트리머들을 한눈에 확인할 수 있습니다.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Kick 기능",
+        "answer": "StreamPulse는 Kick의 주요 기능인 실시간 알림, 채널 보상, 채팅 필터, 시청 시간 추적 등을 지원합니다. StreamPulse의 대시보드에서는 Twitch와 Kick 채널을 통합된 인터페이스로 확인할 수 있습니다.",
+        "list": [
+          "<strong>Kick 실시간 알림.</strong> 팔로우 중인 스트리머가 Kick에서 라이브 방송을 시작하면 즉시 데스크톱으로 실시간 알림을 받아보세요.",
+          "<strong>체인 보상.</strong> Kick 체인 보상이 제공될 때 자동으로 수령합니다.",
+          "<strong>Kick 채팅 필터.</strong> Kick 채팅에서 스팸과 원치 않는 키워드를 숨기세요.",
+          "<strong>시청 시간 추적.</strong> 추적 중인 각 Kick 채널에서 보낸 시간을 정확하게 집계합니다."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Twitch 지원과의 차이점",
+        "answer": "StreamPulse의 Kick 지원 기능은 알림, 보상, 필터 및 추적 기능을 포함합니다. Twitch 전용 기능(드롭, 마우스 오버 미리보기, 플레이어 오류 수정)은 Kick API에서 현재 이를 지원하지 않기 때문에 Kick에서는 사용할 수 없습니다."
+      },
+      {
+        "id": "installation",
+        "h2": "설치",
+        "answer": "StreamPulse는 Chrome 웹 스토어에서 설치할 수 있으며, Chromium 기반 모든 브라우저에서 작동합니다. Kick 지원은 기본적으로 활성화되어 있으므로 별도의 설정이 필요하지 않습니다."
+      }
+    ],
+    "faq": [
+      {
+        "q": "StreamPulse는 Kick과 호환되나요?",
+        "a": "네. StreamPulse는 실시간 알림, 스트리머 추적, 채팅 필터, 시청 시간 추적 기능을 통해 Kick을 지원합니다."
+      },
+      {
+        "q": "StreamPulse는 Kick 알림을 보내나요?",
+        "a": "네. 팔로우 중인 스트리머가 Kick에서 라이브 방송을 시작하면, StreamPulse는 실시간으로 데스크톱 알림을 보냅니다."
+      },
+      {
+        "q": "StreamPulse는 Kick 보상을 지급하나요?",
+        "a": "네. StreamPulse는 Kick 채널 보상이 제공될 때 이를 자동으로 감지하고 청구합니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "tendangan-ekstensi",
+    "linkLabel": "Ekstensi Kick untuk penonton",
+    "title": "Ekstensi Kick untuk penonton | StreamPulse",
+    "h1": "Ekstensi Kick untuk penonton",
+    "description": "StreamPulse: ekstensi Kick untuk penonton. Pemberitahuan langsung, pelacakan streamer, filter obrolan, dan alat penayangan untuk Kick.com.",
+    "intro": "StreamPulse adalah salah satu dari sedikit ekstensi browser yang mendukung Kick selain Twitch. Notifikasi langsung, hadiah otomatis, filter obrolan, dan fitur untuk memantau streamer Kick favorit Anda dalam satu dasbor terpadu.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Fitur Kick",
+        "answer": "StreamPulse mendukung fitur-fitur utama Kick: notifikasi langsung, hadiah saluran, filter obrolan, dan pelacakan waktu menonton. Dasbor StreamPulse menampilkan saluran Twitch dan Kick dalam satu antarmuka terpadu.",
+        "list": [
+          "<strong>Pemberitahuan langsung Kick.</strong> Pemberitahuan di desktop secara real-time begitu seorang streamer yang Anda ikuti mulai siaran langsung di Kick.",
+          "<strong>Hadiah rantai.</strong> Pengambilan otomatis hadiah rantai Kick saat tersedia.",
+          "<strong>Filter obrolan Kick.</strong> Sembunyikan spam dan kata kunci yang tidak diinginkan dalam obrolan Kick.",
+          "<strong>Pemantauan durasi menonton.</strong> Penghitung yang akurat untuk waktu yang dihabiskan di setiap saluran Kick yang dipantau."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Perbedaan dengan layanan Twitch",
+        "answer": "Dukungan Kick dari StreamPulse mencakup notifikasi, hadiah, filter, dan pelacakan. Fitur-fitur khusus Twitch (Drops, pratinjau saat mengarahkan kursor, perbaikan kesalahan pemutar) tidak tersedia di Kick karena API Kick saat ini belum mendukungnya."
+      },
+      {
+        "id": "installation",
+        "h2": "Pemasangan",
+        "answer": "StreamPulse dapat diunduh dari Chrome Web Store dan dapat digunakan di semua peramban berbasis Chromium. Dukungan Kick sudah diaktifkan secara default, sehingga tidak diperlukan konfigurasi tambahan."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah StreamPulse kompatibel dengan Kick?",
+        "a": "Ya. StreamPulse mendukung Kick dengan fitur notifikasi langsung, pelacakan streamer, filter obrolan, dan pelacakan durasi menonton."
+      },
+      {
+        "q": "Apakah StreamPulse mengirimkan notifikasi Kick?",
+        "a": "Ya. Begitu seorang streamer yang Anda ikuti mulai siaran langsung di Kick, StreamPulse akan mengirimkan notifikasi desktop secara real-time."
+      },
+      {
+        "q": "Apakah StreamPulse mengumpulkan hadiah Kick?",
+        "a": "Ya. StreamPulse secara otomatis mendeteksi dan mengklaim hadiah Kick Channel saat hadiah tersebut tersedia."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "uitbreidingsschop",
+    "linkLabel": "Kick-uitbreiding voor toeschouwers",
+    "title": "Kick-extensie voor kijkers | StreamPulse",
+    "h1": "Kick-uitbreiding voor toeschouwers",
+    "description": "StreamPulse: Kick-extensie voor kijkers. Live-meldingen, streamers volgen, chatfilters en kijktools voor Kick.com.",
+    "intro": "StreamPulse is een van de weinige browserextensies die naast Twitch ook Kick ondersteunt. Live-meldingen, automatische beloningen, chatfilters en het volgen van je favoriete Kick-streamers in één overzichtelijk dashboard.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Kick-functies",
+        "answer": "StreamPulse ondersteunt de belangrijkste functies van Kick: live-meldingen, kanaalbeloningen, chatfilters en het bijhouden van de kijktijd. Het dashboard van StreamPulse geeft Twitch- en Kick-kanalen weer in één geïntegreerde interface.",
+        "list": [
+          "<strong>Live-meldingen van Kick.</strong> Real-time meldingen op je desktop zodra een streamer die je volgt live gaat op Kick.",
+          "<strong>Ketenbeloningen.</strong> Automatisch ophalen van Kick-ketenbeloningen zodra deze beschikbaar zijn.",
+          "<strong>Kick-chatfilters.</strong> Verberg spam en ongewenste trefwoorden in de Kick-chat.",
+          "<strong>Bijhouden van de kijktijd.</strong> Nauwkeurige teller van de tijd die op elk gevolgd Kick-kanaal is doorgebracht."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Verschillen met de Twitch-ondersteuning",
+        "answer": "De Kick-ondersteuning van StreamPulse omvat meldingen, beloningen, filters en tracking. De specifieke Twitch-functies (Drops, previews bij het aanwijzen met de muis, het verhelpen van afspeelfouten) zijn niet beschikbaar op Kick, omdat de API van Kick dit momenteel niet toestaat."
+      },
+      {
+        "id": "installation",
+        "h2": "Installatie",
+        "answer": "StreamPulse kan worden geïnstalleerd via de Chrome Web Store en werkt op alle browsers die op Chromium zijn gebaseerd. De ondersteuning voor Kick is standaard ingeschakeld; er is geen extra configuratie nodig."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Werkt StreamPulse samen met Kick?",
+        "a": "Ja. StreamPulse ondersteunt Kick met live-meldingen, het volgen van streamers, chatfilters en het bijhouden van de kijktijd."
+      },
+      {
+        "q": "Verzendt StreamPulse Kick-meldingen?",
+        "a": "Ja. Zodra een streamer die je volgt live gaat op Kick, stuurt StreamPulse in realtime een melding naar je desktop."
+      },
+      {
+        "q": "Verzamelt StreamPulse de Kick-beloningen?",
+        "a": "Ja. StreamPulse detecteert en claimt automatisch de Kick-kanaalbeloningen zodra deze beschikbaar zijn."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "förlängningsspark",
+    "linkLabel": "Kick-tillägg för åskådare",
+    "title": "Kick-tillägg för tittare | StreamPulse",
+    "h1": "Kick-tillägg för åskådare",
+    "description": "StreamPulse: ett tillägg för Kick-tittare. Live-meddelanden, möjlighet att följa streamare, chattfilter och visningsverktyg för Kick.com.",
+    "intro": "StreamPulse är ett av få webbläsartillägg som stöder både Kick och Twitch. Live-meddelanden, automatiska belöningar, chattfilter och möjlighet att följa dina favoritstreamare på Kick i en samlad översikt.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Kick-funktioner",
+        "answer": "StreamPulse stöder de viktigaste funktionerna i Kick: live-notiser, kanalbelöningar, chattfilter och spårning av visningstid. StreamPulse-instrumentpanelen visar Twitch- och Kick-kanaler i ett samlat gränssnitt.",
+        "list": [
+          "<strong>Live-meddelanden från Kick.</strong> Real-time-aviseringar på datorn så fort en streamer du följer går live på Kick.",
+          "<strong>Kedjebelöningar.</strong> Automatisk hämtning av Kick-kedjebelöningar när de blir tillgängliga.",
+          "<strong>Kick-chattfilter.</strong> Dölj spam och oönskade nyckelord i Kick-chatten.",
+          "<strong>Uppföljning av tittartid.</strong> Exakt mätning av den tid som tillbringats på varje Kick-kanal som följs."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Skillnader jämfört med Twitch-supporten",
+        "answer": "StreamPulse:s stöd för Kick omfattar aviseringar, belöningar, filter och spårning. Funktioner som är specifika för Twitch (Drops, förhandsvisningar vid muspekning, korrigering av spelarfel) är inte tillgängliga på Kick, eftersom Kicks API för närvarande inte stöder dem."
+      },
+      {
+        "id": "installation",
+        "h2": "Installation",
+        "answer": "StreamPulse installeras från Chrome Web Store och fungerar i alla Chromium-baserade webbläsare. Stöd för Kick är aktiverat som standard, och ingen ytterligare konfiguration krävs."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Fungerar StreamPulse tillsammans med Kick?",
+        "a": "Ja. StreamPulse stöder Kick med live-notiser, spårning av streamare, chattfilter och spårning av visningstid."
+      },
+      {
+        "q": "Skickar StreamPulse Kick-meddelanden?",
+        "a": "Ja. Så fort en streamer som du följer går live på Kick skickar StreamPulse ett meddelande till din dator i realtid."
+      },
+      {
+        "q": "Hämtar StreamPulse Kick-belöningarna?",
+        "a": "Ja. StreamPulse upptäcker och hämtar automatiskt Kick-belöningar när de finns tillgängliga."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "prodloužený kop",
+    "linkLabel": "Doplněk Kick pro diváky",
+    "title": "Doplněk Kick pro diváky | StreamPulse",
+    "h1": "Doplněk Kick pro diváky",
+    "description": "StreamPulse: rozšíření pro diváky na Kicku. Živé notifikace, sledování streamerů, filtry chatu a nástroje pro sledování na Kick.com.",
+    "intro": "StreamPulse je jedno z mála rozšíření pro prohlížeče, které kromě Twitche podporuje i Kick. Živé notifikace, automatické odměny, filtry chatu a sledování vašich oblíbených streamerů na Kicku – to vše na jednom přehledném panelu.",
+    "sections": [
+      {
+        "id": "fonctionnalites",
+        "h2": "Funkce Kick",
+        "answer": "StreamPulse podporuje klíčové funkce platformy Kick: živá oznámení, odměny pro kanály, filtry chatu a sledování doby sledování. Na ovládacím panelu StreamPulse se kanály Twitch a Kick zobrazují v jednotném rozhraní.",
+        "list": [
+          "<strong>Živé notifikace z Kicku.</strong> Upozornění na ploše v reálném čase, jakmile streamer, kterého sledujete, spustí živé vysílání na Kicku.",
+          "<strong>Odměny za řetězec.</strong> Automatické získávání odměn za řetězec Kick, jakmile jsou k dispozici.",
+          "<strong>Filtry chatu Kick.</strong> Skryjte spam a nežádoucí klíčová slova v chatu Kick.",
+          "<strong>Sledování doby sledování.</strong> Přesný měřič času stráveného na každém sledovaném kanálu Kick."
+        ]
+      },
+      {
+        "id": "difference",
+        "h2": "Rozdíly oproti platformě Twitch",
+        "answer": "Podpora služby Kick od StreamPulse zahrnuje oznámení, odměny, filtry a sledování. Funkce specifické pro Twitch (Drops, náhledy při najetí myší, opravy chyb přehrávače) nejsou ve službě Kick k dispozici, protože API služby Kick je v současné době nepodporuje."
+      },
+      {
+        "id": "installation",
+        "h2": "Instalace",
+        "answer": "StreamPulse se instaluje z Chrome Web Store a funguje ve všech prohlížečích založených na Chromiu. Podpora Kick je ve výchozím nastavení zapnutá, není třeba provádět žádné další nastavení."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Funguje StreamPulse s aplikací Kick?",
+        "a": "Ano. StreamPulse podporuje Kick včetně živých oznámení, sledování streamerů, filtrů chatu a sledování doby sledování."
+      },
+      {
+        "q": "Odesílá StreamPulse oznámení přes Kick?",
+        "a": "Ano. Jakmile streamer, kterého sledujete, spustí živé vysílání na Kicku, StreamPulse vám v reálném čase zašle oznámení na plochu."
+      },
+      {
+        "q": "Získává StreamPulse odměny z Kicku?",
+        "a": "Ano. StreamPulse automaticky detekuje a uplatňuje odměny Kick za sledování kanálu, jakmile jsou k dispozici."
+      }
+    ]
+  }
+}

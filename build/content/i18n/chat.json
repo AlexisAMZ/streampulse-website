@@ -1,0 +1,834 @@
+{
+  "es": {
+    "slug": "filtrar-chat-twitch",
+    "linkLabel": "Filtrar el chat de Twitch",
+    "title": "Filtrar el chat de Twitch: spam y palabras clave | StreamPulse",
+    "h1": "Filtrar el chat de Twitch desde el lado del espectador",
+    "description": "Cómo ocultar los mensajes no deseados, las palabras clave y a determinados usuarios en el chat de Twitch sin ser moderador del canal.",
+    "intro": "En los canales grandes, el chat se desplaza demasiado rápido como para poder leerlo, y las herramientas de moderación integradas están reservadas a los moderadores. No obstante, los espectadores pueden filtrar lo que ven en su pantalla. En esta página se detallan las opciones disponibles y sus limitaciones.",
+    "howToSteps": [
+      {
+        "name": "Abrir la configuración de filtrado",
+        "text": "Desde la extensión StreamPulse, abre la sección «Filtrado del chat»."
+      },
+      {
+        "name": "Añadir palabras clave",
+        "text": "Introduce los términos que deseas ocultar: los mensajes que coincidan con ellos desaparecerán de tu pantalla."
+      },
+      {
+        "name": "Ocultar usuarios",
+        "text": "Añade los apodos cuyos mensajes ya no quieras ver."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "¿Se puede filtrar el chat de Twitch sin ser moderador?",
+        "answer": "Sí. El filtrado por parte del espectador solo afecta a tu propia visualización: los mensajes se ocultan en tu pantalla, sin que se eliminen para los demás y sin que se lleve a cabo ninguna acción de moderación en el canal.",
+        "body": [
+          "Es una diferencia importante: no bloqueas al autor, simplemente dejas de ver sus mensajes en tu navegador."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "¿Qué se puede ocultar exactamente?",
+        "answer": "Los mensajes que contienen palabras clave definidas, los mensajes de determinados usuarios, así como elementos de la interfaz que resultan molestos, como las recomendaciones o los anuncios promocionales.",
+        "list": [
+          "<strong>Palabras clave.</strong> Spoilers, insultos, spam recurrente.",
+          "<strong>Usuarios.</strong> Bots y cuentas no deseadas.",
+          "<strong>Elementos de la interfaz.</strong> Inserciones y sugerencias innecesarias."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "¿Cuáles son los límites del filtrado para espectadores?",
+        "answer": "El filtrado se aplica una vez que tu navegador ha recibido el mensaje; por lo tanto, no reduce el tráfico recibido ni impide que los demás espectadores vean el contenido. Las variantes ortográficas también eluden los filtros por palabras clave.",
+        "body": [
+          "En los casos graves (acoso, contenido ilegal), la única respuesta adecuada sigue siendo denunciarlo a Twitch, ya que el filtrado solo sirve para ocultar el problema por tu parte."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿El filtrado avisa al usuario oculto?",
+        "a": "No, la operación es totalmente local e invisible para los demás."
+      },
+      {
+        "q": "¿Se sincronizan los filtros entre dispositivos?",
+        "a": "No. Los ajustes se guardan localmente en cada navegador."
+      },
+      {
+        "q": "¿Funciona el filtro en Kick?",
+        "a": "El filtrado del chat se centra actualmente en Twitch."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "filtrar-chat-twitch",
+    "linkLabel": "Filtrar o chat do Twitch",
+    "title": "Filtrar o chat do Twitch: spam e palavras-chave | StreamPulse",
+    "h1": "Filtrar o chat do Twitch do lado do espectador",
+    "description": "Como ocultar mensagens indesejadas, palavras-chave e determinados usuários no chat do Twitch, sem ser moderador do canal.",
+    "intro": "Nos grandes canais, o chat passa rápido demais para ficar legível, e as ferramentas de moderação integradas são reservadas aos moderadores. Mesmo assim, um espectador pode filtrar o que vê na tela. Esta página detalha as opções disponíveis e suas limitações.",
+    "howToSteps": [
+      {
+        "name": "Abrir as configurações de filtragem",
+        "text": "Na extensão StreamPulse, abra a seção “Filtragem do chat”."
+      },
+      {
+        "name": "Adicionar palavras-chave",
+        "text": "Digite os termos que deseja ocultar: as mensagens correspondentes desaparecerão da sua tela."
+      },
+      {
+        "name": "Ocultar usuários",
+        "text": "Adicione os pseudônimos cujas mensagens você não quer mais ver."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "É possível filtrar o chat do Twitch sem ser moderador?",
+        "answer": "Sim. A filtragem do lado do espectador afeta apenas a sua própria visualização: as mensagens são ocultadas para você, sem serem excluídas para os demais e sem qualquer ação de moderação no canal.",
+        "body": [
+          "Essa é uma diferença importante: você não bloqueia o autor, apenas deixa de ver as mensagens dele no seu navegador."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "O que exatamente é possível ocultar?",
+        "answer": "As mensagens que contêm palavras-chave definidas, as mensagens de determinados usuários, bem como elementos da interface que ocupam muito espaço, como recomendações ou anúncios promocionais.",
+        "list": [
+          "<strong>Palavras-chave.</strong> Spoilers, xingamentos, spam recorrente.",
+          "<strong>Usuários.</strong> Bots e contas indesejadas.",
+          "<strong>Elementos da interface.</strong> Inserções e sugestões desnecessárias."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Quais são os limites da filtragem de conteúdo para espectadores?",
+        "answer": "A filtragem é aplicada após o recebimento da mensagem pelo seu navegador: portanto, ela não reduz o tráfego recebido nem impede que outros espectadores vejam o conteúdo. As variantes ortográficas também contornam os filtros por palavras-chave.",
+        "body": [
+          "Em casos graves (assédio, conteúdo ilegal), a denúncia ao Twitch continua sendo a única resposta adequada, já que a filtragem apenas oculta o problema do seu lado."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "A filtragem avisa o usuário anônimo?",
+        "a": "Não, a operação é totalmente local e invisível para os outros."
+      },
+      {
+        "q": "Os filtros ficam sincronizados entre os dispositivos?",
+        "a": "Não. As configurações são armazenadas localmente em cada navegador."
+      },
+      {
+        "q": "A filtragem funciona no Kick?",
+        "a": "A filtragem do chat está voltada atualmente para o Twitch."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Chat-Filter-Twitch",
+    "linkLabel": "Twitch-Chat filtern",
+    "title": "Twitch-Chat filtern: Spam und Schlüsselwörter | StreamPulse",
+    "h1": "Den Twitch-Chat auf der Zuschauer-Seite filtern",
+    "description": "So blendest du unerwünschte Nachrichten, bestimmte Schlüsselwörter und bestimmte Nutzer im Twitch-Chat aus, ohne Moderator des Kanals zu sein.",
+    "intro": "Bei den großen Kanälen läuft der Chat zu schnell, um lesbar zu bleiben, und die integrierten Moderationswerkzeuge sind den Moderatoren vorbehalten. Ein Zuschauer kann dennoch seine eigene Anzeige filtern. Auf dieser Seite werden die verfügbaren Optionen und ihre Einschränkungen näher erläutert.",
+    "howToSteps": [
+      {
+        "name": "Filtereinstellungen öffnen",
+        "text": "Öffnen Sie in der StreamPulse-Erweiterung den Abschnitt „Chat-Filter“."
+      },
+      {
+        "name": "Stichwörter hinzufügen",
+        "text": "Geben Sie die Begriffe ein, die ausgeblendet werden sollen: Die entsprechenden Beiträge werden aus Ihrer Ansicht entfernt."
+      },
+      {
+        "name": "Benutzer ausblenden",
+        "text": "Fügen Sie die Pseudonyme hinzu, deren Beiträge Sie nicht mehr sehen möchten."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Kann man den Twitch-Chat filtern, ohne Moderator zu sein?",
+        "answer": "Ja. Die Filterung auf Seiten des Zuschauers wirkt sich ausschließlich auf Ihre eigene Anzeige aus: Die Nachrichten werden bei Ihnen ausgeblendet, ohne dass sie für andere gelöscht werden und ohne dass es zu einer Moderation auf dem Kanal kommt.",
+        "body": [
+          "Das ist ein wichtiger Unterschied: Sie blockieren den Autor nicht, sondern sehen seine Beiträge lediglich nicht mehr in Ihrem Browser."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Was genau kann man ausblenden?",
+        "answer": "Beiträge, die bestimmte Schlüsselwörter enthalten, Beiträge bestimmter Nutzer sowie störende Elemente der Benutzeroberfläche wie Empfehlungen oder Werbeeinblendungen.",
+        "list": [
+          "<strong>Stichworte:</strong> Spoiler, Beleidigungen, wiederkehrender Spam.",
+          "<strong>Nutzer.</strong> Bots und unerwünschte Konten.",
+          "<strong>Elemente der Benutzeroberfläche.</strong> Überflüssige Einblendungen und Vorschläge."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Wo liegen die Grenzen der Zuschauerfilterung?",
+        "answer": "Die Filterung erfolgt erst, nachdem die Nachricht von Ihrem Browser empfangen wurde: Sie reduziert daher weder den eingehenden Datenverkehr noch hindert sie andere Zuschauer daran, den Inhalt zu sehen. Auch orthografische Varianten umgehen die Stichwortfilter.",
+        "body": [
+          "In schwerwiegenden Fällen (Belästigung, illegale Inhalte) ist eine Meldung an Twitch nach wie vor die einzig angemessene Vorgehensweise, da das Filtern das Problem lediglich auf Ihrer Seite ausblendet."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wird der maskierte Nutzer durch die Filterung gewarnt?",
+        "a": "Nein, der Vorgang findet vollständig lokal statt und ist für andere nicht sichtbar."
+      },
+      {
+        "q": "Sind die Filter geräteübergreifend synchronisiert?",
+        "a": "Nein. Die Einstellungen werden lokal in jedem Browser gespeichert."
+      },
+      {
+        "q": "Funktioniert die Filterfunktion bei Kick?",
+        "a": "Die Chat-Filterung zielt derzeit auf Twitch ab."
+      }
+    ]
+  },
+  "it": {
+    "slug": "filtra-chat-twitch",
+    "linkLabel": "Filtra la chat di Twitch",
+    "title": "Filtrare la chat di Twitch: spam e parole chiave | StreamPulse",
+    "h1": "Filtrare la chat di Twitch dal punto di vista dello spettatore",
+    "description": "Come nascondere i messaggi indesiderati, le parole chiave e alcuni utenti nella chat di Twitch, senza essere moderatore del canale.",
+    "intro": "Sui canali più grandi, la chat scorre troppo velocemente per essere leggibile, e gli strumenti di moderazione integrati sono riservati ai moderatori. Uno spettatore può comunque personalizzare la propria visualizzazione. Questa pagina illustra in dettaglio le opzioni disponibili e i loro limiti.",
+    "howToSteps": [
+      {
+        "name": "Apri le impostazioni di filtraggio",
+        "text": "Dall'estensione StreamPulse, apri la sezione \"Filtraggio della chat\"."
+      },
+      {
+        "name": "Aggiungi parole chiave",
+        "text": "Inserisci i termini da nascondere: i messaggi corrispondenti scompariranno dalla schermata."
+      },
+      {
+        "name": "Nascondi utenti",
+        "text": "Aggiungi gli pseudonimi di cui non vuoi più vedere i messaggi."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "È possibile filtrare la chat di Twitch senza essere moderatori?",
+        "answer": "Sì. Il filtro da parte dello spettatore agisce esclusivamente sulla tua visualizzazione: i messaggi vengono nascosti sul tuo schermo, senza essere eliminati per gli altri e senza alcun intervento di moderazione sul canale.",
+        "body": [
+          "Si tratta di una distinzione importante: non si blocca l'autore, ma si smette semplicemente di vedere i suoi messaggi nel proprio browser."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Cosa si può nascondere esattamente?",
+        "answer": "I messaggi contenenti determinate parole chiave, i messaggi di alcuni utenti, nonché elementi dell'interfaccia che ingombrano lo spazio, come i suggerimenti o gli inserti promozionali.",
+        "list": [
+          "<strong>Parole chiave.</strong> Spoiler, insulti, spam ricorrente.",
+          "<strong>Utenti.</strong> Bot e account indesiderati.",
+          "<strong>Elementi dell'interfaccia.</strong> Inserzioni e suggerimenti superflui."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Quali sono i limiti del filtraggio per gli spettatori?",
+        "answer": "Il filtraggio viene applicato dopo che il messaggio è stato ricevuto dal browser: non riduce quindi il traffico in entrata e non impedisce agli altri spettatori di visualizzare il contenuto. Anche le varianti ortografiche aggirano i filtri basati sulle parole chiave.",
+        "body": [
+          "Nei casi gravi (molestie, contenuti illegali), la segnalazione a Twitch rimane l'unica risposta adeguata, poiché il filtraggio non fa altro che nascondere il problema dal vostro punto di vista."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Il filtro avvisa l'utente in incognito?",
+        "a": "No, l'operazione è interamente locale e invisibile agli altri."
+      },
+      {
+        "q": "I filtri sono sincronizzati tra i dispositivi?",
+        "a": "No. Le impostazioni vengono salvate localmente in ciascun browser."
+      },
+      {
+        "q": "Il filtro funziona su Kick?",
+        "a": "Il filtro della chat è attualmente attivo su Twitch."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "filtruj-czat-twitch",
+    "linkLabel": "Filtruj czat na Twitchu",
+    "title": "Filtrowanie czatu na Twitchu: spam i słowa kluczowe | StreamPulse",
+    "h1": "Filtrowanie czatu na Twitchu z perspektywy widza",
+    "description": "Jak ukryć niechciane wiadomości, słowa kluczowe i niektórych użytkowników na czacie Twitcha, nie będąc moderatorem kanału.",
+    "intro": "W dużych kanałach czat przewija się zbyt szybko, by można go było odczytać, a wbudowane narzędzia do moderacji są zarezerwowane dla moderatorów. Widz może jednak filtrować treści wyświetlane na swoim ekranie. Na tej stronie szczegółowo opisano dostępne opcje i ich ograniczenia.",
+    "howToSteps": [
+      {
+        "name": "Otwórz ustawienia filtrowania",
+        "text": "W rozszerzeniu StreamPulse otwórz sekcję „Filtrowanie czatu”."
+      },
+      {
+        "name": "Dodaj słowa kluczowe",
+        "text": "Wpisz słowa, które chcesz ukryć: pasujące do nich wiadomości znikną z ekranu."
+      },
+      {
+        "name": "Ukryj użytkowników",
+        "text": "Dodaj pseudonimy, od których nie chcesz już otrzymywać wiadomości."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Czy można filtrować czat na Twitchu, nie będąc moderatorem?",
+        "answer": "Tak. Filtrowanie po stronie widza działa wyłącznie na Twoim ekranie: wiadomości są ukrywane u Ciebie, ale nie są usuwane dla innych użytkowników i nie powodują żadnych działań moderacyjnych na kanale.",
+        "body": [
+          "To istotna różnica: nie blokujesz autora, a jedynie przestajesz widzieć jego wiadomości w przeglądarce."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Co dokładnie można ukryć?",
+        "answer": "Wpisy zawierające określone słowa kluczowe, wpisy niektórych użytkowników, a także elementy interfejsu, które zajmują zbyt dużo miejsca, takie jak rekomendacje czy reklamy.",
+        "list": [
+          "<strong>Słowa kluczowe.</strong> Spoilery, obelgi, powtarzający się spam.",
+          "<strong>Użytkownicy.</strong> Boty i niepożądane konta.",
+          "<strong>Elementy interfejsu.</strong> Niepotrzebne wstawki i sugestie."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Jakie są ograniczenia filtrowania treści dla widzów?",
+        "answer": "Filtrowanie ma miejsce po odebraniu wiadomości przez przeglądarkę: nie ogranicza więc ilości odbieranego ruchu i nie uniemożliwia innym użytkownikom wyświetlenia treści. Różne warianty pisowni również pozwalają ominąć filtry oparte na słowach kluczowych.",
+        "body": [
+          "W poważnych przypadkach (nękanie, nielegalne treści) zgłoszenie do serwisu Twitch pozostaje jedyną właściwą reakcją, ponieważ filtrowanie jedynie maskuje problem po Twojej stronie."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy filtrowanie ostrzega użytkownika, którego tożsamość jest ukryta?",
+        "a": "Nie, operacja ta ma charakter całkowicie lokalny i jest niewidoczna dla innych."
+      },
+      {
+        "q": "Czy filtry są zsynchronizowane między urządzeniami?",
+        "a": "Nie. Ustawienia są zapisywane lokalnie w każdej przeglądarce."
+      },
+      {
+        "q": "Czy filtrowanie działa w serwisie Kick?",
+        "a": "Filtrowanie czatu dotyczy obecnie serwisu Twitch."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "twitch-sohbetini-filtrele",
+    "linkLabel": "Twitch sohbetini filtrele",
+    "title": "Twitch sohbetini filtreleme: spam ve anahtar kelimeler | StreamPulse",
+    "h1": "Twitch sohbetini izleyici tarafında filtreleme",
+    "description": "Kanal moderatörü olmadan Twitch sohbetinde istenmeyen mesajları, anahtar kelimeleri ve belirli kullanıcıları nasıl gizleyebilirim?",
+    "intro": "Büyük kanallarda sohbet akışı okunabilir kalmayacak kadar hızlı ilerliyor ve platformun kendi moderasyon araçları yalnızca moderatörlere ayrılmış durumda. Yine de izleyiciler kendi ekranlarını filtreleyebilir. Bu sayfada mevcut seçenekler ve bunların sınırlamaları ayrıntılı olarak açıklanmaktadır.",
+    "howToSteps": [
+      {
+        "name": "Filtreleme ayarlarını aç",
+        "text": "StreamPulse eklentisinden, sohbetin “Filtreleme” bölümünü açın."
+      },
+      {
+        "name": "Anahtar kelimeler ekle",
+        "text": "Gizlemek istediğiniz terimleri girin: Eşleşen mesajlar ekranınızdan kaybolur."
+      },
+      {
+        "name": "Kullanıcıları gizle",
+        "text": "Artık mesajlarını görmek istemediğiniz takma adları ekleyin."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Moderatör olmadan Twitch sohbetini filtreleyebilir miyiz?",
+        "answer": "Evet. İzleyici tarafında yapılan filtreleme yalnızca sizin ekranınızda geçerlidir: Mesajlar sizin ekranınızda gizlenir; ancak diğer kullanıcılar için silinmez ve kanalda herhangi bir moderasyon işlemi yapılmaz.",
+        "body": [
+          "Bu önemli bir ayrımdır: Yazarın hesabını engellemezsiniz, sadece tarayıcınızda onun mesajlarını görmezsiniz."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Tam olarak ne gizlenebilir?",
+        "answer": "Belirli anahtar kelimeler içeren mesajlar, belirli kullanıcıların mesajları ve öneriler veya tanıtım reklamları gibi yer kaplayan arayüz öğeleri.",
+        "list": [
+          "<strong>Anahtar kelimeler.</strong> Spoiler, hakaret, tekrarlanan spam.",
+          "<strong>Kullanıcılar.</strong> Botlar ve istenmeyen hesaplar.",
+          "<strong>Arayüz öğeleri.</strong> Gereksiz ekler ve öneriler."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "İzleyici filtrelemesinin sınırları nelerdir?",
+        "answer": "Filtreleme, mesajın tarayıcınız tarafından alınmasından sonra uygulanır: dolayısıyla, alınan trafiği azaltmaz ve diğer izleyicilerin içeriği görmesini engellemez. Yazım farklılıkları da anahtar kelime filtrelerini atlatır.",
+        "body": [
+          "Ciddi durumlarda (taciz, yasa dışı içerik), Twitch’e bildirimde bulunmak hâlâ tek uygun çözümdür; çünkü filtreleme, sorunu sizin tarafınızda sadece gizlemeye yarar."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Filtreleme, gizli kullanıcıyı engeller mi?",
+        "a": "Hayır, bu işlem tamamen yerel düzeyde gerçekleşir ve başkaları tarafından görülmez."
+      },
+      {
+        "q": "Filtreler cihazlar arasında senkronize ediliyor mu?",
+        "a": "Hayır. Ayarlar her tarayıcıda yerel olarak saklanır."
+      },
+      {
+        "q": "Kick'te filtreleme özelliği çalışıyor mu?",
+        "a": "Sohbet filtreleme özelliği şu anda Twitch'i hedef alıyor."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "фильтр-чат-Twitch",
+    "linkLabel": "Фильтрация чата на Twitch",
+    "title": "Фильтрация чата на Twitch: спам и ключевые слова | StreamPulse",
+    "h1": "Фильтрация чата Twitch со стороны зрителей",
+    "description": "Как скрыть нежелательные сообщения, ключевые слова и определённых пользователей в чате Twitch, не будучи модератором канала.",
+    "intro": "На крупных каналах текст в чате прокручивается слишком быстро, чтобы его можно было прочитать, а встроенные инструменты модерации доступны только модераторам. Тем не менее зритель может настроить отображение сообщений по своему усмотрению. На этой странице подробно описаны доступные настройки и их ограничения.",
+    "howToSteps": [
+      {
+        "name": "Открыть настройки фильтрации",
+        "text": "В расширении StreamPulse откройте раздел «Фильтрация чата»."
+      },
+      {
+        "name": "Добавить ключевые слова",
+        "text": "Введите термины, которые нужно скрыть: соответствующие сообщения исчезнут из вашего экрана."
+      },
+      {
+        "name": "Скрыть пользователей",
+        "text": "Добавьте псевдонимы, сообщения которых вы больше не хотите видеть."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Можно ли фильтровать чат на Twitch, не будучи модератором?",
+        "answer": "Да. Фильтрация со стороны зрителя влияет только на ваше собственное отображение: сообщения скрываются у вас, но не удаляются для других пользователей и не подвергаются модерации на канале.",
+        "body": [
+          "Это важное различие: вы не блокируете автора, а просто перестаете видеть его сообщения в браузере."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Что именно можно скрыть?",
+        "answer": "Сообщения, содержащие определенные ключевые слова, сообщения некоторых пользователей, а также отвлекающие элементы интерфейса, такие как рекомендации или рекламные вставки.",
+        "list": [
+          "<strong>Ключевые слова.</strong> Спойлеры, оскорбления, постоянный спам.",
+          "<strong>Пользователи.</strong> Боты и нежелательные аккаунты.",
+          "<strong>Элементы интерфейса.</strong> Лишние вставки и подсказки."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Каковы ограничения фильтрации зрителей?",
+        "answer": "Фильтрация применяется после получения сообщения вашим браузером: таким образом, она не сокращает объем получаемого трафика и не мешает другим пользователям просматривать контент. Варианты написания слов также позволяют обойти фильтры по ключевым словам.",
+        "body": [
+          "В серьезных случаях (домогательства, незаконный контент) единственным адекватным решением по-прежнему остается подача жалобы в Twitch, поскольку фильтрация лишь скрывает проблему с вашей стороны."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Предотвращает ли фильтрация появление скрытого пользователя?",
+        "a": "Нет, операция носит исключительно локальный характер и незаметна для других."
+      },
+      {
+        "q": "Синхронизируются ли фильтры между устройствами?",
+        "a": "Нет. Настройки сохраняются локально в каждом браузере."
+      },
+      {
+        "q": "Работает ли фильтрация в Kick?",
+        "a": "В настоящее время фильтрация чата осуществляется на Twitch."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "Twitchのチャットをフィルタリング",
+    "linkLabel": "Twitchのチャットをフィルタリングする",
+    "title": "Twitchチャットのフィルタリング：スパムとキーワード | StreamPulse",
+    "h1": "視聴者側のTwitchチャットをフィルタリングする",
+    "description": "チャンネルのモデレーターでなくても、Twitchのチャットで不要なメッセージ、キーワード、特定のユーザーを非表示にする方法。",
+    "intro": "大規模なチャンネルでは、チャットが速すぎて読み取れないほどスクロールしてしまい、また、標準のモデレーションツールはモデレーターのみが利用可能です。それでも、視聴者は自分の画面表示をフィルタリングすることができます。このページでは、利用可能なオプションとその制限について詳しく説明します。",
+    "howToSteps": [
+      {
+        "name": "フィルタ設定を開く",
+        "text": "StreamPulse拡張機能を開いたら、「チャットのフィルタリング」セクションを開いてください。"
+      },
+      {
+        "name": "キーワードを追加する",
+        "text": "非表示にしたいキーワードを入力してください。一致するメッセージは画面から消えます。"
+      },
+      {
+        "name": "ユーザーを非表示にする",
+        "text": "投稿を見たくないユーザーのハンドルネームを追加してください。"
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "モデレーターでなくても、Twitchのチャットをフィルタリングすることはできますか？",
+        "answer": "はい。視聴者側のフィルタリングは、ご自身の画面にのみ影響します。つまり、メッセージはご自身の画面では非表示になりますが、他のユーザーにとっては削除されることはなく、チャンネル側でのモデレーション措置も一切行われません。",
+        "body": [
+          "これは重要な違いです。投稿者をブロックするわけではなく、単にブラウザ上でその投稿者のメッセージが表示されなくなるだけです。"
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "具体的には何を非表示にできるのでしょうか？",
+        "answer": "定義されたキーワードを含むメッセージ、特定のユーザーからのメッセージ、およびおすすめやプロモーション広告といった画面を煩雑にする要素。",
+        "list": [
+          "<strong>キーワード：</strong>ネタバレ、誹謗中傷、繰り返されるスパム。",
+          "<strong>ユーザー。</strong>ボットや迷惑アカウント。",
+          "<strong>インターフェースの要素。</strong>不要な挿入文や提案。"
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "視聴者によるフィルタリングにはどのような限界があるのでしょうか？",
+        "answer": "フィルタリングは、ブラウザがメッセージを受信した後に適用されます。したがって、受信トラフィックを削減することはなく、他の視聴者がコンテンツを閲覧することを妨げることもありません。また、スペルのバリエーションもキーワードによるフィルタリングを回避します。",
+        "body": [
+          "深刻なケース（ハラスメント、違法なコンテンツなど）については、Twitchへの通報が依然として唯一の適切な対応であり、フィルタリングを行っても、それは単にユーザー側の問題を一時的に隠すだけにとどまります。"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "フィルタリングは、匿名ユーザーを検知できないのでしょうか？",
+        "a": "いいえ、この操作は完全にローカルで行われ、他者からは見えません。"
+      },
+      {
+        "q": "デバイス間でフィルターは同期されますか？",
+        "a": "いいえ。設定は各ブラウザにローカルで保存されます。"
+      },
+      {
+        "q": "Kickではフィルタリング機能は動作しますか？",
+        "a": "現在、チャットフィルタリングはTwitchを対象としています。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "twitch-채팅-필터링",
+    "linkLabel": "Twitch 채팅 필터링하기",
+    "title": "Twitch 채팅 필터링: 스팸 및 키워드 | StreamPulse",
+    "h1": "시청자 측에서 Twitch 채팅 필터링하기",
+    "description": "채널 운영자가 아니더라도 Twitch 채팅에서 원치 않는 메시지, 특정 키워드 및 일부 사용자를 숨기는 방법.",
+    "intro": "주요 채널에서는 채팅 내용이 너무 빨리 지나가서 읽기 어려울 수 있으며, 기본 제공되는 관리 도구는 관리자만 사용할 수 있습니다. 그럼에도 시청자는 자신의 화면을 직접 필터링할 수 있습니다. 이 페이지에서는 사용 가능한 옵션과 그 한계에 대해 자세히 설명합니다.",
+    "howToSteps": [
+      {
+        "name": "필터 설정 열기",
+        "text": "StreamPulse 확장 프로그램을 실행한 후, 채팅 필터링 섹션을 열어주세요."
+      },
+      {
+        "name": "키워드 추가하기",
+        "text": "숨길 단어를 입력하세요. 해당 단어가 포함된 메시지가 화면에서 사라집니다."
+      },
+      {
+        "name": "사용자 숨기기",
+        "text": "더 이상 게시물을 보고 싶지 않은 닉네임을 추가하세요."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "관리자가 아니어도 Twitch 채팅을 필터링할 수 있나요?",
+        "answer": "네. 시청자 측 필터링 기능은 오직 본인의 화면에만 적용됩니다. 즉, 해당 메시지는 본인의 화면에서는 숨겨지지만, 다른 사용자에게는 삭제되지 않으며 채널 측에서 별도의 관리 조치가 이루어지지 않습니다.",
+        "body": [
+          "이 점은 중요한 차이점입니다. 작성자를 차단하는 것이 아니라, 단순히 브라우저에서 해당 작성자의 게시물을 더 이상 보지 않게 되는 것입니다."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "정확히 무엇을 숨길 수 있나요?",
+        "answer": "정의된 키워드가 포함된 게시물, 특정 사용자의 게시물, 그리고 추천 항목이나 광고 삽입물과 같은 화면 공간을 차지하는 요소들.",
+        "list": [
+          "<strong>키워드.</strong> 스포일러, 모욕, 반복적인 스팸.",
+          "<strong>사용자.</strong> 봇 및 원치 않는 계정.",
+          "<strong>인터페이스 요소.</strong> 불필요한 삽입 내용과 제안 사항."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "시청자 필터링의 한계는 무엇인가요?",
+        "answer": "필터링은 브라우저가 메시지를 수신한 후에 적용되므로, 수신 트래픽을 줄이지도 않고 다른 시청자들이 콘텐츠를 보는 것을 막지도 않습니다. 철자 변형도 키워드 필터를 우회합니다.",
+        "body": [
+          "심각한 경우(괴롭힘, 불법 콘텐츠)에는 Twitch에 신고하는 것이 여전히 유일한 적절한 대응 방법이며, 필터링은 단지 사용자 측에서 문제를 가릴 뿐입니다."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "필터링이 숨겨진 사용자를 차단하나요?",
+        "a": "아니요, 이 작업은 전적으로 로컬에서 이루어지며 다른 사람들에게는 보이지 않습니다."
+      },
+      {
+        "q": "기기 간에 필터가 동기화되나요?",
+        "a": "아니요. 설정은 각 브라우저에 로컬로 저장됩니다."
+      },
+      {
+        "q": "Kick에서 필터링 기능이 작동하나요?",
+        "a": "현재 채팅 필터링 기능은 Twitch를 대상으로 하고 있습니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "filter-chat-twitch",
+    "linkLabel": "Menyaring obrolan Twitch",
+    "title": "Menyaring obrolan Twitch: spam dan kata kunci | StreamPulse",
+    "h1": "Menyaring obrolan Twitch dari sisi penonton",
+    "description": "Bagaimana cara menyembunyikan pesan yang tidak diinginkan, kata kunci, dan pengguna tertentu di obrolan Twitch, tanpa harus menjadi moderator saluran.",
+    "intro": "Di saluran-saluran besar, obrolan bergulir terlalu cepat sehingga sulit dibaca, dan alat moderasi bawaan hanya dapat diakses oleh moderator. Namun, penonton tetap dapat menyaring tampilan obrolan mereka sendiri. Halaman ini menjelaskan opsi-opsi yang tersedia beserta keterbatasannya.",
+    "howToSteps": [
+      {
+        "name": "Buka pengaturan penyaringan",
+        "text": "Dari ekstensi StreamPulse, buka bagian Penyaringan obrolan."
+      },
+      {
+        "name": "Tambahkan kata kunci",
+        "text": "Masukkan kata kunci yang ingin disembunyikan: pesan yang sesuai akan menghilang dari tampilan Anda."
+      },
+      {
+        "name": "Menyembunyikan pengguna",
+        "text": "Tambahkan nama samaran yang pesan-pesannya tidak ingin Anda lihat lagi."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Apakah kita bisa menyaring obrolan di Twitch tanpa menjadi moderator?",
+        "answer": "Ya. Penyaringan di sisi penonton hanya berlaku pada tampilan Anda sendiri: pesan-pesan tersebut disembunyikan di layar Anda, tanpa dihapus bagi pengguna lain dan tanpa adanya tindakan moderasi apa pun di saluran tersebut.",
+        "body": [
+          "Ini adalah perbedaan yang penting: Anda tidak memblokir penulis tersebut, melainkan hanya tidak lagi melihat pesannya di peramban Anda."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Apa saja yang sebenarnya bisa disembunyikan?",
+        "answer": "Pesan yang berisi kata kunci tertentu, pesan dari pengguna tertentu, serta elemen antarmuka yang mengganggu seperti rekomendasi atau iklan.",
+        "list": [
+          "<strong>Kata kunci.</strong> Spoiler, kata-kata kasar, spam berulang.",
+          "<strong>Pengguna.</strong> Bot dan akun yang tidak diinginkan.",
+          "<strong>Elemen antarmuka.</strong> Iklan sisipan dan saran yang tidak perlu."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Apa saja batasan dari penyaringan penonton?",
+        "answer": "Penyaringan dilakukan setelah pesan diterima oleh browser Anda: oleh karena itu, hal ini tidak mengurangi lalu lintas yang diterima dan tidak menghalangi penonton lain untuk melihat konten tersebut. Variasi ejaan juga dapat melewati filter berdasarkan kata kunci.",
+        "body": [
+          "Untuk kasus-kasus serius (pelecehan, konten ilegal), melaporkan ke Twitch tetap menjadi satu-satunya langkah yang tepat, karena penyaringan hanya akan menyembunyikan masalah di sisi Anda."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah penyaringan dapat mendeteksi pengguna yang menyembunyikan identitasnya?",
+        "a": "Tidak, operasi ini sepenuhnya bersifat lokal dan tidak terlihat oleh orang lain."
+      },
+      {
+        "q": "Apakah filter-filter tersebut tersinkronisasi di antara perangkat?",
+        "a": "Tidak. Pengaturan tersebut disimpan secara lokal di setiap peramban."
+      },
+      {
+        "q": "Apakah fitur penyaringan berfungsi di Kick?",
+        "a": "Penyaringan obrolan saat ini difokuskan pada Twitch."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "chat-filteren-twitch",
+    "linkLabel": "De Twitch-chat filteren",
+    "title": "De Twitch-chat filteren: spam en trefwoorden | StreamPulse",
+    "h1": "De Twitch-chat aan de kant van de toeschouwer filteren",
+    "description": "Hoe kun je ongewenste berichten, trefwoorden en bepaalde gebruikers in de Twitch-chat verbergen, zonder moderator van het kanaal te zijn?",
+    "intro": "Op de grote kanalen verschijnt de chat te snel om leesbaar te blijven, en de ingebouwde moderatietools zijn voorbehouden aan moderators. Een kijker kan echter wel zijn eigen weergave aanpassen. Op deze pagina worden de beschikbare opties en hun beperkingen toegelicht.",
+    "howToSteps": [
+      {
+        "name": "De filterinstellingen openen",
+        "text": "Open vanuit de StreamPulse-extensie het gedeelte ‘Chatfiltering’."
+      },
+      {
+        "name": "Trefwoorden toevoegen",
+        "text": "Voer de termen in die u wilt verbergen: de bijbehorende berichten verdwijnen uit uw weergave."
+      },
+      {
+        "name": "Gebruikers verbergen",
+        "text": "Voeg de gebruikersnamen toe waarvan je geen berichten meer wilt zien."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Kan je de Twitch-chat filteren zonder moderator te zijn?",
+        "answer": "Ja. De filterfunctie aan de kant van de kijker heeft alleen invloed op uw eigen weergave: de berichten worden bij u verborgen, zonder dat ze voor anderen worden verwijderd en zonder dat er enige moderatie door het kanaal plaatsvindt.",
+        "body": [
+          "Dit is een belangrijk verschil: je blokkeert de auteur niet, maar je ziet zijn berichten gewoon niet meer in je browser."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Wat kan er precies worden verborgen?",
+        "answer": "Berichten die bepaalde trefwoorden bevatten, berichten van bepaalde gebruikers, en storende interface-elementen zoals aanbevelingen of promotionele advertenties.",
+        "list": [
+          "<strong>Trefwoorden.</strong> Spoilers, beledigingen, herhaaldelijke spam.",
+          "<strong>Gebruikers.</strong> Bots en ongewenste accounts.",
+          "<strong>Interface-elementen.</strong> Overbodige inzetstukken en suggesties."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Wat zijn de beperkingen van het filter voor kijkers?",
+        "answer": "De filtering vindt plaats nadat het bericht door uw browser is ontvangen: het vermindert dus niet het binnenkomende verkeer en verhindert niet dat andere kijkers de inhoud kunnen zien. Spellingvarianten omzeilen ook de filters op trefwoorden.",
+        "body": [
+          "In ernstige gevallen (pesten, illegale inhoud) blijft het melden bij Twitch de enige gepaste reactie, aangezien filtering het probleem aan jouw kant alleen maar verbergt."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wordt de verborgen gebruiker door de filtering tegengehouden?",
+        "a": "Nee, de bewerking vindt volledig lokaal plaats en is voor anderen onzichtbaar."
+      },
+      {
+        "q": "Zijn de filters tussen de verschillende apparaten gesynchroniseerd?",
+        "a": "Nee. De instellingen worden lokaal in elke browser opgeslagen."
+      },
+      {
+        "q": "Werkt de filterfunctie op Kick?",
+        "a": "De chatfiltering richt zich momenteel op Twitch."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "filtrera-chatt-twitch",
+    "linkLabel": "Filtrera Twitch-chatten",
+    "title": "Filtrera chatten på Twitch: spam och nyckelord | StreamPulse",
+    "h1": "Filtrera Twitch-chatten från tittarsidan",
+    "description": "Hur man döljer oönskade meddelanden, nyckelord och vissa användare i Twitch-chatten utan att vara moderator för kanalen.",
+    "intro": "På de stora kanalerna rullar chatten för snabbt för att man ska hinna läsa den, och de inbyggda modereringsverktygen är reserverade för moderatorerna. En tittare kan dock själv filtrera sin egen visning. På den här sidan beskrivs de tillgängliga alternativen och deras begränsningar.",
+    "howToSteps": [
+      {
+        "name": "Öppna filterinställningarna",
+        "text": "Öppna avsnittet ”Chatfiltrering” i StreamPulse-tillägget."
+      },
+      {
+        "name": "Lägg till nyckelord",
+        "text": "Ange de termer som ska döljas: de inlägg som matchar dessa termer försvinner från din vy."
+      },
+      {
+        "name": "Dölja användare",
+        "text": "Lägg till de användarnamn vars inlägg du inte längre vill se."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Kan man filtrera chatten på Twitch utan att vara moderator?",
+        "answer": "Ja. Filtreringen på tittarsidan påverkar endast din egen visning: inläggen döljs för dig, utan att tas bort för andra och utan att kanalen vidtar några modereringsåtgärder.",
+        "body": [
+          "Det är en viktig skillnad: du blockerar inte författaren, utan slutar helt enkelt att se dennes inlägg i din webbläsare."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Vad kan man egentligen dölja?",
+        "answer": "Inlägg som innehåller vissa nyckelord, inlägg från vissa användare samt störande gränssnittselement som rekommendationer eller reklaminslag.",
+        "list": [
+          "<strong>Nyckelord.</strong> Spoilers, förolämpningar, återkommande spam.",
+          "<strong>Användare.</strong> Bots och oönskade konton.",
+          "<strong>Gränssnittselement.</strong> Onödiga infogningar och förslag."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Vilka är begränsningarna för tittarfiltrering?",
+        "answer": "Filtreringen sker efter att meddelandet har tagits emot av din webbläsare: den minskar alltså inte den inkommande trafiken och hindrar inte andra tittare från att se innehållet. Olika stavningsvarianter kringgår också nyckelordsfiltren.",
+        "body": [
+          "I allvarliga fall (trakasserier, olagligt innehåll) är en anmälan till Twitch fortfarande den enda lämpliga åtgärden, eftersom filtrering bara döljer problemet på din sida."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Varnar filtreringen den dolda användaren?",
+        "a": "Nej, operationen är helt lokal och osynlig för andra."
+      },
+      {
+        "q": "Synkroniseras filtren mellan enheterna?",
+        "a": "Nej. Inställningarna sparas lokalt i varje webbläsare."
+      },
+      {
+        "q": "Fungerar filtreringen på Kick?",
+        "a": "Chatfiltreringen riktar sig för närvarande mot Twitch."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "filtrovat-chat-twitch",
+    "linkLabel": "Filtrovat chat na Twitchi",
+    "title": "Filtrování chatu na Twitchi: spam a klíčová slova | StreamPulse",
+    "h1": "Filtrování chatu na Twitchi z pohledu diváka",
+    "description": "Jak skrýt nežádoucí zprávy, klíčová slova a určité uživatele v chatu na Twitchi, aniž byste byli moderátorem kanálu.",
+    "intro": "Na velkých kanálech se chat posouvá příliš rychle, než aby byl čitelný, a vestavěné nástroje pro moderování jsou vyhrazeny pouze pro moderátory. Divák si však může přizpůsobit zobrazení podle svých potřeb. Na této stránce jsou podrobně popsány dostupné možnosti a jejich omezení.",
+    "howToSteps": [
+      {
+        "name": "Otevřít nastavení filtrování",
+        "text": "V rozšíření StreamPulse otevřete sekci „Filtrování chatu“."
+      },
+      {
+        "name": "Přidat klíčová slova",
+        "text": "Zadejte výrazy, které chcete skrýt: odpovídající zprávy zmizí z vašeho zobrazení."
+      },
+      {
+        "name": "Skrýt uživatele",
+        "text": "Přidejte přezdívky, od kterých už nechcete dostávat zprávy."
+      }
+    ],
+    "sections": [
+      {
+        "id": "principe",
+        "h2": "Je možné filtrovat chat na Twitchi, aniž by člověk byl moderátorem?",
+        "answer": "Ano. Filtrování na straně diváka se týká pouze vašeho vlastního zobrazení: příspěvky se u vás skryjí, aniž by byly odstraněny ostatním a aniž by došlo k jakémukoli zásahu moderátora na kanálu.",
+        "body": [
+          "Je to důležitý rozdíl: autora nezablokujete, pouze přestanete vidět jeho příspěvky ve svém prohlížeči."
+        ]
+      },
+      {
+        "id": "options",
+        "h2": "Co přesně lze skrýt?",
+        "answer": "Příspěvky obsahující definovaná klíčová slova, příspěvky určitých uživatelů a také rušivé prvky uživatelského rozhraní, jako jsou doporučení nebo reklamní vložky.",
+        "list": [
+          "<strong>Klíčová slova.</strong> Spoiler, urážky, opakovaný spam.",
+          "<strong>Uživatelé.</strong> Boti a nežádoucí účty.",
+          "<strong>Prvky uživatelského rozhraní.</strong> Zbytečné vložky a návrhy."
+        ]
+      },
+      {
+        "id": "limites",
+        "h2": "Jaké jsou limity filtrování obsahu pro diváky?",
+        "answer": "Filtrování se provádí až po přijetí zprávy vaším prohlížečem: nesnižuje tedy objem přijatého provozu a nebrání ostatním divákům v prohlížení obsahu. Odlišné pravopisné varianty také obcházejí filtry založené na klíčových slovech.",
+        "body": [
+          "V závažných případech (obtěžování, nelegální obsah) zůstává nahlášení na Twitch jedinou vhodnou reakcí, protože filtrování problém pouze skryje na vaší straně."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Zabrání filtrování tomu, aby se skrytý uživatel projevil?",
+        "a": "Ne, tato operace probíhá výhradně lokálně a pro ostatní je neviditelná."
+      },
+      {
+        "q": "Jsou filtry mezi zařízeními synchronizovány?",
+        "a": "Ne. Nastavení se ukládají lokálně v každém prohlížeči."
+      },
+      {
+        "q": "Funguje filtrování na Kicku?",
+        "a": "Filtrování chatu se v současné době zaměřuje na Twitch."
+      }
+    ]
+  }
+}

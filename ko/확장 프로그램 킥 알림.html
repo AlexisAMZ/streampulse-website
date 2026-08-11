@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>익스텐션 킥: 라이브 알림 | StreamPulse</title>
+    <meta name="description" content="탭을 열어두지 않고도 데스크톱에서 Kick 라이브 알림을 받고, 하나의 확장 프로그램으로 Kick과 Twitch를 동시에 시청하는 방법." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/ko/확장 프로그램 킥 알림" />
+    <link rel="alternate" hreflang="ko" href="https://www.streampulse.fr/ko/확장 프로그램 킥 알림" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/undefined" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/ko/확장 프로그램 킥 알림" />
+    <meta property="og:title" content="익스텐션 킥: 라이브 알림 | StreamPulse" />
+    <meta property="og:description" content="탭을 열어두지 않고도 데스크톱에서 Kick 라이브 알림을 받고, 하나의 확장 프로그램으로 Kick과 Twitch를 동시에 시청하는 방법." />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="익스텐션 킥: 라이브 알림 | StreamPulse" />
+    <meta name="twitter:description" content="탭을 열어두지 않고도 데스크톱에서 Kick 라이브 알림을 받고, 하나의 확장 프로그램으로 Kick과 Twitch를 동시에 시청하는 방법." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "name": "브라우저 확장 프로그램을 통해 Kick 스트리머를 팔로우하기",
+    "headline": "브라우저 확장 프로그램을 통해 Kick 스트리머를 팔로우하기",
+    "description": "탭을 열어두지 않고도 데스크톱에서 Kick 라이브 알림을 받고, 하나의 확장 프로그램으로 Kick과 Twitch를 동시에 시청하는 방법.",
+    "inLanguage": "ko",
+    "url": "https://www.streampulse.fr/ko/확장 프로그램 킥 알림",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/ko/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "브라우저 확장 프로그램을 통해 Kick 스트리머를 팔로우하기",
+        "item": "https://www.streampulse.fr/ko/확장 프로그램 킥 알림"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ko",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "이 확장 프로그램은 Kick 계정이 없어도 작동하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "네, 실시간 상태 확인에는 로그인이 필요하지 않습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "킥이 체인 포인트를 얻을 수 있을까요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "현재로서는 이와 동등한 시스템이 존재하지 않으며, 플랫폼 측에서 이를 도입한다면 지원도 뒤따를 것입니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "어떤 브라우저에서 호환되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chrome, Brave, Edge, Opera 및 크로미움 기반 브라우저들."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/ko" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/ko/#features">Features</a>
+          <a href="/ko/#faq">FAQ</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/ko">Home</a> / <span>브라우저 확장 프로그램을 통해 Kick 스트리머를 팔로우하기</span>
+          </p>
+          <h1>브라우저 확장 프로그램을 통해 Kick 스트리머를 팔로우하기</h1>
+          <p class="article-lede">Kick은 스트리밍 시청자층에서 상당한 점유율을 확보했지만, 관련 도구 생태계는 여전히 Twitch에 비해 훨씬 제한적입니다. 많은 시청자들이 두 플랫폼에서 크리에이터를 모두 팔로우하고 있어, 통합된 솔루션을 찾지 못하는 경우가 많습니다. 이 페이지에서는 현재 가능한 기능들을 설명합니다.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 9 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#notifications">Kick 라이브 알림을 받으려면 어떻게 해야 하나요?</a></li>
+          <li><a href="#twitch-kick">Kick과 Twitch를 동시에 시청할 수 있나요?</a></li>
+          <li><a href="#limites">Kick에서는 어떤 기능이 제한되나요?</a></li>
+          <li><a href="#confidentialite">어떤 데이터가 사용되나요?</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="notifications">Kick 라이브 알림을 받으려면 어떻게 해야 하나요?</h2>
+        <div class="answer-block">
+          <p>StreamPulse는 사용자가 추가한 Kick 채널의 상태를 확인하며, Kick 탭을 열어둘 필요 없이 방송이 시작되는 즉시 데스크톱 알림을 전송합니다.</p>
+        </div>
+        <p>Kick은 Twitch와 같은 구독 내역 자동 가져오기 기능을 제공하지 않기 때문에, 채널 이름을 직접 입력하여 팔로우를 추가해야 합니다.</p>
+
+        <h2 id="twitch-kick">Kick과 Twitch를 동시에 시청할 수 있나요?</h2>
+        <div class="answer-block">
+          <p>네. 두 플랫폼이 동일한 대시보드에 표시되므로, 두 사이트를 동시에 모니터링할 필요가 없습니다. 이것이 바로 여러 플랫폼을 이용하는 시청자들에게 이 확장 프로그램이 주는 가장 큰 장점입니다.</p>
+        </div>
+
+        <h2 id="limites">Kick에서는 어떤 기능이 제한되나요?</h2>
+        <div class="answer-block">
+          <p>Kick에는 Twitch와 유사한 체인 포인트 시스템, 드롭, 예측 기능이 없습니다. 따라서 이러한 메커니즘과 관련된 StreamPulse의 자동화 기능은 Twitch에만 적용됩니다.</p>
+        </div>
+        <div class="table-wrap"><table class="cmp-table">
+          <thead><tr><th>기능</th><th>트위치</th><th>킥</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">라이브 알림</th><td>네</td><td>네</td></tr>
+            <tr><th scope="row">대시보드</th><td>네</td><td>네</td></tr>
+            <tr><th scope="row">자동 체인 스티치</th><td>네</td><td>해당 없음</td></tr>
+            <tr><th scope="row">드롭스와 모멘츠</th><td>네</td><td>해당 없음</td></tr>
+            <tr><th scope="row">오버레이 예측</th><td>네</td><td>해당 없음</td></tr>
+            <tr><th scope="row">구독 내역 가져오기</th><td>네</td><td>수동 추가</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2 id="confidentialite">어떤 데이터가 사용되나요?</h2>
+        <div class="answer-block">
+          <p>팔로우 중인 채널의 이름만 Twitch 및 Kick의 공개 API로 전송되어 해당 채널의 상태를 확인합니다. 어떠한 개인 정보도 수집되지 않으며, 사용자의 설정은 로컬에 저장됩니다.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>이 확장 프로그램은 Kick 계정이 없어도 작동하나요?</h3>
+            <p>네, 실시간 상태 확인에는 로그인이 필요하지 않습니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>킥이 체인 포인트를 얻을 수 있을까요?</h3>
+            <p>현재로서는 이와 동등한 시스템이 존재하지 않으며, 플랫폼 측에서 이를 도입한다면 지원도 뒤따를 것입니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>어떤 브라우저에서 호환되나요?</h3>
+            <p>Chrome, Brave, Edge, Opera 및 크로미움 기반 브라우저들.</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

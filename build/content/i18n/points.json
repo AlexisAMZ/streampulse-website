@@ -1,0 +1,1263 @@
+{
+  "es": {
+    "slug": "puntos-de-cadena-automáticos-twitch",
+    "linkLabel": "Puntos de cadena automáticos en Twitch",
+    "title": "Puntos de cadena automáticos de Twitch | StreamPulse",
+    "h1": "Recuperar los puntos de la cadena de Twitch automáticamente",
+    "description": "Cómo recuperar automáticamente tus puntos de la cadena de Twitch, incluso con la pestaña cerrada: instalación en 3 pasos, ajustes y preguntas frecuentes.",
+    "intro": "Los puntos de Twitch se ganan viendo una retransmisión en directo, pero la bonificación que se obtiene cada 15 minutos requiere hacer clic manualmente en un cofre que desaparece al cabo de unos minutos. En esta página se explica cómo automatizar esta recogida con StreamPulse, qué hace exactamente la extensión y cuáles son las limitaciones que hay que tener en cuenta.",
+    "howToSteps": [
+      {
+        "name": "Instalar la extensión",
+        "text": "Abre la ficha de StreamPulse en la Chrome Web Store y haz clic en «Añadir a Chrome». La extensión funciona en Chrome, Brave, Edge y Opera."
+      },
+      {
+        "name": "Activar la recuperación automática",
+        "text": "Abre StreamPulse desde la barra de herramientas y, a continuación, activa el módulo «Puntos de cadena» en la configuración. Está activo por defecto."
+      },
+      {
+        "name": "Añade tus streamers",
+        "text": "Conecta tu cuenta de Twitch para importar tus suscripciones o añade los canales manualmente. La recaudación comienza de inmediato."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "¿Cómo funciona la recuperación automática de puntos?",
+        "answer": "StreamPulse supervisa en segundo plano los canales que sigues y hace clic en el cofre de puntos de bonificación en cuanto aparece, sin que tengas que mantener abierta una pestaña de Twitch. La recogida continúa mientras el navegador esté abierto.",
+        "body": [
+          "Twitch otorga puntos de canal de forma pasiva mientras se ve el contenido, además de una bonificación puntual que se muestra mediante un icono de cofre. Esta bonificación representa una parte significativa del total en una sesión larga, pero caduca si no se reclama.",
+          "La extensión detecta la aparición de este cofre y activa la reclamación. El contador integrado muestra el total acumulado, lo que permite comprobar que el módulo funciona correctamente."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "¿Cómo activar los puntos automáticos en tres pasos?",
+        "answer": null,
+        "steps": [
+          {
+            "name": null,
+            "text": null
+          },
+          {
+            "name": null,
+            "text": null
+          },
+          {
+            "name": null,
+            "text": null
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": null,
+        "answer": null,
+        "body": [
+          null
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": null,
+        "answer": null,
+        "body": [
+          null,
+          null
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": null,
+        "answer": null,
+        "list": [
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": null,
+        "a": null
+      },
+      {
+        "q": null,
+        "a": null
+      },
+      {
+        "q": null,
+        "a": null
+      },
+      {
+        "q": null,
+        "a": null
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "pontos-de-corrente-automáticos-twitch",
+    "linkLabel": "Pontos de cadeia automáticos no Twitch",
+    "title": "Pontos de cadeia automáticos do Twitch | StreamPulse",
+    "h1": "Recuperar pontos de canal do Twitch automaticamente",
+    "description": "Como recuperar automaticamente seus pontos de canal do Twitch, mesmo com a aba fechada: instalação em 3 etapas, configurações e perguntas frequentes.",
+    "intro": "Os pontos da Twitch são ganhos ao assistir a uma transmissão ao vivo, mas o bônus a cada 15 minutos exige um clique manual em um baú que desaparece após alguns minutos. Esta página explica como automatizar essa coleta com o StreamPulse, o que exatamente a extensão faz e quais são as limitações que você precisa conhecer.",
+    "howToSteps": [
+      {
+        "name": "Instalar a extensão",
+        "text": "Abra a página do StreamPulse na Chrome Web Store e clique em “Adicionar ao Chrome”. A extensão funciona no Chrome, no Brave, no Edge e no Opera."
+      },
+      {
+        "name": "Ativar a recuperação automática",
+        "text": "Abra o StreamPulse a partir da barra de ferramentas e, em seguida, ative o módulo “Pontos da cadeia” nas configurações. Ele vem ativado por padrão."
+      },
+      {
+        "name": "Adicione seus streamers",
+        "text": "Conecte sua conta do Twitch para importar suas assinaturas ou adicione os canais manualmente. A coleta começa imediatamente."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Como funciona a recuperação automática de pontos?",
+        "answer": "O StreamPulse monitora em segundo plano os canais que você segue e clica no baú de pontos bônus assim que ele aparecer, sem que você precise manter uma aba do Twitch aberta. A coleta continua enquanto o navegador estiver em execução.",
+        "body": [
+          "O Twitch concede pontos de canal automaticamente durante a exibição, além de um bônus pontual representado por um ícone de baú. Esse bônus representa uma parcela significativa do total em uma sessão longa, mas expira se não for resgatado.",
+          "A extensão detecta o aparecimento desse baú e aciona a notificação. O contador integrado exibe o total acumulado recuperado, o que permite verificar se o módulo está realmente funcionando."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Como ativar os pontos automáticos em 3 etapas?",
+        "answer": "A instalação leva cerca de dois minutos: adicione a extensão a partir da Chrome Web Store, verifique se o módulo “Pontos de canal” está ativado e, em seguida, importe os canais que você acompanha.",
+        "steps": [
+          {
+            "name": "Instale a extensão.",
+            "text": "Direto da Chrome Web Store, com apenas um clique. Não é necessário ter uma conta no StreamPulse."
+          },
+          {
+            "name": "Ative o módulo.",
+            "text": "O módulo “Pontos da cadeia” está ativado por padrão; você pode desativá-lo cadeia por cadeia."
+          },
+          {
+            "name": "Importe seus streamers.",
+            "text": "Sincronização com o Twitch com um clique ou adição manual para o Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Os pontos são recuperados quando a aba está fechada?",
+        "answer": "Sim. O StreamPulse funciona a partir do service worker da extensão, independentemente das suas abas. Você não precisa deixar uma aba do Twitch aberta, mas o navegador deve permanecer em execução.",
+        "body": [
+          "Essa é a principal diferença em relação aos scripts de usuário tradicionais, que exigem que uma aba esteja aberta e deixam de funcionar assim que ela é fechada."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Isso representa algum risco para a minha conta do Twitch?",
+        "answer": "O StreamPulse reproduz uma ação que você faria manualmente: clicar em um bônus exibido na tela. A extensão nunca solicita sua senha e não armazena nenhum dado em um servidor externo.",
+        "body": [
+          "Todas as suas preferências ficam armazenadas no armazenamento local do navegador. Nenhum dado pessoal é transmitido a terceiros, conforme detalhado na política de privacidade.",
+          "Dito isso, a automação da interação se enquadra em uma zona cinzenta no que diz respeito aos termos de uso do Twitch. Pelo que sabemos, nenhuma sanção foi aplicada a esse tipo de uso, mas o risco não é formalmente nulo e esta página não constitui uma garantia."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "A extensão consome muitos recursos?",
+        "answer": "Não. A arquitetura se baseia em um cache e no debouncing para limitar as verificações de rede. O consumo de memória continua sendo mínimo em comparação com uma aba do Twitch deixada aberta o tempo todo.",
+        "list": [
+          "Não há reprodução de vídeo em segundo plano para acumular pontos.",
+          "Verificações esporádicas, em vez de monitoramento contínuo.",
+          "Cada módulo pode ser desativado individualmente."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "É preciso deixar o navegador aberto?",
+        "a": "Sim. A extensão é executada no navegador: se ele for totalmente fechado, a coleta é suspensa e retomada ao reiniciar o navegador."
+      },
+      {
+        "q": "A recuperação funciona no Kick?",
+        "a": "O Kick não possui um sistema equivalente de pontos de canal. No Kick, o StreamPulse é responsável pelo acompanhamento das transmissões ao vivo e pelas notificações."
+      },
+      {
+        "q": "Posso excluir alguns canais?",
+        "a": "Sim, a coleta pode ser ativada ou desativada canal por canal a partir do painel de controle."
+      },
+      {
+        "q": "O StreamPulse é um serviço pago?",
+        "a": "Não. Todos os recursos são gratuitos, sem anúncios nem assinatura."
+      }
+    ]
+  },
+  "de": {
+    "slug": "automatische-Kettenstiche-Twitch",
+    "linkLabel": "Automatische Chain-Punkte auf Twitch",
+    "title": "Automatische Twitch-Chain-Punkte | StreamPulse",
+    "h1": "Twitch-Kettenpunkte automatisch zurückerhalten",
+    "description": "So sammeln Sie Ihre Twitch-Channel-Punkte automatisch ein, auch wenn der Tab geschlossen ist: Einrichtung in 3 Schritten, Einstellungen und häufig gestellte Fragen.",
+    "intro": "Twitch-Kettenpunkte erhält man durch das Anschauen eines Live-Streams, doch für den Bonus alle 15 Minuten muss man manuell auf eine Truhe klicken, die nach wenigen Minuten verschwindet. Auf dieser Seite wird erklärt, wie man diese Punkteabholung mit StreamPulse automatisieren kann, was die Erweiterung genau leistet und welche Einschränkungen es zu beachten gibt.",
+    "howToSteps": [
+      {
+        "name": "Erweiterung installieren",
+        "text": "Öffnen Sie die StreamPulse-Seite im Chrome Web Store und klicken Sie auf „Zu Chrome hinzufügen“. Die Erweiterung funktioniert in Chrome, Brave, Edge und Opera."
+      },
+      {
+        "name": "Automatische Wiederherstellung aktivieren",
+        "text": "Öffnen Sie StreamPulse über die Symbolleiste und aktivieren Sie anschließend in den Einstellungen das Modul „Kettenpunkte“. Es ist standardmäßig aktiviert."
+      },
+      {
+        "name": "Fügen Sie Ihre Streamer hinzu",
+        "text": "Verbinden Sie Ihr Twitch-Konto, um Ihre Abonnements zu importieren, oder fügen Sie die Kanäle manuell hinzu. Die Erfassung beginnt sofort."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Wie funktioniert die automatische Punkte-Rückerstattung?",
+        "answer": "StreamPulse überwacht im Hintergrund die Kanäle, denen Sie folgen, und klickt auf die Bonuspunkt-Truhe, sobald diese erscheint – ohne dass Sie einen Twitch-Tab geöffnet lassen müssen. Das Sammeln läuft weiter, solange der Browser geöffnet ist.",
+        "body": [
+          "Twitch vergibt während des Zuschauens passiv Kanalpunkte sowie einen einmaligen Bonus, der durch ein Schatzkisten-Symbol angezeigt wird. Dieser Bonus macht bei einer langen Sitzung einen erheblichen Teil der Gesamtpunktzahl aus, verfällt jedoch, wenn er nicht eingelöst wird.",
+          "Das Add-on erkennt das Erscheinen dieser Truhe und löst die Meldung aus. Der integrierte Zähler zeigt die gesammelte Gesamtmenge an, wodurch überprüft werden kann, ob das Modul tatsächlich funktioniert."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Wie aktiviere ich die automatischen Punkte in 3 Schritten?",
+        "answer": "Die Installation dauert etwa zwei Minuten: Fügen Sie die Erweiterung aus dem Chrome Web Store hinzu, stellen Sie sicher, dass das Modul „Kanal-Highlights“ aktiviert ist, und importieren Sie anschließend die von Ihnen verfolgten Kanäle.",
+        "steps": [
+          {
+            "name": "Installieren Sie die Erweiterung.",
+            "text": "Über den Chrome Web Store – mit nur einem Klick. Ein StreamPulse-Konto ist nicht erforderlich."
+          },
+          {
+            "name": "Aktivieren Sie das Modul.",
+            "text": "Das Modul „Kettenpunkte“ ist standardmäßig aktiviert; Sie können es für jede Kette einzeln deaktivieren."
+          },
+          {
+            "name": "Importieren Sie Ihre Streamer.",
+            "text": "Twitch-Synchronisierung mit einem Klick oder manuelles Hinzufügen für Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Werden die Punkte auch bei geschlossenem Reiter gespeichert?",
+        "answer": "Ja. StreamPulse läuft über den Service Worker der Erweiterung, unabhängig von Ihren Tabs. Sie müssen keinen Twitch-Tab geöffnet lassen, aber der Browser muss gestartet bleiben.",
+        "body": [
+          "Das ist der wesentliche Unterschied zu herkömmlichen Benutzerskripten, bei denen ein Tab aktiv sein muss und die nicht mehr funktionieren, sobald dieser geschlossen wird."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Ist das ein Risiko für meinen Twitch-Account?",
+        "answer": "StreamPulse führt eine Aktion aus, die Sie manuell ausführen würden: das Anklicken eines auf dem Bildschirm angezeigten Bonus. Die Erweiterung fragt niemals nach Ihrem Passwort und speichert keine Daten auf einem externen Server.",
+        "body": [
+          "Alle Ihre Einstellungen werden im lokalen Speicher des Browsers gespeichert. Es werden keine personenbezogenen Daten an Dritte weitergegeben, wie in der Datenschutzerklärung näher erläutert.",
+          "Allerdings befindet sich die Automatisierung der Interaktion in einer Grauzone hinsichtlich der Nutzungsbedingungen von Twitch. Nach unserem Kenntnisstand gab es bisher keine Sanktionen wegen dieser Art der Nutzung, doch das Risiko ist nicht gänzlich ausgeschlossen, und diese Seite stellt keine Garantie dar."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Verbraucht das Add-on viele Ressourcen?",
+        "answer": "Nein. Die Architektur basiert auf einem Cache und Debouncing, um die Netzwerkabfragen zu begrenzen. Der Speicherbedarf ist im Vergleich zu einem ständig geöffneten Twitch-Tab verschwindend gering.",
+        "list": [
+          "Es wird kein Video im Hintergrund abgespielt, um Punkte zu sammeln.",
+          "Regelmäßige Überprüfungen statt kontinuierlicher Stichproben.",
+          "Jedes Modul kann einzeln deaktiviert werden."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Soll man den Browser geöffnet lassen?",
+        "a": "Ja. Die Erweiterung läuft im Browser: Wenn dieser vollständig geschlossen wird, wird die Datenerfassung unterbrochen und beim Neustart wieder aufgenommen."
+      },
+      {
+        "q": "Funktioniert die Wiederherstellung bei Kick?",
+        "a": "Kick verfügt über kein vergleichbares Punktesystem. StreamPulse übernimmt dort die Nachverfolgung der Live-Übertragungen und die Benachrichtigungen."
+      },
+      {
+        "q": "Kann ich bestimmte Sender ausschließen?",
+        "a": "Ja, die Datenerfassung kann über das Dashboard für jeden Kanal einzeln aktiviert oder deaktiviert werden."
+      },
+      {
+        "q": "Ist StreamPulse kostenpflichtig?",
+        "a": "Nein. Alle Funktionen sind kostenlos, ohne Werbung und ohne Abonnement."
+      }
+    ]
+  },
+  "it": {
+    "slug": "catene-automatiche-twitch",
+    "linkLabel": "Punti automatici su Twitch",
+    "title": "Punti automatici su Twitch | StreamPulse",
+    "h1": "Recuperare automaticamente i punti della catena di Twitch",
+    "description": "Come recuperare automaticamente i punti della catena di Twitch, anche con la scheda chiusa: installazione in 3 passaggi, impostazioni e domande frequenti.",
+    "intro": "I punti Twitch si guadagnano guardando una diretta, ma il bonus ogni 15 minuti richiede un clic manuale su un forziere che scompare dopo pochi minuti. Questa pagina spiega come automatizzare il recupero dei punti con StreamPulse, cosa fa esattamente l'estensione e quali sono i limiti da tenere presenti.",
+    "howToSteps": [
+      {
+        "name": "Installare l'estensione",
+        "text": "Apri la scheda di StreamPulse sul Chrome Web Store e clicca su «Aggiungi a Chrome». L'estensione funziona su Chrome, Brave, Edge e Opera."
+      },
+      {
+        "name": "Attivare il recupero automatico",
+        "text": "Apri StreamPulse dalla barra degli strumenti, quindi attiva il modulo «Punti della catena» nelle impostazioni. È attivo per impostazione predefinita."
+      },
+      {
+        "name": "Aggiungi i tuoi streamer",
+        "text": "Collega il tuo account Twitch per importare i tuoi abbonamenti oppure aggiungi i canali manualmente. La raccolta inizia immediatamente."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Come funziona il recupero automatico dei punti?",
+        "answer": "StreamPulse monitora in background i canali che segui e clicca sul forziere dei punti bonus non appena compare, senza che tu debba tenere aperta una scheda di Twitch. La raccolta continua finché il browser è in esecuzione.",
+        "body": [
+          "Twitch assegna punti canale in modo passivo durante la visione, oltre a un bonus una tantum rappresentato da un'icona a forma di forziere. Questo bonus rappresenta una parte significativa del totale in una sessione prolungata, ma scade se non viene riscattato.",
+          "L'estensione rileva la comparsa di questo forziere e attiva la richiesta. Il contatore integrato mostra il totale recuperato, il che permette di verificare che il modulo funzioni effettivamente."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Come attivare i punti automatici in 3 passaggi?",
+        "answer": "L'installazione richiede circa due minuti: aggiungi l'estensione dal Chrome Web Store, verifica che il modulo «Punti dei canali» sia attivato, quindi importa i canali che segui.",
+        "steps": [
+          {
+            "name": "Installa l'estensione.",
+            "text": "Dal Chrome Web Store, con un solo clic. Non è necessario alcun account StreamPulse."
+          },
+          {
+            "name": "Attiva il modulo.",
+            "text": "Il modulo «Punti della catena» è attivo per impostazione predefinita; è possibile disattivarlo catena per catena."
+          },
+          {
+            "name": "Importa i tuoi streamer.",
+            "text": "Sincronizzazione con Twitch con un solo clic, oppure aggiunta manuale per Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "I punti vengono salvati anche se la scheda è chiusa?",
+        "answer": "Sì. StreamPulse funziona tramite il service worker dell'estensione, indipendentemente dalle schede aperte. Non è necessario tenere aperta una scheda di Twitch, ma il browser deve rimanere in esecuzione.",
+        "body": [
+          "Questa è la differenza principale rispetto ai classici script utente, che richiedono una scheda attiva e smettono di funzionare non appena questa viene chiusa."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "È un rischio per il mio account Twitch?",
+        "answer": "StreamPulse riproduce un'azione che dovresti eseguire manualmente: cliccare su un bonus visualizzato sullo schermo. L'estensione non richiede mai la tua password e non memorizza alcun dato su un server esterno.",
+        "body": [
+          "Tutte le tue preferenze vengono salvate nella memoria locale del browser. Nessun dato personale viene trasmesso a terzi, come specificato nell'informativa sulla privacy.",
+          "Detto questo, l'automazione dell'interazione rientra in una zona grigia rispetto alle condizioni d'uso di Twitch. Per quanto ne sappiamo, non sono state comminate sanzioni per questo tipo di utilizzo, ma il rischio non è del tutto nullo e questa pagina non costituisce una garanzia."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "L'estensione consuma molte risorse?",
+        "answer": "No. L'architettura si basa su una cache e sul debouncing per limitare le verifiche di rete. L'impronta di memoria rimane minima rispetto a una scheda di Twitch lasciata aperta in modo permanente.",
+        "list": [
+          "Non viene mantenuta alcuna riproduzione video in background per accumulare punti.",
+          "Controlli a intervalli regolari anziché un monitoraggio continuo.",
+          "Ogni modulo può essere disattivato singolarmente."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "È necessario lasciare il browser aperto?",
+        "a": "Sì. L'estensione viene eseguita nel browser: se quest'ultimo viene chiuso completamente, la raccolta viene sospesa e riprende al riavvio."
+      },
+      {
+        "q": "Il recupero funziona su Kick?",
+        "a": "Kick non dispone di un sistema di punti di catena equivalente. StreamPulse gestisce il monitoraggio delle dirette e le notifiche."
+      },
+      {
+        "q": "Posso escludere alcuni canali?",
+        "a": "Sì, la raccolta può essere attivata o disattivata canale per canale dalla dashboard."
+      },
+      {
+        "q": "StreamPulse è a pagamento?",
+        "a": "No. Tutte le funzionalità sono gratuite, senza pubblicità né abbonamento."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "automatyczne-punkty-łańcuchowe-twitch",
+    "linkLabel": "Automatyczne punkty łańcuchowe na Twitchu",
+    "title": "Automatyczne punkty w serwisie Twitch | StreamPulse",
+    "h1": "Automatyczne odzyskiwanie punktów łańcucha na Twitchu",
+    "description": "Jak automatycznie zbierać punkty Twitch, nawet gdy karta jest zamknięta: instalacja w 3 krokach, ustawienia i często zadawane pytania.",
+    "intro": "Punkty Twitch Chain zdobywa się podczas oglądania transmisji na żywo, ale bonus przyznawany co 15 minut wymaga ręcznego kliknięcia w skrzynię, która znika po kilku minutach. Na tej stronie wyjaśniono, jak zautomatyzować odbieranie punktów za pomocą StreamPulse, na czym dokładnie polega działanie tego rozszerzenia oraz jakie ograniczenia należy wziąć pod uwagę.",
+    "howToSteps": [
+      {
+        "name": "Zainstaluj rozszerzenie",
+        "text": "Otwórz stronę rozszerzenia StreamPulse w Chrome Web Store i kliknij „Dodaj do Chrome”. Rozszerzenie działa w przeglądarkach Chrome, Brave, Edge i Opera."
+      },
+      {
+        "name": "Włącz automatyczne odzyskiwanie",
+        "text": "Uruchom program StreamPulse z paska narzędzi, a następnie włącz moduł „Punkty łańcucha” w ustawieniach. Jest on domyślnie włączony."
+      },
+      {
+        "name": "Dodaj swoje streamerki",
+        "text": "Połącz swoje konto Twitch, aby zaimportować swoje subskrypcje, lub dodaj kanały ręcznie. Zbieranie danych rozpocznie się natychmiast."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Jak działa automatyczne odzyskiwanie punktów?",
+        "answer": "StreamPulse monitoruje w tle kanały, które obserwujesz, i klika skrzynię z punktami bonusowymi, gdy tylko się pojawi, dzięki czemu nie musisz mieć otwartej karty Twitch. Zbieranie punktów trwa tak długo, jak długo przeglądarka jest uruchomiona.",
+        "body": [
+          "Twitch przyznaje punkty kanału automatycznie podczas oglądania, a także jednorazowy bonus oznaczony ikoną skrzyni. Bonus ten stanowi znaczną część łącznej liczby punktów w przypadku długiej sesji, ale traci ważność, jeśli nie zostanie odebrany.",
+          "Rozszerzenie wykrywa pojawienie się tej skrzyni i uruchamia zgłoszenie reklamacyjne. Wbudowany licznik wyświetla łączną odzyskaną kwotę, co pozwala sprawdzić, czy moduł rzeczywiście działa."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Jak włączyć automatyczne punkty w 3 krokach?",
+        "answer": "Instalacja zajmuje około dwóch minut: dodaj rozszerzenie ze sklepu Chrome Web Store, upewnij się, że moduł „Punkty kanałów” jest włączony, a następnie zaimportuj obserwowane kanały.",
+        "steps": [
+          {
+            "name": "Zainstaluj rozszerzenie.",
+            "text": "W sklepie Chrome Web Store – wystarczy jedno kliknięcie. Nie jest wymagane posiadanie konta StreamPulse."
+          },
+          {
+            "name": "Włącz moduł.",
+            "text": "Moduł „Punkty łańcucha” jest domyślnie włączony; można go wyłączyć dla poszczególnych łańcuchów."
+          },
+          {
+            "name": "Zaimportuj swoje streamery.",
+            "text": "Synchronizacja z serwisem Twitch jednym kliknięciem lub ręczne dodawanie w serwisie Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Czy punkty są zapisywane po zamknięciu zakładki?",
+        "answer": "Tak. StreamPulse działa za pośrednictwem serwisu roboczego rozszerzenia, niezależnie od otwartych kart. Nie musisz pozostawiać otwartej karty Twitch, ale przeglądarka musi pozostać uruchomiona.",
+        "body": [
+          "To główna różnica w porównaniu z klasycznymi skryptami użytkownika, które wymagają aktywnej karty i przestają działać po jej zamknięciu."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Czy to stanowi zagrożenie dla mojego konta na Twitchu?",
+        "answer": "StreamPulse odtwarza czynność, którą wykonałbyś ręcznie: kliknięcie na bonus wyświetlany na ekranie. Rozszerzenie nigdy nie prosi o podanie hasła i nie przechowuje żadnych danych na zewnętrznym serwerze.",
+        "body": [
+          "Wszystkie Twoje ustawienia są zapisywane w lokalnej pamięci przeglądarki. Żadne dane osobowe nie są przekazywane stronom trzecim, zgodnie z informacjami zawartymi w polityce prywatności.",
+          "Należy jednak zaznaczyć, że automatyzacja interakcji stanowi szarą strefę w kontekście warunków korzystania z serwisu Twitch. Zgodnie z naszą wiedzą nie nałożono dotychczas żadnych sankcji za tego typu praktyki, jednak ryzyko nie jest całkowicie wykluczone, a niniejsza strona nie stanowi żadnej gwarancji."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Czy to rozszerzenie zużywa dużo zasobów?",
+        "answer": "Nie. Architektura opiera się na pamięci podręcznej i funkcji debouncing, co pozwala ograniczyć liczbę sprawdzeń sieciowych. Zużycie pamięci pozostaje znikome w porównaniu z kartą serwisu Twitch pozostawioną otwartą przez cały czas.",
+        "list": [
+          "W tle nie jest uruchamiane żadne odtwarzanie wideo w celu zbierania punktów.",
+          "Kontrole przeprowadzane w określonych odstępach czasu zamiast ciągłego monitorowania.",
+          "Każdy moduł można wyłączyć osobno."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy należy pozostawić przeglądarkę otwartą?",
+        "a": "Tak. Rozszerzenie działa w przeglądarce: jeśli przeglądarka zostanie całkowicie zamknięta, gromadzenie danych zostanie wstrzymane, a po ponownym uruchomieniu zostanie wznowione."
+      },
+      {
+        "q": "Czy funkcja przywracania działa w Kicku?",
+        "a": "W Kick nie ma odpowiednika systemu punktów łańcuchowych. Funkcję śledzenia transmisji na żywo i powiadomień pełni tam StreamPulse."
+      },
+      {
+        "q": "Czy mogę wykluczyć niektóre kanały?",
+        "a": "Tak, funkcję zbierania danych można włączać lub wyłączać dla poszczególnych kanałów z poziomu pulpitu nawigacyjnego."
+      },
+      {
+        "q": "Czy StreamPulse jest płatny?",
+        "a": "Nie. Wszystkie funkcje są bezpłatne, bez reklam i bez abonamentu."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "otomatik zincir halkaları-twitch",
+    "linkLabel": "Twitch'te otomatik zincir puanları",
+    "title": "Twitch Otomatik Zincir Noktaları | StreamPulse",
+    "h1": "Twitch kanal puanlarını otomatik olarak geri kazanmak",
+    "description": "Sekme kapalıyken bile Twitch kanal puanlarınızı otomatik olarak nasıl toplayabilirsiniz: 3 adımda kurulum, ayarlar ve sık sorulan sorular.",
+    "intro": "Twitch zincir puanları, canlı yayınları izleyerek kazanılır; ancak her 15 dakikada bir verilen bonus için, birkaç dakika sonra kaybolan bir sandığa manuel olarak tıklamak gerekir. Bu sayfada, StreamPulse ile bu puan alımını nasıl otomatikleştirebileceğiniz, eklentinin tam olarak ne yaptığı ve bilmeniz gereken sınırlamalar açıklanmaktadır.",
+    "howToSteps": [
+      {
+        "name": "Eklentiyi yükle",
+        "text": "Chrome Web Store'da StreamPulse sayfasını açın ve \"Chrome'a Ekle\" seçeneğine tıklayın. Bu uzantı Chrome, Brave, Edge ve Opera tarayıcılarında çalışır."
+      },
+      {
+        "name": "Otomatik kurtarmayı etkinleştir",
+        "text": "Araç çubuğundan StreamPulse'u açın, ardından ayarlardan «Zincir Noktaları» modülünü etkinleştirin. Bu modül varsayılan olarak etkindir."
+      },
+      {
+        "name": "Streamer'larınızı ekleyin",
+        "text": "Twitch hesabınızı bağlayarak aboneliklerinizi içe aktarın veya kanalları manuel olarak ekleyin. Toplama işlemi hemen başlar."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Otomatik puan geri kazanımı nasıl işliyor?",
+        "answer": "StreamPulse, takip ettiğiniz kanalları arka planda izler ve bonus puan sandığı göründüğü anda, sizin bir Twitch sekmesini açık tutmanıza gerek kalmadan ona tıklar. Tarayıcı açık olduğu sürece puan toplama işlemi devam eder.",
+        "body": [
+          "Twitch, izleme sırasında pasif olarak kanal puanları dağıtır; buna ek olarak, bir sandık simgesiyle gösterilen tek seferlik bir bonus da verilir. Bu bonus, uzun bir oturumda toplam puanın önemli bir kısmını oluşturur, ancak talep edilmezse geçerliliği sona erer.",
+          "Eklenti, bu sandığın ortaya çıkmasını algılar ve uyarıyı tetikler. Yerleşik sayaç, toplanan toplam miktarı gösterir; bu sayede modülün gerçekten çalıştığı doğrulanabilir."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Otomatik puanları 3 adımda nasıl etkinleştirebilirim?",
+        "answer": "Kurulum yaklaşık iki dakika sürer: Chrome Web Mağazası'ndan uzantıyı ekleyin, \"Kanal Noktaları\" modülünün etkinleştirildiğinden emin olun, ardından takip ettiğiniz kanalları içe aktarın.",
+        "steps": [
+          {
+            "name": "Eklentiyi yükleyin.",
+            "text": "Chrome Web Store'dan tek bir tıklamayla. StreamPulse hesabı gerekmez."
+          },
+          {
+            "name": "Modülü etkinleştirin.",
+            "text": "\"Zincir Noktaları\" modülü varsayılan olarak etkindir; bunu zincir bazında devre dışı bırakabilirsiniz."
+          },
+          {
+            "name": "Streamer'larınızı içe aktarın.",
+            "text": "Tek tıklamayla Twitch senkronizasyonu veya Kick için manuel ekleme."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Sekme kapatıldığında puanlar geri kazanılıyor mu?",
+        "answer": "Evet. StreamPulse, sekmelerinizden bağımsız olarak uzantının hizmet çalışanı üzerinden çalışır. Bir Twitch sekmesini açık bırakmanıza gerek yoktur, ancak tarayıcının çalışır durumda olması gerekir.",
+        "body": [
+          "Bu, aktif bir sekme gerektiren ve sekme kapatıldığında çalışmayı durduran geleneksel kullanıcı komut dosyalarıyla arasındaki temel farktır."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Bu, Twitch hesabım için riskli mi?",
+        "answer": "StreamPulse, manuel olarak yapacağınız bir işlemi gerçekleştirir: ekranda görüntülenen bir bonusun üzerine tıklamak. Bu uzantı hiçbir zaman şifrenizi istemez ve harici bir sunucuda hiçbir veri depolamaz.",
+        "body": [
+          "Tüm tercihleriniz tarayıcının yerel depolama alanında saklanır. Gizlilik politikasında da belirtildiği üzere, hiçbir kişisel veri üçüncü taraflara aktarılmaz.",
+          "Bununla birlikte, etkileşimin otomatikleştirilmesi, Twitch kullanım koşulları açısından bir gri alana giriyor. Bildiğimiz kadarıyla bu tür bir kullanım nedeniyle herhangi bir yaptırım uygulanmamıştır, ancak risk tamamen ortadan kalkmış değildir ve bu sayfa herhangi bir garanti teşkil etmemektedir."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Bu eklenti çok fazla kaynak tüketiyor mu?",
+        "answer": "Hayır. Bu mimari, ağ kontrollerini sınırlamak için önbellek ve debouncing mekanizmalarına dayanmaktadır. Bellek kullanımı, sürekli açık bırakılan bir Twitch sekmesine kıyasla çok azdır.",
+        "list": [
+          "Puan toplamak amacıyla arka planda çalışan hiçbir video oynatımı yoktur.",
+          "Sürekli denetim yerine aralıklı denetimler.",
+          "Her modül ayrı ayrı devre dışı bırakılabilir."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Tarayıcıyı açık bırakmalı mıyız?",
+        "a": "Evet. Eklenti tarayıcıda çalışır: Tarayıcı tamamen kapatılırsa, veri toplama işlemi askıya alınır ve tarayıcı yeniden başlatıldığında devam eder."
+      },
+      {
+        "q": "Kick'te geri alma işlevi çalışıyor mu?",
+        "a": "Kick'te buna eşdeğer bir zincir puanı sistemi yoktur. StreamPulse, bu platformda canlı yayınların takibini ve bildirimleri yönetir."
+      },
+      {
+        "q": "Bazı kanalları hariç tutabilir miyim?",
+        "a": "Evet, veri toplama işlevi kontrol panelinden kanal bazında etkinleştirilebilir veya devre dışı bırakılabilir."
+      },
+      {
+        "q": "StreamPulse ücretli mi?",
+        "a": "Hayır. Tüm özellikler ücretsizdir; reklam ve abonelik yoktur."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "автоматические-узлы-цепи-twitch",
+    "linkLabel": "Автоматические очки на Twitch",
+    "title": "Автоматические очки Twitch | StreamPulse",
+    "h1": "Автоматическое восстановление очков Twitch",
+    "description": "Как автоматически накапливать очки Twitch, даже когда вкладка закрыта: установка за 3 шага, настройки и часто задаваемые вопросы.",
+    "intro": "Очки Twitch можно заработать, просматривая прямые трансляции, но для получения бонуса каждые 15 минут необходимо вручную нажимать на сундук, который исчезает через несколько минут. На этой странице рассказывается, как автоматизировать получение бонуса с помощью StreamPulse, что именно делает это расширение и о каких ограничениях следует знать.",
+    "howToSteps": [
+      {
+        "name": "Установить расширение",
+        "text": "Откройте страницу StreamPulse в Chrome Web Store и нажмите «Добавить в Chrome». Расширение работает в браузерах Chrome, Brave, Edge и Opera."
+      },
+      {
+        "name": "Включить автоматическое восстановление",
+        "text": "Запустите StreamPulse с панели инструментов, а затем включите модуль «Точки канала» в настройках. По умолчанию он включен."
+      },
+      {
+        "name": "Добавьте свои стримеры",
+        "text": "Подключите свою учетную запись Twitch, чтобы импортировать свои подписки, или добавьте каналы вручную. Сбор данных начнется сразу же."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Как работает автоматическое восстановление баллов?",
+        "answer": "StreamPulse в фоновом режиме отслеживает каналы, на которые вы подписаны, и нажимает на сундук с бонусными очками, как только он появляется, при этом вам не нужно держать открытой вкладку Twitch. Сбор очков продолжается, пока браузер запущен.",
+        "body": [
+          "Twitch пассивно начисляет очки канала во время просмотра, а также предоставляет разовый бонус, обозначенный значком сундука. Этот бонус составляет значительную часть общего количества очков за длительную сессию, но его срок действия истекает, если его не забрать.",
+          "Расширение обнаруживает появление этого сундука и запускает процесс получения вознаграждения. Встроенный счетчик отображает общую сумму полученных вознаграждений, что позволяет убедиться в том, что модуль действительно работает."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Как включить автоматическое начисление баллов за 3 шага?",
+        "answer": "Установка занимает около двух минут: добавьте расширение из Chrome Web Store, убедитесь, что модуль «Точки каналов» включен, а затем импортируйте каналы, на которые вы подписаны.",
+        "steps": [
+          {
+            "name": "Установите расширение.",
+            "text": "Прямо из Chrome Web Store — одним щелчком мыши. Учетная запись StreamPulse не требуется."
+          },
+          {
+            "name": "Включите модуль.",
+            "text": "Модуль «Точки цепи» включен по умолчанию; его можно отключить для каждой цепи отдельно."
+          },
+          {
+            "name": "Импортируйте свои стримеры.",
+            "text": "Синхронизация с Twitch одним щелчком мыши или добавление вручную для Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Начисляются ли очки, если вкладка закрыта?",
+        "answer": "Да. StreamPulse работает через сервис-работник расширения, независимо от ваших вкладок. Вам не нужно оставлять открытой вкладку Twitch, но браузер должен оставаться запущенным.",
+        "body": [
+          "В этом заключается главное отличие от обычных пользовательских скриптов, которые требуют, чтобы вкладка была активной, и перестают работать, как только она закрывается."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Представляет ли это риск для моего аккаунта на Twitch?",
+        "answer": "StreamPulse имитирует действие, которое вы выполняли бы вручную: нажатие на бонус, отображаемый на экране. Расширение никогда не запрашивает ваш пароль и не сохраняет никаких данных на внешнем сервере.",
+        "body": [
+          "Все ваши настройки сохраняются в локальном хранилище браузера. Личные данные не передаются третьим лицам, как указано в Политике конфиденциальности.",
+          "Тем не менее, автоматизация взаимодействия находится в «серой зоне» с точки зрения условий использования Twitch. Насколько нам известно, санкции в отношении такого рода использования не применялись, однако риск не является абсолютно нулевым, и данная страница не является гарантией."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Расширение потребляет много ресурсов?",
+        "answer": "Нет. Архитектура основана на использовании кэша и функции подавления повторных нажатий, что позволяет сократить количество сетевых запросов. Объем занимаемой памяти остается незначительным по сравнению с вкладкой Twitch, оставленной постоянно открытой.",
+        "list": [
+          "В фоновом режиме не запускается воспроизведение видео с целью набора очков.",
+          "Периодические проверки вместо постоянного мониторинга.",
+          "Каждый модуль можно отключить по отдельности."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Нужно ли оставлять браузер открытым?",
+        "a": "Да. Расширение работает в браузере: если браузер полностью закрыт, сбор данных приостанавливается, а после его перезапуска возобновляется."
+      },
+      {
+        "q": "Работает ли функция восстановления в Kick?",
+        "a": "В Kick нет аналогичной системы баллов за просмотр. В этом приложении отслеживанием прямых эфиров и уведомлениями занимается StreamPulse."
+      },
+      {
+        "q": "Можно ли исключить некоторые каналы?",
+        "a": "Да, сбор данных можно включить или отключить для каждого канала отдельно в панели управления."
+      },
+      {
+        "q": "StreamPulse — это платный сервис?",
+        "a": "Нет. Все функции доступны бесплатно, без рекламы и без подписки."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "自動チェーンピン・Twitch",
+    "linkLabel": "Twitchの自動チェーンポイント",
+    "title": "Twitchの自動チェーンポイント | StreamPulse",
+    "h1": "Twitchのチェーンポイントを自動的に取得する",
+    "description": "タブを閉じていてもTwitchのチャンネルポイントを自動的に獲得する方法：3ステップでのインストール、設定、よくある質問。",
+    "intro": "Twitchのチェーンポイントはライブ配信を視聴することで獲得できますが、15分ごとのボーナスを受け取るには、数分後に消えてしまう宝箱を手動でクリックする必要があります。このページでは、StreamPulseを使ってこのボーナス獲得を自動化する方法、この拡張機能の具体的な機能、および知っておくべき制限事項について解説します。",
+    "howToSteps": [
+      {
+        "name": "拡張機能をインストールする",
+        "text": "Chrome Web Storeで「StreamPulse」のページを開き、「Chromeに追加」をクリックしてください。この拡張機能は、Chrome、Brave、Edge、Operaで動作します。"
+      },
+      {
+        "name": "自動復元を有効にする",
+        "text": "ツールバーからStreamPulseを起動し、設定で「チェーンポイント」モジュールを有効にしてください。デフォルトでは有効になっています。"
+      },
+      {
+        "name": "ストリーマーを追加する",
+        "text": "Twitchアカウントを連携してサブスクリプションをインポートするか、チャンネルを手動で追加してください。データ収集はすぐに開始されます。"
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "ポイントの自動還元はどのように機能するのですか？",
+        "answer": "StreamPulseは、フォローしているチャンネルをバックグラウンドで監視し、ボーナスポイントの宝箱が表示されるとすぐにクリックします。Twitchのタブを開いたままにしておく必要はありません。ブラウザが起動している限り、ポイントの収集は継続されます。",
+        "body": [
+          "Twitchでは、視聴中に自動的にチャンネルポイントが加算されるほか、宝箱のアイコンで表示される一時的なボーナスも付与されます。このボーナスは、長時間のセッションでは合計ポイントの大部分を占めますが、受け取らないと失効してしまいます。",
+          "この拡張機能は、この宝箱の出現を検知し、クレームを発動させます。内蔵のカウンターには回収した合計数が表示されるため、モジュールが実際に動作しているかを確認することができます。"
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "3つのステップで自動ポイントを有効にするには？",
+        "answer": "インストールには約2分かかります。Chrome ウェブストアから拡張機能を追加し、「チャンネル」モジュールが有効になっていることを確認してから、フォローしているチャンネルをインポートしてください。",
+        "steps": [
+          {
+            "name": "拡張機能をインストールしてください。",
+            "text": "Chrome Web Storeから、ワンクリックで。StreamPulseのアカウントは不要です。"
+          },
+          {
+            "name": "モジュールを有効にしてください。",
+            "text": "「チェーンポイント」モジュールはデフォルトで有効になっていますが、チェーンごとに無効にすることができます。"
+          },
+          {
+            "name": "ストリーマーをインポートしてください。",
+            "text": "Twitchとの同期はワンクリックで、Kickへの追加は手動で行えます。"
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "タブを閉じた後もポイントは引き継がれますか？",
+        "answer": "はい。StreamPulseは、拡張機能のサービスワーカーを通じて動作するため、タブの状態とは関係ありません。Twitchのタブを開いたままにしておく必要はありませんが、ブラウザは起動したままにしておく必要があります。",
+        "body": [
+          "これが、従来のユーザースクリプトとの主な違いです。従来のユーザースクリプトは、アクティブなタブが必要であり、そのタブを閉じると動作しなくなります。"
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Twitchのアカウントにリスクはありますか？",
+        "answer": "StreamPulseは、画面に表示されたボーナスをクリックするという、手動で行う操作を再現します。この拡張機能はパスワードを要求することはなく、外部サーバーにデータを保存することもありません。",
+        "body": [
+          "すべてのお好み設定は、ブラウザのローカルストレージに保存されます。プライバシーポリシーに記載されている通り、個人情報は第三者に提供されることはありません。",
+          "とはいえ、インタラクションの自動化は、Twitchの利用規約に関してはグレーゾーンにあたります。私たちの知る限り、この種の利用に対して制裁が科された事例はありませんが、リスクが完全にゼロというわけではありません。また、このページは保証を構成するものではありません。"
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "この拡張機能はリソースを多く消費しますか？",
+        "answer": "いいえ。このアーキテクチャは、ネットワークへの確認回数を抑えるために、キャッシュとデバウンシングを採用しています。メモリ使用量は、Twitchのタブを常時開いたままにしている場合と比べれば、ごくわずかです。",
+        "list": [
+          "ポイントを獲得するために、バックグラウンドで再生される動画はありません。",
+          "継続的な調査ではなく、一定の間隔を空けて実施する確認。",
+          "各モジュールは個別に無効にすることができます。"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "ブラウザは開いたままにしておくべきでしょうか？",
+        "a": "はい。この拡張機能はブラウザ内で動作します。ブラウザが完全に閉じられた場合、データの収集は一時停止され、再起動時に再開されます。"
+      },
+      {
+        "q": "Kickではデータ復元は機能しますか？",
+        "a": "Kickには、これに相当するチェーンポイント制度はありません。StreamPulseでは、ライブの追跡や通知を管理しています。"
+      },
+      {
+        "q": "特定のチャンネルを除外することはできますか？",
+        "a": "はい、ダッシュボードからチャンネルごとに収集機能を有効または無効に設定できます。"
+      },
+      {
+        "q": "StreamPulseは有料ですか？",
+        "a": "いいえ。すべての機能が無料で、広告もサブスクリプションもありません。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "자동 체인 연결점-twitch",
+    "linkLabel": "Twitch의 자동 체인 포인트",
+    "title": "Twitch 자동 체인 포인트 | StreamPulse",
+    "h1": "Twitch 채널 포인트를 자동으로 회복하기",
+    "description": "탭을 닫은 상태에서도 Twitch 채널 포인트를 자동으로 적립하는 방법: 3단계 설치 방법, 설정 및 자주 묻는 질문.",
+    "intro": "Twitch 체인 포인트는 라이브 방송을 시청하면 획득할 수 있지만, 15분마다 주어지는 보너스를 받으려면 몇 분 후에 사라지는 상자를 수동으로 클릭해야 합니다. 이 페이지에서는 StreamPulse를 사용하여 이 보너스 수령을 자동화하는 방법, 이 확장 프로그램이 정확히 어떤 기능을 하는지, 그리고 알아두어야 할 제한 사항에 대해 설명합니다.",
+    "howToSteps": [
+      {
+        "name": "확장 프로그램 설치하기",
+        "text": "Chrome 웹 스토어에서 StreamPulse 페이지를 열고 ‘Chrome에 추가’를 클릭하세요. 이 확장 프로그램은 Chrome, Brave, Edge 및 Opera에서 작동합니다."
+      },
+      {
+        "name": "자동 복구 활성화",
+        "text": "도구 모음에서 StreamPulse를 실행한 다음, 설정에서 ‘채널 포인트’ 모듈을 활성화하세요. 이 모듈은 기본적으로 활성화되어 있습니다."
+      },
+      {
+        "name": "스트리머 추가하기",
+        "text": "Twitch 계정을 연결하여 구독 내역을 가져오거나, 채널을 수동으로 추가하세요. 데이터 수집이 즉시 시작됩니다."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "자동 포인트 적립은 어떻게 이루어지나요?",
+        "answer": "StreamPulse는 사용자가 팔로우하는 채널을 백그라운드에서 모니터링하며, 보너스 포인트 상자가 나타나면 사용자가 Twitch 탭을 열어둘 필요 없이 자동으로 클릭합니다. 브라우저가 실행되어 있는 동안에는 포인트 수집이 계속됩니다.",
+        "body": [
+          "Twitch는 시청 중에 자동으로 채널 포인트를 부여하며, 상자 아이콘으로 표시되는 일회성 보너스도 제공합니다. 이 보너스는 장시간 시청 시 총 포인트의 상당 부분을 차지하지만, 수령하지 않으면 소멸됩니다.",
+          "이 확장 프로그램은 해당 상자가 등장하는 것을 감지하여 보상 요청을 실행합니다. 내장된 카운터에는 누적 회수량이 표시되므로, 모듈이 실제로 작동하는지 확인할 수 있습니다."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "3단계로 자동 적립 기능을 활성화하는 방법은 무엇인가요?",
+        "answer": "설치에는 약 2분이 소요됩니다. Chrome 웹 스토어에서 확장 프로그램을 추가하고, ‘채널 포인트’ 모듈이 활성화되어 있는지 확인한 다음, 구독 중인 채널을 가져오면 됩니다.",
+        "steps": [
+          {
+            "name": "확장 프로그램을 설치하세요.",
+            "text": "Chrome 웹 스토어에서 클릭 한 번이면 됩니다. StreamPulse 계정은 필요하지 않습니다."
+          },
+          {
+            "name": "모듈을 활성화하십시오.",
+            "text": "“체인 포인트” 모듈은 기본적으로 활성화되어 있으며, 체인별로 비활성화할 수 있습니다."
+          },
+          {
+            "name": "스트리머를 가져오세요.",
+            "text": "한 번의 클릭으로 Twitch 동기화하거나, Kick을 수동으로 추가할 수 있습니다."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "탭을 닫은 후에도 포인트는 적립되나요?",
+        "answer": "네. StreamPulse는 확장 프로그램의 서비스 워커를 통해 작동하므로, 탭 상태와 관계없이 작동합니다. Twitch 탭을 열어둘 필요는 없지만, 브라우저는 실행된 상태로 유지되어야 합니다.",
+        "body": [
+          "이는 활성 탭이 있어야만 작동하고, 탭을 닫으면 즉시 작동이 중단되는 기존의 사용자 스크립트와의 주요 차이점입니다."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "제 Twitch 계정에 위험이 있을까요?",
+        "answer": "StreamPulse는 화면에 표시된 보너스를 클릭하는 등 사용자가 수동으로 수행할 수 있는 작업을 재현합니다. 이 확장 프로그램은 절대로 비밀번호를 요구하지 않으며, 외부 서버에 어떠한 데이터도 저장하지 않습니다.",
+        "body": [
+          "모든 설정은 브라우저의 로컬 저장소에 보관됩니다. 개인정보 처리방침에 명시된 바와 같이, 어떠한 개인정보도 제3자에게 전송되지 않습니다.",
+          "하지만 상호작용의 자동화는 Twitch 이용 약관상 회색지대에 속합니다. 저희가 파악한 바에 따르면 이러한 유형의 사용에 대해 제재가 가해진 적은 없지만, 위험이 완전히 없는 것은 아니며 이 페이지는 어떠한 보증도 제공하지 않습니다."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "이 확장 프로그램이 리소스를 많이 소모하나요?",
+        "answer": "아닙니다. 이 아키텍처는 네트워크 확인 횟수를 줄이기 위해 캐시와 디바운싱을 활용합니다. 메모리 사용량은 항상 열어두는 Twitch 탭에 비해 미미한 수준입니다.",
+        "list": [
+          "포인트를 적립하기 위해 백그라운드에서 재생되는 동영상은 없습니다.",
+          "지속적인 모니터링보다는 간헐적인 점검.",
+          "각 모듈은 개별적으로 비활성화할 수 있습니다."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "브라우저를 켜 둔 채로 두어야 할까요?",
+        "a": "네. 이 확장 프로그램은 브라우저 내에서 실행됩니다. 브라우저가 완전히 종료되면 데이터 수집이 일시 중지되었다가 브라우저를 다시 시작하면 재개됩니다."
+      },
+      {
+        "q": "Kick에서 복구 기능이 작동하나요?",
+        "a": "Kick에는 이에 상응하는 스트리밍 포인트 시스템이 없습니다. StreamPulse가 라이브 방송 추적 및 알림 기능을 담당합니다."
+      },
+      {
+        "q": "특정 채널을 제외할 수 있나요?",
+        "a": "네, 대시보드에서 채널별로 수집 기능을 켜거나 끌 수 있습니다."
+      },
+      {
+        "q": "StreamPulse는 유료 서비스인가요?",
+        "a": "아니요. 모든 기능을 광고나 구독료 없이 무료로 이용할 수 있습니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "titik-rantai-otomatis-twitch",
+    "linkLabel": "Poin Rantai Otomatis di Twitch",
+    "title": "Titik Rantai Otomatis Twitch | StreamPulse",
+    "h1": "Mendapatkan poin saluran Twitch secara otomatis",
+    "description": "Cara mengumpulkan poin saluran Twitch secara otomatis, bahkan saat tab tertutup: pengaturan dalam 3 langkah, pengaturan, dan pertanyaan umum.",
+    "intro": "Poin Twitch dapat diperoleh dengan menonton siaran langsung, tetapi bonus yang diberikan setiap 15 menit mengharuskan pengguna mengklik peti secara manual, yang akan menghilang setelah beberapa menit. Halaman ini menjelaskan cara mengotomatiskan proses pengambilan poin tersebut menggunakan StreamPulse, fungsi ekstensi ini secara tepat, serta batasan-batasan yang perlu diketahui.",
+    "howToSteps": [
+      {
+        "name": "Pasang ekstensi",
+        "text": "Buka halaman StreamPulse di Chrome Web Store, lalu klik “Tambahkan ke Chrome”. Ekstensi ini dapat digunakan di Chrome, Brave, Edge, dan Opera."
+      },
+      {
+        "name": "Aktifkan pemulihan otomatis",
+        "text": "Buka StreamPulse dari bilah alat, lalu aktifkan modul “Titik Rantai” di pengaturan. Modul ini sudah aktif secara default."
+      },
+      {
+        "name": "Tambahkan streamer Anda",
+        "text": "Hubungkan akun Twitch Anda untuk mengimpor langganan Anda, atau tambahkan saluran secara manual. Pengumpulan akan segera dimulai."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Bagaimana cara kerja pengembalian poin otomatis?",
+        "answer": "StreamPulse memantau saluran yang Anda ikuti di latar belakang dan mengklik peti poin bonus begitu peti tersebut muncul, tanpa Anda perlu membiarkan tab Twitch tetap terbuka. Pengumpulan poin akan terus berlanjut selama browser masih berjalan.",
+        "body": [
+          "Twitch memberikan poin saluran secara otomatis saat menonton, ditambah bonus satu kali yang ditandai dengan ikon peti harta karun. Bonus ini menyumbang porsi yang signifikan dari total poin dalam sesi menonton yang lama, tetapi akan kedaluwarsa jika tidak diklaim.",
+          "Ekstensi ini mendeteksi kemunculan peti tersebut dan memicu permintaan. Penghitung bawaan menampilkan jumlah total yang telah dikumpulkan, sehingga memungkinkan untuk memverifikasi bahwa modul tersebut benar-benar berfungsi."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Bagaimana cara mengaktifkan poin otomatis dalam 3 langkah?",
+        "answer": "Proses pemasangannya memakan waktu sekitar dua menit: tambahkan ekstensi tersebut dari Chrome Web Store, pastikan modul “Points de chaîne” telah diaktifkan, lalu impor saluran yang Anda ikuti.",
+        "steps": [
+          {
+            "name": "Pasang ekstensi tersebut.",
+            "text": "Langsung dari Chrome Web Store, cukup dengan satu klik. Tidak perlu memiliki akun StreamPulse."
+          },
+          {
+            "name": "Aktifkan modul tersebut.",
+            "text": "Modul \"Titik Rantai\" aktif secara default; Anda dapat menonaktifkannya per rantai."
+          },
+          {
+            "name": "Impor streamer Anda.",
+            "text": "Sinkronisasi Twitch dengan satu klik, atau tambahkan secara manual untuk Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Apakah poin-poin tersebut tetap tersimpan meskipun tab sudah ditutup?",
+        "answer": "Ya. StreamPulse beroperasi melalui service worker ekstensi tersebut, terlepas dari tab yang Anda buka. Anda tidak perlu membiarkan tab Twitch tetap terbuka, tetapi browser harus tetap berjalan.",
+        "body": [
+          "Inilah perbedaan utamanya dengan skrip pengguna biasa, yang memerlukan tab yang aktif dan akan berhenti berfungsi begitu tab tersebut ditutup."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Apakah hal ini berisiko bagi akun Twitch saya?",
+        "answer": "StreamPulse meniru tindakan yang biasanya Anda lakukan secara manual: mengklik bonus yang ditampilkan di layar. Ekstensi ini tidak pernah meminta kata sandi Anda dan tidak menyimpan data apa pun di server eksternal.",
+        "body": [
+          "Semua preferensi Anda disimpan di penyimpanan lokal browser. Tidak ada data pribadi yang dikirimkan kepada pihak ketiga, sebagaimana dijelaskan dalam kebijakan privasi.",
+          "Meskipun demikian, otomatisasi interaksi masih berada dalam zona abu-abu terkait ketentuan penggunaan Twitch. Sejauh yang kami ketahui, belum ada sanksi yang dijatuhkan atas penggunaan semacam ini, namun risikonya tidak sepenuhnya nol dan halaman ini tidak menjamin apa pun."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Apakah ekstensi ini memakan banyak sumber daya?",
+        "answer": "Tidak. Arsitektur ini didasarkan pada cache dan mekanisme debouncing untuk meminimalkan pemeriksaan jaringan. Penggunaan memori yang dibutuhkan tetap sangat kecil jika dibandingkan dengan tab Twitch yang dibiarkan terbuka terus-menerus.",
+        "list": [
+          "Tidak ada pemutaran video yang dijalankan di latar belakang untuk mengumpulkan poin.",
+          "Pemeriksaan berkala daripada pemantauan berkelanjutan.",
+          "Setiap modul dapat dinonaktifkan satu per satu."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah browser harus tetap dibuka?",
+        "a": "Ya. Ekstensi ini berjalan di dalam peramban: jika peramban ditutup sepenuhnya, proses pengumpulan data akan ditangguhkan dan dilanjutkan kembali saat peramban dijalankan kembali."
+      },
+      {
+        "q": "Apakah fitur pemulihan berfungsi di Kick?",
+        "a": "Kick tidak memiliki sistem poin rantai yang setara. Di Kick, StreamPulse yang mengelola pelacakan siaran langsung dan pemberitahuan."
+      },
+      {
+        "q": "Apakah saya bisa mengecualikan saluran tertentu?",
+        "a": "Ya, pengumpulan data dapat diaktifkan atau dinonaktifkan per saluran dari dasbor."
+      },
+      {
+        "q": "Apakah StreamPulse berbayar?",
+        "a": "Tidak. Semua fiturnya gratis, tanpa iklan maupun langganan."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "automatische-kettingogen-twitch",
+    "linkLabel": "Automatische kettingpunten op Twitch",
+    "title": "Automatische Twitch-kettingpunten | StreamPulse",
+    "h1": "Je Twitch-ketenpunten automatisch terugkrijgen",
+    "description": "Hoe je automatisch je Twitch-kanaalpunten kunt verzamelen, zelfs als het tabblad gesloten is: installatie in 3 stappen, instellingen en veelgestelde vragen.",
+    "intro": "Twitch-ketenpunten verdien je door naar een livestream te kijken, maar voor de bonus die je om de 15 minuten krijgt, moet je handmatig op een kistje klikken dat na een paar minuten verdwijnt. Op deze pagina wordt uitgelegd hoe je het verzamelen van deze punten kunt automatiseren met StreamPulse, wat de extensie precies doet en welke beperkingen je moet kennen.",
+    "howToSteps": [
+      {
+        "name": "De extensie installeren",
+        "text": "Open de StreamPulse-pagina in de Chrome Web Store en klik op ‘Toevoegen aan Chrome’. De extensie werkt in Chrome, Brave, Edge en Opera."
+      },
+      {
+        "name": "Automatisch herstel inschakelen",
+        "text": "Open StreamPulse via de werkbalk en schakel vervolgens de module „Ketenpunten“ in de instellingen in. Deze is standaard ingeschakeld."
+      },
+      {
+        "name": "Voeg je streamers toe",
+        "text": "Log in op je Twitch-account om je abonnementen te importeren, of voeg de kanalen handmatig toe. Het verzamelen begint direct."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Hoe werkt het automatisch terugkrijgen van punten?",
+        "answer": "StreamPulse houdt op de achtergrond de kanalen in de gaten die je volgt en klikt op de bonuspuntenkist zodra deze verschijnt, zonder dat je een Twitch-tabblad open hoeft te houden. Het verzamelen gaat door zolang de browser actief is.",
+        "body": [
+          "Twitch kent tijdens het kijken automatisch kanaalpunten toe, plus een eenmalige bonus die wordt weergegeven door een kistje-icoontje. Deze bonus maakt een aanzienlijk deel uit van het totaal bij een lange sessie, maar vervalt als hij niet wordt opgeëist.",
+          "De extensie detecteert wanneer deze kist verschijnt en activeert de claim. De ingebouwde teller geeft het totale teruggewonnen bedrag weer, waardoor kan worden gecontroleerd of de module daadwerkelijk werkt."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Hoe schakel je automatische punten in drie stappen in?",
+        "answer": "De installatie duurt ongeveer twee minuten: voeg de extensie toe via de Chrome Web Store, controleer of de module ‘Zenderlijsten’ is ingeschakeld en importeer vervolgens de zenders die je volgt.",
+        "steps": [
+          {
+            "name": "Installeer de extensie.",
+            "text": "Via de Chrome Web Store, met één klik. Je hebt geen StreamPulse-account nodig."
+          },
+          {
+            "name": "Schakel de module in.",
+            "text": "De module „Ketenpunten“ is standaard ingeschakeld; u kunt deze per keten uitschakelen."
+          },
+          {
+            "name": "Importeer je streamers.",
+            "text": "Twitch-synchronisatie met één klik, of handmatig toevoegen voor Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Worden de punten opgeslagen als het tabblad gesloten is?",
+        "answer": "Ja. StreamPulse werkt via de service worker van de extensie, los van je tabbladen. Je hoeft geen Twitch-tabblad open te laten staan, maar de browser moet wel actief blijven.",
+        "body": [
+          "Dat is het belangrijkste verschil met gewone gebruikersscripts, die een actief tabblad vereisen en niet meer werken zodra dat tabblad wordt gesloten."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Is dit een risico voor mijn Twitch-account?",
+        "answer": "StreamPulse voert een handeling uit die je handmatig zou uitvoeren: klikken op een bonus die op het scherm wordt weergegeven. De extensie vraagt nooit om je wachtwoord en slaat geen gegevens op een externe server op.",
+        "body": [
+          "Al uw voorkeuren worden opgeslagen in het lokale geheugen van de browser. Er worden geen persoonsgegevens doorgegeven aan derden, zoals uiteengezet in het privacybeleid.",
+          "Dat gezegd hebbende, bevindt de automatisering van interacties zich in een grijs gebied wat betreft de gebruiksvoorwaarden van Twitch. Voor zover wij weten zijn er nog geen sancties opgelegd voor dit soort gebruik, maar het risico is niet helemaal uitgesloten en deze pagina biedt geen garantie."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Verbruikt de extensie veel systeembronnen?",
+        "answer": "Nee. De architectuur is gebaseerd op een cache en debouncing om het aantal netwerkcontroles te beperken. Het geheugengebruik blijft verwaarloosbaar in vergelijking met een Twitch-tabblad dat continu openstaat.",
+        "list": [
+          "Er wordt geen video op de achtergrond afgespeeld om punten te verzamelen.",
+          "Controles met tussenpozen in plaats van voortdurende steekproeven.",
+          "Elke module kan afzonderlijk worden uitgeschakeld."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Moet je de browser open laten staan?",
+        "a": "Ja. De extensie draait in de browser: als de browser volledig wordt afgesloten, wordt het verzamelen onderbroken en hervat het bij het opnieuw opstarten."
+      },
+      {
+        "q": "Werkt het terugzetten op Kick?",
+        "a": "Kick heeft geen vergelijkbaar systeem met ketenpunten. StreamPulse zorgt daar voor het bijhouden van livestreams en meldingen."
+      },
+      {
+        "q": "Kan ik bepaalde zenders uitsluiten?",
+        "a": "Ja, het verzamelen kan per kanaal worden in- of uitgeschakeld via het dashboard."
+      },
+      {
+        "q": "Moet je voor StreamPulse betalen?",
+        "a": "Nee. Alle functies zijn gratis, zonder advertenties en zonder abonnement."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "automatiska kedjepunkter-twitch",
+    "linkLabel": "Automatiska kedjepunkter på Twitch",
+    "title": "Automatiska kedjepunkter på Twitch | StreamPulse",
+    "h1": "Hämta sina Twitch-kedjepoäng automatiskt",
+    "description": "Så här hämtar du automatiskt dina Twitch-kedjepoäng, även när fliken är stängd: installation i tre steg, inställningar och vanliga frågor.",
+    "intro": "Man tjänar Twitch-kedjepunkter genom att titta på en livestream, men för att få bonusen var 15:e minut måste man manuellt klicka på en skattkista som försvinner efter några minuter. På den här sidan förklaras hur man kan automatisera detta med StreamPulse, exakt vad tillägget gör och vilka begränsningar man bör känna till.",
+    "howToSteps": [
+      {
+        "name": "Installera tillägget",
+        "text": "Öppna StreamPulse-sidan i Chrome Web Store och klicka på ”Lägg till i Chrome”. Tillägget fungerar i Chrome, Brave, Edge och Opera."
+      },
+      {
+        "name": "Aktivera automatisk återställning",
+        "text": "Öppna StreamPulse från verktygsfältet och aktivera sedan modulen ”Kedjepunkter” i inställningarna. Den är aktiverad som standard."
+      },
+      {
+        "name": "Lägg till dina streamare",
+        "text": "Anslut ditt Twitch-konto för att importera dina prenumerationer, eller lägg till kanalerna manuellt. Insamlingen börjar omedelbart."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Hur fungerar den automatiska återvinningen av poäng?",
+        "answer": "StreamPulse övervakar i bakgrunden de kanaler du följer och klickar på bonuspoängskistan så fort den dyker upp, utan att du behöver ha en Twitch-flik öppen. Insamlingen fortsätter så länge webbläsaren är igång.",
+        "body": [
+          "Twitch tilldelar kanalpoäng automatiskt under visningen, plus en engångsbonus som visas som en skattkista-ikon. Denna bonus utgör en betydande del av den totala poängsumman under en lång session, men den förfaller om den inte hämtas ut.",
+          "Tillägget upptäcker när denna kista dyker upp och utlöser anmälan. Den inbyggda räknaren visar den sammanlagda mängden som samlats in, vilket gör det möjligt att kontrollera att modulen verkligen fungerar."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Hur aktiverar man automatiska poäng i tre steg?",
+        "answer": "Installationen tar ungefär två minuter: lägg till tillägget från Chrome Web Store, kontrollera att modulen ”Kanaler” är aktiverad och importera sedan de kanaler du följer.",
+        "steps": [
+          {
+            "name": "Installera tillägget.",
+            "text": "Från Chrome Web Store, med ett enda klick. Inget StreamPulse-konto krävs."
+          },
+          {
+            "name": "Aktivera modulen.",
+            "text": "Modulen ”Kedjepunkter” är aktiverad som standard; du kan inaktivera den för varje enskild kedja."
+          },
+          {
+            "name": "Importera dina streamare.",
+            "text": "Synkronisering med Twitch med ett klick, eller manuell tilläggning för Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Samlas poängen in även när fliken är stängd?",
+        "answer": "Ja. StreamPulse körs via tilläggets service worker, oberoende av dina flikar. Du behöver inte ha en Twitch-flik öppen, men webbläsaren måste vara igång.",
+        "body": [
+          "Det är den största skillnaden jämfört med vanliga användarskript, som kräver att fliken är öppen och slutar fungera så fort den stängs."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Är det en risk för mitt Twitch-konto?",
+        "answer": "StreamPulse utför en åtgärd som du skulle göra manuellt: att klicka på en bonus som visas på skärmen. Tillägget ber aldrig om ditt lösenord och lagrar inga uppgifter på en extern server.",
+        "body": [
+          "Alla dina inställningar sparas i webbläsarens lokala lagringsutrymme. Inga personuppgifter överförs till tredje part, vilket beskrivs närmare i integritetspolicyn.",
+          "Med detta sagt befinner sig automatiseringen av interaktionen i en gråzon när det gäller Twitchs användarvillkor. Såvitt vi vet har inga sanktioner riktats mot denna typ av användning, men risken är inte helt obefintlig och denna sida utgör ingen garanti."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Förbrukar tillägget mycket resurser?",
+        "answer": "Nej. Arkitekturen bygger på en cache och debouncing för att begränsa nätverkskontrollerna. Minnesförbrukningen är försumbar jämfört med en Twitch-flik som lämnas öppen hela tiden.",
+        "list": [
+          "Ingen videouppspelning körs i bakgrunden för att samla poäng.",
+          "Kontroller med vissa mellanrum snarare än kontinuerlig övervakning.",
+          "Varje modul kan inaktiveras separat."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Ska man låta webbläsaren vara öppen?",
+        "a": "Ja. Tillägget körs i webbläsaren: om webbläsaren stängs helt avbryts datainsamlingen och återupptas när webbläsaren startas om."
+      },
+      {
+        "q": "Fungerar återställningen på Kick?",
+        "a": "Kick har inget motsvarande poängsystem. I stället sköter StreamPulse uppföljningen av livestreamar och aviseringar där."
+      },
+      {
+        "q": "Kan jag stänga av vissa kanaler?",
+        "a": "Ja, insamlingen kan aktiveras eller inaktiveras kanal för kanal från kontrollpanelen."
+      },
+      {
+        "q": "Kostar StreamPulse något?",
+        "a": "Nej. Alla funktioner är gratis, utan reklam och utan abonnemang."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "automatické-řetězové-spony-twitch",
+    "linkLabel": "Automatické body na Twitchi",
+    "title": "Automatické body řetězce na Twitchi | StreamPulse",
+    "h1": "Automatické načtení bodů z kanálu Twitch",
+    "description": "Jak automaticky získávat body na Twitchu, i když je záložka zavřená: instalace ve 3 krocích, nastavení a časté dotazy.",
+    "intro": "Body Twitch Chain se získávají sledováním živého vysílání, ale bonus každých 15 minut vyžaduje ruční kliknutí na truhlu, která po několika minutách zmizí. Na této stránce se dozvíte, jak tento proces automatizovat pomocí StreamPulse, co přesně toto rozšíření dělá a jaká jsou omezení, o kterých byste měli vědět.",
+    "howToSteps": [
+      {
+        "name": "Nainstalovat rozšíření",
+        "text": "Otevřete stránku StreamPulse v Chrome Web Store a klikněte na „Přidat do Chrome“. Rozšíření funguje v prohlížečích Chrome, Brave, Edge a Opera."
+      },
+      {
+        "name": "Zapnout automatické obnovení",
+        "text": "Spusťte StreamPulse z panelu nástrojů a poté v nastaveních aktivujte modul „Body řetězce“. Ten je ve výchozím nastavení aktivní."
+      },
+      {
+        "name": "Přidejte své streamery",
+        "text": "Připojte svůj účet Twitch a importujte svá předplatná, nebo kanály přidejte ručně. Sběr dat začne okamžitě."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Jak funguje automatické získávání bodů?",
+        "answer": "StreamPulse na pozadí sleduje kanály, které sledujete, a kliká na truhlu s bonusovými body, jakmile se objeví, aniž byste museli mít otevřenou kartu Twitch. Sběr bodů pokračuje, dokud je prohlížeč spuštěn.",
+        "body": [
+          "Twitch při sledování pasivně přiděluje body kanálu a navíc jednorázový bonus, který je znázorněn ikonou truhly. Tento bonus tvoří významnou část celkového počtu bodů při delším sledování, ale pokud si jej uživatel nevyzvedne, propadne.",
+          "Toto rozšíření detekuje výskyt této truhly a spustí reklamaci. Integrovaný počítadlo zobrazuje celkový získaný počet, což umožňuje ověřit, zda modul skutečně funguje."
+        ]
+      },
+      {
+        "id": "installation",
+        "h2": "Jak aktivovat automatické body ve 3 krocích?",
+        "answer": "Instalace trvá přibližně dvě minuty: přidejte si rozšíření z Chrome Web Store, zkontrolujte, zda je modul „Sledované kanály“ zapnutý, a poté importujte kanály, které sledujete.",
+        "steps": [
+          {
+            "name": "Nainstalujte rozšíření.",
+            "text": "Přímo z Chrome Web Store, jedním kliknutím. Není třeba mít účet StreamPulse."
+          },
+          {
+            "name": "Aktivujte modul.",
+            "text": "Modul „Body řetězce“ je ve výchozím nastavení aktivní; můžete jej deaktivovat pro jednotlivé řetězce."
+          },
+          {
+            "name": "Načtěte své streamery.",
+            "text": "Synchronizace s Twitch jedním kliknutím nebo ruční přidání pro Kick."
+          }
+        ]
+      },
+      {
+        "id": "onglet-ferme",
+        "h2": "Jsou body připsány i při zavřené záložce?",
+        "answer": "Ano. StreamPulse funguje prostřednictvím service workeru tohoto rozšíření, nezávisle na vašich záložkách. Nemusíte mít otevřenou záložku Twitch, ale prohlížeč musí zůstat spuštěný.",
+        "body": [
+          "To je hlavní rozdíl oproti běžným uživatelským skriptům, které vyžadují aktivní kartu a přestanou fungovat, jakmile ji zavřete."
+        ]
+      },
+      {
+        "id": "securite",
+        "h2": "Je to pro můj účet na Twitchi rizikové?",
+        "answer": "StreamPulse napodobuje akci, kterou byste provedli ručně: kliknutí na bonus zobrazený na obrazovce. Toto rozšíření nikdy nepožaduje zadání hesla a neukládá žádná data na externí server.",
+        "body": [
+          "Všechna vaše nastavení zůstávají uložena v lokálním úložišti prohlížeče. Žádné osobní údaje nejsou předávány třetím stranám, jak je podrobně uvedeno v zásadách ochrany osobních údajů.",
+          "Automatizace interakce se však z hlediska podmínek používání služby Twitch nachází v šedé zóně. Podle našich informací dosud nedošlo k žádnému postihu za tento způsob používání, riziko však nelze zcela vyloučit a tato stránka nepředstavuje žádnou záruku."
+        ]
+      },
+      {
+        "id": "performances",
+        "h2": "Spotřebovává toto rozšíření hodně zdrojů?",
+        "answer": "Ne. Architektura je založena na mezipaměti a potlačení opakovaných signálů, aby se omezilo množství síťových kontrol. Paměťová náročnost je v porovnání s neustále otevřenou záložkou Twitch zanedbatelná.",
+        "list": [
+          "Na pozadí neběží žádné přehrávání videa za účelem sbírání bodů.",
+          "Pravidelné kontroly namísto průběžného sledování.",
+          "Každý modul lze deaktivovat samostatně."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Má se prohlížeč nechat otevřený?",
+        "a": "Ano. Rozšíření běží v prohlížeči: pokud je prohlížeč zcela zavřený, sběr dat se pozastaví a po restartu se obnoví."
+      },
+      {
+        "q": "Funguje obnovení dat v aplikaci Kick?",
+        "a": "Kick nemá žádný obdobný systém řetězcových bodů. StreamPulse zde zajišťuje sledování živých vysílání a zasílání oznámení."
+      },
+      {
+        "q": "Mohu některé kanály vyloučit?",
+        "a": "Ano, sběr dat lze v ovládacím panelu zapnout nebo vypnout pro jednotlivé kanály."
+      },
+      {
+        "q": "Je StreamPulse placená služba?",
+        "a": "Ne. Všechny funkce jsou zdarma, bez reklam a bez předplatného."
+      }
+    ]
+  }
+}

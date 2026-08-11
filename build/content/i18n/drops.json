@@ -1,0 +1,938 @@
+{
+  "es": {
+    "slug": "twitch-drops-automático",
+    "linkLabel": "Reclamar los Twitch Drops automáticamente",
+    "title": "Drops automáticos de Twitch | StreamPulse",
+    "h1": "Reclamar los Twitch Drops automáticamente",
+    "description": "Cómo funcionan los Twitch Drops, por qué caducan las recompensas y cómo automatizar su canje, así como el de las insignias de Moments.",
+    "intro": "Los Twitch Drops recompensan el tiempo de visualización de un juego con objetos del juego, pero la recompensa solo se obtiene tras reclamarla manualmente en el inventario. Muchos jugadores acumulan el tiempo necesario y luego se olvidan de este último paso. A continuación te explicamos cómo funciona el proceso y cómo automatizarlo.",
+    "howToSteps": [
+      {
+        "name": "Vincular tu cuenta al juego",
+        "text": "Desde los ajustes de Twitch, en la sección «Conexiones», vincula tu cuenta con el editor del juego en cuestión. Sin esta vinculación, no se podrá asignar ningún Drop."
+      },
+      {
+        "name": "Ver un canal que cumpla los requisitos",
+        "text": "Selecciona una retransmisión en directo que muestre la indicación «Drops activados» en la categoría del juego participante."
+      },
+      {
+        "name": "Activar la reclamación automática",
+        "text": "Instala StreamPulse y activa el módulo Drops: las recompensas disponibles se canjearán automáticamente."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "¿Cómo funcionan los Twitch Drops?",
+        "answer": "Para conseguir un «Drop», hay que acumular un tiempo de visualización determinado en un canal que retransmita un juego participante y que tenga una cuenta de Twitch vinculada al editor. El progreso es automático, pero la recompensa debe reclamarse manualmente en el inventario.",
+        "body": [
+          "Este último paso explica la mayoría de los «Drops» perdidos: se valida el tiempo, aparece la recompensa y, a continuación, la campaña finaliza antes de que el jugador se acuerde de hacer clic."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "¿Cómo automatizar la solicitud de los «drops»?",
+        "answer": "StreamPulse detecta las campañas activas y las recompensas disponibles, y luego realiza la solicitud en segundo plano. Un registro al que se puede acceder desde la extensión recoge qué se ha obtenido y cuándo.",
+        "list": [
+          "Reclamar los botines en cuanto el progreso alcance el 100 %.",
+          "La gestión de las insignias de «Moments» sigue el mismo principio.",
+          "Historial con fecha y hora para comprobar qué se ha recuperado."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "¿Por qué no se desbloquean mis Drops?",
+        "answer": "La causa más frecuente es que la cuenta no esté vinculada al editor del juego. Le sigue el hecho de ver un canal sin la indicación «Drops activados» y, a continuación, una campaña que ya ha finalizado.",
+        "list": [
+          "Cuenta de Twitch no vinculada al editor: no hay progreso registrado.",
+          "Cadena sin «Drops» activados, ni siquiera en el juego correcto.",
+          "Campaña caducada: el progreso ya no cuenta.",
+          "Recompensa obtenida pero que nunca se ha reclamado en el inventario."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "¿Qué son las insignias de «Moments»?",
+        "answer": "Los «Moments» son insignias conmemorativas que un streamer activa durante una retransmisión en directo para celebrar un acontecimiento. Son independientes de los «Drops», pero también requieren una solicitud manual con un plazo limitado."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Funcionan los Drops si el directo está silenciado?",
+        "a": "Sí, el tiempo de visualización se contabiliza independientemente del volumen del audio."
+      },
+      {
+        "q": "¿Puedo acumular Drops en varias cadenas?",
+        "a": "Por lo general, la progresión está vinculada a la campaña y no a una cadena concreta, pero cada editor establece sus propias reglas."
+      },
+      {
+        "q": "¿Ofrece Kick algo equivalente a los Drops?",
+        "a": "No, a día de hoy no existe ningún sistema similar en Kick."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "twitch-drops-automático",
+    "linkLabel": "Resgatar os Twitch Drops automaticamente",
+    "title": "Drops automáticos do Twitch | StreamPulse",
+    "h1": "Resgatar seus Twitch Drops automaticamente",
+    "description": "Como funcionam os Twitch Drops, por que as recompensas expiram e como automatizar o resgate delas e dos emblemas Moments.",
+    "intro": "Os Twitch Drops recompensam o tempo de exibição de um jogo com itens do jogo, mas a recompensa só é recebida após uma reivindicação manual no inventário. Muitos jogadores acumulam o tempo necessário, mas acabam esquecendo essa última etapa. Veja a seguir como funciona o processo e como automatizá-lo.",
+    "howToSteps": [
+      {
+        "name": "Vincular sua conta ao jogo",
+        "text": "Nas configurações do Twitch, na seção “Conexões”, vincule sua conta ao editor do jogo em questão. Sem essa vinculação, nenhum Drop poderá ser concedido."
+      },
+      {
+        "name": "Assistir a um canal elegível",
+        "text": "Selecione uma transmissão ao vivo que exiba a mensagem “Drops ativados” na categoria do jogo participante."
+      },
+      {
+        "name": "Ativar a reclamação automática",
+        "text": "Instale o StreamPulse e ative o módulo Drops: as recompensas disponíveis serão resgatadas automaticamente."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Como funcionam os Twitch Drops?",
+        "answer": "Para ganhar um Drop, é preciso acumular um tempo de visualização definido em um canal que esteja transmitindo um jogo participante, com uma conta do Twitch vinculada à editora. O progresso é automático, mas a recompensa deve ser resgatada manualmente no inventário.",
+        "body": [
+          "Essa etapa final explica a maior parte das recompensas perdidas: o tempo é validado, a recompensa aparece e, em seguida, a campanha termina antes que o jogador pense em clicar."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Como automatizar a solicitação de Drops?",
+        "answer": "O StreamPulse detecta as campanhas ativas e as recompensas disponíveis e, em seguida, realiza o resgate em segundo plano. Um registro acessível na extensão lista o que foi resgatado e quando.",
+        "list": [
+          "Resgate dos Drops assim que o progresso atingir 100%.",
+          "Suporte aos crachás do Moments segue o mesmo princípio.",
+          "Registro cronológico com data e hora para verificar o que foi recuperado."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Por que meus Drops não são desbloqueados?",
+        "answer": "A causa mais comum é uma conta não vinculada ao desenvolvedor do jogo. Em seguida, vem a visualização de um canal sem a indicação “Drops ativados” e, depois, uma campanha já encerrada.",
+        "list": [
+          "Conta do Twitch não vinculada ao editor: nenhum progresso registrado.",
+          "Série sem Drops ativados, mesmo no jogo certo.",
+          "Campanha encerrada: o progresso não conta mais.",
+          "Recompensa obtida, mas nunca resgatada no inventário."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "O que são os emblemas do Moments?",
+        "answer": "Os Momentos são emblemas comemorativos que um streamer ativa durante uma transmissão ao vivo para marcar um evento. Eles são independentes dos Drops, mas também dependem de uma reivindicação manual com prazo limitado."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Os Drops funcionam se a transmissão ao vivo estiver no modo mudo?",
+        "a": "Sim, o tempo de exibição é contabilizado independentemente do volume do áudio."
+      },
+      {
+        "q": "Posso acumular Drops em várias redes?",
+        "a": "Em geral, a progressão está ligada à campanha e não a um canal específico, mas cada editor define suas próprias regras."
+      },
+      {
+        "q": "O Kick oferece algo equivalente aos Drops?",
+        "a": "Não, até o momento não existe nenhum sistema semelhante no Kick."
+      }
+    ]
+  },
+  "de": {
+    "slug": "twitch-drops-automatisch",
+    "linkLabel": "Twitch Drops automatisch einlösen",
+    "title": "Automatische Twitch-Drops | StreamPulse",
+    "h1": "Twitch-Drops automatisch einlösen",
+    "description": "Wie funktionieren Twitch Drops, warum verfallen die Belohnungen und wie lässt sich deren Einlösung sowie die Einlösung von Moments-Abzeichen automatisieren?",
+    "intro": "Twitch Drops belohnen die Zuschauerzeit bei einem Spiel mit In-Game-Gegenständen, doch die Belohnung wird erst nach einer manuellen Einlösung im Inventar gutgeschrieben. Viele Spieler erreichen zwar die erforderliche Zeit, vergessen dann aber diesen letzten Schritt. Hier erfährst du, wie der Vorgang funktioniert und wie du ihn automatisieren kannst.",
+    "howToSteps": [
+      {
+        "name": "Sein Konto mit dem Spiel verknüpfen",
+        "text": "Verbinden Sie Ihr Konto in den Twitch-Einstellungen im Bereich „Verbindungen“ mit dem Herausgeber des jeweiligen Spiels. Ohne diese Verknüpfung können keine Drops vergeben werden."
+      },
+      {
+        "name": "Einen berechtigten Sender ansehen",
+        "text": "Wählen Sie ein Live-Spiel aus, bei dem in der Kategorie des teilnehmenden Spiels der Hinweis „Drops aktiviert“ angezeigt wird."
+      },
+      {
+        "name": "Automatische Reklamation aktivieren",
+        "text": "Installieren Sie StreamPulse und aktivieren Sie das Drops-Modul: Die verfügbaren Belohnungen werden automatisch gutgeschrieben."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Wie funktionieren Twitch Drops?",
+        "answer": "Einen Drop erhält man, indem man eine bestimmte Gesamtzeit auf einem Kanal ansieht, der ein teilnehmendes Spiel überträgt, und dabei einen mit dem Herausgeber verknüpften Twitch-Account nutzt. Der Fortschritt erfolgt automatisch, die Belohnung muss jedoch anschließend manuell im Inventar abgeholt werden.",
+        "body": [
+          "Dieser letzte Schritt erklärt die meisten verlorenen Drops: Die Zeit wird bestätigt, die Belohnung wird angezeigt, und dann endet die Aktion, bevor der Spieler daran denkt, darauf zu klicken."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Wie lässt sich die Abholung von Drops automatisieren?",
+        "answer": "StreamPulse erkennt aktive Kampagnen und verfügbare Prämien und löst die Einlösung im Hintergrund aus. Ein in der Erweiterung einsehbares Protokoll listet auf, was wann eingelöst wurde.",
+        "list": [
+          "Die Drops können abgeholt werden, sobald der Fortschritt 100 % erreicht hat.",
+          "Die Unterstützung von Moments-Badges erfolgt nach dem gleichen Prinzip.",
+          "Zeitgestempelter Verlauf zur Überprüfung der wiederhergestellten Daten."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Warum werden meine Drops nicht freigeschaltet?",
+        "answer": "Die häufigste Ursache ist ein Konto, das nicht mit dem Spielentwickler verknüpft ist. An zweiter Stelle steht das Ansehen eines Kanals ohne den Hinweis „Drops aktiviert“, gefolgt von einer bereits abgeschlossenen Kampagne.",
+        "list": [
+          "Twitch-Konto nicht mit dem Publisher verknüpft: Es wurden keine Fortschritte gespeichert.",
+          "Eine Serie ohne aktivierte Drops, selbst im richtigen Spiel.",
+          "Abgelaufene Kampagne: Der Fortschritt zählt nicht mehr.",
+          "Eine Belohnung, die zwar erhalten, aber im Inventar nie abgeholt wurde."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Was sind „Moments“-Abzeichen?",
+        "answer": "„Moments“ sind Gedenk-Abzeichen, die ein Streamer während eines Live-Streams auslöst, um ein Ereignis zu feiern. Sie sind unabhängig von „Drops“, erfordern jedoch ebenfalls eine zeitlich begrenzte manuelle Einlösung."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Funktionieren die Drops auch, wenn der Live-Ton stummgeschaltet ist?",
+        "a": "Ja, die Wiedergabezeit wird unabhängig von der Lautstärke erfasst."
+      },
+      {
+        "q": "Kann ich Drops auf mehreren Kanälen sammeln?",
+        "a": "Im Allgemeinen hängt der Fortschritt von der Kampagne ab und nicht von einer bestimmten Kette, aber jeder Herausgeber legt seine eigenen Regeln fest."
+      },
+      {
+        "q": "Bietet Kick eine Entsprechung zu den Drops an?",
+        "a": "Nein, derzeit gibt es auf Kick kein vergleichbares System."
+      }
+    ]
+  },
+  "it": {
+    "slug": "twitch-drops-automatico",
+    "linkLabel": "Ricevere automaticamente i Twitch Drops",
+    "title": "Drops automatici su Twitch | StreamPulse",
+    "h1": "Riscattare automaticamente i propri Twitch Drops",
+    "description": "Come funzionano i Twitch Drops, perché i premi scadono e come automatizzare la loro riscossione e quella dei badge Moments.",
+    "intro": "I Twitch Drops premiano il tempo trascorso a guardare un gioco con oggetti di gioco, ma il premio viene acquisito solo dopo averlo richiesto manualmente dall'inventario. Molti giocatori raggiungono il tempo richiesto ma poi dimenticano quest'ultimo passaggio. Ecco come funziona il processo e come automatizzarlo.",
+    "howToSteps": [
+      {
+        "name": "Collegare il proprio account al gioco",
+        "text": "Dalle impostazioni di Twitch, nella sezione \"Connessioni\", associa il tuo account all'editore del gioco in questione. Senza questo collegamento, non è possibile ricevere alcun Drop."
+      },
+      {
+        "name": "Guardare un canale idoneo",
+        "text": "Seleziona una diretta che riporti la dicitura «Drops attivati» nella categoria del gioco partecipante."
+      },
+      {
+        "name": "Attivare il reclamo automatico",
+        "text": "Installa StreamPulse e attiva il modulo Drops: i premi disponibili verranno riscossi automaticamente."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Come funzionano i Twitch Drops?",
+        "answer": "Per ottenere un Drop è necessario accumulare un determinato tempo di visione su un canale che trasmette un gioco partecipante, con un account Twitch collegato all'editore. L'avanzamento è automatico, ma il premio deve poi essere richiesto manualmente dall'inventario.",
+        "body": [
+          "Questa fase finale spiega la maggior parte dei Drops persi: il tempo viene convalidato, la ricompensa appare, poi la campagna termina prima che il giocatore pensi di cliccare."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Come automatizzare la richiesta dei Drops?",
+        "answer": "StreamPulse individua le campagne attive e i premi disponibili, quindi provvede a riscattarli in background. Un registro consultabile nell'estensione riporta cosa è stato riscattato e quando.",
+        "list": [
+          "Ritiro dei Drops non appena la progressione raggiunge il 100%.",
+          "Gestione dei badge Moments secondo lo stesso principio.",
+          "Cronologia con data e ora per verificare cosa è stato recuperato."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Perché i miei Drops non si sbloccano?",
+        "answer": "La causa più frequente è un account non collegato all'editore del gioco. Segue poi la visione di un canale senza l'indicazione «Drops attivati», e infine una campagna già terminata.",
+        "list": [
+          "Account Twitch non collegato all'editore: nessun progresso registrato.",
+          "Catena senza Drops attivati, anche nel gioco corretto.",
+          "Campagna scaduta: i progressi non contano più.",
+          "Ricompensa ottenuta ma mai ritirata dall'inventario."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Cosa sono i badge Moments?",
+        "answer": "I \"Momenti\" sono badge commemorativi che uno streamer attiva durante una diretta per celebrare un evento. Sono indipendenti dai \"Drops\", ma richiedono anch'essi una richiesta manuale entro un determinato limite di tempo."
+      }
+    ],
+    "faq": [
+      {
+        "q": "I Drops funzionano se l'audio della diretta è disattivato?",
+        "a": "Sì, il tempo di visione viene conteggiato indipendentemente dal volume dell'audio."
+      },
+      {
+        "q": "Posso accumulare Drops su più catene?",
+        "a": "In generale, l'avanzamento è legato alla campagna e non a una catena specifica, ma ogni editore stabilisce le proprie regole."
+      },
+      {
+        "q": "Kick offre un equivalente dei Drops?",
+        "a": "No, al momento non esiste un sistema simile su Kick."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "automatyczne dropy na Twitchu",
+    "linkLabel": "Automatyczne odbieranie nagród z Twitch Drops",
+    "title": "Automatyczne Twitch Drops | StreamPulse",
+    "h1": "Automatyczne odbieranie nagród z Twitch Drops",
+    "description": "Jak działają Twitch Drops, dlaczego nagrody tracą ważność oraz jak zautomatyzować ich odbieranie, a także odbieranie odznak Moments.",
+    "intro": "Twitch Drops nagradzają czas spędzony na oglądaniu transmisji z gry przedmiotami w grze, ale nagrodę można odebrać dopiero po ręcznym zgłoszeniu odbioru w ekwipunku. Wielu graczy osiąga wymagany czas, a potem zapomina o tym ostatnim kroku. Oto, jak działa ten proces i jak go zautomatyzować.",
+    "howToSteps": [
+      {
+        "name": "Połącz swoje konto z grą",
+        "text": "W ustawieniach serwisu Twitch, w sekcji „Połączenia”, powiąż swoje konto z wydawcą danej gry. Bez tego powiązania nie będzie można przyznać żadnych nagród Drop."
+      },
+      {
+        "name": "Oglądanie kanału objętego ofertą",
+        "text": "Wybierz transmisję na żywo, przy której w kategorii danej gry widnieje napis „Drops aktywowane”."
+      },
+      {
+        "name": "Włącz automatyczne zgłaszanie reklamacji",
+        "text": "Zainstaluj StreamPulse i włącz moduł Drops: dostępne nagrody zostaną przyznane automatycznie, bez konieczności podejmowania żadnych działań."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Jak działają Twitch Drops?",
+        "answer": "Drop można zdobyć, osiągając określony czas oglądania na kanale transmitującym grę biorącą udział w akcji oraz mającym konto Twitch powiązane z wydawcą. Postęp jest automatyczny, ale nagrodę należy następnie odebrać ręcznie w ekwipunku.",
+        "body": [
+          "Ten ostatni etap wyjaśnia większość utraconych nagród: czas zostaje zatwierdzony, pojawia się nagroda, a następnie kampania kończy się, zanim gracz zdąży kliknąć."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Jak zautomatyzować pobieranie Dropsów?",
+        "answer": "StreamPulse wykrywa aktywne kampanie i dostępne nagrody, a następnie realizuje ich odbiór w tle. W rozszerzeniu dostępny jest dziennik, w którym można sprawdzić, co zostało odebrane i kiedy.",
+        "list": [
+          "Odbiór Dropsów nastąpi, gdy postęp osiągnie 100%.",
+          "Obsługa identyfikatorów Moments odbywa się na tej samej zasadzie.",
+          "Historia z datą i godziną, umożliwiająca sprawdzenie, co zostało odzyskane."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Dlaczego moje Dropsy się nie odblokowują?",
+        "answer": "Najczęstszą przyczyną jest konto niepowiązane z wydawcą gry. Kolejną przyczyną jest oglądanie kanału bez oznaczenia „Drops aktywowane”, a następnie kampania, która już się zakończyła.",
+        "list": [
+          "Konto Twitch niepowiązane z wydawcą: brak zapisanych postępów.",
+          "Łańcuch bez aktywowanych Dropsów, nawet w prawidłowej grze.",
+          "Kampania zakończona: postępy już się nie liczą.",
+          "Nagroda zdobyta, ale nigdy nie odebrana z ekwipunku."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Czym są odznaki Moments?",
+        "answer": "„Moments” to pamiątkowe odznaki, które streamer aktywuje podczas transmisji na żywo, aby uczcić jakieś wydarzenie. Są one niezależne od „Drops”, ale również wymagają ręcznego odebrania w określonym czasie."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Czy Drops działają, jeśli transmisja na żywo jest wyciszona?",
+        "a": "Tak, czas odtwarzania jest rejestrowany niezależnie od głośności."
+      },
+      {
+        "q": "Czy mogę gromadzić Dropsy na kilku łańcuchach?",
+        "a": "Zazwyczaj postępy są powiązane z kampanią, a nie z konkretnym kanałem, ale każdy wydawca ustala własne zasady."
+      },
+      {
+        "q": "Czy w grze Kick jest coś podobnego do Dropsów?",
+        "a": "Nie, na razie nie ma na Kicku żadnego podobnego systemu."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "otomatik twitch-drops",
+    "linkLabel": "Twitch Drops’u otomatik olarak almak",
+    "title": "Otomatik Twitch Drops | StreamPulse",
+    "h1": "Twitch Drops'larını otomatik olarak almak",
+    "description": "Twitch Drops nasıl çalışır, ödüllerin geçerlilik süresi neden sona erer ve bu ödüllerin yanı sıra Moments rozetlerinin alınma işlemini nasıl otomatikleştirebilirsiniz?",
+    "intro": "Twitch Drops, bir oyunda geçirilen izleme süresini oyun içi öğelerle ödüllendirir, ancak ödül ancak envanterden manuel olarak talep edildikten sonra kazanılır. Birçok oyuncu gerekli süreyi doldurduktan sonra bu son adımı unutur. İşte bu sürecin nasıl işlediği ve nasıl otomatikleştirilebileceği.",
+    "howToSteps": [
+      {
+        "name": "Hesabını oyuna bağla",
+        "text": "Twitch ayarlarından \"Bağlantılar\" bölümüne giderek hesabınızı ilgili oyunun yayıncısıyla ilişkilendirin. Bu ilişkilendirme yapılmazsa hiçbir Drop verilemez."
+      },
+      {
+        "name": "Uygun bir kanalı izlemek",
+        "text": "Katılımcı oyunun kategorisinde “Drops etkin” ibaresi bulunan bir canlı yayını seçin."
+      },
+      {
+        "name": "Otomatik şikayet özelliğini etkinleştir",
+        "text": "StreamPulse'u yükleyin ve Drops modülünü etkinleştirin: mevcut ödüller, herhangi bir işlem yapmanıza gerek kalmadan alınacaktır."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Twitch Drops nasıl çalışır?",
+        "answer": "Bir Drop, katılımcı bir oyunun yayınlandığı ve yayıncıya bağlı bir Twitch hesabı bulunan bir kanalda belirlenen izleme süresini doldurarak kazanılır. İlerleme otomatik olarak gerçekleşir, ancak ödül daha sonra envanterden manuel olarak alınmalıdır.",
+        "body": [
+          "Bu son aşama, kaybedilen Drops’ların çoğunu açıklıyor: süre onaylanıyor, ödül görünüyor, ardından oyuncu tıklamayı düşünmeden kampanya sona eriyor."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Drops taleplerini nasıl otomatikleştirebiliriz?",
+        "answer": "StreamPulse, aktif kampanyaları ve mevcut ödülleri tespit eder, ardından arka planda ödülleri alır. Uzantı içinde görüntülenebilen bir günlük, nelerin ne zaman alındığını listeler.",
+        "list": [
+          "İlerleme %100'e ulaşır ulaşmaz Drops'ları alabilirsiniz.",
+          "Moments rozetleri de aynı prensipte desteklenmektedir.",
+          "Nelerin kurtarıldığını doğrulamak için zaman damgalı geçmiş."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Neden Drops'larımın kilidi açılmıyor?",
+        "answer": "En sık görülen neden, hesabın oyun yayıncısıyla bağlantılı olmamasıdır. Bunu, “Drops etkin” ibaresi bulunmayan bir kanalı izlemek ve ardından zaten sona ermiş bir kampanya izlemek izlemektedir.",
+        "list": [
+          "Yayıncıya bağlı olmayan Twitch hesabı: kaydedilmiş ilerleme yok.",
+          "Drops özelliği etkinleştirilmemiş bir kanal; doğru oyunda bile.",
+          "Kampanya süresi doldu: İlerleme artık geçerli değil.",
+          "Envanterde kazanılmış ancak hiçbir zaman talep edilmemiş ödül."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Moments rozetleri nedir?",
+        "answer": "\"Anlar\", bir yayıncının canlı yayın sırasında bir olayı kutlamak için etkinleştirdiği anma rozetleridir. Bunlar \"Drops\"tan bağımsızdır, ancak yine de zaman sınırlı manuel bir talep sürecine dayanır."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Canlı yayın sessize alınmışsa Drops çalışır mı?",
+        "a": "Evet, izleme süresi ses seviyesinden bağımsız olarak hesaplanır."
+      },
+      {
+        "q": "Birden fazla zincirde Drops biriktirebilir miyim?",
+        "a": "Genel olarak ilerleme, kampanyaya bağlıdır ve belirli bir kanalla ilgili değildir; ancak her yayıncı kendi kurallarını belirler."
+      },
+      {
+        "q": "Kick'te Drops'a benzer bir özellik var mı?",
+        "a": "Hayır, şu ana kadar Kick'te buna benzer bir sistem mevcut değil."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "автоматические подарки в Twitch",
+    "linkLabel": "Автоматически получать Twitch Drops",
+    "title": "Автоматические Twitch Drops | StreamPulse",
+    "h1": "Автоматическое получение Twitch Drops",
+    "description": "Как работают Twitch Drops, почему награды теряют силу и как автоматизировать их получение, а также получение значков Moments.",
+    "intro": "Twitch Drops вознаграждают игроков за время просмотра игры игровыми предметами, но награду можно получить только после ручного получения в инвентаре. Многие игроки набирают необходимое время, но затем забывают об этом последнем шаге. Вот как работает этот процесс и как его автоматизировать.",
+    "howToSteps": [
+      {
+        "name": "Привязать аккаунт к игре",
+        "text": "В настройках Twitch, в разделе «Подключения», свяжите свою учетную запись с издателем соответствующей игры. Без этой привязки никакие Drop не могут быть начислены."
+      },
+      {
+        "name": "Просмотр подходящего канала",
+        "text": "Выберите трансляцию, в категории которой указано «Drops включены»."
+      },
+      {
+        "name": "Включить автоматическую подачу претензий",
+        "text": "Установите StreamPulse и активируйте модуль Drops: доступные вознаграждения будут начислены автоматически, без вашего участия."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Как работают Twitch Drops?",
+        "answer": "Дроп можно получить, набрав определённое время просмотра на канале, транслирующем участвующую в акции игру, с привязанным к издателю аккаунтом Twitch. Набор очков происходит автоматически, но награду необходимо затем забрать вручную в инвентаре.",
+        "body": [
+          "Именно этот заключительный этап объясняет большинство упущенных «дропов»: время подтверждается, появляется награда, а затем кампания заканчивается, прежде чем игрок успевает нажать кнопку."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Как автоматизировать получение дропов?",
+        "answer": "StreamPulse обнаруживает активные кампании и доступные вознаграждения, а затем в фоновом режиме оформляет их получение. В расширении доступен журнал, в котором указано, что и когда было получено.",
+        "list": [
+          "Получение дропов, как только прогресс достигнет 100 %.",
+          "Поддержка бейджей «Моменты» по тому же принципу.",
+          "Журнал с отметками даты и времени для проверки того, что было восстановлено."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Почему мои Drops не разблокируются?",
+        "answer": "Наиболее частая причина — аккаунт, не привязанный к издателю игры. Затем следует просмотр канала без пометки «Drops включены», а также уже завершённая кампания.",
+        "list": [
+          "Аккаунт Twitch, не привязанный к издателю: прогресс не сохранен.",
+          "Серия без «дропов», даже в удачной игре.",
+          "Срок действия кампании истек: прогресс больше не учитывается.",
+          "Награда, полученная, но так и не забранная из инвентаря."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Что такое значки «Моменты»?",
+        "answer": "«Моменты» — это памятные значки, которые стример активирует во время прямой трансляции, чтобы отметить какое-либо событие. Они не связаны с «Дропами», но также требуют ручного получения в течение ограниченного периода времени."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Работают ли Drops, если звук во время прямой трансляции отключен?",
+        "a": "Да, время просмотра учитывается независимо от громкости звука."
+      },
+      {
+        "q": "Можно ли накапливать Drops на нескольких цепочках?",
+        "a": "Как правило, продвижение по уровням связано с кампанией, а не с конкретной цепочкой, однако каждый издатель устанавливает свои собственные правила."
+      },
+      {
+        "q": "Есть ли в Kick аналог функции «Drops»?",
+        "a": "Нет, на данный момент на Kick нет аналогичной системы."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "twitch-drops-自動",
+    "linkLabel": "Twitch Dropsを自動的に受け取る",
+    "title": "自動Twitch Drops | StreamPulse",
+    "h1": "Twitch Dropsを自動的に受け取る",
+    "description": "Twitch Dropsの仕組み、報酬に有効期限がある理由、そして報酬や「Moments」バッジの受け取りを自動化する方法について。",
+    "intro": "Twitch Dropsは、ゲームの視聴時間に応じてゲーム内アイテムを報酬として付与する仕組みですが、報酬を受け取るにはインベントリから手動で請求する必要があります。多くのプレイヤーは必要な視聴時間を満たしても、この最後のステップを忘れてしまうことがあります。ここでは、その手順と自動化の方法について解説します。",
+    "howToSteps": [
+      {
+        "name": "アカウントをゲームに連携する",
+        "text": "Twitchの設定の「接続」セクションから、該当するゲームのパブリッシャーとアカウントを紐付けてください。この紐付けが行われていないと、ドロップは付与されません。"
+      },
+      {
+        "name": "対象チャンネルを視聴する",
+        "text": "参加ゲームのカテゴリーに「ドロップ有効」と表示されているライブを選択してください。"
+      },
+      {
+        "name": "自動クレーム機能を有効にする",
+        "text": "StreamPulseをインストールし、Dropsモジュールを有効にしてください。利用可能な報酬は、何も操作しなくても自動的に受け取ることができます。"
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Twitch Dropsはどのように機能するのですか？",
+        "answer": "ドロップは、対象となるゲームを配信しているチャンネルで、所定の視聴時間を積み重ねることで獲得できます。このチャンネルは、パブリッシャーと連携したTwitchアカウントに紐付けられています。進捗は自動的に記録されますが、報酬はその後、インベントリから手動で受け取る必要があります。",
+        "body": [
+          "この最終段階こそが、ドロップが失われる原因の大部分を説明しています。時間が認定され、報酬が表示された後、プレイヤーがクリックしようとする前にキャンペーンが終了してしまうのです。"
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "ドロップの請求を自動化するにはどうすればよいですか？",
+        "answer": "StreamPulseは、進行中のキャンペーンや利用可能な報酬を検出し、バックグラウンドで受け取り手続きを行います。拡張機能内で確認できるログには、何がいつ受け取られたかが記録されています。",
+        "list": [
+          "進行度が100％に達したら、すぐにドロップを受け取ってください。",
+          "Momentsのバッジについても、同様の仕組みで対応しています。",
+          "何が回収されたかを確認するための、日時が記録された履歴。"
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "なぜ私のドロップがアンロックされないのですか？",
+        "answer": "最も多い原因は、ゲームのパブリッシャーと紐付けられていないアカウントです。次に、「ドロップ有効」と表示されていないチャンネルを視聴した場合、そしてすでに終了したキャンペーンが挙げられます。",
+        "list": [
+          "Twitchアカウントがパブリッシャーと紐付けられていない場合：進行状況は保存されません。",
+          "「Drops」が有効になっていないチェーン。正しいゲームでも同様です。",
+          "キャンペーン終了：進捗状況は反映されません。",
+          "インベントリで獲得したものの、一度も受け取っていない報酬。"
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "「Moments」バッジとは何ですか？",
+        "answer": "「モーメント」とは、ストリーマーがライブ配信中に特定のイベントを記念して発動する記念バッジのことです。これは「ドロップ」とは別のものでありますが、こちらも期間限定の手動での受け取りが必要です。"
+      }
+    ],
+    "faq": [
+      {
+        "q": "ライブの音声をミュートにしている場合でも、ドロップは機能しますか？",
+        "a": "はい、視聴時間は音声の音量とは関係なく計測されます。"
+      },
+      {
+        "q": "複数のチェーンでドロップを積み重ねることはできますか？",
+        "a": "一般的に、進捗状況はキャンペーンに関連しており、特定のチェーンには結びついていませんが、各パブリッシャーが独自のルールを定めています。"
+      },
+      {
+        "q": "Kickには「Drops」に相当する機能はありますか？",
+        "a": "いいえ、現時点ではKickにはこれと同等のシステムは存在しません。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "트위치 드롭 자동 설정",
+    "linkLabel": "Twitch Drops를 자동으로 수령하기",
+    "title": "자동 Twitch 드롭 | StreamPulse",
+    "h1": "Twitch Drops를 자동으로 수령하기",
+    "description": "Twitch Drops는 어떻게 작동하는지, 보상이 만료되는 이유는 무엇인지, 그리고 Drops와 Moments 배지를 자동으로 수령하는 방법은 무엇인지 알아보세요.",
+    "intro": "Twitch Drops는 게임 시청 시간에 따라 게임 내 아이템을 보상으로 제공하지만, 인벤토리에서 수동으로 수령해야만 보상을 받을 수 있습니다. 많은 플레이어들이 필요한 시청 시간을 채우고도 이 마지막 단계를 깜빡하는 경우가 많습니다. 다음은 해당 절차가 어떻게 진행되는지, 그리고 이를 자동화하는 방법에 대한 설명입니다.",
+    "howToSteps": [
+      {
+        "name": "계정을 게임에 연동하기",
+        "text": "Twitch 설정의 ‘연결’ 섹션에서 해당 게임의 퍼블리셔 계정과 계정을 연동하세요. 이 연동이 이루어지지 않으면 드롭을 받을 수 없습니다."
+      },
+      {
+        "name": "해당 채널 시청하기",
+        "text": "참여 게임 카테고리에서 ‘드롭 활성화’라고 표시된 라이브를 선택하세요."
+      },
+      {
+        "name": "자동 클레임 활성화",
+        "text": "StreamPulse를 설치하고 Drops 모듈을 활성화하면, 별도의 조치 없이도 이용 가능한 보상을 받을 수 있습니다."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Twitch Drops는 어떻게 작동하나요?",
+        "answer": "드롭은 참여 게임이 방송되는 채널에서 정해진 시청 시간을 달성하고, 해당 게임 퍼블리셔와 연동된 Twitch 계정을 보유해야 획득할 수 있습니다. 진행 상황은 자동으로 기록되지만, 보상은 인벤토리에서 수동으로 수령해야 합니다.",
+        "body": [
+          "이 마지막 단계에서 드롭을 놓치는 대부분의 이유가 설명됩니다. 시간이 인정되고 보상이 표시되지만, 플레이어가 클릭할 생각을 하기 전에 캠페인이 종료되기 때문입니다."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "드롭스 청구 절차를 어떻게 자동화할 수 있을까요?",
+        "answer": "StreamPulse는 진행 중인 캠페인과 이용 가능한 보상을 감지한 후, 백그라운드에서 보상을 청구합니다. 확장 프로그램 내에서 확인할 수 있는 로그에는 어떤 보상이 언제 수령되었는지 기록되어 있습니다.",
+        "list": [
+          "진행도가 100%에 도달하는 즉시 드롭을 수령하세요.",
+          "Moments 배지도 동일한 원리로 지원됩니다.",
+          "어떤 항목이 복구되었는지 확인하기 위한 날짜 및 시간이 기록된 내역."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "왜 내 드롭이 잠금 해제되지 않나요?",
+        "answer": "가장 흔한 원인은 계정이 게임 개발사와 연동되지 않은 경우입니다. 그 다음으로는 ‘드롭 활성화’ 표시가 없는 채널을 시청한 경우, 그리고 이미 종료된 캠페인에 참여한 경우입니다.",
+        "list": [
+          "Twitch 계정이 퍼블리셔 계정과 연동되지 않음: 진행 상황이 저장되지 않았습니다.",
+          "드롭이 활성화되지 않은 채널로, 올바른 게임에서도 마찬가지입니다.",
+          "종료된 캠페인: 진행 상황은 더 이상 반영되지 않습니다.",
+          "인벤토리에서 획득했으나 수령하지 않은 보상."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "'모먼츠' 배지는 무엇인가요?",
+        "answer": "‘모멘트’는 스트리머가 생방송 중 특정 이벤트를 기념하기 위해 활성화하는 기념 배지입니다. 이는 ‘드롭’과는 별개이지만, 마찬가지로 시간 제한이 있는 수동 청구 방식을 따릅니다."
+      }
+    ],
+    "faq": [
+      {
+        "q": "라이브 방송이 음소거 상태일 때도 드롭이 작동하나요?",
+        "a": "네, 시청 시간은 오디오 볼륨과 관계없이 집계됩니다."
+      },
+      {
+        "q": "여러 체인에서 드롭을 중복으로 적립할 수 있나요?",
+        "a": "일반적으로 진행 상황은 캠페인에 따라 결정되며 특정 채널에 연동되지는 않지만, 각 퍼블리셔마다 자체적인 규칙을 정하고 있습니다."
+      },
+      {
+        "q": "Kick에는 Drops와 비슷한 기능이 있나요?",
+        "a": "아니요, 현재 Kick에는 이와 유사한 시스템이 없습니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "twitch-drops-otomatis",
+    "linkLabel": "Mengklaim Twitch Drops secara otomatis",
+    "title": "Twitch Drops Otomatis | StreamPulse",
+    "h1": "Mengklaim Twitch Drops secara otomatis",
+    "description": "Bagaimana cara kerja Twitch Drops, mengapa hadiahnya kedaluwarsa, dan bagaimana cara mengotomatiskan proses pengklaimannya serta pengklaiman lencana Moments.",
+    "intro": "Twitch Drops memberikan hadiah berupa item dalam game sebagai imbalan atas waktu menonton saat bermain game, namun hadiah tersebut baru bisa diperoleh setelah diklaim secara manual di inventaris. Banyak pemain yang telah mengumpulkan waktu yang dibutuhkan, namun kemudian lupa melakukan langkah terakhir ini. Berikut ini cara kerja proses tersebut dan cara mengotomatiskannya.",
+    "howToSteps": [
+      {
+        "name": "Menghubungkan akun ke game",
+        "text": "Dari pengaturan Twitch, bagian Koneksi, hubungkan akun Anda dengan penerbit game yang bersangkutan. Tanpa penghubungan ini, tidak ada Drop yang dapat diberikan."
+      },
+      {
+        "name": "Menonton saluran yang memenuhi syarat",
+        "text": "Pilih siaran langsung yang menampilkan keterangan “Drops diaktifkan” pada kategori permainan yang berpartisipasi."
+      },
+      {
+        "name": "Aktifkan pengajuan klaim otomatis",
+        "text": "Instal StreamPulse dan aktifkan modul Drops: hadiah yang tersedia akan diklaim secara otomatis tanpa perlu tindakan apa pun."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Bagaimana cara kerja Twitch Drops?",
+        "answer": "Drop dapat diperoleh dengan mengumpulkan durasi menonton yang telah ditentukan di saluran yang menyiarkan game yang berpartisipasi, dengan akun Twitch yang terhubung ke penerbit. Prosesnya berjalan secara otomatis, namun hadiah tersebut harus diklaim secara manual di inventaris.",
+        "body": [
+          "Tahap terakhir ini menjelaskan sebagian besar Drops yang hilang: waktu telah diverifikasi, hadiah muncul, lalu kampanye berakhir sebelum pemain sempat mengklik."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Bagaimana cara mengotomatiskan proses klaim Drops?",
+        "answer": "StreamPulse mendeteksi kampanye yang sedang berlangsung dan hadiah yang tersedia, lalu mengklaimnya di latar belakang. Sebuah riwayat yang dapat dilihat di ekstensi mencatat apa saja yang telah diklaim dan kapan.",
+        "list": [
+          "Klaim Drops segera setelah kemajuan mencapai 100%.",
+          "Penerapan lencana Moments dilakukan dengan prinsip yang sama.",
+          "Riwayat yang dilengkapi tanggal dan waktu untuk memeriksa apa saja yang telah dipulihkan."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Mengapa Drops saya tidak bisa dibuka?",
+        "answer": "Penyebab paling umum adalah akun yang tidak terhubung dengan penerbit game. Disusul oleh menonton saluran yang tidak mencantumkan keterangan “Drops diaktifkan”, lalu kampanye yang sudah berakhir.",
+        "list": [
+          "Akun Twitch yang tidak terhubung dengan penerbit: tidak ada kemajuan yang tercatat.",
+          "Rantai tanpa Drops yang diaktifkan, bahkan saat bermain game yang tepat.",
+          "Kampanye telah berakhir: kemajuan tidak lagi diperhitungkan.",
+          "Hadiah yang telah diperoleh tetapi belum pernah diambil dari inventaris."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Apa itu lencana Moments?",
+        "answer": "Moments adalah lencana peringatan yang diaktifkan oleh seorang streamer selama siaran langsung untuk menandai suatu peristiwa. Lencana ini terpisah dari Drops, namun juga memerlukan klaim manual yang memiliki batas waktu."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apakah Drops tetap berfungsi jika siaran langsung dalam mode bisu?",
+        "a": "Ya, durasi pemutaran dihitung terlepas dari volume suaranya."
+      },
+      {
+        "q": "Apakah saya bisa mengumpulkan Drops di beberapa saluran?",
+        "a": "Secara umum, kemajuan tersebut terkait dengan kampanye dan bukan dengan saluran tertentu, tetapi setiap penerbit menetapkan aturannya sendiri."
+      },
+      {
+        "q": "Apakah Kick menawarkan fitur yang setara dengan Drops?",
+        "a": "Tidak, hingga saat ini belum ada sistem serupa di Kick."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "automatische Twitch-drops",
+    "linkLabel": "Twitch Drops automatisch claimen",
+    "title": "Automatische Twitch Drops | StreamPulse",
+    "h1": "Je Twitch Drops automatisch claimen",
+    "description": "Hoe werken Twitch Drops, waarom vervallen de beloningen en hoe kun je het claimen ervan, evenals dat van Moments-badges, automatiseren?",
+    "intro": "Met Twitch Drops word je beloond voor de tijd die je aan een game besteedt met in-game-items, maar je ontvangt de beloning pas nadat je deze handmatig in je inventaris hebt opgeëist. Veel spelers halen de vereiste tijd wel, maar vergeten deze laatste stap. Hieronder lees je hoe het proces werkt en hoe je dit kunt automatiseren.",
+    "howToSteps": [
+      {
+        "name": "Je account aan het spel koppelen",
+        "text": "Koppel in de Twitch-instellingen, onder het tabblad ‘Verbindingen’, je account aan de uitgever van de betreffende game. Zonder deze koppeling kunnen er geen Drops worden toegekend."
+      },
+      {
+        "name": "Een in aanmerking komende zender bekijken",
+        "text": "Kies een live-spel waarbij bij de categorie van het deelnemende spel de vermelding „Drops geactiveerd“ staat."
+      },
+      {
+        "name": "Automatische claim activeren",
+        "text": "Installeer StreamPulse en schakel de Drops-module in: de beschikbare beloningen worden automatisch opgeëist."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Hoe werken Twitch Drops?",
+        "answer": "Een Drop verdien je door een bepaalde kijktijd op te bouwen op een kanaal dat een deelnemende game uitzendt, waarbij je Twitch-account aan de uitgever is gekoppeld. De voortgang verloopt automatisch, maar de beloning moet vervolgens handmatig in de inventaris worden opgeëist.",
+        "body": [
+          "Deze laatste stap verklaart het merendeel van de gemiste Drops: de tijd wordt goedgekeurd, de beloning verschijnt, en vervolgens loopt de campagne af voordat de speler eraan denkt om te klikken."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Hoe kun je het opvragen van Drops automatiseren?",
+        "answer": "StreamPulse detecteert actieve campagnes en beschikbare beloningen en vraagt deze vervolgens op de achtergrond aan. In de extensie is een logboek te raadplegen waarin wordt bijgehouden wat er is opgehaald en wanneer.",
+        "list": [
+          "De Drops kunnen worden opgeëist zodra de voortgang 100% bereikt.",
+          "Moments-badges worden op dezelfde manier ondersteund.",
+          "Een logboek met tijdstempels om te controleren wat er is teruggevonden."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Waarom worden mijn Drops niet vrijgespeeld?",
+        "answer": "De meest voorkomende oorzaak is een account dat niet aan de uitgever van het spel is gekoppeld. Daarna volgt het bekijken van een kanaal zonder de vermelding „Drops geactiveerd”, en ten slotte een campagne die al is afgelopen.",
+        "list": [
+          "Twitch-account dat niet aan de uitgever is gekoppeld: er is geen voortgang opgeslagen.",
+          "De keten werkt niet, zelfs niet bij het juiste spel.",
+          "Campagne is verlopen: de voortgang telt niet meer mee.",
+          "Een beloning die is verdiend, maar nog nooit is opgeëist in de inventaris."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Wat zijn Moments-badges?",
+        "answer": "Momenten zijn herdenkingsbadges die een streamer tijdens een livestream activeert om een gebeurtenis te vieren. Ze staan los van Drops, maar moeten ook handmatig en binnen een bepaalde tijd worden opgeëist."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Werken de Drops ook als het live-geluid is gedempt?",
+        "a": "Ja, de kijktijd wordt geregistreerd, ongeacht het geluidsvolume."
+      },
+      {
+        "q": "Kan ik Drops op meerdere kanalen verzamelen?",
+        "a": "Over het algemeen hangt de voortgang samen met de campagne en niet met een specifieke zender, maar elke uitgever stelt zijn eigen regels vast."
+      },
+      {
+        "q": "Biedt Kick iets aan dat vergelijkbaar is met Drops?",
+        "a": "Nee, er bestaat op dit moment geen vergelijkbaar systeem op Kick."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "automatiska Twitch-drops",
+    "linkLabel": "Hämta Twitch Drops automatiskt",
+    "title": "Automatiska Twitch Drops | StreamPulse",
+    "h1": "Hämta sina Twitch Drops automatiskt",
+    "description": "Hur fungerar Twitch Drops, varför går belöningarna ut och hur kan man automatisera inlösen av dem och av Moments-märken?",
+    "intro": "Twitch Drops belönar tittartid på ett spel med föremål i spelet, men belöningen erhålls först efter att man manuellt hämtat den i inventariet. Många spelare samlar ihop den tid som krävs men glömmer sedan bort detta sista steg. Här förklarar vi hur processen fungerar och hur man kan automatisera den.",
+    "howToSteps": [
+      {
+        "name": "Koppla sitt konto till spelet",
+        "text": "Gå till avsnittet ”Anslutningar” i Twitch-inställningarna och koppla ditt konto till utgivaren av det aktuella spelet. Utan denna koppling kan inga Drop tilldelas."
+      },
+      {
+        "name": "Titta på en kanal som ingår i abonnemanget",
+        "text": "Välj en livestream där det står ”Drops aktiverade” i kategorin för det deltagande spelet."
+      },
+      {
+        "name": "Aktivera automatisk reklamation",
+        "text": "Installera StreamPulse och aktivera Drops-modulen: de tillgängliga belöningarna hämtas automatiskt utan att du behöver göra något."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Hur fungerar Twitch Drops?",
+        "answer": "Man får en Drop genom att samla ihop en viss tittartid på en kanal som sänder ett deltagande spel, med ett Twitch-konto kopplat till utgivaren. Framstegen sker automatiskt, men belöningen måste sedan hämtas manuellt i inventariet.",
+        "body": [
+          "Det här sista steget förklarar varför de flesta Drops går förlorade: tiden godkänns, belöningen visas, och sedan avslutas kampanjen innan spelaren hinner klicka."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Hur automatiserar man ansökan om Drops?",
+        "answer": "StreamPulse identifierar aktiva kampanjer och tillgängliga belöningar och hämtar dem sedan i bakgrunden. En logg som kan visas i tillägget visar vad som har hämtats och när.",
+        "list": [
+          "Hämta Drops så snart framsteget når 100 %.",
+          "Hantering av Moments-badges enligt samma princip.",
+          "Tidsstämplad historik för att kontrollera vad som har hämtats."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Varför låses inte mina Drops upp?",
+        "answer": "Den vanligaste orsaken är att kontot inte är kopplat till spelutgivaren. Därefter kommer att man tittar på en kanal utan märkningen ”Drops aktiverade”, följt av en kampanj som redan har avslutats.",
+        "list": [
+          "Twitch-konto som inte är kopplat till utgivaren: inga framsteg har sparats.",
+          "En kedja utan aktiverade Drops, även i rätt spel.",
+          "Kampanjen har löpt ut: framstegen räknas inte längre.",
+          "En belöning som har erhållits men aldrig hämtats ut i inventariet."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Vad är Moments-märken?",
+        "answer": "”Moments” är minnesmärken som en streamare aktiverar under en livestream för att uppmärksamma en händelse. De är fristående från ”Drops”, men kräver också en manuell inlösen inom en viss tidsram."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Fungerar Drops även om livestreamen är avstängd?",
+        "a": "Ja, visningstiden räknas oavsett ljudvolym."
+      },
+      {
+        "q": "Kan jag samla Drops från flera kedjor?",
+        "a": "I allmänhet är uppstigningen kopplad till kampanjen och inte till en specifik kanal, men varje utgivare fastställer sina egna regler."
+      },
+      {
+        "q": "Har Kick något som motsvarar Drops?",
+        "a": "Nej, det finns för närvarande inget liknande system på Kick."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "automatické twitch-drops",
+    "linkLabel": "Automatické získávání Twitch Drops",
+    "title": "Automatické Twitch Drops | StreamPulse",
+    "h1": "Automatické získávání Twitch Drops",
+    "description": "Jak fungují Twitch Drops, proč odměny vyprší a jak automatizovat jejich získávání i získávání odznaků Moments.",
+    "intro": "Funkce Twitch Drops odměňuje čas strávený sledováním hry herními předměty, ale odměnu lze získat až po ručním vyzvednutí v inventáři. Mnoho hráčů sice nasbírá požadovaný čas, ale na tento poslední krok zapomenou. Zde se dozvíte, jak celý proces funguje a jak jej automatizovat.",
+    "howToSteps": [
+      {
+        "name": "Propojit svůj účet s hrou",
+        "text": "V nastavení služby Twitch v sekci „Připojení“ propojte svůj účet s vydavatelem dané hry. Bez tohoto propojení nelze přidělit žádné Dropy."
+      },
+      {
+        "name": "Sledovat oprávněný kanál",
+        "text": "Vyberte živou hru, u které je v kategorii dané hry uvedeno „Drops aktivovány“."
+      },
+      {
+        "name": "Zapnout automatické reklamace",
+        "text": "Nainstalujte si StreamPulse a aktivujte modul Drops: dostupné odměny budou získány automaticky, bez jakéhokoli zásahu z vaší strany."
+      }
+    ],
+    "sections": [
+      {
+        "id": "fonctionnement",
+        "h2": "Jak fungují Twitch Drops?",
+        "answer": "Drop lze získat nasbíráním stanovené doby sledování kanálu, který vysílá zúčastněnou hru, a propojením účtu Twitch s vydavatelem. Postup je automatický, odměnu je však poté nutné ručně vyzvednout v inventáři.",
+        "body": [
+          "Tato závěrečná fáze vysvětluje většinu ztracených odměn: čas je potvrzen, odměna se zobrazí, ale kampaň skončí dříve, než hráč stihne kliknout."
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Jak automatizovat vyžádání Dropsů?",
+        "answer": "StreamPulse detekuje aktivní kampaně a dostupné odměny a následně je na pozadí vyžádá. V rozšíření je k dispozici protokol, který uvádí, co a kdy bylo získáno.",
+        "list": [
+          "Vyžádání odměn, jakmile pokrok dosáhne 100 %.",
+          "Podpora odznaků Moments funguje na stejném principu.",
+          "Protokol s časovým razítkem pro ověření toho, co bylo načteno."
+        ]
+      },
+      {
+        "id": "liaison-compte",
+        "h2": "Proč se mi Drops neodemykají?",
+        "answer": "Nejčastější příčinou je účet, který není propojen s vydavatelem hry. Dalším důvodem je sledování kanálu bez označení „Drops aktivovány“ a dále již ukončená kampaň.",
+        "list": [
+          "Účet na Twitchi není propojen s vydavatelem: není zaznamenán žádný postup ve hře.",
+          "Řetězec bez aktivovaných Drops, a to i v případě správné hry.",
+          "Kampaň již skončila: pokrok se již nezapočítává.",
+          "Odměna, kterou jste získali, ale nikdy si ji nevyzvedli v inventáři."
+        ]
+      },
+      {
+        "id": "moments",
+        "h2": "Co jsou odznaky Moments?",
+        "answer": "„Moments“ jsou pamětní odznaky, které streamer aktivuje během živého vysílání, aby připomněl určitou událost. Jsou nezávislé na „Drops“, ale stejně jako ty vyžadují ruční žádost v časově omezeném období."
+      }
+    ],
+    "faq": [
+      {
+        "q": "Fungují Drops i v případě, že je živé vysílání ztlumeno?",
+        "a": "Ano, doba přehrávání se zaznamenává nezávisle na hlasitosti zvuku."
+      },
+      {
+        "q": "Mohu sbírat Drops na více řetězcích?",
+        "a": "Obecně platí, že postup v rámci hry souvisí s kampaní, nikoli s konkrétním řetězcem, ale každý vydavatel si stanovuje vlastní pravidla."
+      },
+      {
+        "q": "Nabízí Kick něco podobného jako Drops?",
+        "a": "Ne, na Kicku zatím žádný podobný systém neexistuje."
+      }
+    ]
+  }
+}

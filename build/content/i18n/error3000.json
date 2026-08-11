@@ -1,0 +1,1224 @@
+{
+  "es": {
+    "slug": "error-3000-twitch-solución",
+    "linkLabel": "Error 3000 en Twitch: cómo solucionarlo",
+    "title": "Error 3000 de Twitch: causas y soluciones | StreamPulse",
+    "h1": "Error 3000 en Twitch: por qué se produce y cómo solucionarlo",
+    "description": "El error 3000 de Twitch se debe a un fallo en la decodificación de contenidos multimedia. Causas reales, soluciones ordenadas por eficacia y recarga automática.",
+    "intro": "El error 3000 («Media Decode Error») bloquea el reproductor de Twitch y deja la pantalla en negro, aunque la conexión funcione correctamente. Este error está relacionado con la decodificación de la transmisión de vídeo por parte del navegador, no con tu red. A continuación te indicamos las causas reales, las soluciones ordenadas de más a menos eficaces y cómo automatizar la reanudación de la transmisión.",
+    "howToSteps": [
+      {
+        "name": "Desactivar la aceleración por hardware",
+        "text": "La aceleración por hardware delega la decodificación de vídeo a la GPU. Cuando un controlador está obsoleto o es incompatible, la decodificación falla sin que se muestre ningún mensaje. Desactívala en la configuración del navegador y vuelve a cargar la página."
+      },
+      {
+        "name": "Actualizar el navegador",
+        "text": "Es posible que un navegador obsoleto no sea compatible con los últimos códecs que utiliza Twitch. Comprueba si hay actualizaciones disponibles y reinicia el navegador."
+      },
+      {
+        "name": "Actualizar los controladores de la GPU",
+        "text": "Visita la página web del fabricante (NVIDIA, AMD, Intel) e instala la última versión del controlador."
+      },
+      {
+        "name": "Automatizar la recarga con StreamPulse",
+        "text": "Instala StreamPulse y activa la recarga automática para que el reproductor se reinicie por sí solo en cuanto se produzca un error 1000, 2000 o 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "¿Qué significa el error 3000 en Twitch?",
+        "answer": "El error 3000 se debe a un fallo en la decodificación del contenido multimedia: el flujo de vídeo llega correctamente al navegador, pero este no consigue decodificarlo para mostrarlo. A diferencia del error 2000 (red), el problema se encuentra en la reproducción local del vídeo.",
+        "body": [
+          "El síntoma típico es una pantalla en negro con el sonido funcionando, o un bloqueo total del reproductor. El resto de la página de Twitch (chat, interfaz) sigue funcionando, ya que la conexión no es la causa del problema."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "¿Cuáles son las causas más frecuentes?",
+        "answer": "Por orden de frecuencia: la aceleración material, un navegador obsoleto, un controlador de GPU antiguo y, a continuación, las extensiones que interceptan el flujo de vídeo.",
+        "list": [
+          "<strong>Aceleración por hardware.</strong> La GPU no consigue descodificar el códec que utiliza Twitch, a menudo debido a un controlador obsoleto.",
+          "<strong>Navegador obsoleto.</strong> Es posible que un navegador que no esté actualizado no sea compatible con un formato reciente.",
+          "<strong>Controlador gráfico obsoleto.</strong> Un controlador de GPU desactualizado provoca errores silenciosos de decodificación por hardware.",
+          "<strong>Extensiones que interceptan el flujo.</strong> Algunas extensiones modifican los encabezados del flujo y dificultan la decodificación.",
+          "<strong>Caché dañada.</strong> Los datos obsoletos de la caché obligan al reproductor a utilizar un decodificador inadecuado."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "¿Cómo solucionar el error 3000 paso a paso?",
+        "answer": "Empieza por desactivar la aceleración por hardware del navegador y, a continuación, actualiza el navegador y los controladores de la GPU. Estas medidas resuelven la gran mayoría de los casos.",
+        "steps": [
+          {
+            "name": "Desactiva la aceleración por hardware.",
+            "text": "En la configuración del navegador, busca «aceleración por hardware» y desactívala."
+          },
+          {
+            "name": "Actualiza el navegador.",
+            "text": "Comprueba que estás utilizando la última versión de Chrome, Edge, Brave u Opera."
+          },
+          {
+            "name": "Borra la caché y las cookies de Twitch.",
+            "text": "Accede al dominio twitch.tv y vuelve a iniciar sesión."
+          },
+          {
+            "name": "Cambia la calidad de la transmisión.",
+            "text": "Cambia manualmente a 720p o 480p para forzar el uso de un códec diferente."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "¿Cómo se puede evitar que la página se recargue cada vez?",
+        "answer": "StreamPulse detecta los errores de reproductor 1000, 2000 y 3000 y vuelve a cargar automáticamente el flujo, lo que evita la necesidad de una reanudación manual.",
+        "body": [
+          "La automatización resulta especialmente útil cuando el error 3000 se produce de forma esporádica. StreamPulse reinicia la transmisión sin que tengas que intervenir.",
+          "Si el error se produce de forma sistemática, soluciona primero la causa (aceleración por hardware o controlador): un reinicio en bucle solo serviría para ocultar el problema."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Cuál es la diferencia entre el error 2000 y el error 3000 en Twitch?",
+        "a": "El error 2000 es un error de red: la conexión con el flujo se ha interrumpido. El error 3000 es un error de decodificación: el flujo llega, pero el navegador no consigue reproducirlo. Las causas y las soluciones son diferentes."
+      },
+      {
+        "q": "¿El error 3000 afecta a todos los navegadores?",
+        "a": "No, es más frecuente en los navegadores basados en Chromium cuando la aceleración por hardware entra en conflicto con el controlador de la GPU. Firefox utiliza un decodificador diferente y se ve menos afectado."
+      },
+      {
+        "q": "¿StreamPulse corrige automáticamente el error 3000?",
+        "a": "StreamPulse detecta el error 3000 y recarga automáticamente el reproductor para reanudar la transmisión. Esto no soluciona la causa subyacente, pero elimina la necesidad de intervenir manualmente."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "erro-3000-twitch-solução",
+    "linkLabel": "Erro 3000 no Twitch: como corrigi-lo",
+    "title": "Erro 3000 no Twitch: causas e soluções | StreamPulse",
+    "h1": "Erro 3000 no Twitch: por que ocorre e como corrigi-lo",
+    "description": "O erro 3000 do Twitch é uma falha na decodificação de mídia. Causas reais, soluções classificadas por eficácia e recarregamento automático.",
+    "intro": "O erro 3000 (“Media Decode Error”) faz com que o reprodutor do Twitch pare em uma tela preta, mesmo com a conexão funcionando. Ele está relacionado à decodificação do stream de vídeo pelo navegador, e não à sua rede. Aqui estão as causas reais, as soluções classificadas da mais eficaz à menos eficaz e como automatizar a retomada da transmissão.",
+    "howToSteps": [
+      {
+        "name": "Desativar a aceleração por hardware",
+        "text": "A aceleração por hardware transfere a decodificação de vídeo para a GPU. Quando um driver está desatualizado ou é incompatível, a decodificação falha sem exibir nenhuma mensagem. Desative essa função nas configurações do navegador e atualize a página."
+      },
+      {
+        "name": "Atualizar o navegador",
+        "text": "Um navegador desatualizado pode não ser compatível com os codecs mais recentes usados pelo Twitch. Verifique se há atualizações disponíveis e reinicie o navegador."
+      },
+      {
+        "name": "Atualizar os drivers da GPU",
+        "text": "Acesse o site do fabricante (NVIDIA, AMD, Intel) e instale a versão mais recente do driver."
+      },
+      {
+        "name": "Automatizar a recarga com o StreamPulse",
+        "text": "Instale o StreamPulse e ative a recarga automática para que o reprodutor reinicie sozinho assim que ocorrer um erro 1000, 2000 ou 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "O que significa o erro 3000 no Twitch?",
+        "answer": "O erro 3000 é uma falha na decodificação de mídia: o fluxo de vídeo chega corretamente ao navegador, mas este não consegue decodificá-lo para exibi-lo. Ao contrário do erro 2000 (rede), o problema está relacionado à reprodução local do vídeo.",
+        "body": [
+          "O sintoma típico é uma tela preta com o som funcionando, ou um travamento total do player. O restante da página do Twitch (chat, interface) continua funcionando, pois a conexão não está comprometida."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Quais são as causas mais frequentes?",
+        "answer": "Por ordem de frequência: a aceleração de hardware, um navegador desatualizado, um driver de GPU antigo e, em seguida, as extensões que interceptam o fluxo de vídeo.",
+        "list": [
+          "<strong>Aceleração por hardware.</strong> A GPU não consegue decodificar o codec usado pelo Twitch, muitas vezes devido a um driver desatualizado.",
+          "<strong>Navegador desatualizado.</strong> Um navegador que não esteja atualizado pode não oferecer suporte a um formato recente.",
+          "<strong>Driver gráfico desatualizado.</strong> Um driver de GPU desatualizado causa erros silenciosos de decodificação de hardware.",
+          "<strong>Extensões que interceptam o fluxo.</strong> Algumas extensões alteram os cabeçalhos do fluxo e prejudicam a decodificação.",
+          "<strong>Cache corrompido.</strong> Dados obsoletos no cache forçam o reprodutor a usar um decodificador inadequado."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Como corrigir o erro 3000 passo a passo?",
+        "answer": "Comece desativando a aceleração por hardware do navegador e, em seguida, atualize o navegador e os drivers da GPU. Essas ações resolvem a grande maioria dos casos.",
+        "steps": [
+          {
+            "name": "Desative a aceleração de hardware.",
+            "text": "Nas configurações do navegador, procure por “aceleração de hardware” e desative-a."
+          },
+          {
+            "name": "Atualize o navegador.",
+            "text": "Verifique se você está usando a versão mais recente do Chrome, Edge, Brave ou Opera."
+          },
+          {
+            "name": "Limpe o cache e os cookies do Twitch.",
+            "text": "Acesse o site twitch.tv e, em seguida, faça login novamente."
+          },
+          {
+            "name": "Altere a qualidade do stream.",
+            "text": "Altere manualmente para 720p ou 480p para forçar o uso de um codec diferente."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Como evitar que a página seja recarregada toda vez?",
+        "answer": "O StreamPulse detecta os erros de leitura 1000, 2000 e 3000 e recarrega automaticamente o fluxo, eliminando a necessidade de reinicialização manual.",
+        "body": [
+          "A automação é particularmente útil quando o erro 3000 ocorre esporadicamente. O StreamPulse reinicia a transmissão sem que você precise intervir.",
+          "Se o erro ocorrer sistematicamente, resolva primeiro a causa (aceleração de hardware ou driver): uma reinicialização contínua apenas mascararia o problema."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual é a diferença entre o erro 2000 e o erro 3000 no Twitch?",
+        "a": "O erro 2000 é um erro de rede: a conexão com o stream foi interrompida. O erro 3000 é uma falha na decodificação: o stream chega, mas o navegador não consegue reproduzi-lo. As causas e soluções são diferentes."
+      },
+      {
+        "q": "O erro 3000 afeta todos os navegadores?",
+        "a": "Não, isso ocorre com mais frequência em navegadores baseados no Chromium quando a aceleração por hardware entra em conflito com o driver da GPU. O Firefox usa um decodificador diferente e é menos afetado."
+      },
+      {
+        "q": "O StreamPulse corrige automaticamente o erro 3000?",
+        "a": "O StreamPulse detecta o erro 3000 e recarrega automaticamente o reprodutor para retomar a transmissão. Isso não corrige a causa raiz, mas elimina a necessidade de intervenção manual."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Fehler-3000-Twitch-Lösung",
+    "linkLabel": "Fehler 3000 auf Twitch: So beheben Sie ihn",
+    "title": "Fehler 3000 bei Twitch: Ursachen und Lösungen | StreamPulse",
+    "h1": "Fehler 3000 auf Twitch: Warum er auftritt und wie man ihn behebt",
+    "description": "Der Twitch-Fehler 3000 ist ein Fehler bei der Medien-Dekodierung. Tatsächliche Ursachen, nach Wirksamkeit geordnete Lösungen und automatisches Neuladen.",
+    "intro": "Der Fehler 3000 („Media Decode Error“) führt dazu, dass der Twitch-Player auf einem schwarzen Bildschirm hängen bleibt, obwohl die Verbindung funktioniert. Der Fehler hängt mit der Dekodierung des Videostreams durch den Browser zusammen und nicht mit Ihrem Netzwerk. Hier finden Sie die tatsächlichen Ursachen, die Lösungsansätze, sortiert nach ihrer Wirksamkeit (von am effektivsten bis am wenigsten effektiv), sowie eine Anleitung, wie Sie die Wiederaufnahme des Streams automatisieren können.",
+    "howToSteps": [
+      {
+        "name": "Hardwarebeschleunigung deaktivieren",
+        "text": "Die Hardwarebeschleunigung überträgt die Videodekodierung an die GPU. Wenn ein Treiber veraltet oder inkompatibel ist, schlägt die Dekodierung ohne Fehlermeldung fehl. Deaktivieren Sie diese Funktion in den Browsereinstellungen und laden Sie die Seite neu."
+      },
+      {
+        "name": "Browser aktualisieren",
+        "text": "Ein veralteter Browser unterstützt möglicherweise nicht die neuesten Codecs, die von Twitch verwendet werden. Überprüfen Sie, ob Updates verfügbar sind, und starten Sie den Browser neu."
+      },
+      {
+        "name": "GPU-Treiber aktualisieren",
+        "text": "Besuchen Sie die Website des Herstellers (NVIDIA, AMD, Intel) und installieren Sie die neueste Treiberversion."
+      },
+      {
+        "name": "Das Aufladen mit StreamPulse automatisieren",
+        "text": "Installieren Sie StreamPulse und aktivieren Sie die automatische Neuladung, damit der Player sich selbst neu startet, sobald ein Fehler 1000, 2000 oder 3000 auftritt."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Was bedeutet der Fehler 3000 auf Twitch?",
+        "answer": "Fehler 3000 ist ein Fehler bei der Medien-Dekodierung: Der Videostream wird zwar im Browser empfangen, dieser kann ihn jedoch nicht dekodieren, um ihn anzuzeigen. Im Gegensatz zum Fehler 2000 (Netzwerk) liegt das Problem bei der lokalen Videowiedergabe.",
+        "body": [
+          "Das typische Symptom ist ein schwarzer Bildschirm bei weiterhin funktionierendem Ton oder ein vollständiger Absturz des Players. Der Rest der Twitch-Seite (Chat, Benutzeroberfläche) bleibt funktionsfähig, da die Verbindung nicht betroffen ist."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Was sind die häufigsten Ursachen?",
+        "answer": "Nach Häufigkeit geordnet: die Beschleunigung, ein veralteter Browser, ein veralteter GPU-Treiber und schließlich Erweiterungen, die den Videostream abfangen.",
+        "list": [
+          "<strong>Hardwarebeschleunigung.</strong> Die GPU kann den von Twitch verwendeten Codec nicht decodieren, was häufig an einem veralteten Treiber liegt.",
+          "<strong>Veralteter Browser.</strong> Ein nicht aktualisierter Browser unterstützt möglicherweise neuere Formate nicht.",
+          "<strong>Veralteter Grafiktreiber.</strong> Ein veralteter GPU-Treiber führt zu unbemerkten Fehlern bei der Hardware-Decodierung.",
+          "<strong>Erweiterungen, die den Datenstrom abfangen.</strong> Manche Erweiterungen verändern die Header des Datenstroms und stören die Dekodierung.",
+          "<strong>Cache ist beschädigt.</strong> Veraltete Cache-Daten zwingen den Player dazu, einen ungeeigneten Decoder zu verwenden."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Wie lässt sich der Fehler 3000 Schritt für Schritt beheben?",
+        "answer": "Deaktivieren Sie zunächst die Hardwarebeschleunigung des Browsers und aktualisieren Sie anschließend den Browser sowie die GPU-Treiber. Diese Maßnahmen beheben die überwiegende Mehrheit der Probleme.",
+        "steps": [
+          {
+            "name": "Deaktivieren Sie die Hardwarebeschleunigung.",
+            "text": "Suchen Sie in den Browsereinstellungen nach „Hardwarebeschleunigung“ und deaktivieren Sie diese."
+          },
+          {
+            "name": "Aktualisieren Sie den Browser.",
+            "text": "Stellen Sie sicher, dass Sie die neueste Version von Chrome, Edge, Brave oder Opera verwenden."
+          },
+          {
+            "name": "Leeren Sie den Cache und löschen Sie die Cookies von Twitch.",
+            "text": "Rufen Sie die Website twitch.tv auf und melden Sie sich anschließend erneut an."
+          },
+          {
+            "name": "Ändern Sie die Stream-Qualität.",
+            "text": "Stellen Sie manuell auf 720p oder 480p um, um einen anderen Codec zu erzwingen."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Wie kann man vermeiden, dass die Seite jedes Mal neu geladen wird?",
+        "answer": "StreamPulse erkennt die Player-Fehler 1000, 2000 und 3000 und lädt den Stream automatisch neu, wodurch eine manuelle Unterbrechung entfällt.",
+        "body": [
+          "Die Automatisierung ist besonders nützlich, wenn der Fehler 3000 nur sporadisch auftritt. StreamPulse startet den Stream neu, ohne dass Sie eingreifen müssen.",
+          "Sollte der Fehler systematisch auftreten, beheben Sie zunächst die Ursache (Hardwarebeschleunigung oder Treiber): Ein endloses Neuladen würde das Problem nur verschleiern."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Was ist der Unterschied zwischen Fehler 2000 und Fehler 3000 auf Twitch?",
+        "a": "Fehler 2000 ist ein Netzwerkfehler: Die Verbindung zum Stream ist unterbrochen. Fehler 3000 ist ein Dekodierungsfehler: Der Stream wird empfangen, aber der Browser kann ihn nicht wiedergeben. Die Ursachen und Lösungen sind unterschiedlich."
+      },
+      {
+        "q": "Tritt der Fehler 3000 in allen Browsern auf?",
+        "a": "Nein, das Problem tritt häufiger bei Chromium-basierten Browsern auf, wenn die Hardwarebeschleunigung mit dem GPU-Treiber in Konflikt gerät. Firefox verwendet einen anderen Decoder und ist davon weniger betroffen."
+      },
+      {
+        "q": "Behebt StreamPulse den Fehler 3000 automatisch?",
+        "a": "StreamPulse erkennt den Fehler 3000 und lädt den Player automatisch neu, um den Stream fortzusetzen. Dadurch wird zwar nicht die eigentliche Ursache behoben, aber ein manueller Eingriff entfällt."
+      }
+    ]
+  },
+  "it": {
+    "slug": "errore-3000-twitch-soluzione",
+    "linkLabel": "Errore 3000 su Twitch: come risolverlo",
+    "title": "Errore 3000 su Twitch: cause e soluzioni | StreamPulse",
+    "h1": "Errore 3000 su Twitch: perché si verifica e come risolverlo",
+    "description": "L'errore 3000 di Twitch è un errore di decodifica dei contenuti multimediali. Cause effettive, soluzioni ordinate per efficacia e ricaricamento automatico.",
+    "intro": "L'errore 3000 (“Media Decode Error”) blocca il lettore Twitch su una schermata nera, nonostante la connessione funzioni correttamente. È legato alla decodifica del flusso video da parte del browser, non alla tua rete. Ecco le cause effettive, le soluzioni ordinate dalla più efficace alla meno efficace e come automatizzare il ripristino dello streaming.",
+    "howToSteps": [
+      {
+        "name": "Disattivare l'accelerazione hardware",
+        "text": "L'accelerazione hardware affida la decodifica video alla GPU. Quando un driver è obsoleto o incompatibile, la decodifica fallisce senza avvisare l'utente. Disattivala nelle impostazioni del browser e ricarica la pagina."
+      },
+      {
+        "name": "Aggiornare il browser",
+        "text": "Un browser obsoleto potrebbe non supportare i codec più recenti utilizzati da Twitch. Verifica se sono disponibili aggiornamenti e riavvia il browser."
+      },
+      {
+        "name": "Aggiornare i driver della GPU",
+        "text": "Visita il sito web del produttore (NVIDIA, AMD, Intel) e installa l'ultima versione del driver."
+      },
+      {
+        "name": "Automatizzare la ricarica con StreamPulse",
+        "text": "Installa StreamPulse e attiva il riavvio automatico in modo che il lettore si riavvii da solo non appena si verifica un errore 1000, 2000 o 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Cosa significa l'errore 3000 su Twitch?",
+        "answer": "L'errore 3000 indica un errore di decodifica multimediale: il flusso video arriva correttamente al browser, ma quest'ultimo non riesce a decodificarlo per visualizzarlo. A differenza dell'errore 2000 (rete), il problema riguarda la riproduzione video locale.",
+        "body": [
+          "Il sintomo tipico è uno schermo nero con l'audio che funziona, oppure un blocco completo del lettore. Il resto della pagina di Twitch (chat, interfaccia) rimane funzionante poiché la connessione non è la causa del problema."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Quali sono le cause più frequenti?",
+        "answer": "In ordine di frequenza: l’accelerazione hardware, un browser obsoleto, un driver GPU non aggiornato e, infine, le estensioni che intercettano il flusso video.",
+        "list": [
+          "<strong>Accelerazione hardware.</strong> La GPU non riesce a decodificare il codec utilizzato da Twitch, spesso a causa di un driver obsoleto.",
+          "<strong>Browser obsoleto.</strong> Un browser non aggiornato potrebbe non supportare un formato recente.",
+          "<strong>Driver grafico obsoleto.</strong> Un driver GPU obsoleto causa errori di decodifica hardware non segnalati.",
+          "<strong>Estensioni che intercettano il flusso.</strong> Alcune estensioni modificano le intestazioni del flusso e interferiscono con la decodifica.",
+          "<strong>Cache danneggiata.</strong> I dati della cache obsoleti costringono il lettore a utilizzare un decodificatore non compatibile."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Come risolvere l'errore 3000 passo dopo passo?",
+        "answer": "Inizia disattivando l'accelerazione hardware del browser, quindi aggiorna il browser e i driver della GPU. Queste operazioni risolvono la stragrande maggioranza dei casi.",
+        "steps": [
+          {
+            "name": "Disattivare l'accelerazione hardware.",
+            "text": "Nelle impostazioni del browser, cerca \"accelerazione hardware\" e disattivala."
+          },
+          {
+            "name": "Aggiorna il browser.",
+            "text": "Verifica di utilizzare l'ultima versione di Chrome, Edge, Brave o Opera."
+          },
+          {
+            "name": "Svuota la cache e i cookie di Twitch.",
+            "text": "Accedi al dominio twitch.tv, quindi effettua nuovamente l'accesso."
+          },
+          {
+            "name": "Modifica la qualità dello streaming.",
+            "text": "Passate manualmente a 720p o 480p per forzare l'uso di un codec diverso."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Come si fa a evitare di ricaricare la pagina ogni volta?",
+        "answer": "StreamPulse rileva gli errori di riproduzione 1000, 2000 e 3000 e ricarica automaticamente il flusso, eliminando così la necessità di un'interruzione manuale.",
+        "body": [
+          "L'automazione è particolarmente utile quando l'errore 3000 si verifica sporadicamente. StreamPulse riavvia il flusso senza che tu debba intervenire.",
+          "Se l'errore si verifica sistematicamente, risolvi innanzitutto la causa (accelerazione hardware o driver): un ricaricamento continuo non farebbe altro che mascherare il problema."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Qual è la differenza tra l'errore 2000 e l'errore 3000 su Twitch?",
+        "a": "L'errore 2000 è un errore di rete: la connessione al flusso è stata interrotta. L'errore 3000 è un errore di decodifica: il flusso arriva, ma il browser non riesce a riprodurlo. Le cause e le soluzioni sono diverse."
+      },
+      {
+        "q": "L'errore 3000 riguarda tutti i browser?",
+        "a": "No, si verifica più spesso sui browser basati su Chromium quando l'accelerazione hardware entra in conflitto con il driver della GPU. Firefox utilizza un decodificatore diverso ed è meno soggetto a questo problema."
+      },
+      {
+        "q": "StreamPulse corregge automaticamente l'errore 3000?",
+        "a": "StreamPulse rileva l'errore 3000 e ricarica automaticamente il lettore per riprendere lo streaming. Ciò non risolve la causa alla radice, ma elimina la necessità di un intervento manuale."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "błąd-3000-twitch-rozwiązanie",
+    "linkLabel": "Błąd 3000 na Twitchu: jak go naprawić",
+    "title": "Błąd 3000 na Twitchu: przyczyny i rozwiązania | StreamPulse",
+    "h1": "Błąd 3000 na Twitchu: dlaczego się pojawia i jak go naprawić",
+    "description": "Błąd 3000 serwisu Twitch oznacza niepowodzenie w dekodowaniu multimediów. Rzeczywiste przyczyny, rozwiązania uporządkowane według skuteczności oraz automatyczne ponowne ładowanie.",
+    "intro": "Błąd 3000 („Media Decode Error”) powoduje zawieszenie odtwarzacza Twitch na czarnym ekranie, mimo że połączenie działa. Jest on związany z dekodowaniem strumienia wideo przez przeglądarkę, a nie z siecią użytkownika. Oto rzeczywiste przyczyny tego błędu, sposoby jego usunięcia uporządkowane od najbardziej do najmniej skutecznych oraz instrukcja, jak zautomatyzować wznowienie transmisji.",
+    "howToSteps": [
+      {
+        "name": "Wyłącz przyspieszenie sprzętowe",
+        "text": "Przyspieszenie sprzętowe przekazuje dekodowanie wideo do procesora graficznego (GPU). Gdy sterownik jest nieaktualny lub niezgodny, dekodowanie kończy się niepowodzeniem bez wyświetlania komunikatu. Wyłącz tę funkcję w ustawieniach przeglądarki i odśwież stronę."
+      },
+      {
+        "name": "Zaktualizuj przeglądarkę",
+        "text": "Przestarzała przeglądarka może nie obsługiwać najnowszych kodeków używanych przez serwis Twitch. Sprawdź, czy są dostępne aktualizacje, i uruchom ponownie przeglądarkę."
+      },
+      {
+        "name": "Zaktualizuj sterowniki karty graficznej",
+        "text": "Wejdź na stronę producenta (NVIDIA, AMD, Intel) i zainstaluj najnowszą wersję sterownika."
+      },
+      {
+        "name": "Zautomatyzuj ładowanie za pomocą StreamPulse",
+        "text": "Zainstaluj StreamPulse i włącz funkcję automatycznego ponownego uruchamiania, aby odtwarzacz uruchamiał się samoczynnie w przypadku wystąpienia błędu 1000, 2000 lub 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Co oznacza błąd 3000 na Twitchu?",
+        "answer": "Błąd 3000 oznacza niepowodzenie w dekodowaniu multimediów: strumień wideo dociera prawidłowo do przeglądarki, ale przeglądarka nie jest w stanie go zdekodować w celu wyświetlenia. W przeciwieństwie do błędu 2000 (sieciowego), problem dotyczy lokalnego renderowania wideo.",
+        "body": [
+          "Typowym objawem jest czarny ekran przy zachowanym dźwięku lub całkowite zawieszenie odtwarzacza. Pozostałe elementy strony Twitch (czat, interfejs) nadal działają, ponieważ problem nie dotyczy połączenia internetowego."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Jakie są najczęstsze przyczyny?",
+        "answer": "W kolejności według częstotliwości występowania: przyspieszenie materialne, przestarzała przeglądarka, stara sterownika karty graficznej, a następnie rozszerzenia przechwytujące strumień wideo.",
+        "list": [
+          "<strong>Przyspieszenie sprzętowe.</strong> Procesor graficzny nie jest w stanie zdekodować kodeka używanego przez Twitch, co często wynika z nieaktualnego sterownika.",
+          "<strong>Przeglądarka jest przestarzała.</strong> Nieaktualna przeglądarka może nie obsługiwać najnowszych formatów.",
+          "<strong>Przestarzały sterownik graficzny.</strong> Przestarzały sterownik GPU powoduje niewidoczne błędy dekodowania sprzętowego.",
+          "<strong>Rozszerzenia przechwytujące strumień.</strong> Niektóre rozszerzenia modyfikują nagłówki strumienia i zakłócają proces dekodowania.",
+          "<strong>Pamięć podręczna jest uszkodzona.</strong> Nieaktualne dane z pamięci podręcznej zmuszają odtwarzacz do korzystania z nieodpowiedniego dekodera."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Jak krok po kroku usunąć błąd 3000?",
+        "answer": "Najpierw wyłącz przyspieszenie sprzętowe przeglądarki, a następnie zaktualizuj przeglądarkę i sterowniki karty graficznej. Te czynności rozwiązują problem w zdecydowanej większości przypadków.",
+        "steps": [
+          {
+            "name": "Wyłącz przyspieszenie sprzętowe.",
+            "text": "W ustawieniach przeglądarki znajdź opcję „akceleracja sprzętowa” i wyłącz ją."
+          },
+          {
+            "name": "Zaktualizuj przeglądarkę.",
+            "text": "Sprawdź, czy korzystasz z najnowszej wersji przeglądarki Chrome, Edge, Brave lub Opera."
+          },
+          {
+            "name": "Wyczyść pamięć podręczną i pliki cookie serwisu Twitch.",
+            "text": "Przejdź do domeny twitch.tv, a następnie zaloguj się ponownie."
+          },
+          {
+            "name": "Zmień jakość transmisji.",
+            "text": "Ręcznie przełącz rozdzielczość na 720p lub 480p, aby wymusić użycie innego kodeka."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Jak uniknąć konieczności ponownego ładowania strony za każdym razem?",
+        "answer": "StreamPulse wykrywa błędy odtwarzacza 1000, 2000 i 3000 oraz automatycznie ponownie ładuje strumień, co eliminuje konieczność ręcznego przerywania odtwarzania.",
+        "body": [
+          "Automatyzacja jest szczególnie przydatna, gdy błąd 3000 pojawia się sporadycznie. StreamPulse ponownie uruchamia strumień bez konieczności Twojej interwencji.",
+          "Jeśli błąd pojawia się regularnie, należy najpierw usunąć jego przyczynę (przyspieszenie sprzętowe lub sterownik): ciągłe ponowne ładowanie strony tylko zamaskowałoby problem."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Jaka jest różnica między błędem 2000 a błędem 3000 na Twitchu?",
+        "a": "Błąd 2000 to błąd sieciowy: połączenie ze strumieniem zostało przerwane. Błąd 3000 oznacza niepowodzenie dekodowania: strumień dociera, ale przeglądarka nie może go odtworzyć. Przyczyny i rozwiązania są różne."
+      },
+      {
+        "q": "Czy błąd 3000 dotyczy wszystkich przeglądarek?",
+        "a": "Nie, problem ten występuje częściej w przeglądarkach opartych na Chromium, gdy akceleracja sprzętowa koliduje ze sterownikiem karty graficznej. Firefox korzysta z innego dekodera i problem ten dotyczy go w mniejszym stopniu."
+      },
+      {
+        "q": "Czy StreamPulse automatycznie koryguje błąd 3000?",
+        "a": "StreamPulse wykrywa błąd 3000 i automatycznie ponownie ładuje odtwarzacz, aby wznowić strumieniowanie. Nie eliminuje to przyczyny źródłowej, ale pozwala uniknąć ręcznej interwencji."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "hata-3000-twitch-çözüm",
+    "linkLabel": "Twitch'te 3000 hatası: nasıl düzeltilir?",
+    "title": "Twitch Hata 3000: Nedenleri ve Çözümleri | StreamPulse",
+    "h1": "Twitch'te 3000 hatası: Neden ortaya çıkıyor ve nasıl giderilir?",
+    "description": "Twitch'teki 3000 hatası, medya kod çözme hatasıdır. Gerçek nedenler, etkinliğe göre sıralanmış çözümler ve otomatik yeniden yükleme.",
+    "intro": "3000 hatası (“Media Decode Error”), bağlantı sorunsuz çalışmasına rağmen Twitch oynatıcısını siyah ekranda dondurur. Bu hata, ağınızla değil, tarayıcının video akışını kod çözme işlemiyle ilgilidir. İşte hatanın gerçek nedenleri, en etkili olandan en az etkili olana doğru sıralanmış çözümler ve akışın yeniden başlatılmasını otomatikleştirme yöntemi.",
+    "howToSteps": [
+      {
+        "name": "Donanım hızlandırmayı devre dışı bırakma",
+        "text": "Donanım hızlandırma, video kod çözme işlemini GPU'ya devreder. Sürücü güncel değilse veya uyumsuzsa, kod çözme işlemi hiçbir hata mesajı vermeden başarısız olur. Tarayıcı ayarlarından bu özelliği devre dışı bırakın ve sayfayı yeniden yükleyin."
+      },
+      {
+        "name": "Tarayıcıyı güncelle",
+        "text": "Eski bir tarayıcı, Twitch tarafından kullanılan en son kodekleri desteklemeyebilir. Mevcut güncellemeleri kontrol edin ve tarayıcıyı yeniden başlatın."
+      },
+      {
+        "name": "GPU sürücülerini güncelleme",
+        "text": "Üreticinin web sitesine (NVIDIA, AMD, Intel) gidin ve sürücünün en son sürümünü yükleyin."
+      },
+      {
+        "name": "StreamPulse ile yeniden yüklemeyi otomatikleştirme",
+        "text": "StreamPulse'u kurun ve otomatik yeniden yükleme özelliğini etkinleştirin; böylece 1000, 2000 veya 3000 hatası oluştuğunda oynatıcı kendiliğinden yeniden başlatılacaktır."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Twitch'te 3000 hatası ne anlama geliyor?",
+        "answer": "3000 hatası, medya kod çözme hatasıdır: Video akışı tarayıcıya düzgün bir şekilde ulaşmaktadır, ancak tarayıcı bunu görüntülemek için kodunu çözememektedir. 2000 hatasından (ağ hatası) farklı olarak, sorun yerel video oynatma aşamasında ortaya çıkmaktadır.",
+        "body": [
+          "Tipik belirti, sesin çalışmaya devam ettiği halde ekranın kararması ya da oynatıcının tamamen donmasıdır. Bağlantı sorunu olmadığı için Twitch sayfasının geri kalan kısmı (sohbet, arayüz) çalışmaya devam eder."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "En sık görülen nedenler nelerdir?",
+        "answer": "Sıklık sırasına göre: donanım hızlanması, güncel olmayan bir tarayıcı, eski bir GPU sürücüsü ve ardından video akışını engelleyen uzantılar.",
+        "list": [
+          "<strong>Donanım hızlandırma.</strong> GPU, genellikle güncel olmayan bir sürücü nedeniyle Twitch tarafından kullanılan kodeki çözemiyor.",
+          "<strong>Tarayıcınız güncel değil.</strong> Güncellenmemiş bir tarayıcı, yeni bir formatı desteklemeyebilir.",
+          "<strong>Eski grafik sürücüsü.</strong> Güncel olmayan bir GPU sürücüsü, fark edilmeyen donanım kod çözme hatalarına neden olur.",
+          "<strong>Akışı engelleyen uzantılar.</strong> Bazı uzantılar akış başlıklarını değiştirir ve kod çözme işlemini bozar.",
+          "<strong>Önbellek bozuk.</strong> Güncel olmayan önbellek verileri, oynatıcının uygun olmayan bir kod çözücü kullanmasına neden oluyor."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "3000 hatasını adım adım nasıl düzeltebilirim?",
+        "answer": "Öncelikle tarayıcının donanım hızlandırma özelliğini devre dışı bırakın, ardından tarayıcıyı ve GPU sürücülerini güncelleyin. Bu işlemler, sorunların büyük çoğunluğunu çözer.",
+        "steps": [
+          {
+            "name": "Donanım hızlandırmayı devre dışı bırakın.",
+            "text": "Tarayıcı ayarlarında \"donanım hızlandırma\" seçeneğini bulun ve devre dışı bırakın."
+          },
+          {
+            "name": "Tarayıcıyı güncelleyin.",
+            "text": "Chrome, Edge, Brave veya Opera'nın en son sürümünü kullandığınızdan emin olun."
+          },
+          {
+            "name": "Twitch önbelleğini ve çerezlerini temizleyin.",
+            "text": "twitch.tv alan adını hedefleyin, ardından yeniden oturum açın."
+          },
+          {
+            "name": "Akış kalitesini değiştirin.",
+            "text": "Farklı bir kodek kullanmak için manuel olarak 720p veya 480p'ye geçin."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Her seferinde sayfanın yeniden yüklenmesini nasıl önleyebilirim?",
+        "answer": "StreamPulse, 1000, 2000 ve 3000 numaralı oynatıcı hatalarını algılar ve akışı otomatik olarak yeniden yükler; böylece manuel olarak kesintiye gerek kalmaz.",
+        "body": [
+          "Otomasyon, 3000 hatası ara sıra ortaya çıktığında özellikle yararlıdır. StreamPulse, sizin müdahale etmenize gerek kalmadan akışı yeniden başlatır.",
+          "Hata sürekli olarak ortaya çıkıyorsa, öncelikle nedenini (donanım hızlandırma veya sürücü) giderin: Sürekli yeniden yükleme yapmak, sorunu sadece gizlemeye yarar."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Twitch'te 2000 hatası ile 3000 hatası arasındaki fark nedir?",
+        "a": "2000 hatası bir ağ hatasıdır: akış bağlantısı kesilmiştir. 3000 hatası ise kod çözme hatasıdır: akış geliyor ancak tarayıcı bunu okuyamıyor. Nedenleri ve çözümleri birbirinden farklıdır."
+      },
+      {
+        "q": "3000 hatası tüm tarayıcıları etkiliyor mu?",
+        "a": "Hayır, bu sorun Chromium tabanlı tarayıcılarda, donanım hızlandırma ile GPU sürücüsü arasında çakışma olduğunda daha sık görülür. Firefox farklı bir kod çözücü kullanır ve bu sorundan daha az etkilenir."
+      },
+      {
+        "q": "StreamPulse, 3000 hatasını otomatik olarak düzeltir mi?",
+        "a": "StreamPulse, 3000 hatasını algılar ve akışı devam ettirmek için oynatıcıyı otomatik olarak yeniden yükler. Bu, sorunun temel nedenini ortadan kaldırmaz, ancak manuel müdahaleyi ortadan kaldırır."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "ошибка-3000-twitch-решение",
+    "linkLabel": "Ошибка 3000 на Twitch: как её устранить",
+    "title": "Ошибка 3000 на Twitch: причины и способы устранения | StreamPulse",
+    "h1": "Ошибка 3000 на Twitch: почему она возникает и как её устранить",
+    "description": "Ошибка 3000 на Twitch связана с сбоем при декодировании медиафайлов. Реальные причины, способы устранения, отсортированные по эффективности, и автоматическая перезагрузка.",
+    "intro": "Ошибка 3000 («Media Decode Error») приводит к зависанию проигрывателя Twitch на черном экране, хотя подключение работает. Она связана с декодированием видеопотока браузером, а не с вашей сетью. Ниже приведены реальные причины, способы устранения, отсортированные от наиболее до наименее эффективных, а также инструкции по автоматическому возобновлению трансляции.",
+    "howToSteps": [
+      {
+        "name": "Отключить аппаратное ускорение",
+        "text": "Аппаратное ускорение передает задачу декодирования видео графическому процессору (GPU). Если драйвер устарел или несовместим, декодирование завершается с ошибкой без отображения соответствующего сообщения. Отключите эту функцию в настройках браузера и перезагрузите страницу."
+      },
+      {
+        "name": "Обновить браузер",
+        "text": "Устаревший браузер может не поддерживать новейшие кодеки, используемые Twitch. Проверьте наличие обновлений и перезапустите браузер."
+      },
+      {
+        "name": "Обновить драйверы графического процессора",
+        "text": "Зайдите на сайт производителя (NVIDIA, AMD, Intel) и установите последнюю версию драйвера."
+      },
+      {
+        "name": "Автоматизация пополнения с помощью StreamPulse",
+        "text": "Установите StreamPulse и включите функцию автоматического перезапуска, чтобы проигрыватель запускался самостоятельно при возникновении ошибок 1000, 2000 или 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Что означает ошибка 3000 на Twitch?",
+        "answer": "Ошибка 3000 означает сбой декодирования медиа: видеопоток успешно поступает в браузер, но браузер не может его декодировать для отображения. В отличие от ошибки 2000 (сетевая), проблема связана с локальным воспроизведением видео.",
+        "body": [
+          "Типичным симптомом является черный экран при сохраняющемся звуке или полный сбой проигрывателя. Остальные элементы страницы Twitch (чат, интерфейс) продолжают работать, так как проблема не связана с подключением."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Каковы наиболее распространённые причины?",
+        "answer": "В порядке убывания частоты встречаемости: ускорение, устаревший браузер, устаревший драйвер графического процессора, а затем расширения, перехватывающие видеопоток.",
+        "list": [
+          "<strong>Аппаратное ускорение.</strong> Графический процессор не может декодировать кодек, используемый Twitch, что часто связано с устаревшим драйвером.",
+          "<strong>Устаревший браузер.</strong> В не обновленном браузере может отсутствовать поддержка новейших форматов.",
+          "<strong>Устаревший драйвер графической карты.</strong> Устаревший драйвер графического процессора приводит к незаметным ошибкам аппаратного декодирования.",
+          "<strong>Расширения, перехватывающие поток.</strong> Некоторые расширения изменяют заголовки потока и нарушают процесс декодирования.",
+          "<strong>Кэш поврежден.</strong> Устаревшие данные кэша вынуждают проигрыватель использовать неподходящий декодер."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Как пошагово устранить ошибку 3000?",
+        "answer": "Для начала отключите аппаратное ускорение в браузере, а затем обновите браузер и драйверы графического процессора. Эти действия позволяют устранить проблему в подавляющем большинстве случаев.",
+        "steps": [
+          {
+            "name": "Отключите аппаратное ускорение.",
+            "text": "В настройках браузера найдите пункт «аппаратное ускорение» и отключите его."
+          },
+          {
+            "name": "Обновите браузер.",
+            "text": "Убедитесь, что вы используете последнюю версию Chrome, Edge, Brave или Opera."
+          },
+          {
+            "name": "Очистите кэш и файлы cookie Twitch.",
+            "text": "Укажите домен twitch.tv, а затем войдите в систему заново."
+          },
+          {
+            "name": "Измените качество потока.",
+            "text": "Вручную переключитесь на разрешение 720p или 480p, чтобы заставить систему использовать другой кодек."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Как избежать перезагрузки страницы каждый раз?",
+        "answer": "StreamPulse обнаруживает ошибки считывателя 1000, 2000 и 3000 и автоматически перезагружает поток, что исключает необходимость ручного вмешательства.",
+        "body": [
+          "Автоматизация особенно полезна в тех случаях, когда ошибка 3000 возникает время от времени. StreamPulse перезапускает поток без вашего участия.",
+          "Если ошибка возникает постоянно, сначала устраните её причину (аппаратное ускорение или драйвер): постоянная перезагрузка лишь замаскирует проблему."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "В чём разница между ошибкой 2000 и ошибкой 3000 на Twitch?",
+        "a": "Ошибка 2000 — это сетевая ошибка: соединение с потоком прервано. Ошибка 3000 — это сбой декодирования: поток поступает, но браузер не может его воспроизвести. Причины и способы устранения этих ошибок различаются."
+      },
+      {
+        "q": "Ошибка 3000 возникает во всех браузерах?",
+        "a": "Нет, эта проблема чаще возникает в браузерах на базе Chromium, когда аппаратное ускорение вступает в конфликт с драйвером графического процессора. Firefox использует другой декодер и реже подвержен этой проблеме."
+      },
+      {
+        "q": "Устраняет ли StreamPulse ошибку 3000 автоматически?",
+        "a": "StreamPulse обнаруживает ошибку 3000 и автоматически перезагружает проигрыватель для возобновления потока. Это не устраняет первопричину, но избавляет от необходимости ручного вмешательства."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "エラー-3000-Twitch-解決策",
+    "linkLabel": "Twitchのエラー3000：解決方法",
+    "title": "Twitchのエラー3000：原因と解決策 | StreamPulse",
+    "h1": "Twitchのエラー3000：発生原因と解決方法",
+    "description": "Twitchのエラー3000は、メディアのデコードに失敗したことを示します。実際の原因、効果の高い順に並べた解決策、および自動再読み込みについて解説します。",
+    "intro": "エラー3000（「Media Decode Error」）が発生すると、接続は正常であるにもかかわらず、Twitchプレイヤーが黒い画面のまま固まってしまいます。このエラーは、ネットワークの問題ではなく、ブラウザによる動画ストリームのデコードに関連しています。 ここでは、実際の原因、効果的な順に並べた対処法、およびストリームの再生を自動で再開する方法について説明します。",
+    "howToSteps": [
+      {
+        "name": "ハードウェアアクセラレーションを無効にする",
+        "text": "ハードウェアアクセラレーションは、動画のデコード処理をGPUに委ねます。ドライバーが古いか互換性がない場合、デコードはエラー表示なしに失敗します。ブラウザの設定でこの機能を無効にし、ページを再読み込みしてください。"
+      },
+      {
+        "name": "ブラウザを更新する",
+        "text": "古いブラウザでは、Twitchで使用されている最新のコーデックに対応していない場合があります。利用可能なアップデートを確認し、ブラウザを再起動してください。"
+      },
+      {
+        "name": "GPUドライバーを更新する",
+        "text": "メーカー（NVIDIA、AMD、Intel）のウェブサイトにアクセスし、最新バージョンのドライバーをインストールしてください。"
+      },
+      {
+        "name": "StreamPulse を使ったリロードの自動化",
+        "text": "StreamPulseをインストールし、自動再読み込みを有効にすると、エラー1000、2000、または3000が発生した際に、プレーヤーが自動的に再起動するようになります。"
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Twitchのエラー3000とはどういう意味ですか？",
+        "answer": "エラー3000は、メディアのデコードに失敗したことを示します。動画ストリームはブラウザに正常に届いていますが、ブラウザがそれをデコードして表示することができません。 エラー2000（ネットワーク関連）とは異なり、この問題はローカルでの動画再生処理に起因しています。",
+        "body": [
+          "典型的な症状は、画面が真っ暗になるものの音声は正常に再生される状態、あるいはプレイヤーが完全にフリーズしてしまうことです。Twitchのページ（チャットやインターフェースなど）のその他の部分は、接続に問題がないため、正常に機能し続けます。"
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "最もよくある原因は何ですか？",
+        "answer": "発生頻度の高い順に、加速度、古いブラウザ、古いGPUドライバー、そして動画ストリームを傍受する拡張機能です。",
+        "list": [
+          "<strong>ハードウェアアクセラレーション。</strong>GPUがTwitchで使用されているコーデックをデコードできない場合があり、その原因は多くの場合、ドライバーが古くなっているためです。",
+          "<strong>お使いのブラウザは古いバージョンです。</strong>更新されていないブラウザでは、最新の形式に対応していない場合があります。",
+          "<strong>古いグラフィックドライバ。</strong>古いGPUドライバは、目立たないハードウェアデコードエラーを引き起こします。",
+          "<strong>トラフィックを傍受する拡張機能。</strong>一部の拡張機能は、トラフィックのヘッダーを変更し、デコードを妨げます。",
+          "<strong>キャッシュが破損しています。</strong>古いキャッシュデータのため、プレーヤーは不適切なデコーダーを使用せざるを得なくなっています。"
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "エラー3000を段階的に修正するにはどうすればよいですか？",
+        "answer": "まず、ブラウザのハードウェアアクセラレーションを無効にし、その後、ブラウザとGPUドライバを更新してください。これらの操作を行うことで、ほとんどの問題は解決します。",
+        "steps": [
+          {
+            "name": "ハードウェアアクセラレーションを無効にしてください。",
+            "text": "ブラウザの設定で「ハードウェアアクセラレーション」を探し、無効にしてください。"
+          },
+          {
+            "name": "ブラウザを最新バージョンに更新してください。",
+            "text": "Chrome、Edge、Brave、またはOperaの最新版を使用していることを確認してください。"
+          },
+          {
+            "name": "Twitchのキャッシュとクッキーを削除してください。",
+            "text": "twitch.tv ドメインを指定してから、再度ログインしてください。"
+          },
+          {
+            "name": "ストリームの画質を変更してください。",
+            "text": "720pまたは480pに手動で切り替えて、別のコーデックを強制的に使用してください。"
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "毎回ページを再読み込みせずに済む方法はありますか？",
+        "answer": "StreamPulseは、リーダーエラー1000、2000、3000を検知し、ストリームを自動的に再読み込みするため、手動での中断が不要になります。",
+        "body": [
+          "エラー3000が散発的に発生する場合、自動化は特に役立ちます。StreamPulseは、ユーザーが操作を行う必要なく、ストリームを再起動します。",
+          "エラーが繰り返し発生する場合は、まずその原因（ハードウェアのオーバーレイやドライバなど）に対処してください。再読み込みを繰り返しても、問題は隠れてしまうだけです。"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Twitchにおけるエラー2000とエラー3000の違いは何ですか？",
+        "a": "エラー2000はネットワークエラーです。ストリームへの接続が切断されています。エラー3000はデコードの失敗です。ストリームは受信されていますが、ブラウザがそれを再生できません。原因と解決策は異なります。"
+      },
+      {
+        "q": "エラー3000はすべてのブラウザで発生するのでしょうか？",
+        "a": "いいえ、この問題は、ハードウェアアクセラレーションがGPUドライバと競合する場合、Chromiumベースのブラウザでより頻繁に発生します。Firefoxは別のデコーダを使用しているため、この問題の影響は比較的少ないです。"
+      },
+      {
+        "q": "StreamPulseはエラー3000を自動的に修正しますか？",
+        "a": "StreamPulseはエラー3000を検知すると、プレーヤーを自動的に再読み込みしてストリームの再生を再開します。これにより根本的な原因は解決されませんが、手動での操作が不要になります。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "오류-3000-트위치-해결 방법",
+    "linkLabel": "Twitch에서 발생하는 오류 3000: 해결 방법",
+    "title": "Twitch 오류 3000: 원인 및 해결 방법 | StreamPulse",
+    "h1": "Twitch 오류 3000: 발생 원인과 해결 방법",
+    "description": "Twitch 오류 3000은 미디어 디코딩 실패를 의미합니다. 실제 원인, 효과 순으로 정리된 해결 방법, 그리고 자동 재로딩에 대해 알아보세요.",
+    "intro": "오류 3000(“Media Decode Error”)은 인터넷 연결이 정상적으로 이루어지고 있음에도 불구하고 Twitch 플레이어가 검은 화면에서 멈춰버리는 현상입니다. 이 오류는 네트워크 문제가 아니라 브라우저가 비디오 스트림을 디코딩하는 과정에서 발생하는 문제입니다. 다음은 실제 원인, 효과도가 높은 순서대로 정리된 해결 방법, 그리고 스트림 재시작을 자동화하는 방법입니다.",
+    "howToSteps": [
+      {
+        "name": "하드웨어 가속 비활성화",
+        "text": "하드웨어 가속 기능은 비디오 디코딩 작업을 GPU에 위임합니다. 드라이버가 오래되었거나 호환되지 않는 경우, 디코딩이 아무런 오류 메시지 없이 실패합니다. 브라우저 설정에서 이 기능을 비활성화한 후 페이지를 다시 불러오세요."
+      },
+      {
+        "name": "브라우저 업데이트하기",
+        "text": "구버전 브라우저는 Twitch에서 사용하는 최신 코덱을 지원하지 않을 수 있습니다. 사용 가능한 업데이트가 있는지 확인하고 브라우저를 다시 시작하세요."
+      },
+      {
+        "name": "GPU 드라이버 업데이트하기",
+        "text": "제조업체(NVIDIA, AMD, Intel)의 웹사이트를 방문하여 최신 버전의 드라이버를 설치하십시오."
+      },
+      {
+        "name": "StreamPulse를 사용하여 자동 재충전 설정하기",
+        "text": "StreamPulse를 설치하고 자동 재시작 기능을 활성화하면, 오류 코드 1000, 2000 또는 3000이 발생했을 때 플레이어가 자동으로 다시 시작됩니다."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Twitch에서 오류 3000은 무엇을 의미하나요?",
+        "answer": "오류 3000은 미디어 디코딩 실패를 의미합니다. 비디오 스트림은 브라우저로 정상적으로 수신되지만, 브라우저가 이를 디코딩하여 표시하지 못하는 경우입니다. 오류 2000(네트워크)과 달리, 이 문제는 로컬 비디오 렌더링 단계에서 발생합니다.",
+        "body": [
+          "전형적인 증상은 화면이 검게 변하지만 소리는 정상적으로 나오는 경우나, 플레이어가 완전히 멈추는 경우입니다. Twitch 페이지의 나머지 부분(채팅, 인터페이스)은 연결 문제가 아니기 때문에 정상적으로 작동합니다."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "가장 흔한 원인은 무엇인가요?",
+        "answer": "발생 빈도 순으로 보면: 물리적 가속, 구형 브라우저, 오래된 GPU 드라이버, 그리고 비디오 스트림을 가로채는 확장 프로그램 순입니다.",
+        "list": [
+          "<strong>하드웨어 가속.</strong> GPU가 Twitch에서 사용하는 코덱을 디코딩하지 못하는데, 이는 대개 구형 드라이버 때문인 경우가 많습니다.",
+          "<strong>브라우저가 구버전입니다.</strong> 최신 버전으로 업데이트되지 않은 브라우저는 최신 형식을 지원하지 않을 수 있습니다.",
+          "<strong>구형 그래픽 드라이버.</strong> 오래된 GPU 드라이버는 눈에 띄지 않는 하드웨어 디코딩 오류를 유발합니다.",
+          "<strong>스트림을 가로채는 확장 프로그램.</strong> 일부 확장 프로그램은 스트림의 헤더를 변경하여 디코딩을 방해합니다.",
+          "<strong>캐시가 손상되었습니다.</strong> 오래된 캐시 데이터로 인해 플레이어가 부적합한 디코더를 사용하게 됩니다."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "오류 3000을 단계별로 어떻게 해결할 수 있나요?",
+        "answer": "먼저 브라우저의 하드웨어 가속 기능을 비활성화한 다음, 브라우저와 GPU 드라이버를 업데이트하세요. 이렇게 하면 대부분의 문제가 해결됩니다.",
+        "steps": [
+          {
+            "name": "하드웨어 가속을 비활성화하십시오.",
+            "text": "브라우저 설정에서 “하드웨어 가속”을 찾아 비활성화하세요."
+          },
+          {
+            "name": "브라우저를 업데이트하세요.",
+            "text": "Chrome, Edge, Brave 또는 Opera의 최신 버전을 사용하고 있는지 확인하세요."
+          },
+          {
+            "name": "Twitch의 캐시와 쿠키를 삭제하세요.",
+            "text": "twitch.tv 도메인을 지정하고 다시 로그인하세요."
+          },
+          {
+            "name": "스트림 화질을 변경하세요.",
+            "text": "다른 코덱을 사용하도록 강제하려면 수동으로 720p 또는 480p로 전환하십시오."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "매번 페이지를 새로 고치지 않으려면 어떻게 해야 하나요?",
+        "answer": "StreamPulse는 1000, 2000, 3000번 플레이어 오류를 감지하고 스트림을 자동으로 다시 불러오므로, 수동으로 중단할 필요가 없습니다.",
+        "body": [
+          "오류 3000이 간헐적으로 발생할 때 자동화 기능이 특히 유용합니다. StreamPulse는 사용자가 별도로 개입할 필요 없이 스트림을 다시 시작합니다.",
+          "오류가 지속적으로 발생한다면, 먼저 원인(하드웨어 가속 또는 드라이버)을 해결하십시오. 계속해서 다시 로드하기만 해서는 문제를 일시적으로 가릴 뿐입니다."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Twitch에서 오류 2000과 오류 3000의 차이점은 무엇인가요?",
+        "a": "오류 2000은 네트워크 오류로, 스트림 연결이 끊어진 상태입니다. 오류 3000은 디코딩 실패로, 스트림은 수신되지만 브라우저에서 이를 재생할 수 없는 상태입니다. 원인과 해결 방법은 서로 다릅니다."
+      },
+      {
+        "q": "3000 오류는 모든 브라우저에서 발생하는가요?",
+        "a": "아니요, 이 문제는 크로미움 기반 브라우저에서 하드웨어 가속이 GPU 드라이버와 충돌할 때 더 자주 발생합니다. 파이어폭스는 다른 디코더를 사용하기 때문에 이 문제의 영향을 덜 받습니다."
+      },
+      {
+        "q": "StreamPulse는 오류 3000을 자동으로 수정하나요?",
+        "a": "StreamPulse는 오류 3000을 감지하면 자동으로 플레이어를 다시 불러와 스트리밍을 재개합니다. 이는 근본 원인을 해결하지는 않지만, 수동 개입을 없애줍니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "kesalahan-3000-twitch-solusi",
+    "linkLabel": "Kesalahan 3000 di Twitch: cara mengatasinya",
+    "title": "Kesalahan 3000 Twitch: Penyebab dan Solusi | StreamPulse",
+    "h1": "Kesalahan 3000 di Twitch: mengapa hal ini terjadi dan bagaimana cara mengatasinya",
+    "description": "Kesalahan 3000 di Twitch merupakan kegagalan dalam mendekode media. Penyebab sebenarnya, solusi yang diurutkan berdasarkan tingkat keefektifannya, dan pemuatan ulang otomatis.",
+    "intro": "Kesalahan 3000 (“Media Decode Error”) menyebabkan pemutar Twitch macet pada layar hitam meskipun koneksi internet berfungsi dengan baik. Kesalahan ini terkait dengan proses dekode streaming video oleh browser, bukan karena masalah jaringan Anda. Berikut adalah penyebab sebenarnya, solusi yang diurutkan dari yang paling efektif hingga yang paling kurang efektif, serta cara mengotomatiskan pemulihan streaming.",
+    "howToSteps": [
+      {
+        "name": "Menonaktifkan akselerasi perangkat keras",
+        "text": "Akselerasi perangkat keras mengalihkan proses dekodasi video ke GPU. Jika driver sudah usang atau tidak kompatibel, proses dekodasi akan gagal tanpa pemberitahuan. Nonaktifkan fitur ini di pengaturan browser, lalu muat ulang halaman."
+      },
+      {
+        "name": "Memperbarui peramban",
+        "text": "Browser yang sudah usang mungkin tidak mendukung codec terbaru yang digunakan oleh Twitch. Periksa pembaruan yang tersedia dan mulai ulang browser."
+      },
+      {
+        "name": "Memperbarui driver GPU",
+        "text": "Kunjungi situs web produsen (NVIDIA, AMD, Intel) dan instal versi driver terbaru."
+      },
+      {
+        "name": "Mengotomatiskan pengisian ulang dengan StreamPulse",
+        "text": "Instal StreamPulse dan aktifkan fitur pengisian ulang otomatis agar pemutar dapat berjalan kembali secara otomatis begitu terjadi kesalahan 1000, 2000, atau 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Apa arti kesalahan 3000 di Twitch?",
+        "answer": "Kesalahan 3000 merupakan kegagalan dalam mendekode media: aliran video memang berhasil diterima oleh browser, tetapi browser tidak dapat mendekodekannya untuk ditampilkan. Berbeda dengan kesalahan 2000 (jaringan), masalah ini terletak pada proses pemutaran video lokal.",
+        "body": [
+          "Gejala yang umum terjadi adalah layar menjadi hitam namun suara tetap berfungsi, atau pemutar video macet total. Bagian lain dari halaman Twitch (obrolan, antarmuka) tetap berfungsi karena masalahnya bukan terletak pada koneksi."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Apa saja penyebab yang paling umum?",
+        "answer": "Berdasarkan frekuensi kemunculannya: percepatan material, peramban yang sudah usang, driver GPU yang sudah ketinggalan zaman, lalu ekstensi yang menyadap aliran video.",
+        "list": [
+          "<strong>Akselerasi perangkat keras.</strong> GPU tidak dapat mendekode codec yang digunakan oleh Twitch, yang sering kali disebabkan oleh driver yang sudah usang.",
+          "<strong>Browser sudah usang.</strong> Browser yang belum diperbarui mungkin tidak mendukung format terbaru.",
+          "<strong>Driver grafis versi lama.</strong> Driver GPU yang sudah usang menyebabkan kesalahan dekodasi perangkat keras yang tidak terdeteksi.",
+          "<strong>Ekstensi yang mencegat aliran data.</strong> Beberapa ekstensi mengubah header aliran data dan mengganggu proses dekodasi.",
+          "<strong>Cache rusak.</strong> Data cache yang sudah usang memaksa pemutar untuk menggunakan dekoder yang tidak sesuai."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Bagaimana cara memperbaiki kesalahan 3000 langkah demi langkah?",
+        "answer": "Mulailah dengan menonaktifkan akselerasi perangkat keras pada browser, lalu perbarui browser dan driver GPU. Langkah-langkah ini biasanya dapat mengatasi sebagian besar masalah.",
+        "steps": [
+          {
+            "name": "Nonaktifkan akselerasi perangkat keras.",
+            "text": "Di pengaturan browser, cari \"akselerasi perangkat keras\" dan nonaktifkan fitur tersebut."
+          },
+          {
+            "name": "Perbarui peramban Anda.",
+            "text": "Pastikan Anda menggunakan versi terbaru dari Chrome, Edge, Brave, atau Opera."
+          },
+          {
+            "name": "Hapus cache dan cookie Twitch.",
+            "text": "Arahkan ke domain twitch.tv, lalu masuk kembali."
+          },
+          {
+            "name": "Ubah kualitas streaming.",
+            "text": "Ubah secara manual ke 720p atau 480p untuk memaksa penggunaan codec yang berbeda."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Bagaimana cara agar tidak perlu memuat ulang halaman setiap kali?",
+        "answer": "StreamPulse mendeteksi kesalahan pemutar 1000, 2000, dan 3000, serta secara otomatis memuat ulang aliran, sehingga menghilangkan kebutuhan untuk melakukan pemuatan ulang secara manual.",
+        "body": [
+          "Otomatisasi sangat berguna terutama ketika kesalahan 3000 terjadi sesekali. StreamPulse akan memulai ulang aliran tanpa Anda perlu melakukan apa pun.",
+          "Jika kesalahan tersebut terus-menerus terjadi, atasi terlebih dahulu penyebabnya (akselerasi perangkat keras atau driver): memuat ulang berulang-ulang hanya akan menyembunyikan masalah tersebut."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apa perbedaan antara kesalahan 2000 dan kesalahan 3000 di Twitch?",
+        "a": "Kesalahan 2000 adalah kesalahan jaringan: koneksi ke aliran data terputus. Kesalahan 3000 adalah kegagalan dekodasi: aliran data diterima, tetapi peramban tidak dapat membacanya. Penyebab dan solusinya berbeda."
+      },
+      {
+        "q": "Apakah kesalahan 3000 terjadi di semua peramban?",
+        "a": "Tidak, masalah ini lebih sering terjadi pada peramban berbasis Chromium ketika akselerasi perangkat keras mengalami konflik dengan driver GPU. Firefox menggunakan dekoder yang berbeda dan lebih jarang mengalami masalah ini."
+      },
+      {
+        "q": "Apakah StreamPulse secara otomatis memperbaiki kesalahan 3000?",
+        "a": "StreamPulse mendeteksi kesalahan 3000 dan secara otomatis memuat ulang pemutar untuk melanjutkan pemutaran. Hal ini tidak memperbaiki akar masalahnya, tetapi menghilangkan kebutuhan akan intervensi manual."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "fout-3000-twitch-oplossing",
+    "linkLabel": "Fout 3000 op Twitch: hoe los je dit op?",
+    "title": "Twitch-fout 3000: oorzaken en oplossingen | StreamPulse",
+    "h1": "Fout 3000 op Twitch: waarom deze fout optreedt en hoe je deze kunt verhelpen",
+    "description": "Fout 3000 van Twitch duidt op een fout bij het decoderen van media. Werkelijke oorzaken, oplossingen gerangschikt op effectiviteit en automatisch opnieuw laden.",
+    "intro": "Fout 3000 („Media Decode Error“) zorgt ervoor dat de Twitch-speler vastloopt op een zwart scherm, terwijl de verbinding wel werkt. Deze fout heeft te maken met het decoderen van de videostream door de browser, niet met je netwerk. Hieronder vind je de werkelijke oorzaken, de oplossingen gerangschikt van meest naar minst effectief, en hoe je het hervatten van de stream kunt automatiseren.",
+    "howToSteps": [
+      {
+        "name": "Hardwareversnelling uitschakelen",
+        "text": "Hardwareversnelling besteedt het decoderen van video uit aan de GPU. Als een stuurprogramma verouderd of incompatibel is, mislukt het decoderen zonder dat er een foutmelding verschijnt. Schakel deze functie uit in de browserinstellingen en laad de pagina opnieuw."
+      },
+      {
+        "name": "De browser bijwerken",
+        "text": "Een verouderde browser ondersteunt mogelijk niet de nieuwste codecs die door Twitch worden gebruikt. Controleer of er updates beschikbaar zijn en start de browser opnieuw op."
+      },
+      {
+        "name": "GPU-stuurprogramma's bijwerken",
+        "text": "Ga naar de website van de fabrikant (NVIDIA, AMD, Intel) en installeer de nieuwste versie van het stuurprogramma."
+      },
+      {
+        "name": "Het herladen automatiseren met StreamPulse",
+        "text": "Installeer StreamPulse en schakel automatisch opnieuw laden in, zodat de speler zichzelf opnieuw start zodra er een fout 1000, 2000 of 3000 optreedt."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Wat betekent foutmelding 3000 op Twitch?",
+        "answer": "Fout 3000 duidt op een fout bij het decoderen van media: de videostream komt wel degelijk binnen in de browser, maar deze kan deze niet decoderen om weer te geven. In tegenstelling tot fout 2000 (netwerk) ligt het probleem bij de lokale videoweergave.",
+        "body": [
+          "Het typische symptoom is een zwart scherm terwijl het geluid nog wel werkt, of een volledige vastloop van de speler. De rest van de Twitch-pagina (chat, interface) blijft gewoon werken, omdat de verbinding niet het probleem is."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Wat zijn de meest voorkomende oorzaken?",
+        "answer": "In volgorde van frequentie: de materiële versnelling, een verouderde browser, een verouderde GPU-driver en vervolgens de extensies die de videostream onderscheppen.",
+        "list": [
+          "<strong>Hardwareversnelling.</strong> De GPU kan de door Twitch gebruikte codec niet decoderen, vaak vanwege een verouderde driver.",
+          "<strong>Verouderde browser.</strong> Een browser die niet is bijgewerkt, biedt mogelijk geen ondersteuning voor een recent bestandsformaat.",
+          "<strong>Verouderde grafische driver.</strong> Een verouderde GPU-driver veroorzaakt onopgemerkte fouten bij de hardwarematige decodering.",
+          "<strong>Extensies die de datastroom onderscheppen.</strong> Sommige extensies wijzigen de headers van de datastroom en verstoren het decoderen.",
+          "<strong>Cache is beschadigd.</strong> Verouderde cachegegevens zorgen ervoor dat de speler een ongeschikte decoder moet gebruiken."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Hoe los je fout 3000 stap voor stap op?",
+        "answer": "Schakel eerst de hardwareversnelling van de browser uit en werk vervolgens de browser en de GPU-stuurprogramma's bij. Deze stappen lossen het overgrote deel van de problemen op.",
+        "steps": [
+          {
+            "name": "Schakel de hardwareversnelling uit.",
+            "text": "Zoek in de browserinstellingen naar \"hardwareversnelling\" en schakel deze uit."
+          },
+          {
+            "name": "Werk de browser bij.",
+            "text": "Controleer of je de nieuwste versie van Chrome, Edge, Brave of Opera gebruikt."
+          },
+          {
+            "name": "Wis de cache en cookies van Twitch.",
+            "text": "Ga naar de website twitch.tv en log opnieuw in."
+          },
+          {
+            "name": "Wijzig de streamkwaliteit.",
+            "text": "Schakel handmatig over naar 720p of 480p om een andere codec te gebruiken."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Hoe kan ik voorkomen dat de pagina telkens opnieuw wordt geladen?",
+        "answer": "StreamPulse detecteert leesfouten 1000, 2000 en 3000 en laadt de stream automatisch opnieuw, waardoor handmatig onderbreken overbodig wordt.",
+        "body": [
+          "Automatisering is vooral handig wanneer foutcode 3000 slechts af en toe optreedt. StreamPulse start de stream opnieuw op zonder dat u iets hoeft te doen.",
+          "Als de fout zich stelselmatig voordoet, pak dan eerst de oorzaak aan (hardwareversnelling of stuurprogramma): het steeds opnieuw laden zou het probleem alleen maar verdoezelen."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wat is het verschil tussen fout 2000 en fout 3000 op Twitch?",
+        "a": "Fout 2000 is een netwerkfout: de verbinding met de stream is verbroken. Fout 3000 is een decoderingsfout: de stream komt wel binnen, maar de browser kan deze niet afspelen. De oorzaken en oplossingen zijn verschillend."
+      },
+      {
+        "q": "Treft fout 3000 alle browsers?",
+        "a": "Nee, het komt vaker voor bij op Chromium gebaseerde browsers wanneer de hardwareversnelling in conflict raakt met het GPU-stuurprogramma. Firefox maakt gebruik van een andere decoder en heeft hier minder last van."
+      },
+      {
+        "q": "Lost StreamPulse foutcode 3000 automatisch op?",
+        "a": "StreamPulse detecteert fout 3000 en laadt de speler automatisch opnieuw om de stream te hervatten. Dit lost de onderliggende oorzaak niet op, maar maakt handmatig ingrijpen overbodig."
+      }
+    ]
+  },
+  "sv": {
+    "slug": "fel-3000-twitch-lösning",
+    "linkLabel": "Fel 3000 på Twitch: så här åtgärdar du det",
+    "title": "Fel 3000 på Twitch: orsaker och lösningar | StreamPulse",
+    "h1": "Fel 3000 på Twitch: varför det uppstår och hur man åtgärdar det",
+    "description": "Fel 3000 på Twitch beror på att avkodningen av media misslyckades. De verkliga orsakerna, lösningar rangordnade efter effektivitet samt automatisk omladdning.",
+    "intro": "Fel 3000 (”Media Decode Error”) gör att Twitch-spelaren fastnar på en svart skärm trots att internetanslutningen fungerar. Felet beror på webbläsarens avkodning av videoströmmen, inte på ditt nätverk. Här är de verkliga orsakerna, lösningarna rangordnade från mest till minst effektiva, samt hur du kan automatisera återställningen av strömmen.",
+    "howToSteps": [
+      {
+        "name": "Inaktivera hårdvaruacceleration",
+        "text": "Hårdvaruacceleration överlåter avkodningen av video till GPU:n. Om en drivrutin är föråldrad eller inkompatibel misslyckas avkodningen utan att något meddelande visas. Inaktivera funktionen i webbläsarens inställningar och ladda om sidan."
+      },
+      {
+        "name": "Uppdatera webbläsaren",
+        "text": "En föråldrad webbläsare kanske inte stöder de senaste codecs som används av Twitch. Kontrollera om det finns uppdateringar och starta om webbläsaren."
+      },
+      {
+        "name": "Uppdatera GPU-drivrutinerna",
+        "text": "Gå till tillverkarens webbplats (NVIDIA, AMD, Intel) och installera den senaste versionen av drivrutinen."
+      },
+      {
+        "name": "Automatisera uppladdningen med StreamPulse",
+        "text": "Installera StreamPulse och aktivera automatisk omstart så att spelaren startar om automatiskt så snart ett fel 1000, 2000 eller 3000 uppstår."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Vad betyder felkod 3000 på Twitch?",
+        "answer": "Fel 3000 innebär att avkodningen av mediet har misslyckats: videoströmmen når visserligen webbläsaren, men den kan inte avkoda den för att visa den. Till skillnad från fel 2000 (nätverk) ligger problemet i den lokala videouppspelningen.",
+        "body": [
+          "Det typiska symptomet är en svart skärm medan ljudet fortfarande fungerar, eller att spelaren helt hänger sig. Resten av Twitch-sidan (chatten, gränssnittet) fungerar som vanligt eftersom det inte är något fel på internetanslutningen."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Vilka är de vanligaste orsakerna?",
+        "answer": "I ordning efter hur ofta de förekommer: materiell acceleration, en föråldrad webbläsare, en gammal GPU-drivrutin och därefter tillägg som avlyssnar videoströmmen.",
+        "list": [
+          "<strong>Hårdvaruacceleration.</strong> GPU:n klarar inte av att avkoda den kodek som Twitch använder, ofta på grund av en föråldrad drivrutin.",
+          "<strong>Föråldrad webbläsare.</strong> En webbläsare som inte är uppdaterad kanske inte stöder ett nyare format.",
+          "<strong>Föråldrad grafikkortdrivrutin.</strong> En föråldrad GPU-drivrutin orsakar dolda fel vid hårdvaruavkodning.",
+          "<strong>Tillägg som avlyssnar flödet.</strong> Vissa tillägg ändrar flödets rubriker och stör avkodningen.",
+          "<strong>Cachen är skadad.</strong> Föråldrade cachedata tvingar spelaren att använda en olämplig avkodare."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Hur åtgärdar man fel 3000 steg för steg?",
+        "answer": "Börja med att inaktivera webbläsarens hårdvaruacceleration och uppdatera sedan webbläsaren och GPU-drivrutinerna. Dessa åtgärder löser de allra flesta fallen.",
+        "steps": [
+          {
+            "name": "Inaktivera hårdvaruacceleration.",
+            "text": "I webbläsarens inställningar söker du efter ”hårdvaruacceleration” och inaktiverar den."
+          },
+          {
+            "name": "Uppdatera webbläsaren.",
+            "text": "Kontrollera att du använder den senaste versionen av Chrome, Edge, Brave eller Opera."
+          },
+          {
+            "name": "Rensa cacheminnet och cookies på Twitch.",
+            "text": "Ange domänen twitch.tv och logga sedan in på nytt."
+          },
+          {
+            "name": "Ändra strömkvaliteten.",
+            "text": "Ställ in upplösningen manuellt till 720p eller 480p för att tvinga fram en annan kodek."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Hur kan man undvika att behöva ladda om sidan varje gång?",
+        "answer": "StreamPulse upptäcker läsfel 1000, 2000 och 3000 och laddar om strömmen automatiskt, vilket eliminerar behovet av manuell avbrytning.",
+        "body": [
+          "Automatisering är särskilt användbar när fel 3000 uppträder sporadiskt. StreamPulse startar om strömmen utan att du behöver göra något.",
+          "Om felet uppstår systematiskt bör du först åtgärda orsaken (hårdvaruacceleration eller drivrutin): att starta om systemet om och om igen skulle bara dölja problemet."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Vad är skillnaden mellan fel 2000 och fel 3000 på Twitch?",
+        "a": "Fel 2000 är ett nätverksfel: anslutningen till strömmen har avbrutits. Fel 3000 är ett avkodningsfel: strömmen kommer fram men webbläsaren kan inte läsa den. Orsakerna och lösningarna skiljer sig åt."
+      },
+      {
+        "q": "Gäller fel 3000 alla webbläsare?",
+        "a": "Nej, det förekommer oftare i Chromium-baserade webbläsare när hårdvaruaccelerationen krockar med GPU-drivrutinen. Firefox använder en annan avkodare och drabbas därför i mindre utsträckning."
+      },
+      {
+        "q": "Rättar StreamPulse automatiskt fel 3000?",
+        "a": "StreamPulse upptäcker fel 3000 och startar om spelaren automatiskt för att återuppta strömningen. Detta åtgärdar inte den bakomliggande orsaken, men eliminerar behovet av manuellt ingripande."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "chyba-3000-twitch-řešení",
+    "linkLabel": "Chyba 3000 na Twitchi: jak ji opravit",
+    "title": "Chyba 3000 na Twitchi: příčiny a řešení | StreamPulse",
+    "h1": "Chyba 3000 na Twitchi: proč k ní dochází a jak ji opravit",
+    "description": "Chyba 3000 na Twitchi znamená selhání dekódování médií. Skutečné příčiny, řešení seřazená podle účinnosti a automatické obnovení stránky.",
+    "intro": "Chyba 3000 („Media Decode Error“) způsobuje, že se přehrávač Twitch zasekne na černé obrazovce, i když připojení funguje. Souvisí s dekódováním videostreamu v prohlížeči, nikoli s vaší sítí. Zde jsou skutečné příčiny, řešení seřazená od nejúčinnějšího po nejméně účinné a návod, jak automatizovat obnovení přenosu.",
+    "howToSteps": [
+      {
+        "name": "Vypnout hardwarovou akceleraci",
+        "text": "Hardwarová akcelerace přenáší dekódování videa na grafický procesor (GPU). Pokud je ovladač zastaralý nebo nekompatibilní, dekódování se bez upozornění nezdaří. Vypněte tuto funkci v nastavení prohlížeče a stránku znovu načtěte."
+      },
+      {
+        "name": "Aktualizovat prohlížeč",
+        "text": "Zastaralý prohlížeč nemusí podporovat nejnovější kodeky používané službou Twitch. Zkontrolujte, zda jsou k dispozici aktualizace, a restartujte prohlížeč."
+      },
+      {
+        "name": "Aktualizovat ovladače grafické karty",
+        "text": "Navštivte webové stránky výrobce (NVIDIA, AMD, Intel) a nainstalujte si nejnovější verzi ovladače."
+      },
+      {
+        "name": "Automatizace dobíjení pomocí StreamPulse",
+        "text": "Nainstalujte StreamPulse a zapněte automatické restartování, aby se přehrávač sám restartoval, jakmile dojde k chybě 1000, 2000 nebo 3000."
+      }
+    ],
+    "sections": [
+      {
+        "id": "signification",
+        "h2": "Co znamená chyba 3000 na Twitchi?",
+        "answer": "Chyba 3000 znamená selhání dekódování médií: video stream se do prohlížeče dostává správně, ale prohlížeč jej nedokáže dekódovat a zobrazit. Na rozdíl od chyby 2000 (síťová chyba) se problém týká lokálního zpracování videa.",
+        "body": [
+          "Typickým příznakem je černá obrazovka, přičemž zvuk funguje, nebo úplné zamrznutí přehrávače. Zbytek stránky Twitch (chat, uživatelské rozhraní) zůstává funkční, protože problém nesouvisí s připojením."
+        ]
+      },
+      {
+        "id": "causes",
+        "h2": "Jaké jsou nejčastější příčiny?",
+        "answer": "Seřazeno podle četnosti: zrychlení hardwaru, zastaralý prohlížeč, starý ovladač grafické karty a poté rozšíření, která zachycují video proud.",
+        "list": [
+          "<strong>Hardwarová akcelerace.</strong> Grafický procesor nedokáže dekódovat kodek používaný službou Twitch, což je často způsobeno zastaralým ovladačem.",
+          "<strong>Prohlížeč je zastaralý.</strong> Neaktualizovaný prohlížeč nemusí podporovat nejnovější formáty.",
+          "<strong>Zastaralý grafický ovladač.</strong> Zastaralý ovladač grafické karty způsobuje skryté chyby hardwarového dekódování.",
+          "<strong>Rozšíření, která zachycují datový tok.</strong> Některá rozšíření mění hlavičky datového toku a narušují dekódování.",
+          "<strong>Poškozená mezipaměť.</strong> Zastaralá data v mezipaměti nutí přehrávač používat nevhodný dekodér."
+        ]
+      },
+      {
+        "id": "solutions",
+        "h2": "Jak krok za krokem opravit chybu 3000?",
+        "answer": "Nejprve deaktivujte hardwarovou akceleraci prohlížeče a poté aktualizujte prohlížeč i ovladače grafické karty. Tyto kroky vyřeší drtivou většinu případů.",
+        "steps": [
+          {
+            "name": "Vypněte hardwarovou akceleraci.",
+            "text": "V nastavení prohlížeče vyhledejte položku „hardwarová akcelerace“ a deaktivujte ji."
+          },
+          {
+            "name": "Aktualizujte prohlížeč.",
+            "text": "Zkontrolujte, zda používáte nejnovější verzi prohlížeče Chrome, Edge, Brave nebo Opera."
+          },
+          {
+            "name": "Vymažte mezipaměť a soubory cookie služby Twitch.",
+            "text": "Zadejte doménu twitch.tv a poté se znovu přihlaste."
+          },
+          {
+            "name": "Změňte kvalitu streamu.",
+            "text": "Ručně přepněte na rozlišení 720p nebo 480p, abyste vynutili použití jiného kodeku."
+          }
+        ]
+      },
+      {
+        "id": "automatiser",
+        "h2": "Jak se vyhnout tomu, aby se stránka pokaždé znovu načítala?",
+        "answer": "StreamPulse detekuje chyby přehrávače 1000, 2000 a 3000 a automaticky znovu načte stream, čímž eliminuje nutnost ručního přerušení.",
+        "body": [
+          "Automatizace je obzvláště užitečná v případech, kdy se chyba 3000 vyskytuje jen sporadicky. StreamPulse obnoví přenos, aniž byste museli zasahovat.",
+          "Pokud se chyba vyskytuje systematicky, nejprve odstraňte její příčinu (hardwarová akcelerace nebo ovladač): opakované načítání by problém pouze zakrylo."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Jaký je rozdíl mezi chybou 2000 a chybou 3000 na Twitchi?",
+        "a": "Chyba 2000 je síťová chyba: připojení ke streamu bylo přerušeno. Chyba 3000 znamená selhání dekódování: stream přichází, ale prohlížeč jej nedokáže přehrát. Příčiny a řešení se liší."
+      },
+      {
+        "q": "Týká se chyba 3000 všech prohlížečů?",
+        "a": "Ne, tento problém se vyskytuje častěji v prohlížečích založených na Chromiu, když dochází ke konfliktu mezi hardwarovou akcelerací a ovladačem grafické karty. Firefox používá jiný dekodér a je tímto problémem zasažen méně."
+      },
+      {
+        "q": "Opravuje StreamPulse chybu 3000 automaticky?",
+        "a": "StreamPulse detekuje chybu 3000 a automaticky znovu načte přehrávač, aby obnovil přenos. To sice nevyřeší příčinu problému, ale eliminuje nutnost ručního zásahu."
+      }
+    ]
+  }
+}
