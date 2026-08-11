@@ -86,6 +86,64 @@ function buildHead(page, lang) {
     )
     .join('\n    ');
 
+
+  const schemaBreadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": t.home,
+        "item": ORIGIN + prefix(lang) + "/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": page.h1[lang] || page.title[lang],
+        "item": canonical
+      }
+    ]
+  };
+
+  const schemaOrgAndSoftware = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": ORIGIN + "/#organization",
+        "name": "StreamPulse",
+        "url": ORIGIN,
+        "logo": ORIGIN + "/images/logo.png",
+        "sameAs": [
+          "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh",
+          "https://github.com/AlexisAMZ/streampulse-extension",
+          "https://github.com/AlexisAMZ",
+          "https://alternativeto.net/software/streampulse/"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": ORIGIN + "/#software",
+        "name": "StreamPulse",
+        "description": page.description[lang],
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome, Edge, Brave, Opera",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@id": ORIGIN + "/#organization"
+        },
+        "url": CWS
+      }
+    ]
+  };
+
+  const jsonLdScripts = `<script type="application/ld+json">\n${JSON.stringify(schemaBreadcrumb, null, 2)}\n</script>\n    <script type="application/ld+json">\n${JSON.stringify(schemaOrgAndSoftware, null, 2)}\n</script>`;
+
   return `    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${esc(page.title[lang])}</title>
@@ -115,7 +173,7 @@ function buildHead(page, lang) {
     ${og.twitterImageTags(ORIGIN, lang, '    ')}
 
     <link rel="icon" type="image/png" href="/images/logo.png" />
-    <link rel="stylesheet" href="/css/styles.css" />`;
+    <link rel="stylesheet" href="/css/styles.css" />\n    ${jsonLdScripts}`;
 }
 
 function buildHeader(lang) {
@@ -145,6 +203,12 @@ function buildFooter(lang) {
   return `    <footer class="site-footer">
       <div class="container footer-content">
         <p>&copy; <span id="current-year"></span> StreamPulse. ${t.rights}</p>
+        <nav class="footer-links">
+          <a href="${p}/erreur-2000-twitch-solution.html">Erreur 2000</a>
+          <a href="${p}/erreur-3000-twitch-solution.html">Erreur 3000</a>
+          <a href="${p}/twitch-drops-automatique.html">Twitch Drops</a>
+          <a href="${p}/points-de-chaine-automatiques-twitch.html">Points de chaîne</a>
+        </nav>
         <nav class="footer-links">
           <a href="/privacy">${t.privacy}</a>
           <a href="/terms">${t.terms}</a>
