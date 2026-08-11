@@ -573,8 +573,17 @@ function absolutizeAssets(html) {
 const contentKeys = ['error2000', 'error3000', 'drops', 'points', 'extensionKick'];
 const contentSlugs = {};
 contentKeys.forEach(k => {
+  contentSlugs[k] = {};
   try {
-    contentSlugs[k] = require(`./content/i18n/${k}.json`);
+    const jsData = require(`./content/${k}.js`);
+    contentSlugs[k].fr = { slug: jsData.slug.fr, title: jsData.linkLabel?.fr || jsData.title.fr };
+    contentSlugs[k].en = { slug: jsData.slug.en, title: jsData.linkLabel?.en || jsData.title.en };
+  } catch (e) {
+    console.warn(`Could not load JS for ${k}`);
+  }
+  try {
+    const jsonData = require(`./content/i18n/${k}.json`);
+    Object.assign(contentSlugs[k], jsonData);
   } catch (e) {
     console.warn(`Could not load i18n JSON for ${k}`);
   }
@@ -585,13 +594,14 @@ contentKeys.forEach(k => {
  */
 function localizeInternalLinks(html, lang) {
   // Replace data-guide links
-  html = html.replace(/<a([^>]*?)data-guide="([^"]+)"([^>]*?)href="([^"]+)"([^>]*?)>/g, (match, before, key, middle, oldHref, after) => {
+  html = html.replace(/<a([^>]*?)data-guide="([^"]+)"([^>]*?)href="([^"]+)"([^>]*?)>(.*?)<\/a>/g, (match, before, key, middle, oldHref, after, text) => {
     const slugObj = contentSlugs[key];
     if (slugObj && slugObj[lang] && slugObj[lang].slug) {
       const prefix = lang === SOURCE_LANG ? '' : `/${LOCALES[lang].dir}`;
+      const title = slugObj[lang].title;
       // Note: Some languages use .html in the past, but the new build generates extension-less directories, except for the generated root files.
       // Wait, build-content.js generates `/slug` without .html. Let's use `/slug`.
-      return `<a${before}data-guide="${key}"${middle}href="${prefix}/${slugObj[lang].slug}"${after}>`;
+      return `<a${before}data-guide="${key}"${middle}href="${prefix}/${slugObj[lang].slug}"${after}>${title}</a>`;
     }
     return match;
   });

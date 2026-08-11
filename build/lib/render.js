@@ -18,8 +18,17 @@ const CWS =
 const contentKeys = ['error2000', 'error3000', 'drops', 'points', 'extensionKick'];
 const contentSlugs = {};
 contentKeys.forEach(k => {
+  contentSlugs[k] = {};
   try {
-    contentSlugs[k] = require(`../content/i18n/${k}.json`);
+    const jsData = require(`../content/${k}.js`);
+    contentSlugs[k].fr = { slug: jsData.slug.fr, title: jsData.linkLabel?.fr || jsData.title.fr };
+    contentSlugs[k].en = { slug: jsData.slug.en, title: jsData.linkLabel?.en || jsData.title.en };
+  } catch (e) {
+    console.warn(`Could not load JS for ${k} in render.js`);
+  }
+  try {
+    const jsonData = require(`../content/i18n/${k}.json`);
+    Object.assign(contentSlugs[k], jsonData);
   } catch (e) {
     console.warn(`Could not load i18n JSON for ${k} in render.js`);
   }
