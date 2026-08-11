@@ -190,6 +190,16 @@ function buildHeader(lang) {
         <nav class="main-nav">
           <a href="${p}/#features">${t.features}</a>
           <a href="${p}/#faq">${t.faq}</a>
+          <div class="nav-dropdown">
+            <a href="#" style="cursor: default;" onclick="event.preventDefault()">${t.guides || 'Guides'} ▾</a>
+            <div class="nav-dropdown-content">
+              <a href="${p}/erreur-2000-twitch-solution.html">Erreur 2000</a>
+              <a href="${p}/erreur-3000-twitch-solution.html">Erreur 3000</a>
+              <a href="${p}/twitch-drops-automatique.html">Twitch Drops</a>
+              <a href="${p}/points-de-chaine-automatiques-twitch.html">Points de chaîne</a>
+              <a href="${p}/extension-kick.html">Kick Extension</a>
+            </div>
+          </div>
           <a href="/support">${t.support}</a>
           <a href="${CWS}" target="_blank" rel="noopener">${t.install}</a>
         </nav>
