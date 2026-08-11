@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "FAQ",
   "nav.support": "지원",
   "nav.install": "설치",
-  "hero.eyebrow": "버전 2.0 · Twitch · Kick",
+  "hero.eyebrow": "버전 26.8.11 · Twitch · Kick",
   "hero.h1a": "놓치지 마세요",
   "hero.h1b": "단 하나의 방송도",
   "hero.h1c": "Twitch와 Kick에서.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Twitch 방송에서 예측이 시작되면 플레이어 위에 반투명 패널이 나타납니다. 투표하고 배당률과 남은 시간을 확인할 수 있으며, 오버레이는 언제든 옮기거나 닫을 수 있습니다.",
   "support.faq.q7": "탭 아이콘이 왜 바뀌나요?",
   "support.faq.a7": "설정에서 옵션을 켜면 StreamPulse가 탭의 파비콘을 방송 중인 스트리머의 프로필 사진으로 바꾸고 모서리에 빨간 LIVE 점을 표시합니다. 어떤 탭에서 방송이 재생 중인지 바로 알 수 있습니다.",
+  "guides.bttv.title": "BetterTTV 대 StreamPulse",
+  "guides.bttv.desc": "BetterTTV(BTTV)와 StreamPulse의 완벽한 비교.",
+  "guides.ffz.title": "FrankerFaceZ 대 StreamPulse",
+  "guides.ffz.desc": "Twitch 경험을 향상하려면 어떤 확장 프로그램을 선택해야 합니까?",
+  "guides.7tv.title": "7TV 대 StreamPulse",
+  "guides.7tv.desc": "7TV 또는 StreamPulse를 사용해야 합니까? 장점과 차이점.",
+  "guides.latency.title": "낮은 Twitch 대기 시간",
+  "guides.latency.desc": "중단 없이 저지연 모드를 강제하는 방법",
+  "guides.refresh.title": "자동 새로고침 트위치",
+  "guides.refresh.desc": "충돌 중에 비디오 플레이어를 자동으로 다시 로드합니다."
 };

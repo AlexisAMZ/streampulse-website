@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "よくある質問",
   "nav.support": "サポート",
   "nav.install": "インストール",
-  "hero.eyebrow": "バージョン 2.0 · Twitch · Kick",
+  "hero.eyebrow": "バージョン 26.8.11 · Twitch · Kick",
   "hero.h1a": "配信を",
   "hero.h1b": "見逃さない",
   "hero.h1c": "Twitch と Kick で。",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Twitch の配信で予測が始まると、プレーヤー上に半透明のパネルが表示されます。投票、オッズと残り時間の確認ができ、オーバーレイはいつでも移動または非表示にできます。",
   "support.faq.q7": "タブのアイコンが変わるのはなぜですか？",
   "support.faq.a7": "設定で有効にすると、StreamPulse はタブのファビコンを配信中の配信者のプロフィール画像に置き換え、角に赤い LIVE ドットを表示します。どのタブが配信中かひと目で分かります。",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "BetterTTV (BTTV) と StreamPulse の完全な比較。",
+  "guides.ffz.title": "FrankerFaceZ vs StreamPulse",
+  "guides.ffz.desc": "Twitch エクスペリエンスを向上させるには、どの拡張機能を選択する必要がありますか?",
+  "guides.7tv.title": "7TV vs ストリームパルス",
+  "guides.7tv.desc": "7TV と StreamPulse のどちらを使用するべきですか?利点と相違点。",
+  "guides.latency.title": "Twitch の遅延が短い",
+  "guides.latency.desc": "中断せずに低遅延モードを強制する方法。",
+  "guides.refresh.title": "自動更新ツイッチ",
+  "guides.refresh.desc": "クラッシュ時にビデオプレーヤーを自動的にリロードします。"
 };

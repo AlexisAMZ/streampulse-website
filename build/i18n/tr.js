@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "SSS",
   "nav.support": "Destek",
   "nav.install": "Yükle",
-  "hero.eyebrow": "Sürüm 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Sürüm 26.8.11 · Twitch · Kick",
   "hero.h1a": "Hiçbir yayını",
   "hero.h1b": "kaçırma",
   "hero.h1c": "Twitch ve Kick'te.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Twitch yayınında bir tahmin başladığında oynatıcının üzerinde yarı saydam yüzen bir panel çıkar. Oy verebilir, oranları ve kalan süreyi görebilir, katmanı istediğiniz an taşıyabilir veya kapatabilirsiniz.",
   "support.faq.q7": "Sekme simgem neden değişiyor?",
   "support.faq.a7": "Ayarlarda seçenek açıksa StreamPulse sekmenin favicon'unu yayındaki yayıncının profil fotoğrafıyla değiştirir; köşedeki kırmızı LIVE noktası sayesinde hangi sekmede yayın olduğunu anında görürsünüz.",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "BetterTTV (BTTV) ve StreamPulse arasındaki karşılaştırmayı tamamlayın.",
+  "guides.ffz.title": "FrankerFaceZ vs StreamPulse",
+  "guides.ffz.desc": "Twitch deneyiminizi geliştirmek için hangi uzantıyı seçmelisiniz?",
+  "guides.7tv.title": "7TV vs StreamPulse",
+  "guides.7tv.desc": "7TV mi yoksa StreamPulse mu kullanmalısınız? Avantajları ve farklılıkları.",
+  "guides.latency.title": "Düşük Twitch gecikmesi",
+  "guides.latency.desc": "Düşük gecikme modunu kesintisiz olarak nasıl zorlayabilirim?",
+  "guides.refresh.title": "Twitch'i Otomatik Yenile",
+  "guides.refresh.desc": "Çökmeler sırasında video oynatıcıyı otomatik olarak yeniden yükleyin."
 };

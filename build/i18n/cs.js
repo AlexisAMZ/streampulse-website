@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "Časté dotazy",
   "nav.support": "Podpora",
   "nav.install": "Nainstalovat",
-  "hero.eyebrow": "Verze 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Verze 26.8.11 · Twitch · Kick",
   "hero.h1a": "Nezmeškejte",
   "hero.h1b": "žádné vysílání",
   "hero.h1c": "na Twitchi a Kicku.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Jakmile na Twitch vysílání začne predikce, nad přehrávačem se objeví poloprůhledný plovoucí panel. Můžete hlasovat, sledovat kurzy i zbývající čas a překryv kdykoli přesunout nebo zavřít.",
   "support.faq.q7": "Proč se mění ikona mé karty?",
   "support.faq.a7": "Když je volba zapnutá v nastavení, StreamPulse nahradí favicon karty profilovou fotkou vysílajícího streamera a přidá červenou tečku LIVE v rohu, abyste hned viděli, která karta hraje vysílání.",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "Kompletní srovnání mezi BetterTTV (BTTV) a StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ vs StreamPulse",
+  "guides.ffz.desc": "Které rozšíření byste si měli vybrat, abyste zlepšili svůj zážitek z Twitche?",
+  "guides.7tv.title": "7TV vs StreamPulse",
+  "guides.7tv.desc": "Měli byste používat 7TV nebo StreamPulse? Výhody a rozdíly.",
+  "guides.latency.title": "Nízká latence Twitch",
+  "guides.latency.desc": "Jak vynutit režim nízké latence bez přerušení.",
+  "guides.refresh.title": "Automatické obnovení škubnutí",
+  "guides.refresh.desc": "Automaticky znovu načíst přehrávač videa během selhání."
 };

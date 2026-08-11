@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "Vanliga frågor",
   "nav.support": "Support",
   "nav.install": "Installera",
-  "hero.eyebrow": "Version 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Version 26.8.11 · Twitch · Kick",
   "hero.h1a": "Missa aldrig",
   "hero.h1b": "en stream",
   "hero.h1c": "på Twitch och Kick.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "När en prediktion startar i Twitch-sändningen dyker en halvgenomskinlig flytande panel upp över spelaren. Du kan rösta, se odds och återstående tid, och flytta eller stänga överlägget när du vill.",
   "support.faq.q7": "Varför ändras ikonen på min flik?",
   "support.faq.a7": "Om alternativet är på i inställningarna byter StreamPulse flikens favicon mot profilbilden på streamern som sänder, plus en röd LIVE-punkt i hörnet så att du direkt ser vilken flik som spelar en sändning.",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "Komplett jämförelse mellan BetterTTV (BTTV) och StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ vs StreamPulse",
+  "guides.ffz.desc": "Vilket tillägg ska du välja för att förbättra din Twitch-upplevelse?",
+  "guides.7tv.title": "7TV vs StreamPulse",
+  "guides.7tv.desc": "Ska du använda 7TV eller StreamPulse? Fördelar och skillnader.",
+  "guides.latency.title": "Låg Twitch-latens",
+  "guides.latency.desc": "Hur man tvingar fram låg latensläge utan avbrott.",
+  "guides.refresh.title": "Auto-Refresh Twitch",
+  "guides.refresh.desc": "Ladda om videospelaren automatiskt under kraschar."
 };

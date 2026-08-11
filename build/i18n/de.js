@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "FAQ",
   "nav.support": "Support",
   "nav.install": "Installieren",
-  "hero.eyebrow": "Version 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Version 26.8.11 · Twitch · Kick",
   "hero.h1a": "Verpasse nie",
   "hero.h1b": "wieder einen Stream",
   "hero.h1c": "auf Twitch und Kick.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Sobald eine Vorhersage im Twitch-Stream startet, erscheint ein halbtransparentes Panel über dem Player. Du kannst abstimmen, Quoten und Restzeit sehen und das Overlay jederzeit verschieben oder schließen.",
   "support.faq.q7": "Warum ändert sich das Symbol meines Tabs?",
   "support.faq.a7": "Wenn die Option in den Einstellungen aktiv ist, ersetzt StreamPulse das Favicon des Tabs durch das Profilbild des Streamers, dazu ein roter LIVE-Punkt in der Ecke, damit du sofort siehst, welcher Tab einen Stream abspielt.",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "Vollständiger Vergleich zwischen BetterTTV (BTTV) und StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ vs StreamPulse",
+  "guides.ffz.desc": "Welche Erweiterung sollten Sie wählen, um Ihr Twitch-Erlebnis zu verbessern?",
+  "guides.7tv.title": "7TV gegen StreamPulse",
+  "guides.7tv.desc": "Sollten Sie 7TV oder StreamPulse verwenden? Vorteile und Unterschiede.",
+  "guides.latency.title": "Geringe Twitch-Latenz",
+  "guides.latency.desc": "So erzwingen Sie den Modus mit niedriger Latenz ohne Unterbrechung.",
+  "guides.refresh.title": "Twitch automatisch aktualisieren",
+  "guides.refresh.desc": "Laden Sie den Videoplayer bei Abstürzen automatisch neu."
 };

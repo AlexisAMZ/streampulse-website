@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "FAQ",
   "nav.support": "Support",
   "nav.install": "Installeren",
-  "hero.eyebrow": "Versie 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Versie 26.8.11 · Twitch · Kick",
   "hero.h1a": "Mis nooit meer",
   "hero.h1b": "een stream",
   "hero.h1c": "op Twitch en Kick.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Zodra een voorspelling start in de Twitch-stream, verschijnt er een halftransparant zwevend paneel over de speler. Je kunt stemmen, de odds en resterende tijd zien, en de overlay altijd verplaatsen of sluiten.",
   "support.faq.q7": "Waarom verandert het icoon van mijn tabblad?",
   "support.faq.a7": "Staat de optie aan in de instellingen, dan vervangt StreamPulse de favicon van het tabblad door de profielfoto van de live streamer, met een rode LIVE-stip in de hoek zodat je direct ziet welk tabblad een stream afspeelt.",
+  "guides.bttv.title": "BeterTTV versus StreamPulse",
+  "guides.bttv.desc": "Volledige vergelijking tussen BetterTTV (BTTV) en StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ versus StreamPulse",
+  "guides.ffz.desc": "Welke extensie moet je kiezen om je Twitch-ervaring te verbeteren?",
+  "guides.7tv.title": "7TV versus StreamPulse",
+  "guides.7tv.desc": "Moet u 7TV of StreamPulse gebruiken? Voordelen en verschillen.",
+  "guides.latency.title": "Lage Twitch-latentie",
+  "guides.latency.desc": "Hoe u de lage latentiemodus zonder onderbreking kunt forceren.",
+  "guides.refresh.title": "Twitch automatisch vernieuwen",
+  "guides.refresh.desc": "Laad de videospeler automatisch opnieuw tijdens crashes."
 };

@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "Вопросы",
   "nav.support": "Поддержка",
   "nav.install": "Установить",
-  "hero.eyebrow": "Версия 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Версия 26.8.11 · Twitch · Kick",
   "hero.h1a": "Не пропустите",
   "hero.h1b": "ни один стрим",
   "hero.h1c": "на Twitch и Kick.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Когда на стриме Twitch стартует прогноз, поверх плеера появляется полупрозрачная плавающая панель. Можно голосовать, видеть коэффициенты и оставшееся время, а оверлей в любой момент передвинуть или закрыть.",
   "support.faq.q7": "Почему меняется значок вкладки?",
   "support.faq.a7": "Если опция включена в настройках, StreamPulse заменяет фавиконку вкладки на аватар стримера в эфире и добавляет красную точку LIVE в углу, чтобы вы сразу видели, в какой вкладке идёт трансляция.",
+  "guides.bttv.title": "BetterTTV против StreamPulse",
+  "guides.bttv.desc": "Полное сравнение BetterTTV (BTTV) и StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ против StreamPulse",
+  "guides.ffz.desc": "Какое расширение вам следует выбрать, чтобы улучшить работу с Twitch?",
+  "guides.7tv.title": "7TV против StreamPulse",
+  "guides.7tv.desc": "Что лучше использовать: 7TV или StreamPulse? Преимущества и различия.",
+  "guides.latency.title": "Низкая задержка Twitch",
+  "guides.latency.desc": "Как принудительно включить режим с низкой задержкой без перерыва.",
+  "guides.refresh.title": "Автоматическое обновление Twitch",
+  "guides.refresh.desc": "Автоматическая перезагрузка видеоплеера во время сбоев."
 };

@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "FAQ",
   "nav.support": "Dukungan",
   "nav.install": "Pasang",
-  "hero.eyebrow": "Versi 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Versi 26.8.11 · Twitch · Kick",
   "hero.h1a": "Jangan lewatkan",
   "hero.h1b": "satu live pun",
   "hero.h1c": "di Twitch dan Kick.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Saat prediksi dimulai di siaran Twitch, panel mengambang semitransparan muncul di atas pemutar. Anda bisa memilih, melihat peluang dan sisa waktu, lalu memindahkan atau menutup overlay kapan saja.",
   "support.faq.q7": "Kenapa ikon tab saya berubah?",
   "support.faq.a7": "Jika opsi diaktifkan di pengaturan, StreamPulse mengganti favicon tab dengan foto profil streamer yang sedang live, ditambah titik merah LIVE di sudut supaya Anda langsung tahu tab mana yang memutar siaran.",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "Perbandingan lengkap antara BetterTTV (BTTV) dan StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ vs StreamPulse",
+  "guides.ffz.desc": "Ekstensi mana yang harus Anda pilih untuk meningkatkan pengalaman Twitch Anda?",
+  "guides.7tv.title": "7TV vs StreamPulse",
+  "guides.7tv.desc": "Haruskah Anda menggunakan 7TV atau StreamPulse? Keuntungan dan perbedaan.",
+  "guides.latency.title": "Latensi Twitch rendah",
+  "guides.latency.desc": "Cara memaksa mode latensi rendah tanpa gangguan.",
+  "guides.refresh.title": "Kedutan Penyegaran Otomatis",
+  "guides.refresh.desc": "Muat ulang pemutar video secara otomatis saat mogok."
 };

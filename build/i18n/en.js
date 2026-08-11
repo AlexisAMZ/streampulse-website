@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "FAQ",
   "nav.support": "Support",
   "nav.install": "Install",
-  "hero.eyebrow": "Version 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Version 26.8.11 · Twitch · Kick",
   "hero.h1a": "Never miss",
   "hero.h1b": "a single live",
   "hero.h1c": "on Twitch and Kick.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "When a prediction starts on the Twitch stream, a semi-transparent floating panel appears over the video player. You can vote, see the odds and the remaining time, then move or close the overlay at any point.",
   "support.faq.q7": "Why does my tab icon change?",
   "support.faq.a7": "If the option is enabled in settings, StreamPulse replaces the tab favicon with the live streamer's profile picture, plus a red LIVE dot in the corner so you can instantly spot which tab is playing a stream.",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "Complete comparison between BetterTTV (BTTV) and StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ vs StreamPulse",
+  "guides.ffz.desc": "Which extension should you choose to improve your Twitch experience?",
+  "guides.7tv.title": "7TV vs StreamPulse",
+  "guides.7tv.desc": "Should you use 7TV or StreamPulse? Advantages and differences.",
+  "guides.latency.title": "Low Twitch latency",
+  "guides.latency.desc": "How to force low latency mode without interruption.",
+  "guides.refresh.title": "Auto-Refresh Twitch",
+  "guides.refresh.desc": "Automatically reload the video player during crashes."
 };

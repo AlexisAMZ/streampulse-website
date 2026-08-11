@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "FAQ",
   "nav.support": "Soporte",
   "nav.install": "Instalar",
-  "hero.eyebrow": "Versión 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Versión 26.8.11 · Twitch · Kick",
   "hero.h1a": "No te pierdas",
   "hero.h1b": "ningún directo",
   "hero.h1c": "en Twitch y Kick.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Cuando empieza una predicción en el directo de Twitch, aparece un panel flotante semitransparente sobre el reproductor. Puedes votar, ver las cuotas y el tiempo restante, y mover o cerrar el overlay cuando quieras.",
   "support.faq.q7": "¿Por qué cambia el icono de mi pestaña?",
   "support.faq.a7": "Si activas la opción en los ajustes, StreamPulse sustituye el favicon de la pestaña por la foto de perfil del streamer en directo, con un punto rojo LIVE en la esquina para ver al instante qué pestaña está reproduciendo un directo.",
+  "guides.bttv.title": "BetterTTV y StreamPulse",
+  "guides.bttv.desc": "Comparación completa entre BetterTTV (BTTV) y StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ y StreamPulse",
+  "guides.ffz.desc": "¿Qué extensión deberías elegir para mejorar tu experiencia en Twitch?",
+  "guides.7tv.title": "7TV y StreamPulse",
+  "guides.7tv.desc": "¿Deberías usar 7TV o StreamPulse? Ventajas y diferencias.",
+  "guides.latency.title": "Baja latencia de contracción",
+  "guides.latency.desc": "Cómo forzar el modo de baja latencia sin interrupción.",
+  "guides.refresh.title": "Actualización automática de Twitch",
+  "guides.refresh.desc": "Recarga automáticamente el reproductor de video durante fallas."
 };

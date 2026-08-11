@@ -7,7 +7,7 @@ module.exports = {
   "nav.faq": "FAQ",
   "nav.support": "Pomoc",
   "nav.install": "Zainstaluj",
-  "hero.eyebrow": "Wersja 2.0 · Twitch · Kick",
+  "hero.eyebrow": "Wersja 26.8.11 · Twitch · Kick",
   "hero.h1a": "Nie przegap",
   "hero.h1b": "żadnej transmisji",
   "hero.h1c": "na Twitchu i Kicku.",
@@ -174,4 +174,14 @@ module.exports = {
   "support.faq.a6": "Gdy na transmisji Twitch startuje przewidywanie, nad odtwarzaczem pojawia się półprzezroczysty pływający panel. Możesz głosować, zobaczyć kursy i pozostały czas, a nakładkę przesunąć lub zamknąć w każdej chwili.",
   "support.faq.q7": "Dlaczego ikona mojej karty się zmienia?",
   "support.faq.a7": "Jeśli opcja jest włączona w ustawieniach, StreamPulse zamienia favikonę karty na zdjęcie profilowe streamera na żywo, z czerwoną kropką LIVE w narożniku, żeby od razu widzieć, która karta odtwarza transmisję.",
+  "guides.bttv.title": "BetterTTV vs StreamPulse",
+  "guides.bttv.desc": "Pełne porównanie BetterTTV (BTTV) i StreamPulse.",
+  "guides.ffz.title": "FrankerFaceZ kontra StreamPulse",
+  "guides.ffz.desc": "Które rozszerzenie wybrać, aby poprawić jakość korzystania z Twitcha?",
+  "guides.7tv.title": "7TV kontra StreamPulse",
+  "guides.7tv.desc": "Czy powinieneś używać 7TV czy StreamPulse? Zalety i różnice.",
+  "guides.latency.title": "Niskie opóźnienie Twitcha",
+  "guides.latency.desc": "Jak wymusić tryb niskiego opóźnienia bez zakłóceń.",
+  "guides.refresh.title": "Automatyczne odświeżanie Twitcha",
+  "guides.refresh.desc": "Automatycznie przeładuj odtwarzacz wideo w przypadku awarii."
 };
