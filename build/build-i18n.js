@@ -52,6 +52,8 @@ const META = {
     title: 'StreamPulse : extension Chrome pour Twitch et Kick',
     description:
       "Extension gratuite pour Twitch et Kick : notifications de live, points de chaîne et Drops automatiques (Chrome, Edge, Brave, Opera).",
+    ogDescription:
+      "Extension gratuite Twitch & Kick : notifications de live, points de chaîne et Drops automatiques.",
     ogLocale: 'fr_FR',
     keywords:
       'StreamPulse, extension Twitch, extension Kick, notifications Twitch, points de chaîne automatiques, auto-claim Twitch, Twitch Drops automatique, erreur 2000 Twitch',
@@ -457,7 +459,7 @@ function rewriteHead(html, lang) {
   );
   html = html.replace(
     /<meta property="og:description" content="[^"]*"\s*\/>/,
-    `<meta property="og:description" content="${escapeAttr(meta.description)}" />`
+    `<meta property="og:description" content="${escapeAttr(meta.ogDescription || meta.description)}" />`
   );
   html = html.replace(
     /<meta property="og:locale" content="[^"]*"\s*\/>/,
@@ -482,7 +484,7 @@ function rewriteHead(html, lang) {
   );
   html = html.replace(
     /<meta name="twitter:description" content="[^"]*"\s*\/>/,
-    `<meta name="twitter:description" content="${escapeAttr(meta.description)}" />`
+    `<meta name="twitter:description" content="${escapeAttr(meta.ogDescription || meta.description)}" />`
   );
   html = html.replace(
     /<meta name="twitter:image" content="[^"]*"\s*\/>/,
