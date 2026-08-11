@@ -51,7 +51,7 @@ const META = {
   fr: {
     title: 'StreamPulse : extension Chrome pour Twitch et Kick',
     description:
-      "Extension Chrome gratuite pour Twitch et Kick : notifications de live instantanées, points de chaîne automatiques et Drops récupérés tout seuls. Compatible Chrome, Edge, Brave et Opera.",
+      "Extension gratuite pour Twitch et Kick : notifications de live, points de chaîne et Drops automatiques (Chrome, Edge, Brave, Opera).",
     ogLocale: 'fr_FR',
     keywords:
       'StreamPulse, extension Twitch, extension Kick, notifications Twitch, points de chaîne automatiques, auto-claim Twitch, Twitch Drops automatique, erreur 2000 Twitch',
