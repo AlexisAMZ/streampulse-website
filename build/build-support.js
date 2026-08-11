@@ -31,6 +31,7 @@ const I18N_DIR = path.join(__dirname, 'i18n');
 const ORIGIN = process.env.SITE_ORIGIN || 'https://www.streampulse.fr';
 
 const { LOCALES, SOURCE_LANG } = require('./build-i18n');
+const og = require('./lib/og');
 
 /** Adresse affichée en secours si le formulaire échoue. */
 const CONTACT_EMAIL = 'contact@alexisamz.fr';
@@ -257,7 +258,13 @@ ${buildHreflang()}
 <meta property="og:url" content="${canonical}" />
 <meta property="og:title" content="${attr(t(dict, 'support.meta.title', lang))}" />
 <meta property="og:description" content="${attr(t(dict, 'support.meta.desc', lang))}" />
-<meta property="og:image" content="${ORIGIN}/images/extension-screenshot.png" />
+<meta property="og:site_name" content="StreamPulse" />
+${og.ogImageTags(ORIGIN, lang)}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="${canonical}" />
+<meta name="twitter:title" content="${attr(t(dict, 'support.meta.title', lang))}" />
+<meta name="twitter:description" content="${attr(t(dict, 'support.meta.desc', lang))}" />
+${og.twitterImageTags(ORIGIN, lang)}
 <link rel="icon" href="/images/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -14,6 +14,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const og = require('./lib/og');
 
 const ROOT = path.resolve(__dirname, '..');
 const SRC = path.join(ROOT, 'index.html');
@@ -462,6 +463,15 @@ function rewriteHead(html, lang) {
     /<meta property="og:locale" content="[^"]*"\s*\/>/,
     `<meta property="og:locale" content="${meta.ogLocale}" />`
   );
+  // La source FR porte la carte française : toute autre langue reprend l'anglaise.
+  html = html.replace(
+    /<meta property="og:image" content="[^"]*"\s*\/>/,
+    `<meta property="og:image" content="${og.imageUrl(ORIGIN, lang)}" />`
+  );
+  html = html.replace(
+    /<meta property="og:image:alt" content="[^"]*"\s*\/>/,
+    `<meta property="og:image:alt" content="${escapeAttr(og.imageAlt(lang))}" />`
+  );
   html = html.replace(
     /<meta name="twitter:url" content="[^"]*"\s*\/>/,
     `<meta name="twitter:url" content="${canonical}" />`
@@ -473,6 +483,14 @@ function rewriteHead(html, lang) {
   html = html.replace(
     /<meta name="twitter:description" content="[^"]*"\s*\/>/,
     `<meta name="twitter:description" content="${escapeAttr(meta.description)}" />`
+  );
+  html = html.replace(
+    /<meta name="twitter:image" content="[^"]*"\s*\/>/,
+    `<meta name="twitter:image" content="${og.imageUrl(ORIGIN, lang)}" />`
+  );
+  html = html.replace(
+    /<meta name="twitter:image:alt" content="[^"]*"\s*\/>/,
+    `<meta name="twitter:image:alt" content="${escapeAttr(og.imageAlt(lang))}" />`
   );
 
   return html;

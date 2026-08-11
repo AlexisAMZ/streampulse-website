@@ -7,6 +7,8 @@
  * cohérentes avec support.html / privacy.html sans dupliquer de CSS.
  */
 
+const og = require('./og');
+
 // Doit correspondre au domaine qui répond 200 (l'apex redirige en 308 vers www).
 // Un canonical pointant vers une redirection dilue le signal envoyé à Google.
 const ORIGIN = process.env.SITE_ORIGIN || 'https://www.streampulse.fr';
@@ -98,12 +100,13 @@ function buildHead(page, lang) {
     <meta property="og:url" content="${canonical}" />
     <meta property="og:title" content="${esc(page.title[lang])}" />
     <meta property="og:description" content="${esc(page.description[lang])}" />
-    <meta property="og:image" content="${ORIGIN}/images/extension-screenshot.png" />
+    <meta property="og:site_name" content="StreamPulse" />
+    ${og.ogImageTags(ORIGIN, lang, '    ')}
     <meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : 'en_US'}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${esc(page.title[lang])}" />
     <meta name="twitter:description" content="${esc(page.description[lang])}" />
-    <meta name="twitter:image" content="${ORIGIN}/images/logo.png" />
+    ${og.twitterImageTags(ORIGIN, lang, '    ')}
 
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link rel="stylesheet" href="/css/styles.css" />`;
