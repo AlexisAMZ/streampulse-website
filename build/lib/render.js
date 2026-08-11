@@ -92,6 +92,8 @@ function buildHead(page, lang) {
     <meta name="description" content="${esc(page.description[lang])}" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
     <link rel="canonical" href="${canonical}" />
     ${alts}
     <link rel="alternate" hreflang="x-default" href="${ORIGIN}/${page.slug.fr}" />
@@ -102,8 +104,12 @@ function buildHead(page, lang) {
     <meta property="og:description" content="${esc(page.description[lang])}" />
     <meta property="og:site_name" content="StreamPulse" />
     ${og.ogImageTags(ORIGIN, lang, '    ')}
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:locale" content="${lang === 'fr' ? 'fr_FR' : 'en_US'}" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
     <meta name="twitter:title" content="${esc(page.title[lang])}" />
     <meta name="twitter:description" content="${esc(page.description[lang])}" />
     ${og.twitterImageTags(ORIGIN, lang, '    ')}

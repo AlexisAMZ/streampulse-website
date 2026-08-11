@@ -252,6 +252,8 @@ function renderPage(lang, dict) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${esc(t(dict, 'support.meta.title', lang))}</title>
 <meta name="description" content="${attr(t(dict, 'support.meta.desc', lang))}" />
+<meta name="theme-color" content="#9146FF" />
+<meta name="apple-mobile-web-app-title" content="StreamPulse" />
 <link rel="canonical" href="${canonical}" />
 ${buildHreflang()}
 <meta property="og:type" content="website" />
@@ -260,7 +262,11 @@ ${buildHreflang()}
 <meta property="og:description" content="${attr(t(dict, 'support.meta.desc', lang))}" />
 <meta property="og:site_name" content="StreamPulse" />
 ${og.ogImageTags(ORIGIN, lang)}
+<meta property="og:image:type" content="image/png" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@AlexisAMZ" />
+<meta name="twitter:creator" content="@AlexisAMZ" />
+<meta name="twitter:domain" content="streampulse.fr" />
 <meta name="twitter:url" content="${canonical}" />
 <meta name="twitter:title" content="${attr(t(dict, 'support.meta.title', lang))}" />
 <meta name="twitter:description" content="${attr(t(dict, 'support.meta.desc', lang))}" />
