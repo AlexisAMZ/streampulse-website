@@ -15,6 +15,16 @@ const ORIGIN = process.env.SITE_ORIGIN || 'https://www.streampulse.fr';
 const CWS =
   'https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh';
 
+const contentKeys = ['error2000', 'error3000', 'drops', 'points', 'extensionKick'];
+const contentSlugs = {};
+contentKeys.forEach(k => {
+  try {
+    contentSlugs[k] = require(`../content/i18n/${k}.json`);
+  } catch (e) {
+    console.warn(`Could not load i18n JSON for ${k} in render.js`);
+  }
+});
+
 const UI = {
   fr: {
     features: 'Fonctionnalités',
@@ -179,6 +189,13 @@ function buildHead(page, lang) {
 function buildHeader(lang) {
   const t = getUI(lang);
   const p = prefix(lang);
+  
+  const s2000 = contentSlugs['error2000']?.[lang]?.slug || 'erreur-2000-twitch-solution';
+  const s3000 = contentSlugs['error3000']?.[lang]?.slug || 'erreur-3000-twitch-solution';
+  const sDrops = contentSlugs['drops']?.[lang]?.slug || 'twitch-drops-automatique';
+  const sPoints = contentSlugs['points']?.[lang]?.slug || 'points-de-chaine-automatiques-twitch';
+  const sKick = contentSlugs['extensionKick']?.[lang]?.slug || 'extension-kick';
+
   return `    <header class="site-header">
       <div class="container header-content">
         <div class="branding">
@@ -193,11 +210,11 @@ function buildHeader(lang) {
           <div class="nav-dropdown">
             <a href="#" style="cursor: default;" onclick="event.preventDefault()">${t.guides || 'Guides'} ▾</a>
             <div class="nav-dropdown-content">
-              <a href="${p}/erreur-2000-twitch-solution.html">Erreur 2000</a>
-              <a href="${p}/erreur-3000-twitch-solution.html">Erreur 3000</a>
-              <a href="${p}/twitch-drops-automatique.html">Twitch Drops</a>
-              <a href="${p}/points-de-chaine-automatiques-twitch.html">Points de chaîne</a>
-              <a href="${p}/extension-kick.html">Kick Extension</a>
+              <a href="${p}/${s2000}">${contentSlugs['error2000']?.[lang]?.title || 'Erreur 2000'}</a>
+              <a href="${p}/${s3000}">${contentSlugs['error3000']?.[lang]?.title || 'Erreur 3000'}</a>
+              <a href="${p}/${sDrops}">${contentSlugs['drops']?.[lang]?.title || 'Twitch Drops'}</a>
+              <a href="${p}/${sPoints}">${contentSlugs['points']?.[lang]?.title || 'Points de chaîne'}</a>
+              <a href="${p}/${sKick}">${contentSlugs['extensionKick']?.[lang]?.title || 'Kick Extension'}</a>
             </div>
           </div>
           <a href="/support">${t.support}</a>
@@ -210,14 +227,22 @@ function buildHeader(lang) {
 function buildFooter(lang) {
   const t = getUI(lang);
   const p = prefix(lang);
+  
+  const s2000 = contentSlugs['error2000']?.[lang]?.slug || 'erreur-2000-twitch-solution';
+  const s3000 = contentSlugs['error3000']?.[lang]?.slug || 'erreur-3000-twitch-solution';
+  const sDrops = contentSlugs['drops']?.[lang]?.slug || 'twitch-drops-automatique';
+  const sPoints = contentSlugs['points']?.[lang]?.slug || 'points-de-chaine-automatiques-twitch';
+  const sKick = contentSlugs['extensionKick']?.[lang]?.slug || 'extension-kick';
+
   return `    <footer class="site-footer">
       <div class="container footer-content">
         <p>&copy; <span id="current-year"></span> StreamPulse. ${t.rights}</p>
         <nav class="footer-links">
-          <a href="${p}/erreur-2000-twitch-solution.html">Erreur 2000</a>
-          <a href="${p}/erreur-3000-twitch-solution.html">Erreur 3000</a>
-          <a href="${p}/twitch-drops-automatique.html">Twitch Drops</a>
-          <a href="${p}/points-de-chaine-automatiques-twitch.html">Points de chaîne</a>
+          <a href="${p}/${s2000}">${contentSlugs['error2000']?.[lang]?.title || 'Erreur 2000'}</a>
+          <a href="${p}/${s3000}">${contentSlugs['error3000']?.[lang]?.title || 'Erreur 3000'}</a>
+          <a href="${p}/${sDrops}">${contentSlugs['drops']?.[lang]?.title || 'Twitch Drops'}</a>
+          <a href="${p}/${sPoints}">${contentSlugs['points']?.[lang]?.title || 'Points de chaîne'}</a>
+          <a href="${p}/${sKick}">${contentSlugs['extensionKick']?.[lang]?.title || 'Kick Extension'}</a>
         </nav>
         <nav class="footer-links">
           <a href="/privacy">${t.privacy}</a>

@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:locale" content="ko_KR" />
 
@@ -51,7 +51,7 @@
 <meta name="twitter:title" content="StreamPulse: Twitch와 Kick용 Chrome 확장 프로그램" />
 <meta name="twitter:description" content="Twitch와 Kick을 위한 무료 Chrome 확장 프로그램. 실시간 방송 알림, 채널 포인트와 Drops 자동 수령. Chrome, Edge, Brave, Opera 지원." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
-<meta name="twitter:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -1031,6 +1031,50 @@
 
   /* Selection */
   ::selection { background: rgba(145,70,255,0.4); color: white; }
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .nav-dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 240px;
+    border-radius: 12px;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.8);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  }
+  .nav-dropdown:hover .nav-dropdown-content,
+  .nav-dropdown:focus-within .nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-dropdown-content a {
+    color: var(--text) !important;
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+  }
+  .nav-dropdown-content a:hover,
+  .nav-dropdown-content a:focus {
+    background-color: var(--surface-2);
+    color: var(--violet-2) !important;
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
@@ -1057,6 +1101,16 @@
     <a href="#features" data-i18n="nav.features">기능</a>
     <a href="#how" data-i18n="nav.workflow">사용 방법</a>
     <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <div class="nav-dropdown">
+      <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+      <div class="nav-dropdown-content">
+        <a data-guide="error2000" href="/ko/오류-2000-트위치-해결 방법">Erreur 2000</a>
+        <a data-guide="error3000" href="/ko/오류-3000-트위치-해결 방법">Erreur 3000</a>
+        <a data-guide="drops" href="/ko/트위치 드롭 자동 설정">Twitch Drops</a>
+        <a data-guide="points" href="/ko/자동 체인 연결점-twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/ko/익스텐션 킥">Kick Extension</a>
+      </div>
+    </div>
     <a href="/ko/support" data-i18n="nav.support">지원</a>
   </div>
   <div class="nav-actions">
@@ -1501,27 +1555,27 @@
       <p class="section-sub" data-i18n="guides.sub">복잡한 설정 없이 방송을 최대한 활용하는 실용 가이드.</p>
     </div>
     <div class="guides-grid">
-      <a class="guide-card reveal" href="/en/auto-claim-twitch-channel-points">
+      <a class="guide-card reveal" href="/points-de-chaine-automatiques-twitch">
         <h3 data-i18n="guides.points.title">자동 채널 포인트</h3>
         <p data-i18n="guides.points.desc">탭이 닫혀 있어도 클릭 없이 Twitch 포인트를 적립하세요.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-error-2000-fix">
+      <a class="guide-card reveal" href="/erreur-2000-twitch-solution">
         <h3 data-i18n="guides.error.title">Twitch 오류 2000</h3>
         <p data-i18n="guides.error.desc">발생 이유와 근본적인 해결 방법.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-drops-auto-claim">
+      <a class="guide-card reveal" href="/twitch-drops-automatique">
         <h3 data-i18n="guides.drops.title">자동 Twitch Drops</h3>
         <p data-i18n="guides.drops.desc">클릭이 늦어 보상을 잃는 일은 이제 없습니다.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-kick-live-notifications">
+      <a class="guide-card reveal" href="/notifications-live-twitch-kick">
         <h3 data-i18n="guides.notif.title">방송 알림</h3>
         <p data-i18n="guides.notif.desc">Twitch와 Kick에서 스트리머가 시작하는 순간 알림을 받으세요.</p>
       </a>
-      <a class="guide-card reveal" href="/en/filter-twitch-chat">
+      <a class="guide-card reveal" href="/filtrer-chat-twitch">
         <h3 data-i18n="guides.chat.title">Twitch 채팅 필터링</h3>
         <p data-i18n="guides.chat.desc">스팸, 봇, 원치 않는 메시지를 클라이언트에서 숨기세요.</p>
       </a>
-      <a class="guide-card reveal" href="/en/best-twitch-extensions">
+      <a class="guide-card reveal" href="/meilleures-extensions-twitch">
         <h3 data-i18n="guides.best.title">최고의 Twitch 확장 프로그램</h3>
         <p data-i18n="guides.best.desc">정직한 비교: BetterTTV, FrankerFaceZ, StreamPulse.</p>
       </a>
@@ -1536,6 +1590,13 @@
       <div class="footer-brand">
         <img src="/images/logo.png" alt="Logo StreamPulse">
         <span>StreamPulse</span>
+      </div>
+      <div class="links">
+        <a data-guide="error2000" href="/ko/오류-2000-트위치-해결 방법">Erreur 2000</a>
+        <a data-guide="error3000" href="/ko/오류-3000-트위치-해결 방법">Erreur 3000</a>
+        <a data-guide="drops" href="/ko/트위치 드롭 자동 설정">Twitch Drops</a>
+        <a data-guide="points" href="/ko/자동 체인 연결점-twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/ko/익스텐션 킥">Kick Extension</a>
       </div>
       <div class="links">
         <a href="/privacy" data-i18n="foot.privacy">개인정보 처리방침</a>

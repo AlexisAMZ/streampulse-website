@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:locale" content="de_DE" />
 
@@ -51,7 +51,7 @@
 <meta name="twitter:title" content="StreamPulse: Chrome Erweiterung für Twitch und Kick" />
 <meta name="twitter:description" content="Kostenlose Chrome Erweiterung für Twitch und Kick: sofortige Live Benachrichtigungen, automatische Kanalpunkte und Drops. Läuft in Chrome, Edge, Brave und Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
-<meta name="twitter:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -1031,6 +1031,50 @@
 
   /* Selection */
   ::selection { background: rgba(145,70,255,0.4); color: white; }
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .nav-dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 240px;
+    border-radius: 12px;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.8);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  }
+  .nav-dropdown:hover .nav-dropdown-content,
+  .nav-dropdown:focus-within .nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-dropdown-content a {
+    color: var(--text) !important;
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+  }
+  .nav-dropdown-content a:hover,
+  .nav-dropdown-content a:focus {
+    background-color: var(--surface-2);
+    color: var(--violet-2) !important;
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
@@ -1057,6 +1101,16 @@
     <a href="#features" data-i18n="nav.features">Funktionen</a>
     <a href="#how" data-i18n="nav.workflow">Ablauf</a>
     <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <div class="nav-dropdown">
+      <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+      <div class="nav-dropdown-content">
+        <a data-guide="error2000" href="/de/Fehler-2000-Twitch-Lösung">Erreur 2000</a>
+        <a data-guide="error3000" href="/de/Fehler-3000-Twitch-Lösung">Erreur 3000</a>
+        <a data-guide="drops" href="/de/twitch-drops-automatisch">Twitch Drops</a>
+        <a data-guide="points" href="/de/automatische-Kettenstiche-Twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/de/Ausfalltritt">Kick Extension</a>
+      </div>
+    </div>
     <a href="/de/support" data-i18n="nav.support">Support</a>
   </div>
   <div class="nav-actions">
@@ -1501,27 +1555,27 @@
       <p class="section-sub" data-i18n="guides.sub">Praktische Guides, um das Meiste aus deinen Streams zu holen, ohne komplizierte Einrichtung.</p>
     </div>
     <div class="guides-grid">
-      <a class="guide-card reveal" href="/en/auto-claim-twitch-channel-points">
+      <a class="guide-card reveal" href="/points-de-chaine-automatiques-twitch">
         <h3 data-i18n="guides.points.title">Automatische Kanalpunkte</h3>
         <p data-i18n="guides.points.desc">Twitch-Punkte ohne Klicken sammeln, auch bei geschlossenem Tab.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-error-2000-fix">
+      <a class="guide-card reveal" href="/erreur-2000-twitch-solution">
         <h3 data-i18n="guides.error.title">Twitch-Fehler 2000</h3>
         <p data-i18n="guides.error.desc">Warum er auftritt und wie du ihn dauerhaft behebst.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-drops-auto-claim">
+      <a class="guide-card reveal" href="/twitch-drops-automatique">
         <h3 data-i18n="guides.drops.title">Automatische Twitch Drops</h3>
         <p data-i18n="guides.drops.desc">Keine Belohnung mehr verpassen, weil du zu spät geklickt hast.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-kick-live-notifications">
+      <a class="guide-card reveal" href="/notifications-live-twitch-kick">
         <h3 data-i18n="guides.notif.title">Live-Benachrichtigungen</h3>
         <p data-i18n="guides.notif.desc">Sofort erfahren, wenn ein Streamer startet, auf Twitch und Kick.</p>
       </a>
-      <a class="guide-card reveal" href="/en/filter-twitch-chat">
+      <a class="guide-card reveal" href="/filtrer-chat-twitch">
         <h3 data-i18n="guides.chat.title">Twitch-Chat filtern</h3>
         <p data-i18n="guides.chat.desc">Spam, Bots und unerwünschte Nachrichten lokal ausblenden.</p>
       </a>
-      <a class="guide-card reveal" href="/en/best-twitch-extensions">
+      <a class="guide-card reveal" href="/meilleures-extensions-twitch">
         <h3 data-i18n="guides.best.title">Beste Twitch-Erweiterungen</h3>
         <p data-i18n="guides.best.desc">Ehrlicher Vergleich: BetterTTV, FrankerFaceZ, StreamPulse.</p>
       </a>
@@ -1536,6 +1590,13 @@
       <div class="footer-brand">
         <img src="/images/logo.png" alt="Logo StreamPulse">
         <span>StreamPulse</span>
+      </div>
+      <div class="links">
+        <a data-guide="error2000" href="/de/Fehler-2000-Twitch-Lösung">Erreur 2000</a>
+        <a data-guide="error3000" href="/de/Fehler-3000-Twitch-Lösung">Erreur 3000</a>
+        <a data-guide="drops" href="/de/twitch-drops-automatisch">Twitch Drops</a>
+        <a data-guide="points" href="/de/automatische-Kettenstiche-Twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/de/Ausfalltritt">Kick Extension</a>
       </div>
       <div class="links">
         <a href="/privacy" data-i18n="foot.privacy">Datenschutzerklärung</a>

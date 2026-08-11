@@ -570,37 +570,30 @@ function absolutizeAssets(html) {
   return html;
 }
 
+const contentKeys = ['error2000', 'error3000', 'drops', 'points', 'extensionKick'];
+const contentSlugs = {};
+contentKeys.forEach(k => {
+  try {
+    contentSlugs[k] = require(`./content/i18n/${k}.json`);
+  } catch (e) {
+    console.warn(`Could not load i18n JSON for ${k}`);
+  }
+});
+
 /**
  * Réécrit les liens internes selon la langue.
- *
- * /support existe désormais dans les 16 langues (build/build-support.js) : le
- * lien est donc préfixé par la locale, sinon un visiteur allemand cliquant sur
- * « Support » retomberait sur le formulaire français.
- *
- * Les pages légales (privacy, terms) n'existent qu'en français : on les laisse
- * pointer vers /privacy et /terms plutôt que de générer /de/privacy, qui
- * n'existe pas et forcerait une redirection.
- *
- * Les guides ne sont rédigés qu'en FR et EN. Les autres langues affichent la
- * section (ses libellés sont traduits) mais pointent vers la version anglaise :
- * un lien vers un guide lisible vaut mieux qu'une section supprimée, et le
- * hreflang de la page cible reste cohérent.
  */
 function localizeInternalLinks(html, lang) {
-  const GUIDE_SLUGS = {
-    '/points-de-chaine-automatiques-twitch': 'auto-claim-twitch-channel-points',
-    '/erreur-2000-twitch-solution': 'twitch-error-2000-fix',
-    '/twitch-drops-automatique': 'twitch-drops-auto-claim',
-    '/notifications-live-twitch-kick': 'twitch-kick-live-notifications',
-    '/filtrer-chat-twitch': 'filter-twitch-chat',
-    '/meilleures-extensions-twitch': 'best-twitch-extensions',
-  };
-
-  Object.entries(GUIDE_SLUGS).forEach(([frPath, enSlug]) => {
-    html = html.replace(
-      new RegExp(`href="${frPath}"`, 'g'),
-      `href="/en/${enSlug}"`
-    );
+  // Replace data-guide links
+  html = html.replace(/<a([^>]*?)data-guide="([^"]+)"([^>]*?)href="([^"]+)"([^>]*?)>/g, (match, before, key, middle, oldHref, after) => {
+    const slugObj = contentSlugs[key];
+    if (slugObj && slugObj[lang] && slugObj[lang].slug) {
+      const prefix = lang === SOURCE_LANG ? '' : `/${LOCALES[lang].dir}`;
+      // Note: Some languages use .html in the past, but the new build generates extension-less directories, except for the generated root files.
+      // Wait, build-content.js generates `/slug` without .html. Let's use `/slug`.
+      return `<a${before}data-guide="${key}"${middle}href="${prefix}/${slugObj[lang].slug}"${after}>`;
+    }
+    return match;
   });
 
   // Préfixe /support par la locale. La source FR n'étant jamais réécrite,

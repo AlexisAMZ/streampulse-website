@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:locale" content="en_US" />
 
@@ -51,7 +51,7 @@
 <meta name="twitter:title" content="StreamPulse: Auto Claim Twitch Drops &amp; Channel Points" />
 <meta name="twitter:description" content="Free Twitch &amp; Kick extension: auto collect channel points, auto claim drops, live notifications. A BetterTTV alternative. Works on Chrome, Edge, Brave and Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
-<meta name="twitter:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -66,7 +66,7 @@
     "inLanguage": "en",
     "image": "https://www.streampulse.fr/images/logo.png",
     "screenshot": "https://www.streampulse.fr/images/extension-screenshot.png",
-    "description": "Free browser extension for Twitch and Kick. Real-time live notifications, auto collect channel points, auto claim drops, and a BetterTTV alternative.",
+    "description": "Free Chrome extension for Twitch and Kick. Real-time live notifications, auto collect channel points, auto claim drops, and a BetterTTV alternative.",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -1031,6 +1031,50 @@
 
   /* Selection */
   ::selection { background: rgba(145,70,255,0.4); color: white; }
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .nav-dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 240px;
+    border-radius: 12px;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.8);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  }
+  .nav-dropdown:hover .nav-dropdown-content,
+  .nav-dropdown:focus-within .nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-dropdown-content a {
+    color: var(--text) !important;
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+  }
+  .nav-dropdown-content a:hover,
+  .nav-dropdown-content a:focus {
+    background-color: var(--surface-2);
+    color: var(--violet-2) !important;
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
@@ -1057,6 +1101,16 @@
     <a href="#features" data-i18n="nav.features">Features</a>
     <a href="#how" data-i18n="nav.workflow">Workflow</a>
     <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <div class="nav-dropdown">
+      <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+      <div class="nav-dropdown-content">
+        <a data-guide="error2000" href="/erreur-2000-twitch-solution.html">Erreur 2000</a>
+        <a data-guide="error3000" href="/erreur-3000-twitch-solution.html">Erreur 3000</a>
+        <a data-guide="drops" href="/twitch-drops-automatique.html">Twitch Drops</a>
+        <a data-guide="points" href="/points-de-chaine-automatiques-twitch.html">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/extension-kick.html">Kick Extension</a>
+      </div>
+    </div>
     <a href="/en/support" data-i18n="nav.support">Support</a>
   </div>
   <div class="nav-actions">
@@ -1102,7 +1156,7 @@
           <span data-i18n="hero.h1b">a single live</span><br>
           <em data-i18n="hero.h1c">on Twitch and Kick.</em>
         </h1>
-        <p class="hero-sub" data-i18n="hero.sub">Instant notifications, automatic channel points, hands-free Drops and a unified dashboard. Everything. In a single browser extension.</p>
+        <p class="hero-sub" data-i18n="hero.sub">Instant notifications, automatic channel points, hands-free Drops and a unified dashboard. Everything. In a single Chrome extension.</p>
         <div class="hero-cta">
           <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
@@ -1501,27 +1555,27 @@
       <p class="section-sub" data-i18n="guides.sub">Practical guides to get the most out of your streams, without complicated setup.</p>
     </div>
     <div class="guides-grid">
-      <a class="guide-card reveal" href="/en/auto-claim-twitch-channel-points">
+      <a class="guide-card reveal" href="/points-de-chaine-automatiques-twitch">
         <h3 data-i18n="guides.points.title">Automatic channel points</h3>
         <p data-i18n="guides.points.desc">Collect your Twitch points without clicking, even with the tab closed.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-error-2000-fix">
+      <a class="guide-card reveal" href="/erreur-2000-twitch-solution">
         <h3 data-i18n="guides.error.title">Twitch error 2000</h3>
         <p data-i18n="guides.error.desc">Why it appears and how to fix it for good.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-drops-auto-claim">
+      <a class="guide-card reveal" href="/twitch-drops-automatique">
         <h3 data-i18n="guides.drops.title">Automatic Twitch Drops</h3>
         <p data-i18n="guides.drops.desc">Never miss a reward because you didn't click in time.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-kick-live-notifications">
+      <a class="guide-card reveal" href="/notifications-live-twitch-kick">
         <h3 data-i18n="guides.notif.title">Live notifications</h3>
         <p data-i18n="guides.notif.desc">Get alerted the moment a streamer goes live, on Twitch and Kick.</p>
       </a>
-      <a class="guide-card reveal" href="/en/filter-twitch-chat">
+      <a class="guide-card reveal" href="/filtrer-chat-twitch">
         <h3 data-i18n="guides.chat.title">Filter Twitch chat</h3>
         <p data-i18n="guides.chat.desc">Hide spam, bots and unwanted messages client-side.</p>
       </a>
-      <a class="guide-card reveal" href="/en/best-twitch-extensions">
+      <a class="guide-card reveal" href="/meilleures-extensions-twitch">
         <h3 data-i18n="guides.best.title">Best Twitch extensions</h3>
         <p data-i18n="guides.best.desc">An honest comparison: BetterTTV, FrankerFaceZ, StreamPulse.</p>
       </a>
@@ -1536,6 +1590,13 @@
       <div class="footer-brand">
         <img src="/images/logo.png" alt="Logo StreamPulse">
         <span>StreamPulse</span>
+      </div>
+      <div class="links">
+        <a data-guide="error2000" href="/erreur-2000-twitch-solution.html">Erreur 2000</a>
+        <a data-guide="error3000" href="/erreur-3000-twitch-solution.html">Erreur 3000</a>
+        <a data-guide="drops" href="/twitch-drops-automatique.html">Twitch Drops</a>
+        <a data-guide="points" href="/points-de-chaine-automatiques-twitch.html">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/extension-kick.html">Kick Extension</a>
       </div>
       <div class="links">
         <a href="/privacy" data-i18n="foot.privacy">Privacy policy</a>

@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:locale" content="cs_CZ" />
 
@@ -51,7 +51,7 @@
 <meta name="twitter:title" content="StreamPulse: rozšíření Chrome pro Twitch a Kick" />
 <meta name="twitter:description" content="Bezplatné rozšíření Chrome pro Twitch a Kick: okamžitá upozornění na vysílání, automatické body kanálu a Drops. Funguje v Chrome, Edge, Brave a Opera." />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
-<meta name="twitter:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -1031,6 +1031,50 @@
 
   /* Selection */
   ::selection { background: rgba(145,70,255,0.4); color: white; }
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .nav-dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 240px;
+    border-radius: 12px;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.8);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  }
+  .nav-dropdown:hover .nav-dropdown-content,
+  .nav-dropdown:focus-within .nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-dropdown-content a {
+    color: var(--text) !important;
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+  }
+  .nav-dropdown-content a:hover,
+  .nav-dropdown-content a:focus {
+    background-color: var(--surface-2);
+    color: var(--violet-2) !important;
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
@@ -1057,6 +1101,16 @@
     <a href="#features" data-i18n="nav.features">Funkce</a>
     <a href="#how" data-i18n="nav.workflow">Jak to funguje</a>
     <a href="#faq" data-i18n="nav.faq">Časté dotazy</a>
+    <div class="nav-dropdown">
+      <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+      <div class="nav-dropdown-content">
+        <a data-guide="error2000" href="/cs/chyba-2000-twitch-řešení">Erreur 2000</a>
+        <a data-guide="error3000" href="/cs/chyba-3000-twitch-řešení">Erreur 3000</a>
+        <a data-guide="drops" href="/cs/automatické twitch-drops">Twitch Drops</a>
+        <a data-guide="points" href="/cs/automatické-řetězové-spony-twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/cs/prodloužený kop">Kick Extension</a>
+      </div>
+    </div>
     <a href="/cs/support" data-i18n="nav.support">Podpora</a>
   </div>
   <div class="nav-actions">
@@ -1501,27 +1555,27 @@
       <p class="section-sub" data-i18n="guides.sub">Praktické návody, jak ze svých přenosů vytěžit maximum bez složitého nastavování.</p>
     </div>
     <div class="guides-grid">
-      <a class="guide-card reveal" href="/en/auto-claim-twitch-channel-points">
+      <a class="guide-card reveal" href="/points-de-chaine-automatiques-twitch">
         <h3 data-i18n="guides.points.title">Automatické body kanálu</h3>
         <p data-i18n="guides.points.desc">Sbírejte body na Twitchi bez klikání, i se zavřenou kartou.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-error-2000-fix">
+      <a class="guide-card reveal" href="/erreur-2000-twitch-solution">
         <h3 data-i18n="guides.error.title">Chyba 2000 na Twitchi</h3>
         <p data-i18n="guides.error.desc">Proč se objevuje a jak ji trvale odstranit.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-drops-auto-claim">
+      <a class="guide-card reveal" href="/twitch-drops-automatique">
         <h3 data-i18n="guides.drops.title">Automatické Twitch Drops</h3>
         <p data-i18n="guides.drops.desc">Už nepřijdete o odměnu jen proto, že jste neklikli včas.</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-kick-live-notifications">
+      <a class="guide-card reveal" href="/notifications-live-twitch-kick">
         <h3 data-i18n="guides.notif.title">Upozornění na vysílání</h3>
         <p data-i18n="guides.notif.desc">Dostanete upozornění, jakmile streamer začne, na Twitchi i Kicku.</p>
       </a>
-      <a class="guide-card reveal" href="/en/filter-twitch-chat">
+      <a class="guide-card reveal" href="/filtrer-chat-twitch">
         <h3 data-i18n="guides.chat.title">Filtrování chatu na Twitchi</h3>
         <p data-i18n="guides.chat.desc">Skryjte spam, boty a nechtěné zprávy přímo u sebe.</p>
       </a>
-      <a class="guide-card reveal" href="/en/best-twitch-extensions">
+      <a class="guide-card reveal" href="/meilleures-extensions-twitch">
         <h3 data-i18n="guides.best.title">Nejlepší rozšíření pro Twitch</h3>
         <p data-i18n="guides.best.desc">Poctivé srovnání: BetterTTV, FrankerFaceZ, StreamPulse.</p>
       </a>
@@ -1536,6 +1590,13 @@
       <div class="footer-brand">
         <img src="/images/logo.png" alt="Logo StreamPulse">
         <span>StreamPulse</span>
+      </div>
+      <div class="links">
+        <a data-guide="error2000" href="/cs/chyba-2000-twitch-řešení">Erreur 2000</a>
+        <a data-guide="error3000" href="/cs/chyba-3000-twitch-řešení">Erreur 3000</a>
+        <a data-guide="drops" href="/cs/automatické twitch-drops">Twitch Drops</a>
+        <a data-guide="points" href="/cs/automatické-řetězové-spony-twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/cs/prodloužený kop">Kick Extension</a>
       </div>
       <div class="links">
         <a href="/privacy" data-i18n="foot.privacy">Zásady ochrany soukromí</a>

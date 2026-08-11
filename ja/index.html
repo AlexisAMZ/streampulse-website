@@ -38,7 +38,7 @@
 <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:locale" content="ja_JP" />
 
@@ -51,7 +51,7 @@
 <meta name="twitter:title" content="StreamPulse: Twitch と Kick 用 Chrome 拡張機能" />
 <meta name="twitter:description" content="Twitch と Kick 用の無料 Chrome 拡張機能。配信の即時通知、チャンネルポイントと Drops の自動取得。Chrome、Edge、Brave、Opera に対応。" />
 <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
-<meta name="twitter:image:alt" content="StreamPulse, extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+<meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
 
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
@@ -1031,6 +1031,50 @@
 
   /* Selection */
   ::selection { background: rgba(145,70,255,0.4); color: white; }
+  .nav-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .nav-dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    min-width: 240px;
+    border-radius: 12px;
+    border: 1px solid var(--border-strong);
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.8);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  }
+  .nav-dropdown:hover .nav-dropdown-content,
+  .nav-dropdown:focus-within .nav-dropdown-content {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-dropdown-content a {
+    color: var(--text) !important;
+    padding: 0.7rem 1.2rem !important;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+  }
+  .nav-dropdown-content a:hover,
+  .nav-dropdown-content a:focus {
+    background-color: var(--surface-2);
+    color: var(--violet-2) !important;
+    text-decoration: none;
+  }
 </style>
 </head>
 <body>
@@ -1057,6 +1101,16 @@
     <a href="#features" data-i18n="nav.features">機能</a>
     <a href="#how" data-i18n="nav.workflow">使い方</a>
     <a href="#faq" data-i18n="nav.faq">よくある質問</a>
+    <div class="nav-dropdown">
+      <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+      <div class="nav-dropdown-content">
+        <a data-guide="error2000" href="/ja/エラー-2000-Twitch-解決策">Erreur 2000</a>
+        <a data-guide="error3000" href="/ja/エラー-3000-Twitch-解決策">Erreur 3000</a>
+        <a data-guide="drops" href="/ja/twitch-drops-自動">Twitch Drops</a>
+        <a data-guide="points" href="/ja/自動チェーンピン・Twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/ja/エクステンション・キック">Kick Extension</a>
+      </div>
+    </div>
     <a href="/ja/support" data-i18n="nav.support">サポート</a>
   </div>
   <div class="nav-actions">
@@ -1501,27 +1555,27 @@
       <p class="section-sub" data-i18n="guides.sub">複雑な設定なしで配信を最大限に活用するための実践ガイド。</p>
     </div>
     <div class="guides-grid">
-      <a class="guide-card reveal" href="/en/auto-claim-twitch-channel-points">
+      <a class="guide-card reveal" href="/points-de-chaine-automatiques-twitch">
         <h3 data-i18n="guides.points.title">チャンネルポイントの自動取得</h3>
         <p data-i18n="guides.points.desc">タブを閉じていても、クリックせずに Twitch ポイントを獲得。</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-error-2000-fix">
+      <a class="guide-card reveal" href="/erreur-2000-twitch-solution">
         <h3 data-i18n="guides.error.title">Twitch エラー 2000</h3>
         <p data-i18n="guides.error.desc">発生する理由と、根本的に直す方法。</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-drops-auto-claim">
+      <a class="guide-card reveal" href="/twitch-drops-automatique">
         <h3 data-i18n="guides.drops.title">Twitch Drops の自動受け取り</h3>
         <p data-i18n="guides.drops.desc">クリックが間に合わず報酬を逃すことはもうありません。</p>
       </a>
-      <a class="guide-card reveal" href="/en/twitch-kick-live-notifications">
+      <a class="guide-card reveal" href="/notifications-live-twitch-kick">
         <h3 data-i18n="guides.notif.title">配信通知</h3>
         <p data-i18n="guides.notif.desc">Twitch と Kick で、配信者が開始した瞬間に通知を受け取る。</p>
       </a>
-      <a class="guide-card reveal" href="/en/filter-twitch-chat">
+      <a class="guide-card reveal" href="/filtrer-chat-twitch">
         <h3 data-i18n="guides.chat.title">Twitch チャットのフィルタリング</h3>
         <p data-i18n="guides.chat.desc">スパム、ボット、不要なメッセージをクライアント側で非表示に。</p>
       </a>
-      <a class="guide-card reveal" href="/en/best-twitch-extensions">
+      <a class="guide-card reveal" href="/meilleures-extensions-twitch">
         <h3 data-i18n="guides.best.title">おすすめの Twitch 拡張機能</h3>
         <p data-i18n="guides.best.desc">率直な比較：BetterTTV、FrankerFaceZ、StreamPulse。</p>
       </a>
@@ -1536,6 +1590,13 @@
       <div class="footer-brand">
         <img src="/images/logo.png" alt="Logo StreamPulse">
         <span>StreamPulse</span>
+      </div>
+      <div class="links">
+        <a data-guide="error2000" href="/ja/エラー-2000-Twitch-解決策">Erreur 2000</a>
+        <a data-guide="error3000" href="/ja/エラー-3000-Twitch-解決策">Erreur 3000</a>
+        <a data-guide="drops" href="/ja/twitch-drops-自動">Twitch Drops</a>
+        <a data-guide="points" href="/ja/自動チェーンピン・Twitch">Points de chaîne</a>
+        <a data-guide="extensionKick" href="/ja/エクステンション・キック">Kick Extension</a>
       </div>
       <div class="links">
         <a href="/privacy" data-i18n="foot.privacy">プライバシーポリシー</a>
