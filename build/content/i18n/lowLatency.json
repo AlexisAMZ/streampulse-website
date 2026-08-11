@@ -1,0 +1,752 @@
+{
+  "en": {
+    "slug": "twitch-low-latency",
+    "linkLabel": "Twitch Latency",
+    "title": "Reduce lag on Twitch (Latency) | StreamPulse",
+    "h1": "How to Reduce Latency on Twitch and Avoid Lag",
+    "description": "Learn how to reduce lag on Twitch and why latency increases over time. The solution to staying in sync with the chat.",
+    "intro": "Do you feel like there is a gap between the streamer's action and the chat's reactions? You probably have a latency problem on Twitch. Here's why this lag appears and how to fix it for good.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "How to enable Low Latency mode on Twitch",
+        "answer": "To enable Low Latency, click the video player gear, select \"Advanced\", then check the \"Low Latency Mode\" option. Latency will drop from ~12 seconds to 2 or 3 seconds.",
+        "body": [
+          "Twitch's \"Low Latency\" mode is an option that allows viewers to view the stream in near real-time. Without this option, there is often a 10-15 second delay between what the streamer does and what you see, making chat interactions difficult."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Why does a gap gradually set in?",
+        "answer": "Even if you have Low Latency mode enabled, you may notice the lag getting bigger over time (from 2 seconds to 10, 20, or even 30 seconds). This is often due to:",
+        "list": [
+          "<strong>Tab switching:</strong> Browsers like Chrome and Edge intentionally slow down videos that are not displayed to save RAM and battery.",
+          "<strong>Network instabilities:</strong> A small loss of connection will buffer the video. The video player will not jump forward to catch up, creating a permanent lag."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "The solution: Anti-Pause with StreamPulse",
+        "answer": "StreamPulse includes Anti-Pause and Player Sync functionality. It prevents the browser from slowing down the video when you switch tabs.",
+        "body": [
+          "If you use the best Twitch extensions, you know that StreamPulse is known for its player optimization. The extension forces low latency to be maintained, even when the stream is running in the background while you navigate to another page.",
+          "This ensures you are always in sync with the chat and streamer, without having to manually reload the page."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is low latency mode on Twitch?",
+        "a": "Low latency mode reduces the lag between live action and what you see on screen, from around 10 seconds to 2 or 3 seconds."
+      },
+      {
+        "q": "How to enable low latency?",
+        "a": "Click on the settings icon (gear) of the Twitch player, go to “Advanced options” and check “Low Latency Mode”."
+      },
+      {
+        "q": "Why does my latency increase when I switch tabs?",
+        "a": "Browsers often pause or slow down videos in the background to save resources. Use StreamPulse to prevent this with its Anti-Pause feature."
+      }
+    ]
+  },
+  "es": {
+    "slug": "contracción-baja-latencia",
+    "linkLabel": "Latencia de contracción",
+    "title": "Reducir el retraso en Twitch (Latencia) | StreamPulse",
+    "h1": "Cómo reducir la latencia en Twitch y evitar el retraso",
+    "description": "Aprenda cómo reducir el retraso en Twitch y por qué la latencia aumenta con el tiempo. La solución para mantenerse sincronizado con el chat.",
+    "intro": "¿Sientes que hay una brecha entre la acción del streamer y las reacciones del chat? Probablemente tengas un problema de latencia en Twitch. He aquí por qué aparece este retraso y cómo solucionarlo para siempre.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Cómo habilitar el modo de baja latencia en Twitch",
+        "answer": "Para habilitar la baja latencia, haga clic en el engranaje del reproductor de video, seleccione \"Avanzado\" y luego marque la opción \"Modo de baja latencia\". La latencia disminuirá de ~12 segundos a 2 o 3 segundos.",
+        "body": [
+          "El modo de \"baja latencia\" de Twitch es una opción que permite a los espectadores ver la transmisión casi en tiempo real. Sin esta opción, suele haber un retraso de 10 a 15 segundos entre lo que hace el transmisor y lo que ves, lo que dificulta las interacciones en el chat."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "¿Por qué se va abriendo gradualmente una brecha?",
+        "answer": "Incluso si tiene habilitado el modo de baja latencia, puede notar que el retraso aumenta con el tiempo (de 2 segundos a 10, 20 o incluso 30 segundos). Esto suele deberse a:",
+        "list": [
+          "<strong>Cambio de pestaña:</strong> navegadores como Chrome y Edge ralentizan intencionadamente los vídeos que no se muestran para ahorrar RAM y batería.",
+          "<strong>Inestabilidades de la red:</strong> Una pequeña pérdida de conexión almacenará el vídeo en el buffer. El reproductor de vídeo no avanzará para ponerse al día, lo que creará un retraso permanente."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "La solución: Antipausa con StreamPulse",
+        "answer": "StreamPulse incluye funciones Anti-Pause y Player Sync. Evita que el navegador ralentice el vídeo cuando cambias de pestaña.",
+        "body": [
+          "Si utiliza las mejores extensiones de Twitch, sabrá que StreamPulse es conocido por la optimización de sus jugadores. La extensión obliga a mantener una latencia baja, incluso cuando la transmisión se ejecuta en segundo plano mientras navega a otra página.",
+          "Esto garantiza que esté siempre sincronizado con el chat y el transmisor, sin tener que recargar manualmente la página."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué es el modo de baja latencia en Twitch?",
+        "a": "El modo de baja latencia reduce el retraso entre la acción en vivo y lo que ves en la pantalla, de unos 10 segundos a 2 o 3 segundos."
+      },
+      {
+        "q": "¿Cómo habilitar la baja latencia?",
+        "a": "Haz clic en el ícono de configuración (engranaje) del reproductor Twitch, ve a “Opciones avanzadas” y marca “Modo de baja latencia”."
+      },
+      {
+        "q": "¿Por qué mi latencia aumenta cuando cambio de pestaña?",
+        "a": "Los navegadores suelen pausar o ralentizar los vídeos en segundo plano para ahorrar recursos. Utilice StreamPulse para evitar esto con su función Anti-Pausa."
+      }
+    ]
+  },
+  "pt-BR": {
+    "slug": "contração baixa latência",
+    "linkLabel": "Latência de contração muscular",
+    "title": "Reduza o lag no Twitch (latência) | StreamPulse",
+    "h1": "Como reduzir a latência no Twitch e evitar atrasos",
+    "description": "Aprenda como reduzir o atraso no Twitch e por que a latência aumenta com o tempo. A solução para ficar sincronizado com o chat.",
+    "intro": "Você sente que há uma lacuna entre a ação do streamer e as reações do chat? Você provavelmente tem um problema de latência no Twitch. Veja por que esse atraso aparece e como corrigi-lo definitivamente.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Como ativar o modo Baixa Latência no Twitch",
+        "answer": "Para ativar a Baixa Latência, clique na engrenagem do player de vídeo, selecione \"Avançado\" e marque a opção \"Modo de Baixa Latência\". A latência cairá de aproximadamente 12 segundos para 2 ou 3 segundos.",
+        "body": [
+          "O modo “Low Latency” do Twitch é uma opção que permite aos espectadores visualizar a transmissão quase em tempo real. Sem essa opção, geralmente há um atraso de 10 a 15 segundos entre o que o streamer faz e o que você vê, dificultando as interações no chat."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Por que uma lacuna se instala gradualmente?",
+        "answer": "Mesmo se você tiver o modo Baixa Latência ativado, poderá notar que o atraso aumenta com o tempo (de 2 segundos para 10, 20 ou até 30 segundos). Isso geralmente ocorre devido a:",
+        "list": [
+          "<strong>Troca de guias:</strong> navegadores como Chrome e Edge desaceleram intencionalmente vídeos que não são exibidos para economizar RAM e bateria.",
+          "<strong>Instabilidades de rede:</strong> uma pequena perda de conexão irá armazenar o vídeo em buffer. O player de vídeo não avançará para alcançá-lo, criando um atraso permanente."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "A solução: Anti-Pause com StreamPulse",
+        "answer": "StreamPulse inclui funcionalidade Anti-Pause e Player Sync. Ele evita que o navegador diminua a velocidade do vídeo quando você alterna entre guias.",
+        "body": [
+          "Se você usa as melhores extensões Twitch, sabe que StreamPulse é conhecido por sua otimização de player. A extensão força a manutenção da baixa latência, mesmo quando o stream está sendo executado em segundo plano enquanto você navega para outra página.",
+          "Isso garante que você esteja sempre sincronizado com o chat e o streamer, sem precisar recarregar a página manualmente."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "O que é o modo de baixa latência no Twitch?",
+        "a": "O modo de baixa latência reduz o atraso entre a ação ao vivo e o que você vê na tela, de cerca de 10 segundos para 2 ou 3 segundos."
+      },
+      {
+        "q": "Como habilitar baixa latência?",
+        "a": "Clique no ícone de configurações (engrenagem) do player Twitch, vá em “Opções avançadas” e marque “Modo de baixa latência”."
+      },
+      {
+        "q": "Por que minha latência aumenta quando mudo de guia?",
+        "a": "Os navegadores costumam pausar ou desacelerar os vídeos em segundo plano para economizar recursos. Use StreamPulse para evitar isso com seu recurso Anti-Pause."
+      }
+    ]
+  },
+  "de": {
+    "slug": "Twitch-Low-Latenz",
+    "linkLabel": "Twitch-Latenz",
+    "title": "Reduzieren Sie die Verzögerung bei Twitch (Latenz) | StreamPulse",
+    "h1": "So reduzieren Sie die Latenz bei Twitch und vermeiden Verzögerungen",
+    "description": "Erfahren Sie, wie Sie Verzögerungen bei Twitch reduzieren und warum die Latenz mit der Zeit zunimmt. Die Lösung, um mit dem Chat synchron zu bleiben.",
+    "intro": "Haben Sie das Gefühl, dass es eine Lücke zwischen der Aktion des Streamers und den Reaktionen des Chats gibt? Du hast wahrscheinlich ein Latenzproblem bei Twitch. Hier erfahren Sie, warum diese Verzögerung auftritt und wie Sie sie endgültig beheben können.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "So aktivieren Sie den Low-Latency-Modus auf Twitch",
+        "answer": "Um die niedrige Latenz zu aktivieren, klicken Sie auf das Zahnrad des Videoplayers, wählen Sie „Erweitert“ und aktivieren Sie dann die Option „Modus mit niedriger Latenz“. Die Latenz wird von ~12 Sekunden auf 2 oder 3 Sekunden sinken.",
+        "body": [
+          "Der „Low Latency“-Modus von Twitch ist eine Option, die es Zuschauern ermöglicht, den Stream nahezu in Echtzeit anzusehen. Ohne diese Option gibt es oft eine Verzögerung von 10–15 Sekunden zwischen dem, was der Streamer tut, und dem, was Sie sehen, was Chat-Interaktionen erschwert."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Warum entsteht nach und nach eine Lücke?",
+        "answer": "Selbst wenn Sie den Modus „Geringe Latenz“ aktiviert haben, stellen Sie möglicherweise fest, dass die Verzögerung mit der Zeit größer wird (von 2 Sekunden auf 10, 20 oder sogar 30 Sekunden). Dies ist häufig auf Folgendes zurückzuführen:",
+        "list": [
+          "<strong>Tab-Wechsel:</strong> Browser wie Chrome und Edge verlangsamen absichtlich Videos, die nicht angezeigt werden, um RAM und Akku zu sparen.",
+          "<strong>Netzwerkinstabilitäten:</strong> Ein kleiner Verbindungsverlust führt zu einer Pufferung des Videos. Der Videoplayer springt nicht vorwärts, um aufzuholen, was zu einer dauerhaften Verzögerung führt."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "Die Lösung: Anti-Pause mit StreamPulse",
+        "answer": "StreamPulse umfasst Anti-Pause- und Player-Synchronisierungsfunktionen. Es verhindert, dass der Browser das Video verlangsamt, wenn Sie zwischen den Tabs wechseln.",
+        "body": [
+          "Wenn Sie die besten Twitch-Erweiterungen verwenden, wissen Sie, dass StreamPulse für seine Player-Optimierung bekannt ist. Die Erweiterung erzwingt die Beibehaltung einer niedrigen Latenz, selbst wenn der Stream im Hintergrund ausgeführt wird, während Sie zu einer anderen Seite navigieren.",
+          "Dadurch wird sichergestellt, dass Sie immer mit dem Chat und dem Streamer synchronisiert sind, ohne die Seite manuell neu laden zu müssen."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Was ist der Low-Latency-Modus auf Twitch?",
+        "a": "Der Modus mit geringer Latenz reduziert die Verzögerung zwischen Live-Action und dem, was Sie auf dem Bildschirm sehen, von etwa 10 Sekunden auf 2 oder 3 Sekunden."
+      },
+      {
+        "q": "Wie aktiviere ich eine niedrige Latenz?",
+        "a": "Klicken Sie auf das Einstellungssymbol (Zahnrad) des Twitch-Players, gehen Sie zu „Erweiterte Optionen“ und aktivieren Sie „Low Latency Mode“."
+      },
+      {
+        "q": "Warum erhöht sich meine Latenz, wenn ich den Tab wechsle?",
+        "a": "Browser halten Videos oft im Hintergrund an oder verlangsamen sie, um Ressourcen zu sparen. Verwenden Sie StreamPulse, um dies mit seiner Anti-Pause-Funktion zu verhindern."
+      }
+    ]
+  },
+  "it": {
+    "slug": "contrazione a bassa latenza",
+    "linkLabel": "Latenza di contrazione",
+    "title": "Riduci il ritardo su Twitch (latenza) | StreamPulse",
+    "h1": "Come ridurre la latenza su Twitch ed evitare ritardi",
+    "description": "Scopri come ridurre il ritardo su Twitch e perché la latenza aumenta nel tempo. La soluzione per rimanere sincronizzati con la chat.",
+    "intro": "Pensi che ci sia un divario tra l'azione dello streamer e le reazioni della chat? Probabilmente hai un problema di latenza su Twitch. Ecco perché appare questo ritardo e come risolverlo definitivamente.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Come abilitare la modalità a bassa latenza su Twitch",
+        "answer": "Per abilitare la bassa latenza, fai clic sull'ingranaggio del lettore video, seleziona \"Avanzate\", quindi seleziona l'opzione \"Modalità bassa latenza\". La latenza scenderà da ~12 secondi a 2 o 3 secondi.",
+        "body": [
+          "La modalità \"Bassa latenza\" di Twitch è un'opzione che consente agli spettatori di visualizzare lo streaming quasi in tempo reale. Senza questa opzione, spesso c'è un ritardo di 10-15 secondi tra ciò che fa lo streamer e ciò che vedi, rendendo difficili le interazioni in chat."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Perché si crea gradualmente un divario?",
+        "answer": "Anche se hai abilitato la modalità Bassa latenza, potresti notare che il ritardo aumenta nel tempo (da 2 secondi a 10, 20 o anche 30 secondi). Ciò è spesso dovuto a:",
+        "list": [
+          "<strong>Cambio scheda:</strong> browser come Chrome ed Edge rallentano intenzionalmente i video che non vengono visualizzati per risparmiare RAM e batteria.",
+          "<strong>Instabilità di rete:</strong> una piccola perdita di connessione bufferizza il video. Il lettore video non salterà in avanti per recuperare il ritardo, creando un ritardo permanente."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "La soluzione: Anti-Pausa con StreamPulse",
+        "answer": "StreamPulse include funzionalità Anti-Pausa e Sincronizzazione lettore. Impedisce al browser di rallentare il video quando si passa da una scheda all'altra.",
+        "body": [
+          "Se utilizzi le migliori estensioni Twitch, sai che StreamPulse è noto per l'ottimizzazione dei giocatori. L'estensione impone il mantenimento di una bassa latenza, anche quando lo streaming è in esecuzione in background mentre passi a un'altra pagina.",
+          "Ciò ti garantisce di essere sempre sincronizzato con la chat e lo streamer, senza dover ricaricare manualmente la pagina."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Cos'è la modalità a bassa latenza su Twitch?",
+        "a": "La modalità a bassa latenza riduce il ritardo tra l'azione dal vivo e ciò che vedi sullo schermo, da circa 10 secondi a 2 o 3 secondi."
+      },
+      {
+        "q": "Come abilitare la bassa latenza?",
+        "a": "Clicca sull'icona delle impostazioni (ingranaggio) del player Twitch, vai su “Opzioni avanzate” e seleziona “Modalità a bassa latenza”."
+      },
+      {
+        "q": "Perché la latenza aumenta quando cambio scheda?",
+        "a": "I browser spesso mettono in pausa o rallentano i video in background per risparmiare risorse. Utilizza StreamPulse per evitare ciò con la sua funzione Anti-Pausa."
+      }
+    ]
+  },
+  "pl": {
+    "slug": "Twitch-niskie opóźnienie",
+    "linkLabel": "Opóźnienie Twitcha",
+    "title": "Zmniejsz opóźnienie na Twitchu (opóźnienie) | StreamPuls",
+    "h1": "Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień",
+    "description": "Dowiedz się, jak zmniejszyć opóźnienia na Twitchu i dlaczego opóźnienia rosną z czasem. Rozwiązanie umożliwiające synchronizację z czatem.",
+    "intro": "Czy masz wrażenie, że pomiędzy działaniem streamera a reakcją na czacie jest przepaść? Prawdopodobnie masz problem z opóźnieniami na Twitchu. Oto dlaczego pojawia się to opóźnienie i jak to naprawić na dobre.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Jak włączyć tryb małego opóźnienia na Twitchu",
+        "answer": "Aby włączyć małe opóźnienie, kliknij koło zębate odtwarzacza wideo, wybierz „Zaawansowane”, a następnie zaznacz opcję „Tryb małego opóźnienia”. Opóźnienie spadnie z ~12 sekund do 2 lub 3 sekund.",
+        "body": [
+          "Tryb „Niskiego opóźnienia” w Twitchu to opcja, która umożliwia widzom oglądanie transmisji w czasie zbliżonym do rzeczywistego. Bez tej opcji często występuje 10–15 sekundowe opóźnienie między tym, co robi streamer, a tym, co widzisz, co utrudnia interakcję na czacie."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Dlaczego stopniowo pojawia się luka?",
+        "answer": "Nawet jeśli masz włączony tryb małego opóźnienia, możesz zauważyć, że opóźnienie z czasem się zwiększa (od 2 sekund do 10, 20, a nawet 30 sekund). Często jest to spowodowane:",
+        "list": [
+          "<strong>Przełączanie kart:</strong> przeglądarki takie jak Chrome i Edge celowo spowalniają niewyświetlane filmy, aby oszczędzać pamięć RAM i baterię.",
+          "<strong>Niestabilność sieci:</strong> niewielka utrata połączenia spowoduje buforowanie wideo. Odtwarzacz wideo nie przeskoczy do przodu, aby nadrobić zaległości, powodując trwałe opóźnienie."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "Rozwiązanie: Anti-Pause ze StreamPulse",
+        "answer": "StreamPulse zawiera funkcję Anti-Pause i Player Sync. Zapobiega spowalnianiu wideo przeglądarki podczas przełączania kart.",
+        "body": [
+          "Jeśli korzystasz z najlepszych rozszerzeń Twitcha, wiesz, że StreamPulse słynie z optymalizacji odtwarzaczy. Rozszerzenie wymusza utrzymanie niskiego opóźnienia, nawet jeśli strumień działa w tle podczas przechodzenia na inną stronę.",
+          "Dzięki temu zawsze będziesz zsynchronizowany z czatem i streamerem, bez konieczności ręcznego ponownego ładowania strony."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Co to jest tryb niskiego opóźnienia na Twitchu?",
+        "a": "Tryb niskiego opóźnienia zmniejsza opóźnienie między akcją na żywo a tym, co widzisz na ekranie, z około 10 sekund do 2 lub 3 sekund."
+      },
+      {
+        "q": "Jak włączyć niskie opóźnienia?",
+        "a": "Kliknij ikonę ustawień (koła zębatego) odtwarzacza Twitch, przejdź do „Opcji zaawansowanych” i zaznacz „Tryb małego opóźnienia”."
+      },
+      {
+        "q": "Dlaczego moje opóźnienie wzrasta, gdy przełączam karty?",
+        "a": "Przeglądarki często wstrzymują lub spowalniają filmy w tle, aby oszczędzać zasoby. Użyj StreamPulse, aby temu zapobiec dzięki funkcji Anti-Pause."
+      }
+    ]
+  },
+  "tr": {
+    "slug": "seğirme-düşük gecikme",
+    "linkLabel": "Seğirme Gecikmesi",
+    "title": "Twitch'teki gecikmeyi azaltın (Gecikme) | StreamPulse",
+    "h1": "Twitch'te Gecikmeyi Azaltma ve Gecikmeyi Önleme",
+    "description": "Twitch'teki gecikmeyi nasıl azaltacağınızı ve gecikmenin zaman içinde neden arttığını öğrenin. Sohbetle senkronize kalmanın çözümü.",
+    "intro": "Yayıncının eylemleri ile sohbetin tepkileri arasında bir boşluk olduğunu düşünüyor musunuz? Muhtemelen Twitch'te gecikme sorunu yaşıyorsunuz. İşte bu gecikmenin neden ortaya çıktığı ve bunun nasıl düzeltileceği.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Twitch'te Düşük Gecikme modu nasıl etkinleştirilir",
+        "answer": "Düşük Gecikmeyi etkinleştirmek için video oynatıcı donanımına tıklayın, \"Gelişmiş\"i seçin ve ardından \"Düşük Gecikme Modu\" seçeneğini işaretleyin. Gecikme ~12 saniyeden 2 veya 3 saniyeye düşecek.",
+        "body": [
+          "Twitch'in \"Düşük Gecikme\" modu, izleyicilerin yayını neredeyse gerçek zamanlı olarak görüntülemesine olanak tanıyan bir seçenektir. Bu seçenek olmadığında yayıncının yaptığı ile sizin gördüğünüz arasında genellikle 10-15 saniyelik bir gecikme olur ve bu da sohbet etkileşimlerini zorlaştırır."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Neden yavaş yavaş bir boşluk oluşuyor?",
+        "answer": "Düşük Gecikme modunu etkinleştirmiş olsanız bile, gecikmenin zamanla büyüdüğünü fark edebilirsiniz (2 saniyeden 10, 20 ve hatta 30 saniyeye kadar). Bunun nedeni genellikle:",
+        "list": [
+          "<strong>Sekme değiştirme:</strong> Chrome ve Edge gibi tarayıcılar, RAM ve pil tasarrufu sağlamak için görüntülenmeyen videoları kasıtlı olarak yavaşlatır.",
+          "<strong>Ağ istikrarsızlıkları:</strong> Küçük bir bağlantı kaybı videonun arabelleğe alınmasına neden olur. Video oynatıcı yetişmek için ileri atlamayacak ve kalıcı bir gecikme yaratacaktır."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "Çözüm: StreamPulse ile Duraklatma Önleme",
+        "answer": "StreamPulse, Duraklatma Önleme ve Oynatıcı Senkronizasyonu işlevlerini içerir. Sekmeleri değiştirdiğinizde tarayıcının videoyu yavaşlatmasını engeller.",
+        "body": [
+          "En iyi Twitch uzantılarını kullanıyorsanız StreamPulse'un oynatıcı optimizasyonuyla tanındığını biliyorsunuzdur. Uzantı, siz başka bir sayfaya giderken arka planda akış çalışırken bile düşük gecikmenin korunmasını zorlar.",
+          "Bu, sayfayı manuel olarak yeniden yüklemenize gerek kalmadan her zaman sohbet ve yayıncıyla senkronize olmanızı sağlar."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Twitch'te düşük gecikme modu nedir?",
+        "a": "Düşük gecikme modu, canlı aksiyon ile ekranda gördükleriniz arasındaki gecikmeyi yaklaşık 10 saniyeden 2 veya 3 saniyeye düşürür."
+      },
+      {
+        "q": "Düşük gecikme nasıl etkinleştirilir?",
+        "a": "Twitch oynatıcısının ayarlar simgesine (dişli) tıklayın, “Gelişmiş seçenekler”e gidin ve “Düşük Gecikme Modu”nu işaretleyin."
+      },
+      {
+        "q": "Sekmeleri değiştirdiğimde gecikmem neden artıyor?",
+        "a": "Tarayıcılar, kaynaklardan tasarruf etmek için genellikle arka planda videoları duraklatır veya yavaşlatır. Anti-Pause özelliği ile bunu önlemek için StreamPulse kullanın."
+      }
+    ]
+  },
+  "ru": {
+    "slug": "подергивание с низкой задержкой",
+    "linkLabel": "Задержка Twitch",
+    "title": "Уменьшение задержки на Twitch (задержка) | СтримПульс",
+    "h1": "Как уменьшить задержку на Twitch и избежать лагов",
+    "description": "Узнайте, как уменьшить задержку на Twitch и почему задержка со временем увеличивается. Решение для синхронизации с чатом.",
+    "intro": "Чувствуете ли вы, что между действиями стримера и реакцией чата существует разрыв? Вероятно, у вас проблема с задержкой на Twitch. Вот почему появляется это отставание и как его исправить навсегда.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Как включить режим низкой задержки на Twitch",
+        "answer": "Чтобы включить низкую задержку, нажмите на шестеренку видеоплеера, выберите «Дополнительно», затем установите флажок «Режим низкой задержки». Задержка уменьшится с ~12 секунд до 2 или 3 секунд.",
+        "body": [
+          "Режим Twitch «Low Latency» — это опция, которая позволяет зрителям просматривать поток практически в реальном времени. Без этой опции между тем, что делает стример, и тем, что вы видите, часто возникает задержка в 10–15 секунд, что затрудняет взаимодействие в чате."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Почему постепенно образуется разрыв?",
+        "answer": "Даже если у вас включен режим низкой задержки, вы можете заметить, что задержка со временем увеличивается (с 2 секунд до 10, 20 или даже 30 секунд). Часто это происходит из-за:",
+        "list": [
+          "<strong>Переключение вкладок</strong>. Такие браузеры, как Chrome и Edge, намеренно замедляют видео, которые не отображаются, чтобы сэкономить оперативную память и аккумулятор.",
+          "<strong>Нестабильность сети.</strong> Небольшая потеря соединения приведет к буферизации видео. Видеоплеер не прыгает вперед, чтобы наверстать упущенное, создавая постоянную задержку."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "Решение: Антипауза с StreamPulse",
+        "answer": "StreamPulse включает функции анти-паузы и синхронизации проигрывателя. Он не позволяет браузеру замедлять видео при переключении вкладок.",
+        "body": [
+          "Если вы используете лучшие расширения Twitch, вы знаете, что StreamPulse известен своей оптимизацией плееров. Расширение обеспечивает низкую задержку, даже если поток работает в фоновом режиме, пока вы переходите на другую страницу.",
+          "Это гарантирует, что вы всегда будете синхронизированы с чатом и стримером без необходимости вручную перезагружать страницу."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Что такое режим низкой задержки на Twitch?",
+        "a": "Режим низкой задержки уменьшает задержку между живым действием и тем, что вы видите на экране, примерно с 10 секунд до 2–3 секунд."
+      },
+      {
+        "q": "Как включить низкую задержку?",
+        "a": "Нажмите на значок настроек (шестеренку) плеера Twitch, перейдите в «Дополнительные параметры» и установите флажок «Режим низкой задержки»."
+      },
+      {
+        "q": "Почему моя задержка увеличивается при переключении вкладок?",
+        "a": "Браузеры часто приостанавливают или замедляют видео в фоновом режиме, чтобы сэкономить ресурсы. Используйте StreamPulse, чтобы предотвратить это с помощью функции «Антипауза»."
+      }
+    ]
+  },
+  "ja": {
+    "slug": "twitch-低遅延",
+    "linkLabel": "Twitch レイテンシ",
+    "title": "Twitch のラグを軽減する (レイテンシー) |ストリームパルス",
+    "h1": "Twitchのレイテンシーを短縮し、ラグを回避する方法",
+    "description": "Twitch での遅延を軽減する方法と、時間の経過とともに遅延が増加する理由について説明します。チャットとの同期を維持するためのソリューション。",
+    "intro": "配信者のアクションとチャットの反応にギャップがあるように感じますか?おそらく Twitch で遅延の問題が発生している可能性があります。この遅延が発生する理由と、それを完全に修正する方法を次に示します。",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Twitchで低遅延モードを有効にする方法",
+        "answer": "低遅延を有効にするには、ビデオ プレーヤーの歯車をクリックし、[詳細設定] を選択して、[低遅延モード] オプションをオンにします。遅延は約 12 秒から 2 秒または 3 秒に短縮されます。",
+        "body": [
+          "Twitch の「低遅延」モードは、視聴者がほぼリアルタイムでストリームを視聴できるようにするオプションです。このオプションを使用しないと、ストリーマーの動作と表示される内容の間に 10 ～ 15 秒の遅延が生じることが多く、チャットのやり取りが困難になります。"
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "なぜ徐々にギャップが生じてしまうのでしょうか？",
+        "answer": "低遅延モードが有効になっている場合でも、時間の経過とともに遅延が大きくなることがあります (2 秒から 10、20、さらには 30 秒まで)。これは多くの場合、次のことが原因です。",
+        "list": [
+          "<strong>タブの切り替え:</strong> Chrome や Edge などのブラウザは、RAM とバッテリーを節約するために、表示されないビデオの速度を意図的に遅くします。",
+          "<strong>ネットワークの不安定性:</strong> 接続がわずかに失われると、ビデオがバッファリングされます。ビデオプレーヤーは前にジャンプして追いつくことができないため、永続的な遅れが生じます。"
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "解決策: StreamPulse によるアンチポーズ",
+        "answer": "StreamPulse には、アンチポーズ機能とプレーヤー同期機能が含まれています。これにより、タブを切り替えたときにブラウザーによるビデオの速度が低下するのを防ぎます。",
+        "body": [
+          "最高の Twitch 拡張機能を使用している場合は、StreamPulse がプレーヤーの最適化で知られていることをご存知でしょう。この拡張機能により、別のページに移動しているときにストリームがバックグラウンドで実行されている場合でも、強制的に低遅延が維持されます。",
+          "これにより、ページを手動でリロードしなくても、チャットやストリーマーと常に同期することができます。"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Twitchの低遅延モードとは何ですか?",
+        "a": "低遅延モードでは、実写と画面に表示される内容の間の遅延が約 10 秒から 2 ～ 3 秒に短縮されます。"
+      },
+      {
+        "q": "低遅延を有効にするにはどうすればよいですか?",
+        "a": "Twitchプレーヤーの設定アイコン（歯車）をクリックし、「詳細オプション」に移動し、「低遅延モード」にチェックを入れます。"
+      },
+      {
+        "q": "タブを切り替えると遅延が増加するのはなぜですか?",
+        "a": "ブラウザはリソースを節約するために、バックグラウンドでビデオを一時停止したり速度を落としたりすることがよくあります。 StreamPulse の一時停止防止機能を使用して、これを防ぎます。"
+      }
+    ]
+  },
+  "ko": {
+    "slug": "트위치-낮은 지연 시간",
+    "linkLabel": "트위치 지연 시간",
+    "title": "Twitch의 지연 감소(대기 시간) | 스트림펄스",
+    "h1": "Twitch에서 지연 시간을 줄이고 지연을 방지하는 방법",
+    "description": "Twitch에서 지연을 줄이는 방법과 시간이 지남에 따라 지연 시간이 증가하는 이유를 알아보세요. 채팅과의 동기화를 유지하는 솔루션입니다.",
+    "intro": "스트리머의 행동과 채팅의 반응 사이에 차이가 있다고 느끼시나요? Twitch에서 대기 시간 문제가 있을 수 있습니다. 이러한 지연이 나타나는 이유와 이를 해결하는 방법은 다음과 같습니다.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Twitch에서 낮은 대기 시간 모드를 활성화하는 방법",
+        "answer": "낮은 대기 시간을 활성화하려면 비디오 플레이어 기어를 클릭하고 \"고급\"을 선택한 다음 \"낮은 대기 시간 모드\" 옵션을 선택하세요. 지연 시간은 ~12초에서 2~3초로 줄어듭니다.",
+        "body": [
+          "Twitch의 \"낮은 대기 시간\" 모드는 시청자가 거의 실시간으로 스트림을 볼 수 있는 옵션입니다. 이 옵션이 없으면 스트리머가 수행하는 작업과 사용자가 보는 작업 사이에 10~15초 정도 지연이 발생하여 채팅 상호 작용이 어려워지는 경우가 많습니다."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "왜 간격이 점차 생기나요?",
+        "answer": "낮은 대기 시간 모드를 활성화한 경우에도 시간이 지남에 따라 지연이 더 커지는 것을 확인할 수 있습니다(2초에서 10초, 20초 또는 30초까지). 이는 종종 다음과 같은 이유로 인해 발생합니다.",
+        "list": [
+          "<strong>탭 전환:</strong> Chrome 및 Edge와 같은 브라우저는 RAM과 배터리를 절약하기 위해 표시되지 않는 동영상의 속도를 의도적으로 느리게 합니다.",
+          "<strong>네트워크 불안정:</strong> 연결이 약간 끊어지면 동영상이 버퍼링됩니다. 비디오 플레이어가 따라잡기 위해 앞으로 점프하지 않아 영구적인 지연이 발생합니다."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "솔루션: StreamPulse를 통한 일시정지 방지",
+        "answer": "StreamPulse에는 Anti-Pause 및 Player Sync 기능이 포함되어 있습니다. 탭을 전환할 때 브라우저가 비디오 속도를 늦추는 것을 방지합니다.",
+        "body": [
+          "최고의 Twitch 확장 프로그램을 사용한다면 StreamPulse가 플레이어 최적화로 유명하다는 것을 알고 계실 것입니다. 확장 프로그램은 다른 페이지로 이동하는 동안 스트림이 백그라운드에서 실행되는 경우에도 낮은 대기 시간을 유지하도록 강제합니다.",
+          "이를 통해 페이지를 수동으로 다시 로드할 필요 없이 항상 채팅 및 스트리머와 동기화할 수 있습니다."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Twitch의 저지연 모드란 무엇인가요?",
+        "a": "낮은 대기 시간 모드는 실제 동작과 화면에 표시되는 내용 사이의 지연 시간을 약 10초에서 2~3초로 줄여줍니다."
+      },
+      {
+        "q": "짧은 대기 시간을 활성화하는 방법은 무엇입니까?",
+        "a": "Twitch 플레이어의 설정 아이콘(기어)을 클릭하고 \"고급 옵션\"으로 이동하여 \"낮은 대기 시간 모드\"를 확인하세요."
+      },
+      {
+        "q": "탭을 전환하면 대기 시간이 늘어나는 이유는 무엇입니까?",
+        "a": "브라우저는 리소스를 절약하기 위해 백그라운드에서 비디오를 일시 중지하거나 속도를 늦추는 경우가 많습니다. StreamPulse를 사용하면 Anti-Pause 기능으로 이를 방지할 수 있습니다."
+      }
+    ]
+  },
+  "id": {
+    "slug": "kedutan-latensi rendah",
+    "linkLabel": "Latensi Kedutan",
+    "title": "Mengurangi kelambatan pada Twitch (Latensi) | AliranPulse",
+    "h1": "Cara Mengurangi Latensi di Twitch dan Menghindari Lag",
+    "description": "Pelajari cara mengurangi kelambatan di Twitch dan mengapa latensi meningkat seiring waktu. Solusi untuk tetap sinkron dengan obrolan.",
+    "intro": "Apakah Anda merasa ada kesenjangan antara tindakan streamer dan reaksi chat? Anda mungkin memiliki masalah latensi di Twitch. Inilah mengapa kelambatan ini muncul dan cara memperbaikinya selamanya.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Cara mengaktifkan mode Latensi Rendah di Twitch",
+        "answer": "Untuk mengaktifkan Latensi Rendah, klik roda gigi pemutar video, pilih \"Lanjutan\", lalu centang opsi \"Mode Latensi Rendah\". Latensi akan turun dari ~12 detik menjadi 2 atau 3 detik.",
+        "body": [
+          "Mode \"Latensi Rendah\" Twitch adalah opsi yang memungkinkan pemirsa menonton streaming hampir secara real-time. Tanpa opsi ini, sering kali ada jeda 10-15 detik antara apa yang dilakukan streamer dan apa yang Anda lihat, sehingga membuat interaksi obrolan menjadi sulit."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Mengapa kesenjangan perlahan terjadi?",
+        "answer": "Meskipun Anda mengaktifkan mode Latensi Rendah, Anda mungkin melihat jeda semakin besar seiring berjalannya waktu (dari 2 detik menjadi 10, 20, atau bahkan 30 detik). Hal ini sering kali disebabkan oleh:",
+        "list": [
+          "<strong>Peralihan tab:</strong> Browser seperti Chrome dan Edge sengaja memperlambat video yang tidak ditampilkan untuk menghemat RAM dan baterai.",
+          "<strong>Ketidakstabilan jaringan:</strong> Hilangnya sedikit koneksi akan membuat video menjadi buffer. Pemutar video tidak akan melompat ke depan untuk mengejar ketinggalan, sehingga menimbulkan kelambatan permanen."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "Solusinya: Anti-Jeda dengan StreamPulse",
+        "answer": "StreamPulse menyertakan fungsionalitas Anti-Jeda dan Sinkronisasi Pemain. Ini mencegah browser memperlambat video saat Anda berpindah tab.",
+        "body": [
+          "Jika Anda menggunakan ekstensi Twitch terbaik, Anda pasti tahu bahwa StreamPulse terkenal dengan pengoptimalan pemainnya. Ekstensi ini memaksa latensi rendah untuk dipertahankan, bahkan saat streaming berjalan di latar belakang saat Anda menavigasi ke halaman lain.",
+          "Ini memastikan Anda selalu sinkron dengan obrolan dan streamer, tanpa harus memuat ulang halaman secara manual."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Apa itu mode latensi rendah di Twitch?",
+        "a": "Mode latensi rendah mengurangi jeda antara aksi langsung dan apa yang Anda lihat di layar, dari sekitar 10 detik menjadi 2 atau 3 detik."
+      },
+      {
+        "q": "Bagaimana cara mengaktifkan latensi rendah?",
+        "a": "Klik pada ikon pengaturan (roda gigi) pemutar Twitch, buka “Opsi lanjutan” dan centang “Mode Latensi Rendah”."
+      },
+      {
+        "q": "Mengapa latensi saya meningkat saat saya berpindah tab?",
+        "a": "Browser sering kali menjeda atau memperlambat video di latar belakang untuk menghemat sumber daya. Gunakan StreamPulse untuk mencegah hal ini dengan fitur Anti-Jeda."
+      }
+    ]
+  },
+  "nl": {
+    "slug": "twitch-lage latentie",
+    "linkLabel": "Twitch-latentie",
+    "title": "Vertraging op Twitch verminderen (latentie) | StreamPulse",
+    "h1": "Hoe u de latentie op Twitch kunt verminderen en vertraging kunt voorkomen",
+    "description": "Ontdek hoe je de vertraging op Twitch kunt verminderen en waarom de latentie in de loop van de tijd toeneemt. The solution to staying in sync with the chat.",
+    "intro": "Heb je het gevoel dat er een kloof gaapt tussen de actie van de streamer en de reacties op de chat? Je hebt waarschijnlijk een latentieprobleem op Twitch. Dit is de reden waarom deze vertraging optreedt en hoe u deze voorgoed kunt oplossen.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Hoe de Low Latency-modus op Twitch in te schakelen",
+        "answer": "Om Lage Latentie in te schakelen, klikt u op het tandwiel van de videospeler, selecteert u 'Geavanceerd' en vinkt u vervolgens de optie 'Lage Latentiemodus' aan. De latentie daalt van ~12 seconden naar 2 of 3 seconden.",
+        "body": [
+          "De \"Low Latency\" -modus van Twitch is een optie waarmee kijkers de stream bijna in realtime kunnen bekijken. Zonder deze optie zit er vaak een vertraging van 10-15 seconden tussen wat de streamer doet en wat je ziet, waardoor chatinteracties moeilijk worden."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Waarom ontstaat er geleidelijk een kloof?",
+        "answer": "Zelfs als je de Low Latency-modus hebt ingeschakeld, merk je mogelijk dat de vertraging in de loop van de tijd groter wordt (van 2 seconden naar 10, 20 of zelfs 30 seconden). Dit komt vaak door:",
+        "list": [
+          "<strong>Schakelen tussen tabbladen:</strong> Browsers zoals Chrome en Edge vertragen opzettelijk video's die niet worden weergegeven om RAM en batterij te besparen.",
+          "<strong>Netwerkinstabiliteiten:</strong> een klein verbindingsverlies zal de video bufferen. De videospeler springt niet vooruit om de achterstand in te halen, waardoor een permanente vertraging ontstaat."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "De oplossing: Anti-Pauze met StreamPulse",
+        "answer": "StreamPulse omvat Anti-Pauze en Player Sync-functionaliteit. Het voorkomt dat de browser de video vertraagt ​​wanneer u van tabblad wisselt.",
+        "body": [
+          "Als je de beste Twitch-extensies gebruikt, weet je dat StreamPulse bekend staat om zijn speleroptimalisatie. De extensie dwingt een lage latentie af, zelfs als de stream op de achtergrond draait terwijl u naar een andere pagina navigeert.",
+          "Dit zorgt ervoor dat je altijd gesynchroniseerd bent met de chat en streamer, zonder dat je de pagina handmatig opnieuw hoeft te laden."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Wat is de lage latentiemodus op Twitch?",
+        "a": "De lage latentiemodus vermindert de vertraging tussen live actie en wat u op het scherm ziet, van ongeveer 10 seconden naar 2 of 3 seconden."
+      },
+      {
+        "q": "Hoe kan ik lage latentie inschakelen?",
+        "a": "Klik op het instellingenpictogram (tandwiel) van de Twitch-speler, ga naar “Geavanceerde opties” en vink “Low Latency Mode” aan."
+      },
+      {
+        "q": "Waarom neemt mijn latentie toe als ik van tabblad wissel?",
+        "a": "Browsers pauzeren of vertragen video's vaak op de achtergrond om bronnen te besparen. Gebruik StreamPulse om dit te voorkomen met de Anti-Pauze-functie."
+      }
+    ]
+  },
+  "hi": {
+    "slug": "चिकोटी-कम विलंबता",
+    "linkLabel": "चिकोटी विलंबता",
+    "title": "ट्विच (विलंबता) पर अंतराल कम करें | स्ट्रीमपल्स",
+    "h1": "ट्विच पर विलंबता को कैसे कम करें और अंतराल से कैसे बचें",
+    "description": "जानें कि ट्विच पर अंतराल को कैसे कम किया जाए और समय के साथ विलंबता क्यों बढ़ती है। चैट के साथ तालमेल बनाए रखने का समाधान.",
+    "intro": "क्या आपको ऐसा लगता है कि स्ट्रीमर की क्रिया और चैट की प्रतिक्रियाओं के बीच कोई अंतर है? संभवतः आपको ट्विच पर विलंबता की समस्या है। यहां बताया गया है कि यह अंतराल क्यों दिखाई देता है और इसे हमेशा के लिए कैसे ठीक किया जाए।",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "ट्विच पर लो लेटेंसी मोड कैसे सक्षम करें",
+        "answer": "लो लेटेंसी को सक्षम करने के लिए, वीडियो प्लेयर गियर पर क्लिक करें, \"उन्नत\" चुनें, फिर \"लो लेटेंसी मोड\" विकल्प की जांच करें। विलंबता ~12 सेकंड से घटकर 2 या 3 सेकंड हो जाएगी।",
+        "body": [
+          "ट्विच का \"लो लेटेंसी\" मोड एक विकल्प है जो दर्शकों को वास्तविक समय में स्ट्रीम देखने की अनुमति देता है। इस विकल्प के बिना, स्ट्रीमर जो करता है और आप जो देखते हैं, उसके बीच अक्सर 10-15 सेकंड की देरी होती है, जिससे चैट इंटरैक्शन मुश्किल हो जाती है।"
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "धीरे-धीरे अंतराल क्यों आने लगता है?",
+        "answer": "भले ही आपके पास लो लेटेंसी मोड सक्षम हो, आप समय के साथ अंतराल को बड़ा होते हुए देख सकते हैं (2 सेकंड से 10, 20 या 30 सेकंड तक)। यह अक्सर निम्न कारणों से होता है:",
+        "list": [
+          "<strong>टैब स्विचिंग:</strong> क्रोम और एज जैसे ब्राउज़र रैम और बैटरी बचाने के लिए जानबूझकर उन वीडियो को धीमा कर देते हैं जो प्रदर्शित नहीं होते हैं।",
+          "<strong>नेटवर्क अस्थिरता:</strong> कनेक्शन की एक छोटी सी हानि वीडियो को बफर कर देगी। वीडियो प्लेयर पकड़ने के लिए आगे नहीं कूदेगा, जिससे स्थायी अंतराल पैदा हो जाएगा।"
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "समाधान: स्ट्रीमपल्स के साथ एंटी-पॉज़",
+        "answer": "स्ट्रीमपल्स में एंटी-पॉज़ और प्लेयर सिंक कार्यक्षमता शामिल है। जब आप टैब स्विच करते हैं तो यह ब्राउज़र को वीडियो को धीमा करने से रोकता है।",
+        "body": [
+          "यदि आप सर्वोत्तम ट्विच एक्सटेंशन का उपयोग करते हैं, तो आप जानते हैं कि स्ट्रीमपल्स अपने प्लेयर अनुकूलन के लिए जाना जाता है। एक्सटेंशन कम विलंबता को बनाए रखने के लिए बाध्य करता है, तब भी जब आप किसी अन्य पृष्ठ पर नेविगेट करते समय स्ट्रीम पृष्ठभूमि में चल रही हो।",
+          "यह सुनिश्चित करता है कि आप पेज को मैन्युअल रूप से पुनः लोड किए बिना, चैट और स्ट्रीमर के साथ हमेशा सिंक में रहें।"
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "ट्विच पर लो लेटेंसी मोड क्या है?",
+        "a": "कम विलंबता मोड लाइव एक्शन और आप स्क्रीन पर जो देखते हैं, उसके बीच के अंतराल को लगभग 10 सेकंड से घटाकर 2 या 3 सेकंड कर देता है।"
+      },
+      {
+        "q": "कम विलंबता कैसे सक्षम करें?",
+        "a": "ट्विच प्लेयर के सेटिंग आइकन (गियर) पर क्लिक करें, \"उन्नत विकल्प\" पर जाएं और \"लो लेटेंसी मोड\" जांचें।"
+      },
+      {
+        "q": "जब मैं टैब स्विच करता हूं तो मेरी विलंबता क्यों बढ़ जाती है?",
+        "a": "संसाधनों को बचाने के लिए ब्राउज़र अक्सर पृष्ठभूमि में वीडियो को रोक देते हैं या धीमा कर देते हैं। इसकी एंटी-पॉज़ सुविधा के साथ इसे रोकने के लिए स्ट्रीमपल्स का उपयोग करें।"
+      }
+    ]
+  },
+  "sv": {
+    "slug": "ryck-låg-latens",
+    "linkLabel": "Twitch Latency",
+    "title": "Minska fördröjningen på Twitch (Latency) | StreamPulse",
+    "h1": "Hur man minskar latensen på Twitch och undviker fördröjning",
+    "description": "Lär dig hur du minskar fördröjningen på Twitch och varför latensen ökar med tiden. Lösningen för att hålla sig synkroniserad med chatten.",
+    "intro": "Känner du att det finns ett gap mellan streamarens handling och chattens reaktioner? Du har förmodligen ett latensproblem på Twitch. Här är varför denna fördröjning visas och hur du fixar det för gott.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Hur man aktiverar Low Latency-läget på Twitch",
+        "answer": "För att aktivera låg latens, klicka på videospelarens kugghjul, välj \"Avancerat\" och markera sedan alternativet \"Låg fördröjning\". Latensen sjunker från ~12 sekunder till 2 eller 3 sekunder.",
+        "body": [
+          "Twitchs \"Low Latency\"-läge är ett alternativ som låter tittarna se strömmen i nästan realtid. Utan detta alternativ är det ofta 10-15 sekunders fördröjning mellan vad streamern gör och det du ser, vilket gör chattinteraktioner svåra."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Varför uppstår en lucka gradvis?",
+        "answer": "Även om du har aktiverat låg latensläge kan du märka att fördröjningen blir större med tiden (från 2 sekunder till 10, 20 eller till och med 30 sekunder). Detta beror ofta på:",
+        "list": [
+          "<strong>Flikbyte:</strong> Webbläsare som Chrome och Edge saktar avsiktligt ner videor som inte visas för att spara RAM och batteri.",
+          "<strong>Nätverksinstabilitet:</strong> En liten anslutningsförlust buffrar videon. Videospelaren hoppar inte framåt för att komma ikapp, vilket skapar en permanent fördröjning."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "Lösningen: Anti-Pause med StreamPulse",
+        "answer": "StreamPulse inkluderar Anti-Pause och Player Sync-funktioner. Det hindrar webbläsaren från att sakta ner videon när du byter flik.",
+        "body": [
+          "Om du använder de bästa Twitch-tilläggen vet du att StreamPulse är känt för sin spelaroptimering. Tillägget tvingar låg latens att bibehållas, även när streamen körs i bakgrunden medan du navigerar till en annan sida.",
+          "Detta säkerställer att du alltid är synkroniserad med chatten och streamern, utan att behöva ladda om sidan manuellt."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Vad är låg latensläge på Twitch?",
+        "a": "Läget med låg latens minskar fördröjningen mellan live action och det du ser på skärmen, från cirka 10 sekunder till 2 eller 3 sekunder."
+      },
+      {
+        "q": "Hur aktiverar man låg latens?",
+        "a": "Klicka på inställningsikonen (kugghjulet) för Twitch-spelaren, gå till \"Avancerade alternativ\" och markera \"Low Latency Mode\"."
+      },
+      {
+        "q": "Varför ökar min latens när jag byter flik?",
+        "a": "Webbläsare pausar eller saktar ofta ner videor i bakgrunden för att spara resurser. Använd StreamPulse för att förhindra detta med dess Anti-Paus-funktion."
+      }
+    ]
+  },
+  "cs": {
+    "slug": "záškuby-nízká-latence",
+    "linkLabel": "Latence škubnutí",
+    "title": "Snížení zpoždění na Twitchi (latence) | StreamPulse",
+    "h1": "Jak snížit latenci na Twitchi a vyhnout se Lag",
+    "description": "Přečtěte si, jak snížit zpoždění na Twitchi a proč se latence v průběhu času zvyšuje. Řešení, jak zůstat v synchronizaci s chatem.",
+    "intro": "Máte pocit, že mezi akcí streamera a reakcemi chatu je mezera? Pravděpodobně máte problém s latencí na Twitchi. Zde je důvod, proč se tato prodleva objevuje a jak ji napravit.",
+    "sections": [
+      {
+        "id": "activer-low-latency",
+        "h2": "Jak povolit režim nízké latence na Twitchi",
+        "answer": "Chcete-li povolit nízkou latenci, klikněte na ozubené kolo přehrávače videa, vyberte „Pokročilé“ a poté zaškrtněte možnost „Režim nízké latence“. Latence klesne z ~12 sekund na 2 nebo 3 sekundy.",
+        "body": [
+          "Režim „Nízká latence“ Twitche je možnost, která umožňuje divákům sledovat stream téměř v reálném čase. Bez této možnosti je často 10–15 sekundová prodleva mezi tím, co streamer dělá, a tím, co vidíte, což ztěžuje chatové interakce."
+        ]
+      },
+      {
+        "id": "pourquoi-decalage",
+        "h2": "Proč postupně vzniká mezera?",
+        "answer": "I když máte povolený režim nízké latence, můžete si všimnout, že se zpoždění v průběhu času zvětšuje (ze 2 sekund na 10, 20 nebo dokonce 30 sekund). To je často způsobeno:",
+        "list": [
+          "<strong>Přepínání karet:</strong> Prohlížeče jako Chrome a Edge záměrně zpomalují videa, která se nezobrazují, aby šetřily RAM a baterii.",
+          "<strong>Nestabilita sítě:</strong> Malá ztráta připojení způsobí vyrovnávací paměť videa. Přehrávač videa nepřeskočí dopředu, aby to dohnal, čímž vznikne trvalé zpoždění."
+        ]
+      },
+      {
+        "id": "solution-streampulse",
+        "h2": "Řešení: Anti-Pause s funkcí StreamPulse",
+        "answer": "StreamPulse zahrnuje funkce Anti-Pause a Player Sync. Zabraňuje prohlížeči zpomalit video při přepínání karet.",
+        "body": [
+          "Pokud používáte nejlepší Twitch rozšíření, víte, že StreamPulse je známý svou optimalizací pro přehrávače. Rozšíření vynucuje zachování nízké latence, i když stream běží na pozadí, když přejdete na jinou stránku.",
+          "Díky tomu budete vždy synchronizováni s chatem a streamerem, aniž byste museli ručně znovu načítat stránku."
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": "Co je režim nízké latence na Twitchi?",
+        "a": "Režim nízké latence snižuje prodlevu mezi živou akcí a tím, co vidíte na obrazovce, z přibližně 10 sekund na 2 nebo 3 sekundy."
+      },
+      {
+        "q": "Jak povolit nízkou latenci?",
+        "a": "Klikněte na ikonu nastavení (ozubené kolo) přehrávače Twitch, přejděte na „Pokročilé možnosti“ a zaškrtněte „Režim nízké latence“."
+      },
+      {
+        "q": "Proč se moje latence při přepínání karet zvyšuje?",
+        "a": "Prohlížeče často pozastavují nebo zpomalují videa na pozadí, aby šetřily zdroje. Použijte StreamPulse, abyste tomu zabránili s funkcí Anti-Pause."
+      }
+    ]
+  }
+}

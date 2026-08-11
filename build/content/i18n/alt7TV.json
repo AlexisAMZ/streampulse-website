@@ -1,0 +1,1142 @@
+{
+  "en": {
+    "slug": "alternatives/7tv",
+    "linkLabel": "Alternative 7TV",
+    "title": "StreamPulse vs 7TV: Which extension to choose?",
+    "h1": "StreamPulse vs 7TV: Which extension to choose?",
+    "description": "Comparison of 7TV and StreamPulse features. Are they compatible? Which ones to install to improve Twitch and Kick?",
+    "intro": "7TV is the extension that revolutionized the quality of emotes on Twitch and YouTube by introducing HD animated visuals. Can (and should) be used with StreamPulse? Here's what you need to know.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "The quick comparison",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "The strength of 7TV: HD Animated Emotes",
+        "body": [
+          "7TV excels in one specific area: providing thousands of super-smooth animated emotes and personalized badges for profiles in chat. If emotes are your priority, 7TV is the best on the market right now."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "The strength of StreamPulse: Automation",
+        "body": [
+          "StreamPulse does not intervene in chat (except for its keyword filtering tool). Its role is to automate the collection of Drops and channel points, send alerts when your favorite streamers go live, and automatically correct video player crashes."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Can we use them together?",
+        "answer": "Absolutely. 7TV and StreamPulse form a perfect duo, especially since both work equally well on Twitch and Kick.",
+        "body": [
+          "By installing both extensions, you benefit from the beautiful emotes of 7TV and the powerful automation of StreamPulse. Both extensions have been tested together and do not create any slowness in the browser."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "es": {
+    "slug": "alternativas/7tv",
+    "linkLabel": "Alternativa 7TV",
+    "title": "StreamPulse vs 7TV: ¿Qué extensión elegir?",
+    "h1": "StreamPulse vs 7TV: ¿Qué extensión elegir?",
+    "description": "Comparación de las funciones de 7TV y StreamPulse. ¿Son compatibles? ¿Cuáles instalar para mejorar Twitch y Kick?",
+    "intro": "7TV es la extensión que revolucionó la calidad de los emoticones en Twitch y YouTube al introducir imágenes animadas en HD. ¿Se puede (y se debe) utilizar con StreamPulse? Esto es lo que necesita saber.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "La comparación rápida",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "La fuerza de 7TV: gestos animados en HD",
+        "body": [
+          "7TV se destaca en un área específica: proporcionar miles de emoticones animados súper fluidos e insignias personalizadas para perfiles en el chat. Si los emoticones son tu prioridad, 7TV es el mejor del mercado en este momento."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "La fortaleza de StreamPulse: la automatización",
+        "body": [
+          "StreamPulse no interviene en el chat (a excepción de su herramienta de filtrado de palabras clave). Su función es automatizar la recopilación de Drops y puntos de canal, enviar alertas cuando tus transmisores favoritos se transmitan en vivo y corregir automáticamente las fallas del reproductor de video."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "¿Podemos usarlos juntos?",
+        "answer": "Absolutamente. 7TV y StreamPulse forman un dúo perfecto, sobre todo porque ambos funcionan igual de bien en Twitch y Kick.",
+        "body": [
+          "Al instalar ambas extensiones, te beneficiarás de los hermosos emoticones de 7TV y la poderosa automatización de StreamPulse. Ambas extensiones han sido probadas juntas y no generan lentitud en el navegador."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pt-BR": {
+    "slug": "alternativas/7tv",
+    "linkLabel": "Alternativa 7TV",
+    "title": "StreamPulse vs 7TV: Qual extensão escolher?",
+    "h1": "StreamPulse vs 7TV: Qual extensão escolher?",
+    "description": "Comparação dos recursos 7TV e StreamPulse. Eles são compatíveis? Quais instalar para melhorar Twitch e Kick?",
+    "intro": "7TV é a extensão que revolucionou a qualidade dos emotes no Twitch e no YouTube ao apresentar recursos visuais animados em HD. Pode (e deve) ser usado com StreamPulse? Aqui está o que você precisa saber.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "A comparação rápida",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "A força da 7TV: Emotes animados em HD",
+        "body": [
+          "A 7TV se destaca em uma área específica: fornecer milhares de emotes animados super suaves e emblemas personalizados para perfis no chat. Se os emotes são sua prioridade, a 7TV é a melhor do mercado atualmente."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "A força do StreamPulse: Automação",
+        "body": [
+          "StreamPulse não intervém no chat (exceto em sua ferramenta de filtragem de palavras-chave). Sua função é automatizar a coleta de Drops e pontos do canal, enviar alertas quando seus streamers favoritos entrarem ao vivo e corrigir automaticamente travamentos do player de vídeo."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Podemos usá-los juntos?",
+        "answer": "Absolutamente. 7TV e StreamPulse formam uma dupla perfeita, especialmente porque ambos funcionam igualmente bem no Twitch e no Kick.",
+        "body": [
+          "Ao instalar ambas as extensões, você se beneficia dos lindos emotes do 7TV e da poderosa automação do StreamPulse. Ambas as extensões foram testadas em conjunto e não criam lentidão no navegador."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "de": {
+    "slug": "Alternativen/7tv",
+    "linkLabel": "Alternativ 7TV",
+    "title": "StreamPulse vs. 7TV: Welche Erweiterung wählen?",
+    "h1": "StreamPulse vs. 7TV: Welche Erweiterung wählen?",
+    "description": "Vergleich der Funktionen von 7TV und StreamPulse. Sind sie kompatibel? Welche sollten installiert werden, um Twitch und Kick zu verbessern?",
+    "intro": "7TV ist die Erweiterung, die die Qualität von Emotes auf Twitch und YouTube durch die Einführung von HD-animierten Bildern revolutioniert hat. Kann (und sollte) mit StreamPulse verwendet werden? Folgendes müssen Sie wissen:",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Der schnelle Vergleich",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "Die Stärke von 7TV: HD-animierte Emotes",
+        "body": [
+          "7TV zeichnet sich in einem bestimmten Bereich aus: Es bietet Tausende von superflüssigen animierten Emotes und personalisierten Abzeichen für Profile im Chat. Wenn Emotes für Sie Priorität haben, ist 7TV derzeit das Beste auf dem Markt."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Die Stärke von StreamPulse: Automatisierung",
+        "body": [
+          "StreamPulse greift nicht in den Chat ein (mit Ausnahme seines Keyword-Filter-Tools). Seine Aufgabe besteht darin, das Sammeln von Drops und Kanalpunkten zu automatisieren, Benachrichtigungen zu senden, wenn Ihre Lieblingsstreamer live gehen, und Abstürze des Videoplayers automatisch zu korrigieren."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Können wir sie zusammen verwenden?",
+        "answer": "Absolut. 7TV und StreamPulse bilden ein perfektes Duo, zumal beide auf Twitch und Kick gleichermaßen gut funktionieren.",
+        "body": [
+          "Durch die Installation beider Erweiterungen profitieren Sie von den wunderschönen Emotes von 7TV und der leistungsstarken Automatisierung von StreamPulse. Beide Erweiterungen wurden zusammen getestet und verursachen keine Verlangsamung des Browsers."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "it": {
+    "slug": "alternative/7tv",
+    "linkLabel": "Alternativa 7TV",
+    "title": "StreamPulse vs 7TV: quale estensione scegliere?",
+    "h1": "StreamPulse vs 7TV: quale estensione scegliere?",
+    "description": "Confronto tra le funzionalità di 7TV e StreamPulse. Sono compatibili? Quali installare per migliorare Twitch e Kick?",
+    "intro": "7TV è l'estensione che ha rivoluzionato la qualità delle emote su Twitch e YouTube introducendo immagini animate in HD. Può (e dovrebbe) essere utilizzato con StreamPulse? Ecco cosa devi sapere.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Il confronto veloce",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "La forza di 7TV: Emote animate in HD",
+        "body": [
+          "7TV eccelle in un'area specifica: fornire migliaia di emoticon animate super fluide e badge personalizzati per i profili in chat. Se le emote sono la tua priorità, 7TV è il migliore sul mercato in questo momento."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "La forza di StreamPulse: l'automazione",
+        "body": [
+          "StreamPulse non interviene nella chat (ad eccezione del suo strumento di filtro delle parole chiave). Il suo ruolo è automatizzare la raccolta di Drop e punti canale, inviare avvisi quando i tuoi streamer preferiti vanno in diretta e correggere automaticamente i crash del lettore video."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Possiamo usarli insieme?",
+        "answer": "Assolutamente. 7TV e StreamPulse formano una coppia perfetta, soprattutto perché entrambi funzionano ugualmente bene su Twitch e Kick.",
+        "body": [
+          "Installando entrambe le estensioni, beneficerai delle bellissime emote di 7TV e della potente automazione di StreamPulse. Entrambe le estensioni sono state testate insieme e non creano alcun rallentamento nel browser."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pl": {
+    "slug": "alternatywy/7tv",
+    "linkLabel": "Alternatywa 7TV",
+    "title": "StreamPulse vs 7TV: Które rozszerzenie wybrać?",
+    "h1": "StreamPulse vs 7TV: Które rozszerzenie wybrać?",
+    "description": "Porównanie funkcji 7TV i StreamPulse. Czy są kompatybilne? Które z nich zainstalować, aby ulepszyć Twitch i Kick?",
+    "intro": "7TV to rozszerzenie, które zrewolucjonizowało jakość emotikonów na Twitchu i YouTube, wprowadzając animowaną oprawę graficzną HD. Czy można (i należy) używać ze StreamPulse? Oto, co musisz wiedzieć.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Szybkie porównanie",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "Siła 7TV: animowane emotki HD",
+        "body": [
+          "7TV wyróżnia się w jednym konkretnym obszarze: zapewnia tysiące wyjątkowo płynnie animowanych emotikonów i spersonalizowanych odznak dla profili na czacie. Jeśli Twoim priorytetem są emotki, 7TV jest obecnie najlepszym rozwiązaniem na rynku."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Siła StreamPulse: Automatyzacja",
+        "body": [
+          "StreamPulse nie ingeruje w czat (z wyjątkiem narzędzia do filtrowania słów kluczowych). Jego rolą jest automatyzacja zbierania Dropów i punktów kanału, wysyłanie powiadomień, gdy Twoi ulubieni streamerzy rozpoczynają transmisję na żywo oraz automatyczne korygowanie awarii odtwarzacza wideo."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Czy możemy ich używać razem?",
+        "answer": "Absolutnie. 7TV i StreamPulse tworzą duet idealny, zwłaszcza, że ​​oba sprawdzają się równie dobrze na Twitchu i Kicku.",
+        "body": [
+          "Instalując oba rozszerzenia, skorzystasz z pięknych emotikonów 7TV i potężnej automatyzacji StreamPulse. Obydwa rozszerzenia zostały przetestowane razem i nie spowalniają przeglądarki."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "tr": {
+    "slug": "alternatifler/7tv",
+    "linkLabel": "Alternatif 7TV",
+    "title": "StreamPulse vs 7TV: Hangi uzantıyı seçmelisiniz?",
+    "h1": "StreamPulse vs 7TV: Hangi uzantıyı seçmelisiniz?",
+    "description": "7TV ve StreamPulse özelliklerinin karşılaştırılması. Uyumlular mı? Twitch ve Kick'i geliştirmek için hangileri kurulmalı?",
+    "intro": "7TV, HD animasyonlu görseller sunarak Twitch ve YouTube'daki ifadelerin kalitesinde devrim yaratan uzantıdır. StreamPulse ile kullanılabilir mi (ve kullanılmalı mı)? İşte bilmeniz gerekenler.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Hızlı karşılaştırma",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "7TV'nin gücü: HD Animasyonlu İfadeler",
+        "body": [
+          "7TV belirli bir alanda öne çıkıyor: sohbetteki profiller için binlerce süper akıcı animasyonlu ifade ve kişiselleştirilmiş rozetler sağlıyor. Eğer ifadeler önceliğinizse 7TV şu anda piyasadaki en iyisidir."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse'un gücü: Otomasyon",
+        "body": [
+          "StreamPulse sohbete müdahale etmez (anahtar kelime filtreleme aracı hariç). Rolü, Dropların ve kanal noktalarının toplanmasını otomatikleştirmek, favori yayıncılarınız yayına girdiğinde uyarı göndermek ve video oynatıcı çökmelerini otomatik olarak düzeltmektir."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Bunları birlikte kullanabilir miyiz?",
+        "answer": "Kesinlikle. 7TV ve StreamPulse mükemmel bir ikili oluşturuyor, özellikle de her ikisi de Twitch ve Kick'te eşit derecede iyi çalıştığı için.",
+        "body": [
+          "Her iki uzantıyı da kurarak 7TV'nin güzel ifadelerinden ve StreamPulse'un güçlü otomasyonundan yararlanırsınız. Her iki uzantı da birlikte test edilmiştir ve tarayıcıda herhangi bir yavaşlık oluşturmamaktadır."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ru": {
+    "slug": "альтернативы/7tv",
+    "linkLabel": "Альтернатива 7ТВ",
+    "title": "StreamPulse против 7TV: какое расширение выбрать?",
+    "h1": "StreamPulse против 7TV: какое расширение выбрать?",
+    "description": "Сравнение возможностей 7TV и StreamPulse. Совместимы ли они? Какие из них установить, чтобы улучшить Twitch и Kick?",
+    "intro": "7TV — это расширение, которое произвело революцию в качестве эмоций на Twitch и YouTube, представив анимированные визуальные эффекты HD. Можно (и нужно) использовать со StreamPulse? Вот что вам нужно знать.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Быстрое сравнение",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "Сила 7TV: анимированные эмоции HD",
+        "body": [
+          "7TV выделяется в одной конкретной области: предоставляет тысячи плавных анимированных смайлов и персонализированных значков для профилей в чате. Если эмоции для вас в приоритете, 7TV — лучшее на рынке прямо сейчас."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Сильная сторона StreamPulse: автоматизация",
+        "body": [
+          "StreamPulse не вмешивается в чат (за исключением инструмента фильтрации ключевых слов). Его роль — автоматизировать сбор Drops и баллов канала, отправлять оповещения, когда ваши любимые стримеры выходят в эфир, и автоматически исправлять сбои видеоплеера."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Можем ли мы использовать их вместе?",
+        "answer": "Абсолютно. 7TV и StreamPulse образуют идеальный дуэт, тем более что оба одинаково хорошо работают на Twitch и Kick.",
+        "body": [
+          "Установив оба расширения, вы получите преимущества прекрасных эмоций 7TV и мощной автоматизации StreamPulse. Оба расширения были протестированы вместе и не замедляют работу браузера."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ja": {
+    "slug": "オルタナティブ/7tv",
+    "linkLabel": "オルタナティブ 7TV",
+    "title": "StreamPulse と 7TV: どちらの拡張機能を選択しますか?",
+    "h1": "StreamPulse と 7TV: どちらの拡張機能を選択しますか?",
+    "description": "7TV と StreamPulse の機能の比較。互換性はありますか? Twitch と Kick を改善するにはどれをインストールすればよいですか?",
+    "intro": "7TV は、HD アニメーション ビジュアルを導入することで、Twitch と YouTube のエモートの品質に革命をもたらした拡張機能です。 StreamPulse で使用できますか (また使用する必要があります)?知っておくべきことは次のとおりです。",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "簡単な比較",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "7TV の強み: HD アニメーションエモート",
+        "body": [
+          "7TV は、ある特定の分野で優れています。それは、何千もの非常にスムーズなアニメーションの感情表現とチャット内のプロフィール用のパーソナライズされたバッジを提供することです。エモートを優先するなら、現時点で 7TV が市場で最高です。"
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse の強み: 自動化",
+        "body": [
+          "StreamPulse はチャットに介入しません (キーワード フィルタリング ツールを除く)。その役割は、ドロップとチャンネル ポイントの収集を自動化し、お気に入りのストリーマーがライブになったときにアラートを送信し、ビデオ プレーヤーのクラッシュを自動的に修正することです。"
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "一緒に使ってもいいですか？",
+        "answer": "絶対に。 7TV と StreamPulse は、特にどちらも Twitch と Kick で同等に機能するため、完璧な組み合わせを形成します。",
+        "body": [
+          "両方の拡張機能をインストールすると、7TV の美しいエモートと StreamPulse の強力な自動化の恩恵を受けることができます。両方の拡張機能は一緒にテストされており、ブラウザーで速度が低下することはありません。"
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ko": {
+    "slug": "대안/7tv",
+    "linkLabel": "대안 7TV",
+    "title": "StreamPulse vs 7TV: 어떤 확장을 선택해야 할까요?",
+    "h1": "StreamPulse vs 7TV: 어떤 확장을 선택해야 할까요?",
+    "description": "7TV와 StreamPulse 기능 비교. 호환되나요? Twitch와 Kick을 개선하려면 어떤 것을 설치해야 합니까?",
+    "intro": "7TV는 HD 애니메이션 영상을 도입하여 Twitch와 YouTube의 이모티콘 품질에 혁명을 일으킨 확장 프로그램입니다. StreamPulse와 함께 사용할 수 있나요(그리고 사용해야 하나요)? 당신이 알아야 할 사항은 다음과 같습니다.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "빠른 비교",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "7TV의 강점: HD 애니메이션 감정 표현",
+        "body": [
+          "7TV는 한 가지 특정 영역에서 탁월한 성능을 발휘합니다. 수천 개의 매우 부드러운 애니메이션 이모티콘과 채팅 프로필에 대한 개인화된 배지를 제공하는 것입니다. 감정 표현이 최우선이라면 7TV가 현재 시장에서 최고입니다."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse의 강점: 자동화",
+        "body": [
+          "StreamPulse는 채팅에 개입하지 않습니다(키워드 필터링 도구 제외). 그 역할은 드롭 및 채널 포인트 수집을 자동화하고, 좋아하는 스트리머가 라이브로 방송될 때 경고를 보내고, 비디오 플레이어 충돌을 자동으로 수정하는 것입니다."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "함께 사용할 수 있나요?",
+        "answer": "전적으로. 7TV와 StreamPulse는 완벽한 듀오를 형성합니다. 특히 둘 다 Twitch와 Kick에서 똑같이 잘 작동하기 때문입니다.",
+        "body": [
+          "두 확장 프로그램을 모두 설치하면 7TV의 아름다운 감정 표현과 StreamPulse의 강력한 자동화 기능을 활용할 수 있습니다. 두 확장 기능 모두 함께 테스트되었으며 브라우저에서 속도 저하가 발생하지 않습니다."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "id": {
+    "slug": "alternatif/7tv",
+    "linkLabel": "Alternatif 7TV",
+    "title": "StreamPulse vs 7TV: Ekstensi mana yang harus dipilih?",
+    "h1": "StreamPulse vs 7TV: Ekstensi mana yang harus dipilih?",
+    "description": "Perbandingan fitur 7TV dan StreamPulse. Apakah mereka kompatibel? Yang mana yang harus dipasang untuk meningkatkan Twitch dan Kick?",
+    "intro": "7TV adalah ekstensi yang merevolusi kualitas emote di Twitch dan YouTube dengan memperkenalkan visual animasi HD. Bisakah (dan harus) digunakan dengan StreamPulse? Inilah yang perlu Anda ketahui.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Perbandingan cepat",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "Kekuatan 7TV: Emote Animasi HD",
+        "body": [
+          "7TV unggul dalam satu bidang tertentu: menyediakan ribuan emote animasi super halus dan lencana yang dipersonalisasi untuk profil dalam obrolan. Jika emote adalah prioritas Anda, 7TV adalah yang terbaik di pasaran saat ini."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Kekuatan StreamPulse: Otomatisasi",
+        "body": [
+          "StreamPulse tidak melakukan intervensi dalam obrolan (kecuali untuk alat pemfilteran kata kuncinya). Perannya adalah untuk mengotomatiskan pengumpulan Drops dan titik saluran, mengirimkan peringatan ketika streamer favorit Anda ditayangkan, dan secara otomatis memperbaiki kerusakan pemutar video."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Bisakah kita menggunakannya bersama-sama?",
+        "answer": "Sangat. 7TV dan StreamPulse merupakan duo yang sempurna, terutama karena keduanya bekerja sama dengan baik di Twitch dan Kick.",
+        "body": [
+          "Dengan menginstal kedua ekstensi, Anda mendapatkan keuntungan dari emote 7TV yang indah dan otomatisasi StreamPulse yang kuat. Kedua ekstensi tersebut telah diuji bersama dan tidak membuat browser menjadi lambat."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "nl": {
+    "slug": "alternatieven/7tv",
+    "linkLabel": "Alternatief 7TV",
+    "title": "StreamPulse versus 7TV: welke extensie moet je kiezen?",
+    "h1": "StreamPulse versus 7TV: welke extensie moet je kiezen?",
+    "description": "Vergelijking van 7TV- en StreamPulse-functies. Zijn ze compatibel? Welke moet je installeren om Twitch en Kick te verbeteren?",
+    "intro": "7TV is de extensie die een revolutie teweegbracht in de kwaliteit van emotes op Twitch en YouTube door de introductie van HD-geanimeerde beelden. Kan (en moet) worden gebruikt met StreamPulse? Dit is wat je moet weten.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "De snelle vergelijking",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "De kracht van 7TV: HD geanimeerde emotes",
+        "body": [
+          "7TV blinkt uit op één specifiek gebied: het bieden van duizenden supervloeiende geanimeerde emotes en gepersonaliseerde badges voor profielen in de chat. Als emotes jouw prioriteit zijn, is 7TV momenteel de beste op de markt."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "De kracht van StreamPulse: Automatisering",
+        "body": [
+          "StreamPulse komt niet tussenbeide in de chat (behalve de tool voor het filteren van trefwoorden). Zijn rol is het automatiseren van het verzamelen van Drops en kanaalpunten, het verzenden van waarschuwingen wanneer je favoriete streamers live gaan en het automatisch corrigeren van crashes van de videospeler."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Kunnen we ze samen gebruiken?",
+        "answer": "Absoluut. 7TV en StreamPulse vormen een perfect duo, vooral omdat beide even goed werken op Twitch en Kick.",
+        "body": [
+          "Door beide extensies te installeren profiteer je van de prachtige emotes van 7TV en de krachtige automatisering van StreamPulse. Beide extensies zijn samen getest en veroorzaken geen traagheid in de browser."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "hi": {
+    "slug": "विकल्प/7टीवी",
+    "linkLabel": "वैकल्पिक 7TV",
+    "title": "स्ट्रीमपल्स बनाम 7टीवी: कौन सा एक्सटेंशन चुनना है?",
+    "h1": "स्ट्रीमपल्स बनाम 7टीवी: कौन सा एक्सटेंशन चुनना है?",
+    "description": "7TV और StreamPulse सुविधाओं की तुलना। क्या वे संगत हैं? ट्विच और किक को बेहतर बनाने के लिए कौन सा इंस्टॉल करें?",
+    "intro": "7TV वह एक्सटेंशन है जिसने एचडी एनिमेटेड विजुअल पेश करके ट्विच और यूट्यूब पर भावनाओं की गुणवत्ता में क्रांति ला दी है। क्या StreamPulse के साथ प्रयोग किया जा सकता है (और किया जाना चाहिए)? यहां वह है जो आपको जानना आवश्यक है।",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "त्वरित तुलना",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "7TV की ताकत: एचडी एनिमेटेड इमोट्स",
+        "body": [
+          "7TV एक विशिष्ट क्षेत्र में उत्कृष्टता प्राप्त करता है: चैट में प्रोफाइल के लिए हजारों सुपर-स्मूथ एनिमेटेड इमोशन और वैयक्तिकृत बैज प्रदान करता है। यदि भावनाएं आपकी प्राथमिकता हैं, तो 7TV इस समय बाज़ार में सर्वश्रेष्ठ है।"
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "स्ट्रीमपल्स की ताकत: स्वचालन",
+        "body": [
+          "स्ट्रीमपल्स चैट में हस्तक्षेप नहीं करता है (इसके कीवर्ड फ़िल्टरिंग टूल को छोड़कर)। इसकी भूमिका ड्रॉप्स और चैनल पॉइंट्स के संग्रह को स्वचालित करना, आपके पसंदीदा स्ट्रीमर के लाइव होने पर अलर्ट भेजना और वीडियो प्लेयर क्रैश को स्वचालित रूप से ठीक करना है।"
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "क्या हम उनका एक साथ उपयोग कर सकते हैं?",
+        "answer": "बिल्कुल। 7TV और स्ट्रीमपल्स एक आदर्श जोड़ी बनाते हैं, खासकर जब से दोनों ट्विच और किक पर समान रूप से अच्छा काम करते हैं।",
+        "body": [
+          "दोनों एक्सटेंशन इंस्टॉल करके, आप 7TV के खूबसूरत इमोट्स और स्ट्रीमपल्स के शक्तिशाली ऑटोमेशन से लाभान्वित होते हैं। दोनों एक्सटेंशन का एक साथ परीक्षण किया गया है और ये ब्राउज़र में कोई धीमापन पैदा नहीं करते हैं।"
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "sv": {
+    "slug": "alternativ/7tv",
+    "linkLabel": "Alternativ 7TV",
+    "title": "StreamPulse vs 7TV: Vilken förlängning ska jag välja?",
+    "h1": "StreamPulse vs 7TV: Vilken förlängning ska jag välja?",
+    "description": "Jämförelse av 7TV och StreamPulse funktioner. Är de kompatibla? Vilka ska installeras för att förbättra Twitch and Kick?",
+    "intro": "7TV är tillägget som revolutionerade kvaliteten på emotes på Twitch och YouTube genom att introducera HD-animerade bilder. Kan (och bör) användas med StreamPulse? Här är vad du behöver veta.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Den snabba jämförelsen",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "Styrkan med 7TV: HD-animerade emotes",
+        "body": [
+          "7TV utmärker sig inom ett specifikt område: tillhandahåller tusentals supersmidiga animerade känslor och personliga märken för profiler i chatten. Om emotes är din prioritet är 7TV det bästa på marknaden just nu."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Styrkan med StreamPulse: Automation",
+        "body": [
+          "StreamPulse ingriper inte i chatten (förutom dess sökordsfiltreringsverktyg). Dess roll är att automatisera insamlingen av Drops och kanalpunkter, skicka varningar när dina favoritstreamers går live och automatiskt korrigera videospelare som kraschar."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Kan vi använda dem tillsammans?",
+        "answer": "Absolut. 7TV och StreamPulse bildar en perfekt duo, speciellt eftersom båda fungerar lika bra på Twitch och Kick.",
+        "body": [
+          "Genom att installera båda tilläggen drar du nytta av de vackra känslorna hos 7TV och den kraftfulla automatiseringen av StreamPulse. Båda tilläggen har testats tillsammans och skapar ingen tröghet i webbläsaren."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "cs": {
+    "slug": "alternativy/7tv",
+    "linkLabel": "Alternativní 7TV",
+    "title": "StreamPulse vs 7TV: Které rozšíření si vybrat?",
+    "h1": "StreamPulse vs 7TV: Které rozšíření si vybrat?",
+    "description": "Srovnání funkcí 7TV a StreamPulse. Jsou kompatibilní? Které nainstalovat, abyste zlepšili Twitch and Kick?",
+    "intro": "7TV je rozšíření, které způsobilo revoluci v kvalitě emocí na Twitchi a YouTube zavedením HD animovaného obrazu. Lze (a měl by) být použit se StreamPulse? Zde je to, co potřebujete vědět.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Rychlé srovnání",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "7TV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes animées en HD",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation du profil chat",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Oui",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "7tv",
+        "h2": "Síla 7TV: HD animované emoce",
+        "body": [
+          "7TV vyniká v jedné konkrétní oblasti: poskytuje tisíce super plynulých animovaných emocí a personalizovaných odznaků pro profily v chatu. Pokud jsou vaší prioritou emoce, 7TV je momentálně to nejlepší na trhu."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Síla StreamPulse: Automatizace",
+        "body": [
+          "StreamPulse nezasahuje do chatu (kromě jeho nástroje pro filtrování klíčových slov). Jeho úlohou je automatizovat shromažďování dropů a kanálových bodů, posílat upozornění, když vaše oblíbené streamy jdou naživo, a automaticky opravovat selhání přehrávače videa."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Můžeme je používat společně?",
+        "answer": "Absolutně. 7TV a StreamPulse tvoří dokonalé duo, zejména proto, že oba fungují stejně dobře na Twitchi a Kick.",
+        "body": [
+          "Instalací obou rozšíření budete těžit z krásných emocí 7TV a výkonné automatizace StreamPulse. Obě rozšíření byla testována společně a nevytvářejí žádnou pomalost v prohlížeči."
+        ]
+      }
+    ],
+    "faq": []
+  }
+}

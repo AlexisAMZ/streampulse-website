@@ -38,7 +38,12 @@ const PAGES = [
   require('./content/error3000'),
   require('./content/extensionTwitch'),
   require('./content/extensionKick'),
-  require('./content/dashboard')
+  require('./content/dashboard'),
+  require('./content/lowLatency'),
+  require('./content/autoRefresh'),
+  require('./content/altBetterTTV'),
+  require('./content/altFFZ'),
+  require('./content/alt7TV')
 ];
 
 /** CSS additionnel commun aux pages de contenu, aligné sur la D.A de l'accueil. */

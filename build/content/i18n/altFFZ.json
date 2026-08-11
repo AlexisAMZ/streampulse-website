@@ -1,0 +1,1142 @@
+{
+  "en": {
+    "slug": "alternatives/frankerfacez",
+    "linkLabel": "Alternative FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Which extension to choose?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Which extension to choose?",
+    "description": "Comparison between FrankerFaceZ (FFZ) and StreamPulse. Understand why these Twitch extensions are completely complementary.",
+    "intro": "FrankerFaceZ (FFZ) is a historic extension that allows you to customize the appearance of Twitch down to the smallest detail. Should it be replaced by StreamPulse? The short answer is no. These two extensions are complementary and designed for completely different needs.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "The quick comparison",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "The strength of FrankerFaceZ: Personalization",
+        "body": [
+          "The big strong point of FFZ is the modification of the user interface. You can change the colors, move the chat, hide the badges, or even use a lightweight video player. It also allows you to see third-party emotes."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "The strength of StreamPulse: Automation",
+        "body": [
+          "Unlike FFZ which does not manage any automation, StreamPulse takes care of claiming your channel points, your Twitch Drops, and monitors channels to send you live notifications. It also runs Kick.com, which FFZ does not do."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Can we use them together?",
+        "answer": "Yes, without any problem. The two extensions have a distinct scope of action.",
+        "body": [
+          "Use FrankerFaceZ to make your Twitch visually unique, and add StreamPulse for automation and alerts. They coexist perfectly in the same browser."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "es": {
+    "slug": "alternativas/frankerfacez",
+    "linkLabel": "FrankerFaceZ alternativo",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): ¿Qué extensión elegir?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): ¿Qué extensión elegir?",
+    "description": "Comparación entre FrankerFaceZ (FFZ) y StreamPulse. Comprende por qué estas extensiones de Twitch son completamente complementarias.",
+    "intro": "FrankerFaceZ (FFZ) es una extensión histórica que te permite personalizar la apariencia de Twitch hasta el más mínimo detalle. ¿Debería ser reemplazado por StreamPulse? La respuesta corta es no. Estas dos extensiones son complementarias y están diseñadas para necesidades completamente diferentes.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "La comparación rápida",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "El punto fuerte de FrankerFaceZ: la personalización",
+        "body": [
+          "El gran punto fuerte de FFZ es la modificación de la interfaz de usuario. Puedes cambiar los colores, mover el chat, ocultar las insignias o incluso utilizar un reproductor de vídeo ligero. También te permite ver emoticones de terceros."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "La fortaleza de StreamPulse: la automatización",
+        "body": [
+          "A diferencia de FFZ, que no gestiona ninguna automatización, StreamPulse se encarga de reclamar los puntos de tu canal, tus Twitch Drops y monitorea los canales para enviarte notificaciones en vivo. También ejecuta Kick.com, algo que FFZ no hace."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "¿Podemos usarlos juntos?",
+        "answer": "Sí, sin ningún problema. Las dos extensiones tienen un ámbito de acción distinto.",
+        "body": [
+          "Utilice FrankerFaceZ para hacer que su Twitch sea visualmente único y agregue StreamPulse para automatización y alertas. Conviven perfectamente en un mismo navegador."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pt-BR": {
+    "slug": "alternativas / frankerfacez",
+    "linkLabel": "Alternativa FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Qual extensão escolher?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Qual extensão escolher?",
+    "description": "Comparação entre FrankerFaceZ (FFZ) e StreamPulse. Entenda por que essas extensões Twitch são completamente complementares.",
+    "intro": "FrankerFaceZ (FFZ) é uma extensão histórica que permite personalizar a aparência do Twitch nos mínimos detalhes. Deve ser substituído pelo StreamPulse? A resposta curta é não. Estas duas extensões são complementares e concebidas para necessidades completamente diferentes.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "A comparação rápida",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "A força do FrankerFaceZ: Personalização",
+        "body": [
+          "O grande ponto forte do FFZ é a modificação da interface do usuário. Você pode alterar as cores, mover o chat, ocultar os emblemas ou até usar um reprodutor de vídeo leve. Também permite que você veja emotes de terceiros."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "A força do StreamPulse: Automação",
+        "body": [
+          "Ao contrário do FFZ, que não gerencia nenhuma automação, o StreamPulse se encarrega de reivindicar os pontos do seu canal, seus Twitch Drops e monitora os canais para enviar notificações ao vivo. Ele também administra o Kick.com, o que a FFZ não faz."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Podemos usá-los juntos?",
+        "answer": "Sim, sem nenhum problema. As duas extensões têm um âmbito de ação distinto.",
+        "body": [
+          "Use FrankerFaceZ para tornar seu Twitch visualmente único e adicione StreamPulse para automação e alertas. Eles coexistem perfeitamente no mesmo navegador."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "de": {
+    "slug": "Alternativen/frankerfacez",
+    "linkLabel": "Alternative FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Welche Erweiterung soll ich wählen?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Welche Erweiterung soll ich wählen?",
+    "description": "Vergleich zwischen FrankerFaceZ (FFZ) und StreamPulse. Verstehen Sie, warum diese Twitch-Erweiterungen sich vollständig ergänzen.",
+    "intro": "FrankerFaceZ (FFZ) ist eine historische Erweiterung, mit der Sie das Erscheinungsbild von Twitch bis ins kleinste Detail anpassen können. Sollte es durch StreamPulse ersetzt werden? Die kurze Antwort ist nein. Diese beiden Erweiterungen ergänzen sich und sind für völlig unterschiedliche Bedürfnisse konzipiert.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Der schnelle Vergleich",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "Die Stärke von FrankerFaceZ: Personalisierung",
+        "body": [
+          "Die große Stärke von FFZ ist die Modifikation der Benutzeroberfläche. Sie können die Farben ändern, den Chat verschieben, die Abzeichen ausblenden oder sogar einen einfachen Videoplayer verwenden. Außerdem können Sie Emotes von Drittanbietern sehen."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Die Stärke von StreamPulse: Automatisierung",
+        "body": [
+          "Im Gegensatz zu FFZ, das keine Automatisierung verwaltet, kümmert sich StreamPulse um das Einfordern Ihrer Kanalpunkte und Ihrer Twitch Drops und überwacht Kanäle, um Ihnen Live-Benachrichtigungen zu senden. Es betreibt auch Kick.com, was FFZ nicht tut."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Können wir sie zusammen verwenden?",
+        "answer": "Ja, ohne Probleme. Die beiden Erweiterungen haben einen unterschiedlichen Wirkungsbereich.",
+        "body": [
+          "Verwenden Sie FrankerFaceZ, um Ihr Twitch optisch einzigartig zu machen, und fügen Sie StreamPulse für Automatisierung und Benachrichtigungen hinzu. Sie koexistieren perfekt im selben Browser."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "it": {
+    "slug": "alternative/frankerfacez",
+    "linkLabel": "FrankerFaceZ alternativo",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): quale estensione scegliere?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): quale estensione scegliere?",
+    "description": "Confronto tra FrankerFaceZ (FFZ) e StreamPulse. Scopri perché queste estensioni Twitch sono completamente complementari.",
+    "intro": "FrankerFaceZ (FFZ) è una storica estensione che permette di personalizzare l'aspetto di Twitch fin nei minimi dettagli. Dovrebbe essere sostituito da StreamPulse? La risposta breve è no. Queste due estensioni sono complementari e pensate per esigenze completamente diverse.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Il confronto veloce",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "La forza di FrankerFaceZ: la personalizzazione",
+        "body": [
+          "Il grande punto di forza di FFZ è la modifica dell'interfaccia utente. Puoi cambiare i colori, spostare la chat, nascondere i badge o persino utilizzare un lettore video leggero. Ti consente anche di vedere emote di terze parti."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "La forza di StreamPulse: l'automazione",
+        "body": [
+          "A differenza di FFZ che non gestisce alcuna automazione, StreamPulse si occupa di rivendicare i tuoi punti canale, i tuoi Twitch Drop e monitora i canali per inviarti notifiche in tempo reale. Gestisce anche Kick.com, cosa che FFZ non fa."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Possiamo usarli insieme?",
+        "answer": "Sì, senza alcun problema. Le due estensioni hanno un ambito di azione distinto.",
+        "body": [
+          "Usa FrankerFaceZ per rendere il tuo Twitch visivamente unico e aggiungi StreamPulse per l'automazione e gli avvisi. Coesistono perfettamente nello stesso browser."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pl": {
+    "slug": "alternatywy/frankerfacez",
+    "linkLabel": "Alternatywa FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Które rozszerzenie wybrać?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Które rozszerzenie wybrać?",
+    "description": "Porównanie FrankerFaceZ (FFZ) i StreamPulse. Dowiedz się, dlaczego te rozszerzenia Twitcha całkowicie się uzupełniają.",
+    "intro": "FrankerFaceZ (FFZ) to historyczne rozszerzenie, które pozwala dostosować wygląd Twitcha w najdrobniejszych szczegółach. Czy powinien zostać zastąpiony przez StreamPulse? Krótka odpowiedź brzmi: nie. Te dwa rozszerzenia uzupełniają się i są przeznaczone do zupełnie różnych potrzeb.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Szybkie porównanie",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "Siła FrankerFaceZ: Personalizacja",
+        "body": [
+          "Dużą mocną stroną FFZ jest modyfikacja interfejsu użytkownika. Możesz zmieniać kolory, przenosić czat, ukrywać plakietki, a nawet korzystać z lekkiego odtwarzacza wideo. Umożliwia także wyświetlanie emotikonów innych firm."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Siła StreamPulse: Automatyzacja",
+        "body": [
+          "W przeciwieństwie do FFZ, który nie zarządza żadną automatyzacją, StreamPulse zajmuje się zdobywaniem punktów na kanale, dropami na Twitchu i monitoruje kanały, aby wysyłać Ci powiadomienia na żywo. Obsługuje także Kick.com, czego FFZ nie robi."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Czy możemy ich używać razem?",
+        "answer": "Tak, bez żadnego problemu. Obydwa rozszerzenia mają odrębny zakres działania.",
+        "body": [
+          "Użyj FrankerFaceZ, aby uczynić swojego Twitcha wyjątkowym wizualnie i dodaj StreamPulse do automatyzacji i alertów. Doskonale współistnieją w tej samej przeglądarce."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "tr": {
+    "slug": "alternatifler/frankerfacez",
+    "linkLabel": "Alternatif FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Hangi uzantıyı seçmelisiniz?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Hangi uzantıyı seçmelisiniz?",
+    "description": "FrankerFaceZ (FFZ) ve StreamPulse arasındaki karşılaştırma. Bu Twitch uzantılarının neden tamamen tamamlayıcı olduğunu anlayın.",
+    "intro": "FrankerFaceZ (FFZ), Twitch'in görünümünü en küçük ayrıntısına kadar özelleştirmenize olanak tanıyan tarihi bir uzantıdır. StreamPulse ile değiştirilmeli mi? Kısa cevap hayır. Bu iki uzantı tamamlayıcıdır ve tamamen farklı ihtiyaçlara yönelik tasarlanmıştır.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Hızlı karşılaştırma",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "FrankerFaceZ'in gücü: Kişiselleştirme",
+        "body": [
+          "FFZ'nin en büyük güçlü noktası kullanıcı arayüzünün değiştirilmesidir. Renkleri değiştirebilir, sohbeti taşıyabilir, rozetleri gizleyebilir ve hatta hafif bir video oynatıcı kullanabilirsiniz. Ayrıca üçüncü taraf ifadelerini görmenize de olanak tanır."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse'un gücü: Otomasyon",
+        "body": [
+          "Herhangi bir otomasyonu yönetmeyen FFZ'den farklı olarak StreamPulse, kanal puanlarınızı ve Twitch Droplarınızı talep etmeyle ilgilenir ve size canlı bildirimler göndermek için kanalları izler. Aynı zamanda FFZ'nin yapmadığı Kick.com'u da çalıştırıyor."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Bunları birlikte kullanabilir miyiz?",
+        "answer": "Evet, hiçbir sorun olmadan. İki uzantının farklı bir eylem kapsamı vardır.",
+        "body": [
+          "Twitch'inizi görsel olarak benzersiz kılmak için FrankerFaceZ'yi kullanın ve otomasyon ve uyarılar için StreamPulse'u ekleyin. Aynı tarayıcıda mükemmel bir şekilde bir arada bulunurlar."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ru": {
+    "slug": "альтернативы/frankerfacez",
+    "linkLabel": "Альтернативный FrankerFaceZ",
+    "title": "StreamPulse против FrankerFaceZ (FFZ): какое расширение выбрать?",
+    "h1": "StreamPulse против FrankerFaceZ (FFZ): какое расширение выбрать?",
+    "description": "Сравнение FrankerFaceZ (FFZ) и StreamPulse. Узнайте, почему эти расширения Twitch полностью дополняют друг друга.",
+    "intro": "FrankerFaceZ (FFZ) — историческое расширение, позволяющее настроить внешний вид Twitch до мельчайших деталей. Стоит ли его заменить на StreamPulse? Короткий ответ: нет. Эти два расширения дополняют друг друга и предназначены для совершенно разных нужд.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Быстрое сравнение",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "Сильная сторона FrankerFaceZ: персонализация",
+        "body": [
+          "Большой сильной стороной FFZ является модификация пользовательского интерфейса. Вы можете изменить цвета, переместить чат, скрыть значки или даже использовать легкий видеоплеер. Это также позволяет вам видеть сторонние эмоции."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Сильная сторона StreamPulse: автоматизация",
+        "body": [
+          "В отличие от FFZ, который не управляет какой-либо автоматизацией, StreamPulse заботится о получении очков вашего канала, ваших Twitch Drops и отслеживает каналы, чтобы отправлять вам живые уведомления. Он также управляет Kick.com, чего не делает FFZ."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Можем ли мы использовать их вместе?",
+        "answer": "Да, без проблем. Эти два расширения имеют разную сферу действия.",
+        "body": [
+          "Используйте FrankerFaceZ, чтобы сделать ваш Twitch визуально уникальным, и добавьте StreamPulse для автоматизации и оповещений. Они прекрасно сосуществуют в одном браузере."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ja": {
+    "slug": "オルタナティブ/フランカーフェイスズ",
+    "linkLabel": "代替 FrankerFaceZ",
+    "title": "StreamPulse と FrankerFaceZ (FFZ): どちらの拡張機能を選択しますか?",
+    "h1": "StreamPulse と FrankerFaceZ (FFZ): どちらの拡張機能を選択しますか?",
+    "description": "FrankerFaceZ (FFZ) と StreamPulse の比較。これらの Twitch 拡張機能が完全に補完的である理由を理解してください。",
+    "intro": "FrankerFaceZ (FFZ) は、Twitch の外観を細部に至るまでカスタマイズできる歴史的な拡張機能です。 StreamPulse に置き換えるべきでしょうか?簡単に言うと「ノー」です。これら 2 つの拡張機能は補完的であり、まったく異なるニーズに合わせて設計されています。",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "簡単な比較",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "FrankerFaceZ の強み: パーソナライゼーション",
+        "body": [
+          "FFZの大きな強みはユーザーインターフェースの変更です。色を変更したり、チャットを移動したり、バッジを非表示にしたり、軽量のビデオ プレーヤーを使用したりすることもできます。サードパーティのエモートを確認することもできます。"
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse の強み: 自動化",
+        "body": [
+          "自動化をまったく管理しない FFZ とは異なり、StreamPulse はチャンネル ポイントや Twitch Drop の請求を処理し、チャンネルを監視してライブ通知を送信します。また、FFZ が行っていない Kick.com も運営しています。"
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "一緒に使ってもいいですか？",
+        "answer": "はい、問題ありません。 2 つの拡張機能には、異なる動作範囲があります。",
+        "body": [
+          "FrankerFaceZ を使用して Twitch を視覚的にユニークにし、自動化とアラートのために StreamPulse を追加します。これらは同じブラウザ内で完全に共存します。"
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ko": {
+    "slug": "대안/frankerfacez",
+    "linkLabel": "대체 FrankerFaceZ",
+    "title": "StreamPulse 대 FrankerFaceZ(FFZ): 어떤 확장을 선택해야 할까요?",
+    "h1": "StreamPulse 대 FrankerFaceZ(FFZ): 어떤 확장을 선택해야 할까요?",
+    "description": "FrankerFaceZ(FFZ)와 StreamPulse의 비교. 이러한 Twitch 확장 프로그램이 완전히 상호보완적인 이유를 이해하세요.",
+    "intro": "FrankerFaceZ(FFZ)는 Twitch의 모양을 가장 작은 세부사항까지 맞춤 설정할 수 있는 역사적인 확장 프로그램입니다. StreamPulse로 교체해야 할까요? 짧은 대답은 '아니요'입니다. 이 두 가지 확장은 상호 보완적이며 완전히 다른 요구 사항에 맞게 설계되었습니다.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "빠른 비교",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "FrankerFaceZ의 강점: 개인화",
+        "body": [
+          "FFZ의 가장 큰 장점은 사용자 인터페이스의 수정이다. 색상을 변경하고, 채팅을 이동하고, 배지를 숨기거나, 가벼운 비디오 플레이어를 사용할 수도 있습니다. 또한 타사 이모티콘을 볼 수도 있습니다."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse의 강점: 자동화",
+        "body": [
+          "자동화를 관리하지 않는 FFZ와 달리 StreamPulse는 채널 포인트, Twitch Drops 청구를 처리하고 채널을 모니터링하여 실시간 알림을 보냅니다. 또한 FFZ에서는 실행하지 않는 Kick.com을 실행합니다."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "함께 사용할 수 있나요?",
+        "answer": "네, 문제 없습니다. 두 확장 프로그램에는 서로 다른 작업 범위가 있습니다.",
+        "body": [
+          "FrankerFaceZ를 사용하여 Twitch를 시각적으로 독특하게 만들고 자동화 및 경고를 위해 StreamPulse를 추가하세요. 동일한 브라우저에서 완벽하게 공존합니다."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "id": {
+    "slug": "alternatif/frankerfacez",
+    "linkLabel": "Alternatif FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Ekstensi mana yang harus dipilih?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Ekstensi mana yang harus dipilih?",
+    "description": "Perbandingan antara FrankerFaceZ (FFZ) dan StreamPulse. Pahami mengapa ekstensi Twitch ini saling melengkapi.",
+    "intro": "FrankerFaceZ (FFZ) adalah ekstensi bersejarah yang memungkinkan Anda menyesuaikan tampilan Twitch hingga detail terkecil. Haruskah diganti dengan StreamPulse? Jawaban singkatnya adalah tidak. Kedua ekstensi ini saling melengkapi dan dirancang untuk kebutuhan yang sangat berbeda.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Perbandingan cepat",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "Kekuatan FrankerFaceZ: Personalisasi",
+        "body": [
+          "Keunggulan utama FFZ adalah modifikasi antarmuka pengguna. Anda dapat mengubah warna, memindahkan obrolan, menyembunyikan lencana, atau bahkan menggunakan pemutar video ringan. Ini juga memungkinkan Anda melihat emote pihak ketiga."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Kekuatan StreamPulse: Otomatisasi",
+        "body": [
+          "Tidak seperti FFZ yang tidak mengelola otomatisasi apa pun, StreamPulse menangani klaim titik saluran Anda, Twitch Drops Anda, dan memantau saluran untuk mengirimkan pemberitahuan langsung kepada Anda. Ini juga menjalankan Kick.com, yang tidak dilakukan FFZ."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Bisakah kita menggunakannya bersama-sama?",
+        "answer": "Ya, tanpa masalah apa pun. Kedua ekstensi tersebut memiliki cakupan tindakan yang berbeda.",
+        "body": [
+          "Gunakan FrankerFaceZ untuk menjadikan Twitch Anda unik secara visual, dan tambahkan StreamPulse untuk otomatisasi dan peringatan. Mereka hidup berdampingan dengan sempurna di browser yang sama."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "nl": {
+    "slug": "alternatieven/frankerfacez",
+    "linkLabel": "Alternatief FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): welke extensie moet je kiezen?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): welke extensie moet je kiezen?",
+    "description": "Vergelijking tussen FrankerFaceZ (FFZ) en StreamPulse. Begrijp waarom deze Twitch-extensies volledig complementair zijn.",
+    "intro": "FrankerFaceZ (FFZ) is een historische extensie waarmee je het uiterlijk van Twitch tot in het kleinste detail kunt aanpassen. Moet het worden vervangen door StreamPulse? Het korte antwoord is nee. Deze twee extensies zijn complementair en ontworpen voor totaal verschillende behoeften.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "De snelle vergelijking",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "De kracht van FrankerFaceZ: Personalisatie",
+        "body": [
+          "Het grote sterke punt van FFZ is de aanpassing van de gebruikersinterface. Je kunt de kleuren veranderen, de chat verplaatsen, de badges verbergen of zelfs een lichtgewicht videospeler gebruiken. Je kunt er ook emotes van derden mee bekijken."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "De kracht van StreamPulse: Automatisering",
+        "body": [
+          "In tegenstelling tot FFZ, dat geen enkele automatisering beheert, zorgt StreamPulse voor het claimen van je kanaalpunten en je Twitch Drops, en controleert het kanalen om je live meldingen te sturen. Het draait ook Kick.com, wat FFZ niet doet."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Kunnen we ze samen gebruiken?",
+        "answer": "Ja, zonder enig probleem. De twee extensies hebben een verschillend actieterrein.",
+        "body": [
+          "Gebruik FrankerFaceZ om je Twitch visueel uniek te maken en voeg StreamPulse toe voor automatisering en waarschuwingen. Ze bestaan ​​perfect naast elkaar in dezelfde browser."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "hi": {
+    "slug": "विकल्प/फ्रैंकरफ़ेज़",
+    "linkLabel": "वैकल्पिक फ्रैंकरफेसजेड",
+    "title": "स्ट्रीमपल्स बनाम फ्रैंकरफेसजेड (एफएफजेड): कौन सा एक्सटेंशन चुनना है?",
+    "h1": "स्ट्रीमपल्स बनाम फ्रैंकरफेसजेड (एफएफजेड): कौन सा एक्सटेंशन चुनना है?",
+    "description": "फ्रेंकरफेसजेड (एफएफजेड) और स्ट्रीमपल्स के बीच तुलना। समझें कि ये ट्विच एक्सटेंशन पूरी तरह से पूरक क्यों हैं।",
+    "intro": "फ्रैंकरफेसजेड (एफएफजेड) एक ऐतिहासिक एक्सटेंशन है जो आपको ट्विच की उपस्थिति को सबसे छोटे विवरण तक अनुकूलित करने की अनुमति देता है। क्या इसे StreamPulse द्वारा प्रतिस्थापित किया जाना चाहिए? संक्षिप्त जवाब नहीं है। ये दो एक्सटेंशन पूरक हैं और पूरी तरह से अलग-अलग ज़रूरतों के लिए डिज़ाइन किए गए हैं।",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "त्वरित तुलना",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "फ्रेंकरफेसजेड की ताकत: वैयक्तिकरण",
+        "body": [
+          "एफएफजेड का बड़ा मजबूत बिंदु यूजर इंटरफेस का संशोधन है। आप रंग बदल सकते हैं, चैट को स्थानांतरित कर सकते हैं, बैज छिपा सकते हैं, या हल्के वीडियो प्लेयर का उपयोग भी कर सकते हैं। यह आपको तृतीय-पक्ष भाव देखने की भी अनुमति देता है।"
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "स्ट्रीमपल्स की ताकत: स्वचालन",
+        "body": [
+          "एफएफजेड के विपरीत, जो किसी भी स्वचालन का प्रबंधन नहीं करता है, स्ट्रीमपल्स आपके चैनल पॉइंट, आपके ट्विच ड्रॉप्स का दावा करने का ख्याल रखता है, और आपको लाइव सूचनाएं भेजने के लिए चैनलों की निगरानी करता है। यह Kick.com भी चलाता है, जो FFZ नहीं करता है।"
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "क्या हम उनका एक साथ उपयोग कर सकते हैं?",
+        "answer": "हाँ, बिना किसी समस्या के। दोनों एक्सटेंशन में कार्रवाई का एक अलग दायरा है।",
+        "body": [
+          "अपने ट्विच को दृश्य रूप से अद्वितीय बनाने के लिए फ्रैंकरफेसज़ का उपयोग करें, और स्वचालन और अलर्ट के लिए स्ट्रीमपल्स जोड़ें। वे एक ही ब्राउज़र में पूरी तरह से मौजूद हैं।"
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "sv": {
+    "slug": "alternativ/frankerfacez",
+    "linkLabel": "Alternativ FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Vilken förlängning ska jag välja?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Vilken förlängning ska jag välja?",
+    "description": "Jämförelse mellan FrankerFaceZ (FFZ) och StreamPulse. Förstå varför dessa Twitch-tillägg är helt komplementära.",
+    "intro": "FrankerFaceZ (FFZ) är en historisk tillägg som låter dig anpassa utseendet på Twitch in i minsta detalj. Ska den ersättas av StreamPulse? Det korta svaret är nej. Dessa två förlängningar är komplementära och designade för helt olika behov.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Den snabba jämförelsen",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "Styrkan med FrankerFaceZ: Personalisering",
+        "body": [
+          "Den stora starka punkten med FFZ är modifieringen av användargränssnittet. Du kan ändra färgerna, flytta chatten, dölja märkena eller till och med använda en lätt videospelare. Det låter dig också se känslor från tredje part."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Styrkan med StreamPulse: Automation",
+        "body": [
+          "Till skillnad från FFZ som inte hanterar någon automatisering, tar StreamPulse hand om dina kanalpoäng, dina Twitch Drops och övervakar kanaler för att skicka liveaviseringar till dig. Den kör också Kick.com, vilket FFZ inte gör."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Kan vi använda dem tillsammans?",
+        "answer": "Ja, utan problem. De två förlängningarna har ett distinkt handlingsutrymme.",
+        "body": [
+          "Använd FrankerFaceZ för att göra din Twitch visuellt unik och lägg till StreamPulse för automatisering och varningar. De samexisterar perfekt i samma webbläsare."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "cs": {
+    "slug": "alternativy/frankerfacez",
+    "linkLabel": "Alternativní FrankerFaceZ",
+    "title": "StreamPulse vs FrankerFaceZ (FFZ): Které rozšíření si vybrat?",
+    "h1": "StreamPulse vs FrankerFaceZ (FFZ): Které rozšíření si vybrat?",
+    "description": "Srovnání mezi FrankerFaceZ (FFZ) a StreamPulse. Pochopte, proč se tato rozšíření Twitch zcela doplňují.",
+    "intro": "FrankerFaceZ (FFZ) je historické rozšíření, které vám umožní upravit vzhled Twitche do nejmenších detailů. Měl by být nahrazen StreamPulse? Krátká odpověď je ne. Tato dvě rozšíření se doplňují a jsou určena pro zcela odlišné potřeby.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Rychlé srovnání",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "FrankerFaceZ",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Personnalisation extrême de l'interface (CSS)",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "ffz",
+        "h2": "Síla FrankerFaceZ: Personalizace",
+        "body": [
+          "Velkou silnou stránkou FFZ je úprava uživatelského rozhraní. Můžete změnit barvy, přesunout chat, skrýt odznaky nebo dokonce použít lehký přehrávač videa. Umožňuje vám také vidět emoce třetích stran."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Síla StreamPulse: Automatizace",
+        "body": [
+          "Na rozdíl od FFZ, která nespravuje žádnou automatizaci, se StreamPulse stará o nárokování vašich kanálových bodů, vašich Twitch Drops a monitoruje kanály, aby vám zasílal živá upozornění. Provozuje také Kick.com, což FFZ nedělá."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Můžeme je používat společně?",
+        "answer": "Ano, bez problémů. Tato dvě rozšíření mají odlišný rozsah působnosti.",
+        "body": [
+          "Použijte FrankerFaceZ, aby byl váš Twitch vizuálně jedinečný, a přidejte StreamPulse pro automatizaci a upozornění. Dokonale koexistují ve stejném prohlížeči."
+        ]
+      }
+    ],
+    "faq": []
+  }
+}

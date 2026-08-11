@@ -1,0 +1,1142 @@
+{
+  "en": {
+    "slug": "alternatives/betterttv",
+    "linkLabel": "BetterTTV Alternative",
+    "title": "StreamPulse vs BetterTTV: Which extension to choose?",
+    "h1": "StreamPulse vs BetterTTV: Which extension to choose?",
+    "description": "Learn the difference between BetterTTV (BTTV) and StreamPulse. Should we choose one over the other? Can we use the two together?",
+    "intro": "BetterTTV (BTTV) is the most popular extension on Twitch. Should it be replaced by StreamPulse? The short answer is no. These two extensions are designed to be used together, because they don't do the same thing at all.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "The quick comparison",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "The strength of BetterTTV: Emotes",
+        "body": [
+          "The heart of BetterTTV is emotes. The extension allows custom images to be displayed in chat that would normally only be visible as text. It also allows you to hide certain elements of the Twitch interface."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "The strength of StreamPulse: Automation",
+        "body": [
+          "StreamPulse, for its part, does not add any emotes. Its goal is to automate viewing: recover channel points and Drops without having to click, alert you when a streamer goes live (via a desktop or sound notification) and correct player crashes (Error 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Can we use them together?",
+        "answer": "Absolutely. This is also the configuration recommended by most experienced users.",
+        "body": [
+          "Keep BetterTTV to see chat emotes, and install StreamPulse to manage automation in the background. Both extensions are lightweight and do not create any technical conflicts between them."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "es": {
+    "slug": "alternativas/betterttv",
+    "linkLabel": "Alternativa BetterTTV",
+    "title": "StreamPulse vs BetterTTV: ¿Qué extensión elegir?",
+    "h1": "StreamPulse vs BetterTTV: ¿Qué extensión elegir?",
+    "description": "Conozca la diferencia entre BetterTTV (BTTV) y StreamPulse. ¿Deberíamos elegir uno sobre el otro? ¿Podemos usar los dos juntos?",
+    "intro": "BetterTTV (BTTV) es la extensión más popular de Twitch. ¿Debería ser reemplazado por StreamPulse? La respuesta corta es no. Estas dos extensiones están diseñadas para usarse juntas, porque no hacen lo mismo en absoluto.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "La comparación rápida",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "El punto fuerte de BetterTTV: los gestos",
+        "body": [
+          "El corazón de BetterTTV son los emoticones. La extensión permite mostrar imágenes personalizadas en el chat que normalmente solo serían visibles como texto. También te permite ocultar ciertos elementos de la interfaz de Twitch."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "La fortaleza de StreamPulse: la automatización",
+        "body": [
+          "StreamPulse, por su parte, no añade ningún emoticón. Su objetivo es automatizar la visualización: recuperar puntos y Drops del canal sin tener que hacer clic, avisarle cuando un transmisor se activa (a través de una notificación de escritorio o sonora) y corregir fallas del reproductor (Error 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "¿Podemos usarlos juntos?",
+        "answer": "Absolutamente. Esta es también la configuración recomendada por los usuarios más experimentados.",
+        "body": [
+          "Mantenga BetterTTV para ver emoticones de chat e instale StreamPulse para administrar la automatización en segundo plano. Ambas extensiones son livianas y no crean ningún conflicto técnico entre ellas."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pt-BR": {
+    "slug": "alternativas/melhorttv",
+    "linkLabel": "Alternativa BetterTTV",
+    "title": "StreamPulse vs BetterTTV: Qual extensão escolher?",
+    "h1": "StreamPulse vs BetterTTV: Qual extensão escolher?",
+    "description": "Aprenda a diferença entre BetterTTV (BTTV) e StreamPulse. Devemos escolher um em vez do outro? Podemos usar os dois juntos?",
+    "intro": "BetterTTV (BTTV) é a extensão mais popular do Twitch. Deve ser substituído pelo StreamPulse? A resposta curta é não. Essas duas extensões foram projetadas para serem usadas juntas, porque não fazem a mesma coisa.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "A comparação rápida",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "A força do BetterTTV: Emotes",
+        "body": [
+          "O coração do BetterTTV são os emotes. A extensão permite que imagens personalizadas sejam exibidas no chat que normalmente só seriam visíveis como texto. Também permite ocultar certos elementos da interface do Twitch."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "A força do StreamPulse: Automação",
+        "body": [
+          "StreamPulse, por sua vez, não adiciona nenhum emote. Seu objetivo é automatizar a visualização: recuperar pontos e Drops do canal sem precisar clicar, alertar quando um streamer entrar ao vivo (através de um desktop ou notificação sonora) e corrigir travamentos do player (Erro 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Podemos usá-los juntos?",
+        "answer": "Absolutamente. Esta também é a configuração recomendada pelos usuários mais experientes.",
+        "body": [
+          "Mantenha o BetterTTV para ver os emotes do bate-papo e instale o StreamPulse para gerenciar a automação em segundo plano. Ambas as extensões são leves e não criam conflitos técnicos entre elas."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "tr": {
+    "slug": "alternatifler/betterttv",
+    "linkLabel": "BetterTTV Alternatifi",
+    "title": "StreamPulse vs BetterTTV: Hangi uzantıyı seçmelisiniz?",
+    "h1": "StreamPulse vs BetterTTV: Hangi uzantıyı seçmelisiniz?",
+    "description": "BetterTTV (BTTV) ve StreamPulse arasındaki farkı öğrenin. Birini diğerine mi tercih etmeliyiz? İkisini bir arada kullanabilir miyiz?",
+    "intro": "BetterTTV (BTTV), Twitch'teki en popüler uzantıdır. StreamPulse ile değiştirilmeli mi? Kısa cevap hayır. Bu iki uzantı birlikte kullanılmak üzere tasarlanmıştır çünkü hiçbir şekilde aynı şeyi yapmazlar.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Hızlı karşılaştırma",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "BetterTTV'nin gücü: İfadeler",
+        "body": [
+          "BetterTTV'nin kalbi duygulardır. Uzantı, normalde yalnızca metin olarak görülebilen özel görsellerin sohbette görüntülenmesine olanak tanır. Ayrıca Twitch arayüzünün belirli öğelerini gizlemenize de olanak tanır."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse'un gücü: Otomasyon",
+        "body": [
+          "StreamPulse ise herhangi bir ifade eklemiyor. Amacı görüntülemeyi otomatikleştirmektir: tıklamaya gerek kalmadan kanal puanlarını ve Düşüşleri kurtarmak, bir yayıncı canlı yayına geçtiğinde sizi uyarmak (masaüstü veya sesli bildirim yoluyla) ve oynatıcı çökmelerini düzeltmek (Hata 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Bunları birlikte kullanabilir miyiz?",
+        "answer": "Kesinlikle. Bu aynı zamanda çoğu deneyimli kullanıcı tarafından önerilen konfigürasyondur.",
+        "body": [
+          "Sohbet ifadelerini görmek için BetterTTV'yi saklayın ve arka planda otomasyonu yönetmek için StreamPulse'u yükleyin. Her iki uzantı da hafiftir ve aralarında herhangi bir teknik çatışma yaratmaz."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ru": {
+    "slug": "альтернативы/лучшее тв",
+    "linkLabel": "Альтернатива BetterTTV",
+    "title": "StreamPulse против BetterTTV: какое расширение выбрать?",
+    "h1": "StreamPulse против BetterTTV: какое расширение выбрать?",
+    "description": "Узнайте разницу между BetterTTV (BTTV) и StreamPulse. Должны ли мы предпочесть одно другому? Можем ли мы использовать их вместе?",
+    "intro": "BetterTTV (BTTV) — самое популярное расширение на Twitch. Стоит ли его заменить на StreamPulse? Короткий ответ: нет. Эти два расширения предназначены для совместного использования, поскольку они совершенно не делают одно и то же.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Быстрое сравнение",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "Сильная сторона BetterTTV: эмоции",
+        "body": [
+          "Сердце BetterTTV — эмоции. Расширение позволяет отображать в чате пользовательские изображения, которые обычно отображаются только в виде текста. Он также позволяет скрывать определенные элементы интерфейса Twitch."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Сильная сторона StreamPulse: автоматизация",
+        "body": [
+          "StreamPulse, со своей стороны, не добавляет никаких эмоций. Его цель — автоматизировать просмотр: восстанавливать очки канала и Drops без необходимости нажимать кнопки, предупреждать вас, когда стример выходит в эфир (через рабочий стол или звуковое уведомление), а также исправлять сбои плеера (ошибка 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Можем ли мы использовать их вместе?",
+        "answer": "Абсолютно. Эту конфигурацию рекомендуют большинство опытных пользователей.",
+        "body": [
+          "Сохраните BetterTTV, чтобы видеть эмоции чата, и установите StreamPulse, чтобы управлять автоматизацией в фоновом режиме. Оба расширения легкие и не создают между собой никаких технических конфликтов."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ko": {
+    "slug": "대안/더 나은 TV",
+    "linkLabel": "BetterTTV 대안",
+    "title": "StreamPulse vs BetterTTV: 어떤 확장 프로그램을 선택해야 할까요?",
+    "h1": "StreamPulse vs BetterTTV: 어떤 확장 프로그램을 선택해야 할까요?",
+    "description": "BetterTTV(BTTV)와 StreamPulse의 차이점을 알아보세요. 우리는 다른 것보다 하나를 선택해야 합니까? 두 가지를 함께 사용할 수 있나요?",
+    "intro": "BetterTTV(BTTV)는 Twitch에서 가장 인기 있는 확장 프로그램입니다. StreamPulse로 교체해야 할까요? 짧은 대답은 '아니요'입니다. 이 두 확장은 동일한 작업을 전혀 수행하지 않기 때문에 함께 사용하도록 설계되었습니다.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "빠른 비교",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "BetterTTV의 강점: 감정 표현",
+        "body": [
+          "BetterTTV의 핵심은 감정 표현입니다. 확장 기능을 사용하면 일반적으로 텍스트로만 표시되는 사용자 지정 이미지를 채팅에 표시할 수 있습니다. 또한 Twitch 인터페이스의 특정 요소를 숨길 수도 있습니다."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse의 강점: 자동화",
+        "body": [
+          "StreamPulse는 감정 표현을 추가하지 않습니다. 그 목표는 시청을 자동화하는 것입니다. 클릭하지 않고도 채널 포인트와 드롭을 복구하고, 스트리머가 라이브로 전환될 때(데스크톱이나 소리 알림을 통해) 알리고, 플레이어 충돌을 수정합니다(오류 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "함께 사용할 수 있나요?",
+        "answer": "전적으로. 이는 대부분의 숙련된 사용자가 권장하는 구성이기도 합니다.",
+        "body": [
+          "BetterTTV를 유지하여 채팅 이모티콘을 확인하고 StreamPulse를 설치하여 백그라운드에서 자동화를 관리하세요. 두 확장 모두 가벼우며 기술적인 충돌을 일으키지 않습니다."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "id": {
+    "slug": "alternatif/lebih baikttv",
+    "linkLabel": "Alternatif BetterTTV",
+    "title": "StreamPulse vs BetterTTV: Ekstensi mana yang harus dipilih?",
+    "h1": "StreamPulse vs BetterTTV: Ekstensi mana yang harus dipilih?",
+    "description": "Pelajari perbedaan antara BetterTTV (BTTV) dan StreamPulse. Haruskah kita memilih salah satu dari yang lain? Bisakah kita menggunakan keduanya bersama-sama?",
+    "intro": "BetterTTV (BTTV) adalah ekstensi paling populer di Twitch. Haruskah diganti dengan StreamPulse? Jawaban singkatnya adalah tidak. Kedua ekstensi ini dirancang untuk digunakan bersama-sama, karena keduanya tidak melakukan hal yang sama sama sekali.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Perbandingan cepat",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "Kekuatan BetterTTV: Emote",
+        "body": [
+          "Inti dari BetterTTV adalah emosi. Ekstensi ini memungkinkan gambar khusus ditampilkan dalam obrolan yang biasanya hanya terlihat sebagai teks. Ini juga memungkinkan Anda menyembunyikan elemen tertentu dari antarmuka Twitch."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Kekuatan StreamPulse: Otomatisasi",
+        "body": [
+          "StreamPulse, pada bagiannya, tidak menambahkan emote apa pun. Tujuannya adalah untuk mengotomatiskan penayangan: memulihkan titik saluran dan Drops tanpa harus mengklik, memperingatkan Anda ketika streamer ditayangkan (melalui desktop atau pemberitahuan suara) dan memperbaiki kerusakan pemutar (Kesalahan 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Bisakah kita menggunakannya bersama-sama?",
+        "answer": "Sangat. Ini juga merupakan konfigurasi yang direkomendasikan oleh sebagian besar pengguna berpengalaman.",
+        "body": [
+          "Pertahankan BetterTTV untuk melihat emote obrolan, dan instal StreamPulse untuk mengelola otomatisasi di latar belakang. Kedua ekstensi tersebut ringan dan tidak menimbulkan konflik teknis di antara keduanya."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "nl": {
+    "slug": "alternatieven/beterttv",
+    "linkLabel": "BetterTTV-alternatief",
+    "title": "StreamPulse versus BetterTTV: welke extensie moet u kiezen?",
+    "h1": "StreamPulse versus BetterTTV: welke extensie moet u kiezen?",
+    "description": "Leer het verschil tussen BetterTTV (BTTV) en StreamPulse. Moeten we het een boven het ander verkiezen? Kunnen we de twee samen gebruiken?",
+    "intro": "BetterTTV (BTTV) is de populairste extensie op Twitch. Moet het worden vervangen door StreamPulse? Het korte antwoord is nee. Deze twee extensies zijn ontworpen om samen te worden gebruikt, omdat ze helemaal niet hetzelfde doen.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "De snelle vergelijking",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "De kracht van BetterTTV: Emotes",
+        "body": [
+          "Het hart van BetterTTV zijn emoties. Met de extensie kunnen aangepaste afbeeldingen in de chat worden weergegeven die normaal gesproken alleen als tekst zichtbaar zijn. Je kunt er ook bepaalde elementen van de Twitch-interface mee verbergen."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "De kracht van StreamPulse: Automatisering",
+        "body": [
+          "StreamPulse voegt op zijn beurt geen emotes toe. Het doel is om het kijken te automatiseren: kanaalpunten en drops herstellen zonder te hoeven klikken, u waarschuwen wanneer een streamer live gaat (via een desktop- of geluidsmelding) en het corrigeren van spelercrashes (Error 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Kunnen we ze samen gebruiken?",
+        "answer": "Absoluut. Dit is ook de configuratie die door de meeste ervaren gebruikers wordt aanbevolen.",
+        "body": [
+          "Behoud BetterTTV om chat-emotes te zien en installeer StreamPulse om de automatisering op de achtergrond te beheren. Beide extensies zijn lichtgewicht en veroorzaken geen technische conflicten tussen beide."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "hi": {
+    "slug": "विकल्प/बेहतरttv",
+    "linkLabel": "बेहतर टीटीवी वैकल्पिक",
+    "title": "स्ट्रीमपल्स बनाम बेटरटीटीवी: कौन सा एक्सटेंशन चुनना है?",
+    "h1": "स्ट्रीमपल्स बनाम बेटरटीटीवी: कौन सा एक्सटेंशन चुनना है?",
+    "description": "BetterTTV (BTTV) और StreamPulse के बीच अंतर जानें। क्या हमें एक को दूसरे के ऊपर चुनना चाहिए? क्या हम दोनों का एक साथ उपयोग कर सकते हैं?",
+    "intro": "बेटर टीटीवी (बीटीटीवी) ट्विच पर सबसे लोकप्रिय एक्सटेंशन है। क्या इसे StreamPulse द्वारा प्रतिस्थापित किया जाना चाहिए? संक्षिप्त जवाब नहीं है। इन दोनों एक्सटेंशन को एक साथ उपयोग करने के लिए डिज़ाइन किया गया है, क्योंकि वे बिल्कुल भी एक जैसा काम नहीं करते हैं।",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "त्वरित तुलना",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "BetterTTV की ताकत: इमोट्स",
+        "body": [
+          "BetterTTV का हृदय भावनाएं हैं। एक्सटेंशन कस्टम छवियों को चैट में प्रदर्शित करने की अनुमति देता है जो सामान्य रूप से केवल पाठ के रूप में दिखाई देगी। यह आपको ट्विच इंटरफ़ेस के कुछ तत्वों को छिपाने की भी अनुमति देता है।"
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "स्ट्रीमपल्स की ताकत: स्वचालन",
+        "body": [
+          "स्ट्रीमपल्स, अपनी ओर से, कोई भाव नहीं जोड़ता है। इसका लक्ष्य देखने को स्वचालित करना है: क्लिक किए बिना चैनल पॉइंट और ड्रॉप्स को पुनर्प्राप्त करना, स्ट्रीमर लाइव होने पर आपको सचेत करना (डेस्कटॉप या ध्वनि अधिसूचना के माध्यम से) और प्लेयर क्रैश को सही करना (त्रुटि 2000)।"
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "क्या हम उनका एक साथ उपयोग कर सकते हैं?",
+        "answer": "बिल्कुल। यह अधिकांश अनुभवी उपयोगकर्ताओं द्वारा अनुशंसित कॉन्फ़िगरेशन भी है।",
+        "body": [
+          "चैट के भाव देखने के लिए BetterTTV रखें और पृष्ठभूमि में स्वचालन प्रबंधित करने के लिए StreamPulse इंस्टॉल करें। दोनों एक्सटेंशन हल्के हैं और उनके बीच कोई तकनीकी टकराव पैदा नहीं होता है।"
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "sv": {
+    "slug": "alternativ/betterttv",
+    "linkLabel": "BetterTTV Alternative",
+    "title": "StreamPulse vs BetterTTV: Vilket tillägg ska jag välja?",
+    "h1": "StreamPulse vs BetterTTV: Vilket tillägg ska jag välja?",
+    "description": "Lär dig skillnaden mellan BetterTTV (BTTV) och StreamPulse. Ska vi välja det ena framför det andra? Kan vi använda de två tillsammans?",
+    "intro": "BetterTTV (BTTV) är den mest populära tillägget på Twitch. Ska den ersättas av StreamPulse? Det korta svaret är nej. Dessa två förlängningar är designade för att användas tillsammans, eftersom de inte gör samma sak alls.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Den snabba jämförelsen",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "Styrkan med BetterTTV: Emotes",
+        "body": [
+          "Hjärtat i BetterTTV är emotes. Tillägget tillåter att anpassade bilder visas i chatten som normalt bara skulle vara synliga som text. Det låter dig också dölja vissa delar av Twitch-gränssnittet."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Styrkan med StreamPulse: Automation",
+        "body": [
+          "StreamPulse, å sin sida, lägger inte till några emotes. Dess mål är att automatisera visningen: återställa kanalpoäng och Drops utan att behöva klicka, varna dig när en streamer går live (via en skrivbords- eller ljudavisering) och korrigera spelarkraschar (Fel 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Kan vi använda dem tillsammans?",
+        "answer": "Absolut. Detta är också den konfiguration som rekommenderas av de flesta erfarna användare.",
+        "body": [
+          "Behåll BetterTTV för att se chattens känslor och installera StreamPulse för att hantera automatisering i bakgrunden. Båda tilläggen är lätta och skapar inga tekniska konflikter mellan dem."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "cs": {
+    "slug": "alternativy/betterttv",
+    "linkLabel": "Lepší alternativa TTV",
+    "title": "StreamPulse vs BetterTTV: Které rozšíření si vybrat?",
+    "h1": "StreamPulse vs BetterTTV: Které rozšíření si vybrat?",
+    "description": "Naučte se rozdíl mezi BetterTTV (BTTV) a StreamPulse. Měli bychom si vybrat jedno před druhým? Můžeme je použít společně?",
+    "intro": "BetterTTV (BTTV) je nejoblíbenější rozšíření na Twitchi. Měl by být nahrazen StreamPulse? Krátká odpověď je ne. Tato dvě rozšíření jsou navržena pro společné použití, protože vůbec nedělají totéž.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Rychlé srovnání",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "Síla BetterTTV: Emotes",
+        "body": [
+          "Srdcem BetterTTV jsou emoce. Rozšíření umožňuje zobrazování vlastních obrázků v chatu, které by normálně byly viditelné pouze jako text. Umožňuje také skrýt určité prvky rozhraní Twitch."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Síla StreamPulse: Automatizace",
+        "body": [
+          "StreamPulse ze své strany nepřidává žádné emoce. Jeho cílem je automatizovat sledování: obnovit body kanálu a poklesy bez nutnosti klikat, upozornit vás, když streamer začne živě (prostřednictvím plochy nebo zvukového upozornění) a opravit pády přehrávače (chyba 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Můžeme je používat společně?",
+        "answer": "Absolutně. Toto je také konfigurace doporučená nejzkušenějšími uživateli.",
+        "body": [
+          "Nechte si BetterTTV, abyste viděli chatovací emoce, a nainstalujte si StreamPulse pro správu automatizace na pozadí. Obě rozšíření jsou lehká a nevytvářejí mezi nimi žádné technické konflikty."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "de": {
+    "slug": "Alternativen/betterttv",
+    "linkLabel": "BessereTTV-Alternative",
+    "title": "StreamPulse vs. BetterTTV: Welche Erweiterung soll ich wählen?",
+    "h1": "StreamPulse vs. BetterTTV: Welche Erweiterung soll ich wählen?",
+    "description": "Erfahren Sie den Unterschied zwischen BetterTTV (BTTV) und StreamPulse. Sollen wir das eine dem anderen vorziehen? Können wir die beiden zusammen verwenden?",
+    "intro": "BetterTTV (BTTV) ist die beliebteste Erweiterung auf Twitch. Sollte es durch StreamPulse ersetzt werden? Die kurze Antwort ist nein. Diese beiden Erweiterungen sind für die gemeinsame Verwendung konzipiert, da sie überhaupt nicht dasselbe bewirken.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Der schnelle Vergleich",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "Die Stärke von BetterTTV: Emotes",
+        "body": [
+          "Das Herzstück von BetterTTV sind Emotes. Die Erweiterung ermöglicht die Anzeige benutzerdefinierter Bilder im Chat, die normalerweise nur als Text sichtbar wären. Außerdem können Sie damit bestimmte Elemente der Twitch-Benutzeroberfläche ausblenden."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Die Stärke von StreamPulse: Automatisierung",
+        "body": [
+          "StreamPulse wiederum fügt keine Emotes hinzu. Sein Ziel besteht darin, die Wiedergabe zu automatisieren: Kanalpunkte und Drops ohne Klicken wiederherzustellen, Sie zu benachrichtigen, wenn ein Streamer live geht (über eine Desktop- oder Sound-Benachrichtigung) und Player-Abstürze zu beheben (Fehler 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Können wir sie zusammen verwenden?",
+        "answer": "Absolut. Dies ist auch die von den meisten erfahrenen Benutzern empfohlene Konfiguration.",
+        "body": [
+          "Behalten Sie BetterTTV, um Chat-Emotes anzuzeigen, und installieren Sie StreamPulse, um die Automatisierung im Hintergrund zu verwalten. Beide Erweiterungen sind leichtgewichtig und verursachen keine technischen Konflikte zwischen ihnen."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "it": {
+    "slug": "alternative/megliottv",
+    "linkLabel": "Alternativa BetterTTV",
+    "title": "StreamPulse vs BetterTTV: quale estensione scegliere?",
+    "h1": "StreamPulse vs BetterTTV: quale estensione scegliere?",
+    "description": "Scopri la differenza tra BetterTTV (BTTV) e StreamPulse. Dovremmo sceglierne uno piuttosto che l'altro? Possiamo usarli insieme?",
+    "intro": "BetterTTV (BTTV) è l'estensione più popolare su Twitch. Dovrebbe essere sostituito da StreamPulse? La risposta breve è no. Queste due estensioni sono progettate per essere utilizzate insieme, perché non fanno affatto la stessa cosa.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Il confronto veloce",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "La forza di BetterTTV: le emote",
+        "body": [
+          "Il cuore di BetterTTV sono le emote. L'estensione consente di visualizzare nella chat immagini personalizzate che normalmente sarebbero visibili solo come testo. Ti consente anche di nascondere alcuni elementi dell'interfaccia di Twitch."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "La forza di StreamPulse: l'automazione",
+        "body": [
+          "StreamPulse, dal canto suo, non aggiunge alcuna emote. Il suo obiettivo è automatizzare la visualizzazione: recuperare punti canale e Drop senza dover cliccare, avvisarti quando uno streamer va in diretta (tramite un desktop o una notifica sonora) e correggere i crash del player (Errore 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Possiamo usarli insieme?",
+        "answer": "Assolutamente. Questa è anche la configurazione consigliata dagli utenti più esperti.",
+        "body": [
+          "Mantieni BetterTTV per vedere le emoticon della chat e installa StreamPulse per gestire l'automazione in background. Entrambe le estensioni sono leggere e non creano conflitti tecnici tra loro."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pl": {
+    "slug": "alternatywy/lepszetv",
+    "linkLabel": "Lepsza alternatywa TTV",
+    "title": "StreamPulse vs BetterTTV: jakie rozszerzenie wybrać?",
+    "h1": "StreamPulse vs BetterTTV: jakie rozszerzenie wybrać?",
+    "description": "Poznaj różnicę pomiędzy BetterTTV (BTTV) i StreamPulse. Czy powinniśmy wybierać jedno zamiast drugiego? Czy możemy używać tych dwóch razem?",
+    "intro": "BetterTTV (BTTV) to najpopularniejsze rozszerzenie na Twitchu. Czy powinien zostać zastąpiony przez StreamPulse? Krótka odpowiedź brzmi: nie. Te dwa rozszerzenia zostały zaprojektowane tak, aby można było ich używać razem, ponieważ nie robią tego samego.",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "Szybkie porównanie",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "Siła BetterTTV: Emocje",
+        "body": [
+          "Sercem BetterTTV są emotki. Rozszerzenie umożliwia wyświetlanie na czacie niestandardowych obrazów, które normalnie byłyby widoczne tylko jako tekst. Umożliwia także ukrycie niektórych elementów interfejsu Twitcha."
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "Siła StreamPulse: Automatyzacja",
+        "body": [
+          "Ze swojej strony StreamPulse nie dodaje żadnych emotikonów. Jego celem jest automatyzacja oglądania: odzyskiwanie punktów kanału i dropów bez konieczności klikania, powiadamianie Cię, gdy streamer rozpoczyna transmisję na żywo (poprzez powiadomienie na pulpicie lub dźwiękowo) i naprawianie awarii odtwarzacza (Błąd 2000)."
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "Czy możemy ich używać razem?",
+        "answer": "Absolutnie. Jest to również konfiguracja zalecana przez najbardziej doświadczonych użytkowników.",
+        "body": [
+          "Zachowaj BetterTTV, aby zobaczyć emotki na czacie i zainstaluj StreamPulse, aby zarządzać automatyzacją w tle. Obydwa rozszerzenia są lekkie i nie powodują między nimi żadnych konfliktów technicznych."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ja": {
+    "slug": "代替案/ベターテレビ",
+    "linkLabel": "より良いTTVの代替品",
+    "title": "StreamPulse と BetterTTV: どちらの拡張機能を選択しますか?",
+    "h1": "StreamPulse と BetterTTV: どちらの拡張機能を選択しますか?",
+    "description": "BetterTTV (BTTV) と StreamPulse の違いを学習します。どちらか一方を選択する必要がありますか? 2 つを一緒に使用できますか?",
+    "intro": "BetterTTV (BTTV) は、Twitch で最も人気のある拡張機能です。 StreamPulse に置き換えるべきでしょうか?簡単に言うと「ノー」です。これら 2 つの拡張機能は、まったく同じことを行うわけではないため、一緒に使用するように設計されています。",
+    "sections": [
+      {
+        "id": "comparatif",
+        "h2": "簡単な比較",
+        "table": {
+          "head": [
+            "Fonctionnalité",
+            "BetterTTV",
+            "StreamPulse"
+          ],
+          "rows": [
+            [
+              "Emotes personnalisées",
+              "Oui (Kekw, MonkaS, etc.)",
+              "Non"
+            ],
+            [
+              "Personnalisation de l'interface",
+              "Oui",
+              "Non"
+            ],
+            [
+              "Points de chaîne automatiques",
+              "Non (retiré récemment)",
+              "Oui"
+            ],
+            [
+              "Twitch Drops automatiques",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Notifications de live (Bureau)",
+              "Non",
+              "Oui"
+            ],
+            [
+              "Compatibilité Kick",
+              "Non",
+              "Oui"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "bttv",
+        "h2": "BetterTTV の強み: エモート",
+        "body": [
+          "BetterTTV の中心となるのはエモートです。この拡張機能を使用すると、通常はテキストとしてのみ表示されるカスタム画像をチャットに表示できるようになります。また、Twitch インターフェースの特定の要素を非表示にすることもできます。"
+        ]
+      },
+      {
+        "id": "streampulse",
+        "h2": "StreamPulse の強み: 自動化",
+        "body": [
+          "StreamPulse 側では、エモートは追加されません。その目標は、視聴を自動化することです。クリックすることなくチャンネル ポイントとドロップを回復し、ストリーマーがライブになると警告を発し (デスクトップまたはサウンド通知経由で)、プレーヤーのクラッシュ (エラー 2000) を修正します。"
+        ]
+      },
+      {
+        "id": "ensemble",
+        "h2": "一緒に使ってもいいですか？",
+        "answer": "絶対に。これは、最も経験豊富なユーザーが推奨する構成でもあります。",
+        "body": [
+          "チャットエモートを表示するには BetterTTV を維持し、バックグラウンドで自動化を管理するには StreamPulse をインストールします。どちらの拡張機能も軽量であり、それらの間に技術的な競合は発生しません。"
+        ]
+      }
+    ],
+    "faq": []
+  }
+}

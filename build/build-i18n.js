@@ -573,7 +573,8 @@ function absolutizeAssets(html) {
 const contentKeys = [
   'error2000', 'error3000', 'drops', 'points', 
   'extensionKick', 'extensionTwitch', 'chat', 
-  'notifications', 'dashboard', 'alternatives', 'kick'
+  'notifications', 'dashboard', 'alternatives', 'kick',
+  'lowLatency', 'autoRefresh', 'altBetterTTV', 'altFFZ', 'alt7TV'
 ];
 const contentSlugs = {};
 contentKeys.forEach(k => {

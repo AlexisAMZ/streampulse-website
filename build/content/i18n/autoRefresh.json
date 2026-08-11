@@ -1,0 +1,587 @@
+{
+  "en": {
+    "slug": "twitch-auto-refresh",
+    "linkLabel": "Auto-Refresh Twitch",
+    "title": "Auto-Refresh Twitch: Relaunch the player automatically",
+    "h1": "How to automatically reload Twitch player after an error",
+    "description": "Never miss a moment of your favorite streams. Learn how to reload Twitch Player automatically after error 2000 or black screen.",
+    "intro": "Nothing is more frustrating than leaving a Twitch stream in the background and realizing 30 minutes later that the player has crashed (Error 2000, 3000 or black screen). Here's how to automate video player reloading so you never experience interruptions again.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Why does the player stop?",
+        "answer": "You leave a stream in the background and suddenly the sound cuts out. Returning to the tab, you see a black screen with a \"Click here to restart\" button or a \"Network Error (#2000)\" message. This behavior occurs for several reasons:",
+        "list": [
+          "<strong>Quality change:</strong> Twitch tries to adapt the resolution to your connection, which sometimes causes a bug in the HTML5 player.",
+          "<strong>WiFi micro-cuts:</strong> Loss of the network packet freezes the live stream."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "How StreamPulse Auto-Refresh works",
+        "answer": "StreamPulse monitors the player constantly. As soon as an error code appears on the screen, it injects a command to reset the video player instantly.",
+        "body": [
+          "The big advantage of this method compared to a classic refresh (F5) is that <strong>only the video stream is restarted</strong>. The chat remains active, you don't lose your message history and you don't have to reload all the heavy scripts on the page.",
+          "This is a must-have of the best Twitch extensions for those who keep multiple streams open at the same time."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Activate it from the options",
+        "answer": "Once StreamPulse is installed:",
+        "list": [
+          "Open the extension dashboard (the icon in your Chrome bar).",
+          "Go to <strong>Settings</strong> (gear icon).",
+          "Check the <strong>Anti-Pause & Auto-Reload</strong> box."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "es": {
+    "slug": "actualización-automática de contracción nerviosa",
+    "linkLabel": "Actualización automática de Twitch",
+    "title": "Actualización automática de Twitch: reinicia el reproductor automáticamente",
+    "h1": "Cómo recargar automáticamente el reproductor Twitch después de un error",
+    "description": "No te pierdas ni un momento de tus transmisiones favoritas. Aprenda cómo recargar Twitch Player automáticamente después del error 2000 o una pantalla negra.",
+    "intro": "Nada es más frustrante que dejar una transmisión de Twitch en segundo plano y darte cuenta 30 minutos después de que el reproductor se ha bloqueado (Error 2000, 3000 o pantalla negra). Aquí se explica cómo automatizar la recarga del reproductor de video para que nunca más experimente interrupciones.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "¿Por qué se detiene el jugador?",
+        "answer": "Dejas una secuencia de fondo y de repente el sonido se corta. Al regresar a la pestaña, verá una pantalla negra con el botón \"Haga clic aquí para reiniciar\" o un mensaje de \"Error de red (#2000)\". Este comportamiento se produce por varios motivos:",
+        "list": [
+          "<strong>Cambio de calidad:</strong> Twitch intenta adaptar la resolución a tu conexión, lo que en ocasiones provoca un error en el reproductor HTML5.",
+          "<strong>Microcortes de WiFi:</strong> La pérdida del paquete de red congela la transmisión en vivo."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Cómo funciona la actualización automática de StreamPulse",
+        "answer": "StreamPulse monitorea al reproductor constantemente. Tan pronto como aparece un código de error en la pantalla, inyecta un comando para restablecer el reproductor de video al instante.",
+        "body": [
+          "La gran ventaja de este método en comparación con una actualización clásica (F5) es que <strong>sólo se reinicia la transmisión de vídeo</strong>. El chat permanece activo, no pierdes tu historial de mensajes y no tienes que volver a cargar todos los scripts pesados ​​de la página.",
+          "Esta es una de las mejores extensiones de Twitch imprescindibles para aquellos que mantienen abiertas varias transmisiones al mismo tiempo."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Actívalo desde las opciones.",
+        "answer": "Una vez instalado StreamPulse:",
+        "list": [
+          "Abra el panel de extensión (el ícono en su barra de Chrome).",
+          "Ve a <strong>Configuración</strong> (icono de engranaje).",
+          "Marca la casilla <strong>Antipausa y recarga automática</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pt-BR": {
+    "slug": "twitch-auto-refresh",
+    "linkLabel": "Atualização automática do Twitch",
+    "title": "Atualização automática do Twitch: reinicie o player automaticamente",
+    "h1": "Como recarregar automaticamente o Twitch player após um erro",
+    "description": "Nunca perca um momento de suas transmissões favoritas. Aprenda como recarregar o Twitch Player automaticamente após erro 2000 ou tela preta.",
+    "intro": "Nada é mais frustrante do que deixar uma transmissão do Twitch em segundo plano e perceber 30 minutos depois que o player travou (Erro 2000, 3000 ou tela preta). Veja como automatizar o recarregamento do player de vídeo para que você nunca mais sofra interrupções.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Por que o jogador para?",
+        "answer": "Você deixa um stream em segundo plano e de repente o som é cortado. Voltando à guia, você verá uma tela preta com o botão “Clique aqui para reiniciar” ou uma mensagem “Erro de rede (#2000)”. Esse comportamento ocorre por vários motivos:",
+        "list": [
+          "<strong>Mudança de qualidade:</strong> Twitch tenta adaptar a resolução à sua conexão, o que às vezes causa um bug no player HTML5.",
+          "<strong>Microcortes de WiFi:</strong> a perda do pacote de rede congela a transmissão ao vivo."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Como funciona a atualização automática do StreamPulse",
+        "answer": "StreamPulse monitora o player constantemente. Assim que um código de erro aparece na tela, ele injeta um comando para reiniciar o player de vídeo instantaneamente.",
+        "body": [
+          "A grande vantagem deste método em comparação com uma atualização clássica (F5) é que <strong>apenas o fluxo de vídeo é reiniciado</strong>. O chat permanece ativo, você não perde seu histórico de mensagens e não precisa recarregar todos os scripts pesados ​​da página.",
+          "Esta é uma das melhores extensões Twitch obrigatórias para quem mantém vários streams abertos ao mesmo tempo."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Ative-o nas opções",
+        "answer": "Depois que o StreamPulse estiver instalado:",
+        "list": [
+          "Abra o painel de extensões (o ícone na barra do Chrome).",
+          "Vá para <strong>Configurações</strong> (ícone de engrenagem).",
+          "Marque a caixa <strong>Anti-pausa e recarga automática</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "de": {
+    "slug": "Twitch-Auto-Refresh",
+    "linkLabel": "Twitch automatisch aktualisieren",
+    "title": "Twitch automatisch aktualisieren: Den Player automatisch neu starten",
+    "h1": "So laden Sie den Twitch-Player nach einem Fehler automatisch neu",
+    "description": "Verpassen Sie keinen Moment Ihrer Lieblingsstreams. Erfahren Sie, wie Sie den Twitch Player nach Fehler 2000 oder schwarzem Bildschirm automatisch neu laden.",
+    "intro": "Nichts ist frustrierender, als einen Twitch-Stream im Hintergrund laufen zu lassen und 30 Minuten später festzustellen, dass der Player abgestürzt ist (Fehler 2000, 3000 oder schwarzer Bildschirm). So automatisieren Sie das Neuladen des Videoplayers, damit es nie wieder zu Unterbrechungen kommt.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Warum stoppt der Player?",
+        "answer": "Sie lassen einen Stream im Hintergrund laufen und plötzlich wird der Ton unterbrochen. Wenn Sie zur Registerkarte zurückkehren, sehen Sie einen schwarzen Bildschirm mit der Schaltfläche „Klicken Sie hier, um neu zu starten“ oder der Meldung „Netzwerkfehler (#2000)“. Dieses Verhalten tritt aus mehreren Gründen auf:",
+        "list": [
+          "<strong>Qualitätsänderung:</strong> Twitch versucht, die Auflösung an Ihre Verbindung anzupassen, was manchmal zu einem Fehler im HTML5-Player führt.",
+          "<strong>WiFi-Mikroschnitte:</strong> Der Verlust des Netzwerkpakets friert den Live-Stream ein."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "So funktioniert StreamPulse Auto-Refresh",
+        "answer": "StreamPulse überwacht den Player ständig. Sobald ein Fehlercode auf dem Bildschirm erscheint, wird ein Befehl zum sofortigen Zurücksetzen des Videoplayers eingefügt.",
+        "body": [
+          "Der große Vorteil dieser Methode gegenüber einem klassischen Refresh (F5) besteht darin, dass <strong>nur der Videostream neu gestartet wird</strong>. Der Chat bleibt aktiv, Sie verlieren Ihren Nachrichtenverlauf nicht und Sie müssen nicht alle umfangreichen Skripte auf der Seite neu laden.",
+          "Dies ist ein Muss der besten Twitch-Erweiterungen für diejenigen, die mehrere Streams gleichzeitig geöffnet halten."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Aktivieren Sie es über die Optionen",
+        "answer": "Sobald StreamPulse installiert ist:",
+        "list": [
+          "Öffnen Sie das Erweiterungs-Dashboard (das Symbol in Ihrer Chrome-Leiste).",
+          "Gehen Sie zu <strong>Einstellungen</strong> (Zahnradsymbol).",
+          "Aktivieren Sie das Kontrollkästchen <strong>Anti-Pause & Auto-Reload</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "it": {
+    "slug": "contrazione-aggiornamento automatico",
+    "linkLabel": "Twitch con aggiornamento automatico",
+    "title": "Twitch con aggiornamento automatico: riavvia automaticamente il lettore",
+    "h1": "Come ricaricare automaticamente il lettore Twitch dopo un errore",
+    "description": "Non perdere mai un momento dei tuoi streaming preferiti. Scopri come ricaricare automaticamente Twitch Player dopo l'errore 2000 o una schermata nera.",
+    "intro": "Non c'è niente di più frustrante che lasciare uno streaming di Twitch in background e realizzare 30 minuti dopo che il giocatore si è bloccato (errore 2000, 3000 o schermo nero). Ecco come automatizzare il ricaricamento del lettore video in modo da non riscontrare mai più interruzioni.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Perché il giocatore si ferma?",
+        "answer": "Lasci un flusso in sottofondo e all'improvviso il suono si interrompe. Tornando alla scheda, viene visualizzata una schermata nera con un pulsante \"Fai clic qui per riavviare\" o un messaggio \"Errore di rete (#2000)\". Questo comportamento si verifica per diversi motivi:",
+        "list": [
+          "<strong>Modifica qualità:</strong> Twitch tenta di adattare la risoluzione alla tua connessione, il che a volte causa un bug nel player HTML5.",
+          "<strong>Micro-interruzioni WiFi:</strong> la perdita del pacchetto di rete blocca lo streaming live."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Come funziona l'aggiornamento automatico di StreamPulse",
+        "answer": "StreamPulse monitora costantemente il lettore. Non appena viene visualizzato un codice di errore sullo schermo, viene inviato un comando per ripristinare immediatamente il lettore video.",
+        "body": [
+          "Il grande vantaggio di questo metodo rispetto all'aggiornamento classico (F5) è che <strong>viene riavviato solo il flusso video</strong>. La chat rimane attiva, non perdi la cronologia dei messaggi e non devi ricaricare tutti i pesanti script della pagina.",
+          "Questo è un must delle migliori estensioni Twitch per coloro che mantengono aperti più flussi contemporaneamente."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Attivalo dalle opzioni",
+        "answer": "Una volta installato StreamPulse:",
+        "list": [
+          "Apri la dashboard dell'estensione (l'icona nella barra di Chrome).",
+          "Vai a <strong>Impostazioni</strong> (icona a forma di ingranaggio).",
+          "Seleziona la casella <strong>Anti-pausa e ricarica automatica</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "pl": {
+    "slug": "automatyczne odświeżanie drgań",
+    "linkLabel": "Automatyczne odświeżanie Twitcha",
+    "title": "Automatyczne odświeżanie Twitch: Automatyczne ponowne uruchomienie odtwarzacza",
+    "h1": "Jak automatycznie ponownie załadować odtwarzacz Twitch po wystąpieniu błędu",
+    "description": "Nigdy nie przegapisz ani chwili swoich ulubionych transmisji. Dowiedz się, jak automatycznie ponownie załadować Twitch Playera po wystąpieniu błędu 2000 lub czarnego ekranu.",
+    "intro": "Nie ma nic bardziej frustrującego niż pozostawienie transmisji na Twitchu w tle i 30 minut później uświadomienie sobie, że odtwarzacz się zawiesił (Błąd 2000, 3000 lub czarny ekran). Oto jak zautomatyzować ponowne ładowanie odtwarzacza wideo, aby nigdy więcej nie doświadczyć przerw.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Dlaczego odtwarzacz się zatrzymuje?",
+        "answer": "Zostawiasz strumień w tle i nagle dźwięk się wyłącza. Wracając do karty, widzisz czarny ekran z przyciskiem „Kliknij tutaj, aby uruchomić ponownie” lub komunikatem „Błąd sieci (#2000)”. To zachowanie występuje z kilku powodów:",
+        "list": [
+          "<strong>Zmiana jakości:</strong> Twitch próbuje dostosować rozdzielczość do Twojego połączenia, co czasami powoduje błąd w odtwarzaczu HTML5.",
+          "<strong>Mikro-cięcia Wi-Fi:</strong> utrata pakietu sieciowego powoduje zawieszenie transmisji na żywo."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Jak działa automatyczne odświeżanie StreamPulse",
+        "answer": "StreamPulse stale monitoruje odtwarzacz. Gdy tylko na ekranie pojawi się kod błędu, wysyła polecenie natychmiastowego zresetowania odtwarzacza wideo.",
+        "body": [
+          "Dużą zaletą tej metody w porównaniu z klasycznym odświeżaniem (F5) jest to, że <strong>restartuje tylko strumień wideo</strong>. Czat pozostaje aktywny, nie tracisz historii wiadomości i nie musisz przeładowywać wszystkich ciężkich skryptów na stronie.",
+          "Jest to pozycja obowiązkowa wśród najlepszych rozszerzeń Twitcha dla tych, którzy jednocześnie otwierają wiele strumieni."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Aktywuj go w opcjach",
+        "answer": "Po zainstalowaniu StreamPulse:",
+        "list": [
+          "Otwórz panel rozszerzenia (ikona na pasku Chrome).",
+          "Przejdź do <strong>Ustawień</strong> (ikona koła zębatego).",
+          "Zaznacz pole <strong>Anti-Pause & Auto-Reload</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "tr": {
+    "slug": "seğirme-otomatik-yenileme",
+    "linkLabel": "Twitch'i Otomatik Yenile",
+    "title": "Otomatik Yenileme Twitch: Oynatıcıyı otomatik olarak yeniden başlatın",
+    "h1": "Bir hatadan sonra Twitch oynatıcısı otomatik olarak nasıl yeniden yüklenir",
+    "description": "En sevdiğiniz akışların bir anını asla kaçırmayın. Hata 2000 veya siyah ekran sonrasında Twitch Player'ı otomatik olarak nasıl yeniden yükleyeceğinizi öğrenin.",
+    "intro": "Hiçbir şey bir Twitch akışını arka planda bırakıp 30 dakika sonra oynatıcının çöktüğünü fark etmekten (Hata 2000, 3000 veya siyah ekran) daha sinir bozucu olamaz. Bir daha asla kesinti yaşamamak için video oynatıcının yeniden yüklenmesini nasıl otomatikleştireceğiniz aşağıda açıklanmıştır.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Oyuncu neden duruyor?",
+        "answer": "Arka planda bir akış bırakıyorsunuz ve bir anda ses kesiliyor. Sekmeye döndüğünüzde, \"Yeniden başlatmak için burayı tıklayın\" düğmesinin veya \"Ağ Hatası (#2000)\" mesajının bulunduğu siyah bir ekran görürsünüz. Bu davranış birkaç nedenden dolayı oluşur:",
+        "list": [
+          "<strong>Kalite değişikliği:</strong> Twitch, çözünürlüğü bağlantınıza uyarlamaya çalışır ve bu bazen HTML5 oynatıcısında bir hataya neden olur.",
+          "<strong>WiFi mikro kesintileri:</strong> Ağ paketinin kaybı canlı akışı dondurur."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "StreamPulse Otomatik Yenileme nasıl çalışır?",
+        "answer": "StreamPulse, oynatıcıyı sürekli olarak izler. Ekranda bir hata kodu göründüğünde, video oynatıcıyı anında sıfırlamak için bir komut enjekte eder.",
+        "body": [
+          "Bu yöntemin klasik yenilemeye (F5) kıyasla en büyük avantajı, <strong>yalnızca video akışının yeniden başlatılmasıdır</strong>. Sohbet etkin kalır, mesaj geçmişinizi kaybetmezsiniz ve sayfadaki tüm ağır komut dosyalarını yeniden yüklemeniz gerekmez.",
+          "Bu, aynı anda birden fazla akışı açık tutanlar için en iyi Twitch uzantılarının olmazsa olmazıdır."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Seçeneklerden etkinleştirin",
+        "answer": "StreamPulse kurulduktan sonra:",
+        "list": [
+          "Uzantı kontrol panelini açın (Chrome çubuğunuzdaki simge).",
+          "<strong>Ayarlar</strong>'a (dişli simgesi) gidin.",
+          "<strong>Duraklatma Önleme ve Otomatik Yeniden Yükleme</strong> kutusunu işaretleyin."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ru": {
+    "slug": "Twitch-автоматическое обновление",
+    "linkLabel": "Автоматическое обновление Twitch",
+    "title": "Автоматическое обновление Twitch: автоматический перезапуск плеера.",
+    "h1": "Как автоматически перезагрузить плеер Twitch после ошибки",
+    "description": "Никогда не пропустите ни минуты любимых стримов. Узнайте, как автоматически перезагрузить Twitch Player после ошибки 2000 или черного экрана.",
+    "intro": "Нет ничего более расстраивающего, чем оставить трансляцию Twitch в фоновом режиме и через 30 минут понять, что плеер вышел из строя (ошибка 2000, 3000 или черный экран). Вот как автоматизировать перезагрузку видеоплеера, чтобы больше никогда не возникало перебоев.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Почему игрок останавливается?",
+        "answer": "Вы оставляете поток на заднем плане, и внезапно звук пропадает. Вернувшись на вкладку, вы увидите черный экран с кнопкой «Нажмите здесь, чтобы перезагрузить» или сообщением «Ошибка сети (#2000)». Такое поведение происходит по нескольким причинам:",
+        "list": [
+          "<strong>Изменение качества</strong>. Twitch пытается адаптировать разрешение к вашему соединению, что иногда приводит к ошибке в проигрывателе HTML5.",
+          "<strong>Микро-отключения Wi-Fi:</strong> потеря сетевого пакета приводит к остановке прямой трансляции."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Как работает автоматическое обновление StreamPulse",
+        "answer": "StreamPulse постоянно контролирует плеер. Как только на экране появляется код ошибки, он вводит команду на мгновенную перезагрузку видеоплеера.",
+        "body": [
+          "Большим преимуществом этого метода по сравнению с классическим обновлением (F5) является то, что <strong>перезапускается только видеопоток</strong>. Чат остается активным, вы не теряете историю сообщений и вам не нужно перезагружать все тяжелые скрипты на странице.",
+          "Это обязательное из лучших расширений Twitch для тех, у кого одновременно открыто несколько потоков."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Активируйте его из опций",
+        "answer": "После установки StreamPulse:",
+        "list": [
+          "Откройте панель расширения (значок на панели Chrome).",
+          "Откройте <strong>Настройки</strong> (значок шестеренки).",
+          "Установите флажок <strong>Антипауза и автоматическая перезагрузка</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ja": {
+    "slug": "ツイッチ自動リフレッシュ",
+    "linkLabel": "自動更新ツイッチ",
+    "title": "Auto-Refresh Twitch: プレーヤーを自動的に再起動します。",
+    "h1": "エラー後にTwitchプレーヤーを自動的にリロードする方法",
+    "description": "お気に入りのストリームの瞬間を見逃すことはありません。エラー 2000 または黒い画面の後に Twitch Player を自動的にリロードする方法を学びます。",
+    "intro": "Twitch ストリームをバックグラウンドで放置したままにして、30 分後にプレーヤーがクラッシュした (エラー 2000、3000、または黒い画面) ことに気づくことほどイライラすることはありません。ビデオプレーヤーのリロードを自動化して、中断が二度と起こらないようにする方法を次に示します。",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "なぜプレイヤーが止まるのですか？",
+        "answer": "バックグラウンドでストリームを放置しておくと、突然音が途切れてしまいます。タブに戻ると、黒い画面に「再起動するにはここをクリックしてください」ボタンまたは「ネットワーク エラー (#2000)」というメッセージが表示されます。この動作はいくつかの理由で発生します。",
+        "list": [
+          "<strong>品質の変更:</strong> Twitch は解像度を接続に合わせようとするため、HTML5 プレーヤーでバグが発生することがあります。",
+          "<strong>WiFi マイクロカット:</strong> ネットワーク パケットが失われると、ライブ ストリームがフリーズします。"
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "StreamPulse 自動更新の仕組み",
+        "answer": "StreamPulse はプレーヤーを常に監視します。エラー コードが画面に表示されるとすぐに、ビデオ プレーヤーを即座にリセットするコマンドが挿入されます。",
+        "body": [
+          "従来の更新 (F5) と比較したこの方法の大きな利点は、<strong>ビデオ ストリームのみが再開される</strong>ことです。チャットはアクティブなままなので、メッセージ履歴が失われることはなく、ページ上の重いスクリプトをすべてリロードする必要もありません。",
+          "これは、複数のストリームを同時に開いておく人にとって、最高の Twitch 拡張機能の必須アイテムです。"
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "オプションから有効化します",
+        "answer": "StreamPulse がインストールされたら、次のようにします。",
+        "list": [
+          "拡張機能ダッシュボード (Chrome バーのアイコン) を開きます。",
+          "[<strong>設定</strong>] (歯車アイコン) に移動します。",
+          "<strong>一時停止防止と自動リロード</strong>ボックスをオンにします。"
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "ko": {
+    "slug": "트위치 자동 새로고침",
+    "linkLabel": "자동 새로고침 트위치",
+    "title": "자동 새로고침 Twitch: 플레이어를 자동으로 다시 시작합니다.",
+    "h1": "오류 발생 후 Twitch 플레이어를 자동으로 다시 로드하는 방법",
+    "description": "좋아하는 스트림의 순간을 놓치지 마세요. 오류 2000 또는 검은색 화면이 발생한 후 Twitch Player를 자동으로 다시 로드하는 방법을 알아보세요.",
+    "intro": "백그라운드에 Twitch 스트림을 남겨두고 30분 후에 플레이어가 충돌했다는 사실을 깨닫는 것보다 더 실망스러운 것은 없습니다(오류 2000, 3000 또는 검은색 화면). 다시는 중단이 발생하지 않도록 비디오 플레이어 다시 로드를 자동화하는 방법은 다음과 같습니다.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "플레이어가 왜 멈추나요?",
+        "answer": "백그라운드에 스트림을 남겨두면 갑자기 소리가 끊깁니다. 탭으로 돌아가면 \"다시 시작하려면 여기를 클릭하세요\" 버튼 또는 \"네트워크 오류(#2000)\" 메시지와 함께 검은색 화면이 표시됩니다. 이 동작은 여러 가지 이유로 발생합니다.",
+        "list": [
+          "<strong>품질 변경:</strong> Twitch는 연결에 맞게 해상도를 조정하려고 시도하며 이로 인해 때때로 HTML5 플레이어에 버그가 발생합니다.",
+          "<strong>WiFi 미세 중단:</strong> 네트워크 패킷이 손실되면 실시간 스트림이 정지됩니다."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "StreamPulse 자동 새로 고침 작동 방식",
+        "answer": "StreamPulse는 플레이어를 지속적으로 모니터링합니다. 화면에 오류 코드가 나타나면 즉시 비디오 플레이어를 재설정하는 명령을 삽입합니다.",
+        "body": [
+          "기존 새로고침(F5)에 비해 이 방법의 가장 큰 장점은 <strong>동영상 스트림만 다시 시작</strong>된다는 것입니다. 채팅은 활성 상태로 유지되며 메시지 기록이 손실되지 않으며 페이지의 무거운 스크립트를 모두 다시 로드할 필요가 없습니다.",
+          "이는 동시에 여러 스트림을 열어두는 사람들을 위한 최고의 Twitch 확장 프로그램 중 필수품입니다."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "옵션에서 활성화하세요",
+        "answer": "StreamPulse가 설치되면:",
+        "list": [
+          "확장 대시보드(Chrome 바의 아이콘)를 엽니다.",
+          "<strong>설정</strong>(톱니바퀴 아이콘)으로 이동합니다.",
+          "<strong>일시중지 방지 및 자동 새로고침</strong> 확인란을 선택합니다."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "id": {
+    "slug": "kedutan-penyegaran otomatis",
+    "linkLabel": "Kedutan Penyegaran Otomatis",
+    "title": "Kedutan Penyegaran Otomatis: Meluncurkan ulang pemutar secara otomatis",
+    "h1": "Cara memuat ulang pemutar Twitch secara otomatis setelah terjadi kesalahan",
+    "description": "Jangan pernah melewatkan momen streaming favorit Anda. Pelajari cara memuat ulang Twitch Player secara otomatis setelah kesalahan 2000 atau layar hitam.",
+    "intro": "Tidak ada yang lebih membuat frustrasi daripada meninggalkan aliran Twitch di latar belakang dan menyadari 30 menit kemudian bahwa pemutar tersebut mogok (Kesalahan 2000, 3000, atau layar hitam). Berikut cara mengotomatiskan pemuatan ulang pemutar video agar Anda tidak mengalami gangguan lagi.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Mengapa pemain berhenti?",
+        "answer": "Anda meninggalkan aliran di latar belakang dan tiba-tiba suaranya terputus. Kembali ke tab, Anda melihat layar hitam dengan tombol \"Klik di sini untuk memulai ulang\" atau pesan \"Kesalahan Jaringan (#2000)\". Perilaku ini terjadi karena beberapa alasan:",
+        "list": [
+          "<strong>Perubahan kualitas:</strong> Twitch mencoba menyesuaikan resolusi dengan koneksi Anda, yang terkadang menyebabkan bug pada pemutar HTML5.",
+          "<strong>Pemotongan mikro WiFi:</strong> Hilangnya paket jaringan membekukan streaming langsung."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Cara kerja Penyegaran Otomatis StreamPulse",
+        "answer": "StreamPulse memonitor pemain secara konstan. Segera setelah kode kesalahan muncul di layar, ia memasukkan perintah untuk mengatur ulang pemutar video secara instan.",
+        "body": [
+          "Keuntungan besar metode ini dibandingkan penyegaran klasik (F5) adalah <strong>hanya streaming video yang dimulai ulang</strong>. Obrolan tetap aktif, Anda tidak kehilangan riwayat pesan dan tidak perlu memuat ulang semua skrip berat di halaman.",
+          "Ini adalah ekstensi Twitch terbaik yang harus dimiliki bagi mereka yang membuka banyak aliran secara bersamaan."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Aktifkan dari opsi",
+        "answer": "Setelah StreamPulse diinstal:",
+        "list": [
+          "Buka dasbor ekstensi (ikon di bilah Chrome Anda).",
+          "Buka <strong>Setelan</strong> (ikon roda gigi).",
+          "Centang kotak <strong>Anti-Jeda & Muat Ulang Otomatis</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "nl": {
+    "slug": "Twitch-automatisch vernieuwen",
+    "linkLabel": "Twitch automatisch vernieuwen",
+    "title": "Auto-Refresh Twitch: Start de speler automatisch opnieuw",
+    "h1": "Hoe Twitch-speler automatisch opnieuw te laden na een fout",
+    "description": "Mis nooit meer een moment van je favoriete streams. Leer hoe je Twitch Player automatisch herlaadt na fout 2000 of een zwart scherm.",
+    "intro": "Niets is frustrerender dan een Twitch-stream op de achtergrond achter te laten en 30 minuten later te beseffen dat de speler is gecrasht (Error 2000, 3000 of zwart scherm). Hier leest u hoe u het herladen van de videospeler kunt automatiseren, zodat u nooit meer onderbrekingen ervaart.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Waarom stopt de speler?",
+        "answer": "Je laat een beekje op de achtergrond achter en plotseling valt het geluid weg. Als u terugkeert naar het tabblad, ziet u een zwart scherm met een knop 'Klik hier om opnieuw op te starten' of een bericht 'Netwerkfout (#2000)'. Dit gedrag treedt om verschillende redenen op:",
+        "list": [
+          "<strong>Kwaliteitsverandering:</strong> Twitch probeert de resolutie aan te passen aan je verbinding, wat soms een bug in de HTML5-speler veroorzaakt.",
+          "<strong>WiFi-micro-onderbrekingen:</strong> Verlies van het netwerkpakket bevriest de livestream."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Hoe StreamPulse automatisch vernieuwen werkt",
+        "answer": "StreamPulse houdt de speler voortdurend in de gaten. Zodra er een foutcode op het scherm verschijnt, injecteert het een commando om de videospeler onmiddellijk te resetten.",
+        "body": [
+          "Het grote voordeel van deze methode ten opzichte van een klassieke vernieuwing (F5) is dat <strong>alleen de videostream opnieuw wordt gestart</strong>. De chat blijft actief, je raakt je berichtengeschiedenis niet kwijt en je hoeft niet alle zware scripts op de pagina opnieuw te laden.",
+          "Dit is een must-have van de beste Twitch-extensies voor degenen die meerdere streams tegelijkertijd openhouden."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Activeer het via de opties",
+        "answer": "Zodra StreamPulse is geïnstalleerd:",
+        "list": [
+          "Open het extensiedashboard (het pictogram in uw Chrome-balk).",
+          "Ga naar <strong>Instellingen</strong> (tandwielpictogram).",
+          "Vink het vakje <strong>Antipauzeren en automatisch herladen</strong> aan."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "hi": {
+    "slug": "ट्विच-ऑटो-रीफ्रेश",
+    "linkLabel": "ऑटो-रिफ्रेश ट्विच",
+    "title": "ऑटो-रिफ्रेश ट्विच: प्लेयर को स्वचालित रूप से पुनः लॉन्च करें",
+    "h1": "किसी त्रुटि के बाद ट्विच प्लेयर को स्वचालित रूप से पुनः लोड कैसे करें",
+    "description": "अपनी पसंदीदा स्ट्रीम का एक भी क्षण न चूकें। त्रुटि 2000 या काली स्क्रीन के बाद ट्विच प्लेयर को स्वचालित रूप से पुनः लोड करने का तरीका जानें।",
+    "intro": "बैकग्राउंड में ट्विच स्ट्रीम छोड़ने और 30 मिनट बाद यह एहसास होने से ज्यादा निराशा की कोई बात नहीं है कि प्लेयर क्रैश हो गया है (त्रुटि 2000, 3000 या काली स्क्रीन)। यहां वीडियो प्लेयर को पुनः लोड करने को स्वचालित करने का तरीका बताया गया है ताकि आपको फिर कभी रुकावट का अनुभव न हो।",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "खिलाड़ी क्यों रुकता है?",
+        "answer": "आप पृष्ठभूमि में एक धारा छोड़ते हैं और अचानक ध्वनि बंद हो जाती है। टैब पर लौटने पर, आपको \"पुनः आरंभ करने के लिए यहां क्लिक करें\" बटन या \"नेटवर्क त्रुटि (#2000)\" संदेश के साथ एक काली स्क्रीन दिखाई देती है। यह व्यवहार कई कारणों से होता है:",
+        "list": [
+          "<strong>गुणवत्ता परिवर्तन:</strong> ट्विच आपके कनेक्शन के लिए रिज़ॉल्यूशन को अनुकूलित करने का प्रयास करता है, जो कभी-कभी HTML5 प्लेयर में बग का कारण बनता है।",
+          "<strong>वाईफ़ाई माइक्रो-कट:</strong> नेटवर्क पैकेट के खो जाने से लाइव स्ट्रीम रुक जाती है।"
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "स्ट्रीमपल्स ऑटो-रिफ्रेश कैसे काम करता है",
+        "answer": "StreamPulse लगातार प्लेयर पर नज़र रखता है। जैसे ही स्क्रीन पर कोई त्रुटि कोड दिखाई देता है, यह तुरंत वीडियो प्लेयर को रीसेट करने के लिए एक कमांड इंजेक्ट करता है।",
+        "body": [
+          "क्लासिक रिफ्रेश (F5) की तुलना में इस पद्धति का बड़ा फायदा यह है कि <strong>केवल वीडियो स्ट्रीम फिर से शुरू होती है</strong>। चैट सक्रिय रहती है, आप अपना संदेश इतिहास नहीं खोते हैं और आपको पृष्ठ पर सभी भारी स्क्रिप्ट को फिर से लोड नहीं करना पड़ता है।",
+          "यह उन लोगों के लिए सर्वोत्तम ट्विच एक्सटेंशन में से एक होना चाहिए जो एक ही समय में कई स्ट्रीम खुली रखते हैं।"
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "इसे विकल्पों में से सक्रिय करें",
+        "answer": "एक बार StreamPulse स्थापित हो जाने पर:",
+        "list": [
+          "एक्सटेंशन डैशबोर्ड (आपके Chrome बार में आइकन) खोलें।",
+          "<strong>सेटिंग्स</strong> (गियर आइकन) पर जाएं।",
+          "<strong>एंटी-पॉज़ और ऑटो-रीलोड</strong> बॉक्स को चेक करें।"
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "sv": {
+    "slug": "twitch-auto-refresh",
+    "linkLabel": "Auto-Refresh Twitch",
+    "title": "Auto-Refresh Twitch: Starta om spelaren automatiskt",
+    "h1": "Hur man automatiskt laddar om Twitch-spelaren efter ett fel",
+    "description": "Missa aldrig ett ögonblick av dina favoritströmmar. Lär dig hur du laddar om Twitch Player automatiskt efter fel 2000 eller svart skärm.",
+    "intro": "Ingenting är mer frustrerande än att lämna en Twitch-ström i bakgrunden och inse 30 minuter senare att spelaren har kraschat (Fel 2000, 3000 eller svart skärm). Så här automatiserar du omladdning av videospelare så att du aldrig upplever avbrott igen.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Varför slutar spelaren?",
+        "answer": "Du lämnar en bäck i bakgrunden och plötsligt stängs ljudet av. När du återgår till fliken ser du en svart skärm med en \"Klicka här för att starta om\"-knappen eller ett \"Nätverksfel (#2000)\"-meddelande. Detta beteende uppstår av flera anledningar:",
+        "list": [
+          "<strong>Kvalitetsförändring:</strong> Twitch försöker anpassa upplösningen till din anslutning, vilket ibland orsakar ett fel i HTML5-spelaren.",
+          "<strong>WiFi-mikroklipp:</strong> Förlust av nätverkspaketet fryser liveströmmen."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Hur StreamPulse Auto-Refresh fungerar",
+        "answer": "StreamPulse övervakar spelaren konstant. Så snart en felkod visas på skärmen injicerar den ett kommando för att återställa videospelaren direkt.",
+        "body": [
+          "Den stora fördelen med denna metod jämfört med en klassisk uppdatering (F5) är att <strong>endast videoströmmen startas om</strong>. Chatten förblir aktiv, du förlorar inte din meddelandehistorik och du behöver inte ladda om alla tunga skript på sidan.",
+          "Detta är ett måste av de bästa Twitch-tilläggen för dem som håller flera strömmar öppna samtidigt."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Aktivera den från alternativen",
+        "answer": "När StreamPulse är installerat:",
+        "list": [
+          "Öppna tilläggets instrumentpanel (ikonen i Chrome-fältet).",
+          "Gå till <strong>Inställningar</strong> (kugghjulsikon).",
+          "Markera rutan <strong>Anti-paus och automatisk återladdning</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  },
+  "cs": {
+    "slug": "škubnutí-automatické obnovení",
+    "linkLabel": "Automatické obnovení škubnutí",
+    "title": "Auto-Refresh Twitch: Automaticky znovu spusťte přehrávač",
+    "h1": "Jak automaticky znovu načíst přehrávač Twitch po chybě",
+    "description": "Nikdy nezmeškejte okamžik svých oblíbených streamů. Přečtěte si, jak automaticky znovu načíst Twitch Player po chybě 2000 nebo černé obrazovce.",
+    "intro": "Nic není více frustrující než nechat stream Twitch na pozadí a po 30 minutách si uvědomit, že přehrávač spadl (chyba 2000, 3000 nebo černá obrazovka). Zde je návod, jak automatizovat opětovné načítání přehrávače videa, abyste již nikdy nezaznamenali přerušení.",
+    "sections": [
+      {
+        "id": "probleme",
+        "h2": "Proč se hráč zastaví?",
+        "answer": "Necháte na pozadí stream a najednou se zvuk vypne. Po návratu na kartu uvidíte černou obrazovku s tlačítkem „Kliknutím sem restartujete“ nebo zprávou „Chyba sítě (#2000)“. K tomuto chování dochází z několika důvodů:",
+        "list": [
+          "<strong>Změna kvality:</strong> Twitch se snaží přizpůsobit rozlišení vašemu připojení, což někdy způsobuje chybu v HTML5 přehrávači.",
+          "<strong>Micro-cuts WiFi:</strong> Ztráta síťového paketu zmrazí živé vysílání."
+        ]
+      },
+      {
+        "id": "fonctionnement",
+        "h2": "Jak funguje automatické obnovení StreamPulse",
+        "answer": "StreamPulse neustále monitoruje přehrávač. Jakmile se na obrazovce objeví chybový kód, vloží příkaz k okamžitému resetování přehrávače videa.",
+        "body": [
+          "Velkou výhodou této metody oproti klasické obnově (F5) je, že se <strong>restartuje pouze videostream</strong>. Chat zůstává aktivní, neztratíte historii zpráv a nemusíte znovu načítat všechny těžké skripty na stránce.",
+          "Toto je nutnost z nejlepších rozšíření Twitch pro ty, kteří mají otevřených více streamů současně."
+        ]
+      },
+      {
+        "id": "activer",
+        "h2": "Aktivujte jej z možností",
+        "answer": "Jakmile je StreamPulse nainstalován:",
+        "list": [
+          "Otevřete hlavní panel rozšíření (ikona na liště Chrome).",
+          "Přejděte do <strong>Nastavení</strong> (ikona ozubeného kola).",
+          "Zaškrtněte políčko <strong>Anti-Pause & Auto-Reload</strong>."
+        ]
+      }
+    ],
+    "faq": []
+  }
+}
