@@ -15,7 +15,11 @@ const ORIGIN = process.env.SITE_ORIGIN || 'https://www.streampulse.fr';
 const CWS =
   'https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh';
 
-const contentKeys = ['error2000', 'error3000', 'drops', 'points', 'extensionKick'];
+const contentKeys = [
+  'error2000', 'error3000', 'drops', 'points', 
+  'extensionKick', 'extensionTwitch', 'chat', 
+  'notifications', 'dashboard', 'alternatives', 'kick'
+];
 const contentSlugs = {};
 contentKeys.forEach(k => {
   contentSlugs[k] = {};
@@ -199,11 +203,8 @@ function buildHeader(lang) {
   const t = getUI(lang);
   const p = prefix(lang);
   
-  const s2000 = contentSlugs['error2000']?.[lang]?.slug || 'erreur-2000-twitch-solution';
-  const s3000 = contentSlugs['error3000']?.[lang]?.slug || 'erreur-3000-twitch-solution';
-  const sDrops = contentSlugs['drops']?.[lang]?.slug || 'twitch-drops-automatique';
-  const sPoints = contentSlugs['points']?.[lang]?.slug || 'points-de-chaine-automatiques-twitch';
-  const sKick = contentSlugs['extensionKick']?.[lang]?.slug || 'extension-kick';
+  const getS = (k, d) => contentSlugs[k]?.[lang]?.slug || d;
+  const getT = (k, d) => contentSlugs[k]?.[lang]?.title || d;
 
   return `    <header class="site-header">
       <div class="container header-content">
@@ -219,11 +220,17 @@ function buildHeader(lang) {
           <div class="nav-dropdown">
             <a href="#" style="cursor: default;" onclick="event.preventDefault()">${t.guides || 'Guides'} ▾</a>
             <div class="nav-dropdown-content">
-              <a href="${p}/${s2000}">${contentSlugs['error2000']?.[lang]?.title || 'Erreur 2000'}</a>
-              <a href="${p}/${s3000}">${contentSlugs['error3000']?.[lang]?.title || 'Erreur 3000'}</a>
-              <a href="${p}/${sDrops}">${contentSlugs['drops']?.[lang]?.title || 'Twitch Drops'}</a>
-              <a href="${p}/${sPoints}">${contentSlugs['points']?.[lang]?.title || 'Points de chaîne'}</a>
-              <a href="${p}/${sKick}">${contentSlugs['extensionKick']?.[lang]?.title || 'Kick Extension'}</a>
+              <a href="${p}/${getS('error2000', 'erreur-2000-twitch-solution')}">${getT('error2000', 'Erreur 2000')}</a>
+              <a href="${p}/${getS('error3000', 'erreur-3000-twitch-solution')}">${getT('error3000', 'Erreur 3000')}</a>
+              <a href="${p}/${getS('drops', 'twitch-drops-automatique')}">${getT('drops', 'Twitch Drops')}</a>
+              <a href="${p}/${getS('points', 'points-de-chaine-automatiques-twitch')}">${getT('points', 'Points de chaîne')}</a>
+              <a href="${p}/${getS('extensionKick', 'extension-kick')}">${getT('extensionKick', 'Kick Extension')}</a>
+              <a href="${p}/${getS('extensionTwitch', 'extension-twitch')}">${getT('extensionTwitch', 'Twitch Extension')}</a>
+              <a href="${p}/${getS('chat', 'filtrer-chat-twitch')}">${getT('chat', 'Filtrer le chat')}</a>
+              <a href="${p}/${getS('notifications', 'notifications-live-twitch-kick')}">${getT('notifications', 'Notifications')}</a>
+              <a href="${p}/${getS('dashboard', 'dashboard-twitch-kick')}">${getT('dashboard', 'Dashboard')}</a>
+              <a href="${p}/${getS('alternatives', 'meilleures-extensions-twitch')}">${getT('alternatives', 'Meilleures extensions')}</a>
+              <a href="${p}/${getS('kick', 'extension-kick')}">${getT('kick', 'Kick')}</a>
             </div>
           </div>
           <a href="/support">${t.support}</a>
@@ -237,21 +244,26 @@ function buildFooter(lang) {
   const t = getUI(lang);
   const p = prefix(lang);
   
-  const s2000 = contentSlugs['error2000']?.[lang]?.slug || 'erreur-2000-twitch-solution';
-  const s3000 = contentSlugs['error3000']?.[lang]?.slug || 'erreur-3000-twitch-solution';
-  const sDrops = contentSlugs['drops']?.[lang]?.slug || 'twitch-drops-automatique';
-  const sPoints = contentSlugs['points']?.[lang]?.slug || 'points-de-chaine-automatiques-twitch';
-  const sKick = contentSlugs['extensionKick']?.[lang]?.slug || 'extension-kick';
+  const getS = (k, d) => contentSlugs[k]?.[lang]?.slug || d;
+  const getT = (k, d) => contentSlugs[k]?.[lang]?.title || d;
 
   return `    <footer class="site-footer">
       <div class="container footer-content">
         <p>&copy; <span id="current-year"></span> StreamPulse. ${t.rights}</p>
         <nav class="footer-links">
-          <a href="${p}/${s2000}">${contentSlugs['error2000']?.[lang]?.title || 'Erreur 2000'}</a>
-          <a href="${p}/${s3000}">${contentSlugs['error3000']?.[lang]?.title || 'Erreur 3000'}</a>
-          <a href="${p}/${sDrops}">${contentSlugs['drops']?.[lang]?.title || 'Twitch Drops'}</a>
-          <a href="${p}/${sPoints}">${contentSlugs['points']?.[lang]?.title || 'Points de chaîne'}</a>
-          <a href="${p}/${sKick}">${contentSlugs['extensionKick']?.[lang]?.title || 'Kick Extension'}</a>
+          <a href="${p}/${getS('error2000', 'erreur-2000-twitch-solution')}">${getT('error2000', 'Erreur 2000')}</a>
+          <a href="${p}/${getS('error3000', 'erreur-3000-twitch-solution')}">${getT('error3000', 'Erreur 3000')}</a>
+          <a href="${p}/${getS('drops', 'twitch-drops-automatique')}">${getT('drops', 'Twitch Drops')}</a>
+          <a href="${p}/${getS('points', 'points-de-chaine-automatiques-twitch')}">${getT('points', 'Points de chaîne')}</a>
+          <a href="${p}/${getS('extensionKick', 'extension-kick')}">${getT('extensionKick', 'Kick Extension')}</a>
+          <a href="${p}/${getS('extensionTwitch', 'extension-twitch')}">${getT('extensionTwitch', 'Twitch Extension')}</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="${p}/${getS('chat', 'filtrer-chat-twitch')}">${getT('chat', 'Filtrer le chat')}</a>
+          <a href="${p}/${getS('notifications', 'notifications-live-twitch-kick')}">${getT('notifications', 'Notifications')}</a>
+          <a href="${p}/${getS('dashboard', 'dashboard-twitch-kick')}">${getT('dashboard', 'Dashboard')}</a>
+          <a href="${p}/${getS('alternatives', 'meilleures-extensions-twitch')}">${getT('alternatives', 'Meilleures extensions')}</a>
+          <a href="${p}/${getS('kick', 'extension-kick')}">${getT('kick', 'Kick')}</a>
         </nav>
         <nav class="footer-links">
           <a href="/privacy">${t.privacy}</a>

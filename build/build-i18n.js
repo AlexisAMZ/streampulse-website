@@ -570,7 +570,11 @@ function absolutizeAssets(html) {
   return html;
 }
 
-const contentKeys = ['error2000', 'error3000', 'drops', 'points', 'extensionKick'];
+const contentKeys = [
+  'error2000', 'error3000', 'drops', 'points', 
+  'extensionKick', 'extensionTwitch', 'chat', 
+  'notifications', 'dashboard', 'alternatives', 'kick'
+];
 const contentSlugs = {};
 contentKeys.forEach(k => {
   contentSlugs[k] = {};
