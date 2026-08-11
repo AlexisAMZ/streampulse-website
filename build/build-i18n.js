@@ -49,26 +49,26 @@ const LOCALES = {
  *  sinon les pages /de/ se cannibalisent avec un title français. */
 const META = {
   fr: {
-    title: 'StreamPulse : Extension Twitch & Kick',
+    title: 'StreamPulse : Auto Claim Drops & Points de Chaîne Twitch',
     description:
-      "Extension gratuite pour Twitch et Kick : notifications de live, points de chaîne et Drops automatiques (Chrome, Edge, Brave, Opera).",
+      "Extension gratuite pour Twitch et Kick : auto claim Drops, récupération des points de chaîne et notifications live. Alternative à BetterTTV.",
     ogDescription:
-      "Extension gratuite Twitch & Kick : notifications de live, points de chaîne et Drops automatiques.",
+      "Extension gratuite Twitch & Kick : auto claim Drops, points de chaîne et notifications.",
     ogLocale: 'fr_FR',
     keywords:
-      'StreamPulse, extension Twitch, extension Kick, notifications Twitch, points de chaîne automatiques, auto-claim Twitch, Twitch Drops automatique, erreur 2000 Twitch',
+      'StreamPulse, extension Twitch, extension Kick, auto claim drops twitch, twitch drop auto claim, points de chaîne automatiques, alternative betterttv, fun twitch extensions',
     appDescription:
-      'Extension Chrome gratuite pour Twitch et Kick. Notifications en temps réel, récupération automatique des points de chaîne, prédictions et tableau de bord unifié.',
+      'Extension Chrome gratuite pour Twitch et Kick. Notifications en temps réel, auto claim Twitch Drops, récupération automatique des points de chaîne et alternative BetterTTV.',
   },
   en: {
-    title: 'StreamPulse: Chrome extension for Twitch and Kick',
+    title: 'StreamPulse: Auto Claim Twitch Drops & Channel Points',
     description:
-      'Free Chrome extension for Twitch and Kick: instant live notifications, automatic channel points and Drops claiming. Works on Chrome, Edge, Brave and Opera.',
+      'Free Twitch & Kick extension: auto collect channel points, auto claim drops, live notifications. A BetterTTV alternative. Works on Chrome, Edge, Brave and Opera.',
     ogLocale: 'en_US',
     keywords:
-      'Twitch extension, Kick extension, auto claim channel points, Twitch live notifications, Twitch Drops auto claim, Twitch error 2000 fix, StreamPulse',
+      'Twitch extension, Kick extension, how to auto collect channel points twitch, twitch auto claim drops, twitch drops auto claim, betterttv alternative, fun twitch extensions, StreamPulse',
     appDescription:
-      'Free Chrome extension for Twitch and Kick. Real-time live notifications, automatic channel points collection, predictions overlay and a unified dashboard.',
+      'Free Chrome extension for Twitch and Kick. Real-time live notifications, auto collect channel points, auto claim drops, and a BetterTTV alternative.',
   },
   es: {
     title: 'StreamPulse: extensión de Chrome para Twitch y Kick',
