@@ -49,7 +49,7 @@ const LOCALES = {
  *  sinon les pages /de/ se cannibalisent avec un title français. */
 const META = {
   fr: {
-    title: 'StreamPulse : extension Chrome pour Twitch et Kick',
+    title: 'StreamPulse : Extension Twitch & Kick',
     description:
       "Extension gratuite pour Twitch et Kick : notifications de live, points de chaîne et Drops automatiques (Chrome, Edge, Brave, Opera).",
     ogDescription:
