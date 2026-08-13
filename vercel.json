@@ -35,7 +35,7 @@
       "permanent": true
     },
     {
-      "source": "/([^/]+).html",
+      "source": "/(%5B%5E/%5D+).html",
       "destination": "/$1",
       "permanent": true
     },
@@ -765,7 +765,7 @@
       "permanent": true
     },
     {
-      "source": "/hi/विकल्प/7टीवी",
+      "source": "/hi/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AA/7%E0%A4%9F%E0%A5%80%E0%A4%B5%E0%A5%80",
       "destination": "/hi/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AA/7tv",
       "permanent": true
     },
@@ -775,17 +775,17 @@
       "permanent": true
     },
     {
-      "source": "/ru/альтернативы/лучшее тв",
+      "source": "/ru/%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D1%8B/%D0%BB%D1%83%D1%87%D1%88%D0%B5%D0%B5%20%D1%82%D0%B2",
       "destination": "/ru/%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D1%8B/betterttv",
       "permanent": true
     },
     {
-      "source": "/ko/대안/더 나은 TV",
+      "source": "/ko/%EB%8C%80%EC%95%88/%EB%8D%94%20%EB%82%98%EC%9D%80%20TV",
       "destination": "/ko/%EB%8C%80%EC%95%88/betterttv",
       "permanent": true
     },
     {
-      "source": "/id/alternatif/lebih baikttv",
+      "source": "/id/alternatif/lebih%20baikttv",
       "destination": "/id/alternatif/betterttv",
       "permanent": true
     },
@@ -795,7 +795,7 @@
       "permanent": true
     },
     {
-      "source": "/hi/विकल्प/बेहतरttv",
+      "source": "/hi/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AA/%E0%A4%AC%E0%A5%87%E0%A4%B9%E0%A4%A4%E0%A4%B0ttv",
       "destination": "/hi/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AA/betterttv",
       "permanent": true
     },
@@ -810,167 +810,167 @@
       "permanent": true
     },
     {
-      "source": "/ja/代替案/ベターテレビ",
+      "source": "/ja/%E4%BB%A3%E6%9B%BF%E6%A1%88/%E3%83%99%E3%82%BF%E3%83%BC%E3%83%86%E3%83%AC%E3%83%93",
       "destination": "/ja/%E3%82%AA%E3%83%AB%E3%82%BF%E3%83%8A%E3%83%86%E3%82%A3%E3%83%96/betterttv",
       "permanent": true
     },
     {
-      "source": "/ja/オルタナティブ/フランカーフェイスズ",
+      "source": "/ja/%E3%82%AA%E3%83%AB%E3%82%BF%E3%83%8A%E3%83%86%E3%82%A3%E3%83%96/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%AB%E3%83%BC%E3%83%95%E3%82%A7%E3%82%A4%E3%82%B9%E3%82%BA",
       "destination": "/ja/%E3%82%AA%E3%83%AB%E3%82%BF%E3%83%8A%E3%83%86%E3%82%A3%E3%83%96/frankerfacez",
       "permanent": true
     },
     {
-      "source": "/hi/विकल्प/फ्रैंकरफ़ेज़",
+      "source": "/hi/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AA/%E0%A4%AB%E0%A5%8D%E0%A4%B0%E0%A5%88%E0%A4%82%E0%A4%95%E0%A4%B0%E0%A4%AB%E0%A4%BC%E0%A5%87%E0%A4%9C%E0%A4%BC",
       "destination": "/hi/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AA/frankerfacez",
       "permanent": true
     },
     {
-      "source": "/ko/Twitch 최고의 확장 프로그램",
+      "source": "/ko/Twitch%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%ED%99%95%EC%9E%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8",
       "destination": "/ko/Twitch-%EC%B5%9C%EA%B3%A0%EC%9D%98-%ED%99%95%EC%9E%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8",
       "permanent": true
     },
     {
-      "source": "/es/actualización-automática de contracción nerviosa",
+      "source": "/es/actualizaci%C3%B3n-autom%C3%A1tica%20de%20contracci%C3%B3n%20nerviosa",
       "destination": "/es/Twitch-actualizaci%C3%B3n-autom%C3%A1tica",
       "permanent": true
     },
     {
-      "source": "/it/contrazione-aggiornamento automatico",
+      "source": "/it/contrazione-aggiornamento%20automatico",
       "destination": "/it/Twitch-aggiornamento-automatico",
       "permanent": true
     },
     {
-      "source": "/pl/automatyczne odświeżanie drgań",
+      "source": "/pl/automatyczne%20od%C5%9Bwie%C5%BCanie%20drga%C5%84",
       "destination": "/pl/Twitch-automatyczne-od%C5%9Bwie%C5%BCanie",
       "permanent": true
     },
     {
-      "source": "/tr/seğirme-otomatik-yenileme",
+      "source": "/tr/se%C4%9Firme-otomatik-yenileme",
       "destination": "/tr/Twitch-otomatik-yenileme",
       "permanent": true
     },
     {
-      "source": "/ru/Twitch-автоматическое обновление",
+      "source": "/ru/Twitch-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5",
       "destination": "/ru/Twitch-%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5",
       "permanent": true
     },
     {
-      "source": "/ja/ツイッチ自動リフレッシュ",
+      "source": "/ja/%E3%83%84%E3%82%A4%E3%83%83%E3%83%81%E8%87%AA%E5%8B%95%E3%83%AA%E3%83%95%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A5",
       "destination": "/ja/Twitch%E8%87%AA%E5%8B%95%E3%83%AA%E3%83%95%E3%83%AC%E3%83%83%E3%82%B7%E3%83%A5",
       "permanent": true
     },
     {
-      "source": "/ko/트위치 자동 새로고침",
+      "source": "/ko/%ED%8A%B8%EC%9C%84%EC%B9%98%20%EC%9E%90%EB%8F%99%20%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8",
       "destination": "/ko/Twitch-%EC%9E%90%EB%8F%99-%EC%83%88%EB%A1%9C%EA%B3%A0%EC%B9%A8",
       "permanent": true
     },
     {
-      "source": "/id/kedutan-penyegaran otomatis",
+      "source": "/id/kedutan-penyegaran%20otomatis",
       "destination": "/id/Twitch-penyegaran-otomatis",
       "permanent": true
     },
     {
-      "source": "/nl/Twitch-automatisch vernieuwen",
+      "source": "/nl/Twitch-automatisch%20vernieuwen",
       "destination": "/nl/Twitch-automatisch-vernieuwen",
       "permanent": true
     },
     {
-      "source": "/hi/ट्विच-ऑटो-रीफ्रेश",
+      "source": "/hi/%E0%A4%9F%E0%A5%8D%E0%A4%B5%E0%A4%BF%E0%A4%9A-%E0%A4%91%E0%A4%9F%E0%A5%8B-%E0%A4%B0%E0%A5%80%E0%A4%AB%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B6",
       "destination": "/hi/Twitch-%E0%A4%91%E0%A4%9F%E0%A5%8B-%E0%A4%B0%E0%A5%80%E0%A4%AB%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B6",
       "permanent": true
     },
     {
-      "source": "/cs/škubnutí-automatické obnovení",
+      "source": "/cs/%C5%A1kubnut%C3%AD-automatick%C3%A9%20obnoven%C3%AD",
       "destination": "/cs/Twitch-automatick%C3%A9-obnoven%C3%AD",
       "permanent": true
     },
     {
-      "source": "/es/panel-de-control-twitch-expulsión",
+      "source": "/es/panel-de-control-twitch-expulsi%C3%B3n",
       "destination": "/es/panel-de-control-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/pt-br/painel-twitch-expulsão",
+      "source": "/pt-br/painel-twitch-expuls%C3%A3o",
       "destination": "/pt-br/painel-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/ru/панель управления-Twitch-исключение",
+      "source": "/ru/%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-Twitch-%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5",
       "destination": "/ru/%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/ja/ダッシュボード-Twitch-キック",
+      "source": "/ja/%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89-Twitch-%E3%82%AD%E3%83%83%E3%82%AF",
       "destination": "/ja/%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/ko/대시보드-트위치-추방",
+      "source": "/ko/%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%8A%B8%EC%9C%84%EC%B9%98-%EC%B6%94%EB%B0%A9",
       "destination": "/ko/%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/pl/automatyczne dropy na Twitchu",
+      "source": "/pl/automatyczne%20dropy%20na%20Twitchu",
       "destination": "/pl/automatyczne-dropy-na-Twitchu",
       "permanent": true
     },
     {
-      "source": "/tr/otomatik twitch-drops",
+      "source": "/tr/otomatik%20twitch-drops",
       "destination": "/tr/otomatik-twitch-drops",
       "permanent": true
     },
     {
-      "source": "/ru/автоматические подарки в Twitch",
+      "source": "/ru/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BA%D0%B8%20%D0%B2%20Twitch",
       "destination": "/ru/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BA%D0%B8-%D0%B2-Twitch",
       "permanent": true
     },
     {
-      "source": "/ko/트위치 드롭 자동 설정",
+      "source": "/ko/%ED%8A%B8%EC%9C%84%EC%B9%98%20%EB%93%9C%EB%A1%AD%20%EC%9E%90%EB%8F%99%20%EC%84%A4%EC%A0%95",
       "destination": "/ko/Twitch-%EB%93%9C%EB%A1%AD-%EC%9E%90%EB%8F%99-%EC%84%A4%EC%A0%95",
       "permanent": true
     },
     {
-      "source": "/nl/automatische Twitch-drops",
+      "source": "/nl/automatische%20Twitch-drops",
       "destination": "/nl/automatische-Twitch-drops",
       "permanent": true
     },
     {
-      "source": "/sv/automatiska Twitch-drops",
+      "source": "/sv/automatiska%20Twitch-drops",
       "destination": "/sv/automatiska-Twitch-drops",
       "permanent": true
     },
     {
-      "source": "/cs/automatické twitch-drops",
+      "source": "/cs/automatick%C3%A9%20twitch-drops",
       "destination": "/cs/automatick%C3%A9-twitch-drops",
       "permanent": true
     },
     {
-      "source": "/ko/오류-2000-트위치-해결 방법",
+      "source": "/ko/%EC%98%A4%EB%A5%98-2000-%ED%8A%B8%EC%9C%84%EC%B9%98-%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95",
       "destination": "/ko/%EC%98%A4%EB%A5%98-2000-Twitch-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95",
       "permanent": true
     },
     {
-      "source": "/ko/오류-3000-트위치-해결 방법",
+      "source": "/ko/%EC%98%A4%EB%A5%98-3000-%ED%8A%B8%EC%9C%84%EC%B9%98-%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95",
       "destination": "/ko/%EC%98%A4%EB%A5%98-3000-Twitch-%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95",
       "permanent": true
     },
     {
-      "source": "/es/patada de extensión",
+      "source": "/es/patada%20de%20extensi%C3%B3n",
       "destination": "/es/extensi%C3%B3n-Kick",
       "permanent": true
     },
     {
-      "source": "/pt-br/chute de extensão",
+      "source": "/pt-br/chute%20de%20extens%C3%A3o",
       "destination": "/pt-br/extens%C3%A3o-Kick",
       "permanent": true
     },
     {
-      "source": "/it/calcio di prolunga",
+      "source": "/it/calcio%20di%20prolunga",
       "destination": "/it/estensione-Kick",
       "permanent": true
     },
     {
-      "source": "/pl/kopnięcie z wyskoku",
+      "source": "/pl/kopni%C4%99cie%20z%20wyskoku",
       "destination": "/pl/rozszerzenie-Kick",
       "permanent": true
     },
@@ -980,17 +980,17 @@
       "permanent": true
     },
     {
-      "source": "/ru/удар с отскоком",
+      "source": "/ru/%D1%83%D0%B4%D0%B0%D1%80%20%D1%81%20%D0%BE%D1%82%D1%81%D0%BA%D0%BE%D0%BA%D0%BE%D0%BC",
       "destination": "/ru/%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-Kick",
       "permanent": true
     },
     {
-      "source": "/ja/エクステンション・キック",
+      "source": "/ja/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%82%AF",
       "destination": "/ja/Kick%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD",
       "permanent": true
     },
     {
-      "source": "/ko/익스텐션 킥",
+      "source": "/ko/%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98%20%ED%82%A5",
       "destination": "/ko/Kick-%ED%99%95%EC%9E%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8",
       "permanent": true
     },
@@ -1000,12 +1000,12 @@
       "permanent": true
     },
     {
-      "source": "/sv/förlängningsspark",
+      "source": "/sv/f%C3%B6rl%C3%A4ngningsspark",
       "destination": "/sv/Kick-till%C3%A4gg",
       "permanent": true
     },
     {
-      "source": "/cs/prodloužený kop",
+      "source": "/cs/prodlou%C5%BEen%C3%BD%20kop",
       "destination": "/cs/roz%C5%A1%C3%AD%C5%99en%C3%AD-Kick",
       "permanent": true
     },
@@ -1015,22 +1015,22 @@
       "permanent": true
     },
     {
-      "source": "/sv/förlängningsryckning",
+      "source": "/sv/f%C3%B6rl%C3%A4ngningsryckning",
       "destination": "/sv/Twitch-till%C3%A4gg",
       "permanent": true
     },
     {
-      "source": "/es/extensión-notificaciones-de-patada",
+      "source": "/es/extensi%C3%B3n-notificaciones-de-patada",
       "destination": "/es/extensi%C3%B3n-notificaciones-Kick",
       "permanent": true
     },
     {
-      "source": "/pt-br/extensão-notificações-por-chute",
+      "source": "/pt-br/extens%C3%A3o-notifica%C3%A7%C3%B5es-por-chute",
       "destination": "/pt-br/extens%C3%A3o-notifica%C3%A7%C3%B5es-Kick",
       "permanent": true
     },
     {
-      "source": "/de/Erweiterung „Kick-Benachrichtigungen“",
+      "source": "/de/Erweiterung%20%E2%80%9EKick-Benachrichtigungen%E2%80%9C",
       "destination": "/de/Erweiterung-Kick-Benachrichtigungen",
       "permanent": true
     },
@@ -1040,12 +1040,12 @@
       "permanent": true
     },
     {
-      "source": "/pl/rozszerzenie-powiadomienia-o-kopnięciach",
+      "source": "/pl/rozszerzenie-powiadomienia-o-kopni%C4%99ciach",
       "destination": "/pl/rozszerzenie-powiadomienia-Kick",
       "permanent": true
     },
     {
-      "source": "/tr/uzantı-tekme-bildirimleri",
+      "source": "/tr/uzant%C4%B1-tekme-bildirimleri",
       "destination": "/tr/Kick-bildirimleri-eklentisi",
       "permanent": true
     },
@@ -1055,102 +1055,102 @@
       "permanent": true
     },
     {
-      "source": "/ko/확장 프로그램 킥 알림",
+      "source": "/ko/%ED%99%95%EC%9E%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%ED%82%A5%20%EC%95%8C%EB%A6%BC",
       "destination": "/ko/%ED%99%95%EC%9E%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-Kick-%EC%95%8C%EB%A6%BC",
       "permanent": true
     },
     {
-      "source": "/es/contracción-baja-latencia",
+      "source": "/es/contracci%C3%B3n-baja-latencia",
       "destination": "/es/Twitch-baja-latencia",
       "permanent": true
     },
     {
-      "source": "/pt-br/contração baixa latência",
+      "source": "/pt-br/contra%C3%A7%C3%A3o%20baixa%20lat%C3%AAncia",
       "destination": "/pt-br/Twitch-baixa-lat%C3%AAncia",
       "permanent": true
     },
     {
-      "source": "/it/contrazione a bassa latenza",
+      "source": "/it/contrazione%20a%20bassa%20latenza",
       "destination": "/it/Twitch-bassa-latenza",
       "permanent": true
     },
     {
-      "source": "/pl/Twitch-niskie opóźnienie",
+      "source": "/pl/Twitch-niskie%20op%C3%B3%C5%BAnienie",
       "destination": "/pl/Twitch-niskie-op%C3%B3%C5%BAnienie",
       "permanent": true
     },
     {
-      "source": "/tr/seğirme-düşük gecikme",
+      "source": "/tr/se%C4%9Firme-d%C3%BC%C5%9F%C3%BCk%20gecikme",
       "destination": "/tr/Twitch-d%C3%BC%C5%9F%C3%BCk-gecikme",
       "permanent": true
     },
     {
-      "source": "/ru/подергивание с низкой задержкой",
+      "source": "/ru/%D0%BF%D0%BE%D0%B4%D0%B5%D1%80%D0%B3%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%81%20%D0%BD%D0%B8%D0%B7%D0%BA%D0%BE%D0%B9%20%D0%B7%D0%B0%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%BE%D0%B9",
       "destination": "/ru/Twitch-%D0%BD%D0%B8%D0%B7%D0%BA%D0%B0%D1%8F-%D0%B7%D0%B0%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0",
       "permanent": true
     },
     {
-      "source": "/ja/twitch-低遅延",
+      "source": "/ja/twitch-%E4%BD%8E%E9%81%85%E5%BB%B6",
       "destination": "/ja/Twitch-%E4%BD%8E%E9%81%85%E5%BB%B6",
       "permanent": true
     },
     {
-      "source": "/ko/트위치-낮은 지연 시간",
+      "source": "/ko/%ED%8A%B8%EC%9C%84%EC%B9%98-%EB%82%AE%EC%9D%80%20%EC%A7%80%EC%97%B0%20%EC%8B%9C%EA%B0%84",
       "destination": "/ko/Twitch-%EB%82%AE%EC%9D%80-%EC%A7%80%EC%97%B0-%EC%8B%9C%EA%B0%84",
       "permanent": true
     },
     {
-      "source": "/id/kedutan-latensi rendah",
+      "source": "/id/kedutan-latensi%20rendah",
       "destination": "/id/Twitch-latensi-rendah",
       "permanent": true
     },
     {
-      "source": "/nl/twitch-lage latentie",
+      "source": "/nl/twitch-lage%20latentie",
       "destination": "/nl/Twitch-lage-latentie",
       "permanent": true
     },
     {
-      "source": "/hi/चिकोटी-कम विलंबता",
+      "source": "/hi/%E0%A4%9A%E0%A4%BF%E0%A4%95%E0%A5%8B%E0%A4%9F%E0%A5%80-%E0%A4%95%E0%A4%AE%20%E0%A4%B5%E0%A4%BF%E0%A4%B2%E0%A4%82%E0%A4%AC%E0%A4%A4%E0%A4%BE",
       "destination": "/hi/Twitch-%E0%A4%95%E0%A4%AE-%E0%A4%B5%E0%A4%BF%E0%A4%B2%E0%A4%82%E0%A4%AC%E0%A4%A4%E0%A4%BE",
       "permanent": true
     },
     {
-      "source": "/sv/ryck-låg-latens",
+      "source": "/sv/ryck-l%C3%A5g-latens",
       "destination": "/sv/Twitch-l%C3%A5g-latens",
       "permanent": true
     },
     {
-      "source": "/cs/záškuby-nízká-latence",
+      "source": "/cs/z%C3%A1%C5%A1kuby-n%C3%ADzk%C3%A1-latence",
       "destination": "/cs/Twitch-n%C3%ADzk%C3%A1-latence",
       "permanent": true
     },
     {
-      "source": "/es/notificaciones-en-directo-twitch-expulsión",
+      "source": "/es/notificaciones-en-directo-twitch-expulsi%C3%B3n",
       "destination": "/es/notificaciones-en-directo-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/pt-br/notificações-ao-vivo-twitch-expulsão",
+      "source": "/pt-br/notifica%C3%A7%C3%B5es-ao-vivo-twitch-expuls%C3%A3o",
       "destination": "/pt-br/notifica%C3%A7%C3%B5es-ao-vivo-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/de/Benachrichtigungen – Live – Twitch – Kick",
+      "source": "/de/Benachrichtigungen%20%E2%80%93%20Live%20%E2%80%93%20Twitch%20%E2%80%93%20Kick",
       "destination": "/de/Benachrichtigungen-Live-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/ru/уведомления-в-режиме-реального-времени-Twitch-исключение",
+      "source": "/ru/%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5-%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-Twitch-%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5",
       "destination": "/ru/%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/ja/通知-ライブ-Twitch-キック",
+      "source": "/ja/%E9%80%9A%E7%9F%A5-%E3%83%A9%E3%82%A4%E3%83%96-Twitch-%E3%82%AD%E3%83%83%E3%82%AF",
       "destination": "/ja/%E9%80%9A%E7%9F%A5-%E3%83%A9%E3%82%A4%E3%83%96-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/ko/알림-라이브-트위치-찹",
+      "source": "/ko/%EC%95%8C%EB%A6%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C-%ED%8A%B8%EC%9C%84%EC%B9%98-%EC%B0%B9",
       "destination": "/ko/%EC%95%8C%EB%A6%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C-Twitch-Kick",
       "permanent": true
     },
@@ -1160,17 +1160,17 @@
       "permanent": true
     },
     {
-      "source": "/cs/oznámení-live-twitch-vyloučení",
+      "source": "/cs/ozn%C3%A1men%C3%AD-live-twitch-vylou%C4%8Den%C3%AD",
       "destination": "/cs/ozn%C3%A1men%C3%AD-live-Twitch-Kick",
       "permanent": true
     },
     {
-      "source": "/es/puntos-de-cadena-automáticos-twitch",
+      "source": "/es/puntos-de-cadena-autom%C3%A1ticos-twitch",
       "destination": "/es/puntos-del-canal-autom%C3%A1ticos-Twitch",
       "permanent": true
     },
     {
-      "source": "/pt-br/pontos-de-corrente-automáticos-twitch",
+      "source": "/pt-br/pontos-de-corrente-autom%C3%A1ticos-twitch",
       "destination": "/pt-br/pontos-do-canal-autom%C3%A1ticos-Twitch",
       "permanent": true
     },
@@ -1185,27 +1185,27 @@
       "permanent": true
     },
     {
-      "source": "/pl/automatyczne-punkty-łańcuchowe-twitch",
+      "source": "/pl/automatyczne-punkty-%C5%82a%C5%84cuchowe-twitch",
       "destination": "/pl/automatyczne-punkty-kana%C5%82u-Twitch",
       "permanent": true
     },
     {
-      "source": "/tr/otomatik zincir halkaları-twitch",
+      "source": "/tr/otomatik%20zincir%20halkalar%C4%B1-twitch",
       "destination": "/tr/otomatik-kanal-puanlar%C4%B1-Twitch",
       "permanent": true
     },
     {
-      "source": "/ru/автоматические-узлы-цепи-twitch",
+      "source": "/ru/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%83%D0%B7%D0%BB%D1%8B-%D1%86%D0%B5%D0%BF%D0%B8-twitch",
       "destination": "/ru/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%B1%D0%B0%D0%BB%D0%BB%D1%8B-%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0-Twitch",
       "permanent": true
     },
     {
-      "source": "/ja/自動チェーンピン・Twitch",
+      "source": "/ja/%E8%87%AA%E5%8B%95%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%94%E3%83%B3%E3%83%BBTwitch",
       "destination": "/ja/%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E8%87%AA%E5%8B%95%E5%8F%96%E5%BE%97-Twitch",
       "permanent": true
     },
     {
-      "source": "/ko/자동 체인 연결점-twitch",
+      "source": "/ko/%EC%9E%90%EB%8F%99%20%EC%B2%B4%EC%9D%B8%20%EC%97%B0%EA%B2%B0%EC%A0%90-twitch",
       "destination": "/ko/%EC%B1%84%EB%84%90-%ED%8F%AC%EC%9D%B8%ED%8A%B8-%EC%9E%90%EB%8F%99-%EC%A0%81%EB%A6%BD-Twitch",
       "permanent": true
     },
@@ -1220,12 +1220,12 @@
       "permanent": true
     },
     {
-      "source": "/sv/automatiska kedjepunkter-twitch",
+      "source": "/sv/automatiska%20kedjepunkter-twitch",
       "destination": "/sv/automatiska-kanalpo%C3%A4ng-Twitch",
       "permanent": true
     },
     {
-      "source": "/cs/automatické-řetězové-spony-twitch",
+      "source": "/cs/automatick%C3%A9-%C5%99et%C4%9Bzov%C3%A9-spony-twitch",
       "destination": "/cs/automatick%C3%A9-body-kan%C3%A1lu-Twitch",
       "permanent": true
     }
