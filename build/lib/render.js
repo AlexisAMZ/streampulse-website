@@ -8,6 +8,7 @@
  */
 
 const og = require('./og');
+const { LOCALES, SOURCE_LANG } = require('../build-i18n');
 
 // Doit correspondre au domaine qui répond 200 (l'apex redirige en 308 vers www).
 // Un canonical pointant vers une redirection dilue le signal envoyé à Google.
@@ -94,19 +95,36 @@ function slugify(s) {
     .replace(/^-|-$/g, '');
 }
 
-/** Prefixe d'URL : '' pour le FR (racine), '/en' pour l'anglais. */
+/**
+ * Prefixe d'URL : '' pour le FR (racine), '/en' pour l'anglais.
+ *
+ * On lit toujours LOCALES[lang].dir, jamais la clé de locale : les deux
+ * divergent pour pt-BR (clé 'pt-BR', dossier 'pt-br'). Vercel sert le statique
+ * en respectant la casse, donc une URL '/pt-BR/...' renvoie une 404 alors que
+ * le build passe sans erreur sur macOS, dont le système de fichiers est
+ * insensible à la casse.
+ */
 function prefix(lang) {
-  return lang === 'fr' ? '' : `/${lang}`;
+  const cfg = LOCALES[lang];
+  const dir = cfg ? cfg.dir : lang;
+  return dir ? `/${dir}` : '';
 }
 
 function buildHead(page, lang) {
   const t = getUI(lang);
   const canonical = `${ORIGIN}${prefix(lang)}/${page.slug[lang]}`;
-  const alts = Object.keys(page.slug)
-    .map(
-      (l) =>
-        `<link rel="alternate" hreflang="${l}" href="${ORIGIN}${prefix(l)}/${page.slug[l]}" />`
-    )
+
+  // page.slug ne porte que la langue courante : getPageContent réduit la carte
+  // multilingue à une seule clé. Itérer dessus ne produisait donc qu'un seul
+  // alternate (la page elle-même), et aucune traduction n'était déclarée.
+  // slugAll, fourni par build-content.js, porte les slugs des 16 langues.
+  const slugAll = page.slugAll || page.slug;
+  const alts = Object.keys(slugAll)
+    .map((l) => {
+      const cfg = LOCALES[l];
+      const hreflang = cfg ? cfg.hreflang : l;
+      return `<link rel="alternate" hreflang="${hreflang}" href="${ORIGIN}${prefix(l)}/${slugAll[l]}" />`;
+    })
     .join('\n    ');
 
 
@@ -177,7 +195,7 @@ function buildHead(page, lang) {
     <meta name="apple-mobile-web-app-title" content="StreamPulse" />
     <link rel="canonical" href="${canonical}" />
     ${alts}
-    <link rel="alternate" hreflang="x-default" href="${ORIGIN}/${page.slug.fr}" />
+    <link rel="alternate" hreflang="x-default" href="${ORIGIN}${prefix(SOURCE_LANG)}/${slugAll[SOURCE_LANG] || ''}" />
 
     <meta property="og:type" content="article" />
     <meta property="og:url" content="${canonical}" />

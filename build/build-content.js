@@ -166,10 +166,40 @@ function getPageContent(page, lang) {
   };
 }
 
+/**
+ * Slug résolu dans chacune des langues.
+ *
+ * getPageContent ne renvoie que la langue demandée, alors que les balises
+ * hreflang doivent déclarer toutes les traductions d'une même page. Le fallback
+ * de get() s'applique ici aussi : une langue sans slug traduit pointe vers le
+ * fichier réellement écrit pour elle (le slug anglais), pas vers une 404.
+ */
+function resolveSlugs(rawPage) {
+  const slugs = {};
+  LANGS.forEach((l) => {
+    const slug = getPageContent(rawPage, l).slug[l];
+    if (slug) slugs[l] = slug;
+  });
+  return slugs;
+}
+
+/**
+ * Chemin disque d'une page.
+ *
+ * On passe par LOCALES[lang].dir et jamais par la clé : 'pt-BR' désigne le
+ * dossier 'pt-br'. Écrire dans path.join(ROOT, 'pt-BR') réussit silencieusement
+ * sur macOS — le fichier atterrit dans le 'pt-br' existant — mais les URLs
+ * générées gardent la majuscule et tombent en 404 sur Vercel.
+ */
+function outputPath(lang, slug) {
+  const dir = LOCALES[lang].dir;
+  return dir ? path.join(ROOT, dir, `${slug}.html`) : path.join(ROOT, `${slug}.html`);
+}
+
 function renderPage(rawPage, lang, allPages) {
   const t = getUI(lang);
   const p = prefix(lang);
-  const page = getPageContent(rawPage, lang);
+  const page = { ...getPageContent(rawPage, lang), slugAll: resolveSlugs(rawPage) };
   const schema = buildSchema(page, lang);
   const dateLabel = new Date(page.modified).toLocaleDateString(
     lang === 'fr' ? 'fr-FR' : 'en-GB',
@@ -225,6 +255,17 @@ ${buildFooter(lang)}
 `;
 }
 
+/**
+ * Une URL de sitemap doit être percent-encodée puis échappée en XML.
+ *
+ * 45 slugs traduits contiennent un espace brut ('automatyczne dropy na
+ * Twitchu'), et certains des guillemets typographiques ou des tirets cadratins.
+ * Non encodés, ils produisent un XML invalide que Google peut rejeter.
+ */
+function xmlLoc(url) {
+  return encodeURI(url).replace(/&/g, '&amp;');
+}
+
 function buildSitemap() {
   const today = new Date().toISOString().slice(0, 10);
   const urls = [];
@@ -271,7 +312,7 @@ function buildSitemap() {
   const body = urls
     .map(
       (u) => `  <url>
-    <loc>${u.loc}</loc>
+    <loc>${xmlLoc(u.loc)}</loc>
     <lastmod>${u.lastmod}</lastmod>
     <changefreq>${u.freq}</changefreq>
     <priority>${u.pri}</priority>
@@ -286,31 +327,79 @@ ${body}
 `;
 }
 
+/**
+ * Supprime les pages laissées derrière par un slug devenu obsolète.
+ *
+ * Le build écrit le fichier du slug courant et ne touche à rien d'autre. Quand
+ * une traduction arrive et change le slug ('best-twitch-extensions' devient
+ * 'najlepsze-rozszerzenia-na-Twitchu'), l'ancien fichier survit : il reste
+ * crawlable, auto-canonicalisé, et duplique mot pour mot sa version traduite.
+ *
+ * On ne supprime qu'un chemin issu d'un slug connu de la même page, et jamais
+ * un fichier qu'un autre couple (page, langue) produit dans ce build — d'où le
+ * garde-fou `keep`.
+ */
+function pruneStaleOutputs(pages, keep) {
+  const removed = [];
+
+  // La comparaison au garde-fou se fait en minuscules : deux langues peuvent
+  // n'avoir que la casse pour les distinguer ('Dashboard-Twitch-Kick' en
+  // allemand, 'dashboard-twitch-kick' en italien). Sur macOS, existsSync répond
+  // vrai pour les deux, et la purge détruirait la page courante avant de la
+  // réécrire. Dans le doute on ne supprime pas.
+  const protectedPaths = new Set([...keep].map((p) => p.toLowerCase()));
+
+  pages.forEach((rawPage) => {
+    const slugs = resolveSlugs(rawPage);
+    const known = new Set(Object.values(slugs));
+
+    LANGS.forEach((lang) => {
+      known.forEach((slug) => {
+        if (slug === slugs[lang]) return;
+        const stale = outputPath(lang, slug);
+        if (protectedPaths.has(stale.toLowerCase()) || !fs.existsSync(stale)) return;
+        fs.unlinkSync(stale);
+        removed.push(path.relative(ROOT, stale));
+      });
+    });
+  });
+
+  return removed;
+}
+
 function build() {
-  let count = 0;
-  const written = [];
+  // Sorties attendues calculées avant toute écriture : la liste sert aussi de
+  // garde-fou à la purge, qui ne doit jamais retirer une page de ce build.
+  const outputs = [];
+  const keep = new Set();
 
   PAGES.forEach((rawPage) => {
     LANGS.forEach((lang) => {
-      const page = getPageContent(rawPage, lang);
-      if (!page.slug[lang]) return; // Skip if no slug exists for this lang
-      
-      const html = renderPage(rawPage, lang, PAGES);
-      const outPath =
-        lang === 'fr'
-          ? path.join(ROOT, `${page.slug[lang]}.html`)
-          : path.join(ROOT, lang, `${page.slug[lang]}.html`);
-      fs.mkdirSync(path.dirname(outPath), { recursive: true });
-      fs.writeFileSync(outPath, html, 'utf8');
-      written.push(`${prefix(lang)}/${page.slug[lang]}`);
-      count++;
+      const slug = getPageContent(rawPage, lang).slug[lang];
+      if (!slug) return; // Pas de slug pour cette langue
+      const file = outputPath(lang, slug);
+      outputs.push({ rawPage, lang, slug, file });
+      keep.add(file);
     });
+  });
+
+  const removed = pruneStaleOutputs(PAGES, keep);
+
+  outputs.forEach(({ rawPage, lang, file }) => {
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    fs.writeFileSync(file, renderPage(rawPage, lang, PAGES), 'utf8');
   });
 
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), buildSitemap(), 'utf8');
 
-  console.log(`${count} pages de contenu générées :`);
-  written.forEach((w) => console.log(`  - ${w}`));
+  console.log(`${outputs.length} pages de contenu générées :`);
+  outputs.forEach(({ lang, slug }) => console.log(`  - ${prefix(lang)}/${slug}`));
+
+  if (removed.length) {
+    console.log(`\n${removed.length} page(s) orpheline(s) supprimée(s) :`);
+    removed.forEach((r) => console.log(`  - ${r}`));
+  }
+
   console.log('\nsitemap.xml régénéré.');
 }
 
