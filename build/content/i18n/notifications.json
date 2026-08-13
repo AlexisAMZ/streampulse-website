@@ -1,6 +1,6 @@
 {
   "es": {
-    "slug": "notificaciones-en-directo-twitch-expulsión",
+    "slug": "notificaciones-en-directo-Twitch-Kick",
     "linkLabel": "Notificaciones en directo de Twitch y Kick",
     "title": "Notificaciones en directo de Twitch y Kick | StreamPulse",
     "h1": "Recibir notificaciones de las retransmisiones en directo de Twitch y Kick en el escritorio",
@@ -17,7 +17,7 @@
       },
       {
         "name": "Configurar las alertas",
-        "text": "Elige el sonido, activa la insignia del icono y define las cadenas prioritarias."
+        "text": "Elige el sonido, activa la insignia del icono y define los canales prioritarios."
       }
     ],
     "sections": [
@@ -72,7 +72,7 @@
     ]
   },
   "pt-BR": {
-    "slug": "notificações-ao-vivo-twitch-expulsão",
+    "slug": "notificações-ao-vivo-Twitch-Kick",
     "linkLabel": "Notificações em tempo real do Twitch e do Kick",
     "title": "Notificações ao vivo no Twitch e no Kick | StreamPulse",
     "h1": "Receber notificações de transmissões ao vivo do Twitch e do Kick na área de trabalho",
@@ -144,7 +144,7 @@
     ]
   },
   "de": {
-    "slug": "Benachrichtigungen – Live – Twitch – Kick",
+    "slug": "Benachrichtigungen-Live-Twitch-Kick",
     "linkLabel": "Live-Benachrichtigungen auf Twitch und Kick",
     "title": "Benachrichtigungen auf Twitch und Kick | StreamPulse",
     "h1": "Benachrichtigungen zu Live-Streams auf Twitch und Kick auf dem Desktop erhalten",
@@ -432,7 +432,7 @@
     ]
   },
   "ru": {
-    "slug": "уведомления-в-режиме-реального-времени-Twitch-исключение",
+    "slug": "уведомления-в-реальном-времени-Twitch-Kick",
     "linkLabel": "Уведомления в режиме реального времени на Twitch и Kick",
     "title": "Уведомления в Twitch и Kick | StreamPulse",
     "h1": "Получать уведомления о прямых трансляциях на Twitch и Kick на рабочий стол",
@@ -504,7 +504,7 @@
     ]
   },
   "ja": {
-    "slug": "通知-ライブ-Twitch-キック",
+    "slug": "通知-ライブ-Twitch-Kick",
     "linkLabel": "TwitchおよびKickのライブ通知",
     "title": "TwitchおよびKickの通知 | StreamPulse",
     "h1": "TwitchやKickのライブ配信通知をデスクトップで受け取る",
@@ -576,7 +576,7 @@
     ]
   },
   "ko": {
-    "slug": "알림-라이브-트위치-찹",
+    "slug": "알림-라이브-Twitch-Kick",
     "linkLabel": "Twitch 및 Kick 실시간 알림",
     "title": "Twitch 및 Kick 알림 | StreamPulse",
     "h1": "데스크톱에서 Twitch 및 Kick 라이브 알림 받기",
@@ -648,7 +648,7 @@
     ]
   },
   "id": {
-    "slug": "pemberitahuan-siaran-langsung-Twitch-pengusiran",
+    "slug": "pemberitahuan-siaran-langsung-Twitch-Kick",
     "linkLabel": "Pemberitahuan langsung Twitch dan Kick",
     "title": "Pemberitahuan siaran langsung di Twitch dan Kick | StreamPulse",
     "h1": "Menerima pemberitahuan siaran langsung Twitch dan Kick di desktop",
@@ -864,7 +864,7 @@
     ]
   },
   "cs": {
-    "slug": "oznámení-live-twitch-vyloučení",
+    "slug": "oznámení-live-Twitch-Kick",
     "linkLabel": "Živé notifikace na Twitchi a Kicku",
     "title": "Oznámení na Twitchi a Kicku | StreamPulse",
     "h1": "Zobrazovat oznámení z živých přenosů na Twitchi a Kicku na ploše",

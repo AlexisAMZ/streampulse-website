@@ -39,7 +39,7 @@
     "faq": []
   },
   "es": {
-    "slug": "actualización-automática de contracción nerviosa",
+    "slug": "Twitch-actualización-automática",
     "linkLabel": "Actualización automática de Twitch",
     "title": "Actualización automática de Twitch: reinicia el reproductor automáticamente",
     "h1": "Cómo recargar automáticamente el reproductor Twitch después de un error",
@@ -156,7 +156,7 @@
     "faq": []
   },
   "it": {
-    "slug": "contrazione-aggiornamento automatico",
+    "slug": "Twitch-aggiornamento-automatico",
     "linkLabel": "Twitch con aggiornamento automatico",
     "title": "Twitch con aggiornamento automatico: riavvia automaticamente il lettore",
     "h1": "Come ricaricare automaticamente il lettore Twitch dopo un errore",
@@ -195,7 +195,7 @@
     "faq": []
   },
   "pl": {
-    "slug": "automatyczne odświeżanie drgań",
+    "slug": "Twitch-automatyczne-odświeżanie",
     "linkLabel": "Automatyczne odświeżanie Twitcha",
     "title": "Automatyczne odświeżanie Twitch: Automatyczne ponowne uruchomienie odtwarzacza",
     "h1": "Jak automatycznie ponownie załadować odtwarzacz Twitch po wystąpieniu błędu",
@@ -234,7 +234,7 @@
     "faq": []
   },
   "tr": {
-    "slug": "seğirme-otomatik-yenileme",
+    "slug": "Twitch-otomatik-yenileme",
     "linkLabel": "Twitch'i Otomatik Yenile",
     "title": "Otomatik Yenileme Twitch: Oynatıcıyı otomatik olarak yeniden başlatın",
     "h1": "Bir hatadan sonra Twitch oynatıcısı otomatik olarak nasıl yeniden yüklenir",
@@ -273,7 +273,7 @@
     "faq": []
   },
   "ru": {
-    "slug": "Twitch-автоматическое обновление",
+    "slug": "Twitch-автоматическое-обновление",
     "linkLabel": "Автоматическое обновление Twitch",
     "title": "Автоматическое обновление Twitch: автоматический перезапуск плеера.",
     "h1": "Как автоматически перезагрузить плеер Twitch после ошибки",
@@ -312,8 +312,8 @@
     "faq": []
   },
   "ja": {
-    "slug": "ツイッチ自動リフレッシュ",
-    "linkLabel": "自動更新ツイッチ",
+    "slug": "Twitch自動リフレッシュ",
+    "linkLabel": "自動更新Twitch",
     "title": "Auto-Refresh Twitch: プレーヤーを自動的に再起動します。",
     "h1": "エラー後にTwitchプレーヤーを自動的にリロードする方法",
     "description": "お気に入りのストリームの瞬間を見逃すことはありません。エラー 2000 または黒い画面の後に Twitch Player を自動的にリロードする方法を学びます。",
@@ -351,8 +351,8 @@
     "faq": []
   },
   "ko": {
-    "slug": "트위치 자동 새로고침",
-    "linkLabel": "자동 새로고침 트위치",
+    "slug": "Twitch-자동-새로고침",
+    "linkLabel": "자동 새로고침 Twitch",
     "title": "자동 새로고침 Twitch: 플레이어를 자동으로 다시 시작합니다.",
     "h1": "오류 발생 후 Twitch 플레이어를 자동으로 다시 로드하는 방법",
     "description": "좋아하는 스트림의 순간을 놓치지 마세요. 오류 2000 또는 검은색 화면이 발생한 후 Twitch Player를 자동으로 다시 로드하는 방법을 알아보세요.",
@@ -390,9 +390,9 @@
     "faq": []
   },
   "id": {
-    "slug": "kedutan-penyegaran otomatis",
-    "linkLabel": "Kedutan Penyegaran Otomatis",
-    "title": "Kedutan Penyegaran Otomatis: Meluncurkan ulang pemutar secara otomatis",
+    "slug": "Twitch-penyegaran-otomatis",
+    "linkLabel": "Twitch Penyegaran Otomatis",
+    "title": "Twitch Penyegaran Otomatis: Meluncurkan ulang pemutar secara otomatis",
     "h1": "Cara memuat ulang pemutar Twitch secara otomatis setelah terjadi kesalahan",
     "description": "Jangan pernah melewatkan momen streaming favorit Anda. Pelajari cara memuat ulang Twitch Player secara otomatis setelah kesalahan 2000 atau layar hitam.",
     "intro": "Tidak ada yang lebih membuat frustrasi daripada meninggalkan aliran Twitch di latar belakang dan menyadari 30 menit kemudian bahwa pemutar tersebut mogok (Kesalahan 2000, 3000, atau layar hitam). Berikut cara mengotomatiskan pemuatan ulang pemutar video agar Anda tidak mengalami gangguan lagi.",
@@ -429,7 +429,7 @@
     "faq": []
   },
   "nl": {
-    "slug": "Twitch-automatisch vernieuwen",
+    "slug": "Twitch-automatisch-vernieuwen",
     "linkLabel": "Twitch automatisch vernieuwen",
     "title": "Auto-Refresh Twitch: Start de speler automatisch opnieuw",
     "h1": "Hoe Twitch-speler automatisch opnieuw te laden na een fout",
@@ -468,7 +468,7 @@
     "faq": []
   },
   "hi": {
-    "slug": "ट्विच-ऑटो-रीफ्रेश",
+    "slug": "Twitch-ऑटो-रीफ्रेश",
     "linkLabel": "ऑटो-रिफ्रेश ट्विच",
     "title": "ऑटो-रिफ्रेश ट्विच: प्लेयर को स्वचालित रूप से पुनः लॉन्च करें",
     "h1": "किसी त्रुटि के बाद ट्विच प्लेयर को स्वचालित रूप से पुनः लोड कैसे करें",
@@ -546,8 +546,8 @@
     "faq": []
   },
   "cs": {
-    "slug": "škubnutí-automatické obnovení",
-    "linkLabel": "Automatické obnovení škubnutí",
+    "slug": "Twitch-automatické-obnovení",
+    "linkLabel": "Automatické obnovení Twitch",
     "title": "Auto-Refresh Twitch: Automaticky znovu spusťte přehrávač",
     "h1": "Jak automaticky znovu načíst přehrávač Twitch po chybě",
     "description": "Nikdy nezmeškejte okamžik svých oblíbených streamů. Přečtěte si, jak automaticky znovu načíst Twitch Player po chybě 2000 nebo černé obrazovce.",

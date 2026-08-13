@@ -1,6 +1,6 @@
 {
   "es": {
-    "slug": "panel-de-control-twitch-expulsión",
+    "slug": "panel-de-control-Twitch-Kick",
     "linkLabel": "Panel de control unificado de Twitch y Kick",
     "title": "Panel de control unificado de Twitch y Kick | StreamPulse",
     "h1": "Panel de control unificado de Twitch y Kick",
@@ -45,7 +45,7 @@
     ]
   },
   "pt-BR": {
-    "slug": "painel-twitch-expulsão",
+    "slug": "painel-Twitch-Kick",
     "linkLabel": "Painel unificado do Twitch e do Kick",
     "title": "Painel unificado do Twitch e do Kick | StreamPulse",
     "h1": "Painel unificado do Twitch e do Kick",
@@ -270,7 +270,7 @@
     ]
   },
   "ru": {
-    "slug": "панель управления-Twitch-исключение",
+    "slug": "панель-управления-Twitch-Kick",
     "linkLabel": "Объединенная панель управления Twitch и Kick",
     "title": "Объединенная панель управления Twitch и Kick | StreamPulse",
     "h1": "Объединенная панель управления Twitch и Kick",
@@ -315,7 +315,7 @@
     ]
   },
   "ja": {
-    "slug": "ダッシュボード-Twitch-キック",
+    "slug": "ダッシュボード-Twitch-Kick",
     "linkLabel": "TwitchとKickの統合ダッシュボード",
     "title": "TwitchとKickの統合ダッシュボード | StreamPulse",
     "h1": "TwitchとKickの統合ダッシュボード",
@@ -360,7 +360,7 @@
     ]
   },
   "ko": {
-    "slug": "대시보드-트위치-추방",
+    "slug": "대시보드-Twitch-Kick",
     "linkLabel": "통합된 Twitch 및 Kick 대시보드",
     "title": "통합된 Twitch 및 Kick 대시보드 | StreamPulse",
     "h1": "통합된 Twitch 및 Kick 대시보드",

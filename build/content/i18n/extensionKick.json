@@ -1,6 +1,6 @@
 {
   "es": {
-    "slug": "patada de extensión",
+    "slug": "extensión-Kick",
     "linkLabel": "Extensión Kick para espectadores",
     "title": "Extensión Kick para espectadores | StreamPulse",
     "h1": "Extensión Kick para espectadores",
@@ -13,7 +13,7 @@
         "answer": "StreamPulse es compatible con las funciones clave de Kick: notificaciones en directo, recompensas de canal, filtros de chat y seguimiento del tiempo de visualización. El panel de control de StreamPulse muestra los canales de Twitch y Kick en una interfaz unificada.",
         "list": [
           "<strong>Notificaciones en directo de Kick.</strong> Alertas en el escritorio en tiempo real en cuanto un streamer al que sigues empieza a retransmitir en directo en Kick.",
-          "<strong>Recompensas de cadena.</strong> Recogida automática de las recompensas de la cadena Kick cuando estén disponibles.",
+          "<strong>Recompensas de canal.</strong> Recogida automática de las recompensas de el canal Kick cuando estén disponibles.",
           "<strong>Filtros de chat de Kick.</strong> Oculta el spam y las palabras clave no deseadas en el chat de Kick.",
           "<strong>Seguimiento del tiempo de visualización.</strong> Contador preciso del tiempo dedicado a cada canal Kick del que se realiza un seguimiento."
         ]
@@ -45,7 +45,7 @@
     ]
   },
   "pt-BR": {
-    "slug": "chute de extensão",
+    "slug": "extensão-Kick",
     "linkLabel": "Extensão Kick para espectadores",
     "title": "Extensão Kick para espectadores | StreamPulse",
     "h1": "Extensão Kick para espectadores",
@@ -58,7 +58,7 @@
         "answer": "O StreamPulse oferece suporte aos principais recursos do Kick: notificações em tempo real, recompensas de canal, filtros de chat e acompanhamento do tempo de exibição. O painel do StreamPulse exibe os canais do Twitch e do Kick em uma interface unificada.",
         "list": [
           "<strong>Notificações ao vivo do Kick.</strong> Alertas na área de trabalho em tempo real assim que um streamer que você segue entra ao vivo no Kick.",
-          "<strong>Recompensas da cadeia.</strong> Recuperação automática das recompensas da cadeia Kick assim que estiverem disponíveis.",
+          "<strong>Recompensas do canal.</strong> Recuperação automática das recompensas do canal Kick assim que estiverem disponíveis.",
           "<strong>Filtros de chat do Kick.</strong> Oculte spams e palavras-chave indesejadas no chat do Kick.",
           "<strong>Acompanhamento do tempo de exibição.</strong> Contador preciso do tempo gasto em cada canal Kick monitorado."
         ]
@@ -103,7 +103,7 @@
         "answer": "StreamPulse unterstützt die wichtigsten Funktionen von Kick: Live-Benachrichtigungen, Kanalbelohnungen, Chat-Filter und die Erfassung der Sehdauer. Das Dashboard von StreamPulse zeigt Twitch- und Kick-Kanäle in einer einheitlichen Benutzeroberfläche an.",
         "list": [
           "<strong>Live-Benachrichtigungen von Kick.</strong> Desktop-Benachrichtigungen in Echtzeit, sobald ein von dir verfolgter Streamer auf Kick live geht.",
-          "<strong>Kettenbelohnungen.</strong> Automatisches Abrufen der Kick-Kettenbelohnungen, sobald diese verfügbar sind.",
+          "<strong>Kanalpunkte-Belohnungen.</strong> Automatisches Abrufen der Kick-Kanalpunkte-Belohnungen, sobald diese verfügbar sind.",
           "<strong>Kick-Chat-Filter.</strong> Blenden Sie Spam und unerwünschte Schlüsselwörter im Kick-Chat aus.",
           "<strong>Erfassung der Sehdauer.</strong> Präziser Zähler für die Zeit, die auf jedem verfolgten Kick-Kanal verbracht wurde."
         ]
@@ -135,7 +135,7 @@
     ]
   },
   "it": {
-    "slug": "calcio di prolunga",
+    "slug": "estensione-Kick",
     "linkLabel": "Estensione Kick per gli spettatori",
     "title": "Estensione Kick per gli spettatori | StreamPulse",
     "h1": "Estensione Kick per gli spettatori",
@@ -148,7 +148,7 @@
         "answer": "StreamPulse supporta le funzionalità principali di Kick: notifiche in tempo reale, ricompense per i canali, filtri di chat e monitoraggio del tempo di visione. La dashboard di StreamPulse mostra i canali Twitch e Kick in un'unica interfaccia.",
         "list": [
           "<strong>Notifiche live su Kick.</strong> Avvisi in tempo reale sul desktop non appena uno streamer seguito va in diretta su Kick.",
-          "<strong>Ricompense di catena.</strong> Recupero automatico delle ricompense di catena Kick non appena disponibili.",
+          "<strong>Ricompense di canale.</strong> Recupero automatico delle ricompense del canale Kick non appena disponibili.",
           "<strong>Filtri per la chat di Kick.</strong> Nascondi lo spam e le parole chiave indesiderate nella chat di Kick.",
           "<strong>Monitoraggio del tempo di visione.</strong> Contatore preciso del tempo trascorso su ciascun canale Kick monitorato."
         ]
@@ -180,7 +180,7 @@
     ]
   },
   "pl": {
-    "slug": "kopnięcie z wyskoku",
+    "slug": "rozszerzenie-Kick",
     "linkLabel": "Rozszerzenie Kick dla widzów",
     "title": "Rozszerzenie Kick dla widzów | StreamPulse",
     "h1": "Rozszerzenie Kick dla widzów",
@@ -193,7 +193,7 @@
         "answer": "StreamPulse obsługuje kluczowe funkcje serwisu Kick: powiadomienia na żywo, nagrody dla kanałów, filtry czatu oraz śledzenie czasu oglądania. Pulpit nawigacyjny StreamPulse wyświetla kanały Twitch i Kick w ujednoliconym interfejsie.",
         "list": [
           "<strong>Powiadomienia na żywo z serwisu Kick.</strong> Powiadomienia na pulpicie w czasie rzeczywistym, gdy tylko obserwowany streamer rozpocznie transmisję na żywo w serwisie Kick.",
-          "<strong>Nagrody za udział w łańcuchu.</strong> Automatyczne pobieranie nagród z łańcucha Kick, gdy tylko staną się dostępne.",
+          "<strong>Nagrody za udział na kanale.</strong> Automatyczne pobieranie nagród z kanału Kick, gdy tylko staną się dostępne.",
           "<strong>Filtry czatu Kick.</strong> Ukryj spam i niepożądane słowa kluczowe w czacie Kick.",
           "<strong>Monitorowanie czasu oglądania.</strong> Precyzyjny licznik czasu spędzonego na każdym śledzonym kanale Kick."
         ]
@@ -225,7 +225,7 @@
     ]
   },
   "tr": {
-    "slug": "uzatma-tekmesi",
+    "slug": "Kick-eklentisi",
     "linkLabel": "Kick seyirci eklentisi",
     "title": "Kick izleyici eklentisi | StreamPulse",
     "h1": "Kick seyirci eklentisi",
@@ -238,7 +238,7 @@
         "answer": "StreamPulse, Kick’in temel özelliklerini destekler: canlı bildirimler, kanal ödülleri, sohbet filtreleri ve izleme süresi takibi. StreamPulse’un kontrol paneli, Twitch ve Kick kanallarını tek bir arayüzde gösterir.",
         "list": [
           "<strong>Kick canlı bildirimleri.</strong> Takip ettiğiniz bir yayıncı Kick'te canlı yayına başladığında anında masaüstü uyarıları alırsınız.",
-          "<strong>Zincir ödülleri.</strong> Kick zincir ödülleri mevcut olduğunda otomatik olarak alınır.",
+          "<strong>Kanal ödülleri.</strong> Kick kanal puanı ödülleri mevcut olduğunda otomatik olarak alınır.",
           "<strong>Kick sohbet filtreleri.</strong> Kick sohbetinde spam mesajları ve istenmeyen anahtar kelimeleri gizleyin.",
           "<strong>İzleme süresinin takibi.</strong> İzlenen her bir Kick kanalında geçirilen sürenin hassas sayacı."
         ]
@@ -270,7 +270,7 @@
     ]
   },
   "ru": {
-    "slug": "удар с отскоком",
+    "slug": "расширение-Kick",
     "linkLabel": "Расширение Kick для зрителей",
     "title": "Расширение Kick для зрителей | StreamPulse",
     "h1": "Расширение Kick для зрителей",
@@ -315,7 +315,7 @@
     ]
   },
   "ja": {
-    "slug": "エクステンション・キック",
+    "slug": "Kick拡張機能",
     "linkLabel": "観客向け「Kick」拡張機能",
     "title": "視聴者向け「Kick」拡張機能 | StreamPulse",
     "h1": "観客向け「Kick」拡張機能",
@@ -328,7 +328,7 @@
         "answer": "StreamPulseは、Kickの主要機能であるライブ通知、チャンネル報酬、チャットフィルター、視聴時間の追跡に対応しています。StreamPulseのダッシュボードでは、TwitchとKickのチャンネルが統合されたインターフェースで表示されます。",
         "list": [
           "<strong>Kickのライブ通知。</strong>フォローしているストリーマーがKickでライブ配信を開始すると、すぐにデスクトップにリアルタイムで通知が届きます。",
-          "<strong>チェーン報酬。</strong>Kickのチェーン報酬が利用可能になると、自動的に受け取ることができます。",
+          "<strong>チャンネル報酬。</strong>Kickのチャンネル報酬が利用可能になると、自動的に受け取ることができます。",
           "<strong>Kickのチャットフィルター。</strong>Kickのチャットでスパムや不要なキーワードを非表示にします。",
           "<strong>視聴時間の追跡。</strong>追跡対象の各Kickチャンネルでの視聴時間を正確に計測します。"
         ]
@@ -360,7 +360,7 @@
     ]
   },
   "ko": {
-    "slug": "익스텐션 킥",
+    "slug": "Kick-확장-프로그램",
     "linkLabel": "관람객용 Kick 확장 기능",
     "title": "시청자용 Kick 확장 기능 | StreamPulse",
     "h1": "관람객용 Kick 확장 기능",
@@ -373,7 +373,7 @@
         "answer": "StreamPulse는 Kick의 주요 기능인 실시간 알림, 채널 보상, 채팅 필터, 시청 시간 추적 등을 지원합니다. StreamPulse의 대시보드에서는 Twitch와 Kick 채널을 통합된 인터페이스로 확인할 수 있습니다.",
         "list": [
           "<strong>Kick 실시간 알림.</strong> 팔로우 중인 스트리머가 Kick에서 라이브 방송을 시작하면 즉시 데스크톱으로 실시간 알림을 받아보세요.",
-          "<strong>체인 보상.</strong> Kick 체인 보상이 제공될 때 자동으로 수령합니다.",
+          "<strong>채널 포인트 보상.</strong> Kick 채널 포인트 보상이 제공될 때 자동으로 수령합니다.",
           "<strong>Kick 채팅 필터.</strong> Kick 채팅에서 스팸과 원치 않는 키워드를 숨기세요.",
           "<strong>시청 시간 추적.</strong> 추적 중인 각 Kick 채널에서 보낸 시간을 정확하게 집계합니다."
         ]
@@ -418,7 +418,7 @@
         "answer": "StreamPulse mendukung fitur-fitur utama Kick: notifikasi langsung, hadiah saluran, filter obrolan, dan pelacakan waktu menonton. Dasbor StreamPulse menampilkan saluran Twitch dan Kick dalam satu antarmuka terpadu.",
         "list": [
           "<strong>Pemberitahuan langsung Kick.</strong> Pemberitahuan di desktop secara real-time begitu seorang streamer yang Anda ikuti mulai siaran langsung di Kick.",
-          "<strong>Hadiah rantai.</strong> Pengambilan otomatis hadiah rantai Kick saat tersedia.",
+          "<strong>Hadiah Poin Channel.</strong> Pengambilan otomatis hadiah Poin Channel Kick saat tersedia.",
           "<strong>Filter obrolan Kick.</strong> Sembunyikan spam dan kata kunci yang tidak diinginkan dalam obrolan Kick.",
           "<strong>Pemantauan durasi menonton.</strong> Penghitung yang akurat untuk waktu yang dihabiskan di setiap saluran Kick yang dipantau."
         ]
@@ -450,7 +450,7 @@
     ]
   },
   "nl": {
-    "slug": "uitbreidingsschop",
+    "slug": "Kick-extensie",
     "linkLabel": "Kick-uitbreiding voor toeschouwers",
     "title": "Kick-extensie voor kijkers | StreamPulse",
     "h1": "Kick-uitbreiding voor toeschouwers",
@@ -463,7 +463,7 @@
         "answer": "StreamPulse ondersteunt de belangrijkste functies van Kick: live-meldingen, kanaalbeloningen, chatfilters en het bijhouden van de kijktijd. Het dashboard van StreamPulse geeft Twitch- en Kick-kanalen weer in één geïntegreerde interface.",
         "list": [
           "<strong>Live-meldingen van Kick.</strong> Real-time meldingen op je desktop zodra een streamer die je volgt live gaat op Kick.",
-          "<strong>Ketenbeloningen.</strong> Automatisch ophalen van Kick-ketenbeloningen zodra deze beschikbaar zijn.",
+          "<strong>Kanaalpuntenbeloningen.</strong> Automatisch ophalen van Kick-kanaalpuntenbeloningen zodra deze beschikbaar zijn.",
           "<strong>Kick-chatfilters.</strong> Verberg spam en ongewenste trefwoorden in de Kick-chat.",
           "<strong>Bijhouden van de kijktijd.</strong> Nauwkeurige teller van de tijd die op elk gevolgd Kick-kanaal is doorgebracht."
         ]
@@ -495,7 +495,7 @@
     ]
   },
   "sv": {
-    "slug": "förlängningsspark",
+    "slug": "Kick-tillägg",
     "linkLabel": "Kick-tillägg för åskådare",
     "title": "Kick-tillägg för tittare | StreamPulse",
     "h1": "Kick-tillägg för åskådare",
@@ -508,7 +508,7 @@
         "answer": "StreamPulse stöder de viktigaste funktionerna i Kick: live-notiser, kanalbelöningar, chattfilter och spårning av visningstid. StreamPulse-instrumentpanelen visar Twitch- och Kick-kanaler i ett samlat gränssnitt.",
         "list": [
           "<strong>Live-meddelanden från Kick.</strong> Real-time-aviseringar på datorn så fort en streamer du följer går live på Kick.",
-          "<strong>Kedjebelöningar.</strong> Automatisk hämtning av Kick-kedjebelöningar när de blir tillgängliga.",
+          "<strong>Kanalpoängbelöningar.</strong> Automatisk hämtning av Kick-kanalpoängbelöningar när de blir tillgängliga.",
           "<strong>Kick-chattfilter.</strong> Dölj spam och oönskade nyckelord i Kick-chatten.",
           "<strong>Uppföljning av tittartid.</strong> Exakt mätning av den tid som tillbringats på varje Kick-kanal som följs."
         ]
@@ -540,7 +540,7 @@
     ]
   },
   "cs": {
-    "slug": "prodloužený kop",
+    "slug": "rozšíření-Kick",
     "linkLabel": "Doplněk Kick pro diváky",
     "title": "Doplněk Kick pro diváky | StreamPulse",
     "h1": "Doplněk Kick pro diváky",
@@ -553,7 +553,7 @@
         "answer": "StreamPulse podporuje klíčové funkce platformy Kick: živá oznámení, odměny pro kanály, filtry chatu a sledování doby sledování. Na ovládacím panelu StreamPulse se kanály Twitch a Kick zobrazují v jednotném rozhraní.",
         "list": [
           "<strong>Živé notifikace z Kicku.</strong> Upozornění na ploše v reálném čase, jakmile streamer, kterého sledujete, spustí živé vysílání na Kicku.",
-          "<strong>Odměny za řetězec.</strong> Automatické získávání odměn za řetězec Kick, jakmile jsou k dispozici.",
+          "<strong>Odměny za kanál.</strong> Automatické získávání odměn za kanál Kick, jakmile jsou k dispozici.",
           "<strong>Filtry chatu Kick.</strong> Skryjte spam a nežádoucí klíčová slova v chatu Kick.",
           "<strong>Sledování doby sledování.</strong> Přesný měřič času stráveného na každém sledovaném kanálu Kick."
         ]

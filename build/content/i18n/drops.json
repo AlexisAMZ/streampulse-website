@@ -45,7 +45,7 @@
         "answer": "La causa más frecuente es que la cuenta no esté vinculada al editor del juego. Le sigue el hecho de ver un canal sin la indicación «Drops activados» y, a continuación, una campaña que ya ha finalizado.",
         "list": [
           "Cuenta de Twitch no vinculada al editor: no hay progreso registrado.",
-          "Cadena sin «Drops» activados, ni siquiera en el juego correcto.",
+          "Canal sin «Drops» activados, ni siquiera en el juego correcto.",
           "Campaña caducada: el progreso ya no cuenta.",
           "Recompensa obtenida pero que nunca se ha reclamado en el inventario."
         ]
@@ -62,8 +62,8 @@
         "a": "Sí, el tiempo de visualización se contabiliza independientemente del volumen del audio."
       },
       {
-        "q": "¿Puedo acumular Drops en varias cadenas?",
-        "a": "Por lo general, la progresión está vinculada a la campaña y no a una cadena concreta, pero cada editor establece sus propias reglas."
+        "q": "¿Puedo acumular Drops en varios canales?",
+        "a": "Por lo general, la progresión está vinculada a la campaña y no a un canal concreto, pero cada editor establece sus propias reglas."
       },
       {
         "q": "¿Ofrece Kick algo equivalente a los Drops?",
@@ -207,7 +207,7 @@
       },
       {
         "q": "Kann ich Drops auf mehreren Kanälen sammeln?",
-        "a": "Im Allgemeinen hängt der Fortschritt von der Kampagne ab und nicht von einer bestimmten Kette, aber jeder Herausgeber legt seine eigenen Regeln fest."
+        "a": "Im Allgemeinen hängt der Fortschritt von der Kampagne ab und nicht von einem bestimmten Kanal, aber jeder Herausgeber legt seine eigenen Regeln fest."
       },
       {
         "q": "Bietet Kick eine Entsprechung zu den Drops an?",
@@ -261,7 +261,7 @@
         "answer": "La causa più frequente è un account non collegato all'editore del gioco. Segue poi la visione di un canale senza l'indicazione «Drops attivati», e infine una campagna già terminata.",
         "list": [
           "Account Twitch non collegato all'editore: nessun progresso registrato.",
-          "Catena senza Drops attivati, anche nel gioco corretto.",
+          "Canale senza Drops attivati, anche nel gioco corretto.",
           "Campagna scaduta: i progressi non contano più.",
           "Ricompensa ottenuta ma mai ritirata dall'inventario."
         ]
@@ -278,8 +278,8 @@
         "a": "Sì, il tempo di visione viene conteggiato indipendentemente dal volume dell'audio."
       },
       {
-        "q": "Posso accumulare Drops su più catene?",
-        "a": "In generale, l'avanzamento è legato alla campagna e non a una catena specifica, ma ogni editore stabilisce le proprie regole."
+        "q": "Posso accumulare Drops su più canali?",
+        "a": "In generale, l'avanzamento è legato alla campagna e non a un canale specifico, ma ogni editore stabilisce le proprie regole."
       },
       {
         "q": "Kick offre un equivalente dei Drops?",
@@ -288,7 +288,7 @@
     ]
   },
   "pl": {
-    "slug": "automatyczne dropy na Twitchu",
+    "slug": "automatyczne-dropy-na-Twitchu",
     "linkLabel": "Automatyczne odbieranie nagród z Twitch Drops",
     "title": "Automatyczne Twitch Drops | StreamPulse",
     "h1": "Automatyczne odbieranie nagród z Twitch Drops",
@@ -333,7 +333,7 @@
         "answer": "Najczęstszą przyczyną jest konto niepowiązane z wydawcą gry. Kolejną przyczyną jest oglądanie kanału bez oznaczenia „Drops aktywowane”, a następnie kampania, która już się zakończyła.",
         "list": [
           "Konto Twitch niepowiązane z wydawcą: brak zapisanych postępów.",
-          "Łańcuch bez aktywowanych Dropsów, nawet w prawidłowej grze.",
+          "Kanał bez aktywowanych Dropsów, nawet w prawidłowej grze.",
           "Kampania zakończona: postępy już się nie liczą.",
           "Nagroda zdobyta, ale nigdy nie odebrana z ekwipunku."
         ]
@@ -350,7 +350,7 @@
         "a": "Tak, czas odtwarzania jest rejestrowany niezależnie od głośności."
       },
       {
-        "q": "Czy mogę gromadzić Dropsy na kilku łańcuchach?",
+        "q": "Czy mogę gromadzić Dropsy na kilku kanałach?",
         "a": "Zazwyczaj postępy są powiązane z kampanią, a nie z konkretnym kanałem, ale każdy wydawca ustala własne zasady."
       },
       {
@@ -360,7 +360,7 @@
     ]
   },
   "tr": {
-    "slug": "otomatik twitch-drops",
+    "slug": "otomatik-twitch-drops",
     "linkLabel": "Twitch Drops’u otomatik olarak almak",
     "title": "Otomatik Twitch Drops | StreamPulse",
     "h1": "Twitch Drops'larını otomatik olarak almak",
@@ -422,7 +422,7 @@
         "a": "Evet, izleme süresi ses seviyesinden bağımsız olarak hesaplanır."
       },
       {
-        "q": "Birden fazla zincirde Drops biriktirebilir miyim?",
+        "q": "Birden fazla kanalda Drops biriktirebilir miyim?",
         "a": "Genel olarak ilerleme, kampanyaya bağlıdır ve belirli bir kanalla ilgili değildir; ancak her yayıncı kendi kurallarını belirler."
       },
       {
@@ -432,7 +432,7 @@
     ]
   },
   "ru": {
-    "slug": "автоматические подарки в Twitch",
+    "slug": "автоматические-подарки-в-Twitch",
     "linkLabel": "Автоматически получать Twitch Drops",
     "title": "Автоматические Twitch Drops | StreamPulse",
     "h1": "Автоматическое получение Twitch Drops",
@@ -549,7 +549,7 @@
         "answer": "最も多い原因は、ゲームのパブリッシャーと紐付けられていないアカウントです。次に、「ドロップ有効」と表示されていないチャンネルを視聴した場合、そしてすでに終了したキャンペーンが挙げられます。",
         "list": [
           "Twitchアカウントがパブリッシャーと紐付けられていない場合：進行状況は保存されません。",
-          "「Drops」が有効になっていないチェーン。正しいゲームでも同様です。",
+          "「Drops」が有効になっていないチャンネル。正しいゲームでも同様です。",
           "キャンペーン終了：進捗状況は反映されません。",
           "インベントリで獲得したものの、一度も受け取っていない報酬。"
         ]
@@ -566,8 +566,8 @@
         "a": "はい、視聴時間は音声の音量とは関係なく計測されます。"
       },
       {
-        "q": "複数のチェーンでドロップを積み重ねることはできますか？",
-        "a": "一般的に、進捗状況はキャンペーンに関連しており、特定のチェーンには結びついていませんが、各パブリッシャーが独自のルールを定めています。"
+        "q": "複数のチャンネルでドロップを積み重ねることはできますか？",
+        "a": "一般的に、進捗状況はキャンペーンに関連しており、特定のチャンネルには結びついていませんが、各パブリッシャーが独自のルールを定めています。"
       },
       {
         "q": "Kickには「Drops」に相当する機能はありますか？",
@@ -576,7 +576,7 @@
     ]
   },
   "ko": {
-    "slug": "트위치 드롭 자동 설정",
+    "slug": "Twitch-드롭-자동-설정",
     "linkLabel": "Twitch Drops를 자동으로 수령하기",
     "title": "자동 Twitch 드롭 | StreamPulse",
     "h1": "Twitch Drops를 자동으로 수령하기",
@@ -638,7 +638,7 @@
         "a": "네, 시청 시간은 오디오 볼륨과 관계없이 집계됩니다."
       },
       {
-        "q": "여러 체인에서 드롭을 중복으로 적립할 수 있나요?",
+        "q": "여러 채널에서 드롭을 중복으로 적립할 수 있나요?",
         "a": "일반적으로 진행 상황은 캠페인에 따라 결정되며 특정 채널에 연동되지는 않지만, 각 퍼블리셔마다 자체적인 규칙을 정하고 있습니다."
       },
       {
@@ -693,7 +693,7 @@
         "answer": "Penyebab paling umum adalah akun yang tidak terhubung dengan penerbit game. Disusul oleh menonton saluran yang tidak mencantumkan keterangan “Drops diaktifkan”, lalu kampanye yang sudah berakhir.",
         "list": [
           "Akun Twitch yang tidak terhubung dengan penerbit: tidak ada kemajuan yang tercatat.",
-          "Rantai tanpa Drops yang diaktifkan, bahkan saat bermain game yang tepat.",
+          "Channel tanpa Drops yang diaktifkan, bahkan saat bermain game yang tepat.",
           "Kampanye telah berakhir: kemajuan tidak lagi diperhitungkan.",
           "Hadiah yang telah diperoleh tetapi belum pernah diambil dari inventaris."
         ]
@@ -720,7 +720,7 @@
     ]
   },
   "nl": {
-    "slug": "automatische Twitch-drops",
+    "slug": "automatische-Twitch-drops",
     "linkLabel": "Twitch Drops automatisch claimen",
     "title": "Automatische Twitch Drops | StreamPulse",
     "h1": "Je Twitch Drops automatisch claimen",
@@ -765,7 +765,7 @@
         "answer": "De meest voorkomende oorzaak is een account dat niet aan de uitgever van het spel is gekoppeld. Daarna volgt het bekijken van een kanaal zonder de vermelding „Drops geactiveerd”, en ten slotte een campagne die al is afgelopen.",
         "list": [
           "Twitch-account dat niet aan de uitgever is gekoppeld: er is geen voortgang opgeslagen.",
-          "De keten werkt niet, zelfs niet bij het juiste spel.",
+          "Het kanaal werkt niet, zelfs niet bij het juiste spel.",
           "Campagne is verlopen: de voortgang telt niet meer mee.",
           "Een beloning die is verdiend, maar nog nooit is opgeëist in de inventaris."
         ]
@@ -792,7 +792,7 @@
     ]
   },
   "sv": {
-    "slug": "automatiska Twitch-drops",
+    "slug": "automatiska-Twitch-drops",
     "linkLabel": "Hämta Twitch Drops automatiskt",
     "title": "Automatiska Twitch Drops | StreamPulse",
     "h1": "Hämta sina Twitch Drops automatiskt",
@@ -864,7 +864,7 @@
     ]
   },
   "cs": {
-    "slug": "automatické twitch-drops",
+    "slug": "automatické-twitch-drops",
     "linkLabel": "Automatické získávání Twitch Drops",
     "title": "Automatické Twitch Drops | StreamPulse",
     "h1": "Automatické získávání Twitch Drops",
@@ -909,7 +909,7 @@
         "answer": "Nejčastější příčinou je účet, který není propojen s vydavatelem hry. Dalším důvodem je sledování kanálu bez označení „Drops aktivovány“ a dále již ukončená kampaň.",
         "list": [
           "Účet na Twitchi není propojen s vydavatelem: není zaznamenán žádný postup ve hře.",
-          "Řetězec bez aktivovaných Drops, a to i v případě správné hry.",
+          "Kanál bez aktivovaných Drops, a to i v případě správné hry.",
           "Kampaň již skončila: pokrok se již nezapočítává.",
           "Odměna, kterou jste získali, ale nikdy si ji nevyzvedli v inventáři."
         ]
@@ -926,8 +926,8 @@
         "a": "Ano, doba přehrávání se zaznamenává nezávisle na hlasitosti zvuku."
       },
       {
-        "q": "Mohu sbírat Drops na více řetězcích?",
-        "a": "Obecně platí, že postup v rámci hry souvisí s kampaní, nikoli s konkrétním řetězcem, ale každý vydavatel si stanovuje vlastní pravidla."
+        "q": "Mohu sbírat Drops na více kanálech?",
+        "a": "Obecně platí, že postup v rámci hry souvisí s kampaní, nikoli s konkrétním kanálem, ale každý vydavatel si stanovuje vlastní pravidla."
       },
       {
         "q": "Nabízí Kick něco podobného jako Drops?",

@@ -1,6 +1,6 @@
 {
   "es": {
-    "slug": "extensión-notificaciones-de-patada",
+    "slug": "extensión-notificaciones-Kick",
     "linkLabel": "Extensión Kick: seguir a tus streamers",
     "title": "Extension Kick: notificaciones en directo | StreamPulse",
     "h1": "Seguir a tus streamers de Kick con una extensión del navegador",
@@ -23,7 +23,7 @@
       {
         "id": "limites",
         "h2": "¿Qué funciones están limitadas en Kick?",
-        "answer": "Kick no cuenta con un sistema de puntos de cadena, ni con «Drops», ni con predicciones equivalentes a las de Twitch. Por lo tanto, las funciones de automatización de StreamPulse relacionadas con estas mecánicas solo se aplican a Twitch.",
+        "answer": "Kick no cuenta con un sistema de puntos del canal, ni con «Drops», ni con predicciones equivalentes a las de Twitch. Por lo tanto, las funciones de automatización de StreamPulse relacionadas con estas mecánicas solo se aplican a Twitch.",
         "table": {
           "head": [
             "Funcionalidad",
@@ -42,7 +42,7 @@
               "Sí"
             ],
             [
-              "Puntos de cadena para automóviles",
+              "Puntos del canal para automóviles",
               "Sí",
               "No aplicable"
             ],
@@ -76,7 +76,7 @@
         "a": "Sí, para consultar el estado en tiempo real no es necesario estar conectado."
       },
       {
-        "q": "¿Tendrá Kick los eslabones de la cadena?",
+        "q": "¿Tendrá Kick los eslabones del canal?",
         "a": "Hasta la fecha no existe ningún sistema equivalente; el servicio técnico lo incorporaría si la plataforma introdujera uno."
       },
       {
@@ -86,7 +86,7 @@
     ]
   },
   "pt-BR": {
-    "slug": "extensão-notificações-por-chute",
+    "slug": "extensão-notificações-Kick",
     "linkLabel": "Extensão Kick: acompanhar seus streamers",
     "title": "Extension Kick: notificações de transmissões ao vivo | StreamPulse",
     "h1": "Acompanhar seus streamers do Kick com uma extensão de navegador",
@@ -162,7 +162,7 @@
         "a": "Sim, o acompanhamento do status em tempo real não requer nenhuma conexão."
       },
       {
-        "q": "Será que o Kick vai conseguir os pontos de cadeia?",
+        "q": "Será que o Kick vai conseguir os pontos do canal?",
         "a": "Até o momento, não existe nenhum sistema equivalente; o suporte seria disponibilizado caso a plataforma introduzisse um."
       },
       {
@@ -172,7 +172,7 @@
     ]
   },
   "de": {
-    "slug": "Erweiterung „Kick-Benachrichtigungen“",
+    "slug": "Erweiterung-Kick-Benachrichtigungen",
     "linkLabel": "Erweiterung „Kick“: Den eigenen Streamern folgen",
     "title": "Extension Kick: Live-Benachrichtigungen | StreamPulse",
     "h1": "Kick-Streamer mit einer Browser-Erweiterung verfolgen",
@@ -214,7 +214,7 @@
               "Ja"
             ],
             [
-              "Automatische Kettenstiche",
+              "Automatische Kanalpunkte",
               "Ja",
               "Nicht zutreffend"
             ],
@@ -248,7 +248,7 @@
         "a": "Ja, für die Live-Statusabfrage ist keine Anmeldung erforderlich."
       },
       {
-        "q": "Wird Kick die Kettenpunkte bekommen?",
+        "q": "Wird Kick die Kanalpunkte bekommen?",
         "a": "Bislang gibt es kein vergleichbares System; die Unterstützung würde folgen, sollte die Plattform ein solches einführen."
       },
       {
@@ -258,7 +258,7 @@
     ]
   },
   "it": {
-    "slug": "estensione-notifiche-a-calcio",
+    "slug": "estensione-notifiche-Kick",
     "linkLabel": "Estensione Kick: seguire i propri streamer",
     "title": "Extension Kick: notifiche in diretta | StreamPulse",
     "h1": "Seguire i propri streamer su Kick con un'estensione del browser",
@@ -281,7 +281,7 @@
       {
         "id": "limites",
         "h2": "Quali funzionalità sono limitate su Kick?",
-        "answer": "Kick non dispone né di un sistema di punti catena, né di Drops, né di previsioni equivalenti a quelle di Twitch. Le funzioni di automazione di StreamPulse relative a queste meccaniche si applicano quindi solo a Twitch.",
+        "answer": "Kick non dispone né di un sistema di punti canale, né di Drops, né di previsioni equivalenti a quelle di Twitch. Le funzioni di automazione di StreamPulse relative a queste meccaniche si applicano quindi solo a Twitch.",
         "table": {
           "head": [
             "Funzionalità",
@@ -300,7 +300,7 @@
               "Sì"
             ],
             [
-              "Punti a catenella",
+              "Punti a canale",
               "Sì",
               "Non applicabile"
             ],
@@ -334,7 +334,7 @@
         "a": "Sì, per seguire lo stato in tempo reale non è necessaria alcuna connessione."
       },
       {
-        "q": "Kick avrà i punti catena?",
+        "q": "Kick avrà i punti canale?",
         "a": "Ad oggi non esiste alcun sistema equivalente; l'assistenza lo seguirebbe qualora la piattaforma ne introducesse uno."
       },
       {
@@ -344,7 +344,7 @@
     ]
   },
   "pl": {
-    "slug": "rozszerzenie-powiadomienia-o-kopnięciach",
+    "slug": "rozszerzenie-powiadomienia-Kick",
     "linkLabel": "Rozszerzenie Kick: śledź swoich streamerów",
     "title": "Extension Kick: powiadomienia na żywo | StreamPulse",
     "h1": "Śledź swoich streamerów z serwisu Kick za pomocą rozszerzenia przeglądarki",
@@ -367,7 +367,7 @@
       {
         "id": "limites",
         "h2": "Jakie funkcje są ograniczone w aplikacji Kick?",
-        "answer": "Kick nie posiada ani systemu punktów łańcuchowych, ani Dropsów, ani funkcji przewidywania podobnych do tych na Twitchu. Funkcje automatyzacji StreamPulse związane z tymi mechanizmami mają zatem zastosowanie wyłącznie na Twitchu.",
+        "answer": "Kick nie posiada ani systemu punktów kanału, ani Dropsów, ani funkcji przewidywania podobnych do tych na Twitchu. Funkcje automatyzacji StreamPulse związane z tymi mechanizmami mają zatem zastosowanie wyłącznie na Twitchu.",
         "table": {
           "head": [
             "Funkcjonalność",
@@ -386,7 +386,7 @@
               "Tak"
             ],
             [
-              "Automatyczne punkty łańcuchowe",
+              "Automatyczne punkty kanału",
               "Tak",
               "Nie dotyczy"
             ],
@@ -420,7 +420,7 @@
         "a": "Tak, śledzenie statusu na żywo nie wymaga połączenia z internetem."
       },
       {
-        "q": "Czy Kick zdobędzie punkty za łańcuch?",
+        "q": "Czy Kick zdobędzie punkty na kanał?",
         "a": "Jak dotąd nie istnieje żaden podobny system; gdyby platforma wprowadziła taki system, zapewniono by dla niego wsparcie."
       },
       {
@@ -430,7 +430,7 @@
     ]
   },
   "tr": {
-    "slug": "uzantı-tekme-bildirimleri",
+    "slug": "Kick-bildirimleri-eklentisi",
     "linkLabel": "Kick Eklentisi: Yayıncılarını takip et",
     "title": "Extension Kick: Canlı yayın bildirimleri | StreamPulse",
     "h1": "Bir tarayıcı eklentisiyle Kick yayıncılarını takip etmek",
@@ -453,7 +453,7 @@
       {
         "id": "limites",
         "h2": "Kick'te hangi özellikler sınırlandırılmıştır?",
-        "answer": "Kick'te, Twitch'tekine benzer bir zincir puan sistemi, Drops veya tahminler bulunmamaktadır. Dolayısıyla, bu mekanizmalarla ilgili StreamPulse otomasyon işlevleri yalnızca Twitch için geçerlidir.",
+        "answer": "Kick'te, Twitch'tekine benzer bir kanal puan sistemi, Drops veya tahminler bulunmamaktadır. Dolayısıyla, bu mekanizmalarla ilgili StreamPulse otomasyon işlevleri yalnızca Twitch için geçerlidir.",
         "table": {
           "head": [
             "İşlevsellik",
@@ -472,7 +472,7 @@
               "Evet"
             ],
             [
-              "Otomatik zincir dikişleri",
+              "Otomatik kanal puanları",
               "Evet",
               "Uygulanmaz"
             ],
@@ -506,7 +506,7 @@
         "a": "Evet, canlı durumun takip edilmesi için herhangi bir bağlantı gerekmez."
       },
       {
-        "q": "Kick, zincir puanlarını alacak mı?",
+        "q": "Kick, kanal puanlarını alacak mı?",
         "a": "Şu ana kadar buna eşdeğer bir sistem bulunmamaktadır; platform böyle bir sistem getirirse destek de sağlanacaktır."
       },
       {
@@ -558,7 +558,7 @@
               "Да"
             ],
             [
-              "Автоматические цепные стежки",
+              "Автоматические баллы канала стежки",
               "Да",
               "Не применимо"
             ],
@@ -602,9 +602,9 @@
     ]
   },
   "ja": {
-    "slug": "extension-kick-notifications",
+    "slug": "Kick通知拡張機能",
     "linkLabel": "Kickの拡張機能：お気に入りのストリーマーをフォローする",
-    "title": "エクステンション・キック：ライブ配信の通知 | StreamPulse",
+    "title": "Kick拡張機能：ライブ配信の通知 | StreamPulse",
     "h1": "ブラウザ拡張機能を使ってKickのストリーマーをフォローする",
     "description": "デスクトップでKickのライブ通知を受け取り、タブを開いたままにせずに、1つの拡張機能からKickとTwitchを同時にフォローする方法。",
     "intro": "Kickはストリーミング視聴者層のかなりのシェアを獲得しましたが、そのツール群はTwitchに比べて依然としてはるかに限定的です。多くの視聴者は両プラットフォームでクリエイターをフォローしており、統一されたソリューションがない状況に直面しています。このページでは、現時点で何が可能なのかを解説します。",
@@ -625,7 +625,7 @@
       {
         "id": "limites",
         "h2": "Kickではどのような機能が制限されていますか？",
-        "answer": "Kickには、Twitchのようなチェーンポイントシステムやドロップ、予測機能はありません。したがって、これらの仕組みに関連するStreamPulseの自動化機能は、Twitchにのみ適用されます。",
+        "answer": "Kickには、Twitchのようなチャンネルポイントシステムやドロップ、予測機能はありません。したがって、これらの仕組みに関連するStreamPulseの自動化機能は、Twitchにのみ適用されます。",
         "table": {
           "head": [
             "機能",
@@ -644,7 +644,7 @@
               "はい"
             ],
             [
-              "自動車用チェーンステッチ",
+              "自動車用チャンネルポイント",
               "はい",
               "該当なし"
             ],
@@ -678,7 +678,7 @@
         "a": "はい、ライブステータスの確認にはログインは不要です。"
       },
       {
-        "q": "キックはチェーンポイントを手に入れるだろうか？",
+        "q": "キックはチャンネルポイントを手に入れるだろうか？",
         "a": "現時点では同等のシステムは存在しない。もしこのプラットフォームがそのようなシステムを導入すれば、サポートもそれに追随するだろう。"
       },
       {
@@ -688,9 +688,9 @@
     ]
   },
   "ko": {
-    "slug": "확장 프로그램 킥 알림",
+    "slug": "확장-프로그램-Kick-알림",
     "linkLabel": "Kick 확장 기능: 좋아하는 스트리머 팔로우하기",
-    "title": "익스텐션 킥: 라이브 알림 | StreamPulse",
+    "title": "익스텐션 Kick: 라이브 알림 | StreamPulse",
     "h1": "브라우저 확장 프로그램을 통해 Kick 스트리머를 팔로우하기",
     "description": "탭을 열어두지 않고도 데스크톱에서 Kick 라이브 알림을 받고, 하나의 확장 프로그램으로 Kick과 Twitch를 동시에 시청하는 방법.",
     "intro": "Kick은 스트리밍 시청자층에서 상당한 점유율을 확보했지만, 관련 도구 생태계는 여전히 Twitch에 비해 훨씬 제한적입니다. 많은 시청자들이 두 플랫폼에서 크리에이터를 모두 팔로우하고 있어, 통합된 솔루션을 찾지 못하는 경우가 많습니다. 이 페이지에서는 현재 가능한 기능들을 설명합니다.",
@@ -711,12 +711,12 @@
       {
         "id": "limites",
         "h2": "Kick에서는 어떤 기능이 제한되나요?",
-        "answer": "Kick에는 Twitch와 유사한 체인 포인트 시스템, 드롭, 예측 기능이 없습니다. 따라서 이러한 메커니즘과 관련된 StreamPulse의 자동화 기능은 Twitch에만 적용됩니다.",
+        "answer": "Kick에는 Twitch와 유사한 채널 포인트 시스템, 드롭, 예측 기능이 없습니다. 따라서 이러한 메커니즘과 관련된 StreamPulse의 자동화 기능은 Twitch에만 적용됩니다.",
         "table": {
           "head": [
             "기능",
-            "트위치",
-            "킥"
+            "Twitch",
+            "Kick"
           ],
           "rows": [
             [
@@ -730,7 +730,7 @@
               "네"
             ],
             [
-              "자동 체인 스티치",
+              "자동 채널 포인트",
               "네",
               "해당 없음"
             ],
@@ -764,7 +764,7 @@
         "a": "네, 실시간 상태 확인에는 로그인이 필요하지 않습니다."
       },
       {
-        "q": "킥이 체인 포인트를 얻을 수 있을까요?",
+        "q": "Kick이 채널 포인트를 얻을 수 있을까요?",
         "a": "현재로서는 이와 동등한 시스템이 존재하지 않으며, 플랫폼 측에서 이를 도입한다면 지원도 뒤따를 것입니다."
       },
       {
@@ -816,7 +816,7 @@
               "Ya"
             ],
             [
-              "Titik rantai otomatis",
+              "Poin Channel otomatis",
               "Ya",
               "Tidak berlaku"
             ],
@@ -850,7 +850,7 @@
         "a": "Ya, untuk memantau status siaran langsung, tidak diperlukan koneksi internet."
       },
       {
-        "q": "Apakah Kick akan mendapatkan poin rantai?",
+        "q": "Apakah Kick akan mendapatkan Poin Channel?",
         "a": "Sampai saat ini belum ada sistem serupa; dukungan teknis akan tersedia jika platform tersebut memperkenalkannya."
       },
       {
@@ -883,7 +883,7 @@
       {
         "id": "limites",
         "h2": "Welke functies zijn beperkt op Kick?",
-        "answer": "Kick heeft geen ketenpuntensysteem, geen Drops en geen voorspellingen die vergelijkbaar zijn met die van Twitch. De automatiseringsfuncties van StreamPulse die verband houden met deze mechanismen zijn daarom alleen van toepassing op Twitch.",
+        "answer": "Kick heeft geen kanaalpuntensysteem, geen Drops en geen voorspellingen die vergelijkbaar zijn met die van Twitch. De automatiseringsfuncties van StreamPulse die verband houden met deze mechanismen zijn daarom alleen van toepassing op Twitch.",
         "table": {
           "head": [
             "Functionaliteit",
@@ -902,7 +902,7 @@
               "Ja"
             ],
             [
-              "Autokettingschakels",
+              "Automatische kanaalpunten",
               "Ja",
               "Niet van toepassing"
             ],
@@ -936,7 +936,7 @@
         "a": "Ja, om de live-status te volgen, is geen verbinding nodig."
       },
       {
-        "q": "Zal Kick de kettingpunten krijgen?",
+        "q": "Zal Kick de kanaalpunten krijgen?",
         "a": "Er bestaat op dit moment geen vergelijkbaar systeem; de ondersteuning zou volgen als het platform er een zou invoeren."
       },
       {
@@ -988,7 +988,7 @@
               "Ja"
             ],
             [
-              "Automatiska kedjepunkter",
+              "Automatiska kanalpoäng",
               "Ja",
               "Ej tillämpligt"
             ],
@@ -1022,7 +1022,7 @@
         "a": "Ja, det krävs ingen inloggning för att följa statusen i realtid."
       },
       {
-        "q": "Kommer Kick att få kedjepunkterna?",
+        "q": "Kommer Kick att få kanalpoängen?",
         "a": "Det finns för närvarande inget motsvarande system; supporten skulle följa efter om plattformen införde ett sådant."
       },
       {
@@ -1055,7 +1055,7 @@
       {
         "id": "limites",
         "h2": "Které funkce jsou v aplikaci Kick omezené?",
-        "answer": "Kick nemá ani systém řetězových bodů, ani Drops, ani předpovědi srovnatelné s těmi na Twitchi. Funkce automatizace StreamPulse související s těmito mechanismy se proto vztahují pouze na Twitch.",
+        "answer": "Kick nemá ani systém bodů kanálu, ani Drops, ani předpovědi srovnatelné s těmi na Twitchi. Funkce automatizace StreamPulse související s těmito mechanismy se proto vztahují pouze na Twitch.",
         "table": {
           "head": [
             "Funkce",
@@ -1108,7 +1108,7 @@
         "a": "Ano, sledování aktuálního stavu nevyžaduje žádné připojení."
       },
       {
-        "q": "Bude mít Kick řetězové body?",
+        "q": "Bude mít Kick body kanálu?",
         "a": "V současné době neexistuje žádný obdobný systém; pokud by platforma takový systém zavedla, následovala by i technická podpora."
       },
       {

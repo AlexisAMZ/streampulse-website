@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>통합된 Twitch 및 Kick 대시보드 | StreamPulse</title>
+    <meta name="description" content="StreamPulse 대시보드는 Twitch 및 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 실시간 상태, 알림 및 스트리머에 대한 중앙 집중식 모니터링 기능을 제공합니다." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/ko/대시보드-Twitch-Kick" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/twitch-kick-dashboard" />
+    <link rel="alternate" hreflang="es" href="https://www.streampulse.fr/es/panel-de-control-Twitch-Kick" />
+    <link rel="alternate" hreflang="pt-BR" href="https://www.streampulse.fr/pt-br/painel-Twitch-Kick" />
+    <link rel="alternate" hreflang="de" href="https://www.streampulse.fr/de/Dashboard-Twitch-Kick" />
+    <link rel="alternate" hreflang="it" href="https://www.streampulse.fr/it/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="pl" href="https://www.streampulse.fr/pl/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="tr" href="https://www.streampulse.fr/tr/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="ru" href="https://www.streampulse.fr/ru/панель-управления-Twitch-Kick" />
+    <link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/ダッシュボード-Twitch-Kick" />
+    <link rel="alternate" hreflang="ko" href="https://www.streampulse.fr/ko/대시보드-Twitch-Kick" />
+    <link rel="alternate" hreflang="id" href="https://www.streampulse.fr/id/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="nl" href="https://www.streampulse.fr/nl/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="hi" href="https://www.streampulse.fr/hi/twitch-kick-dashboard" />
+    <link rel="alternate" hreflang="sv" href="https://www.streampulse.fr/sv/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="cs" href="https://www.streampulse.fr/cs/dashboard-twitch-kick" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/dashboard-twitch-kick" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/ko/대시보드-Twitch-Kick" />
+    <meta property="og:title" content="통합된 Twitch 및 Kick 대시보드 | StreamPulse" />
+    <meta property="og:description" content="StreamPulse 대시보드는 Twitch 및 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 실시간 상태, 알림 및 스트리머에 대한 중앙 집중식 모니터링 기능을 제공합니다." />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="통합된 Twitch 및 Kick 대시보드 | StreamPulse" />
+    <meta name="twitter:description" content="StreamPulse 대시보드는 Twitch 및 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 실시간 상태, 알림 및 스트리머에 대한 중앙 집중식 모니터링 기능을 제공합니다." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.streampulse.fr/ko/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "통합된 Twitch 및 Kick 대시보드",
+      "item": "https://www.streampulse.fr/ko/대시보드-Twitch-Kick"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.streampulse.fr/#organization",
+      "name": "StreamPulse",
+      "url": "https://www.streampulse.fr",
+      "logo": "https://www.streampulse.fr/images/logo.png",
+      "sameAs": [
+        "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh",
+        "https://github.com/AlexisAMZ/streampulse-extension",
+        "https://github.com/AlexisAMZ",
+        "https://alternativeto.net/software/streampulse/"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.streampulse.fr/#software",
+      "name": "StreamPulse",
+      "description": "StreamPulse 대시보드는 Twitch 및 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 실시간 상태, 알림 및 스트리머에 대한 중앙 집중식 모니터링 기능을 제공합니다.",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome, Edge, Brave, Opera",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@id": "https://www.streampulse.fr/#organization"
+      },
+      "url": "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "통합된 Twitch 및 Kick 대시보드",
+    "headline": "통합된 Twitch 및 Kick 대시보드",
+    "description": "StreamPulse 대시보드는 Twitch 및 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 실시간 상태, 알림 및 스트리머에 대한 중앙 집중식 모니터링 기능을 제공합니다.",
+    "inLanguage": "ko",
+    "url": "https://www.streampulse.fr/ko/대시보드-Twitch-Kick",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-11",
+    "dateModified": "2026-08-11",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/ko/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "통합된 Twitch 및 Kick 대시보드",
+        "item": "https://www.streampulse.fr/ko/대시보드-Twitch-Kick"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ko",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "대시보드에 Twitch와 Kick이 모두 포함되어 있나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "네. 이 팝업 창에서는 Twitch와 Kick을 통틀어 팔로우 중인 모든 채널과 해당 채널의 실시간 상태를 하나의 인터페이스에서 한눈에 확인할 수 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "대시보드를 사용하려면 계정이 필요한가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "아니요. StreamPulse는 브라우저에서 진행 중인 Twitch 및 Kick 세션을 활용합니다. StreamPulse 계정을 별도로 만들 필요는 없습니다."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/ko" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/ko/#features">Features</a>
+          <a href="/ko/#faq">FAQ</a>
+          <div class="nav-dropdown">
+            <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+            <div class="nav-dropdown-content">
+              <a href="/ko/오류-2000-Twitch-해결-방법">Twitch 오류 2000: 원인 및 해결 방법 | StreamPulse</a>
+              <a href="/ko/오류-3000-Twitch-해결-방법">Twitch 오류 3000: 원인 및 해결 방법 | StreamPulse</a>
+              <a href="/ko/Twitch-드롭-자동-설정">자동 Twitch 드롭 | StreamPulse</a>
+              <a href="/ko/채널-포인트-자동-적립-Twitch">Twitch 자동 채널 포인트 | StreamPulse</a>
+              <a href="/ko/Kick-확장-프로그램">시청자용 Kick 확장 기능 | StreamPulse</a>
+              <a href="/ko/extension-twitch">시청자용 Twitch 확장 프로그램 | StreamPulse</a>
+              <a href="/ko/twitch-채팅-필터링">Twitch 채팅 필터링: 스팸 및 키워드 | StreamPulse</a>
+              <a href="/ko/알림-라이브-Twitch-Kick">Twitch 및 Kick 알림 | StreamPulse</a>
+              <a href="/ko/대시보드-Twitch-Kick">통합된 Twitch 및 Kick 대시보드 | StreamPulse</a>
+              <a href="/ko/Twitch-최고의-확장-프로그램">2026년 최고의 Twitch 확장 프로그램 | StreamPulse</a>
+              <a href="/ko/확장-프로그램-Kick-알림">익스텐션 Kick: 라이브 알림 | StreamPulse</a>
+            </div>
+          </div>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/ko">Home</a> / <span>통합된 Twitch 및 Kick 대시보드</span>
+          </p>
+          <h1>통합된 Twitch 및 Kick 대시보드</h1>
+          <p class="article-lede">StreamPulse 팝업 창은 Twitch와 Kick 채널을 하나의 인터페이스에 통합해 줍니다. 여러 탭을 열지 않고도 누가 어떤 플랫폼에서 얼마나 오랫동안 생방송 중인지 한눈에 확인할 수 있습니다.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 11 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#fonctionnement">대시보드는 어떻게 작동하나요?</a></li>
+          <li><a href="#informations">어떤 정보가 표시되나요?</a></li>
+          <li><a href="#twitch-kick">왜 크로스 플랫폼 대시보드가 필요한가?</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="fonctionnement">대시보드는 어떻게 작동하나요?</h2>
+        <div class="answer-block">
+          <p>대시보드는 확장 프로그램 바에서 StreamPulse 아이콘을 클릭하면 열리는 팝업 창입니다. 이 대시보드는 Twitch 및 Kick API를 조회하여 팔로우 중인 모든 채널의 상태를 실시간으로 표시합니다.</p>
+        </div>
+        <p>별도의 설정이 필요하지 않습니다. StreamPulse는 브라우저에서 진행 중인 Twitch 및 Kick 세션을 바로 활용합니다. 설치가 완료되면 대시보드에 팔로우 중인 채널이 표시됩니다.</p>
+
+        <h2 id="informations">어떤 정보가 표시되나요?</h2>
+        <div class="answer-block">
+          <p>각 라이브 방송에 대해 대시보드에는 스트리머 이름, 플랫폼(Twitch 또는 Kick), 방송 제목, 카테고리, 시청자 수 및 방송 시간이 표시됩니다.</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>스트리머의 이름과 아바타</strong>, 그리고 플랫폼 표시(Twitch 또는 Kick).</li>
+          <li>현재 <strong>스트림 제목</strong> 및 카테고리.</li>
+          <li>실시간 <strong>관객 수</strong>.</li>
+          <li><strong>방송</strong> 시작 이후 현재까지의 <strong>방송 시간</strong>.</li>
+          <li><strong>한 번의 클릭으로</strong> 새 탭에서 스트림을 열 수 <strong>있습니다</strong>.</li>
+        </ul>
+
+        <h2 id="twitch-kick">왜 크로스 플랫폼 대시보드가 필요한가?</h2>
+        <div class="answer-block">
+          <p>점점 더 많은 스트리머들이 Twitch와 Kick에서 동시에 방송하고 있습니다. StreamPulse 대시보드를 사용하면 각 플랫폼을 따로 확인할 필요가 없습니다. 모든 정보가 하나의 화면에서 한눈에 확인됩니다.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>대시보드에 Twitch와 Kick이 모두 포함되어 있나요?</h3>
+            <p>네. 이 팝업 창에서는 Twitch와 Kick을 통틀어 팔로우 중인 모든 채널과 해당 채널의 실시간 상태를 하나의 인터페이스에서 한눈에 확인할 수 있습니다.</p>
+          </div>
+          <div class="faq-item">
+            <h3>대시보드를 사용하려면 계정이 필요한가요?</h3>
+            <p>아니요. StreamPulse는 브라우저에서 진행 중인 Twitch 및 Kick 세션을 활용합니다. StreamPulse 계정을 별도로 만들 필요는 없습니다.</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/ko/오류-2000-Twitch-해결-방법">Twitch 오류 2000: 원인 및 해결 방법 | StreamPulse</a>
+          <a href="/ko/오류-3000-Twitch-해결-방법">Twitch 오류 3000: 원인 및 해결 방법 | StreamPulse</a>
+          <a href="/ko/Twitch-드롭-자동-설정">자동 Twitch 드롭 | StreamPulse</a>
+          <a href="/ko/채널-포인트-자동-적립-Twitch">Twitch 자동 채널 포인트 | StreamPulse</a>
+          <a href="/ko/Kick-확장-프로그램">시청자용 Kick 확장 기능 | StreamPulse</a>
+          <a href="/ko/extension-twitch">시청자용 Twitch 확장 프로그램 | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/ko/twitch-채팅-필터링">Twitch 채팅 필터링: 스팸 및 키워드 | StreamPulse</a>
+          <a href="/ko/알림-라이브-Twitch-Kick">Twitch 및 Kick 알림 | StreamPulse</a>
+          <a href="/ko/대시보드-Twitch-Kick">통합된 Twitch 및 Kick 대시보드 | StreamPulse</a>
+          <a href="/ko/Twitch-최고의-확장-프로그램">2026년 최고의 Twitch 확장 프로그램 | StreamPulse</a>
+          <a href="/ko/확장-프로그램-Kick-알림">익스텐션 Kick: 라이브 알림 | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

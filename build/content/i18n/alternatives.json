@@ -30,7 +30,7 @@
               "StreamPulse"
             ],
             [
-              "Puntos de cadena automáticos",
+              "Puntos del canal automáticos",
               "StreamPulse"
             ],
             [
@@ -53,7 +53,7 @@
         "h2": "BetterTTV: ¿a quién va dirigido?",
         "answer": "BetterTTV es la extensión más instalada del ecosistema de Twitch. Añade emoticonos de la comunidad, herramientas de chat y opciones de interfaz. Es la mejor opción si tu prioridad es el chat y los emoticonos.",
         "body": [
-          "Sin embargo, no admite ni la recuperación automática de puntos de cadena, ni los «drops», ni el seguimiento multiplataforma."
+          "Sin embargo, no admite ni la recuperación automática de puntos del canal, ni los «drops», ni el seguimiento multiplataforma."
         ]
       },
       {
@@ -72,10 +72,10 @@
       {
         "id": "streampulse",
         "h2": "¿Dónde se encuentra StreamPulse?",
-        "answer": "StreamPulse se centra en la automatización más que en la apariencia: notificaciones rápidas de las retransmisiones en directo, puntos de cadena y «Drops» reclamados en segundo plano, recarga del reproductor en caso de error y seguimiento conjunto de Twitch y Kick.",
+        "answer": "StreamPulse se centra en la automatización más que en la apariencia: notificaciones rápidas de las retransmisiones en directo, puntos del canal y «Drops» reclamados en segundo plano, recarga del reproductor en caso de error y seguimiento conjunto de Twitch y Kick.",
         "body": [
           "Si buscas emoticonos, StreamPulse no es la herramienta adecuada y alguna de las tres extensiones mencionadas anteriormente se adaptará mejor a tus necesidades.",
-          "Si pierdes puntos de la cadena, te pierdes el inicio de las retransmisiones en directo o recargas el reproductor varias veces a lo largo de la noche, eso es precisamente lo que cubre esta oferta."
+          "Si pierdes puntos del canal, te pierdes el inicio de las retransmisiones en directo o recargas el reproductor varias veces a lo largo de la noche, eso es precisamente lo que cubre esta oferta."
         ]
       },
       {
@@ -130,7 +130,7 @@
               "StreamPulse"
             ],
             [
-              "Pontos de corrente automáticos",
+              "Pontos do canal automáticos",
               "StreamPulse"
             ],
             [
@@ -153,7 +153,7 @@
         "h2": "BetterTTV: a quem se destina?",
         "answer": "O BetterTTV é a extensão mais instalada do ecossistema do Twitch. Ela adiciona emotes da comunidade, ferramentas de chat e opções de interface. É a melhor opção se sua prioridade for o chat e os emotes.",
         "body": [
-          "Por outro lado, ela não oferece nem a recuperação automática de pontos de cadeia, nem os Drops, nem o acompanhamento multiplataforma."
+          "Por outro lado, ela não oferece nem a recuperação automática de pontos do canal, nem os Drops, nem o acompanhamento multiplataforma."
         ]
       },
       {
@@ -172,10 +172,10 @@
       {
         "id": "streampulse",
         "h2": "Onde fica a StreamPulse?",
-        "answer": "O StreamPulse prioriza a automação em vez da aparência: notificações rápidas de transmissões ao vivo, pontos de cadeia e Drops resgatados em segundo plano, recarregamento do player em caso de erro e monitoramento conjunto do Twitch e do Kick.",
+        "answer": "O StreamPulse prioriza a automação em vez da aparência: notificações rápidas de transmissões ao vivo, pontos do canal e Drops resgatados em segundo plano, recarregamento do player em caso de erro e monitoramento conjunto do Twitch e do Kick.",
         "body": [
           "Se você está procurando emotes, o StreamPulse não é a ferramenta certa, e uma das três extensões mencionadas acima atenderá melhor às suas necessidades.",
-          "Se você perder pontos da cadeia, perder o início de uma transmissão ao vivo ou recarregar o reprodutor várias vezes durante a noite, é exatamente isso que está coberto."
+          "Se você perder pontos do canal, perder o início de uma transmissão ao vivo ou recarregar o reprodutor várias vezes durante a noite, é exatamente isso que está coberto."
         ]
       },
       {
@@ -230,7 +230,7 @@
               "StreamPulse"
             ],
             [
-              "Automatische Kettenstiche",
+              "Automatische Kanalpunkte",
               "StreamPulse"
             ],
             [
@@ -275,7 +275,7 @@
         "answer": "Bei StreamPulse steht die Automatisierung im Vordergrund, nicht das Erscheinungsbild: schnelle Live-Benachrichtigungen, Channel-Punkte und im Hintergrund abgeholte Drops, Neuladen des Players bei Fehlern sowie die gemeinsame Nachverfolgung von Twitch und Kick.",
         "body": [
           "Wenn Sie nach Emotes suchen, ist StreamPulse nicht das richtige Tool; eine der drei oben genannten Erweiterungen wird Ihren Anforderungen besser gerecht.",
-          "Wenn Sie Kettenpunkte verlieren, den Beginn von Live-Sendungen verpassen oder den Player mehrmals pro Abend neu laden, fällt genau das in den abgedeckten Bereich."
+          "Wenn Sie Kanalpunkte verlieren, den Beginn von Live-Sendungen verpassen oder den Player mehrmals pro Abend neu laden, fällt genau das in den abgedeckten Bereich."
         ]
       },
       {
@@ -330,7 +330,7 @@
               "StreamPulse"
             ],
             [
-              "Punti a catenella automatici",
+              "Punti canale automatici",
               "StreamPulse"
             ],
             [
@@ -353,7 +353,7 @@
         "h2": "BetterTTV: a chi è rivolto?",
         "answer": "BetterTTV è l'estensione più installata nell'ecosistema di Twitch. Aggiunge emote della community, strumenti per la chat e opzioni di interfaccia. È la scelta migliore se la tua priorità è la chat e le emote.",
         "body": [
-          "Non gestisce invece né il recupero automatico dei punti di catena, né i Drops, né il monitoraggio multipiattaforma."
+          "Non gestisce invece né il recupero automatico dei punti canale, né i Drops, né il monitoraggio multipiattaforma."
         ]
       },
       {
@@ -372,10 +372,10 @@
       {
         "id": "streampulse",
         "h2": "Dove si trova StreamPulse?",
-        "answer": "StreamPulse punta sull'automazione piuttosto che sull'aspetto estetico: notifiche rapide sui live, punti della catena e Drops richiesti in background, ricaricamento del lettore in caso di errore e monitoraggio congiunto di Twitch e Kick.",
+        "answer": "StreamPulse punta sull'automazione piuttosto che sull'aspetto estetico: notifiche rapide sui live, punti del canale e Drops richiesti in background, ricaricamento del lettore in caso di errore e monitoraggio congiunto di Twitch e Kick.",
         "body": [
           "Se state cercando delle emote, StreamPulse non è lo strumento giusto e una delle tre estensioni sopra indicate soddisferà meglio le vostre esigenze.",
-          "Se perdete punti della catena, vi perdete l’inizio delle dirette o ricaricate il lettore più volte nel corso della serata, è proprio questo l’ambito coperto."
+          "Se perdete punti del canale, vi perdete l’inizio delle dirette o ricaricate il lettore più volte nel corso della serata, è proprio questo l’ambito coperto."
         ]
       },
       {
@@ -430,7 +430,7 @@
               "StreamPulse"
             ],
             [
-              "Automatyczne punkty łańcuchowe",
+              "Automatyczne punkty kanału",
               "StreamPulse"
             ],
             [
@@ -453,7 +453,7 @@
         "h2": "BetterTTV: dla kogo jest przeznaczony?",
         "answer": "BetterTTV to najczęściej instalowane rozszerzenie w ekosystemie Twitcha. Dodaje emotikony społecznościowe, narzędzia do czatu oraz opcje interfejsu. To najlepszy wybór, jeśli priorytetem są dla Ciebie czat i emotikony.",
         "body": [
-          "Nie obsługuje jednak ani automatycznego pobierania punktów łańcucha, ani przedmiotów, ani śledzenia na wielu platformach."
+          "Nie obsługuje jednak ani automatycznego pobierania punktów kanału, ani przedmiotów, ani śledzenia na wielu platformach."
         ]
       },
       {
@@ -475,7 +475,7 @@
         "answer": "StreamPulse skupia się raczej na automatyzacji niż na wyglądzie: szybkie powiadomienia o transmisjach na żywo, punkty kanału i odebranie Dropsów w tle, ponowne ładowanie odtwarzacza w razie błędu oraz wspólne śledzenie serwisów Twitch i Kick.",
         "body": [
           "Jeśli szukasz emotikonów, StreamPulse nie jest odpowiednim narzędziem – jedno z trzech wymienionych powyżej rozszerzeń lepiej spełni Twoje potrzeby.",
-          "Jeśli tracisz punkty w łańcuchu, przegapisz początek transmisji na żywo lub kilkakrotnie ładujesz odtwarzacz w ciągu wieczoru, to właśnie te sytuacje są objęte tą usługą."
+          "Jeśli tracisz punkty na kanale, przegapisz początek transmisji na żywo lub kilkakrotnie ładujesz odtwarzacz w ciągu wieczoru, to właśnie te sytuacje są objęte tą usługą."
         ]
       },
       {
@@ -530,7 +530,7 @@
               "StreamPulse"
             ],
             [
-              "Otomatik zincir dikişleri",
+              "Otomatik kanal puanları",
               "StreamPulse"
             ],
             [
@@ -553,7 +553,7 @@
         "h2": "BetterTTV: Kimler için tasarlanmıştır?",
         "answer": "BetterTTV, Twitch ekosisteminde en çok yüklenen eklentidir. Topluluk emojileri, sohbet araçları ve arayüz seçenekleri sunar. Önceliğiniz sohbet ve emojiler ise bu eklenti en iyi seçimdir.",
         "body": [
-          "Bununla birlikte, ne zincir noktalarının otomatik olarak toplanmasını, ne Drops’u, ne de çoklu platform izlemeyi desteklemiyor."
+          "Bununla birlikte, ne kanal puanlarının otomatik olarak toplanmasını, ne Drops’u, ne de çoklu platform izlemeyi desteklemiyor."
         ]
       },
       {
@@ -630,7 +630,7 @@
               "StreamPulse"
             ],
             [
-              "Автоматические цепные стежки",
+              "Автоматические баллы канала стежки",
               "StreamPulse"
             ],
             [
@@ -730,7 +730,7 @@
               "StreamPulse"
             ],
             [
-              "自動チェーンステッチ",
+              "チャンネルポイント自動取得",
               "StreamPulse"
             ],
             [
@@ -753,7 +753,7 @@
         "h2": "BetterTTV：どのような人向けですか？",
         "answer": "BetterTTVは、Twitchのエコシステムの中で最もインストールされている拡張機能です。コミュニティエモート、チャットツール、インターフェースのオプションを追加します。チャットやエモートを重視する方には、これが最適な選択肢です。",
         "body": [
-          "ただし、チェーンポイントの自動回収、ドロップ、およびマルチプラットフォームでの追跡機能はサポートしていません。"
+          "ただし、チャンネルポイントの自動回収、ドロップ、およびマルチプラットフォームでの追跡機能はサポートしていません。"
         ]
       },
       {
@@ -775,7 +775,7 @@
         "answer": "StreamPulseは、見た目の美しさよりも自動化を重視しています。ライブ配信の通知、チャンネルポイント、バックグラウンドでのドロップの受け取り、エラー時のプレーヤーの再読み込み、そしてTwitchとKickの同時追跡といった機能を提供しています。",
         "body": [
           "エモートをお探しの場合は、StreamPulseは適したツールではありません。上記の3つの拡張機能のいずれかが、ご要望により適しているでしょう。",
-          "チェーンポイントを失ったり、ライブの開始に間に合わなかったり、1晩に何度もプレイヤーを再起動したりした場合、まさにそれが対象範囲となります。"
+          "チャンネルポイントを失ったり、ライブの開始に間に合わなかったり、1晩に何度もプレイヤーを再起動したりした場合、まさにそれが対象範囲となります。"
         ]
       },
       {
@@ -800,7 +800,7 @@
     ]
   },
   "ko": {
-    "slug": "Twitch 최고의 확장 프로그램",
+    "slug": "Twitch-최고의-확장-프로그램",
     "linkLabel": "Twitch 확장 프로그램 비교",
     "title": "2026년 최고의 Twitch 확장 프로그램 | StreamPulse",
     "h1": "2026년 최고의 Twitch 확장 프로그램: 각각의 용도는 무엇인가",
@@ -830,7 +830,7 @@
               "StreamPulse"
             ],
             [
-              "자동 체인 스티치",
+              "자동 채널 포인트",
               "StreamPulse"
             ],
             [
@@ -853,7 +853,7 @@
         "h2": "BetterTTV: 어떤 분들을 대상으로 하나요?",
         "answer": "BetterTTV는 Twitch 생태계에서 가장 많이 설치된 확장 프로그램입니다. 이 프로그램은 커뮤니티 이모티콘, 채팅 도구 및 인터페이스 옵션을 제공합니다. 채팅과 이모티콘을 가장 중요하게 생각한다면 이 프로그램이 최선의 선택입니다.",
         "body": [
-          "반면, 체인 노드 자동 검색, 드롭, 크로스 플랫폼 추적 기능은 지원하지 않습니다."
+          "반면, 채널 포인트 자동 검색, 드롭, 크로스 플랫폼 추적 기능은 지원하지 않습니다."
         ]
       },
       {
@@ -930,7 +930,7 @@
               "StreamPulse"
             ],
             [
-              "Jahitan rantai otomatis",
+              "Poin Channel otomatis",
               "StreamPulse"
             ],
             [
@@ -953,7 +953,7 @@
         "h2": "BetterTTV: untuk siapa layanan ini ditujukan?",
         "answer": "BetterTTV adalah ekstensi yang paling banyak dipasang di ekosistem Twitch. Ekstensi ini menambahkan emotikon komunitas, alat obrolan, dan opsi antarmuka. Ini adalah pilihan terbaik jika prioritas Anda adalah obrolan dan emotikon.",
         "body": [
-          "Namun, aplikasi ini tidak mendukung pengambilan otomatis poin rantai, Drops, maupun pelacakan lintas platform."
+          "Namun, aplikasi ini tidak mendukung pengambilan otomatis Poin Channel, Drops, maupun pelacakan lintas platform."
         ]
       },
       {
@@ -1030,7 +1030,7 @@
               "StreamPulse"
             ],
             [
-              "Automatische kettingsteken",
+              "Automatische kanaalpunten",
               "StreamPulse"
             ],
             [
@@ -1053,7 +1053,7 @@
         "h2": "BetterTTV: voor wie is het bedoeld?",
         "answer": "BetterTTV is de meest geïnstalleerde extensie binnen het Twitch-ecosysteem. Deze extensie voegt community-emotes, chattools en interface-opties toe. Het is de beste keuze als je vooral belang hecht aan de chat en emotes.",
         "body": [
-          "Het ondersteunt echter noch het automatisch verzamelen van ketenpunten, noch Drops, noch platformoverschrijdende tracking."
+          "Het ondersteunt echter noch het automatisch verzamelen van kanaalpunten, noch Drops, noch platformoverschrijdende tracking."
         ]
       },
       {
@@ -1130,7 +1130,7 @@
               "StreamPulse"
             ],
             [
-              "Automatiska kedjestygn",
+              "Automatiska kanalpoäng",
               "StreamPulse"
             ],
             [
@@ -1153,7 +1153,7 @@
         "h2": "BetterTTV: Vem riktar sig tjänsten till?",
         "answer": "BetterTTV är det mest installerade tillägget i Twitch-ekosystemet. Det tillför community-emotes, chattverktyg och gränssnittsalternativ. Det är det bästa valet om du prioriterar chatt och emotes.",
         "body": [
-          "Däremot hanterar den varken automatisk insamling av kedjepunkter, Drops eller spårning över flera plattformar."
+          "Däremot hanterar den varken automatisk insamling av kanalpoäng, Drops eller spårning över flera plattformar."
         ]
       },
       {
@@ -1253,7 +1253,7 @@
         "h2": "BetterTTV: pro koho je určeno?",
         "answer": "BetterTTV je nejčastěji instalované rozšíření v ekosystému Twitch. Přidává komunitní emotikony, nástroje pro chat a možnosti přizpůsobení rozhraní. Je to nejlepší volba, pokud je vaší prioritou chat a emotikony.",
         "body": [
-          "Naopak nepodporuje ani automatické získávání bodů v řetězci, ani Drops, ani sledování napříč platformami."
+          "Naopak nepodporuje ani automatické získávání bodů na kanále, ani Drops, ani sledování napříč platformami."
         ]
       },
       {

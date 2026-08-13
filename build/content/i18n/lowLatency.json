@@ -50,7 +50,7 @@
     ]
   },
   "es": {
-    "slug": "contracción-baja-latencia",
+    "slug": "Twitch-baja-latencia",
     "linkLabel": "Latencia de contracción",
     "title": "Reducir el retraso en Twitch (Latencia) | StreamPulse",
     "h1": "Cómo reducir la latencia en Twitch y evitar el retraso",
@@ -100,8 +100,8 @@
     ]
   },
   "pt-BR": {
-    "slug": "contração baixa latência",
-    "linkLabel": "Latência de contração muscular",
+    "slug": "Twitch-baixa-latência",
+    "linkLabel": "Latência do Twitch",
     "title": "Reduza o lag no Twitch (latência) | StreamPulse",
     "h1": "Como reduzir a latência no Twitch e evitar atrasos",
     "description": "Aprenda como reduzir o atraso no Twitch e por que a latência aumenta com o tempo. A solução para ficar sincronizado com o chat.",
@@ -200,8 +200,8 @@
     ]
   },
   "it": {
-    "slug": "contrazione a bassa latenza",
-    "linkLabel": "Latenza di contrazione",
+    "slug": "Twitch-bassa-latenza",
+    "linkLabel": "Latenza di Twitch",
     "title": "Riduci il ritardo su Twitch (latenza) | StreamPulse",
     "h1": "Come ridurre la latenza su Twitch ed evitare ritardi",
     "description": "Scopri come ridurre il ritardo su Twitch e perché la latenza aumenta nel tempo. La soluzione per rimanere sincronizzati con la chat.",
@@ -250,7 +250,7 @@
     ]
   },
   "pl": {
-    "slug": "Twitch-niskie opóźnienie",
+    "slug": "Twitch-niskie-opóźnienie",
     "linkLabel": "Opóźnienie Twitcha",
     "title": "Zmniejsz opóźnienie na Twitchu (opóźnienie) | StreamPuls",
     "h1": "Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień",
@@ -300,8 +300,8 @@
     ]
   },
   "tr": {
-    "slug": "seğirme-düşük gecikme",
-    "linkLabel": "Seğirme Gecikmesi",
+    "slug": "Twitch-düşük-gecikme",
+    "linkLabel": "Twitch Gecikmesi",
     "title": "Twitch'teki gecikmeyi azaltın (Gecikme) | StreamPulse",
     "h1": "Twitch'te Gecikmeyi Azaltma ve Gecikmeyi Önleme",
     "description": "Twitch'teki gecikmeyi nasıl azaltacağınızı ve gecikmenin zaman içinde neden arttığını öğrenin. Sohbetle senkronize kalmanın çözümü.",
@@ -350,7 +350,7 @@
     ]
   },
   "ru": {
-    "slug": "подергивание с низкой задержкой",
+    "slug": "Twitch-низкая-задержка",
     "linkLabel": "Задержка Twitch",
     "title": "Уменьшение задержки на Twitch (задержка) | СтримПульс",
     "h1": "Как уменьшить задержку на Twitch и избежать лагов",
@@ -400,7 +400,7 @@
     ]
   },
   "ja": {
-    "slug": "twitch-低遅延",
+    "slug": "Twitch-低遅延",
     "linkLabel": "Twitch レイテンシ",
     "title": "Twitch のラグを軽減する (レイテンシー) |ストリームパルス",
     "h1": "Twitchのレイテンシーを短縮し、ラグを回避する方法",
@@ -450,8 +450,8 @@
     ]
   },
   "ko": {
-    "slug": "트위치-낮은 지연 시간",
-    "linkLabel": "트위치 지연 시간",
+    "slug": "Twitch-낮은-지연-시간",
+    "linkLabel": "Twitch 지연 시간",
     "title": "Twitch의 지연 감소(대기 시간) | 스트림펄스",
     "h1": "Twitch에서 지연 시간을 줄이고 지연을 방지하는 방법",
     "description": "Twitch에서 지연을 줄이는 방법과 시간이 지남에 따라 지연 시간이 증가하는 이유를 알아보세요. 채팅과의 동기화를 유지하는 솔루션입니다.",
@@ -500,8 +500,8 @@
     ]
   },
   "id": {
-    "slug": "kedutan-latensi rendah",
-    "linkLabel": "Latensi Kedutan",
+    "slug": "Twitch-latensi-rendah",
+    "linkLabel": "Latensi Twitch",
     "title": "Mengurangi kelambatan pada Twitch (Latensi) | AliranPulse",
     "h1": "Cara Mengurangi Latensi di Twitch dan Menghindari Lag",
     "description": "Pelajari cara mengurangi kelambatan di Twitch dan mengapa latensi meningkat seiring waktu. Solusi untuk tetap sinkron dengan obrolan.",
@@ -550,7 +550,7 @@
     ]
   },
   "nl": {
-    "slug": "twitch-lage latentie",
+    "slug": "Twitch-lage-latentie",
     "linkLabel": "Twitch-latentie",
     "title": "Vertraging op Twitch verminderen (latentie) | StreamPulse",
     "h1": "Hoe u de latentie op Twitch kunt verminderen en vertraging kunt voorkomen",
@@ -600,8 +600,8 @@
     ]
   },
   "hi": {
-    "slug": "चिकोटी-कम विलंबता",
-    "linkLabel": "चिकोटी विलंबता",
+    "slug": "Twitch-कम-विलंबता",
+    "linkLabel": "Twitch कम विलंबता",
     "title": "ट्विच (विलंबता) पर अंतराल कम करें | स्ट्रीमपल्स",
     "h1": "ट्विच पर विलंबता को कैसे कम करें और अंतराल से कैसे बचें",
     "description": "जानें कि ट्विच पर अंतराल को कैसे कम किया जाए और समय के साथ विलंबता क्यों बढ़ती है। चैट के साथ तालमेल बनाए रखने का समाधान.",
@@ -650,7 +650,7 @@
     ]
   },
   "sv": {
-    "slug": "ryck-låg-latens",
+    "slug": "Twitch-låg-latens",
     "linkLabel": "Twitch Latency",
     "title": "Minska fördröjningen på Twitch (Latency) | StreamPulse",
     "h1": "Hur man minskar latensen på Twitch och undviker fördröjning",
@@ -700,8 +700,8 @@
     ]
   },
   "cs": {
-    "slug": "záškuby-nízká-latence",
-    "linkLabel": "Latence škubnutí",
+    "slug": "Twitch-nízká-latence",
+    "linkLabel": "Twitch s nízkou latencí",
     "title": "Snížení zpoždění na Twitchi (latence) | StreamPulse",
     "h1": "Jak snížit latenci na Twitchi a vyhnout se Lag",
     "description": "Přečtěte si, jak snížit zpoždění na Twitchi a proč se latence v průběhu času zvyšuje. Řešení, jak zůstat v synchronizaci s chatem.",

@@ -192,7 +192,7 @@
     ]
   },
   "it": {
-    "slug": "estensione-contrazione",
+    "slug": "estensione-Twitch",
     "linkLabel": "Estensione Twitch per gli spettatori",
     "title": "Estensione Twitch per spettatori | StreamPulse",
     "h1": "Estensione Twitch per gli spettatori",
@@ -543,7 +543,7 @@
         "h2": "StreamPulse와 BetterTTV: 상호 보완적",
         "answer": "StreamPulse와 BetterTTV는 서로 다른 기능을 제공합니다. BetterTTV(및 FrankerFaceZ, 7TV)는 이모티콘을 추가하고 채팅 창을 맞춤 설정해 줍니다. StreamPulse는 시청자 관련 작업을 자동화합니다. 두 프로그램 모두 충돌 없이 함께 설치할 수 있습니다.",
         "body": [
-          "이모티콘용 확장 프로그램을 찾고 계신다면, BetterTTV나 FrankerFaceZ를 설치하세요. 채널 포인트, 드롭, 알림을 자동화할 수 있는 확장 프로그램을 찾고 계신다면, StreamPulse를 설치하세요. 이 두 가지를 함께 사용하면 트위치를 정기적으로 시청하는 시청자가 필요로 하는 모든 기능을 충족할 수 있습니다."
+          "이모티콘용 확장 프로그램을 찾고 계신다면, BetterTTV나 FrankerFaceZ를 설치하세요. 채널 포인트, 드롭, 알림을 자동화할 수 있는 확장 프로그램을 찾고 계신다면, StreamPulse를 설치하세요. 이 두 가지를 함께 사용하면 Twitch를 정기적으로 시청하는 시청자가 필요로 하는 모든 기능을 충족할 수 있습니다."
         ]
       },
       {
@@ -704,7 +704,7 @@
     ]
   },
   "sv": {
-    "slug": "förlängningsryckning",
+    "slug": "Twitch-tillägg",
     "linkLabel": "Twitch-tillägg för tittare",
     "title": "Twitch-tillägg för tittare | StreamPulse",
     "h1": "Twitch-tillägg för tittare",

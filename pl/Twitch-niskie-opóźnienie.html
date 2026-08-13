@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zmniejsz opóźnienie na Twitchu (opóźnienie) | StreamPuls</title>
+    <meta name="description" content="Dowiedz się, jak zmniejszyć opóźnienia na Twitchu i dlaczego opóźnienia rosną z czasem. Rozwiązanie umożliwiające synchronizację z czatem." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/pl/Twitch-niskie-opóźnienie" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/twitch-low-latency" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/twitch-low-latency" />
+    <link rel="alternate" hreflang="es" href="https://www.streampulse.fr/es/Twitch-baja-latencia" />
+    <link rel="alternate" hreflang="pt-BR" href="https://www.streampulse.fr/pt-br/Twitch-baixa-latência" />
+    <link rel="alternate" hreflang="de" href="https://www.streampulse.fr/de/Twitch-Low-Latenz" />
+    <link rel="alternate" hreflang="it" href="https://www.streampulse.fr/it/Twitch-bassa-latenza" />
+    <link rel="alternate" hreflang="pl" href="https://www.streampulse.fr/pl/Twitch-niskie-opóźnienie" />
+    <link rel="alternate" hreflang="tr" href="https://www.streampulse.fr/tr/Twitch-düşük-gecikme" />
+    <link rel="alternate" hreflang="ru" href="https://www.streampulse.fr/ru/Twitch-низкая-задержка" />
+    <link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/Twitch-低遅延" />
+    <link rel="alternate" hreflang="ko" href="https://www.streampulse.fr/ko/Twitch-낮은-지연-시간" />
+    <link rel="alternate" hreflang="id" href="https://www.streampulse.fr/id/Twitch-latensi-rendah" />
+    <link rel="alternate" hreflang="nl" href="https://www.streampulse.fr/nl/Twitch-lage-latentie" />
+    <link rel="alternate" hreflang="hi" href="https://www.streampulse.fr/hi/Twitch-कम-विलंबता" />
+    <link rel="alternate" hreflang="sv" href="https://www.streampulse.fr/sv/Twitch-låg-latens" />
+    <link rel="alternate" hreflang="cs" href="https://www.streampulse.fr/cs/Twitch-nízká-latence" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/twitch-low-latency" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/pl/Twitch-niskie-opóźnienie" />
+    <meta property="og:title" content="Zmniejsz opóźnienie na Twitchu (opóźnienie) | StreamPuls" />
+    <meta property="og:description" content="Dowiedz się, jak zmniejszyć opóźnienia na Twitchu i dlaczego opóźnienia rosną z czasem. Rozwiązanie umożliwiające synchronizację z czatem." />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="Zmniejsz opóźnienie na Twitchu (opóźnienie) | StreamPuls" />
+    <meta name="twitter:description" content="Dowiedz się, jak zmniejszyć opóźnienia na Twitchu i dlaczego opóźnienia rosną z czasem. Rozwiązanie umożliwiające synchronizację z czatem." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.streampulse.fr/pl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień",
+      "item": "https://www.streampulse.fr/pl/Twitch-niskie-opóźnienie"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.streampulse.fr/#organization",
+      "name": "StreamPulse",
+      "url": "https://www.streampulse.fr",
+      "logo": "https://www.streampulse.fr/images/logo.png",
+      "sameAs": [
+        "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh",
+        "https://github.com/AlexisAMZ/streampulse-extension",
+        "https://github.com/AlexisAMZ",
+        "https://alternativeto.net/software/streampulse/"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.streampulse.fr/#software",
+      "name": "StreamPulse",
+      "description": "Dowiedz się, jak zmniejszyć opóźnienia na Twitchu i dlaczego opóźnienia rosną z czasem. Rozwiązanie umożliwiające synchronizację z czatem.",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome, Edge, Brave, Opera",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@id": "https://www.streampulse.fr/#organization"
+      },
+      "url": "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień",
+    "headline": "Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień",
+    "description": "Dowiedz się, jak zmniejszyć opóźnienia na Twitchu i dlaczego opóźnienia rosną z czasem. Rozwiązanie umożliwiające synchronizację z czatem.",
+    "inLanguage": "pl",
+    "url": "https://www.streampulse.fr/pl/Twitch-niskie-opóźnienie",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-11",
+    "dateModified": "2026-08-11",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/pl/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień",
+        "item": "https://www.streampulse.fr/pl/Twitch-niskie-opóźnienie"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "pl",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Co to jest tryb niskiego opóźnienia na Twitchu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tryb niskiego opóźnienia zmniejsza opóźnienie między akcją na żywo a tym, co widzisz na ekranie, z około 10 sekund do 2 lub 3 sekund."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak włączyć niskie opóźnienia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kliknij ikonę ustawień (koła zębatego) odtwarzacza Twitch, przejdź do „Opcji zaawansowanych” i zaznacz „Tryb małego opóźnienia”."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dlaczego moje opóźnienie wzrasta, gdy przełączam karty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Przeglądarki często wstrzymują lub spowalniają filmy w tle, aby oszczędzać zasoby. Użyj StreamPulse, aby temu zapobiec dzięki funkcji Anti-Pause."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/pl" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/pl/#features">Features</a>
+          <a href="/pl/#faq">FAQ</a>
+          <div class="nav-dropdown">
+            <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+            <div class="nav-dropdown-content">
+              <a href="/pl/błąd-2000-twitch-rozwiązanie">Błąd 2000 na Twitchu: przyczyny i rozwiązania | StreamPulse</a>
+              <a href="/pl/błąd-3000-twitch-rozwiązanie">Błąd 3000 na Twitchu: przyczyny i rozwiązania | StreamPulse</a>
+              <a href="/pl/automatyczne-dropy-na-Twitchu">Automatyczne Twitch Drops | StreamPulse</a>
+              <a href="/pl/automatyczne-punkty-kanału-Twitch">Automatyczne punkty w serwisie Twitch | StreamPulse</a>
+              <a href="/pl/rozszerzenie-Kick">Rozszerzenie Kick dla widzów | StreamPulse</a>
+              <a href="/pl/rozszerzenie-twitch">Rozszerzenie Twitch dla widzów | StreamPulse</a>
+              <a href="/pl/filtruj-czat-twitch">Filtrowanie czatu na Twitchu: spam i słowa kluczowe | StreamPulse</a>
+              <a href="/pl/powiadomienia-na-żywo-twitch-kick">Powiadomienia na żywo z serwisu Twitch i Kick | StreamPulse</a>
+              <a href="/pl/dashboard-twitch-kick">Zunifikowany pulpit nawigacyjny Twitch i Kick | StreamPulse</a>
+              <a href="/pl/najlepsze-rozszerzenia-na-Twitchu">Najlepsze rozszerzenia na Twitchu w 2026 r. | StreamPulse</a>
+              <a href="/pl/rozszerzenie-powiadomienia-Kick">Extension Kick: powiadomienia na żywo | StreamPulse</a>
+            </div>
+          </div>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/pl">Home</a> / <span>Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień</span>
+          </p>
+          <h1>Jak zmniejszyć opóźnienia na Twitchu i uniknąć opóźnień</h1>
+          <p class="article-lede">Czy masz wrażenie, że pomiędzy działaniem streamera a reakcją na czacie jest przepaść? Prawdopodobnie masz problem z opóźnieniami na Twitchu. Oto dlaczego pojawia się to opóźnienie i jak to naprawić na dobre.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 11 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#activer-low-latency">Jak włączyć tryb małego opóźnienia na Twitchu</a></li>
+          <li><a href="#pourquoi-decalage">Dlaczego stopniowo pojawia się luka?</a></li>
+          <li><a href="#solution-streampulse">Rozwiązanie: Anti-Pause ze StreamPulse</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="activer-low-latency">Jak włączyć tryb małego opóźnienia na Twitchu</h2>
+        <div class="answer-block">
+          <p>Aby włączyć małe opóźnienie, kliknij koło zębate odtwarzacza wideo, wybierz „Zaawansowane”, a następnie zaznacz opcję „Tryb małego opóźnienia”. Opóźnienie spadnie z ~12 sekund do 2 lub 3 sekund.</p>
+        </div>
+        <p>Tryb „Niskiego opóźnienia” w Twitchu to opcja, która umożliwia widzom oglądanie transmisji w czasie zbliżonym do rzeczywistego. Bez tej opcji często występuje 10–15 sekundowe opóźnienie między tym, co robi streamer, a tym, co widzisz, co utrudnia interakcję na czacie.</p>
+
+        <h2 id="pourquoi-decalage">Dlaczego stopniowo pojawia się luka?</h2>
+        <div class="answer-block">
+          <p>Nawet jeśli masz włączony tryb małego opóźnienia, możesz zauważyć, że opóźnienie z czasem się zwiększa (od 2 sekund do 10, 20, a nawet 30 sekund). Często jest to spowodowane:</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>Przełączanie kart:</strong> przeglądarki takie jak Chrome i Edge celowo spowalniają niewyświetlane filmy, aby oszczędzać pamięć RAM i baterię.</li>
+          <li><strong>Niestabilność sieci:</strong> niewielka utrata połączenia spowoduje buforowanie wideo. Odtwarzacz wideo nie przeskoczy do przodu, aby nadrobić zaległości, powodując trwałe opóźnienie.</li>
+        </ul>
+
+        <h2 id="solution-streampulse">Rozwiązanie: Anti-Pause ze StreamPulse</h2>
+        <div class="answer-block">
+          <p>StreamPulse zawiera funkcję Anti-Pause i Player Sync. Zapobiega spowalnianiu wideo przeglądarki podczas przełączania kart.</p>
+        </div>
+        <p>Jeśli korzystasz z najlepszych rozszerzeń Twitcha, wiesz, że StreamPulse słynie z optymalizacji odtwarzaczy. Rozszerzenie wymusza utrzymanie niskiego opóźnienia, nawet jeśli strumień działa w tle podczas przechodzenia na inną stronę.</p>
+        <p>Dzięki temu zawsze będziesz zsynchronizowany z czatem i streamerem, bez konieczności ręcznego ponownego ładowania strony.</p>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>Co to jest tryb niskiego opóźnienia na Twitchu?</h3>
+            <p>Tryb niskiego opóźnienia zmniejsza opóźnienie między akcją na żywo a tym, co widzisz na ekranie, z około 10 sekund do 2 lub 3 sekund.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Jak włączyć niskie opóźnienia?</h3>
+            <p>Kliknij ikonę ustawień (koła zębatego) odtwarzacza Twitch, przejdź do „Opcji zaawansowanych” i zaznacz „Tryb małego opóźnienia”.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Dlaczego moje opóźnienie wzrasta, gdy przełączam karty?</h3>
+            <p>Przeglądarki często wstrzymują lub spowalniają filmy w tle, aby oszczędzać zasoby. Użyj StreamPulse, aby temu zapobiec dzięki funkcji Anti-Pause.</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/pl/błąd-2000-twitch-rozwiązanie">Błąd 2000 na Twitchu: przyczyny i rozwiązania | StreamPulse</a>
+          <a href="/pl/błąd-3000-twitch-rozwiązanie">Błąd 3000 na Twitchu: przyczyny i rozwiązania | StreamPulse</a>
+          <a href="/pl/automatyczne-dropy-na-Twitchu">Automatyczne Twitch Drops | StreamPulse</a>
+          <a href="/pl/automatyczne-punkty-kanału-Twitch">Automatyczne punkty w serwisie Twitch | StreamPulse</a>
+          <a href="/pl/rozszerzenie-Kick">Rozszerzenie Kick dla widzów | StreamPulse</a>
+          <a href="/pl/rozszerzenie-twitch">Rozszerzenie Twitch dla widzów | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/pl/filtruj-czat-twitch">Filtrowanie czatu na Twitchu: spam i słowa kluczowe | StreamPulse</a>
+          <a href="/pl/powiadomienia-na-żywo-twitch-kick">Powiadomienia na żywo z serwisu Twitch i Kick | StreamPulse</a>
+          <a href="/pl/dashboard-twitch-kick">Zunifikowany pulpit nawigacyjny Twitch i Kick | StreamPulse</a>
+          <a href="/pl/najlepsze-rozszerzenia-na-Twitchu">Najlepsze rozszerzenia na Twitchu w 2026 r. | StreamPulse</a>
+          <a href="/pl/rozszerzenie-powiadomienia-Kick">Extension Kick: powiadomienia na żywo | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extension Kick: notificaciones en directo | StreamPulse</title>
+    <meta name="description" content="Cómo recibir notificaciones de las retransmisiones en directo de Kick en el escritorio y seguir Kick y Twitch desde una sola extensión, sin necesidad de mantener ninguna pestaña abierta." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/es/extensión-notificaciones-Kick" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/extension-kick-notifications" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/kick-extension-notifications" />
+    <link rel="alternate" hreflang="es" href="https://www.streampulse.fr/es/extensión-notificaciones-Kick" />
+    <link rel="alternate" hreflang="pt-BR" href="https://www.streampulse.fr/pt-br/extensão-notificações-Kick" />
+    <link rel="alternate" hreflang="de" href="https://www.streampulse.fr/de/Erweiterung-Kick-Benachrichtigungen" />
+    <link rel="alternate" hreflang="it" href="https://www.streampulse.fr/it/estensione-notifiche-Kick" />
+    <link rel="alternate" hreflang="pl" href="https://www.streampulse.fr/pl/rozszerzenie-powiadomienia-Kick" />
+    <link rel="alternate" hreflang="tr" href="https://www.streampulse.fr/tr/Kick-bildirimleri-eklentisi" />
+    <link rel="alternate" hreflang="ru" href="https://www.streampulse.fr/ru/расширение-kick-уведомления" />
+    <link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/Kick通知拡張機能" />
+    <link rel="alternate" hreflang="ko" href="https://www.streampulse.fr/ko/확장-프로그램-Kick-알림" />
+    <link rel="alternate" hreflang="id" href="https://www.streampulse.fr/id/ekstensi-notifikasi-tendangan" />
+    <link rel="alternate" hreflang="nl" href="https://www.streampulse.fr/nl/uitbreiding-kick-meldingen" />
+    <link rel="alternate" hreflang="hi" href="https://www.streampulse.fr/hi/kick-extension-notifications" />
+    <link rel="alternate" hreflang="sv" href="https://www.streampulse.fr/sv/tillägg-kick-meddelanden" />
+    <link rel="alternate" hreflang="cs" href="https://www.streampulse.fr/cs/rozšíření-kick-oznámení" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/extension-kick-notifications" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/es/extensión-notificaciones-Kick" />
+    <meta property="og:title" content="Extension Kick: notificaciones en directo | StreamPulse" />
+    <meta property="og:description" content="Cómo recibir notificaciones de las retransmisiones en directo de Kick en el escritorio y seguir Kick y Twitch desde una sola extensión, sin necesidad de mantener ninguna pestaña abierta." />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="Extension Kick: notificaciones en directo | StreamPulse" />
+    <meta name="twitter:description" content="Cómo recibir notificaciones de las retransmisiones en directo de Kick en el escritorio y seguir Kick y Twitch desde una sola extensión, sin necesidad de mantener ninguna pestaña abierta." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.streampulse.fr/es/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Seguir a tus streamers de Kick con una extensión del navegador",
+      "item": "https://www.streampulse.fr/es/extensión-notificaciones-Kick"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.streampulse.fr/#organization",
+      "name": "StreamPulse",
+      "url": "https://www.streampulse.fr",
+      "logo": "https://www.streampulse.fr/images/logo.png",
+      "sameAs": [
+        "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh",
+        "https://github.com/AlexisAMZ/streampulse-extension",
+        "https://github.com/AlexisAMZ",
+        "https://alternativeto.net/software/streampulse/"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.streampulse.fr/#software",
+      "name": "StreamPulse",
+      "description": "Cómo recibir notificaciones de las retransmisiones en directo de Kick en el escritorio y seguir Kick y Twitch desde una sola extensión, sin necesidad de mantener ninguna pestaña abierta.",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome, Edge, Brave, Opera",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@id": "https://www.streampulse.fr/#organization"
+      },
+      "url": "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "name": "Seguir a tus streamers de Kick con una extensión del navegador",
+    "headline": "Seguir a tus streamers de Kick con una extensión del navegador",
+    "description": "Cómo recibir notificaciones de las retransmisiones en directo de Kick en el escritorio y seguir Kick y Twitch desde una sola extensión, sin necesidad de mantener ninguna pestaña abierta.",
+    "inLanguage": "es",
+    "url": "https://www.streampulse.fr/es/extensión-notificaciones-Kick",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-09",
+    "dateModified": "2026-08-09",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/es/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Seguir a tus streamers de Kick con una extensión del navegador",
+        "item": "https://www.streampulse.fr/es/extensión-notificaciones-Kick"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "es",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Funciona la extensión sin una cuenta de Kick?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, para consultar el estado en tiempo real no es necesario estar conectado."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Tendrá Kick los eslabones del canal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hasta la fecha no existe ningún sistema equivalente; el servicio técnico lo incorporaría si la plataforma introdujera uno."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué navegadores son compatibles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Chrome, Brave, Edge, Opera y los navegadores basados en Chromium."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/es" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/es/#features">Features</a>
+          <a href="/es/#faq">FAQ</a>
+          <div class="nav-dropdown">
+            <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+            <div class="nav-dropdown-content">
+              <a href="/es/error-2000-twitch-solución">Error 2000 de Twitch: causas y soluciones | StreamPulse</a>
+              <a href="/es/error-3000-twitch-solución">Error 3000 de Twitch: causas y soluciones | StreamPulse</a>
+              <a href="/es/twitch-drops-automático">Drops automáticos de Twitch | StreamPulse</a>
+              <a href="/es/puntos-del-canal-automáticos-Twitch">Puntos del canal automáticos de Twitch | StreamPulse</a>
+              <a href="/es/extensión-Kick">Extensión Kick para espectadores | StreamPulse</a>
+              <a href="/es/extension-twitch">Extensión de Twitch para espectadores | StreamPulse</a>
+              <a href="/es/filtrar-chat-twitch">Filtrar el chat de Twitch: spam y palabras clave | StreamPulse</a>
+              <a href="/es/notificaciones-en-directo-Twitch-Kick">Notificaciones en directo de Twitch y Kick | StreamPulse</a>
+              <a href="/es/panel-de-control-Twitch-Kick">Panel de control unificado de Twitch y Kick | StreamPulse</a>
+              <a href="/es/las-mejores-extensiones-de-Twitch">Las mejores extensiones de Twitch de 2026 | StreamPulse</a>
+              <a href="/es/extensión-notificaciones-Kick">Extension Kick: notificaciones en directo | StreamPulse</a>
+            </div>
+          </div>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/es">Home</a> / <span>Seguir a tus streamers de Kick con una extensión del navegador</span>
+          </p>
+          <h1>Seguir a tus streamers de Kick con una extensión del navegador</h1>
+          <p class="article-lede">Kick ha ganado una cuota considerable de audiencia en streaming, pero su ecosistema de herramientas sigue siendo mucho más limitado que el de Twitch. Muchos espectadores siguen a los creadores en ambas plataformas y se encuentran sin una solución unificada. En esta página se explica lo que es posible hacer hoy en día.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 9 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#notifications">¿Cómo recibir notificaciones de Kick en directo?</a></li>
+          <li><a href="#twitch-kick">¿Se pueden ver Kick y Twitch a la vez?</a></li>
+          <li><a href="#limites">¿Qué funciones están limitadas en Kick?</a></li>
+          <li><a href="#confidentialite">¿Qué datos se utilizan?</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="notifications">¿Cómo recibir notificaciones de Kick en directo?</h2>
+        <div class="answer-block">
+          <p>StreamPulse comprueba el estado de los canales de Kick que añadas y envía una notificación al escritorio en cuanto se emiten en directo, sin necesidad de tener abierta ninguna pestaña de Kick.</p>
+        </div>
+        <p>El seguimiento se añade manualmente introduciendo el nombre del canal, ya que Kick no ofrece una función de importación automática de suscripciones similar a la de Twitch.</p>
+
+        <h2 id="twitch-kick">¿Se pueden ver Kick y Twitch a la vez?</h2>
+        <div class="answer-block">
+          <p>Sí. Ambas plataformas aparecen en el mismo panel de control, lo que evita tener que estar pendiente de dos sitios web a la vez. Esa es la principal ventaja de la extensión para los espectadores que utilizan varias plataformas.</p>
+        </div>
+
+        <h2 id="limites">¿Qué funciones están limitadas en Kick?</h2>
+        <div class="answer-block">
+          <p>Kick no cuenta con un sistema de puntos del canal, ni con «Drops», ni con predicciones equivalentes a las de Twitch. Por lo tanto, las funciones de automatización de StreamPulse relacionadas con estas mecánicas solo se aplican a Twitch.</p>
+        </div>
+        <div class="table-wrap"><table class="cmp-table">
+          <thead><tr><th>Funcionalidad</th><th>Twitch</th><th>Kick</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Notificaciones de retransmisiones en directo</th><td>Sí</td><td>Sí</td></tr>
+            <tr><th scope="row">Cuadro de mando</th><td>Sí</td><td>Sí</td></tr>
+            <tr><th scope="row">Puntos del canal para automóviles</th><td>Sí</td><td>No aplicable</td></tr>
+            <tr><th scope="row">Drops y Momentos</th><td>Sí</td><td>No aplicable</td></tr>
+            <tr><th scope="row">Superposición de predicciones</th><td>Sí</td><td>No aplicable</td></tr>
+            <tr><th scope="row">Importación de suscripciones</th><td>Sí</td><td>Añadir manualmente</td></tr>
+          </tbody>
+        </table></div>
+
+        <h2 id="confidentialite">¿Qué datos se utilizan?</h2>
+        <div class="answer-block">
+          <p>Solo se envían a las API públicas de Twitch y Kick los nombres de los canales a los que sigues para comprobar su estado. No se recopila ningún dato personal y tus preferencias se almacenan localmente.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>¿Funciona la extensión sin una cuenta de Kick?</h3>
+            <p>Sí, para consultar el estado en tiempo real no es necesario estar conectado.</p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Tendrá Kick los eslabones del canal?</h3>
+            <p>Hasta la fecha no existe ningún sistema equivalente; el servicio técnico lo incorporaría si la plataforma introdujera uno.</p>
+          </div>
+          <div class="faq-item">
+            <h3>¿Qué navegadores son compatibles?</h3>
+            <p>Chrome, Brave, Edge, Opera y los navegadores basados en Chromium.</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/es/error-2000-twitch-solución">Error 2000 de Twitch: causas y soluciones | StreamPulse</a>
+          <a href="/es/error-3000-twitch-solución">Error 3000 de Twitch: causas y soluciones | StreamPulse</a>
+          <a href="/es/twitch-drops-automático">Drops automáticos de Twitch | StreamPulse</a>
+          <a href="/es/puntos-del-canal-automáticos-Twitch">Puntos del canal automáticos de Twitch | StreamPulse</a>
+          <a href="/es/extensión-Kick">Extensión Kick para espectadores | StreamPulse</a>
+          <a href="/es/extension-twitch">Extensión de Twitch para espectadores | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/es/filtrar-chat-twitch">Filtrar el chat de Twitch: spam y palabras clave | StreamPulse</a>
+          <a href="/es/notificaciones-en-directo-Twitch-Kick">Notificaciones en directo de Twitch y Kick | StreamPulse</a>
+          <a href="/es/panel-de-control-Twitch-Kick">Panel de control unificado de Twitch y Kick | StreamPulse</a>
+          <a href="/es/las-mejores-extensiones-de-Twitch">Las mejores extensiones de Twitch de 2026 | StreamPulse</a>
+          <a href="/es/extensión-notificaciones-Kick">Extension Kick: notificaciones en directo | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

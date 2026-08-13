@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Расширение Kick для зрителей | StreamPulse</title>
+    <meta name="description" content="StreamPulse: расширение для зрителей на Kick. Уведомления в режиме реального времени, отслеживание стримеров, фильтры чата и инструменты для просмотра на Kick.com." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="AlexisAMZ" />
+    <meta name="theme-color" content="#9146FF" />
+    <meta name="apple-mobile-web-app-title" content="StreamPulse" />
+    <link rel="canonical" href="https://www.streampulse.fr/ru/расширение-Kick" />
+    <link rel="alternate" hreflang="fr" href="https://www.streampulse.fr/extension-kick" />
+    <link rel="alternate" hreflang="en" href="https://www.streampulse.fr/en/kick-extension" />
+    <link rel="alternate" hreflang="es" href="https://www.streampulse.fr/es/extensión-Kick" />
+    <link rel="alternate" hreflang="pt-BR" href="https://www.streampulse.fr/pt-br/extensão-Kick" />
+    <link rel="alternate" hreflang="de" href="https://www.streampulse.fr/de/Ausfalltritt" />
+    <link rel="alternate" hreflang="it" href="https://www.streampulse.fr/it/estensione-Kick" />
+    <link rel="alternate" hreflang="pl" href="https://www.streampulse.fr/pl/rozszerzenie-Kick" />
+    <link rel="alternate" hreflang="tr" href="https://www.streampulse.fr/tr/Kick-eklentisi" />
+    <link rel="alternate" hreflang="ru" href="https://www.streampulse.fr/ru/расширение-Kick" />
+    <link rel="alternate" hreflang="ja" href="https://www.streampulse.fr/ja/Kick拡張機能" />
+    <link rel="alternate" hreflang="ko" href="https://www.streampulse.fr/ko/Kick-확장-프로그램" />
+    <link rel="alternate" hreflang="id" href="https://www.streampulse.fr/id/tendangan-ekstensi" />
+    <link rel="alternate" hreflang="nl" href="https://www.streampulse.fr/nl/Kick-extensie" />
+    <link rel="alternate" hreflang="hi" href="https://www.streampulse.fr/hi/kick-extension" />
+    <link rel="alternate" hreflang="sv" href="https://www.streampulse.fr/sv/Kick-tillägg" />
+    <link rel="alternate" hreflang="cs" href="https://www.streampulse.fr/cs/rozšíření-Kick" />
+    <link rel="alternate" hreflang="x-default" href="https://www.streampulse.fr/extension-kick" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.streampulse.fr/ru/расширение-Kick" />
+    <meta property="og:title" content="Расширение Kick для зрителей | StreamPulse" />
+    <meta property="og:description" content="StreamPulse: расширение для зрителей на Kick. Уведомления в режиме реального времени, отслеживание стримеров, фильтры чата и инструменты для просмотра на Kick.com." />
+    <meta property="og:site_name" content="StreamPulse" />
+    <meta property="og:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AlexisAMZ" />
+    <meta name="twitter:creator" content="@AlexisAMZ" />
+    <meta name="twitter:domain" content="streampulse.fr" />
+    <meta name="twitter:title" content="Расширение Kick для зрителей | StreamPulse" />
+    <meta name="twitter:description" content="StreamPulse: расширение для зрителей на Kick. Уведомления в режиме реального времени, отслеживание стримеров, фильтры чата и инструменты для просмотра на Kick.com." />
+    <meta name="twitter:image" content="https://www.streampulse.fr/images/og-image-en.png" />
+    <meta name="twitter:image:alt" content="StreamPulse, Chrome extension for Twitch and Kick: live notifications, channel points and automatic Drops." />
+
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.streampulse.fr/ru/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Расширение Kick для зрителей",
+      "item": "https://www.streampulse.fr/ru/расширение-Kick"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.streampulse.fr/#organization",
+      "name": "StreamPulse",
+      "url": "https://www.streampulse.fr",
+      "logo": "https://www.streampulse.fr/images/logo.png",
+      "sameAs": [
+        "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh",
+        "https://github.com/AlexisAMZ/streampulse-extension",
+        "https://github.com/AlexisAMZ",
+        "https://alternativeto.net/software/streampulse/"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://www.streampulse.fr/#software",
+      "name": "StreamPulse",
+      "description": "StreamPulse: расширение для зрителей на Kick. Уведомления в режиме реального времени, отслеживание стримеров, фильтры чата и инструменты для просмотра на Kick.com.",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "Chrome, Edge, Brave, Opera",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@id": "https://www.streampulse.fr/#organization"
+      },
+      "url": "https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh"
+    }
+  ]
+}
+</script>
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Расширение Kick для зрителей",
+    "headline": "Расширение Kick для зрителей",
+    "description": "StreamPulse: расширение для зрителей на Kick. Уведомления в режиме реального времени, отслеживание стримеров, фильтры чата и инструменты для просмотра на Kick.com.",
+    "inLanguage": "ru",
+    "url": "https://www.streampulse.fr/ru/расширение-Kick",
+    "image": "https://www.streampulse.fr/images/extension-screenshot.png",
+    "datePublished": "2026-08-11",
+    "dateModified": "2026-08-11",
+    "author": {
+      "@type": "Person",
+      "name": "AlexisAMZ",
+      "url": "https://github.com/AlexisAMZ"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "StreamPulse",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.streampulse.fr/images/logo.png"
+      }
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.streampulse.fr/ru/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Расширение Kick для зрителей",
+        "item": "https://www.streampulse.fr/ru/расширение-Kick"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "ru",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Работает ли StreamPulse с Kick?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. StreamPulse поддерживает Kick с функциями уведомлений в режиме реального времени, отслеживания стримеров, фильтров чата и отслеживания времени просмотра."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Отправляет ли StreamPulse уведомления через Kick?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. Как только стример, на которого вы подписаны, выходит в прямой эфир на Kick, StreamPulse отправляет уведомление на рабочий стол в режиме реального времени."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "StreamPulse получает ли вознаграждения Kick?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. StreamPulse автоматически обнаруживает и получает вознаграждения от Kick, когда они становятся доступны."
+        }
+      }
+    ]
+  }
+]
+    </script>
+    <style>
+      .article-wrap { width: min(760px, 92vw); margin: 0 auto; }
+      .article-wrap h2 {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        scroll-margin-top: 100px;
+        background: linear-gradient(135deg, #fff 0%, #a79af9 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .article-wrap h3 { margin: 1.8rem 0 0.8rem; font-size: 1.25rem; font-weight: 500; }
+      .article-wrap p { line-height: 1.8; margin: 0 0 1.2rem; font-size: 1.05rem; color: rgba(255,255,255,0.85); }
+      .article-lede { font-size: 1.25rem !important; color: rgba(255,255,255,0.7) !important; font-weight: 400; line-height: 1.6 !important; }
+      
+      /* Glowing blocks */
+      .answer-block {
+        border-left: 4px solid var(--color-highlight);
+        background: linear-gradient(90deg, rgba(145, 70, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border-radius: 0 16px 16px 0;
+        padding: 1.2rem 1.6rem;
+        margin: 0 0 1.8rem;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+      }
+      .answer-block p { margin: 0; font-weight: 500; font-size: 1.1rem; color: #fff; }
+      
+      .toc {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 1.5rem 1.8rem;
+        margin: 0 0 3rem;
+        backdrop-filter: blur(12px);
+      }
+      .toc-title {
+        margin: 0 0 1rem;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--color-muted);
+        font-weight: 600;
+      }
+      .toc ul { margin: 0; padding-left: 1.2rem; }
+      .toc li { margin: 0.5rem 0; }
+      .toc a { color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.2s; }
+      .toc a:hover { color: var(--color-highlight); }
+      
+      .step-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .step-list li { margin: 0 0 1rem; color: rgba(255,255,255,0.85); }
+      .step-list strong { color: #fff; display: inline-block; margin-bottom: 0.2rem; }
+      
+      .check-list { padding-left: 1.4rem; line-height: 1.8; font-size: 1.05rem; }
+      .check-list li { margin: 0 0 0.7rem; color: rgba(255,255,255,0.85); }
+      
+      .table-wrap { overflow-x: auto; margin: 0 0 2rem; border-radius: 12px; border: 1px solid var(--border); }
+      .cmp-table { width: 100%; border-collapse: collapse; font-size: 1rem; background: var(--surface); }
+      .cmp-table th, .cmp-table td {
+        text-align: left;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid var(--border);
+        vertical-align: top;
+      }
+      .cmp-table thead th {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--color-muted);
+        background: rgba(255,255,255,0.02);
+      }
+      
+      .breadcrumb { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 1.5rem; }
+      .breadcrumb a { color: var(--color-muted); text-decoration: none; transition: color 0.2s; }
+      .breadcrumb a:hover { color: var(--color-highlight); }
+      
+      .related-list { padding-left: 1.2rem; line-height: 2; font-size: 1.05rem; }
+      .article-meta { font-size: 0.9rem; color: var(--color-muted); margin: 0 0 2.5rem; display: flex; align-items: center; gap: 0.5rem; }
+      
+      .content-hero { padding: 4rem 0 2rem; position: relative; }
+      .content-hero::before {
+        content: ''; position: absolute; top: -100px; left: 50%; transform: translateX(-50%);
+        width: 600px; height: 300px; background: var(--color-highlight); filter: blur(120px); opacity: 0.15; z-index: -1;
+      }
+</style>
+  </head>
+  <body class="legal-page">
+    <header class="site-header">
+      <div class="container header-content">
+        <div class="branding">
+          <a href="/ru" class="branding-link">
+            <img src="/images/logo.png" alt="StreamPulse" class="logo" />
+            <span class="brand-name">StreamPulse</span>
+          </a>
+        </div>
+        <nav class="main-nav">
+          <a href="/ru/#features">Features</a>
+          <a href="/ru/#faq">FAQ</a>
+          <div class="nav-dropdown">
+            <a href="#" style="cursor: default;" onclick="event.preventDefault()">Guides ▾</a>
+            <div class="nav-dropdown-content">
+              <a href="/ru/ошибка-2000-twitch-решение">Ошибка 2000 на Twitch: причины и способы устранения | StreamPulse</a>
+              <a href="/ru/ошибка-3000-twitch-решение">Ошибка 3000 на Twitch: причины и способы устранения | StreamPulse</a>
+              <a href="/ru/автоматические-подарки-в-Twitch">Автоматические Twitch Drops | StreamPulse</a>
+              <a href="/ru/автоматические-баллы-канала-Twitch">Автоматические очки Twitch | StreamPulse</a>
+              <a href="/ru/расширение-Kick">Расширение Kick для зрителей | StreamPulse</a>
+              <a href="/ru/расширение-твич">Расширение для Twitch для зрителей | StreamPulse</a>
+              <a href="/ru/фильтр-чат-Twitch">Фильтрация чата на Twitch: спам и ключевые слова | StreamPulse</a>
+              <a href="/ru/уведомления-в-реальном-времени-Twitch-Kick">Уведомления в Twitch и Kick | StreamPulse</a>
+              <a href="/ru/панель-управления-Twitch-Kick">Объединенная панель управления Twitch и Kick | StreamPulse</a>
+              <a href="/ru/лучшие-расширения-для-Twitch">Лучшие расширения для Twitch 2026 | StreamPulse</a>
+              <a href="/ru/расширение-kick-уведомления">Extension Kick: уведомления о прямых трансляциях | StreamPulse</a>
+            </div>
+          </div>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal-main">
+      <section class="content-hero reveal">
+        <div class="container article-wrap">
+          <p class="breadcrumb">
+            <a href="/ru">Home</a> / <span>Расширение Kick для зрителей</span>
+          </p>
+          <h1>Расширение Kick для зрителей</h1>
+          <p class="article-lede">StreamPulse — одно из немногих расширений для браузера, которое помимо Twitch поддерживает и Kick. Уведомления в режиме реального времени, автоматические награды, фильтры чата и отслеживание ваших любимых стримеров на Kick — всё это в единой панели управления.</p>
+        </div>
+      </section>
+
+      <section class="section reveal" style="padding-top: 1rem;">
+        <div class="container article-wrap">
+          <p class="article-meta">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            Updated on 11 August 2026
+          </p>
+        <nav class="toc" aria-label="On this page">
+          <p class="toc-title">On this page</p>
+          <ul>
+          <li><a href="#fonctionnalites">Функции Kick</a></li>
+          <li><a href="#difference">Отличия от службы Twitch</a></li>
+          <li><a href="#installation">Установка</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="fonctionnalites">Функции Kick</h2>
+        <div class="answer-block">
+          <p>StreamPulse поддерживает ключевые функции Kick: уведомления в режиме реального времени, награды каналов, фильтры чата и отслеживание времени просмотра. На панели управления StreamPulse каналы Twitch и Kick отображаются в едином интерфейсе.</p>
+        </div>
+        <ul class="check-list">
+          <li><strong>Уведомления о прямых трансляциях на Kick.</strong> Уведомления на рабочий стол в режиме реального времени, как только подписчик-стример выходит в прямой эфир на Kick.</li>
+          <li><strong>Вознаграждения цепочки.</strong> Автоматическое получение вознаграждений цепочки Kick, когда они становятся доступны.</li>
+          <li><strong>Фильтры чата Kick.</strong> Скрывайте спам и нежелательные ключевые слова в чате Kick.</li>
+          <li><strong>Отслеживание времени просмотра.</strong> Точный счетчик времени, проведённого на каждом отслеживаемом канале Kick.</li>
+        </ul>
+
+        <h2 id="difference">Отличия от службы Twitch</h2>
+        <div class="answer-block">
+          <p>Поддержка Kick в StreamPulse включает уведомления, вознаграждения, фильтры и отслеживание. Функции, характерные для Twitch (Drops, предварительный просмотр при наведении курсора, исправление ошибок проигрывателя), недоступны в Kick, поскольку API Kick в настоящее время не поддерживает их.</p>
+        </div>
+
+        <h2 id="installation">Установка</h2>
+        <div class="answer-block">
+          <p>StreamPulse устанавливается из Chrome Web Store и работает во всех браузерах на базе Chromium. Поддержка Kick включена по умолчанию, дополнительная настройка не требуется.</p>
+        </div>
+
+        <h2 id="faq">FAQ</h2>
+        <div class="faq-inline">
+          <div class="faq-item">
+            <h3>Работает ли StreamPulse с Kick?</h3>
+            <p>Да. StreamPulse поддерживает Kick с функциями уведомлений в режиме реального времени, отслеживания стримеров, фильтров чата и отслеживания времени просмотра.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Отправляет ли StreamPulse уведомления через Kick?</h3>
+            <p>Да. Как только стример, на которого вы подписаны, выходит в прямой эфир на Kick, StreamPulse отправляет уведомление на рабочий стол в режиме реального времени.</p>
+          </div>
+          <div class="faq-item">
+            <h3>StreamPulse получает ли вознаграждения Kick?</h3>
+            <p>Да. StreamPulse автоматически обнаруживает и получает вознаграждения от Kick, когда они становятся доступны.</p>
+          </div>
+        </div>
+
+
+        </div>
+      </section>
+
+      <section class="cta-banner">
+        <div class="container">
+          <h2>Install StreamPulse</h2>
+          <p>Free, no ads, no account. Your data stays inside your own browser.</p>
+          <p>
+            <a class="btn primary" href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+            <a class="btn" href="/support">Read the FAQ</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="current-year"></span> StreamPulse. All rights reserved.</p>
+        <nav class="footer-links">
+          <a href="/ru/ошибка-2000-twitch-решение">Ошибка 2000 на Twitch: причины и способы устранения | StreamPulse</a>
+          <a href="/ru/ошибка-3000-twitch-решение">Ошибка 3000 на Twitch: причины и способы устранения | StreamPulse</a>
+          <a href="/ru/автоматические-подарки-в-Twitch">Автоматические Twitch Drops | StreamPulse</a>
+          <a href="/ru/автоматические-баллы-канала-Twitch">Автоматические очки Twitch | StreamPulse</a>
+          <a href="/ru/расширение-Kick">Расширение Kick для зрителей | StreamPulse</a>
+          <a href="/ru/расширение-твич">Расширение для Twitch для зрителей | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/ru/фильтр-чат-Twitch">Фильтрация чата на Twitch: спам и ключевые слова | StreamPulse</a>
+          <a href="/ru/уведомления-в-реальном-времени-Twitch-Kick">Уведомления в Twitch и Kick | StreamPulse</a>
+          <a href="/ru/панель-управления-Twitch-Kick">Объединенная панель управления Twitch и Kick | StreamPulse</a>
+          <a href="/ru/лучшие-расширения-для-Twitch">Лучшие расширения для Twitch 2026 | StreamPulse</a>
+          <a href="/ru/расширение-kick-уведомления">Extension Kick: уведомления о прямых трансляциях | StreamPulse</a>
+        </nav>
+        <nav class="footer-links">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms of use</a>
+          <a href="/support">Support</a>
+          <a href="https://chromewebstore.google.com/detail/streampulse-multi-streame/ipfhbfabadbpkjimhdcjadopnahdpddh" target="_blank" rel="noopener">Add to Chrome (free)</a>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

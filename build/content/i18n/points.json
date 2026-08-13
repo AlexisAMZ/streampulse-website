@@ -1,10 +1,10 @@
 {
   "es": {
-    "slug": "puntos-de-cadena-automáticos-twitch",
-    "linkLabel": "Puntos de cadena automáticos en Twitch",
-    "title": "Puntos de cadena automáticos de Twitch | StreamPulse",
-    "h1": "Recuperar los puntos de la cadena de Twitch automáticamente",
-    "description": "Cómo recuperar automáticamente tus puntos de la cadena de Twitch, incluso con la pestaña cerrada: instalación en 3 pasos, ajustes y preguntas frecuentes.",
+    "slug": "puntos-del-canal-automáticos-Twitch",
+    "linkLabel": "Puntos del canal automáticos en Twitch",
+    "title": "Puntos del canal automáticos de Twitch | StreamPulse",
+    "h1": "Recuperar los puntos del canal de Twitch automáticamente",
+    "description": "Cómo recuperar automáticamente tus puntos del canal de Twitch, incluso con la pestaña cerrada: instalación en 3 pasos, ajustes y preguntas frecuentes.",
     "intro": "Los puntos de Twitch se ganan viendo una retransmisión en directo, pero la bonificación que se obtiene cada 15 minutos requiere hacer clic manualmente en un cofre que desaparece al cabo de unos minutos. En esta página se explica cómo automatizar esta recogida con StreamPulse, qué hace exactamente la extensión y cuáles son las limitaciones que hay que tener en cuenta.",
     "howToSteps": [
       {
@@ -13,7 +13,7 @@
       },
       {
         "name": "Activar la recuperación automática",
-        "text": "Abre StreamPulse desde la barra de herramientas y, a continuación, activa el módulo «Puntos de cadena» en la configuración. Está activo por defecto."
+        "text": "Abre StreamPulse desde la barra de herramientas y, a continuación, activa el módulo «Puntos del canal» en la configuración. Está activo por defecto."
       },
       {
         "name": "Añade tus streamers",
@@ -97,9 +97,9 @@
     ]
   },
   "pt-BR": {
-    "slug": "pontos-de-corrente-automáticos-twitch",
-    "linkLabel": "Pontos de cadeia automáticos no Twitch",
-    "title": "Pontos de cadeia automáticos do Twitch | StreamPulse",
+    "slug": "pontos-do-canal-automáticos-Twitch",
+    "linkLabel": "Pontos do canal automáticos no Twitch",
+    "title": "Pontos do canal automáticos do Twitch | StreamPulse",
     "h1": "Recuperar pontos de canal do Twitch automaticamente",
     "description": "Como recuperar automaticamente seus pontos de canal do Twitch, mesmo com a aba fechada: instalação em 3 etapas, configurações e perguntas frequentes.",
     "intro": "Os pontos da Twitch são ganhos ao assistir a uma transmissão ao vivo, mas o bônus a cada 15 minutos exige um clique manual em um baú que desaparece após alguns minutos. Esta página explica como automatizar essa coleta com o StreamPulse, o que exatamente a extensão faz e quais são as limitações que você precisa conhecer.",
@@ -110,7 +110,7 @@
       },
       {
         "name": "Ativar a recuperação automática",
-        "text": "Abra o StreamPulse a partir da barra de ferramentas e, em seguida, ative o módulo “Pontos da cadeia” nas configurações. Ele vem ativado por padrão."
+        "text": "Abra o StreamPulse a partir da barra de ferramentas e, em seguida, ative o módulo “Pontos do canal” nas configurações. Ele vem ativado por padrão."
       },
       {
         "name": "Adicione seus streamers",
@@ -138,7 +138,7 @@
           },
           {
             "name": "Ative o módulo.",
-            "text": "O módulo “Pontos da cadeia” está ativado por padrão; você pode desativá-lo cadeia por cadeia."
+            "text": "O módulo “Pontos do canal” está ativado por padrão; você pode desativá-lo canal por canal."
           },
           {
             "name": "Importe seus streamers.",
@@ -194,12 +194,12 @@
     ]
   },
   "de": {
-    "slug": "automatische-Kettenstiche-Twitch",
-    "linkLabel": "Automatische Chain-Punkte auf Twitch",
-    "title": "Automatische Twitch-Chain-Punkte | StreamPulse",
-    "h1": "Twitch-Kettenpunkte automatisch zurückerhalten",
+    "slug": "automatische-Kanalpunkte-Twitch",
+    "linkLabel": "Automatische Kanalpunkte auf Twitch",
+    "title": "Automatische Twitch-Kanalpunkte | StreamPulse",
+    "h1": "Twitch-Kanalpunkte automatisch zurückerhalten",
     "description": "So sammeln Sie Ihre Twitch-Channel-Punkte automatisch ein, auch wenn der Tab geschlossen ist: Einrichtung in 3 Schritten, Einstellungen und häufig gestellte Fragen.",
-    "intro": "Twitch-Kettenpunkte erhält man durch das Anschauen eines Live-Streams, doch für den Bonus alle 15 Minuten muss man manuell auf eine Truhe klicken, die nach wenigen Minuten verschwindet. Auf dieser Seite wird erklärt, wie man diese Punkteabholung mit StreamPulse automatisieren kann, was die Erweiterung genau leistet und welche Einschränkungen es zu beachten gibt.",
+    "intro": "Twitch-Kanalpunkte erhält man durch das Anschauen eines Live-Streams, doch für den Bonus alle 15 Minuten muss man manuell auf eine Truhe klicken, die nach wenigen Minuten verschwindet. Auf dieser Seite wird erklärt, wie man diese Punkteabholung mit StreamPulse automatisieren kann, was die Erweiterung genau leistet und welche Einschränkungen es zu beachten gibt.",
     "howToSteps": [
       {
         "name": "Erweiterung installieren",
@@ -207,7 +207,7 @@
       },
       {
         "name": "Automatische Wiederherstellung aktivieren",
-        "text": "Öffnen Sie StreamPulse über die Symbolleiste und aktivieren Sie anschließend in den Einstellungen das Modul „Kettenpunkte“. Es ist standardmäßig aktiviert."
+        "text": "Öffnen Sie StreamPulse über die Symbolleiste und aktivieren Sie anschließend in den Einstellungen das Modul „Kanalpunkte“. Es ist standardmäßig aktiviert."
       },
       {
         "name": "Fügen Sie Ihre Streamer hinzu",
@@ -235,7 +235,7 @@
           },
           {
             "name": "Aktivieren Sie das Modul.",
-            "text": "Das Modul „Kettenpunkte“ ist standardmäßig aktiviert; Sie können es für jede Kette einzeln deaktivieren."
+            "text": "Das Modul „Kanalpunkte“ ist standardmäßig aktiviert; Sie können es für jeden Kanal einzeln deaktivieren."
           },
           {
             "name": "Importieren Sie Ihre Streamer.",
@@ -291,11 +291,11 @@
     ]
   },
   "it": {
-    "slug": "catene-automatiche-twitch",
+    "slug": "punti-canale-automatici-Twitch",
     "linkLabel": "Punti automatici su Twitch",
     "title": "Punti automatici su Twitch | StreamPulse",
-    "h1": "Recuperare automaticamente i punti della catena di Twitch",
-    "description": "Come recuperare automaticamente i punti della catena di Twitch, anche con la scheda chiusa: installazione in 3 passaggi, impostazioni e domande frequenti.",
+    "h1": "Recuperare automaticamente i punti del canale di Twitch",
+    "description": "Come recuperare automaticamente i punti del canale di Twitch, anche con la scheda chiusa: installazione in 3 passaggi, impostazioni e domande frequenti.",
     "intro": "I punti Twitch si guadagnano guardando una diretta, ma il bonus ogni 15 minuti richiede un clic manuale su un forziere che scompare dopo pochi minuti. Questa pagina spiega come automatizzare il recupero dei punti con StreamPulse, cosa fa esattamente l'estensione e quali sono i limiti da tenere presenti.",
     "howToSteps": [
       {
@@ -304,7 +304,7 @@
       },
       {
         "name": "Attivare il recupero automatico",
-        "text": "Apri StreamPulse dalla barra degli strumenti, quindi attiva il modulo «Punti della catena» nelle impostazioni. È attivo per impostazione predefinita."
+        "text": "Apri StreamPulse dalla barra degli strumenti, quindi attiva il modulo «Punti del canale» nelle impostazioni. È attivo per impostazione predefinita."
       },
       {
         "name": "Aggiungi i tuoi streamer",
@@ -332,7 +332,7 @@
           },
           {
             "name": "Attiva il modulo.",
-            "text": "Il modulo «Punti della catena» è attivo per impostazione predefinita; è possibile disattivarlo catena per catena."
+            "text": "Il modulo «Punti del canale» è attivo per impostazione predefinita; è possibile disattivarlo canale per canale."
           },
           {
             "name": "Importa i tuoi streamer.",
@@ -375,7 +375,7 @@
       },
       {
         "q": "Il recupero funziona su Kick?",
-        "a": "Kick non dispone di un sistema di punti di catena equivalente. StreamPulse gestisce il monitoraggio delle dirette e le notifiche."
+        "a": "Kick non dispone di un sistema di punti canale equivalente. StreamPulse gestisce il monitoraggio delle dirette e le notifiche."
       },
       {
         "q": "Posso escludere alcuni canali?",
@@ -388,10 +388,10 @@
     ]
   },
   "pl": {
-    "slug": "automatyczne-punkty-łańcuchowe-twitch",
-    "linkLabel": "Automatyczne punkty łańcuchowe na Twitchu",
+    "slug": "automatyczne-punkty-kanału-Twitch",
+    "linkLabel": "Automatyczne punkty kanału na Twitchu",
     "title": "Automatyczne punkty w serwisie Twitch | StreamPulse",
-    "h1": "Automatyczne odzyskiwanie punktów łańcucha na Twitchu",
+    "h1": "Automatyczne odzyskiwanie punktów kanału na Twitchu",
     "description": "Jak automatycznie zbierać punkty Twitch, nawet gdy karta jest zamknięta: instalacja w 3 krokach, ustawienia i często zadawane pytania.",
     "intro": "Punkty Twitch Chain zdobywa się podczas oglądania transmisji na żywo, ale bonus przyznawany co 15 minut wymaga ręcznego kliknięcia w skrzynię, która znika po kilku minutach. Na tej stronie wyjaśniono, jak zautomatyzować odbieranie punktów za pomocą StreamPulse, na czym dokładnie polega działanie tego rozszerzenia oraz jakie ograniczenia należy wziąć pod uwagę.",
     "howToSteps": [
@@ -401,7 +401,7 @@
       },
       {
         "name": "Włącz automatyczne odzyskiwanie",
-        "text": "Uruchom program StreamPulse z paska narzędzi, a następnie włącz moduł „Punkty łańcucha” w ustawieniach. Jest on domyślnie włączony."
+        "text": "Uruchom program StreamPulse z paska narzędzi, a następnie włącz moduł „Punkty kanału” w ustawieniach. Jest on domyślnie włączony."
       },
       {
         "name": "Dodaj swoje streamerki",
@@ -429,7 +429,7 @@
           },
           {
             "name": "Włącz moduł.",
-            "text": "Moduł „Punkty łańcucha” jest domyślnie włączony; można go wyłączyć dla poszczególnych łańcuchów."
+            "text": "Moduł „Punkty kanału” jest domyślnie włączony; można go wyłączyć dla poszczególnych kanałów."
           },
           {
             "name": "Zaimportuj swoje streamery.",
@@ -472,7 +472,7 @@
       },
       {
         "q": "Czy funkcja przywracania działa w Kicku?",
-        "a": "W Kick nie ma odpowiednika systemu punktów łańcuchowych. Funkcję śledzenia transmisji na żywo i powiadomień pełni tam StreamPulse."
+        "a": "W Kick nie ma odpowiednika systemu punktów kanału. Funkcję śledzenia transmisji na żywo i powiadomień pełni tam StreamPulse."
       },
       {
         "q": "Czy mogę wykluczyć niektóre kanały?",
@@ -485,12 +485,12 @@
     ]
   },
   "tr": {
-    "slug": "otomatik zincir halkaları-twitch",
-    "linkLabel": "Twitch'te otomatik zincir puanları",
-    "title": "Twitch Otomatik Zincir Noktaları | StreamPulse",
+    "slug": "otomatik-kanal-puanları-Twitch",
+    "linkLabel": "Twitch'te otomatik kanal puanları",
+    "title": "Twitch Otomatik Kanal Puanları | StreamPulse",
     "h1": "Twitch kanal puanlarını otomatik olarak geri kazanmak",
     "description": "Sekme kapalıyken bile Twitch kanal puanlarınızı otomatik olarak nasıl toplayabilirsiniz: 3 adımda kurulum, ayarlar ve sık sorulan sorular.",
-    "intro": "Twitch zincir puanları, canlı yayınları izleyerek kazanılır; ancak her 15 dakikada bir verilen bonus için, birkaç dakika sonra kaybolan bir sandığa manuel olarak tıklamak gerekir. Bu sayfada, StreamPulse ile bu puan alımını nasıl otomatikleştirebileceğiniz, eklentinin tam olarak ne yaptığı ve bilmeniz gereken sınırlamalar açıklanmaktadır.",
+    "intro": "Twitch kanal puanları, canlı yayınları izleyerek kazanılır; ancak her 15 dakikada bir verilen bonus için, birkaç dakika sonra kaybolan bir sandığa manuel olarak tıklamak gerekir. Bu sayfada, StreamPulse ile bu puan alımını nasıl otomatikleştirebileceğiniz, eklentinin tam olarak ne yaptığı ve bilmeniz gereken sınırlamalar açıklanmaktadır.",
     "howToSteps": [
       {
         "name": "Eklentiyi yükle",
@@ -498,7 +498,7 @@
       },
       {
         "name": "Otomatik kurtarmayı etkinleştir",
-        "text": "Araç çubuğundan StreamPulse'u açın, ardından ayarlardan «Zincir Noktaları» modülünü etkinleştirin. Bu modül varsayılan olarak etkindir."
+        "text": "Araç çubuğundan StreamPulse'u açın, ardından ayarlardan «Kanal Puanları» modülünü etkinleştirin. Bu modül varsayılan olarak etkindir."
       },
       {
         "name": "Streamer'larınızı ekleyin",
@@ -526,7 +526,7 @@
           },
           {
             "name": "Modülü etkinleştirin.",
-            "text": "\"Zincir Noktaları\" modülü varsayılan olarak etkindir; bunu zincir bazında devre dışı bırakabilirsiniz."
+            "text": "\"Kanal Puanları\" modülü varsayılan olarak etkindir; bunu kanal bazında devre dışı bırakabilirsiniz."
           },
           {
             "name": "Streamer'larınızı içe aktarın.",
@@ -569,7 +569,7 @@
       },
       {
         "q": "Kick'te geri alma işlevi çalışıyor mu?",
-        "a": "Kick'te buna eşdeğer bir zincir puanı sistemi yoktur. StreamPulse, bu platformda canlı yayınların takibini ve bildirimleri yönetir."
+        "a": "Kick'te buna eşdeğer bir kanal puanı sistemi yoktur. StreamPulse, bu platformda canlı yayınların takibini ve bildirimleri yönetir."
       },
       {
         "q": "Bazı kanalları hariç tutabilir miyim?",
@@ -582,7 +582,7 @@
     ]
   },
   "ru": {
-    "slug": "автоматические-узлы-цепи-twitch",
+    "slug": "автоматические-баллы-канала-Twitch",
     "linkLabel": "Автоматические очки на Twitch",
     "title": "Автоматические очки Twitch | StreamPulse",
     "h1": "Автоматическое восстановление очков Twitch",
@@ -623,7 +623,7 @@
           },
           {
             "name": "Включите модуль.",
-            "text": "Модуль «Точки цепи» включен по умолчанию; его можно отключить для каждой цепи отдельно."
+            "text": "Модуль «Баллы канала» включен по умолчанию; его можно отключить для каждого канала отдельно."
           },
           {
             "name": "Импортируйте свои стримеры.",
@@ -679,12 +679,12 @@
     ]
   },
   "ja": {
-    "slug": "自動チェーンピン・Twitch",
-    "linkLabel": "Twitchの自動チェーンポイント",
-    "title": "Twitchの自動チェーンポイント | StreamPulse",
-    "h1": "Twitchのチェーンポイントを自動的に取得する",
+    "slug": "チャンネルポイント自動取得-Twitch",
+    "linkLabel": "Twitchの自動チャンネルポイント",
+    "title": "Twitchの自動チャンネルポイント | StreamPulse",
+    "h1": "Twitchのチャンネルポイントを自動的に取得する",
     "description": "タブを閉じていてもTwitchのチャンネルポイントを自動的に獲得する方法：3ステップでのインストール、設定、よくある質問。",
-    "intro": "Twitchのチェーンポイントはライブ配信を視聴することで獲得できますが、15分ごとのボーナスを受け取るには、数分後に消えてしまう宝箱を手動でクリックする必要があります。このページでは、StreamPulseを使ってこのボーナス獲得を自動化する方法、この拡張機能の具体的な機能、および知っておくべき制限事項について解説します。",
+    "intro": "Twitchのチャンネルポイントはライブ配信を視聴することで獲得できますが、15分ごとのボーナスを受け取るには、数分後に消えてしまう宝箱を手動でクリックする必要があります。このページでは、StreamPulseを使ってこのボーナス獲得を自動化する方法、この拡張機能の具体的な機能、および知っておくべき制限事項について解説します。",
     "howToSteps": [
       {
         "name": "拡張機能をインストールする",
@@ -692,7 +692,7 @@
       },
       {
         "name": "自動復元を有効にする",
-        "text": "ツールバーからStreamPulseを起動し、設定で「チェーンポイント」モジュールを有効にしてください。デフォルトでは有効になっています。"
+        "text": "ツールバーからStreamPulseを起動し、設定で「チャンネルポイント」モジュールを有効にしてください。デフォルトでは有効になっています。"
       },
       {
         "name": "ストリーマーを追加する",
@@ -720,7 +720,7 @@
           },
           {
             "name": "モジュールを有効にしてください。",
-            "text": "「チェーンポイント」モジュールはデフォルトで有効になっていますが、チェーンごとに無効にすることができます。"
+            "text": "「チャンネルポイント」モジュールはデフォルトで有効になっていますが、チャンネルごとに無効にすることができます。"
           },
           {
             "name": "ストリーマーをインポートしてください。",
@@ -763,7 +763,7 @@
       },
       {
         "q": "Kickではデータ復元は機能しますか？",
-        "a": "Kickには、これに相当するチェーンポイント制度はありません。StreamPulseでは、ライブの追跡や通知を管理しています。"
+        "a": "Kickには、これに相当するチャンネルポイント制度はありません。StreamPulseでは、ライブの追跡や通知を管理しています。"
       },
       {
         "q": "特定のチャンネルを除外することはできますか？",
@@ -776,12 +776,12 @@
     ]
   },
   "ko": {
-    "slug": "자동 체인 연결점-twitch",
-    "linkLabel": "Twitch의 자동 체인 포인트",
-    "title": "Twitch 자동 체인 포인트 | StreamPulse",
+    "slug": "채널-포인트-자동-적립-Twitch",
+    "linkLabel": "Twitch의 자동 채널 포인트",
+    "title": "Twitch 자동 채널 포인트 | StreamPulse",
     "h1": "Twitch 채널 포인트를 자동으로 회복하기",
     "description": "탭을 닫은 상태에서도 Twitch 채널 포인트를 자동으로 적립하는 방법: 3단계 설치 방법, 설정 및 자주 묻는 질문.",
-    "intro": "Twitch 체인 포인트는 라이브 방송을 시청하면 획득할 수 있지만, 15분마다 주어지는 보너스를 받으려면 몇 분 후에 사라지는 상자를 수동으로 클릭해야 합니다. 이 페이지에서는 StreamPulse를 사용하여 이 보너스 수령을 자동화하는 방법, 이 확장 프로그램이 정확히 어떤 기능을 하는지, 그리고 알아두어야 할 제한 사항에 대해 설명합니다.",
+    "intro": "Twitch 채널 포인트는 라이브 방송을 시청하면 획득할 수 있지만, 15분마다 주어지는 보너스를 받으려면 몇 분 후에 사라지는 상자를 수동으로 클릭해야 합니다. 이 페이지에서는 StreamPulse를 사용하여 이 보너스 수령을 자동화하는 방법, 이 확장 프로그램이 정확히 어떤 기능을 하는지, 그리고 알아두어야 할 제한 사항에 대해 설명합니다.",
     "howToSteps": [
       {
         "name": "확장 프로그램 설치하기",
@@ -817,7 +817,7 @@
           },
           {
             "name": "모듈을 활성화하십시오.",
-            "text": "“체인 포인트” 모듈은 기본적으로 활성화되어 있으며, 체인별로 비활성화할 수 있습니다."
+            "text": "“채널 포인트” 모듈은 기본적으로 활성화되어 있으며, 채널별로 비활성화할 수 있습니다."
           },
           {
             "name": "스트리머를 가져오세요.",
@@ -873,9 +873,9 @@
     ]
   },
   "id": {
-    "slug": "titik-rantai-otomatis-twitch",
-    "linkLabel": "Poin Rantai Otomatis di Twitch",
-    "title": "Titik Rantai Otomatis Twitch | StreamPulse",
+    "slug": "poin-channel-otomatis-Twitch",
+    "linkLabel": "Poin Channel Otomatis di Twitch",
+    "title": "Poin Channel Otomatis Twitch | StreamPulse",
     "h1": "Mendapatkan poin saluran Twitch secara otomatis",
     "description": "Cara mengumpulkan poin saluran Twitch secara otomatis, bahkan saat tab tertutup: pengaturan dalam 3 langkah, pengaturan, dan pertanyaan umum.",
     "intro": "Poin Twitch dapat diperoleh dengan menonton siaran langsung, tetapi bonus yang diberikan setiap 15 menit mengharuskan pengguna mengklik peti secara manual, yang akan menghilang setelah beberapa menit. Halaman ini menjelaskan cara mengotomatiskan proses pengambilan poin tersebut menggunakan StreamPulse, fungsi ekstensi ini secara tepat, serta batasan-batasan yang perlu diketahui.",
@@ -886,7 +886,7 @@
       },
       {
         "name": "Aktifkan pemulihan otomatis",
-        "text": "Buka StreamPulse dari bilah alat, lalu aktifkan modul “Titik Rantai” di pengaturan. Modul ini sudah aktif secara default."
+        "text": "Buka StreamPulse dari bilah alat, lalu aktifkan modul “Poin Channel” di pengaturan. Modul ini sudah aktif secara default."
       },
       {
         "name": "Tambahkan streamer Anda",
@@ -914,7 +914,7 @@
           },
           {
             "name": "Aktifkan modul tersebut.",
-            "text": "Modul \"Titik Rantai\" aktif secara default; Anda dapat menonaktifkannya per rantai."
+            "text": "Modul \"Poin Channel\" aktif secara default; Anda dapat menonaktifkannya per channel."
           },
           {
             "name": "Impor streamer Anda.",
@@ -957,7 +957,7 @@
       },
       {
         "q": "Apakah fitur pemulihan berfungsi di Kick?",
-        "a": "Kick tidak memiliki sistem poin rantai yang setara. Di Kick, StreamPulse yang mengelola pelacakan siaran langsung dan pemberitahuan."
+        "a": "Kick tidak memiliki sistem Poin Channel yang setara. Di Kick, StreamPulse yang mengelola pelacakan siaran langsung dan pemberitahuan."
       },
       {
         "q": "Apakah saya bisa mengecualikan saluran tertentu?",
@@ -970,12 +970,12 @@
     ]
   },
   "nl": {
-    "slug": "automatische-kettingogen-twitch",
-    "linkLabel": "Automatische kettingpunten op Twitch",
-    "title": "Automatische Twitch-kettingpunten | StreamPulse",
-    "h1": "Je Twitch-ketenpunten automatisch terugkrijgen",
+    "slug": "automatische-kanaalpunten-Twitch",
+    "linkLabel": "Automatische kanaalpunten op Twitch",
+    "title": "Automatische Twitch-kanaalpunten | StreamPulse",
+    "h1": "Je Twitch-kanaalpunten automatisch terugkrijgen",
     "description": "Hoe je automatisch je Twitch-kanaalpunten kunt verzamelen, zelfs als het tabblad gesloten is: installatie in 3 stappen, instellingen en veelgestelde vragen.",
-    "intro": "Twitch-ketenpunten verdien je door naar een livestream te kijken, maar voor de bonus die je om de 15 minuten krijgt, moet je handmatig op een kistje klikken dat na een paar minuten verdwijnt. Op deze pagina wordt uitgelegd hoe je het verzamelen van deze punten kunt automatiseren met StreamPulse, wat de extensie precies doet en welke beperkingen je moet kennen.",
+    "intro": "Twitch-kanaalpunten verdien je door naar een livestream te kijken, maar voor de bonus die je om de 15 minuten krijgt, moet je handmatig op een kistje klikken dat na een paar minuten verdwijnt. Op deze pagina wordt uitgelegd hoe je het verzamelen van deze punten kunt automatiseren met StreamPulse, wat de extensie precies doet en welke beperkingen je moet kennen.",
     "howToSteps": [
       {
         "name": "De extensie installeren",
@@ -983,7 +983,7 @@
       },
       {
         "name": "Automatisch herstel inschakelen",
-        "text": "Open StreamPulse via de werkbalk en schakel vervolgens de module „Ketenpunten“ in de instellingen in. Deze is standaard ingeschakeld."
+        "text": "Open StreamPulse via de werkbalk en schakel vervolgens de module „Kanaalpunten“ in de instellingen in. Deze is standaard ingeschakeld."
       },
       {
         "name": "Voeg je streamers toe",
@@ -1011,7 +1011,7 @@
           },
           {
             "name": "Schakel de module in.",
-            "text": "De module „Ketenpunten“ is standaard ingeschakeld; u kunt deze per keten uitschakelen."
+            "text": "De module „Kanaalpunten“ is standaard ingeschakeld; u kunt deze per kanaal uitschakelen."
           },
           {
             "name": "Importeer je streamers.",
@@ -1054,7 +1054,7 @@
       },
       {
         "q": "Werkt het terugzetten op Kick?",
-        "a": "Kick heeft geen vergelijkbaar systeem met ketenpunten. StreamPulse zorgt daar voor het bijhouden van livestreams en meldingen."
+        "a": "Kick heeft geen vergelijkbaar systeem met kanaalpunten. StreamPulse zorgt daar voor het bijhouden van livestreams en meldingen."
       },
       {
         "q": "Kan ik bepaalde zenders uitsluiten?",
@@ -1067,12 +1067,12 @@
     ]
   },
   "sv": {
-    "slug": "automatiska kedjepunkter-twitch",
-    "linkLabel": "Automatiska kedjepunkter på Twitch",
-    "title": "Automatiska kedjepunkter på Twitch | StreamPulse",
-    "h1": "Hämta sina Twitch-kedjepoäng automatiskt",
-    "description": "Så här hämtar du automatiskt dina Twitch-kedjepoäng, även när fliken är stängd: installation i tre steg, inställningar och vanliga frågor.",
-    "intro": "Man tjänar Twitch-kedjepunkter genom att titta på en livestream, men för att få bonusen var 15:e minut måste man manuellt klicka på en skattkista som försvinner efter några minuter. På den här sidan förklaras hur man kan automatisera detta med StreamPulse, exakt vad tillägget gör och vilka begränsningar man bör känna till.",
+    "slug": "automatiska-kanalpoäng-Twitch",
+    "linkLabel": "Automatiska kanalpoäng på Twitch",
+    "title": "Automatiska kanalpoäng på Twitch | StreamPulse",
+    "h1": "Hämta sina Twitch-kanalpoäng automatiskt",
+    "description": "Så här hämtar du automatiskt dina Twitch-kanalpoäng, även när fliken är stängd: installation i tre steg, inställningar och vanliga frågor.",
+    "intro": "Man tjänar Twitch-kanalpoäng genom att titta på en livestream, men för att få bonusen var 15:e minut måste man manuellt klicka på en skattkista som försvinner efter några minuter. På den här sidan förklaras hur man kan automatisera detta med StreamPulse, exakt vad tillägget gör och vilka begränsningar man bör känna till.",
     "howToSteps": [
       {
         "name": "Installera tillägget",
@@ -1080,7 +1080,7 @@
       },
       {
         "name": "Aktivera automatisk återställning",
-        "text": "Öppna StreamPulse från verktygsfältet och aktivera sedan modulen ”Kedjepunkter” i inställningarna. Den är aktiverad som standard."
+        "text": "Öppna StreamPulse från verktygsfältet och aktivera sedan modulen ”Kanalpoäng” i inställningarna. Den är aktiverad som standard."
       },
       {
         "name": "Lägg till dina streamare",
@@ -1108,7 +1108,7 @@
           },
           {
             "name": "Aktivera modulen.",
-            "text": "Modulen ”Kedjepunkter” är aktiverad som standard; du kan inaktivera den för varje enskild kedja."
+            "text": "Modulen ”Kanalpoäng” är aktiverad som standard; du kan inaktivera den för varje enskild kedja."
           },
           {
             "name": "Importera dina streamare.",
@@ -1164,9 +1164,9 @@
     ]
   },
   "cs": {
-    "slug": "automatické-řetězové-spony-twitch",
+    "slug": "automatické-body-kanálu-Twitch",
     "linkLabel": "Automatické body na Twitchi",
-    "title": "Automatické body řetězce na Twitchi | StreamPulse",
+    "title": "Automatické body kanálu na Twitchi | StreamPulse",
     "h1": "Automatické načtení bodů z kanálu Twitch",
     "description": "Jak automaticky získávat body na Twitchu, i když je záložka zavřená: instalace ve 3 krocích, nastavení a časté dotazy.",
     "intro": "Body Twitch Chain se získávají sledováním živého vysílání, ale bonus každých 15 minut vyžaduje ruční kliknutí na truhlu, která po několika minutách zmizí. Na této stránce se dozvíte, jak tento proces automatizovat pomocí StreamPulse, co přesně toto rozšíření dělá a jaká jsou omezení, o kterých byste měli vědět.",
@@ -1177,7 +1177,7 @@
       },
       {
         "name": "Zapnout automatické obnovení",
-        "text": "Spusťte StreamPulse z panelu nástrojů a poté v nastaveních aktivujte modul „Body řetězce“. Ten je ve výchozím nastavení aktivní."
+        "text": "Spusťte StreamPulse z panelu nástrojů a poté v nastaveních aktivujte modul „Body kanálu“. Ten je ve výchozím nastavení aktivní."
       },
       {
         "name": "Přidejte své streamery",
@@ -1205,7 +1205,7 @@
           },
           {
             "name": "Aktivujte modul.",
-            "text": "Modul „Body řetězce“ je ve výchozím nastavení aktivní; můžete jej deaktivovat pro jednotlivé řetězce."
+            "text": "Modul „Body kanálu“ je ve výchozím nastavení aktivní; můžete jej deaktivovat pro jednotlivé kanály."
           },
           {
             "name": "Načtěte své streamery.",
@@ -1248,7 +1248,7 @@
       },
       {
         "q": "Funguje obnovení dat v aplikaci Kick?",
-        "a": "Kick nemá žádný obdobný systém řetězcových bodů. StreamPulse zde zajišťuje sledování živých vysílání a zasílání oznámení."
+        "a": "Kick nemá žádný obdobný systém bodů kanálu. StreamPulse zde zajišťuje sledování živých vysílání a zasílání oznámení."
       },
       {
         "q": "Mohu některé kanály vyloučit?",
