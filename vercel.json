@@ -35,7 +35,7 @@
       "permanent": true
     },
     {
-      "source": "/(%5B%5E/%5D+).html",
+      "source": "/([^/]+).html",
       "destination": "/$1",
       "permanent": true
     },
