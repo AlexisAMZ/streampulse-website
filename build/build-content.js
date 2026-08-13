@@ -303,6 +303,7 @@ function buildSitemap() {
   });
 
   [
+    { path: 'about', pri: '0.5' },
     { path: 'privacy', pri: '0.4' },
     { path: 'terms', pri: '0.4' },
   ].forEach((l) => {
