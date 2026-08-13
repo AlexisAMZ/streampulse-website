@@ -43,23 +43,29 @@ const CHROME =
  * Chaînes visibles de la carte, par variante. Volontairement séparées des
  * dictionnaires build/i18n : ce sont des accroches courtes calibrées pour la
  * largeur du visuel, pas les libellés de l'interface.
+ *
+ * SHOT désigne une capture réelle de l'extension, pas une maquette : chaque
+ * variante montre l'interface dans sa propre langue. La variante FR réutilise
+ * l'image du hero de la landing, une seule capture à remplacer à chaque
+ * refonte de l'UI.
  */
 const VARIANTS = {
   fr: {
     file: 'og-image.png',
     EYEBROW: 'Extension Chrome · Twitch &amp; Kick',
     H1_A: 'Ne ratez plus',
-    H1_B: 'un seul',
-    H1_C: 'live.',
-    SUB: 'Notifications instantanées, points de chaîne récupérés automatiquement et Drops collectés tout seuls.',
-    PILL_FREE: '100&nbsp;% gratuit',
-    PILL_PRIVACY: 'Sans tracking',
+    H1_B: 'un seul live',
+    H1_C: 'sur Twitch et Kick.',
+    SUB: 'Notifications instantanées, points de chaîne et Drops récupérés automatiquement.',
+    CTA: 'Ajouter à Chrome (Gratuit)',
+    META_NUM: '100&nbsp;% gratuit',
+    META_LBL: 'Pas de pub, pas de tracking',
     BROWSERS: 'Chrome · Edge · Brave · Opera',
-    CARD_TITLE: 'Mes chaînes',
-    CARD_LIVE: '3 en live',
-    OFFLINE: 'Hors ligne',
-    STAT_POINTS: 'Points auto',
-    STAT_DROPS: 'Drops',
+    SHOT: 'image.png',
+    // Le streamer de la notification doit être l'un de ceux visibles dans
+    // SHOT, sinon la carte se contredit à la lecture.
+    NOTIF_WHO: 'aminematue',
+    NOTIF_GAME: 'Just Chatting',
     NOTIF: 'vient de lancer un live',
     NOTIF_TIME: "à l'instant",
   },
@@ -67,17 +73,16 @@ const VARIANTS = {
     file: 'og-image-en.png',
     EYEBROW: 'Chrome extension · Twitch &amp; Kick',
     H1_A: 'Never miss',
-    H1_B: 'a single',
-    H1_C: 'live.',
-    SUB: 'Instant live notifications, channel points claimed automatically and Drops collected on their own.',
-    PILL_FREE: '100&nbsp;% free',
-    PILL_PRIVACY: 'No tracking',
+    H1_B: 'a single live',
+    H1_C: 'on Twitch and Kick.',
+    SUB: 'Instant notifications, channel points and Drops claimed automatically.',
+    CTA: 'Add to Chrome (Free)',
+    META_NUM: '100&nbsp;% free',
+    META_LBL: 'No ads, no tracking',
     BROWSERS: 'Chrome · Edge · Brave · Opera',
-    CARD_TITLE: 'My channels',
-    CARD_LIVE: '3 live now',
-    OFFLINE: 'Offline',
-    STAT_POINTS: 'Auto points',
-    STAT_DROPS: 'Drops',
+    SHOT: 'image-en.png',
+    NOTIF_WHO: 'Anyme023',
+    NOTIF_GAME: 'IRL',
     NOTIF: 'just went live',
     NOTIF_TIME: 'just now',
   },
