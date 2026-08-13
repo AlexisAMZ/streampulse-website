@@ -4,11 +4,26 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true },
-    { "source": "/privacy.html", "destination": "/privacy", "permanent": true },
-    { "source": "/terms.html", "destination": "/terms", "permanent": true },
-    { "source": "/support.html", "destination": "/support", "permanent": true },
-
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/support.html",
+      "destination": "/support",
+      "permanent": true
+    },
     {
       "source": "/:locale/index.html",
       "destination": "/:locale",
@@ -24,7 +39,6 @@
       "destination": "/$1",
       "permanent": true
     },
-
     {
       "source": "/:locale(en|es|pt-br|de|it|pl|tr|ru|ja|ko|id|nl|hi|sv|cs)/privacy",
       "destination": "/privacy",
@@ -34,23 +48,754 @@
       "source": "/:locale(en|es|pt-br|de|it|pl|tr|ru|ja|ko|id|nl|hi|sv|cs)/terms",
       "destination": "/terms",
       "permanent": false
+    },
+    {
+      "source": "/cs/auto-claim-twitch-channel-points",
+      "destination": "/cs/automatick%C3%A9-%C5%99et%C4%9Bzov%C3%A9-spony-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/cs/best-twitch-extensions",
+      "destination": "/cs/nejlep%C5%A1%C3%AD-roz%C5%A1%C3%AD%C5%99en%C3%AD-pro-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/cs/filter-twitch-chat",
+      "destination": "/cs/filtrovat-chat-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/cs/kick-extension-notifications",
+      "destination": "/cs/roz%C5%A1%C3%AD%C5%99en%C3%AD-kick-ozn%C3%A1men%C3%AD",
+      "permanent": true
+    },
+    {
+      "source": "/cs/kick-extension",
+      "destination": "/cs/prodlou%C5%BEen%C3%BD%20kop",
+      "permanent": true
+    },
+    {
+      "source": "/cs/twitch-drops-auto-claim",
+      "destination": "/cs/automatick%C3%A9%20twitch-drops",
+      "permanent": true
+    },
+    {
+      "source": "/cs/twitch-error-2000-fix",
+      "destination": "/cs/chyba-2000-twitch-%C5%99e%C5%A1en%C3%AD",
+      "permanent": true
+    },
+    {
+      "source": "/cs/twitch-error-3000-fix",
+      "destination": "/cs/chyba-3000-twitch-%C5%99e%C5%A1en%C3%AD",
+      "permanent": true
+    },
+    {
+      "source": "/cs/twitch-extension",
+      "destination": "/cs/roz%C5%A1%C3%AD%C5%99en%C3%AD-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/cs/twitch-kick-dashboard",
+      "destination": "/cs/dashboard-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/cs/twitch-kick-live-notifications",
+      "destination": "/cs/ozn%C3%A1men%C3%AD-live-twitch-vylou%C4%8Den%C3%AD",
+      "permanent": true
+    },
+    {
+      "source": "/de/auto-claim-twitch-channel-points",
+      "destination": "/de/automatische-Kettenstiche-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/de/best-twitch-extensions",
+      "destination": "/de/die-besten-Twitch-Erweiterungen",
+      "permanent": true
+    },
+    {
+      "source": "/de/filter-twitch-chat",
+      "destination": "/de/Chat-Filter-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/de/kick-extension-notifications",
+      "destination": "/de/Erweiterung%20%E2%80%9EKick-Benachrichtigungen%E2%80%9C",
+      "permanent": true
+    },
+    {
+      "source": "/de/kick-extension",
+      "destination": "/de/Ausfalltritt",
+      "permanent": true
+    },
+    {
+      "source": "/de/twitch-drops-auto-claim",
+      "destination": "/de/twitch-drops-automatisch",
+      "permanent": true
+    },
+    {
+      "source": "/de/twitch-error-2000-fix",
+      "destination": "/de/Fehler-2000-Twitch-L%C3%B6sung",
+      "permanent": true
+    },
+    {
+      "source": "/de/twitch-error-3000-fix",
+      "destination": "/de/Fehler-3000-Twitch-L%C3%B6sung",
+      "permanent": true
+    },
+    {
+      "source": "/de/twitch-extension",
+      "destination": "/de/Erweiterung-Zuckung",
+      "permanent": true
+    },
+    {
+      "source": "/de/twitch-kick-dashboard",
+      "destination": "/de/Dashboard-Twitch-Kick",
+      "permanent": true
+    },
+    {
+      "source": "/de/twitch-kick-live-notifications",
+      "destination": "/de/Benachrichtigungen%20%E2%80%93%20Live%20%E2%80%93%20Twitch%20%E2%80%93%20Kick",
+      "permanent": true
+    },
+    {
+      "source": "/es/auto-claim-twitch-channel-points",
+      "destination": "/es/puntos-de-cadena-autom%C3%A1ticos-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/es/best-twitch-extensions",
+      "destination": "/es/las-mejores-extensiones-de-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/es/filter-twitch-chat",
+      "destination": "/es/filtrar-chat-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/es/kick-extension-notifications",
+      "destination": "/es/extensi%C3%B3n-notificaciones-de-patada",
+      "permanent": true
+    },
+    {
+      "source": "/es/kick-extension",
+      "destination": "/es/patada%20de%20extensi%C3%B3n",
+      "permanent": true
+    },
+    {
+      "source": "/es/twitch-drops-auto-claim",
+      "destination": "/es/twitch-drops-autom%C3%A1tico",
+      "permanent": true
+    },
+    {
+      "source": "/es/twitch-error-2000-fix",
+      "destination": "/es/error-2000-twitch-soluci%C3%B3n",
+      "permanent": true
+    },
+    {
+      "source": "/es/twitch-error-3000-fix",
+      "destination": "/es/error-3000-twitch-soluci%C3%B3n",
+      "permanent": true
+    },
+    {
+      "source": "/es/twitch-extension",
+      "destination": "/es/extension-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/es/twitch-kick-dashboard",
+      "destination": "/es/panel-de-control-twitch-expulsi%C3%B3n",
+      "permanent": true
+    },
+    {
+      "source": "/es/twitch-kick-live-notifications",
+      "destination": "/es/notificaciones-en-directo-twitch-expulsi%C3%B3n",
+      "permanent": true
+    },
+    {
+      "source": "/id/auto-claim-twitch-channel-points",
+      "destination": "/id/titik-rantai-otomatis-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/id/best-twitch-extensions",
+      "destination": "/id/ekstensi-terbaik-untuk-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/id/filter-twitch-chat",
+      "destination": "/id/filter-chat-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/id/kick-extension-notifications",
+      "destination": "/id/ekstensi-notifikasi-tendangan",
+      "permanent": true
+    },
+    {
+      "source": "/id/kick-extension",
+      "destination": "/id/tendangan-ekstensi",
+      "permanent": true
+    },
+    {
+      "source": "/id/twitch-drops-auto-claim",
+      "destination": "/id/twitch-drops-otomatis",
+      "permanent": true
+    },
+    {
+      "source": "/id/twitch-error-2000-fix",
+      "destination": "/id/kesalahan-2000-twitch-solusi",
+      "permanent": true
+    },
+    {
+      "source": "/id/twitch-error-3000-fix",
+      "destination": "/id/kesalahan-3000-twitch-solusi",
+      "permanent": true
+    },
+    {
+      "source": "/id/twitch-extension",
+      "destination": "/id/ekstensi-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/id/twitch-kick-dashboard",
+      "destination": "/id/dashboard-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/id/twitch-kick-live-notifications",
+      "destination": "/id/pemberitahuan-siaran-langsung-Twitch-pengusiran",
+      "permanent": true
+    },
+    {
+      "source": "/it/auto-claim-twitch-channel-points",
+      "destination": "/it/catene-automatiche-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/it/best-twitch-extensions",
+      "destination": "/it/le-migliori-estensioni-per-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/it/filter-twitch-chat",
+      "destination": "/it/filtra-chat-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/it/kick-extension-notifications",
+      "destination": "/it/estensione-notifiche-a-calcio",
+      "permanent": true
+    },
+    {
+      "source": "/it/kick-extension",
+      "destination": "/it/calcio%20di%20prolunga",
+      "permanent": true
+    },
+    {
+      "source": "/it/twitch-drops-auto-claim",
+      "destination": "/it/twitch-drops-automatico",
+      "permanent": true
+    },
+    {
+      "source": "/it/twitch-error-2000-fix",
+      "destination": "/it/errore-2000-twitch-soluzione",
+      "permanent": true
+    },
+    {
+      "source": "/it/twitch-error-3000-fix",
+      "destination": "/it/errore-3000-twitch-soluzione",
+      "permanent": true
+    },
+    {
+      "source": "/it/twitch-extension",
+      "destination": "/it/estensione-contrazione",
+      "permanent": true
+    },
+    {
+      "source": "/it/twitch-kick-dashboard",
+      "destination": "/it/dashboard-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/it/twitch-kick-live-notifications",
+      "destination": "/it/notifiche-live-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/ja/auto-claim-twitch-channel-points",
+      "destination": "/ja/%E8%87%AA%E5%8B%95%E3%83%81%E3%82%A7%E3%83%BC%E3%83%B3%E3%83%94%E3%83%B3%E3%83%BBTwitch",
+      "permanent": true
+    },
+    {
+      "source": "/ja/best-twitch-extensions",
+      "destination": "/ja/Twitch%E3%81%AE%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD",
+      "permanent": true
+    },
+    {
+      "source": "/ja/filter-twitch-chat",
+      "destination": "/ja/Twitch%E3%81%AE%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%82%92%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0",
+      "permanent": true
+    },
+    {
+      "source": "/ja/kick-extension-notifications",
+      "destination": "/ja/extension-kick-notifications",
+      "permanent": true
+    },
+    {
+      "source": "/ja/kick-extension",
+      "destination": "/ja/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%83%E3%82%AF",
+      "permanent": true
+    },
+    {
+      "source": "/ja/twitch-drops-auto-claim",
+      "destination": "/ja/twitch-drops-%E8%87%AA%E5%8B%95",
+      "permanent": true
+    },
+    {
+      "source": "/ja/twitch-error-2000-fix",
+      "destination": "/ja/%E3%82%A8%E3%83%A9%E3%83%BC-2000-Twitch-%E8%A7%A3%E6%B1%BA%E7%AD%96",
+      "permanent": true
+    },
+    {
+      "source": "/ja/twitch-error-3000-fix",
+      "destination": "/ja/%E3%82%A8%E3%83%A9%E3%83%BC-3000-Twitch-%E8%A7%A3%E6%B1%BA%E7%AD%96",
+      "permanent": true
+    },
+    {
+      "source": "/ja/twitch-extension",
+      "destination": "/ja/extension-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/ja/twitch-kick-dashboard",
+      "destination": "/ja/%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89-Twitch-%E3%82%AD%E3%83%83%E3%82%AF",
+      "permanent": true
+    },
+    {
+      "source": "/ja/twitch-kick-live-notifications",
+      "destination": "/ja/%E9%80%9A%E7%9F%A5-%E3%83%A9%E3%82%A4%E3%83%96-Twitch-%E3%82%AD%E3%83%83%E3%82%AF",
+      "permanent": true
+    },
+    {
+      "source": "/ko/auto-claim-twitch-channel-points",
+      "destination": "/ko/%EC%9E%90%EB%8F%99%20%EC%B2%B4%EC%9D%B8%20%EC%97%B0%EA%B2%B0%EC%A0%90-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/ko/best-twitch-extensions",
+      "destination": "/ko/Twitch%20%EC%B5%9C%EA%B3%A0%EC%9D%98%20%ED%99%95%EC%9E%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8",
+      "permanent": true
+    },
+    {
+      "source": "/ko/filter-twitch-chat",
+      "destination": "/ko/twitch-%EC%B1%84%ED%8C%85-%ED%95%84%ED%84%B0%EB%A7%81",
+      "permanent": true
+    },
+    {
+      "source": "/ko/kick-extension-notifications",
+      "destination": "/ko/%ED%99%95%EC%9E%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%ED%82%A5%20%EC%95%8C%EB%A6%BC",
+      "permanent": true
+    },
+    {
+      "source": "/ko/kick-extension",
+      "destination": "/ko/%EC%9D%B5%EC%8A%A4%ED%85%90%EC%85%98%20%ED%82%A5",
+      "permanent": true
+    },
+    {
+      "source": "/ko/twitch-drops-auto-claim",
+      "destination": "/ko/%ED%8A%B8%EC%9C%84%EC%B9%98%20%EB%93%9C%EB%A1%AD%20%EC%9E%90%EB%8F%99%20%EC%84%A4%EC%A0%95",
+      "permanent": true
+    },
+    {
+      "source": "/ko/twitch-error-2000-fix",
+      "destination": "/ko/%EC%98%A4%EB%A5%98-2000-%ED%8A%B8%EC%9C%84%EC%B9%98-%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95",
+      "permanent": true
+    },
+    {
+      "source": "/ko/twitch-error-3000-fix",
+      "destination": "/ko/%EC%98%A4%EB%A5%98-3000-%ED%8A%B8%EC%9C%84%EC%B9%98-%ED%95%B4%EA%B2%B0%20%EB%B0%A9%EB%B2%95",
+      "permanent": true
+    },
+    {
+      "source": "/ko/twitch-extension",
+      "destination": "/ko/extension-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/ko/twitch-kick-dashboard",
+      "destination": "/ko/%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C-%ED%8A%B8%EC%9C%84%EC%B9%98-%EC%B6%94%EB%B0%A9",
+      "permanent": true
+    },
+    {
+      "source": "/ko/twitch-kick-live-notifications",
+      "destination": "/ko/%EC%95%8C%EB%A6%BC-%EB%9D%BC%EC%9D%B4%EB%B8%8C-%ED%8A%B8%EC%9C%84%EC%B9%98-%EC%B0%B9",
+      "permanent": true
+    },
+    {
+      "source": "/nl/auto-claim-twitch-channel-points",
+      "destination": "/nl/automatische-kettingogen-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/nl/best-twitch-extensions",
+      "destination": "/nl/beste-twitch-extensies",
+      "permanent": true
+    },
+    {
+      "source": "/nl/filter-twitch-chat",
+      "destination": "/nl/chat-filteren-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/nl/kick-extension-notifications",
+      "destination": "/nl/uitbreiding-kick-meldingen",
+      "permanent": true
+    },
+    {
+      "source": "/nl/kick-extension",
+      "destination": "/nl/uitbreidingsschop",
+      "permanent": true
+    },
+    {
+      "source": "/nl/twitch-drops-auto-claim",
+      "destination": "/nl/automatische%20Twitch-drops",
+      "permanent": true
+    },
+    {
+      "source": "/nl/twitch-error-2000-fix",
+      "destination": "/nl/fout-2000-twitch-oplossing",
+      "permanent": true
+    },
+    {
+      "source": "/nl/twitch-error-3000-fix",
+      "destination": "/nl/fout-3000-twitch-oplossing",
+      "permanent": true
+    },
+    {
+      "source": "/nl/twitch-extension",
+      "destination": "/nl/extension-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/nl/twitch-kick-dashboard",
+      "destination": "/nl/dashboard-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/nl/twitch-kick-live-notifications",
+      "destination": "/nl/meldingen-live-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/pl/auto-claim-twitch-channel-points",
+      "destination": "/pl/automatyczne-punkty-%C5%82a%C5%84cuchowe-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/pl/best-twitch-extensions",
+      "destination": "/pl/najlepsze-rozszerzenia-na-Twitchu",
+      "permanent": true
+    },
+    {
+      "source": "/pl/filter-twitch-chat",
+      "destination": "/pl/filtruj-czat-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/pl/kick-extension-notifications",
+      "destination": "/pl/rozszerzenie-powiadomienia-o-kopni%C4%99ciach",
+      "permanent": true
+    },
+    {
+      "source": "/pl/kick-extension",
+      "destination": "/pl/kopni%C4%99cie%20z%20wyskoku",
+      "permanent": true
+    },
+    {
+      "source": "/pl/twitch-drops-auto-claim",
+      "destination": "/pl/automatyczne%20dropy%20na%20Twitchu",
+      "permanent": true
+    },
+    {
+      "source": "/pl/twitch-error-2000-fix",
+      "destination": "/pl/b%C5%82%C4%85d-2000-twitch-rozwi%C4%85zanie",
+      "permanent": true
+    },
+    {
+      "source": "/pl/twitch-error-3000-fix",
+      "destination": "/pl/b%C5%82%C4%85d-3000-twitch-rozwi%C4%85zanie",
+      "permanent": true
+    },
+    {
+      "source": "/pl/twitch-extension",
+      "destination": "/pl/rozszerzenie-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/pl/twitch-kick-dashboard",
+      "destination": "/pl/dashboard-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/pl/twitch-kick-live-notifications",
+      "destination": "/pl/powiadomienia-na-%C5%BCywo-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/auto-claim-twitch-channel-points",
+      "destination": "/pt-br/pontos-de-corrente-autom%C3%A1ticos-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/best-twitch-extensions",
+      "destination": "/pt-br/melhores-extens%C3%B5es-do-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/filter-twitch-chat",
+      "destination": "/pt-br/filtrar-chat-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/kick-extension-notifications",
+      "destination": "/pt-br/extens%C3%A3o-notifica%C3%A7%C3%B5es-por-chute",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/kick-extension",
+      "destination": "/pt-br/chute%20de%20extens%C3%A3o",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/twitch-drops-auto-claim",
+      "destination": "/pt-br/twitch-drops-autom%C3%A1tico",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/twitch-error-2000-fix",
+      "destination": "/pt-br/erro-2000-twitch-solu%C3%A7%C3%A3o",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/twitch-error-3000-fix",
+      "destination": "/pt-br/erro-3000-twitch-solu%C3%A7%C3%A3o",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/twitch-extension",
+      "destination": "/pt-br/extens%C3%A3o-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/twitch-kick-dashboard",
+      "destination": "/pt-br/painel-twitch-expuls%C3%A3o",
+      "permanent": true
+    },
+    {
+      "source": "/pt-br/twitch-kick-live-notifications",
+      "destination": "/pt-br/notifica%C3%A7%C3%B5es-ao-vivo-twitch-expuls%C3%A3o",
+      "permanent": true
+    },
+    {
+      "source": "/ru/auto-claim-twitch-channel-points",
+      "destination": "/ru/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D1%83%D0%B7%D0%BB%D1%8B-%D1%86%D0%B5%D0%BF%D0%B8-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/ru/best-twitch-extensions",
+      "destination": "/ru/%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%B5-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B4%D0%BB%D1%8F-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/ru/filter-twitch-chat",
+      "destination": "/ru/%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80-%D1%87%D0%B0%D1%82-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/ru/kick-extension-notifications",
+      "destination": "/ru/%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-kick-%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F",
+      "permanent": true
+    },
+    {
+      "source": "/ru/kick-extension",
+      "destination": "/ru/%D1%83%D0%B4%D0%B0%D1%80%20%D1%81%20%D0%BE%D1%82%D1%81%D0%BA%D0%BE%D0%BA%D0%BE%D0%BC",
+      "permanent": true
+    },
+    {
+      "source": "/ru/twitch-drops-auto-claim",
+      "destination": "/ru/%D0%B0%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%B4%D0%B0%D1%80%D0%BA%D0%B8%20%D0%B2%20Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/ru/twitch-error-2000-fix",
+      "destination": "/ru/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-2000-twitch-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5",
+      "permanent": true
+    },
+    {
+      "source": "/ru/twitch-error-3000-fix",
+      "destination": "/ru/%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0-3000-twitch-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D0%B5",
+      "permanent": true
+    },
+    {
+      "source": "/ru/twitch-extension",
+      "destination": "/ru/%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D1%82%D0%B2%D0%B8%D1%87",
+      "permanent": true
+    },
+    {
+      "source": "/ru/twitch-kick-dashboard",
+      "destination": "/ru/%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D1%8C%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-Twitch-%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5",
+      "permanent": true
+    },
+    {
+      "source": "/ru/twitch-kick-live-notifications",
+      "destination": "/ru/%D1%83%D0%B2%D0%B5%D0%B4%D0%BE%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5-%D1%80%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-Twitch-%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5",
+      "permanent": true
+    },
+    {
+      "source": "/sv/auto-claim-twitch-channel-points",
+      "destination": "/sv/automatiska%20kedjepunkter-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/sv/best-twitch-extensions",
+      "destination": "/sv/de-b%C3%A4sta-till%C3%A4ggen-f%C3%B6r-Twitch",
+      "permanent": true
+    },
+    {
+      "source": "/sv/filter-twitch-chat",
+      "destination": "/sv/filtrera-chatt-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/sv/kick-extension-notifications",
+      "destination": "/sv/till%C3%A4gg-kick-meddelanden",
+      "permanent": true
+    },
+    {
+      "source": "/sv/kick-extension",
+      "destination": "/sv/f%C3%B6rl%C3%A4ngningsspark",
+      "permanent": true
+    },
+    {
+      "source": "/sv/twitch-drops-auto-claim",
+      "destination": "/sv/automatiska%20Twitch-drops",
+      "permanent": true
+    },
+    {
+      "source": "/sv/twitch-error-2000-fix",
+      "destination": "/sv/fel-2000-twitch-l%C3%B6sning",
+      "permanent": true
+    },
+    {
+      "source": "/sv/twitch-error-3000-fix",
+      "destination": "/sv/fel-3000-twitch-l%C3%B6sning",
+      "permanent": true
+    },
+    {
+      "source": "/sv/twitch-extension",
+      "destination": "/sv/f%C3%B6rl%C3%A4ngningsryckning",
+      "permanent": true
+    },
+    {
+      "source": "/sv/twitch-kick-dashboard",
+      "destination": "/sv/dashboard-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/sv/twitch-kick-live-notifications",
+      "destination": "/sv/meddelanden-live-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/tr/auto-claim-twitch-channel-points",
+      "destination": "/tr/otomatik%20zincir%20halkalar%C4%B1-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/tr/best-twitch-extensions",
+      "destination": "/tr/en-iyi-twitch-eklentileri",
+      "permanent": true
+    },
+    {
+      "source": "/tr/filter-twitch-chat",
+      "destination": "/tr/twitch-sohbetini-filtrele",
+      "permanent": true
+    },
+    {
+      "source": "/tr/kick-extension-notifications",
+      "destination": "/tr/uzant%C4%B1-tekme-bildirimleri",
+      "permanent": true
+    },
+    {
+      "source": "/tr/kick-extension",
+      "destination": "/tr/uzatma-tekmesi",
+      "permanent": true
+    },
+    {
+      "source": "/tr/twitch-drops-auto-claim",
+      "destination": "/tr/otomatik%20twitch-drops",
+      "permanent": true
+    },
+    {
+      "source": "/tr/twitch-error-2000-fix",
+      "destination": "/tr/hata-2000-twitch-%C3%A7%C3%B6z%C3%BCm",
+      "permanent": true
+    },
+    {
+      "source": "/tr/twitch-error-3000-fix",
+      "destination": "/tr/hata-3000-twitch-%C3%A7%C3%B6z%C3%BCm",
+      "permanent": true
+    },
+    {
+      "source": "/tr/twitch-extension",
+      "destination": "/tr/extension-twitch",
+      "permanent": true
+    },
+    {
+      "source": "/tr/twitch-kick-dashboard",
+      "destination": "/tr/dashboard-twitch-kick",
+      "permanent": true
+    },
+    {
+      "source": "/tr/twitch-kick-live-notifications",
+      "destination": "/tr/bildirimler-canl%C4%B1-twitch-kick",
+      "permanent": true
     }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     },
     {
       "source": "/sitemap.xml",
-      "headers": [{ "key": "Content-Type", "value": "application/xml" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
     },
     {
       "source": "/llms.txt",
-      "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
     }
   ]
 }
